@@ -142,6 +142,12 @@ $code-bg:                       $uc-muted;
 
 .reveal .columns {
   gap: 1.5em;
+  align-items: stretch;
+}
+
+.reveal .columns > .column {
+  display: flex;
+  flex-direction: column;
 }
 
 

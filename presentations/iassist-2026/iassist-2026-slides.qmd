@@ -166,7 +166,7 @@ UCSC had the head start. Sage Weil, creator of Ceph, sold it to Red Hat and used
 :::: {.columns}
 
 ::: {.column width="33%"}
-::: {style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; height:320px;"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; flex:1; min-height:280px;"}
 [🔭]{style="font-size:3em;"}
 
 **Discovery**
@@ -176,7 +176,7 @@ Mapping who does what across the UC system — repos, contributors, tools, and p
 :::
 
 ::: {.column width="33%"}
-::: {style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; height:320px;"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; flex:1; min-height:280px;"}
 [🌱]{style="font-size:3em;"}
 
 **Sustainability**
@@ -186,7 +186,7 @@ Keeping projects and communities healthy through licensing, project health, and 
 :::
 
 ::: {.column width="33%"}
-::: {style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; height:320px;"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; flex:1; min-height:280px;"}
 [📖]{style="font-size:3em;"}
 
 **Education**
