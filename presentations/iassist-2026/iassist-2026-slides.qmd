@@ -112,14 +112,14 @@ Ruff's point: "The students writing their class projects this very semester may 
 <div class="logo-row">
 <span class="project-badge">Cytoscape</span>
 <span class="project-badge">EEGLAB</span>
-<span class="project-badge">UCSD Pascal</span>
+<div class="logo-item logo-item-sm"><img src="images/ucsd-pascal-logo.png" alt="UCSD Pascal p-System"><span>UCSD Pascal</span></div>
 </div>
 </div>
 
 <div class="campus-block" role="listitem">
 <span class="campus-label">UCLA</span>
 <div class="logo-row">
-<span class="project-badge">Named Data Networking</span>
+<div class="logo-item logo-item-sm"><img src="images/ndn-logo.png" alt="Named Data Networking"><span>Named Data Networking</span></div>
 <span class="project-badge">tz database</span>
 </div>
 </div>
