@@ -143,9 +143,62 @@ Ruff's point: "The students writing their class projects this very semester may 
 </div>
 
 ::: {.notes}
-The Gemini research surfaced this breadth — systems infrastructure (Berkeley, UCSC), bioinformatics and neuroscience pipelines (UCSD, UCSF, Davis), and internet infrastructure (UCLA). Berkeley gets the headline logos because those are the ones your audience already uses or has heard of. But the point is the pattern: grant-funded university research, permissive license, donated to a foundation or commercialized and then open, now embedded in global systems.
+Berkeley gets the headline logos because those are audience-recognizable. But point to the whole grid: systems infrastructure (Berkeley, UCSC), bioinformatics and neuroscience pipelines (UCSD, UCSF, Davis), and internet infrastructure (UCLA). The pattern holds everywhere.
 
-UCSD Pascal in 1979 was doing virtual machine portability before Java. The tz database is in every OS clock on the planet. UCSC's Genome Browser hosted the first public human genome assembly. This is not a short list of lucky accidents.
+Origin stories for each, if you need them:
+
+**Jupyter** — Pérez was a physics PhD at CU Boulder, built the first IPython in an afternoon procrastinating on his thesis. "The interactive tool running millions of AI workflows was born from one grad student avoiding his dissertation."
+
+**Spark** — Matei Zaharia, Berkeley AMPLab, 2009. His classmate Lester Mackey needed faster distributed ML to compete in the $1M Netflix Prize. Spark was the fix. Databricks now $60B+.
+
+**RISC-V** — Krste Asanović and David Patterson, 2010. A three-month summer project to give grad students a chip architecture to experiment on without paying ARM royalties. Now in 10 billion devices. Foundation moved to Switzerland in 2020 to stay neutral in the US-China trade war.
+
+**Ray** — Nishihara and Moritz, RISELab, 2016. Two PhD students tired of rewriting Python every time they wanted to scale to more than one machine. Now core OpenAI compute infrastructure.
+
+**Ceph** — Sage Weil's dissertation, UCSC SSRC, 2004. Designed to store data at exabyte scale without a central lookup table. Weil founded Inktank; Red Hat acquired it in 2014. Those proceeds funded CROSS at UCSC — which became the first UC OSPO, and the seed of this network.
+
+**UCSC Genome Browser** — Jim Kent, UCSC PhD student, summer 2000. He assembled the human genome on 50 borrowed PCs while icing his wrists to prevent carpal tunnel, finishing three days before Celera Genomics and its supercomputer. The genome stayed in the public domain. (See next slide.)
+
+**Cytoscape** — Trey Ideker, UCSD, 2003. High-throughput biology was producing molecular interaction tables no spreadsheet could handle. He built visual "living maps" of the cell. Now the de facto standard for network biology.
+
+**EEGLAB** — Scott Makeig, Salk Institute → UCSD, 1997–2001. Funded by the inventor of laser barcoding, who wanted to decode the brain's own scanning systems.
+
+**tz database** — Paul Eggert, UCLA, volunteer since 2005. To reconstruct pre-1883 timezone history, he used almanacs compiled by 19th-century astrologers who recorded precise local solar times to cast horoscopes. Every OS clock on the planet depends on this.
+
+**ChimeraX** — UCSF RBVI, successor to Chimera. Built for cryo-EM data too large for older renderers. Lets structural biologists explode 3D virus structures on screen to find drug-binding pockets.
+
+**sourmash** — Titus Brown + Luiz Irber, UC Davis, 2016. Sequence databases were growing faster than BLAST could search them. FracMinHash sketching compresses genomes into fingerprints; a laptop can now search billions of sequences in seconds.
+:::
+
+---
+
+## {background-color="#1f335e"}
+
+::: {style="text-align: center; color: #ffffff; line-height: 1.8; margin-top: 0.8em;"}
+
+**Summer 2000. UC Santa Cruz.**
+
+PhD student Jim Kent assembled the human genome
+on 50 borrowed PCs, icing his wrists to keep coding.
+
+He finished **three days** before a corporate competitor's supercomputer.
+
+**The genome stayed in the public domain.**
+
+:::
+
+::: {style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.52em; margin-top: 1.8em;"}
+Kent, J.W. (2002). BLAT — The BLAST-Like Alignment Tool. *Genome Research* 12, 656–664. · genome.ucsc.edu
+:::
+
+::: {.notes}
+Take a beat here. Let the room absorb it.
+
+The competitor was Celera Genomics — $300M in private funding, dedicated supercomputer cluster. Kent was working with 50 off-the-shelf PCs assembled in a hallway. He reportedly wrote GigAssembler (~10,000 lines of C) in a few intense weeks while finishing his dissertation. The "pajamas and wrist ice" detail comes from contemporaneous accounts.
+
+This is the open data movement, applied to biology, won by a grad student. It is exactly the argument this room already makes about data — that scientific outputs belong in the commons — applied to software. If your audience has any doubt about why this work matters, this story is the answer.
+
+After the beat: "That is what UC research infrastructure looks like at the start."
 :::
 
 ---
