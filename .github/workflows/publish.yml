@@ -34,7 +34,9 @@ jobs:
             http://localhost:3000/iassist-2026-slides.html \
             presentations/iassist-2026/iassist-2026-slides.pdf \
             --size 1280x720 \
-            --load-pause 3000
+            --load-pause 3000 \
+            --puppeteer-arg=--no-sandbox \
+            --puppeteer-arg=--disable-setuid-sandbox
           kill $SERVER_PID 2>/dev/null || true
 
       - name: Deploy to GitHub Pages
