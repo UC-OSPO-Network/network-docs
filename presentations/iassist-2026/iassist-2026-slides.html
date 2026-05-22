@@ -99,7 +99,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="iassist-2026-slides_files/libs/revealjs/dist/theme/quarto-bcf6ab882533b121f16d8b036d4952c5.css">
+  <link rel="stylesheet" href="iassist-2026-slides_files/libs/revealjs/dist/theme/quarto-d8c91a17ad340fa5ed7ddafccec5c6c8.css">
   <link href="iassist-2026-slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="iassist-2026-slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="iassist-2026-slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -282,8 +282,8 @@ Tim Dennis
 </ul>
 </div><div class="column" style="width:56%;">
 <div class="cell hidden">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="82" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 81;"><span id="cb1-82"><a href=""></a>world_topo <span class="op">=</span> <span class="fu">fetch</span>(<span class="st">"https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"</span>)<span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
-<span id="cb1-83"><a href=""></a>members <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"curioss-members.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="86" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 85;"><span id="cb1-86"><a href=""></a>world_topo <span class="op">=</span> <span class="fu">fetch</span>(<span class="st">"https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"</span>)<span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
+<span id="cb1-87"><a href=""></a>members <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"curioss-members.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -300,35 +300,35 @@ Tim Dennis
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="87" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 86;"><span id="cb2-87"><a href=""></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb2-88"><a href=""></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
-<span id="cb2-89"><a href=""></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"equal-earth"</span><span class="op">,</span></span>
-<span id="cb2-90"><a href=""></a>    <span class="dt">domain</span><span class="op">:</span> {</span>
-<span id="cb2-91"><a href=""></a>      <span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span></span>
-<span id="cb2-92"><a href=""></a>      <span class="dt">coordinates</span><span class="op">:</span> members<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> [<span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span>])</span>
-<span id="cb2-93"><a href=""></a>    }<span class="op">,</span></span>
-<span id="cb2-94"><a href=""></a>    <span class="dt">inset</span><span class="op">:</span> <span class="dv">40</span></span>
-<span id="cb2-95"><a href=""></a>  }<span class="op">,</span></span>
-<span id="cb2-96"><a href=""></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">660</span><span class="op">,</span></span>
-<span id="cb2-97"><a href=""></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">340</span><span class="op">,</span></span>
-<span id="cb2-98"><a href=""></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span>}<span class="op">,</span></span>
-<span id="cb2-99"><a href=""></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb2-100"><a href=""></a>    Plot<span class="op">.</span><span class="fu">graticule</span>({<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span>})<span class="op">,</span></span>
-<span id="cb2-101"><a href=""></a>    Plot<span class="op">.</span><span class="fu">geo</span>(topojson<span class="op">.</span><span class="fu">feature</span>(world_topo<span class="op">,</span> world_topo<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">land</span>)<span class="op">,</span> {</span>
-<span id="cb2-102"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ccc"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span></span>
-<span id="cb2-103"><a href=""></a>    })<span class="op">,</span></span>
-<span id="cb2-104"><a href=""></a>    Plot<span class="op">.</span><span class="fu">dot</span>(members<span class="op">,</span> {</span>
-<span id="cb2-105"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
-<span id="cb2-106"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
-<span id="cb2-107"><a href=""></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">7</span><span class="op">,</span></span>
-<span id="cb2-108"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">uc_network</span> <span class="op">===</span> <span class="st">"yes"</span> <span class="op">?</span> <span class="st">"#ff9100"</span> <span class="op">:</span> <span class="st">"#003cb3"</span><span class="op">,</span></span>
-<span id="cb2-109"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
-<span id="cb2-110"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
-<span id="cb2-111"><a href=""></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb2-112"><a href=""></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">name</span></span>
-<span id="cb2-113"><a href=""></a>    })</span>
-<span id="cb2-114"><a href=""></a>  ]</span>
-<span id="cb2-115"><a href=""></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="91" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 90;"><span id="cb2-91"><a href=""></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-92"><a href=""></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
+<span id="cb2-93"><a href=""></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"equal-earth"</span><span class="op">,</span></span>
+<span id="cb2-94"><a href=""></a>    <span class="dt">domain</span><span class="op">:</span> {</span>
+<span id="cb2-95"><a href=""></a>      <span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span></span>
+<span id="cb2-96"><a href=""></a>      <span class="dt">coordinates</span><span class="op">:</span> members<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> [<span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span>])</span>
+<span id="cb2-97"><a href=""></a>    }<span class="op">,</span></span>
+<span id="cb2-98"><a href=""></a>    <span class="dt">inset</span><span class="op">:</span> <span class="dv">40</span></span>
+<span id="cb2-99"><a href=""></a>  }<span class="op">,</span></span>
+<span id="cb2-100"><a href=""></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">660</span><span class="op">,</span></span>
+<span id="cb2-101"><a href=""></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">340</span><span class="op">,</span></span>
+<span id="cb2-102"><a href=""></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span>}<span class="op">,</span></span>
+<span id="cb2-103"><a href=""></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-104"><a href=""></a>    Plot<span class="op">.</span><span class="fu">graticule</span>({<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span>})<span class="op">,</span></span>
+<span id="cb2-105"><a href=""></a>    Plot<span class="op">.</span><span class="fu">geo</span>(topojson<span class="op">.</span><span class="fu">feature</span>(world_topo<span class="op">,</span> world_topo<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">land</span>)<span class="op">,</span> {</span>
+<span id="cb2-106"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ccc"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span></span>
+<span id="cb2-107"><a href=""></a>    })<span class="op">,</span></span>
+<span id="cb2-108"><a href=""></a>    Plot<span class="op">.</span><span class="fu">dot</span>(members<span class="op">,</span> {</span>
+<span id="cb2-109"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
+<span id="cb2-110"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
+<span id="cb2-111"><a href=""></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">7</span><span class="op">,</span></span>
+<span id="cb2-112"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">uc_network</span> <span class="op">===</span> <span class="st">"yes"</span> <span class="op">?</span> <span class="st">"#ff9100"</span> <span class="op">:</span> <span class="st">"#003cb3"</span><span class="op">,</span></span>
+<span id="cb2-113"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb2-114"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
+<span id="cb2-115"><a href=""></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb2-116"><a href=""></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">name</span></span>
+<span id="cb2-117"><a href=""></a>    })</span>
+<span id="cb2-118"><a href=""></a>  ]</span>
+<span id="cb2-119"><a href=""></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="expression">
 
@@ -336,6 +336,9 @@ Tim Dennis
 </div>
 </div>
 <p><span class="small">🟠 UC OSPO Network &nbsp;·&nbsp; 🔵 CURIOSS member</span></p>
+<div class="sr-only">
+<p>World map showing 34 CURIOSS member institutions. Six UC campuses (orange) in California: Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, and San Diego. Twenty-eight additional institutions (blue) across the US, UK, Switzerland, Spain, Ireland, Luxembourg, and France.</p>
+</div>
 </div></div>
 <aside class="notes">
 <p>Map is live and interactive — hover over dots for institution names. UC campuses are the orange cluster on the west coast. The CNI slides from late 2024 showed ~20 members; we’re at 34 now. Growing fast.</p>
@@ -477,8 +480,8 @@ Tim Dennis
 </section>
 <section id="the-dependency-problem" class="slide level2">
 <h2>The dependency problem</h2>
-<img data-src="https://imgs.xkcd.com/comics/dependency.png" class="r-stretch">
-<div class="small">
+
+<img data-src="https://imgs.xkcd.com/comics/dependency.png" class="r-stretch quarto-figure-center"><p class="caption">XKCD #2347 ‘Dependency’: a towering stack of blocks labeled ‘All modern digital infrastructure’ balances on a single tiny block labeled ‘A project some random person in Nebraska has been thanklessly maintaining since 2003’. By Randall Munroe.</p><div class="small">
 <p>xkcd #2347 (CC BY-NC 2.5) · UC survey: 58% of contributors are maintainers · Tidelift (2024): 60% unpaid, 43% burnt out</p>
 </div>
 <aside class="notes">
@@ -731,7 +734,7 @@ Tim Dennis
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-'controlsAuto': true,
+'controlsAuto': false,
 'previewLinksAuto': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
@@ -742,14 +745,14 @@ Tim Dennis
 'smaller': false,
  
         // Display controls in the bottom right corner
-        controls: false,
+        controls: true,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
         controlsTutorial: false,
 
         // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'edges',
+        controlsLayout: 'bottom-right',
 
         // Visibility rule for backwards navigation arrows; "faded", "hidden"
         // or "visible"

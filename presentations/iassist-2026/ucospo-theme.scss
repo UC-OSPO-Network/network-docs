@@ -108,8 +108,8 @@ $code-bg:                       $uc-muted;
 // ── Citation / small text ─────────────────────────────────────────────────────
 
 .reveal .small {
-  font-size: 0.52em;
-  color: #666666;
+  font-size: 0.65em;
+  color: #555555;
   margin-top: 0.4em;
 }
 
@@ -148,6 +148,41 @@ $code-bg:                       $uc-muted;
 // ── Footer ────────────────────────────────────────────────────────────────────
 
 .reveal .footer {
-  font-size: 0.42em;
-  color: #888888;
+  font-size: 0.55em;
+  color: #555555;
+}
+
+
+// ── Screen-reader-only utility ────────────────────────────────────────────────
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+// ── Keyboard focus indicator ──────────────────────────────────────────────────
+
+.reveal *:focus-visible {
+  outline: 3px solid $uc-orange;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+
+// ── Reduced motion ────────────────────────────────────────────────────────────
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal * {
+    transition: none !important;
+    animation: none !important;
+  }
 }
