@@ -95,7 +95,7 @@ Ruff's point: "The students writing their class projects this very semester may 
 <div class="logo-item"><img src="images/spark-logo.png" alt="Apache Spark"><span>Apache Spark</span></div>
 <div class="logo-item"><img src="images/riscv-logo.svg" alt="RISC-V"><span>RISC-V</span></div>
 <div class="logo-item"><img src="images/ray-logo.png" alt="Ray"><span>Ray</span></div>
-<span class="project-badge">BSD Unix</span>
+<div class="logo-item logo-item-sm"><img src="images/bsd-wordmark.svg" alt="BSD Unix"><span>BSD Unix</span></div>
 </div>
 </div>
 
