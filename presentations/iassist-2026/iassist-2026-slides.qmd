@@ -119,6 +119,7 @@ Ruff's point: "The students writing their class projects this very semester may 
 <div class="campus-block" role="listitem">
 <span class="campus-label">UCLA</span>
 <div class="logo-row">
+<div class="logo-item logo-item-sm"><img src="images/processing-logo.svg" alt="Processing"><span>Processing</span></div>
 <div class="logo-item logo-item-sm"><img src="images/ndn-logo.png" alt="Named Data Networking"><span>Named Data Networking</span></div>
 <span class="project-badge">tz database</span>
 </div>
@@ -162,6 +163,8 @@ Origin stories for each, if you need them:
 **Cytoscape** — Trey Ideker, UCSD, 2003. High-throughput biology was producing molecular interaction tables no spreadsheet could handle. He built visual "living maps" of the cell. Now the de facto standard for network biology.
 
 **EEGLAB** — Scott Makeig, Salk Institute → UCSD, 1997–2001. Funded by the inventor of laser barcoding, who wanted to decode the brain's own scanning systems.
+
+**Processing** — Casey Reas (UCLA Design Media Arts) and Ben Fry co-created Processing in 2001 at MIT Media Lab. Designed to teach programming through visual art — a sketchbook for code. Now the Processing Foundation; used in art, design, and data visualization education worldwide.
 
 **tz database** — Paul Eggert, UCLA, volunteer since 2005. To reconstruct pre-1883 timezone history, he used almanacs compiled by 19th-century astrologers who recorded precise local solar times to cast horoscopes. Every OS clock on the planet depends on this.
 
