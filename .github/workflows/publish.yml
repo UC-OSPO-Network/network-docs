@@ -25,6 +25,18 @@ jobs:
       - name: Render IASSIST 2026 slides
         run: quarto render presentations/iassist-2026/iassist-2026-slides.qmd
 
+      - name: Generate PDF
+        run: |
+          python3 -m http.server 3000 --directory presentations/iassist-2026 &
+          SERVER_PID=$!
+          sleep 4
+          npx --yes decktape reveal \
+            http://localhost:3000/iassist-2026-slides.html \
+            presentations/iassist-2026/iassist-2026-slides.pdf \
+            --size 1280x720 \
+            --load-pause 3000
+          kill $SERVER_PID 2>/dev/null || true
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
