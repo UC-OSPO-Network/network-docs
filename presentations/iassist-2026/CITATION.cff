@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "Open Source as Institutional Infrastructure: Lessons from the UC OSPO Network"
+message: "If you use or reference these slides, please cite them as below."
+type: presentation
+authors:
+  - family-names: Dennis
+    given-names: Tim
+    orcid: https://orcid.org/0000-0001-6846-0583
+    affiliation: "Data Science Center, UCLA Library"
+date-released: 2026-06-01
+version: "1.0.0"
+url: "https://uc-ospo-network.github.io/network-docs/presentations/iassist-2026/iassist-2026-slides.html"
+repository-code: "https://github.com/UC-OSPO-Network/network-docs"
+keywords:
+  - open source program office
+  - OSPO
+  - research software
+  - academic library
+  - UC OSPO Network
+  - open science
+license: CC-BY-4.0
+conference:
+  name: "IASSIST 2026"
+abstract: >
+  A 10-minute talk for the IASSIST 2026 conference making the case that open
+  source software is research infrastructure, presenting the UC OSPO Network
+  as a model for institutional support, and connecting OSPO work to data
+  professionals' existing roles.

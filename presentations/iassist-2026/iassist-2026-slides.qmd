@@ -1,0 +1,417 @@
+---
+title: "Open Source as Institutional Infrastructure"
+subtitle: "Lessons from the UC OSPO Network"
+author: "Tim Dennis"
+institute: "Data Science Center, UCLA Library"
+date: "IASSIST 2026"
+format:
+  revealjs:
+    theme: ucospo-theme.scss
+    logo: images/uc-ospo-network-logo.svg
+    slide-number: true
+    footer: "IASSIST 2026 · Tim Dennis · UCLA Library DSC · ucospo.net"
+    transition: none
+    incremental: false
+    width: 1280
+    height: 720
+---
+
+## The invisible layer
+
+Research data workflows run on open source:
+
+* Data collection, cleaning, analysis, visualization
+* Reproducibility tooling: containers, workflows, version control
+* Repositories and scholarly infrastructure
+
+**92%** of researchers use software; **67%** say their research would be impossible without it.
+
+Most institutions have no coordinated support for the people keeping it running.
+
+::: {.small}
+Hettrick et al. (SSI, 2014/2022)
+:::
+
+::: {.notes}
+IMAGE: a grid of OSS tool logos researchers actually use — Jupyter, Python, R, Git, Pandas, numpy, ggplot2. Makes the "invisible layer" concrete before you say a word.
+
+Start with what this room knows. 92% of researchers depend on software; two-thirds say their work would stop without it. When a maintainer burns out, a key library gets abandoned. A licensing question blocks a publication. There is often nowhere to turn. That is the gap.
+:::
+
+---
+
+## We've been here before
+
+People in this room helped build the open data movement:
+
+* FAIR principles: from aspiration to institutional expectation
+* Data management plans embedded in grant workflows
+* Curation, provenance, and stewardship as professional services
+* Open science infrastructure: repositories, PIDs, metadata standards
+
+**Software is the next frontier.**
+
+The scripts that collect, clean, and analyze research data *are* research outputs. They deserve the same treatment.
+
+::: {.notes}
+IMAGE: the FAIR principles diagram or a simple timeline of open data milestones works here if you want a visual anchor.
+
+FAIR did not happen by accident. It happened because data professionals insisted that data deserved first-class treatment as a scholarly output. We are at that same point with software. Researchers already know their code matters. What is missing is the institutional scaffolding. That is what OSPOs provide, and it is why this is a data services story, not just a software story.
+:::
+
+---
+
+## What is an academic OSPO?
+
+:::: {.columns}
+
+::: {.column width="44%"}
+An **Open Source Program Office** supports, governs, and promotes open source within an institution.
+
+* Originated in industry: ~77% of large tech companies have one
+* First academic OSPO: Johns Hopkins, 2019
+* **34 academic OSPOs** in CURIOSS worldwide and growing
+* Core functions: policy, licensing guidance, best practices, education, community
+:::
+
+::: {.column width="56%"}
+
+```{ojs}
+//| echo: false
+//| output: false
+world_topo = fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json").then(r => r.json())
+members = FileAttachment("curioss-members.csv").csv({typed: true})
+```
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  projection: {
+    type: "equal-earth",
+    domain: {
+      type: "MultiPoint",
+      coordinates: members.map(d => [+d.lon, +d.lat])
+    },
+    inset: 40
+  },
+  width: 660,
+  height: 340,
+  style: {background: "transparent"},
+  marks: [
+    Plot.graticule({stroke: "#e8eef8", strokeWidth: 0.5}),
+    Plot.geo(topojson.feature(world_topo, world_topo.objects.land), {
+      fill: "#e8eef8", stroke: "#ccc", strokeWidth: 0.5
+    }),
+    Plot.dot(members, {
+      x: d => +d.lon,
+      y: d => +d.lat,
+      r: 7,
+      fill: d => d.uc_network === "yes" ? "#ff9100" : "#003cb3",
+      stroke: "white",
+      strokeWidth: 1.2,
+      tip: true,
+      title: d => d.name
+    })
+  ]
+})
+```
+
+[🟠 UC OSPO Network &nbsp;·&nbsp; 🔵 CURIOSS member]{.small}
+
+:::
+
+::::
+
+::: {.notes}
+Map is live and interactive — hover over dots for institution names. UC campuses are the orange cluster on the west coast. The CNI slides from late 2024 showed ~20 members; we're at 34 now. Growing fast.
+
+The academic model is different from industry. Less about compliance, more about enabling researchers and students who are already doing open source work without any support structure.
+:::
+
+---
+
+## The UC OSPO Network
+
+A **multi-campus collaboration** treating open source as shared infrastructure.
+
+* 6 campuses: Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, San Diego
+* Launched April 2024, funded by the Alfred P. Sloan Foundation
+* **$1.85M** in external funding to date
+* Lead: UC Santa Cruz, the first OSPO in a large state university system
+* Serves 280,000+ students and 25,000+ faculty
+
+::: {.notes}
+IMAGE: a UC campus map with the six member campuses highlighted lands better than a bullet list here.
+
+UCSC had the head start. Sage Weil, creator of Ceph, sold it to Red Hat and used the proceeds to fund the Center for Research in Open Source Software in 2015. That became the first UC OSPO in 2022. Sloan then funded the network model to test what a statewide system could do that single campuses could not.
+:::
+
+---
+
+## Three thematic areas
+
+:::: {.columns}
+
+::: {.column width="33%"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; height:320px;"}
+[🔭]{style="font-size:3em;"}
+
+**Discovery**
+
+Mapping who does what across the UC system — repos, contributors, tools, and practices
+:::
+:::
+
+::: {.column width="33%"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; height:320px;"}
+[🌱]{style="font-size:3em;"}
+
+**Sustainability**
+
+Keeping projects and communities healthy through licensing, project health, and community support
+:::
+:::
+
+::: {.column width="33%"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; height:320px;"}
+[📖]{style="font-size:3em;"}
+
+**Education**
+
+Coordinated training and learning pathways across campuses
+:::
+:::
+
+::::
+
+::: {.notes}
+All network activity falls under these three. Governance maps to them: OSPO Leadership Group plus one working group per theme.
+:::
+
+---
+
+## Discovery: knowing what's there
+
+**The 4 Ps framework**, applied at system scale:
+
+* **People**: who contributes to OS software at UC?
+* **Product**: what has been built?
+* **Practice**: how do faculty and staff engage?
+* **Perception**: what are contributors' experiences?
+
+Tools: GitHub pipeline (200,000+ repos scanned; ~52,000 institutionally affiliated across 10 campuses), network-wide survey (294 respondents), UC Open Repository Browser (UC ORB)
+
+::: {.small}
+Gomez et al. (2025) arxiv:2506.18359 · Scarlett et al. (2025) doi:10.31235/osf.io/p8bx6_v1
+:::
+
+::: {.notes}
+IMAGE: a screenshot of the UC ORB (ucospo.net) filtered by campus is a strong visual here. Shows the tooling is real and usable.
+
+This is a methods story your audience will recognize. We are doing what data librarians do: inventory, assess, make visible. Juanita Gomez led the GitHub analysis and built the UC ORB — she gave a full talk on it at FOSSY titled "Recipe for Discovery: Building the UC Open Source Repository Browser From Scratch." The 200,000+ figure is the full pipeline scan; 52,000 are the repos with strong institutional affiliation after filtering. The survey preprint has data going to Dryad.
+:::
+
+---
+
+## Sustainability: keeping it running
+
+:::: {.columns}
+
+::: {.column width="58%"}
+
+**58% of UC open source contributors are also maintainers.** Not users: stewards.
+
+What they asked for most: sustainability grants, computing infrastructure, learning communities.
+
+\#1 challenge: **finding time to write documentation.**
+
+Nationally: **60%** of maintainers are unpaid; **43%** report burnout.
+
+Network services:
+
+* Cross-campus licensing working group (UCOP + tech transfer + IT)
+* Project health assessment (OSSPREY)
+* Containerization support · Community management
+
+::: {.small}
+Scarlett et al. (2025) doi:10.31235/osf.io/p8bx6_v1 · Tidelift (2024) State of the Open Source Maintainer Report
+:::
+
+:::
+
+::: {.column width="42%"}
+
+<!-- IMAGE: a photo of a lone developer at a laptop, or the UC ORB health dashboard screenshot. The XKCD comic is on the next slide — save it. -->
+
+:::
+
+::::
+
+::: {.notes}
+The 58% maintainer stat is the key reframe for this audience. These are not people who downloaded a package. They are sustaining infrastructure other researchers depend on, mostly without institutional recognition. The licensing working group is the clearest example of what only the network can do: it brings together UCOP, tech transfer offices from UCLA, UCB, and UCSC, and IT. That table does not exist without a network-level convener.
+:::
+
+---
+
+## The dependency problem
+
+![](https://imgs.xkcd.com/comics/dependency.png){.r-stretch}
+
+::: {.small}
+xkcd #2347 (CC BY-NC 2.5) · UC survey: 58% of contributors are maintainers · Tidelift (2024): 60% unpaid, 43% burnt out
+:::
+
+::: {.notes}
+Let the comic breathe. The joke lands on its own. The caption connects it to the survey data. "A project some random person in Nebraska has been thanklessly maintaining since 2003" — that person exists at every UC campus, and in most of your institutions too.
+:::
+
+---
+
+## AI and open source: a new pressure
+
+AI code generation is changing what it means to maintain a project.
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+* **Slop PRs**: AI-generated contributions that look complete but are off-spec, shallow, or carry subtle bugs
+* Review burden grows while maintainer capacity stays flat
+* The OSS projects that trained the models are now flooded by their output
+* Security risk: AI-generated code in dependencies with undetected vulnerabilities
+
+**OSPOs are developing responses:** contribution disclosure policies, AI-aware code review norms, project-level guidance.
+
+::: {.small}
+Baltes, Cheong & Treude (2026) arxiv:2603.27249 · GitClear (2024) "Coding on Copilot"
+:::
+
+:::
+
+::: {.column width="40%"}
+
+<!-- IMAGE: CommitStrip "The Art of Generating Code" (commitstrip.com/en/2023/06/06/the-art-of-generating-code/) works well here — free to use with attribution for non-commercial presentations. -->
+
+:::
+
+::::
+
+::: {.notes}
+Landmark paper to cite: Baltes, Cheong & Treude (2026), "An Endless Stream of AI Slop": The Growing Burden of AI-Assisted Software Development, arXiv:2603.27249. They frame it as a tragedy of the commons — individual productivity gains create externalized costs for maintainers. The curl project shut down its bug bounty program entirely in early 2026 because AI-generated vulnerability reports flooded maintainers, turning a 15-minute verification into days of wasted labor. Godot and RubyGems reported 10x spikes in low-quality AI contributions. The same researchers using AI for data analysis are submitting AI-generated code upstream to the tools they depend on.
+
+GitClear (2024) "Coding on Copilot" documents the code quality angle: AI-assisted development is measurably increasing code churn and reducing code reuse, meaning more review work on lower-quality patches.
+:::
+
+---
+
+## Education: training as infrastructure
+
+Gap analysis → curriculum inventory → learning pathways
+
+* Inventoried existing materials: Carpentries, CodeRefinery, The Turing Way, UC-specific content
+* Organized by topic (licensing, sustainability, community) and by role (contributor, maintainer, manager)
+* Published at [ucospo.net/education](https://ucospo.net/education)
+* Coordinated with data literacy programs and Carpentries infrastructure
+
+::: {.notes}
+IMAGE: a screenshot of the ucospo.net/education site showing the curriculum inventory is a natural fit here.
+
+This is where the work most directly touches IASSIST members' world. The education working group treats training the way data professionals think about data: find what exists, identify gaps, do not duplicate. The site is a living curriculum inventory, not a course catalog.
+:::
+
+---
+
+## Governance: intra vs. inter campus
+
+Not everything should be shared. Some things only work at scale.
+
+| Intra-campus | Inter-campus |
+|---|---|
+| Initial pilots | Platform and tool development |
+| Local relationship-building | Licensing and best practices |
+| Faster, context-specific support | System-wide discovery |
+| Unique institutional context | Field-specific community building |
+
+Network governance: OSPO Leadership Group + working groups; GitHub-based project management.
+
+::: {.notes}
+This is the hardest ongoing judgment call. The default: if it requires cross-campus authority or economies of scale, it goes to the network. If it requires local relationships or campus-specific knowledge, it stays on campus.
+:::
+
+---
+
+## Lessons from two years
+
+What the network model enables that single campuses cannot:
+
+1. **Shared staffing**: community manager, licensing specialist, technical roles
+2. **Policy leverage**: the network has standing with UCOP; individual campuses do not
+3. **Data at scale**: the GitHub and survey analyses require system-wide scope to mean anything
+4. **Equity**: smaller campuses get services they could not build alone
+5. **A replicable model**: $1.85M produced something other state systems can follow
+
+::: {.notes}
+Two years in, the model works. The open question is moving from grant funding to permanent infrastructure. Working on a Sloan extension and exploring UCOP pathways. The pattern — distributed nodes, shared governance, thematic working groups — is transferable to any large university system.
+:::
+
+---
+
+## Where this meets your work
+
+For data professionals, the OSPO sits at the intersection of:
+
+* Research software engineering ↔ data management
+* Licensing compliance ↔ open data policy
+* Reproducibility tooling ↔ FAIR principles
+* Training infrastructure ↔ data literacy programs
+
+**For your institution:**
+
+* Where does open source software governance currently live?
+* What would it take to treat it as infrastructure rather than a side project?
+
+::: {.notes}
+This is the invitation. IASSIST members are exactly the people who should be at the OSPO table. You work across the research lifecycle, you understand data governance, you run training programs. The question is whether your institution has made the connection yet.
+:::
+
+---
+
+## What you can do right now
+
+If you advise on data-intensive research, you are probably already helping with code.
+
+**The network has already built the resources:**
+
+* [`README.md`](https://ucospo.net/oss-resources/template-guides/readme-guide/) — template + guide (Laura Langdon, UC OSPO)
+* [`LICENSE`](https://ucospo.net/oss-resources/template-guides/license-guide/) — guide includes UC-approved options
+* [`CONTRIBUTING.md`](https://ucospo.net/oss-resources/template-guides/contributing-guide/) — template + guide
+* [`CODE_OF_CONDUCT.md`](https://ucospo.net/oss-resources/template-guides/code-of-conduct-guide/) — Contributor Covenant + guidance
+* `CITATION.cff` + Zenodo release → citable, versioned DOI
+
+**Going further:**
+
+* [Growing a Community Around a Project](https://ucospo.net/oss-resources/growing-community/) — UC OSPO
+* [Sharing Research Software: Reproducible, Citable, and Discoverable](https://www.tim-dennis.com/research-software-citable-discoverable/aio.html) — Carpentries Incubator lesson (covers `pixi`, CITATION.cff, Zenodo, discoverability)
+
+::: {.notes}
+You do not have to build these resources yourself. Laura Langdon published templates and guides for all four key files in September 2025 — they are on ucospo.net right now. The Carpentries lesson is mine, pre-alpha but usable — it covers the full workflow from licensing through environment management to minting a DOI on Zenodo. A researcher who already deposits data with your help is one conversation away from a fully citable software package. You need the consultation habit and a link to these resources. That is it.
+:::
+
+---
+
+## Learn more / connect
+
+**UC OSPO Network:** [ucospo.net](https://ucospo.net)
+
+* Education site: [ucospo.net/education](https://ucospo.net/education)
+* Mailing list, Slack, events calendar
+
+**Global network:** [curioss.org](https://curioss.org) — 34 academic OSPOs worldwide and growing
+
+**Tim Dennis**
+Data Science Center, UCLA Library
+dennis.tim@gmail.com
+
+::: {.notes}
+Two things worth following up: UC ORB if they want to see the discovery tooling, and the CURIOSS community if their institution is thinking about starting an OSPO. Leave time for questions — the AI and sustainability slides tend to generate them.
+:::

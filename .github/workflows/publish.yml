@@ -1,0 +1,31 @@
+name: Render and publish slides
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'presentations/**'
+      - '.github/workflows/publish.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render IASSIST 2026 slides
+        run: quarto render presentations/iassist-2026/iassist-2026-slides.qmd
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: presentations/iassist-2026
+          destination_dir: presentations/iassist-2026
+          keep_files: true
