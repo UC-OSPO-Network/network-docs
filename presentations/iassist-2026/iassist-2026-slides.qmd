@@ -54,18 +54,21 @@ People in this room helped build the open data movement:
 * Open science infrastructure: repositories, PIDs, metadata standards
 * **FAIR4RS**: FAIR principles now extended to research software
 
-**Software is the next frontier.**
+**Software is the next frontier** — and UC has been showing the way for 50 years: BSD Unix, Apache Spark, RISC-V, Ray. The pipeline from university research to global infrastructure is not rare or accidental.
 
-The scripts that collect, clean, and analyze research data *are* research outputs. They deserve the same treatment.
+> "The research done in academia was the seed. Foundations provided the soil. But the community was the sun."
+> — Nithya Ruff, Linux Foundation
 
 ::: {.small}
-Barker et al. (2022) doi:10.1038/s41597-022-01710-x
+Barker et al. (2022) doi:10.1038/s41597-022-01710-x · Ruff, UC Open 2026
 :::
 
 ::: {.notes}
 IMAGE: the FAIR principles diagram or a simple timeline of open data milestones works here if you want a visual anchor.
 
-FAIR did not happen by accident. It happened because data professionals insisted that data deserved first-class treatment as a scholarly output. FAIR4RS (Barker et al. 2022, RDA/FORCE11/ReSA working group) applies the same Findable, Accessible, Interoperable, Reusable framework to software. We are at that same inflection point. What is missing is the institutional scaffolding — the policy, the training, the governance structures. That is what OSPOs provide, and it is why this is a data services story, not just a software story.
+FAIR did not happen by accident. It happened because data professionals insisted that data deserved first-class treatment as a scholarly output. FAIR4RS (Barker et al. 2022, RDA/FORCE11/ReSA working group) applies the same Findable, Accessible, Interoperable, Reusable framework to software. We are at that same inflection point.
+
+The UC pipeline is the concrete proof: BSD Unix at Berkeley, Apache Spark from the AMPLab (2009, donated to Apache; Databricks followed), RISC-V from Berkeley (2010 teaching tool, now 350+ org members in 70 countries, ships in billions of devices), Ray from the RISELab (2016 class project, donated to Linux Foundation in 2025, now core OpenAI compute infrastructure). Ruff's point: "The students writing their class projects this very semester may be creating the next Ray." That is not a metaphor. It is a track record.
 :::
 
 ---
@@ -153,10 +156,14 @@ A **multi-campus collaboration** treating open source as shared infrastructure.
 * Lead: UC Santa Cruz, the first OSPO in a large state university system
 * Serves 280,000+ students and 25,000+ faculty
 
+Acts as a **neutral convener**: no single campus, company, or grant cycle can pull the work away.
+
 ::: {.notes}
 IMAGE: a UC campus map with the six member campuses highlighted lands better than a bullet list here.
 
 UCSC had the head start. Sage Weil, creator of Ceph, sold it to Red Hat and used the proceeds to fund the Center for Research in Open Source Software in 2015. That became the first UC OSPO in 2022. Sloan then funded the network model to test what a statewide system could do that single campuses could not.
+
+The neutral convener framing comes directly from Nithya Ruff on why foundations work (UC Open 2026, 8:17–8:49): "when Berkeley students donate code to the Apache Software Foundation or the Linux Foundation, the code is actually held in a neutral trust place. No single company can pull on it. No single country can claim it." The UC OSPO Network does this at system scale for policy, tooling, and governance — not code per se, but the institutional scaffolding around it.
 :::
 
 ---
@@ -303,16 +310,30 @@ Baltes, Cheong & Treude (2026) arxiv:2603.27249 · GitClear (2024) "Coding on Co
 
 ::: {.column width="40%"}
 
-<!-- IMAGE: CommitStrip "The Art of Generating Code" (commitstrip.com/en/2023/06/06/the-art-of-generating-code/) works well here — free to use with attribution for non-commercial presentations. -->
+::: {style="background:#1f335e; border-radius:8px; padding:1.2em 1em; color:white; text-align:center; margin-top:0.5em;"}
+**The structural shift**
+
+**70%** of new AI PhDs go straight to industry
+
+(a decade ago: 50/50)
+
+**90%** of notable AI models come from a handful of companies
+
+Academia is being sidelined from the systems it helped create.
+:::
 
 :::
 
 ::::
 
 ::: {.notes}
+Both stats are from Nithya Ruff's keynote at UC Open 2026 (direct quotes, 6:15–7:15): "70% of new AI PhDs are going to industry. Not a detour, but straight to industry. And it's a historic shift... 90%, 90% of notable AI models are coming from industry... from a small group of industry folks."
+
 Landmark paper to cite: Baltes, Cheong & Treude (2026), "An Endless Stream of AI Slop": The Growing Burden of AI-Assisted Software Development, arXiv:2603.27249. They frame it as a tragedy of the commons — individual productivity gains create externalized costs for maintainers. The curl project shut down its bug bounty program entirely in early 2026 because AI-generated vulnerability reports flooded maintainers, turning a 15-minute verification into days of wasted labor. Godot and RubyGems reported 10x spikes in low-quality AI contributions. The same researchers using AI for data analysis are submitting AI-generated code upstream to the tools they depend on.
 
 GitClear (2024) "Coding on Copilot" documents the code quality angle: AI-assisted development is measurably increasing code churn and reducing code reuse, meaning more review work on lower-quality patches.
+
+Ruff on governance urgency: "The governance layer for AI is being determined, is being written. Policies and governance is being built in 18 to 36 months. And if you're not in the room, I think we will inherit a system that we have to live with."
 :::
 
 ---
