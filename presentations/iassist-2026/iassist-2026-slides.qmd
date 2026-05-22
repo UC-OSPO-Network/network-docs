@@ -14,6 +14,10 @@ format:
     incremental: false
     width: 1280
     height: 720
+    hash: true
+    controls: true
+    controls-layout: bottom-right
+    keyboard: true
 ---
 
 ## The invisible layer
@@ -117,6 +121,10 @@ Plot.plot({
 ```
 
 [🟠 UC OSPO Network &nbsp;·&nbsp; 🔵 CURIOSS member]{.small}
+
+::: {.sr-only}
+World map showing 34 CURIOSS member institutions. Six UC campuses (orange) in California: Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, and San Diego. Twenty-eight additional institutions (blue) across the US, UK, Switzerland, Spain, Ireland, Luxembourg, and France.
+:::
 
 :::
 
@@ -255,7 +263,7 @@ The 58% maintainer stat is the key reframe for this audience. These are not peop
 
 ## The dependency problem
 
-![](https://imgs.xkcd.com/comics/dependency.png){.r-stretch}
+![XKCD #2347 'Dependency': a towering stack of blocks labeled 'All modern digital infrastructure' balances on a single tiny block labeled 'A project some random person in Nebraska has been thanklessly maintaining since 2003'. By Randall Munroe.](https://imgs.xkcd.com/comics/dependency.png){.r-stretch}
 
 ::: {.small}
 xkcd #2347 (CC BY-NC 2.5) · UC survey: 58% of contributors are maintainers · Tidelift (2024): 60% unpaid, 43% burnt out
