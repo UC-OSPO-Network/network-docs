@@ -163,7 +163,7 @@ UCSC had the head start. Sage Weil, creator of Ceph, sold it to Red Hat and used
 
 ## Three thematic areas
 
-:::: {.columns}
+:::: {.columns .thematic-areas}
 
 ::: {.column width="33%"}
 ::: {style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; flex:1; min-height:280px;"}
