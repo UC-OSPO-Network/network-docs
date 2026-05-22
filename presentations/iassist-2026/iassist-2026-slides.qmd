@@ -501,22 +501,43 @@ This is where the work most directly touches IASSIST members' world. The educati
 
 ---
 
-## Governance: intra vs. inter campus
+## Distributed expertise, system-wide capacity
 
-Not everything should be shared. Some things only work at scale.
+Each campus brings what others don't. The network routes it to where it's needed.
 
-| Intra-campus | Inter-campus |
-|---|---|
-| Initial pilots | Platform and tool development |
-| Local relationship-building | Licensing and best practices |
-| Faster, context-specific support | System-wide discovery |
-| Unique institutional context | Field-specific community building |
+:::: {.columns}
 
-Network governance: OSPO Leadership Group + working groups; GitHub-based project management.
+::: {.column width="48%"}
+**Each campus contributes**
+
+* Unique domain expertise and staff knowledge
+* Local relationships with researchers and faculty
+* Pilots that can only run with campus context
+* Specialized capacity others can learn from
+:::
+
+::: {.column width="48%"}
+**The network multiplies it**
+
+* Expertise flows across all six campuses
+* Shared staffing no single campus could fund
+* Smaller campuses build capacity they couldn't alone
+* A success at one becomes a template for five
+:::
+
+::::
+
+Governed by an OSPO Leadership Group and thematic working groups — one per campus, coordinated at system level.
 
 ::: {.notes}
-This is the hardest ongoing judgment call. The default: if it requires cross-campus authority or economies of scale, it goes to the network. If it requires local relationships or campus-specific knowledge, it stays on campus.
+The old framing was "intra vs. inter campus" as if these were competing priorities. The better frame: each campus is a node that both contributes and draws from the network. UC Davis specializes in software sustainability research. UCLA brings library integration and data services expertise. UCSD leads on educational outreach. UCSC has the deepest OSS governance history through CROSS. That distributed expertise is the asset — the network is how you move it around.
+
+The practical governance: OSPO Leadership Group (one rep per campus) sets direction; three thematic working groups (Education, Sustainability, Compliance) do the work; GitHub-based project management keeps it open and legible.
+
+Key point for this audience: a librarian or data professional at a smaller campus now has access to the expertise of six campuses. That is what the network model actually delivers.
 :::
+
+---
 
 ---
 
