@@ -18,6 +18,11 @@ format:
     controls: true
     controls-layout: bottom-right
     keyboard: true
+    title-slide-attributes:
+      data-background-image: images/uc-ospo-logo.png
+      data-background-size: "auto 58%"
+      data-background-position: "10% 50%"
+      data-background-color: "#1f335e"
 ---
 
 ## The invisible layer
