@@ -57,17 +57,13 @@ $code-bg:                       $uc-muted;
 .reveal .slides section.title-slide,
 .reveal .slides section[data-state="title-slide"] {
   background-color: $uc-navy;
-  padding-left: 36% !important;
-  text-align: left;
 
   h1, h2, p.subtitle {
     color: #ffffff;
-    text-align: left;
   }
 
   .author, .institute, .date, p {
     color: rgba(255, 255, 255, 0.85);
-    text-align: left;
   }
 }
 
