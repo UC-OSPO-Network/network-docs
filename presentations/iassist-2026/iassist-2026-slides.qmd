@@ -128,7 +128,7 @@ Ruff's point: "The students writing their class projects this very semester may 
 <span class="campus-label">UC San Francisco</span>
 <div class="logo-row">
 <span class="project-badge">ChimeraX</span>
-<span class="project-badge">OpenMM</span>
+<div class="logo-item logo-item-sm"><img src="images/openmm-logo.png" alt="OpenMM"><span>OpenMM</span></div>
 </div>
 </div>
 
