@@ -19,7 +19,7 @@ format:
     controls-layout: bottom-right
     keyboard: true
     title-slide-attributes:
-      data-background-image: images/uc-ospo-network-logo-light.svg
+      data-background-image: images/uc-ospo-network-logo-white.svg
       data-background-size: "42% auto"
       data-background-position: "4% 88%"
       data-background-color: "#1f335e"
