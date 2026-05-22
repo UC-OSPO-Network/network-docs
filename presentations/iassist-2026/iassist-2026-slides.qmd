@@ -57,10 +57,9 @@ People in this room helped build the open data movement:
 **Software is the next frontier** — and UC has been showing the way for 50 years: BSD Unix, Apache Spark, RISC-V, Ray. The pipeline from university research to global infrastructure is not rare or accidental.
 
 > "The research done in academia was the seed. Foundations provided the soil. But the community was the sun."
-> — Nithya Ruff, Linux Foundation
 
 ::: {.small}
-Barker et al. (2022) doi:10.1038/s41597-022-01710-x · Ruff, UC Open 2026
+Barker et al. (2022) doi:10.1038/s41597-022-01710-x · Ruff, N. (2026) "The Role of Foundations in Advancing Open Collaboration and Innovation," UC Open Summit. youtu.be/eBriL3CDNeo
 :::
 
 ::: {.notes}
@@ -157,6 +156,10 @@ A **multi-campus collaboration** treating open source as shared infrastructure.
 * Serves 280,000+ students and 25,000+ faculty
 
 Acts as a **neutral convener**: no single campus, company, or grant cycle can pull the work away.
+
+::: {.small}
+Ruff (2026) UC Open Summit · youtu.be/eBriL3CDNeo
+:::
 
 ::: {.notes}
 IMAGE: a UC campus map with the six member campuses highlighted lands better than a bullet list here.
@@ -320,6 +323,10 @@ Baltes, Cheong & Treude (2026) arxiv:2603.27249 · GitClear (2024) "Coding on Co
 **90%** of notable AI models come from a handful of companies
 
 Academia is being sidelined from the systems it helped create.
+
+::: {.small style="color:#aac4e8;"}
+Ruff (2026) UC Open Summit · youtu.be/eBriL3CDNeo
+:::
 :::
 
 :::
