@@ -54,7 +54,7 @@ People in this room helped build the open data movement:
 * Open science infrastructure: repositories, PIDs, metadata standards
 * **FAIR4RS**: FAIR principles now extended to research software
 
-**Software is the next frontier** — and UC has been showing the way for 50 years: BSD Unix, Apache Spark, RISC-V, Ray. The pipeline from university research to global infrastructure is not rare or accidental.
+**Software is the next frontier** — and UC has been showing the way for 50 years: BSD Unix, Ceph, Apache Spark, RISC-V, Ray. The pipeline from university research to global infrastructure is not rare or accidental.
 
 > "The research done in academia was the seed. Foundations provided the soil. But the community was the sun."
 
@@ -67,7 +67,19 @@ IMAGE: the FAIR principles diagram or a simple timeline of open data milestones 
 
 FAIR did not happen by accident. It happened because data professionals insisted that data deserved first-class treatment as a scholarly output. FAIR4RS (Barker et al. 2022, RDA/FORCE11/ReSA working group) applies the same Findable, Accessible, Interoperable, Reusable framework to software. We are at that same inflection point.
 
-The UC pipeline is the concrete proof: BSD Unix at Berkeley, Apache Spark from the AMPLab (2009, donated to Apache; Databricks followed), RISC-V from Berkeley (2010 teaching tool, now 350+ org members in 70 countries, ships in billions of devices), Ray from the RISELab (2016 class project, donated to Linux Foundation in 2025, now core OpenAI compute infrastructure). Ruff's point: "The students writing their class projects this very semester may be creating the next Ray." That is not a metaphor. It is a track record.
+The UC pipeline is the concrete proof:
+
+BSD Unix — Berkeley, 1970s–80s. The licensing model that made open source possible.
+
+Ceph — UCSC Storage Systems Research Center, started 2004. Sage Weil's doctoral dissertation under Prof. Scott A. Brandt, designed from the ground up for exabyte-scale distributed storage on commodity hardware. The Ceph client was merged into the Linux kernel by 2010. Weil founded Inktank to commercialize it; Red Hat acquired Inktank in 2014. The Linux Foundation launched the Ceph Foundation in 2018 to give it neutral governance independent of any single vendor. Critically: the proceeds from that commercialization funded CROSS at UCSC, which became the first UC OSPO and the seed of this network.
+
+Apache Spark — Berkeley AMPLab, 2009. Donated to Apache before commercializing; Databricks followed. Now valued at $60B+.
+
+RISC-V — Berkeley, 2010. A three-month teaching tool that became a global open CPU standard with 350+ org members in 70 countries, shipping in billions of devices.
+
+Ray — Berkeley RISELab, 2016 class project. Donated to Linux Foundation in 2025. Now core infrastructure for the OpenAI compute stack.
+
+Ruff's point: "The students writing their class projects this very semester may be creating the next Ray." That is not a metaphor. It is a track record.
 :::
 
 ---
@@ -164,7 +176,7 @@ Ruff (2026) UC Open Summit · youtu.be/eBriL3CDNeo
 ::: {.notes}
 IMAGE: a UC campus map with the six member campuses highlighted lands better than a bullet list here.
 
-UCSC had the head start. Sage Weil, creator of Ceph, sold it to Red Hat and used the proceeds to fund the Center for Research in Open Source Software in 2015. That became the first UC OSPO in 2022. Sloan then funded the network model to test what a statewide system could do that single campuses could not.
+UCSC had the head start. Sage Weil developed Ceph as his 2004 dissertation at UCSC's Storage Systems Research Center under Prof. Scott A. Brandt. He founded Inktank to commercialize it; Red Hat acquired Inktank in 2014. Those proceeds funded the Center for Research in Open Source Software (CROSS) at UCSC, which became the first UC OSPO in 2022. Sloan then funded the network model to test what a statewide system could do that single campuses could not.
 
 The neutral convener framing comes directly from Nithya Ruff on why foundations work (UC Open 2026, 8:17–8:49): "when Berkeley students donate code to the Apache Software Foundation or the Linux Foundation, the code is actually held in a neutral trust place. No single company can pull on it. No single country can claim it." The UC OSPO Network does this at system scale for policy, tooling, and governance — not code per se, but the institutional scaffolding around it.
 :::
