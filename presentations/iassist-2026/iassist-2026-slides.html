@@ -99,7 +99,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="iassist-2026-slides_files/libs/revealjs/dist/theme/quarto-d8c91a17ad340fa5ed7ddafccec5c6c8.css">
+  <link rel="stylesheet" href="iassist-2026-slides_files/libs/revealjs/dist/theme/quarto-02fda46f67414a27a9644f836c9fa9f8.css">
   <link href="iassist-2026-slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="iassist-2026-slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="iassist-2026-slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -282,6 +282,79 @@ Tim Dennis
           display:block!important;
       }</style></aside>
 </section>
+<section id="the-uc-research-to-infrastructure-pipeline" class="slide level2">
+<h2>The UC research-to-infrastructure pipeline</h2>
+<div class="uc-oss-grid" role="list" aria-label="Open source projects by UC campus">
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC Berkeley</span>
+<div class="logo-row">
+<div class="logo-item">
+<img src="images/jupyter-logo.svg" alt="Jupyter"><span>Jupyter</span>
+</div>
+<div class="logo-item">
+<img src="images/spark-logo.png" alt="Apache Spark"><span>Apache Spark</span>
+</div>
+<div class="logo-item">
+<img src="images/riscv-logo.svg" alt="RISC-V"><span>RISC-V</span>
+</div>
+<div class="logo-item">
+<img src="images/ray-logo.png" alt="Ray"><span>Ray</span>
+</div>
+<p><span class="project-badge">BSD Unix</span></p>
+</div>
+</div>
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC Santa Cruz</span>
+<div class="logo-row">
+<div class="logo-item logo-item-sm">
+<img src="images/ceph-logo.svg" alt="Ceph"><span>Ceph</span>
+</div>
+<p><span class="project-badge">UCSC Genome Browser</span></p>
+</div>
+</div>
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC San Diego</span>
+<div class="logo-row">
+<p><span class="project-badge">Cytoscape</span> <span class="project-badge">EEGLAB</span> <span class="project-badge">UCSD Pascal</span></p>
+</div>
+</div>
+<div class="campus-block" role="listitem">
+<span class="campus-label">UCLA</span>
+<div class="logo-row">
+<p><span class="project-badge">Named Data Networking</span> <span class="project-badge">tz database</span></p>
+</div>
+</div>
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC San Francisco</span>
+<div class="logo-row">
+<p><span class="project-badge">ChimeraX</span> <span class="project-badge">OpenMM</span></p>
+</div>
+</div>
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC Davis</span>
+<div class="logo-row">
+<div class="logo-item logo-item-sm">
+<img src="images/sourmash-logo.png" alt="sourmash"><span>sourmash</span>
+</div>
+<p><span class="project-badge">ERPLAB</span></p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>The Gemini research surfaced this breadth — systems infrastructure (Berkeley, UCSC), bioinformatics and neuroscience pipelines (UCSD, UCSF, Davis), and internet infrastructure (UCLA). Berkeley gets the headline logos because those are the ones your audience already uses or has heard of. But the point is the pattern: grant-funded university research, permissive license, donated to a foundation or commercialized and then open, now embedded in global systems.</p>
+<p>UCSD Pascal in 1979 was doing virtual machine portability before Java. The tz database is in every OS clock on the planet. UCSC’s Genome Browser hosted the first public human genome assembly. This is not a short list of lucky accidents.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="what-is-an-academic-ospo" class="slide level2">
 <h2>What is an academic OSPO?</h2>
 <div class="columns">
@@ -295,8 +368,8 @@ Tim Dennis
 </ul>
 </div><div class="column" style="width:56%;">
 <div class="cell hidden">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="105" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 104;"><span id="cb1-105"><a href=""></a>world_topo <span class="op">=</span> <span class="fu">fetch</span>(<span class="st">"https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"</span>)<span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
-<span id="cb1-106"><a href=""></a>members <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"curioss-members.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="171" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 170;"><span id="cb1-171"><a href=""></a>world_topo <span class="op">=</span> <span class="fu">fetch</span>(<span class="st">"https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"</span>)<span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
+<span id="cb1-172"><a href=""></a>members <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"curioss-members.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -313,35 +386,35 @@ Tim Dennis
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="110" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 109;"><span id="cb2-110"><a href=""></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb2-111"><a href=""></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
-<span id="cb2-112"><a href=""></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"equal-earth"</span><span class="op">,</span></span>
-<span id="cb2-113"><a href=""></a>    <span class="dt">domain</span><span class="op">:</span> {</span>
-<span id="cb2-114"><a href=""></a>      <span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span></span>
-<span id="cb2-115"><a href=""></a>      <span class="dt">coordinates</span><span class="op">:</span> members<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> [<span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span>])</span>
-<span id="cb2-116"><a href=""></a>    }<span class="op">,</span></span>
-<span id="cb2-117"><a href=""></a>    <span class="dt">inset</span><span class="op">:</span> <span class="dv">40</span></span>
-<span id="cb2-118"><a href=""></a>  }<span class="op">,</span></span>
-<span id="cb2-119"><a href=""></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">660</span><span class="op">,</span></span>
-<span id="cb2-120"><a href=""></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">340</span><span class="op">,</span></span>
-<span id="cb2-121"><a href=""></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span>}<span class="op">,</span></span>
-<span id="cb2-122"><a href=""></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb2-123"><a href=""></a>    Plot<span class="op">.</span><span class="fu">graticule</span>({<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span>})<span class="op">,</span></span>
-<span id="cb2-124"><a href=""></a>    Plot<span class="op">.</span><span class="fu">geo</span>(topojson<span class="op">.</span><span class="fu">feature</span>(world_topo<span class="op">,</span> world_topo<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">land</span>)<span class="op">,</span> {</span>
-<span id="cb2-125"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ccc"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span></span>
-<span id="cb2-126"><a href=""></a>    })<span class="op">,</span></span>
-<span id="cb2-127"><a href=""></a>    Plot<span class="op">.</span><span class="fu">dot</span>(members<span class="op">,</span> {</span>
-<span id="cb2-128"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
-<span id="cb2-129"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
-<span id="cb2-130"><a href=""></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">7</span><span class="op">,</span></span>
-<span id="cb2-131"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">uc_network</span> <span class="op">===</span> <span class="st">"yes"</span> <span class="op">?</span> <span class="st">"#ff9100"</span> <span class="op">:</span> <span class="st">"#003cb3"</span><span class="op">,</span></span>
-<span id="cb2-132"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
-<span id="cb2-133"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
-<span id="cb2-134"><a href=""></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb2-135"><a href=""></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">name</span></span>
-<span id="cb2-136"><a href=""></a>    })</span>
-<span id="cb2-137"><a href=""></a>  ]</span>
-<span id="cb2-138"><a href=""></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="176" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 175;"><span id="cb2-176"><a href=""></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-177"><a href=""></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
+<span id="cb2-178"><a href=""></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"equal-earth"</span><span class="op">,</span></span>
+<span id="cb2-179"><a href=""></a>    <span class="dt">domain</span><span class="op">:</span> {</span>
+<span id="cb2-180"><a href=""></a>      <span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span></span>
+<span id="cb2-181"><a href=""></a>      <span class="dt">coordinates</span><span class="op">:</span> members<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> [<span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span>])</span>
+<span id="cb2-182"><a href=""></a>    }<span class="op">,</span></span>
+<span id="cb2-183"><a href=""></a>    <span class="dt">inset</span><span class="op">:</span> <span class="dv">40</span></span>
+<span id="cb2-184"><a href=""></a>  }<span class="op">,</span></span>
+<span id="cb2-185"><a href=""></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">660</span><span class="op">,</span></span>
+<span id="cb2-186"><a href=""></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">340</span><span class="op">,</span></span>
+<span id="cb2-187"><a href=""></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span>}<span class="op">,</span></span>
+<span id="cb2-188"><a href=""></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-189"><a href=""></a>    Plot<span class="op">.</span><span class="fu">graticule</span>({<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span>})<span class="op">,</span></span>
+<span id="cb2-190"><a href=""></a>    Plot<span class="op">.</span><span class="fu">geo</span>(topojson<span class="op">.</span><span class="fu">feature</span>(world_topo<span class="op">,</span> world_topo<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">land</span>)<span class="op">,</span> {</span>
+<span id="cb2-191"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ccc"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span></span>
+<span id="cb2-192"><a href=""></a>    })<span class="op">,</span></span>
+<span id="cb2-193"><a href=""></a>    Plot<span class="op">.</span><span class="fu">dot</span>(members<span class="op">,</span> {</span>
+<span id="cb2-194"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
+<span id="cb2-195"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
+<span id="cb2-196"><a href=""></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">7</span><span class="op">,</span></span>
+<span id="cb2-197"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">uc_network</span> <span class="op">===</span> <span class="st">"yes"</span> <span class="op">?</span> <span class="st">"#ff9100"</span> <span class="op">:</span> <span class="st">"#003cb3"</span><span class="op">,</span></span>
+<span id="cb2-198"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb2-199"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
+<span id="cb2-200"><a href=""></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb2-201"><a href=""></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">name</span></span>
+<span id="cb2-202"><a href=""></a>    })</span>
+<span id="cb2-203"><a href=""></a>  ]</span>
+<span id="cb2-204"><a href=""></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="expression">
 

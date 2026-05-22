@@ -84,6 +84,72 @@ Ruff's point: "The students writing their class projects this very semester may 
 
 ---
 
+## The UC research-to-infrastructure pipeline
+
+<div class="uc-oss-grid" role="list" aria-label="Open source projects by UC campus">
+
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC Berkeley</span>
+<div class="logo-row">
+<div class="logo-item"><img src="images/jupyter-logo.svg" alt="Jupyter"><span>Jupyter</span></div>
+<div class="logo-item"><img src="images/spark-logo.png" alt="Apache Spark"><span>Apache Spark</span></div>
+<div class="logo-item"><img src="images/riscv-logo.svg" alt="RISC-V"><span>RISC-V</span></div>
+<div class="logo-item"><img src="images/ray-logo.png" alt="Ray"><span>Ray</span></div>
+<span class="project-badge">BSD Unix</span>
+</div>
+</div>
+
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC Santa Cruz</span>
+<div class="logo-row">
+<div class="logo-item logo-item-sm"><img src="images/ceph-logo.svg" alt="Ceph"><span>Ceph</span></div>
+<span class="project-badge">UCSC Genome Browser</span>
+</div>
+</div>
+
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC San Diego</span>
+<div class="logo-row">
+<span class="project-badge">Cytoscape</span>
+<span class="project-badge">EEGLAB</span>
+<span class="project-badge">UCSD Pascal</span>
+</div>
+</div>
+
+<div class="campus-block" role="listitem">
+<span class="campus-label">UCLA</span>
+<div class="logo-row">
+<span class="project-badge">Named Data Networking</span>
+<span class="project-badge">tz database</span>
+</div>
+</div>
+
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC San Francisco</span>
+<div class="logo-row">
+<span class="project-badge">ChimeraX</span>
+<span class="project-badge">OpenMM</span>
+</div>
+</div>
+
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC Davis</span>
+<div class="logo-row">
+<div class="logo-item logo-item-sm"><img src="images/sourmash-logo.png" alt="sourmash"><span>sourmash</span></div>
+<span class="project-badge">ERPLAB</span>
+</div>
+</div>
+
+</div>
+
+::: {.notes}
+The Gemini research surfaced this breadth — systems infrastructure (Berkeley, UCSC), bioinformatics and neuroscience pipelines (UCSD, UCSF, Davis), and internet infrastructure (UCLA). Berkeley gets the headline logos because those are the ones your audience already uses or has heard of. But the point is the pattern: grant-funded university research, permissive license, donated to a foundation or commercialized and then open, now embedded in global systems.
+
+UCSD Pascal in 1979 was doing virtual machine portability before Java. The tz database is in every OS clock on the planet. UCSC's Genome Browser hosted the first public human genome assembly. This is not a short list of lucky accidents.
+:::
+
+---
+
 ## What is an academic OSPO?
 
 :::: {.columns}
