@@ -30,7 +30,7 @@ Research data workflows run on open source:
 
 **92%** of researchers use software; **67%** say their research would be impossible without it.
 
-Most institutions have no coordinated support for the people keeping it running.
+The people keeping it running are increasingly called **Research Software Engineers (RSEs)** - a growing professional community with no standard institutional home.
 
 ::: {.small}
 Hettrick et al. (SSI, 2014/2022)
@@ -39,7 +39,7 @@ Hettrick et al. (SSI, 2014/2022)
 ::: {.notes}
 IMAGE: a grid of OSS tool logos researchers actually use — Jupyter, Python, R, Git, Pandas, numpy, ggplot2. Makes the "invisible layer" concrete before you say a word.
 
-Start with what this room knows. 92% of researchers depend on software; two-thirds say their work would stop without it. When a maintainer burns out, a key library gets abandoned. A licensing question blocks a publication. There is often nowhere to turn. That is the gap.
+Start with what this room knows. 92% of researchers depend on software; two-thirds say their work would stop without it. The people doing this work are increasingly organizing under the RSE identity — US-RSE launched in 2018 and now has thousands of members. When a maintainer burns out, a key library gets abandoned. A licensing question blocks a publication. There is often nowhere to turn. That is the gap.
 :::
 
 ---
@@ -52,15 +52,20 @@ People in this room helped build the open data movement:
 * Data management plans embedded in grant workflows
 * Curation, provenance, and stewardship as professional services
 * Open science infrastructure: repositories, PIDs, metadata standards
+* **FAIR4RS**: FAIR principles now extended to research software
 
 **Software is the next frontier.**
 
 The scripts that collect, clean, and analyze research data *are* research outputs. They deserve the same treatment.
 
+::: {.small}
+Barker et al. (2022) doi:10.1038/s41597-022-01710-x
+:::
+
 ::: {.notes}
 IMAGE: the FAIR principles diagram or a simple timeline of open data milestones works here if you want a visual anchor.
 
-FAIR did not happen by accident. It happened because data professionals insisted that data deserved first-class treatment as a scholarly output. We are at that same point with software. Researchers already know their code matters. What is missing is the institutional scaffolding. That is what OSPOs provide, and it is why this is a data services story, not just a software story.
+FAIR did not happen by accident. It happened because data professionals insisted that data deserved first-class treatment as a scholarly output. FAIR4RS (Barker et al. 2022, RDA/FORCE11/ReSA working group) applies the same Findable, Accessible, Interoperable, Reusable framework to software. We are at that same inflection point. What is missing is the institutional scaffolding — the policy, the training, the governance structures. That is what OSPOs provide, and it is why this is a data services story, not just a software story.
 :::
 
 ---
@@ -370,8 +375,9 @@ For data professionals, the OSPO sits at the intersection of:
 
 * Research software engineering ↔ data management
 * Licensing compliance ↔ open data policy
-* Reproducibility tooling ↔ FAIR principles
+* Reproducibility tooling ↔ FAIR / FAIR4RS
 * Training infrastructure ↔ data literacy programs
+* RSE community ↔ library research support
 
 **For your institution:**
 
@@ -379,7 +385,7 @@ For data professionals, the OSPO sits at the intersection of:
 * What would it take to treat it as infrastructure rather than a side project?
 
 ::: {.notes}
-This is the invitation. IASSIST members are exactly the people who should be at the OSPO table. You work across the research lifecycle, you understand data governance, you run training programs. The question is whether your institution has made the connection yet.
+This is the invitation. IASSIST members are exactly the people who should be at the OSPO table. You work across the research lifecycle, you understand data governance, you run training programs. RSEs are natural collaborators — many are already embedded in or adjacent to library services. The question is whether your institution has made the connection yet. If you have an RSE group, a research computing team, or a data science center, the OSPO conversation belongs there too.
 :::
 
 ---
