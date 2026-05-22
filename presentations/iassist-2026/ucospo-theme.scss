@@ -144,16 +144,6 @@ $code-bg:                       $uc-muted;
   gap: 1.5em;
 }
 
-// Equal-height cards: scope to the thematic-areas slide only
-.reveal .thematic-areas.columns {
-  align-items: stretch;
-}
-
-.reveal .thematic-areas.columns > .column {
-  display: flex;
-  flex-direction: column;
-}
-
 
 // ── Footer ────────────────────────────────────────────────────────────────────
 
