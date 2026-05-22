@@ -26,17 +26,19 @@ jobs:
         run: quarto render presentations/iassist-2026/iassist-2026-slides.qmd
 
       - name: Generate PDF
-        env:
-          PUPPETEER_LAUNCH_OPTIONS: '{"args":["--no-sandbox","--disable-setuid-sandbox","--disable-dev-shm-usage"]}'
         run: |
           python3 -m http.server 3000 --directory presentations/iassist-2026 &
           SERVER_PID=$!
-          sleep 4
-          npx --yes decktape reveal \
-            http://localhost:3000/iassist-2026-slides.html \
-            presentations/iassist-2026/iassist-2026-slides.pdf \
-            --size 1280x720 \
-            --load-pause 3000
+          sleep 8
+          CHROME=$(which google-chrome-stable || which google-chrome || which chromium-browser)
+          $CHROME \
+            --headless=new \
+            --no-sandbox \
+            --disable-setuid-sandbox \
+            --disable-dev-shm-usage \
+            --run-all-compositor-stages-before-draw \
+            --print-to-pdf="$(pwd)/presentations/iassist-2026/iassist-2026-slides.pdf" \
+            "http://localhost:3000/iassist-2026-slides.html?print-pdf"
           kill $SERVER_PID 2>/dev/null || true
 
       - name: Deploy to GitHub Pages
