@@ -551,49 +551,101 @@ border-bottom: 2px solid var(--navy);
 padding-bottom: 0.18em;
 margin-bottom: 0.45em;
 }
-.project-list { display: flex; flex-direction: column; gap: 0.42em; }
-.project-entry { display: flex; gap: 0.55em; align-items: flex-start; }
-.project-accent {
-flex-shrink: 0;
-width: 3px;
-background: var(--orange);
-border-radius: 2px;
-align-self: stretch;
-min-height: 2em;
+
+.timeline {
+position: relative;
+display: block;
 }
-.project-name-row {
+
+.timeline::before {
+content: '';
+position: absolute;
+left: 2.8em;
+top: 0;
+bottom: 0;
+width: 1.5px;
+background: var(--border);
+z-index: 0;
+}
+.era-label {
+display: block;
+font-size: 6pt;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+color: var(--orange);
+padding: 0.42em 0 0.16em 3.5em;
+position: relative;
+z-index: 1;
+}
+.era-label:first-child {
+padding-top: 0;
+}
+.tl-entry {
+display: grid;
+grid-template-columns: 2.1em 0.9em 1fr;
+gap: 0 0.25em;
+align-items: start;
+margin-bottom: 0.33em;
+position: relative;
+z-index: 1;
+}
+.tl-year {
+font-size: 6pt;
+font-weight: 700;
+color: #999;
+text-align: right;
+padding-top: 0.15em;
+line-height: 1.2;
+}
+.tl-dot-col {
+display: flex;
+justify-content: center;
+padding-top: 0.22em;
+}
+.tl-dot {
+width: 7px;
+height: 7px;
+border-radius: 50%;
+background: var(--orange);
+border: 1.5px solid #fff;
+flex-shrink: 0;
+}
+.tl-body { min-width: 0; }
+.tl-name-row {
 display: flex;
 align-items: baseline;
-gap: 0.45em;
+gap: 0.4em;
 flex-wrap: wrap;
-margin-bottom: 0.08em;
+margin-bottom: 0.04em;
 }
-.project-name {
+.tl-name {
 font-weight: 700;
 color: var(--navy);
-font-size: 9pt;
+font-size: 8.5pt;
 }
-.project-origin {
-font-size: 7.5pt;
+.tl-origin {
+font-size: 6.5pt;
 color: var(--small);
 }
-.project-desc {
-font-size: 8.5pt;
-line-height: 1.38;
+.tl-desc {
+font-size: 8pt;
+line-height: 1.36;
 }
-.project-link {
-font-size: 7.5pt;
+.tl-link {
+font-size: 7pt;
 color: var(--blue);
 text-decoration: none;
 margin-left: 0.3em;
 white-space: nowrap;
 }
-.project-link:hover { color: var(--orange); }
+.tl-link:hover { color: var(--orange); }
+
 .also-list {
 display: flex;
 flex-wrap: wrap;
 gap: 0.28em;
-margin-top: 0.45em;
+margin-top: 0.38em;
 }
 .also-badge {
 background: var(--muted);
@@ -605,6 +657,7 @@ color: var(--navy);
 font-weight: 600;
 white-space: nowrap;
 }
+
 .right-col { display: flex; flex-direction: column; gap: 0.6em; }
 .panel { border: 1px solid var(--border); border-radius: 5px; overflow: hidden; }
 .panel-head {
@@ -677,121 +730,143 @@ a { color: var(--blue) !important; }
 
 <div class="section-label">From Dissertation to Global Infrastructure</div>
 
-<div class="project-list">
+<div class="timeline">
 
-  <div class="project-entry">
-    <div class="project-accent"></div>
-    <div class="project-body">
-      <div class="project-name-row">
-        <span class="project-name">BSD Unix</span>
-        <span class="project-origin">UC Berkeley · 1970s–80s</span>
+  <div class="era-label">Open Source Foundation</div>
+
+  <div class="tl-entry">
+    <div class="tl-year">1977</div>
+    <div class="tl-dot-col"><div class="tl-dot"></div></div>
+    <div class="tl-body">
+      <div class="tl-name-row">
+        <span class="tl-name">BSD Unix</span>
+        <span class="tl-origin">UC Berkeley</span>
       </div>
-      <div class="project-desc">The permissive licensing model that made open source possible; MIT, Apache, and BSD licenses now govern billions of lines of production software. <a class="project-link" href="https://www.mckusick.com/history/index.html">history →</a></div>
+      <div class="tl-desc">Permissive licensing that made open source possible. MIT, Apache, and BSD licenses now govern billions of lines of production software. <a class="tl-link" href="https://www.mckusick.com/history/index.html">history →</a></div>
     </div>
   </div>
 
-  <div class="project-entry">
-    <div class="project-accent"></div>
-    <div class="project-body">
-      <div class="project-name-row">
-        <span class="project-name">Jupyter</span>
-        <span class="project-origin">UC Berkeley · 2001–2014</span>
+  <div class="era-label">Universal Infrastructure</div>
+
+  <div class="tl-entry">
+    <div class="tl-year">1986</div>
+    <div class="tl-dot-col"><div class="tl-dot"></div></div>
+    <div class="tl-body">
+      <div class="tl-name-row">
+        <span class="tl-name">tz database</span>
+        <span class="tl-origin">UCLA (Paul Eggert, since 2005)</span>
       </div>
-      <div class="project-desc">Fernando Pérez built the first IPython in an afternoon procrastinating on his physics dissertation. Now the dominant interface for interactive computing across science, AI, and data education worldwide. <a class="project-link" href="https://jupyter.org">jupyter.org →</a></div>
+      <div class="tl-desc">Every OS clock on the planet depends on this. Eggert used 19th-century almanacs to reconstruct pre-1883 timezone history. A 2011 IP lawsuit nearly took it offline; IANA now has stewardship. <a class="tl-link" href="https://www.iana.org/time-zones">iana.org/time-zones →</a></div>
     </div>
   </div>
 
-  <div class="project-entry">
-    <div class="project-accent"></div>
-    <div class="project-body">
-      <div class="project-name-row">
-        <span class="project-name">UCSC Genome Browser</span>
-        <span class="project-origin">UC Santa Cruz · Summer 2000</span>
+  <div class="era-label">Open Science</div>
+
+  <div class="tl-entry">
+    <div class="tl-year">2000</div>
+    <div class="tl-dot-col"><div class="tl-dot"></div></div>
+    <div class="tl-body">
+      <div class="tl-name-row">
+        <span class="tl-name">UCSC Genome Browser</span>
+        <span class="tl-origin">UC Santa Cruz</span>
       </div>
-      <div class="project-desc">Jim Kent assembled the human genome on 50 borrowed PCs, finishing three days before Celera Genomics and its supercomputer. The genome stayed in the public domain. <a class="project-link" href="https://genome.ucsc.edu">genome.ucsc.edu →</a></div>
+      <div class="tl-desc">Jim Kent assembled the human genome on 50 borrowed PCs, finishing three days before Celera Genomics and its supercomputer. The genome stayed in the public domain. <a class="tl-link" href="https://genome.ucsc.edu">genome.ucsc.edu →</a></div>
     </div>
   </div>
 
-  <div class="project-entry">
-    <div class="project-accent"></div>
-    <div class="project-body">
-      <div class="project-name-row">
-        <span class="project-name">Ceph</span>
-        <span class="project-origin">UC Santa Cruz · 2004</span>
+  <div class="era-label">Scientific Computing &amp; Domain Science</div>
+
+  <div class="tl-entry">
+    <div class="tl-year">2001</div>
+    <div class="tl-dot-col"><div class="tl-dot"></div></div>
+    <div class="tl-body">
+      <div class="tl-name-row">
+        <span class="tl-name">Jupyter</span>
+        <span class="tl-origin">UC Berkeley</span>
       </div>
-      <div class="project-desc">Sage Weil’s PhD dissertation on exabyte-scale distributed storage. Merged into the Linux kernel (2010); proceeds from commercialization funded <strong>CROSS at UCSC</strong>, the first UC OSPO and the seed of this network. <a class="project-link" href="https://ceph.io">ceph.io →</a></div>
+      <div class="tl-desc">Fernando Pérez built the first IPython in an afternoon procrastinating on his physics dissertation. Now the dominant interface for interactive computing across science, AI, and data education worldwide. <a class="tl-link" href="https://jupyter.org">jupyter.org →</a></div>
     </div>
   </div>
 
-  <div class="project-entry">
-    <div class="project-accent"></div>
-    <div class="project-body">
-      <div class="project-name-row">
-        <span class="project-name">Apache Spark</span>
-        <span class="project-origin">UC Berkeley AMPLab · 2009</span>
+  <div class="tl-entry">
+    <div class="tl-year">2001</div>
+    <div class="tl-dot-col"><div class="tl-dot"></div></div>
+    <div class="tl-body">
+      <div class="tl-name-row">
+        <span class="tl-name">EEGLAB</span>
+        <span class="tl-origin">UC San Diego</span>
       </div>
-      <div class="project-desc">Matei Zaharia built it so a classmate could beat the Netflix Prize with faster distributed ML. Donated to Apache before commercializing. Databricks now valued at <strong>$62B+</strong>. <a class="project-link" href="https://spark.apache.org">spark.apache.org →</a></div>
+      <div class="tl-desc">The world&#39;s premier open-source environment for electrophysiological signal processing. Over <strong>350,000 downloads</strong>; the 2004 foundational paper has <strong>14,400+ citations</strong>, among the highest academic footprints of any scientific software. <a class="tl-link" href="https://sccn.ucsd.edu/eeglab/">eeglab →</a></div>
     </div>
   </div>
 
-  <div class="project-entry">
-    <div class="project-accent"></div>
-    <div class="project-body">
-      <div class="project-name-row">
-        <span class="project-name">RISC-V</span>
-        <span class="project-origin">UC Berkeley · 2010</span>
+  <div class="tl-entry">
+    <div class="tl-year">2003</div>
+    <div class="tl-dot-col"><div class="tl-dot"></div></div>
+    <div class="tl-body">
+      <div class="tl-name-row">
+        <span class="tl-name">Cytoscape</span>
+        <span class="tl-origin">UC San Diego</span>
       </div>
-      <div class="project-desc">A three-month summer project to avoid paying ARM royalties. Now in <strong>10 billion devices</strong>, 350+ member organizations in 70 countries. Foundation relocated to Switzerland in 2020 to stay neutral in US-China trade tensions. <a class="project-link" href="https://riscv.org">riscv.org →</a></div>
+      <div class="tl-desc">The global standard for network biology: visualizing disease pathways, protein interactions, and molecular networks. Over <strong>300,000 downloads per year</strong>; foundational to cancer and therapeutic research worldwide. <a class="tl-link" href="https://cytoscape.org">cytoscape.org →</a></div>
     </div>
   </div>
 
-  <div class="project-entry">
-    <div class="project-accent"></div>
-    <div class="project-body">
-      <div class="project-name-row">
-        <span class="project-name">Ray</span>
-        <span class="project-origin">UC Berkeley RISELab · 2016</span>
+  <div class="era-label">Infrastructure at Scale</div>
+
+  <div class="tl-entry">
+    <div class="tl-year">2004</div>
+    <div class="tl-dot-col"><div class="tl-dot"></div></div>
+    <div class="tl-body">
+      <div class="tl-name-row">
+        <span class="tl-name">Ceph</span>
+        <span class="tl-origin">UC Santa Cruz</span>
       </div>
-      <div class="project-desc">Two PhD students tired of rewriting Python to scale. Now <strong>core OpenAI compute infrastructure</strong>. Donated to the Linux Foundation in 2025. <a class="project-link" href="https://ray.io">ray.io →</a></div>
+      <div class="tl-desc">Sage Weil’s PhD dissertation on exabyte-scale distributed storage. Merged into the Linux kernel (2010); commercialization proceeds funded <strong>CROSS at UCSC</strong>, the first UC OSPO and seed of this network. <a class="tl-link" href="https://ceph.io">ceph.io →</a></div>
     </div>
   </div>
 
-  <div class="project-entry">
-    <div class="project-accent"></div>
-    <div class="project-body">
-      <div class="project-name-row">
-        <span class="project-name">Cytoscape</span>
-        <span class="project-origin">UC San Diego · 2003</span>
+  <div class="tl-entry">
+    <div class="tl-year">2009</div>
+    <div class="tl-dot-col"><div class="tl-dot"></div></div>
+    <div class="tl-body">
+      <div class="tl-name-row">
+        <span class="tl-name">Apache Spark</span>
+        <span class="tl-origin">UC Berkeley AMPLab</span>
       </div>
-      <div class="project-desc">The global standard platform for network biology: visualizing disease pathways, protein interactions, and molecular networks. Over <strong>300,000 downloads per year</strong>; foundational to cancer and therapeutic research worldwide. <a class="project-link" href="https://cytoscape.org">cytoscape.org →</a></div>
+      <div class="tl-desc">Matei Zaharia built it so a classmate could beat the Netflix Prize with faster distributed ML. Donated to Apache before commercializing. Databricks now valued at <strong>$62B+</strong>. <a class="tl-link" href="https://spark.apache.org">spark.apache.org →</a></div>
     </div>
   </div>
 
-  <div class="project-entry">
-    <div class="project-accent"></div>
-    <div class="project-body">
-      <div class="project-name-row">
-        <span class="project-name">EEGLAB</span>
-        <span class="project-origin">UC San Diego · 1997–2001</span>
+  <div class="tl-entry">
+    <div class="tl-year">2010</div>
+    <div class="tl-dot-col"><div class="tl-dot"></div></div>
+    <div class="tl-body">
+      <div class="tl-name-row">
+        <span class="tl-name">RISC-V</span>
+        <span class="tl-origin">UC Berkeley</span>
       </div>
-      <div class="project-desc">The world&#39;s premier open-source environment for electrophysiological signal processing. Over <strong>350,000 downloads</strong>; the 2004 foundational paper has <strong>14,400+ citations</strong>, among the highest academic footprints of any scientific software. <a class="project-link" href="https://sccn.ucsd.edu/eeglab/">eeglab →</a></div>
+      <div class="tl-desc">A three-month summer project to avoid paying ARM royalties. Now in <strong>10 billion devices</strong>, 350+ member organizations in 70 countries. Foundation relocated to Switzerland in 2020 to stay neutral in US-China trade tensions. <a class="tl-link" href="https://riscv.org">riscv.org →</a></div>
     </div>
   </div>
 
-  <div class="project-entry">
-    <div class="project-accent"></div>
-    <div class="project-body">
-      <div class="project-name-row">
-        <span class="project-name">tz database</span>
-        <span class="project-origin">UCLA · maintained by Paul Eggert since 2005</span>
+  <div class="era-label">AI Infrastructure</div>
+
+  <div class="tl-entry">
+    <div class="tl-year">2016</div>
+    <div class="tl-dot-col"><div class="tl-dot"></div></div>
+    <div class="tl-body">
+      <div class="tl-name-row">
+        <span class="tl-name">Ray</span>
+        <span class="tl-origin">UC Berkeley RISELab</span>
       </div>
-      <div class="project-desc">Every OS clock on the planet depends on this. To reconstruct pre-1883 timezone history, Eggert used almanacs compiled by 19th-century astrologers. In 2011 an IP lawsuit nearly took it offline; the community rallied and IANA took stewardship. <a class="project-link" href="https://www.iana.org/time-zones">iana.org/time-zones →</a></div>
+      <div class="tl-desc">Two PhD students tired of rewriting Python to scale. Now <strong>core OpenAI compute infrastructure</strong>. Donated to the Linux Foundation in 2025. <a class="tl-link" href="https://ray.io">ray.io →</a></div>
     </div>
   </div>
 
 </div>
 
-<div style="margin-top:0.45em;">
+<div style="margin-top:0.42em;">
   <div class="section-label" style="font-size:7pt;">Also from UC campuses</div>
   <div class="also-list">
     <span class="also-badge">Processing (UCLA)</span>
