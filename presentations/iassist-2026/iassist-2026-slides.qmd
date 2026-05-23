@@ -27,6 +27,9 @@ format:
 
 ## The invisible layer
 
+:::: {.columns}
+
+::: {.column width="56%"}
 Research data workflows run on open source:
 
 * Data collection, cleaning, analysis, visualization
@@ -35,11 +38,36 @@ Research data workflows run on open source:
 
 **92%** of researchers use software; **67%** say their research would be impossible without it.
 
-The people keeping it running are increasingly called **Research Software Engineers (RSEs)** - a growing professional community with no standard institutional home.
+The people keeping it running are increasingly called **Research Software Engineers (RSEs)** — a growing professional community with no standard institutional home.
 
 ::: {.small}
 Hettrick et al. (SSI, 2014/2022)
 :::
+:::
+
+::: {.column width="44%"}
+<div style="display:flex; flex-direction:column; align-items:center; gap:1.1em; padding-top:0.6em;">
+<div class="logo-row" style="gap:1.8em;">
+<div class="logo-item"><img src="images/jupyter-logo.svg" alt="Jupyter"><span>Jupyter</span></div>
+<div class="logo-item"><img src="images/spark-logo.png" alt="Apache Spark"><span>Apache Spark</span></div>
+<div class="logo-item logo-item-sm"><img src="images/ray-logo.png" alt="Ray"><span>Ray</span></div>
+</div>
+<div style="display:flex; flex-wrap:wrap; gap:0.45em; justify-content:center;">
+<span class="project-badge">Python</span>
+<span class="project-badge">R</span>
+<span class="project-badge">Git</span>
+<span class="project-badge">Pandas</span>
+<span class="project-badge">NumPy</span>
+<span class="project-badge">ggplot2</span>
+<span class="project-badge">dplyr</span>
+<span class="project-badge">Snakemake</span>
+<span class="project-badge">Docker</span>
+<span class="project-badge">Nextflow</span>
+</div>
+</div>
+:::
+
+::::
 
 ::: {.notes}
 IMAGE: a grid of OSS tool logos researchers actually use — Jupyter, Python, R, Git, Pandas, numpy, ggplot2. Makes the "invisible layer" concrete before you say a word.
@@ -286,6 +314,9 @@ The academic model is different from industry. Less about compliance, more about
 
 ## The UC OSPO Network
 
+:::: {.columns}
+
+::: {.column width="48%"}
 A **multi-campus collaboration** treating open source as shared infrastructure.
 
 * 6 campuses: Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, San Diego
@@ -299,9 +330,74 @@ Acts as a **neutral convener**: no single campus, company, or grant cycle can pu
 ::: {.small}
 Ruff (2026) UC Open Summit · youtu.be/eBriL3CDNeo
 :::
+:::
+
+::: {.column width="52%"}
+
+```{ojs}
+//| echo: false
+//| output: false
+ca_states = fetch("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json").then(r => r.json())
+uc_network_campuses = [
+  {name: "UC Santa Cruz", short: "UCSC", lon: -122.0583, lat: 36.9741},
+  {name: "UC Berkeley", short: "UCB", lon: -122.2595, lat: 37.8724},
+  {name: "UC Davis", short: "UCD", lon: -121.7619, lat: 38.5382},
+  {name: "UC Los Angeles", short: "UCLA", lon: -118.4452, lat: 34.0689},
+  {name: "UC Santa Barbara", short: "UCSB", lon: -119.8489, lat: 34.4140},
+  {name: "UC San Diego", short: "UCSD", lon: -117.2340, lat: 32.8801}
+]
+```
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  projection: {
+    type: "mercator",
+    domain: {type: "MultiPoint", coordinates: [[-124.5, 32.4], [-114, 42.1]]}
+  },
+  width: 500,
+  height: 420,
+  style: {background: "transparent"},
+  marks: [
+    Plot.geo(
+      topojson.feature(ca_states, ca_states.objects.states).features.find(d => +d.id === 6),
+      {fill: "#e8eef8", stroke: "#b0bbcc", strokeWidth: 0.8}
+    ),
+    Plot.dot(uc_network_campuses, {
+      x: d => d.lon,
+      y: d => d.lat,
+      r: 10,
+      fill: "#ff9100",
+      stroke: "white",
+      strokeWidth: 1.8,
+      tip: true,
+      title: d => d.name
+    }),
+    Plot.text(uc_network_campuses, {
+      x: d => d.lon,
+      y: d => d.lat,
+      text: d => d.short,
+      dy: -18,
+      fontSize: 13,
+      fontWeight: "bold",
+      fill: "#1f335e",
+      stroke: "white",
+      strokeWidth: 3
+    })
+  ]
+})
+```
+
+::: {.sr-only}
+Map of California showing six UC OSPO Network campuses: Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, and San Diego.
+:::
+
+:::
+
+::::
 
 ::: {.notes}
-IMAGE: a UC campus map with the six member campuses highlighted lands better than a bullet list here.
+Six campuses span the length of the state.
 
 UCSC had the head start. Sage Weil developed Ceph as his 2004 dissertation at UCSC's Storage Systems Research Center under Prof. Scott A. Brandt. He founded Inktank to commercialize it; Red Hat acquired Inktank in 2014. Those proceeds funded the Center for Research in Open Source Software (CROSS) at UCSC, which became the first UC OSPO in 2022. Sloan then funded the network model to test what a statewide system could do that single campuses could not.
 
@@ -403,7 +499,29 @@ Scarlett et al. (2025) doi:10.31235/osf.io/p8bx6_v1 · Tidelift (2024) State of 
 
 ::: {.column width="42%"}
 
-<!-- IMAGE: a photo of a lone developer at a laptop, or the UC ORB health dashboard screenshot. The XKCD comic is on the next slide — save it. -->
+<div style="display:flex; flex-direction:column; gap:0.8em; padding-top:0.2em;">
+
+<div style="background:#1f335e; border-radius:8px; padding:1.1em 1em; color:white; text-align:center;">
+<div style="font-size:2.6em; font-weight:700; color:#ff9100; line-height:1;">58%</div>
+<div style="font-size:0.6em; margin-top:0.3em; line-height:1.4;">of UC OSS contributors<br>are also <strong>maintainers</strong><br><span style="opacity:0.7;">not just users — stewards</span></div>
+</div>
+
+<div style="background:#f0f4fa; border-radius:8px; padding:0.9em 1em; text-align:center;">
+<div style="display:flex; justify-content:space-around; align-items:center;">
+<div>
+<div style="font-size:1.7em; font-weight:700; color:#1f335e; line-height:1;">60%</div>
+<div style="font-size:0.5em; color:#555; margin-top:0.15em;">unpaid nationally</div>
+</div>
+<div style="width:1px; height:2em; background:#c6d2e8;"></div>
+<div>
+<div style="font-size:1.7em; font-weight:700; color:#1f335e; line-height:1;">43%</div>
+<div style="font-size:0.5em; color:#555; margin-top:0.15em;">report burnout</div>
+</div>
+</div>
+<div style="font-size:0.42em; color:#888; margin-top:0.5em;">Tidelift (2024) State of the Open Source Maintainer Report</div>
+</div>
+
+</div>
 
 :::
 
@@ -578,6 +696,56 @@ This is the invitation. IASSIST members are exactly the people who should be at 
 
 ---
 
+## You're already doing this work
+
+:::: {.columns}
+
+::: {.column width="52%"}
+If you do technical data services, researchers are already bringing you these questions:
+
+* "What license should I use for this code?"
+* "Is this library still maintained — should I depend on it?"
+* "How do I make this reproducible and citable?"
+* "My funder wants a software management plan."
+* "How do I accept contributions from collaborators?"
+
+**That is OSPO work.** The frame makes it legible — to you, your institution, and the researchers you serve.
+
+Put it in your portfolio. Teach it to your students. You don't need a formal OSPO to do OSPO work — you need the frame.
+:::
+
+::: {.column width="48%"}
+
+::: {style="background:#1f335e; border-radius:8px; padding:1.2em 1em; color:white; margin-bottom:0.7em;"}
+**The 1σ shift**
+
+Solving the immediate need is necessary.
+
+Moving researchers one standard deviation in their practice — from "it runs on my machine" toward maintainable, licensed, citable software — is what **compounds**.
+:::
+
+::: {style="background:#f0f4fa; border-radius:8px; padding:0.9em 1em; font-size:0.78em;"}
+**OSPO heuristics already in your toolkit:**
+
+health signals · bus factor · governance files · FAIR4RS · software DMPs · contributor conventions · community governance
+:::
+
+:::
+
+::::
+
+::: {.notes}
+The 1σ framing is the core of this slide. The goal is not to turn every data librarian into an OSPO director. The goal is to shift what a researcher walks away from a consultation knowing. If they leave with a license file and a CITATION.cff, that is a one-time fix. If they leave understanding *why* those things matter — for reproducibility, for credit, for compliance — that is a shift in practice that compounds across their lab, their students, their next grant.
+
+The OSPO heuristics are not exotic. Health signals (bus factor, issue velocity, contributor diversity) tell you whether a project will be there next year. Governance files (README, CONTRIBUTING, CODE_OF_CONDUCT) are the equivalent of a data README — they make the project legible to the next person. FAIR4RS and software DMPs are the policy anchors that give researchers a reason to care now.
+
+"Put up your shingle" — you don't need institutional approval to start doing this work in your consultations. Use the vocabulary, the frameworks, the resources from ucospo.net. You are already in the room where these questions get raised. Be the person who has the answer and the frame.
+
+The student angle: if you run Carpentries workshops or data services instruction, adding a session on software health, licensing, and CITATION.cff is a 1σ move for every researcher in that room.
+:::
+
+---
+
 ## What you can do right now
 
 If you advise on data-intensive research, you are probably already helping with code.
@@ -613,6 +781,10 @@ You do not have to build these resources yourself. Laura Langdon published templ
 **Tim Dennis**
 Data Science Center, UCLA Library
 dennis.tim@gmail.com
+
+::: {.small style="margin-top:0.7em; padding:0.5em 0.8em; background:#f0f4fa; border-radius:6px; border-left:3px solid #ff9100;"}
+📄 One-page reference handout (project origins, network stats, resources): [iassist-2026-handout.html](iassist-2026-handout.html)
+:::
 
 ::: {.notes}
 Two things worth following up: UC ORB if they want to see the discovery tooling, and the CURIOSS community if their institution is thinking about starting an OSPO. Leave time for questions — the AI and sustainability slides tend to generate them.

@@ -25,6 +25,9 @@ jobs:
       - name: Render IASSIST 2026 slides
         run: quarto render presentations/iassist-2026/iassist-2026-slides.qmd
 
+      - name: Render IASSIST 2026 handout
+        run: quarto render presentations/iassist-2026/iassist-2026-handout.qmd
+
       - name: Generate PDF
         run: |
           python3 -m http.server 3000 --directory presentations/iassist-2026 &
