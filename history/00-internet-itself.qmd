@@ -1,0 +1,73 @@
+# The Internet Itself {#the-internet-itself}
+
+#### 1969 - 1983 · UCLA, UC Berkeley
+
+::: {.chapter-intro}
+Before any of the software in this history could exist, the network had to exist. Two UC campuses built it - one designed the architecture, one shipped the implementation. Between them, UCLA and UC Berkeley are responsible for the fundamental infrastructure of the modern internet.
+:::
+
+---
+
+## UCLA and ARPANET: Node 1
+
+**The project:** ARPANET (Advanced Research Projects Agency Network)
+**Campus:** UCLA
+**Date:** October 29, 1969
+**Key figures:** Leonard Kleinrock (faculty), Charley Kline (student programmer), Vint Cerf (grad student), Jon Postel (grad student), Steve Crocker (alumnus)
+
+::: {.origin-story}
+*Draft - fill in origin story: DARPA's 1960s problem of building a robust, decentralized military communications network; the choice of UCLA as Node 1 because of Kleinrock's packet switching research group; the delivery of the Interface Message Processor (IMP) - essentially the world's first network router - to Boelter Hall Room 3420 on August 30, 1969; the attempt on October 29 to send the first message across the network to Node 2 at Stanford Research Institute; Charley Kline typing "L" and "O" before the system crashed; the first internet message being accidentally "LO"; the successful login an hour later.*
+:::
+
+### Leonard Kleinrock and Packet Switching
+
+Kleinrock's contribution was theoretical before it was practical. Traditional telecommunications used circuit switching - a dedicated line from point A to point B, like a phone call. Kleinrock's doctoral work at MIT in the early 1960s proved mathematically that data could be broken into packets, routed dynamically across different paths, and reassembled at the destination. This is how all internet data moves today.
+
+His UCLA lab became the birthplace of the internet's first node because he had the theory, the equipment, and a team of graduate students who would go on to design the protocols the entire internet runs on.
+
+### The Students Who Built the Internet
+
+The graduate students working in Kleinrock's lab at UCLA in the late 1960s and early 1970s became the architects of the modern internet:
+
+**Vint Cerf** co-designed TCP/IP with Bob Kahn at DARPA - the protocol suite that replaced ARPANET's original NCP and became the universal language of the internet. He is widely called one of the "fathers of the internet."
+
+**Jon Postel** went on to manage the DNS (Domain Name System) and the assignment of internet numbers for decades, effectively serving as the internet's directory administrator. He managed IANA (Internet Assigned Numbers Authority) until his death in 1998. His influence over the internet's naming and numbering systems was so central that it prompted the US government to formalize ICANN as his successor.
+
+**Steve Crocker** invented the RFC (Request for Comments) process at UCLA in April 1969. RFC 1, written by Crocker, established the open, collaborative process by which internet standards are still developed today. The choice of "Request for Comments" rather than something more authoritative was deliberate - Crocker wanted to encourage participation and avoid having any single voice dominate. Every standard that governs the internet, from email to HTTPS to DNS, exists as an RFC.
+
+### Boelter Hall Room 3420
+
+The original IMP - the hardware that made ARPANET's first node possible - is preserved at UCLA's **Kleinrock Internet History Center** in Boelter Hall Room 3420. It is one of the few places in the world where you can stand next to the hardware that sent the internet's first message.
+
+---
+
+## UC Berkeley and TCP/IP: The Implementation That Spread the Protocol
+
+**The project:** BSD TCP/IP stack (4.2BSD)
+**Campus:** UC Berkeley (Computer Systems Research Group, CSRG)
+**Date:** 1983
+**Key figures:** Bill Joy (grad student), Sam Leffler, Kirk McKusick, Robert Fabry
+
+::: {.origin-story}
+*Draft - fill in: DARPA having designed TCP/IP (Cerf and Kahn) but needing a working Unix implementation to spread it; DARPA contracting Berkeley's CSRG specifically because Berkeley was already distributing BSD Unix to universities at minimal cost; Bill Joy as the primary implementer of the TCP/IP stack in 4.2BSD (1983); the socket API that Joy's implementation introduced - the programming interface that let any application speak to the network - which became the universal standard for network programming and is still the interface used today in every major language and OS; the decision to distribute the TCP/IP implementation freely with BSD Unix to universities, which is how TCP/IP spread from a DARPA project to the de facto internet standard.*
+:::
+
+### The Socket API: The Interface That Outlasted Everything
+
+The most durable technical contribution of Berkeley's TCP/IP implementation was not the protocol stack itself but the **socket API** - the programming interface Bill Joy designed for applications to communicate over a network. Decades later, Python's `socket` module, Node.js networking, Go's `net` package, and virtually every network-capable program in any language expose an interface that traces directly to Joy's BSD design. You do not think about it; it is just how programs talk to networks.
+
+### Why Implementation Mattered as Much as Design
+
+TCP/IP had been designed by Cerf and Kahn. What Berkeley did was make it run, make it stable, and make it free with an operating system that universities already had. The DARPA contract to Berkeley was not a minor technical exercise - it was a deliberate strategy to spread the protocol by bundling it with the system universities were already running. It worked. By the time the internet commercialized in the 1990s, the network stack in virtually every Unix system traced to Berkeley's implementation.
+
+Bill Joy left Berkeley to co-found Sun Microsystems in 1982, and Sun's workstations shipped with BSD networking - extending Berkeley's TCP/IP implementation into the commercial market before the internet was publicly accessible.
+
+### The Larger Pattern
+
+The UCLA-to-Berkeley TCP/IP story is the earliest instance of the pattern this book documents throughout: UC research producing foundational infrastructure, released openly, that becomes universal. Kleinrock's theory, Cerf's protocol design, Joy's implementation - none of it was locked up. All of it spread. The internet is the result.
+
+::: {.callout-note}
+## Status
+Draft scaffold. Both project sections need full narrative treatment.
+The UCLA story in particular has rich primary source material - oral histories from Kleinrock, Cerf, and Crocker are publicly available.
+:::

@@ -24,6 +24,7 @@ book:
     - index.qmd
     - part: "The Record"
       chapters:
+        - 00-internet-itself.qmd
         - 01-foundations.qmd
         - 02-universal-infrastructure.qmd
         - 03-open-science.qmd
