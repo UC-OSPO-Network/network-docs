@@ -560,7 +560,7 @@ body {
       <a class="learn-link" href="https://ucospo.net/education">ucospo.net/education</a>
       <a class="learn-link" href="https://curioss.org">curioss.org, 34 academic OSPOs worldwide</a>
       <hr class="stat-divider" style="margin:0.25em 0;">
-      <p style="font-size:8.5pt;"><strong>Tim Dennis</strong><br>Data Science Center, UCLA Library<br><a href="mailto:dennis.tim@gmail.com" style="color:var(--blue);">dennis.tim@gmail.com</a></p>
+      <p style="font-size:8.5pt;"><strong>Tim Dennis</strong><br>Data Science Center, UCLA Library<br><a href="mailto:tdennis@library.ucla.edu" style="color:var(--blue);">tdennis@library.ucla.edu</a></p>
     </div>
   </div>
 
