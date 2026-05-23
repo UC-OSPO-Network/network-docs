@@ -715,11 +715,11 @@ Put it in your portfolio. Teach it to your students. You don't need a formal OSP
 ::: {.column width="48%"}
 
 ::: {style="background:#1f335e; border-radius:8px; padding:1.2em 1em; color:white; margin-bottom:0.7em;"}
-**The 1σ shift**
+**Raise the floor, not just solve the ticket**
 
-Solving the immediate need is necessary.
+Fixing their immediate problem gets them through the week.
 
-Moving researchers one standard deviation in their practice — from "it runs on my machine" toward maintainable, licensed, citable software — is what **compounds**.
+Moving them from "it runs on my machine" to maintainable, licensed, citable software gets their whole lab there — and their students after them.
 :::
 
 ::: {style="background:#f0f4fa; border-radius:8px; padding:0.9em 1em; font-size:0.78em;"}
@@ -733,7 +733,7 @@ health signals · bus factor · governance files · FAIR4RS · software DMPs · 
 ::::
 
 ::: {.notes}
-The 1σ framing is the core of this slide. The goal is not to turn every data librarian into an OSPO director. The goal is to shift what a researcher walks away from a consultation knowing. If they leave with a license file and a CITATION.cff, that is a one-time fix. If they leave understanding *why* those things matter — for reproducibility, for credit, for compliance — that is a shift in practice that compounds across their lab, their students, their next grant.
+The core of this slide is the distinction between reactive and capacity-building service. The goal is not to turn every data librarian into an OSPO director. The goal is to shift what a researcher walks away from a consultation knowing. If they leave with a license file and a CITATION.cff, that is a one-time fix. If they leave understanding *why* those things matter — for reproducibility, for credit, for compliance — that is a shift in practice that compounds across their lab, their students, their next grant.
 
 The OSPO heuristics are not exotic. Health signals (bus factor, issue velocity, contributor diversity) tell you whether a project will be there next year. Governance files (README, CONTRIBUTING, CODE_OF_CONDUCT) are the equivalent of a data README — they make the project legible to the next person. FAIR4RS and software DMPs are the policy anchors that give researchers a reason to care now.
 
