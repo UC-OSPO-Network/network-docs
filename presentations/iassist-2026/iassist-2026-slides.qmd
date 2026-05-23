@@ -715,7 +715,7 @@ If you do technical data services, researchers are already bringing you these qu
 
 ::: {.column width="48%"}
 
-::: {style="background:#1f335e; border-radius:8px; padding:1.2em 1em; color:white; margin-bottom:0.7em;"}
+::: {style="background:#1f335e; border-radius:8px; padding:0.85em 0.9em; color:white; margin-bottom:0.5em;"}
 **Raise the floor, not just solve the ticket**
 
 Fixing their immediate problem gets them through the week.
@@ -725,9 +725,8 @@ Moving them from "it runs on my machine" to maintainable, licensed, citable soft
 You don't need a formal OSPO to do this. You need the frame.
 :::
 
-::: {style="background:#f0f4fa; border-radius:8px; padding:0.9em 1em; font-size:0.78em;"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:0.65em 0.9em; font-size:0.72em;"}
 **OSPO heuristics already in your toolkit:**
-
 health signals · bus factor · governance files · FAIR4RS · software DMPs · contributor conventions · community governance
 :::
 
