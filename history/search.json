@@ -1,0 +1,416 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "UC Open Source: A System History",
+    "section": "",
+    "text": "Preface\nThis document tells that story, project by project, from the 1970s to today.\nThe record comes first. BSD Unix, INGRES, the tz database, the UCSC Genome Browser, Jupyter, Ceph, Apache Spark, RISC-V, Ray, Named Data Networking, PostgreSQL, and others each get their own origin story - the problem, the person, the moment, and what it became. These are not case studies. They are the actual history.\nThe analysis follows. After you have seen the record, the pattern is hard to miss: UC researchers solved real problems, released the code openly before anyone thought to commercialize it, and watched what happened. What happened was global infrastructure.\nThe final section addresses what this means now - for the people maintaining this software without support, for the institutions getting credit they have not fully claimed, and for the open source governance moment that AI is forcing on everyone whether they are ready or not.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#who-this-is-for",
+    "href": "index.html#who-this-is-for",
+    "title": "UC Open Source: A System History",
+    "section": "Who this is for",
+    "text": "Who this is for\nThis document is written for two audiences who do not usually read the same things.\nOpen source practitioners and OSPO staff will find the full project histories useful - origin dates, key contributors, licensing lineage, and impact numbers that are often scattered across Wikipedia, conference talks, and oral history.\nDecision makers - provosts, program officers, foundation staff, research VPs - will find the pattern and stakes sections written for them. The stories are there too, because the stories are the argument.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-document",
+    "href": "index.html#how-to-use-this-document",
+    "title": "UC Open Source: A System History",
+    "section": "How to use this document",
+    "text": "How to use this document\nRead it straight through if you want the full arc. Jump to a specific project if you need the origin story for a talk or brief. Share individual chapters - each is written to stand alone.\nThe appendix has a compact reference table of all projects, dates, campus affiliations, and impact metrics.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#about-the-uc-ospo-network",
+    "href": "index.html#about-the-uc-ospo-network",
+    "title": "UC Open Source: A System History",
+    "section": "About the UC OSPO Network",
+    "text": "About the UC OSPO Network\nThe University of California Network of Open Source Program Offices (UC OSPO Network) is a collaboration across six UC campuses - Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, and San Diego - launched in April 2024 with support from the Alfred P. Sloan Foundation.\nThis document was produced by the network as part of its discovery and documentation mission.\nucospo.net",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "01-foundations.html",
+    "href": "01-foundations.html",
+    "title": "Foundations",
+    "section": "",
+    "text": "1970s - 1980s · UC Berkeley",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "01-foundations.html#bsd-unix-and-the-license-that-made-open-source-possible",
+    "href": "01-foundations.html#bsd-unix-and-the-license-that-made-open-source-possible",
+    "title": "Foundations",
+    "section": "BSD Unix and the License That Made Open Source Possible",
+    "text": "BSD Unix and the License That Made Open Source Possible\nThe project: Berkeley Software Distribution (BSD Unix) Campus: UC Berkeley Period: 1970s - 1980s Key figures: Bill Joy, Keith Bostic, Marshall Kirk McKusick, and many others\n\nDraft - fill in origin story: CSRG at Berkeley, the relationship with AT&T Unix, the development of the networking stack (TCP/IP), the licensing dispute, the eventual BSD license.\n\n\nWhat it became\nThe BSD license - permissive, minimal, requiring only attribution - became the template for how research software gets released. MIT, Apache, and variants of BSD now govern billions of lines of production software. The network stack Berkeley wrote is still in macOS, iOS, and most operating systems.\n\n\nWhy it matters for this history\nEvery project in this document was made possible by the licensing model Berkeley established. You could release research code, let anyone use it commercially, and watch what happened. BSD Unix proved that worked.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "01-foundations.html#ingres-postgres-and-the-database-lineage",
+    "href": "01-foundations.html#ingres-postgres-and-the-database-lineage",
+    "title": "Foundations",
+    "section": "INGRES, POSTGRES, and the Database Lineage",
+    "text": "INGRES, POSTGRES, and the Database Lineage\nThe projects: University INGRES (1973), POSTGRES (1986), PostgreSQL (1995-) Campus: UC Berkeley Key figures: Michael Stonebraker (Turing Award 2014), Eugene Wong, Larry Rowe\n\nDraft - fill in origin story: Stonebraker and Wong reading Codd’s 1973 relational model papers, repurposing a geography department grant to build INGRES, the permissive license release, the downstream seeding of Sybase and Microsoft SQL Server. Then POSTGRES: Stonebraker recognizing the limits of pure relational models for complex data types (geographic coordinates, CAD data), the object-relational innovation, the 1994 code release, the 1995 open-source community pickup and SQL replacement (QUEL → SQL), and the creation of PostgreSQL.\n\n\nWhat it became\nPostgreSQL is today the world’s most popular independent open-source relational database. The 1973 INGRES codebase seeded Sybase; Microsoft acquired Sybase’s engine and built SQL Server from it. One academic project spawned two of the three dominant enterprise databases.\n\n\nThe Stonebraker pattern\nStonebraker’s career at Berkeley established a pattern the rest of this history repeats: solve a real problem in a research lab, release the code openly before it has commercial value, watch the ecosystem form, then commercialize the next generation. He did this with Ingres → Sybase, POSTGRES → Illustra, and continued beyond Berkeley with VoltDB, SciDB, and others.\n\n\n\n\n\n\nNoteStatus\n\n\n\nThis chapter is a draft scaffold. Origin stories need full narrative treatment - approximately 800-1,200 words per project section.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Foundations</span>"
+    ]
+  },
+  {
+    "objectID": "02-universal-infrastructure.html",
+    "href": "02-universal-infrastructure.html",
+    "title": "Universal Infrastructure",
+    "section": "",
+    "text": "1986 - 2000 · UCLA, UC Berkeley",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Universal Infrastructure</span>"
+    ]
+  },
+  {
+    "objectID": "02-universal-infrastructure.html#the-tz-database-every-clock-on-earth",
+    "href": "02-universal-infrastructure.html#the-tz-database-every-clock-on-earth",
+    "title": "Universal Infrastructure",
+    "section": "The tz Database: Every Clock on Earth",
+    "text": "The tz Database: Every Clock on Earth\nThe project: tz database (IANA Time Zone Database) Campus: UCLA (current maintainer: Paul Eggert, since 2005) Origin: 1986, Arthur David Olson (NIH) Key figures: Paul Eggert (UCLA), Arthur David Olson\n\nDraft - fill in origin story: Olson starting the database in 1986 to track the world’s timezone rules; Eggert taking over maintenance in 2005 as a computer scientist at UCLA; the extraordinary research methodology (19th-century astronomical almanacs used to reconstruct pre-1883 local solar times that pre-date standardized timekeeping); the 2011 IP lawsuit by Astrolabe Inc. that nearly took the database offline; the community response; IANA taking stewardship.\n\n\nWhat it became\nEvery operating system - Linux, macOS, Windows, iOS, Android - ships with the tz database. Every programming language that handles dates and times depends on it. When a country changes its clocks (and they do, constantly - political decisions, wars, referenda), Paul Eggert updates the database and the world’s computers follow.\n\n\nThe lawsuit that almost broke time\nIn 2011, Astrolabe Inc. sued the tz database maintainers, claiming copyright over historical timezone data. The community response was immediate: legal defense funds, IANA intervention, and a rapid resolution. The episode revealed how fragile the infrastructure was - one lawsuit against volunteer maintainers nearly took down something every computer on earth needed.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Universal Infrastructure</span>"
+    ]
+  },
+  {
+    "objectID": "02-universal-infrastructure.html#apache-http-server-a-patchy-web-server",
+    "href": "02-universal-infrastructure.html#apache-http-server-a-patchy-web-server",
+    "title": "Universal Infrastructure",
+    "section": "Apache HTTP Server: “A Patchy” Web Server",
+    "text": "Apache HTTP Server: “A Patchy” Web Server\nThe project: Apache HTTP Server Campus connection: UC Berkeley (Brian Behlendorf, undergraduate) Period: 1995 - Key figures: Brian Behlendorf (UCB undergrad), Cliff Skolnick, and eight founding contributors\n\nDraft - fill in origin story: Behlendorf as a UCB physics and CS undergrad running SFRaves mailing list and Hyperreal.org on Berkeley servers; moving to HotWired (Wired magazine’s web portal) in 1993-94; the launch of the first banner ads and the traffic that NCSA httpd could not handle; Behlendorf writing patches; discovering other webmasters had written the same patches independently; the mailing list on his personal server; the February 1995 fork of NCSA httpd; the name “Apache” as “a patchy server”; the eventual rewrite from scratch; the Apache Software Foundation.\n\n\nWhat it became\nApache HTTP Server powered more than half the global web for most of the 2000s and 2010s. The Apache Software Foundation, which grew from the original mailing list, now houses over 350 projects - including Apache Spark, which appears later in this history.\n\n\nThe Berkeley connection\nBehlendorf’s Berkeley connection is indirect: he was a student there, not running a lab project. But his story illustrates something important about how infrastructure gets built. He was not a professor with a grant. He was an undergrad with a server and a problem. The permissive culture Berkeley embodied - share the code, see what happens - was something he had absorbed.\n\n\n\n\n\n\nNoteStatus\n\n\n\nDraft scaffold. Each project section needs full narrative treatment.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Universal Infrastructure</span>"
+    ]
+  },
+  {
+    "objectID": "03-open-science.html",
+    "href": "03-open-science.html",
+    "title": "Open Science",
+    "section": "",
+    "text": "2000 - 2003 · UC Santa Cruz, UC San Diego",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Open Science</span>"
+    ]
+  },
+  {
+    "objectID": "03-open-science.html#the-ucsc-genome-browser-three-days-before-a-supercomputer",
+    "href": "03-open-science.html#the-ucsc-genome-browser-three-days-before-a-supercomputer",
+    "title": "Open Science",
+    "section": "The UCSC Genome Browser: Three Days Before a Supercomputer",
+    "text": "The UCSC Genome Browser: Three Days Before a Supercomputer\nThe project: UCSC Genome Browser Campus: UC Santa Cruz Period: Summer 2000 Key figures: Jim Kent (PhD student), David Haussler (faculty)\n\nDraft - fill in origin story: The Human Genome Project race between the public consortium and Celera Genomics (Craig Venter’s private company, $300M, dedicated supercomputer cluster); Jim Kent as a PhD student at UCSC writing GigAssembler (~10,000 lines of C) in a matter of weeks on 50 borrowed off-the-shelf PCs; reportedly icing his wrists to prevent carpal tunnel while coding through the night; finishing the assembly three days before Celera; the decision to release everything publicly to keep the genome in the public domain; the UCSC Genome Browser that followed as a tool for visualizing and navigating the assembled sequence; genome.ucsc.edu as the reference destination for genomic research ever since.\n\n\nWhat it became\nThe UCSC Genome Browser is the reference tool for genomic research worldwide. It hosts assemblies for hundreds of species, is updated continuously, and remains the first stop for any researcher navigating genomic data. The broader lesson - that a grad student with commodity hardware and open code could outcompete a $300M private effort - became a founding argument for open science.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Open Science</span>"
+    ]
+  },
+  {
+    "objectID": "03-open-science.html#eeglab-the-most-cited-scientific-software-youve-never-heard-of",
+    "href": "03-open-science.html#eeglab-the-most-cited-scientific-software-youve-never-heard-of",
+    "title": "Open Science",
+    "section": "EEGLAB: The Most-Cited Scientific Software You’ve Never Heard Of",
+    "text": "EEGLAB: The Most-Cited Scientific Software You’ve Never Heard Of\nThe project: EEGLAB Campus: UC San Diego (Swartz Center for Computational Neuroscience) Period: 1997 - 2001 Key figures: Scott Makeig\n\nDraft - fill in: Scott Makeig’s work at the Salk Institute and then UCSD; the need for open tooling to analyze EEG (electroencephalography) signals; the 2004 foundational paper; the download and citation numbers.\n\n\nWhat it became\nEEGLAB is the world’s premier open-source environment for electrophysiological signal processing. The 2004 foundational paper has accumulated more than 14,400 citations - among the highest academic footprints of any scientific software. It has been downloaded over 350,000 times and is the standard platform for EEG research globally.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Open Science</span>"
+    ]
+  },
+  {
+    "objectID": "03-open-science.html#cytoscape-mapping-the-cell",
+    "href": "03-open-science.html#cytoscape-mapping-the-cell",
+    "title": "Open Science",
+    "section": "Cytoscape: Mapping the Cell",
+    "text": "Cytoscape: Mapping the Cell\nThe project: Cytoscape Campus: UC San Diego Period: 2003 Key figures: Trey Ideker and collaborators\n\nDraft - fill in: Trey Ideker at UCSD working on high-throughput biology; the explosion of molecular interaction data (protein-protein interactions, gene regulatory networks, disease pathways) that spreadsheets could not handle; Cytoscape as a visual “living map” of the cell; the network biology paradigm it helped establish; the current usage in cancer research and drug discovery.\n\n\nWhat it became\nCytoscape is the global standard platform for network biology. It is used to visualize disease pathways, protein interactions, and molecular networks in cancer and therapeutic research worldwide. Over 300,000 downloads per year; central to how researchers understand complex biological systems.\n\n\n\n\n\n\nNoteStatus\n\n\n\nDraft scaffold. Each section needs full narrative treatment.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Open Science</span>"
+    ]
+  },
+  {
+    "objectID": "04-scientific-computing.html",
+    "href": "04-scientific-computing.html",
+    "title": "Scientific Computing",
+    "section": "",
+    "text": "2001 - 2009 · UC Berkeley",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Scientific Computing</span>"
+    ]
+  },
+  {
+    "objectID": "04-scientific-computing.html#jupyter-the-procrastination-that-runs-science",
+    "href": "04-scientific-computing.html#jupyter-the-procrastination-that-runs-science",
+    "title": "Scientific Computing",
+    "section": "Jupyter: The Procrastination That Runs Science",
+    "text": "Jupyter: The Procrastination That Runs Science\nThe project: IPython / Project Jupyter Campus: UC Berkeley (BIDS) Period: 2001 (IPython), 2014 (Jupyter) Key figures: Fernando Pérez (creator), Carol Willing (Steering Council, ACM Award), Stéfan van der Walt (scikit-image, Berkeley co-PI)\n\nDraft - fill in: Fernando Pérez as a physics PhD student at CU Boulder, building the first IPython in an afternoon procrastinating on his dissertation; the tool spreading through the scientific Python community; Pérez moving to UC Berkeley; the 2014 relaunch as Project Jupyter (for Julia, Python, R) with multi-language support; the notebook format as the dominant interface for interactive computing in science, AI, and data education; the 2017 ACM Software System Award shared with Carol Willing and the Steering Council; Pérez now as faculty director of BIDS and co-PI on the UC OSPO Network.\n\n\nCarol Willing and the Steering Council\nCarol Willing is a core Jupyter developer, three-term Python Steering Council member, and Python Core Developer. She shared the 2017 ACM Software System Award for Jupyter’s global influence - one of computing’s most prestigious recognitions for software that has had lasting impact on the field.\n\n\nWhat it became\nJupyter notebooks are the dominant interface for interactive scientific computing worldwide. They run in data science courses, AI research labs, public health agencies, and science classrooms. JupyterHub scales the single-user notebook to institutional deployments serving thousands. Binder makes any notebook instantly reproducible and shareable. The format has become a de facto standard for communicating computational science.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Scientific Computing</span>"
+    ]
+  },
+  {
+    "objectID": "04-scientific-computing.html#apache-spark-the-netflix-prize-and-a-62-billion-company",
+    "href": "04-scientific-computing.html#apache-spark-the-netflix-prize-and-a-62-billion-company",
+    "title": "Scientific Computing",
+    "section": "Apache Spark: The Netflix Prize and a $62 Billion Company",
+    "text": "Apache Spark: The Netflix Prize and a $62 Billion Company\nThe project: Apache Spark Campus: UC Berkeley AMPLab Period: 2009 Key figures: Matei Zaharia, Holden Karau (PMC, core committer)\n\nDraft - fill in: Berkeley’s AMPLab (Algorithms, Machines, and People); Matei Zaharia’s classmate Lester Mackey needing faster distributed machine learning to compete in the $1M Netflix Prize; Zaharia building Spark as a solution; the key insight that Hadoop MapReduce was too slow for iterative ML algorithms because it wrote to disk between every step; Spark’s in-memory execution model; the donation to Apache before commercializing; Databricks founded after the donation; Databricks now valued at $62B+.\n\n\nHolden Karau and the core team\nHolden Karau is a member of the Apache Spark Project Management Committee and a core committer who scaled Spark’s Python and Core engines. She is the co-author of the definitive O’Reilly books Learning Spark and High Performance Spark, which trained a generation of Spark engineers.\n\n\nWhat it became\nApache Spark is the dominant framework for large-scale data processing. It powers data pipelines at virtually every major technology company and research institution. Databricks, the commercial entity founded after the Apache donation, is valued at over $62 billion. The Apache Software Foundation stewards the open-source project; no single company can pull it away.\n\n\n\n\n\n\nNoteStatus\n\n\n\nDraft scaffold. Each section needs full narrative treatment.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Scientific Computing</span>"
+    ]
+  },
+  {
+    "objectID": "05-infrastructure-at-scale.html",
+    "href": "05-infrastructure-at-scale.html",
+    "title": "Infrastructure at Scale",
+    "section": "",
+    "text": "2004 - 2016 · UC Santa Cruz, UC Berkeley, UCLA",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Infrastructure at Scale</span>"
+    ]
+  },
+  {
+    "objectID": "05-infrastructure-at-scale.html#ceph-the-dissertation-that-funded-an-ospo",
+    "href": "05-infrastructure-at-scale.html#ceph-the-dissertation-that-funded-an-ospo",
+    "title": "Infrastructure at Scale",
+    "section": "Ceph: The Dissertation That Funded an OSPO",
+    "text": "Ceph: The Dissertation That Funded an OSPO\nThe project: Ceph distributed storage system Campus: UC Santa Cruz (Storage Systems Research Center) Period: 2004 Key figures: Sage Weil (PhD student), Scott A. Brandt (advisor)\n\nDraft - fill in: Sage Weil’s dissertation at UCSC’s SSRC under Prof. Scott A. Brandt; the design problem (exabyte-scale distributed storage without a central lookup table - using CRUSH algorithm for deterministic placement); the Linux kernel merge in 2010; Weil founding Inktank to commercialize it; Red Hat acquiring Inktank in 2014; the Linux Foundation launching the Ceph Foundation in 2018 for neutral governance; crucially: the proceeds from Inktank’s commercialization funding CROSS (Center for Research in Open Source Software) at UCSC - which became the first UC OSPO and the seed of the network this document represents.\n\n\nThe direct line to this document\nThe money from Ceph’s commercialization funded CROSS at UCSC. CROSS became the first UC OSPO. The UC OSPO Network grew from CROSS. This history was written by an organization that exists because one dissertation was released with an open license and commercialized responsibly.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Infrastructure at Scale</span>"
+    ]
+  },
+  {
+    "objectID": "05-infrastructure-at-scale.html#risc-v-the-summer-project-in-ten-billion-devices",
+    "href": "05-infrastructure-at-scale.html#risc-v-the-summer-project-in-ten-billion-devices",
+    "title": "Infrastructure at Scale",
+    "section": "RISC-V: The Summer Project in Ten Billion Devices",
+    "text": "RISC-V: The Summer Project in Ten Billion Devices\nThe project: RISC-V open instruction set architecture Campus: UC Berkeley Period: Summer 2010 Key figures: Krste Asanovic, David Patterson, Andrew Waterman, Yunsup Lee\n\nDraft - fill in: Asanovic and Patterson wanting a clean, open instruction set for their graduate students to build chips without paying ARM royalties; the three-month summer project; the decision to make it fully open and royalty-free; the formation of the RISC-V Foundation; the dramatic relocation to Switzerland in 2020 to stay neutral in US-China trade tensions (both countries were adopting RISC-V for strategic hardware independence); the current scale: 350+ member organizations, 70 countries, 10 billion+ devices shipped.\n\n\nWhat it became\nRISC-V is now a global strategic asset. Countries use it to build hardware without dependency on US or UK intellectual property. The EU has invested in RISC-V for semiconductor independence. China uses it extensively. The foundation moved to Switzerland specifically to be credibly neutral - no one country can claim it.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Infrastructure at Scale</span>"
+    ]
+  },
+  {
+    "objectID": "05-infrastructure-at-scale.html#named-data-networking-rethinking-the-internet",
+    "href": "05-infrastructure-at-scale.html#named-data-networking-rethinking-the-internet",
+    "title": "Infrastructure at Scale",
+    "section": "Named Data Networking: Rethinking the Internet",
+    "text": "Named Data Networking: Rethinking the Internet\nThe project: Named Data Networking (NDN / NFD) Campus: UCLA Period: 2010 (as a Future Internet Architecture project) Key figures: Lixia Zhang (Lead PI, Professor of Computer Science)\n\nDraft - fill in: Lixia Zhang’s background - growing up in rural China, driving tractors during the Cultural Revolution, earning her PhD at MIT under David Clark, working at Xerox PARC, joining UCLA. Zhang was the only woman and the only student at the very first IETF meeting in 1986. She coined “middlebox,” designed RSVP (Resource Reservation Protocol), and is an inductee of the Internet Hall of Fame. NDN as a proposal to fundamentally rethink internet architecture: instead of routing by address (where data lives), route by name (what data is). The $14M NSF Future Internet Architecture project. The ongoing research and deployment work.\n\n\nWhy this belongs here\nNDN is not finished infrastructure - it is active research into what the internet could become. It belongs in this document because its lead PI is one of the most consequential figures in internet history, and because it represents the UC system’s ongoing contribution to internet architecture, not just applications running on top of it.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Infrastructure at Scale</span>"
+    ]
+  },
+  {
+    "objectID": "05-infrastructure-at-scale.html#ray-two-phd-students-and-the-openai-stack",
+    "href": "05-infrastructure-at-scale.html#ray-two-phd-students-and-the-openai-stack",
+    "title": "Infrastructure at Scale",
+    "section": "Ray: Two PhD Students and the OpenAI Stack",
+    "text": "Ray: Two PhD Students and the OpenAI Stack\nThe project: Ray distributed computing framework Campus: UC Berkeley RISELab Period: 2016 Key figures: Robert Nishihara, Philipp Moritz, Ion Stoica, Michael Jordan\n\nDraft - fill in: The RISELab context (successor to AMPLab); Nishihara and Moritz as PhD students repeatedly rewriting Python code every time they needed to scale to more than one machine; Ray as a general-purpose distributed computing framework designed to make Python programs scale to clusters as easily as they run on a laptop; the adoption by OpenAI for their training and inference infrastructure; the Linux Foundation donation in 2025; the current scale of usage across AI and ML workloads.\n\n\nWhat it became\nRay is core infrastructure for modern AI compute. OpenAI uses it. Virtually every large AI training workload runs on it or something derived from it. The Linux Foundation took stewardship in 2025 - following the same playbook as Ceph, Spark, and RISC-V: build at a university, donate to a neutral foundation, commercialize the services.\n\n\n\n\n\n\nNoteStatus\n\n\n\nDraft scaffold. Each section needs full narrative treatment - 800-1,200 words per project.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Infrastructure at Scale</span>"
+    ]
+  },
+  {
+    "objectID": "06-the-pattern.html",
+    "href": "06-the-pattern.html",
+    "title": "The Pattern",
+    "section": "",
+    "text": "The Pipeline Thesis\nDraft - develop the core argument: UC research produced global infrastructure not by accident and not by design, but by a consistent set of conditions: real problems, open release before commercial value was obvious, neutral foundations or communities taking stewardship. The pipeline from dissertation to global infrastructure is not rare. It is the dominant pattern.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>The Pattern</span>"
+    ]
+  },
+  {
+    "objectID": "06-the-pattern.html#the-pipeline-thesis",
+    "href": "06-the-pattern.html#the-pipeline-thesis",
+    "title": "The Pattern",
+    "section": "",
+    "text": "The three-act structure\nNearly every project in this history follows the same arc:\n\nA real problem, solved in a lab. Not a product roadmap. A grad student who needed something to exist. A faculty member frustrated by the limits of current tools.\nRelease before commercialization. The code went out with a permissive license before anyone had made money from it. This is the Berkeley contribution - not the code alone, but the habit of releasing it.\nA neutral home. Apache, Linux Foundation, IANA, the open-source community. Once the code left the lab, it needed somewhere to live that no single company could control. The neutral foundation model is what makes UC research become infrastructure rather than product.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>The Pattern</span>"
+    ]
+  },
+  {
+    "objectID": "06-the-pattern.html#the-licensing-contribution",
+    "href": "06-the-pattern.html#the-licensing-contribution",
+    "title": "The Pattern",
+    "section": "The Licensing Contribution",
+    "text": "The Licensing Contribution\nDraft - develop: BSD licensing as Berkeley’s meta-contribution. Every project in this document benefited from the norm Berkeley established. The permissive license is the reason Stonebraker could seed Sybase, why Apache could become a foundation, why RISC-V could relocate to Switzerland. Contrast with what happens when research is locked up (the Celera counter-example; the ARM royalty situation that RISC-V was built to escape).",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>The Pattern</span>"
+    ]
+  },
+  {
+    "objectID": "06-the-pattern.html#women-in-this-history",
+    "href": "06-the-pattern.html#women-in-this-history",
+    "title": "The Pattern",
+    "section": "Women in This History",
+    "text": "Women in This History\nDraft - develop: The record is not all men. Carol Willing and Jupyter, Holden Karau and Spark, Lixia Zhang and NDN (and internet architecture broadly), Dr. N. Tessa Pierce-Ward and sourmash, Emily Lovell and LilyTiny. The pattern of women being core contributors to the most consequential work while receiving less visible credit. The OSPO as an institutional structure that can help with attribution and recognition.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>The Pattern</span>"
+    ]
+  },
+  {
+    "objectID": "06-the-pattern.html#what-does-not-make-it-into-the-history",
+    "href": "06-the-pattern.html#what-does-not-make-it-into-the-history",
+    "title": "The Pattern",
+    "section": "What Does Not Make It Into the History",
+    "text": "What Does Not Make It Into the History\nDraft - develop: Projects that were released with restrictive licenses and did not propagate. Research that was commercialized before being released and lost the community benefit. The survivorship bias in this document - we are telling the stories of the ones that worked.\n\n\n\n\n\n\nNoteStatus\n\n\n\nDraft scaffold. This chapter needs the most original analytical writing.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>The Pattern</span>"
+    ]
+  },
+  {
+    "objectID": "07-the-stakes.html",
+    "href": "07-the-stakes.html",
+    "title": "The Stakes",
+    "section": "",
+    "text": "The Sustainability Crisis\nDraft - develop: The Tidelift 2024 numbers (60% of maintainers unpaid, 43% reporting burnout). The UC survey finding that 58% of UC OSS contributors are also maintainers - not passive users but active stewards. The #1 challenge: finding time to write documentation. The structural problem: the value flows outward (to companies, to researchers, to the global economy) while the costs stay with individuals.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The Stakes</span>"
+    ]
+  },
+  {
+    "objectID": "07-the-stakes.html#the-sustainability-crisis",
+    "href": "07-the-stakes.html#the-sustainability-crisis",
+    "title": "The Stakes",
+    "section": "",
+    "text": "What $8.8 trillion actually means\nDraft - develop the Hoffmann, Nagle & Zhou (2024) finding: supply-side cost to recreate the top 5,000 open source packages is $4.15 billion. Demand-side replacement value to global enterprises is $8.8 trillion. The ratio - roughly 2,000x - is the clearest way to explain why open source governance matters to someone who thinks this is a niche concern. The UC system is producing a disproportionate share of that value. Its maintainers are not compensated accordingly.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The Stakes</span>"
+    ]
+  },
+  {
+    "objectID": "07-the-stakes.html#the-ai-moment",
+    "href": "07-the-stakes.html#the-ai-moment",
+    "title": "The Stakes",
+    "section": "The AI Moment",
+    "text": "The AI Moment\nDraft - develop: Two simultaneous pressures. First, AI-generated code is flooding maintainers - “slop PRs” that look complete but require expensive review. The curl project shut down its bug bounty because AI-generated vulnerability reports overwhelmed maintainers. Second, AI depends on the open source it is now threatening to destabilize - Ray, Spark, Jupyter are all core AI infrastructure. Third, the governance layer for AI is being written now. Nithya Ruff (UC Open 2026): “if you’re not in the room, we will inherit a system we have to live with.”\n\nWhat academia is losing\nDraft: 70% of new AI PhDs going straight to industry (vs. 50/50 a decade ago). 90% of notable AI models coming from a small number of companies. The systems that academia built are increasingly being operated and governed by industry, with academic researchers as users rather than architects.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The Stakes</span>"
+    ]
+  },
+  {
+    "objectID": "07-the-stakes.html#what-uc-is-not-getting-credit-for",
+    "href": "07-the-stakes.html#what-uc-is-not-getting-credit-for",
+    "title": "The Stakes",
+    "section": "What UC Is Not Getting Credit For",
+    "text": "What UC Is Not Getting Credit For\nDraft - develop: The attribution problem. BSD Unix is running inside every Apple device and no one thinks “UC Berkeley.” PostgreSQL powers most of the internet’s data layer and no one thinks “Stonebraker’s dissertation.” The UCSC Genome Browser kept the human genome public and gets a fraction of the recognition Celera got for losing. Institutional credit is not just vanity - it drives funding, attracts talent, and builds the political will to support OSPOs.\n\n\n\n\n\n\nNoteStatus\n\n\n\nDraft scaffold. This chapter should be written for decision makers - program officers, provosts, foundation staff. Concrete, not abstract.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The Stakes</span>"
+    ]
+  },
+  {
+    "objectID": "08-the-network.html",
+    "href": "08-the-network.html",
+    "title": "The Network",
+    "section": "",
+    "text": "What OSPOs Do That Nothing Else Does\nDraft - develop: The structural gap. A researcher with a licensing question has nowhere to go. A maintainer burning out has no institutional path for support. A campus that wants to adopt an open source policy has no peer institution to compare notes with. OSPOs fill these gaps - not by being the expert on everything, but by being the connective tissue between people who are.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The Network</span>"
+    ]
+  },
+  {
+    "objectID": "08-the-network.html#what-ospos-do-that-nothing-else-does",
+    "href": "08-the-network.html#what-ospos-do-that-nothing-else-does",
+    "title": "The Network",
+    "section": "",
+    "text": "What only a network can do\nDraft - develop the five things the UC OSPO Network enables that single campuses cannot:\n\nShared staffing - community manager, licensing specialist, technical roles that no single campus can fund alone\nPolicy leverage - the network has standing with UCOP; individual campuses do not\nData at scale - the GitHub pipeline and survey analyses require system-wide scope to mean anything\nEquity - smaller campuses get services they could not build alone\nA replicable model - $1.85M has produced something other state systems can follow",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The Network</span>"
+    ]
+  },
+  {
+    "objectID": "08-the-network.html#what-we-found-discovery",
+    "href": "08-the-network.html#what-we-found-discovery",
+    "title": "The Network",
+    "section": "What We Found (Discovery)",
+    "text": "What We Found (Discovery)\nDraft - the UC ORB, the GitHub pipeline, the 52,000 institutionally affiliated repos, the 294-person survey. Key findings. Juanita Gomez’s work. The survey preprint.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The Network</span>"
+    ]
+  },
+  {
+    "objectID": "08-the-network.html#what-were-building-sustainability-and-education",
+    "href": "08-the-network.html#what-were-building-sustainability-and-education",
+    "title": "The Network",
+    "section": "What We’re Building (Sustainability and Education)",
+    "text": "What We’re Building (Sustainability and Education)\nDraft - the cross-campus licensing working group, OSSPREY project health assessment, the ucospo.net/education curriculum inventory, Carpentries coordination, template guides.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The Network</span>"
+    ]
+  },
+  {
+    "objectID": "08-the-network.html#what-comes-next",
+    "href": "08-the-network.html#what-comes-next",
+    "title": "The Network",
+    "section": "What Comes Next",
+    "text": "What Comes Next\nDraft - the open questions: moving from grant funding to permanent infrastructure, the Sloan extension, the UCOP pathway, what other state systems are watching, what the AI governance moment demands.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The Network</span>"
+    ]
+  },
+  {
+    "objectID": "08-the-network.html#a-note-on-this-document",
+    "href": "08-the-network.html#a-note-on-this-document",
+    "title": "The Network",
+    "section": "A Note on This Document",
+    "text": "A Note on This Document\nThis history was produced by the UC OSPO Network as part of its discovery mission. It is not complete. Projects are missing. Stories are incomplete. We have marked the gaps explicitly so that contributors can fill them.\nIf you know a story that belongs here, or can fill in a section marked as a draft, we welcome contributions. The document lives in a public repository and accepts issues and pull requests.\nucospo.net · github.com/UC-OSPO-Network/network-docs\n\n\n\n\n\n\nNoteStatus\n\n\n\nDraft scaffold. The forward-looking sections should be written close to publication to stay current.",
+    "crumbs": [
+      "The Analysis",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>The Network</span>"
+    ]
+  },
+  {
+    "objectID": "appendix-projects.html",
+    "href": "appendix-projects.html",
+    "title": "Project Reference",
+    "section": "",
+    "text": "Also from UC Campuses\nQuick reference for all projects covered in this history.\nsourmash (UC Davis), ERPLAB (UC Davis), ChimeraX (UCSF), OpenMM (UCSF), Processing (UCLA/Casey Reas), LilyTiny (Emily Lovell, UCSC OSPO), ALPHA AI (Wei Wang, UCLA), UCSD Pascal, Tile2Net (Maryam Hosseini, UCB).",
+    "crumbs": [
+      "Appendices",
+      "Project Reference"
+    ]
+  }
+]
