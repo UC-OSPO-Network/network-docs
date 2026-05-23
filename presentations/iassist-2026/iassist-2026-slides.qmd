@@ -785,7 +785,9 @@ Data Science Center, UCLA Library
 tdennis@library.ucla.edu
 
 ::: {.small style="margin-top:0.7em; padding:0.5em 0.8em; background:#f0f4fa; border-radius:6px; border-left:3px solid #ff9100;"}
-📄 Slides + handout: **tinyurl.com/iassist2026**
+🖥 Slides: **tinyurl.com/iassist2026**
+
+📄 Handout: **tinyurl.com/iassist2026-handout**
 :::
 :::
 
