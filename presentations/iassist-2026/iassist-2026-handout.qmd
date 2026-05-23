@@ -5,9 +5,9 @@ format:
     self-contained: true
     toc: false
     theme: none
-    minimal: true
 ---
 
+```{=html}
 <style>
 @font-face {
   font-family: "Atkinson Hyperlegible";
@@ -23,13 +23,13 @@ format:
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
- --navy:  #1f335e;
- --blue:  #003cb3;
- --orange: #ff9100;
- --muted: #f0f4fa;
- --border: #c6d2e8;
- --text:  #222832;
- --small: #555;
+  --navy:  #1f335e;
+  --blue:  #003cb3;
+  --orange: #ff9100;
+  --muted: #f0f4fa;
+  --border: #c6d2e8;
+  --text:  #222832;
+  --small: #555;
 }
 
 @page { size: letter; margin: 0.45in 0.5in; }
@@ -44,8 +44,6 @@ body {
   margin: 0 auto;
   padding: 0.3in 0;
 }
-
-/* ── Header ───────────────────────────────────────────── */
 
 .handout-header {
   display: flex;
@@ -72,15 +70,11 @@ body {
   margin-top: 0.15em;
 }
 
-/* ── Body grid ────────────────────────────────────────── */
-
 .handout-body {
   display: grid;
   grid-template-columns: 55% 1fr;
   gap: 1.4em;
 }
-
-/* ── Section headings ─────────────────────────────────── */
 
 .section-label {
   font-size: 7pt;
@@ -92,8 +86,6 @@ body {
   padding-bottom: 0.2em;
   margin-bottom: 0.55em;
 }
-
-/* ── Project entries (left column) ───────────────────── */
 
 .project-list { display: flex; flex-direction: column; gap: 0.55em; }
 
@@ -111,8 +103,6 @@ body {
   align-self: stretch;
   min-height: 2.4em;
 }
-
-.project-body {}
 
 .project-name {
   font-weight: 700;
@@ -132,8 +122,6 @@ body {
   line-height: 1.4;
 }
 
-/* ── Also-from list ───────────────────────────────────── */
-
 .also-list {
   display: flex;
   flex-wrap: wrap;
@@ -151,8 +139,6 @@ body {
   font-weight: 600;
   white-space: nowrap;
 }
-
-/* ── Right column panels ──────────────────────────────── */
 
 .right-col { display: flex; flex-direction: column; gap: 0.7em; }
 
@@ -224,7 +210,6 @@ body {
 }
 
 .area-icon { color: var(--orange); flex-shrink: 0; }
-
 .area-text strong { color: var(--navy); }
 
 .resource-row {
@@ -256,8 +241,6 @@ body {
 
 .learn-link:hover { color: var(--orange); }
 
-/* ── Footer ───────────────────────────────────────────── */
-
 .handout-footer {
   margin-top: 0.7em;
   padding-top: 0.4em;
@@ -275,7 +258,6 @@ body {
 }
 </style>
 
-<!-- HEADER -->
 <div class="handout-header">
   <img src="images/uc-ospo-network-logo.svg" alt="UC OSPO Network">
   <div class="handout-header-text">
@@ -284,10 +266,8 @@ body {
   </div>
 </div>
 
-<!-- BODY -->
 <div class="handout-body">
 
-<!-- LEFT: Project origin stories -->
 <div class="left-col">
 
 <div class="section-label">From Dissertation to Global Infrastructure</div>
@@ -317,7 +297,7 @@ body {
     <div class="project-body">
       <div class="project-name">Ceph</div>
       <div class="project-origin">UC Santa Cruz &middot; 2004</div>
-      <div class="project-desc">Sage Weil&rsquo;s PhD dissertation on exabyte-scale distributed storage. Merged into the Linux kernel (2010); commercialized through Red Hat acquisition (2014). Proceeds funded <strong>CROSS at UCSC</strong> -the first UC OSPO and the seed of this network.</div>
+      <div class="project-desc">Sage Weil&rsquo;s PhD dissertation on exabyte-scale distributed storage. Merged into the Linux kernel (2010); commercialized through Red Hat acquisition (2014). Proceeds funded <strong>CROSS at UCSC</strong>, the first UC OSPO and the seed of this network.</div>
     </div>
   </div>
 
@@ -368,12 +348,10 @@ body {
   <p style="font-size:6.8pt; color:#777; margin-top:0.3em;">The pattern is not rare or accidental. &ldquo;The students writing their class projects this very semester may be creating the next Ray.&rdquo; - Nithya Ruff, UC Open Summit 2026</p>
 </div>
 
-</div><!-- end left-col -->
+</div>
 
-<!-- RIGHT: Network + stats + resources -->
 <div class="right-col">
 
-  <!-- Network overview -->
   <div class="panel">
     <div class="panel-head">The UC OSPO Network</div>
     <div class="panel-body">
@@ -402,7 +380,6 @@ body {
     </div>
   </div>
 
-  <!-- Survey findings -->
   <div class="panel">
     <div class="panel-head">What We Found (2025 survey, n=294)</div>
     <div class="panel-body">
@@ -413,7 +390,7 @@ body {
       <hr class="stat-divider">
       <div class="stat-row">
         <div class="stat-num">58%</div>
-        <div class="stat-label">of UC OSS contributors are also <em>maintainers</em> -not just users, but stewards</div>
+        <div class="stat-label">of UC OSS contributors are also <em>maintainers</em>, not just users but stewards</div>
       </div>
       <hr class="stat-divider">
       <p style="font-size:7.8pt; margin-bottom:0.2em;"><strong>#1 challenge:</strong> finding time to write documentation</p>
@@ -421,26 +398,24 @@ body {
     </div>
   </div>
 
-  <!-- Three areas -->
   <div class="panel">
     <div class="panel-head">Three Focus Areas</div>
     <div class="panel-body">
       <div class="area-row">
         <div class="area-icon">&#128301;</div>
-        <div class="area-text"><strong>Discovery</strong> - UC Open Repository Browser (UC ORB); GitHub pipeline + system-wide survey</div>
+        <div class="area-text"><strong>Discovery:</strong> UC Open Repository Browser (UC ORB); GitHub pipeline + system-wide survey</div>
       </div>
       <div class="area-row">
         <div class="area-icon">&#127807;</div>
-        <div class="area-text"><strong>Sustainability</strong> - Cross-campus licensing WG (UCOP + tech transfer); OSSPREY project health; community management</div>
+        <div class="area-text"><strong>Sustainability:</strong> Cross-campus licensing WG (UCOP + tech transfer); OSSPREY project health; community management</div>
       </div>
       <div class="area-row">
         <div class="area-icon">&#128214;</div>
-        <div class="area-text"><strong>Education</strong> - Curriculum inventory at ucospo.net/education; Carpentries + CodeRefinery + UC-specific content</div>
+        <div class="area-text"><strong>Education:</strong> Curriculum inventory at ucospo.net/education; Carpentries + CodeRefinery + UC-specific content</div>
       </div>
     </div>
   </div>
 
-  <!-- Resources -->
   <div class="panel">
     <div class="panel-head">Resources for Your Researchers</div>
     <div class="panel-body">
@@ -453,24 +428,23 @@ body {
     </div>
   </div>
 
-  <!-- Learn more -->
   <div class="panel">
     <div class="panel-head">Learn More</div>
     <div class="panel-body">
       <a class="learn-link" href="https://ucospo.net">ucospo.net</a>
       <a class="learn-link" href="https://ucospo.net/education">ucospo.net/education</a>
-      <a class="learn-link" href="https://curioss.org">curioss.org - 34 academic OSPOs worldwide</a>
+      <a class="learn-link" href="https://curioss.org">curioss.org, 34 academic OSPOs worldwide</a>
       <hr class="stat-divider" style="margin:0.3em 0;">
       <p style="font-size:7.8pt;"><strong>Tim Dennis</strong><br>Data Science Center, UCLA Library<br><a href="mailto:dennis.tim@gmail.com" style="color:var(--blue);">dennis.tim@gmail.com</a></p>
     </div>
   </div>
 
-</div><!-- end right-col -->
+</div>
 
-</div><!-- end handout-body -->
+</div>
 
-<!-- FOOTER -->
 <div class="handout-footer">
   <span>Gomez et al. (2025) arxiv:2506.18359 &middot; Scarlett et al. (2025) doi:10.31235/osf.io/p8bx6_v1 &middot; Tidelift (2024) State of the Open Source Maintainer Report &middot; Ruff (2026) youtu.be/eBriL3CDNeo</span>
   <span>IASSIST 2026</span>
 </div>
+```
