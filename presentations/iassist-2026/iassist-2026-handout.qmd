@@ -32,29 +32,29 @@ format:
   --small: #555;
 }
 
-@page { size: letter; margin: 0.45in 0.5in; }
+@page { size: letter; margin: 0.4in 0.5in; }
 
 body {
   font-family: "Atkinson Hyperlegible", Arial, sans-serif;
-  font-size: 8.4pt;
-  line-height: 1.45;
+  font-size: 9pt;
+  line-height: 1.4;
   color: var(--text);
   background: #fff;
   max-width: 7.5in;
   margin: 0 auto;
-  padding: 0.3in 0;
+  padding: 0.25in 0;
 }
 
 .handout-header {
   display: flex;
   align-items: center;
-  gap: 1em;
-  padding-bottom: 0.5em;
+  gap: 0.9em;
+  padding-bottom: 0.45em;
   border-bottom: 3px solid var(--orange);
-  margin-bottom: 0.7em;
+  margin-bottom: 0.6em;
 }
 
-.handout-header img { height: 38px; width: auto; flex-shrink: 0; }
+.handout-header img { height: 36px; width: auto; flex-shrink: 0; }
 
 .handout-header-text h1 {
   font-size: 13pt;
@@ -65,35 +65,31 @@ body {
 }
 
 .handout-header-text p {
-  font-size: 7.5pt;
+  font-size: 8pt;
   color: var(--small);
-  margin-top: 0.15em;
+  margin-top: 0.1em;
 }
 
 .handout-body {
   display: grid;
   grid-template-columns: 55% 1fr;
-  gap: 1.4em;
+  gap: 1.2em;
 }
 
 .section-label {
-  font-size: 7pt;
+  font-size: 7.5pt;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--navy);
   border-bottom: 2px solid var(--navy);
-  padding-bottom: 0.2em;
-  margin-bottom: 0.55em;
+  padding-bottom: 0.18em;
+  margin-bottom: 0.45em;
 }
 
-.project-list { display: flex; flex-direction: column; gap: 0.55em; }
+.project-list { display: flex; flex-direction: column; gap: 0.42em; }
 
-.project-entry {
-  display: flex;
-  gap: 0.6em;
-  align-items: flex-start;
-}
+.project-entry { display: flex; gap: 0.55em; align-items: flex-start; }
 
 .project-accent {
   flex-shrink: 0;
@@ -101,151 +97,123 @@ body {
   background: var(--orange);
   border-radius: 2px;
   align-self: stretch;
-  min-height: 2.4em;
+  min-height: 2em;
+}
+
+.project-name-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45em;
+  flex-wrap: wrap;
+  margin-bottom: 0.08em;
 }
 
 .project-name {
   font-weight: 700;
   color: var(--navy);
-  font-size: 8.4pt;
+  font-size: 9pt;
 }
 
 .project-origin {
-  font-size: 7pt;
+  font-size: 7.5pt;
   color: var(--small);
-  margin-top: 0.05em;
 }
 
 .project-desc {
-  font-size: 8pt;
-  margin-top: 0.1em;
-  line-height: 1.4;
+  font-size: 8.5pt;
+  line-height: 1.38;
 }
+
+.project-link {
+  font-size: 7.5pt;
+  color: var(--blue);
+  text-decoration: none;
+  margin-left: 0.3em;
+  white-space: nowrap;
+}
+
+.project-link:hover { color: var(--orange); }
 
 .also-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.3em;
-  margin-top: 0.55em;
+  gap: 0.28em;
+  margin-top: 0.45em;
 }
 
 .also-badge {
   background: var(--muted);
   border: 1px solid var(--border);
   border-radius: 3px;
-  padding: 0.15em 0.45em;
-  font-size: 7pt;
+  padding: 0.12em 0.4em;
+  font-size: 7.5pt;
   color: var(--navy);
   font-weight: 600;
   white-space: nowrap;
 }
 
-.right-col { display: flex; flex-direction: column; gap: 0.7em; }
+.right-col { display: flex; flex-direction: column; gap: 0.6em; }
 
-.panel {
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  overflow: hidden;
-}
+.panel { border: 1px solid var(--border); border-radius: 5px; overflow: hidden; }
 
 .panel-head {
   background: var(--navy);
   color: #fff;
-  font-size: 7pt;
+  font-size: 7.5pt;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  padding: 0.3em 0.6em;
+  padding: 0.28em 0.55em;
 }
 
-.panel-body {
-  padding: 0.5em 0.6em;
-  background: #fff;
-}
+.panel-body { padding: 0.45em 0.55em; background: #fff; }
 
-.panel-body p, .panel-body li { font-size: 8pt; line-height: 1.4; }
+.panel-body p, .panel-body li { font-size: 8.5pt; line-height: 1.38; }
 
-.stat-row {
-  display: flex;
-  align-items: baseline;
-  gap: 0.4em;
-  margin-bottom: 0.3em;
-}
+.stat-row { display: flex; align-items: baseline; gap: 0.35em; margin-bottom: 0.25em; }
 
-.stat-num {
-  font-size: 16pt;
-  font-weight: 700;
-  color: var(--orange);
-  line-height: 1;
-}
+.stat-num { font-size: 15pt; font-weight: 700; color: var(--orange); line-height: 1; }
 
-.stat-label { font-size: 7.5pt; color: var(--text); line-height: 1.3; }
+.stat-label { font-size: 8pt; color: var(--text); line-height: 1.3; }
 
-.stat-divider {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 0.35em 0;
-}
+.stat-divider { border: none; border-top: 1px solid var(--border); margin: 0.3em 0; }
 
-.campus-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25em;
-  margin-top: 0.25em;
-}
+.campus-chips { display: flex; flex-wrap: wrap; gap: 0.22em; margin-top: 0.22em; }
 
 .campus-chip {
   background: var(--orange);
   color: #fff;
   border-radius: 3px;
-  padding: 0.12em 0.4em;
-  font-size: 6.8pt;
+  padding: 0.1em 0.38em;
+  font-size: 7pt;
   font-weight: 700;
 }
 
-.area-row {
-  display: flex;
-  gap: 0.35em;
-  margin-bottom: 0.2em;
-}
-
+.area-row { display: flex; gap: 0.3em; margin-bottom: 0.18em; }
 .area-icon { color: var(--orange); flex-shrink: 0; }
+.area-text { font-size: 8.5pt; }
 .area-text strong { color: var(--navy); }
 
-.resource-row {
-  display: flex;
-  align-items: center;
-  gap: 0.4em;
-  margin-bottom: 0.2em;
-  font-size: 7.8pt;
-}
+.resource-row { display: flex; align-items: center; gap: 0.38em; margin-bottom: 0.18em; font-size: 8.5pt; }
 
 .resource-file {
   font-family: "SFMono-Regular", Consolas, monospace;
-  font-size: 7.2pt;
+  font-size: 7.5pt;
   background: var(--muted);
   color: var(--navy);
   border-radius: 2px;
-  padding: 0.1em 0.3em;
+  padding: 0.08em 0.28em;
   white-space: nowrap;
 }
 
-.learn-link {
-  display: block;
-  font-size: 8pt;
-  font-weight: 700;
-  color: var(--blue);
-  text-decoration: none;
-  margin-bottom: 0.2em;
-}
-
+.learn-link { display: block; font-size: 8.5pt; font-weight: 700; color: var(--blue); text-decoration: none; margin-bottom: 0.18em; }
 .learn-link:hover { color: var(--orange); }
 
 .handout-footer {
-  margin-top: 0.7em;
-  padding-top: 0.4em;
+  margin-top: 0.55em;
+  padding-top: 0.35em;
   border-top: 1px solid var(--border);
-  font-size: 6.8pt;
+  font-size: 7pt;
   color: var(--small);
   display: flex;
   justify-content: space-between;
@@ -253,7 +221,7 @@ body {
 
 @media print {
   body { max-width: 100%; padding: 0; }
-  a { color: var(--blue) !important; text-decoration: none !important; }
+  a { color: var(--blue) !important; }
   .learn-link { color: var(--blue) !important; }
 }
 </style>
@@ -277,75 +245,126 @@ body {
   <div class="project-entry">
     <div class="project-accent"></div>
     <div class="project-body">
-      <div class="project-name">BSD Unix</div>
-      <div class="project-origin">UC Berkeley &middot; 1970s&ndash;80s</div>
-      <div class="project-desc">The permissive licensing model that made open source possible. Derivatives (MIT, Apache) now govern billions of lines of production software worldwide.</div>
+      <div class="project-name-row">
+        <span class="project-name">BSD Unix</span>
+        <span class="project-origin">UC Berkeley &middot; 1970s&ndash;80s</span>
+      </div>
+      <div class="project-desc">The permissive licensing model that made open source possible; MIT, Apache, and BSD licenses now govern billions of lines of production software. <a class="project-link" href="https://www.mckusick.com/history/index.html">history &rarr;</a></div>
     </div>
   </div>
 
   <div class="project-entry">
     <div class="project-accent"></div>
     <div class="project-body">
-      <div class="project-name">UCSC Genome Browser</div>
-      <div class="project-origin">UC Santa Cruz &middot; Summer 2000</div>
-      <div class="project-desc">PhD student Jim Kent assembled the human genome on 50 borrowed PCs, icing his wrists to keep coding. He finished <strong>three days before</strong> Celera Genomics and its dedicated supercomputer. The genome stayed in the public domain.</div>
+      <div class="project-name-row">
+        <span class="project-name">Jupyter</span>
+        <span class="project-origin">UC Berkeley &middot; 2001&ndash;2014</span>
+      </div>
+      <div class="project-desc">Fernando P&eacute;rez built the first IPython in an afternoon procrastinating on his physics dissertation. Now the dominant interface for interactive computing across science, AI, and data education worldwide. <a class="project-link" href="https://jupyter.org">jupyter.org &rarr;</a></div>
     </div>
   </div>
 
   <div class="project-entry">
     <div class="project-accent"></div>
     <div class="project-body">
-      <div class="project-name">Ceph</div>
-      <div class="project-origin">UC Santa Cruz &middot; 2004</div>
-      <div class="project-desc">Sage Weil&rsquo;s PhD dissertation on exabyte-scale distributed storage. Merged into the Linux kernel (2010); commercialized through Red Hat acquisition (2014). Proceeds funded <strong>CROSS at UCSC</strong>, the first UC OSPO and the seed of this network.</div>
+      <div class="project-name-row">
+        <span class="project-name">UCSC Genome Browser</span>
+        <span class="project-origin">UC Santa Cruz &middot; Summer 2000</span>
+      </div>
+      <div class="project-desc">Jim Kent assembled the human genome on 50 borrowed PCs, finishing three days before Celera Genomics and its supercomputer. The genome stayed in the public domain. <a class="project-link" href="https://genome.ucsc.edu">genome.ucsc.edu &rarr;</a></div>
     </div>
   </div>
 
   <div class="project-entry">
     <div class="project-accent"></div>
     <div class="project-body">
-      <div class="project-name">Apache Spark</div>
-      <div class="project-origin">UC Berkeley AMPLab &middot; 2009</div>
-      <div class="project-desc">Matei Zaharia built it so a classmate could beat the Netflix Prize with faster distributed ML. Donated to Apache before commercializing. <strong>Databricks: $60B+.</strong></div>
+      <div class="project-name-row">
+        <span class="project-name">Ceph</span>
+        <span class="project-origin">UC Santa Cruz &middot; 2004</span>
+      </div>
+      <div class="project-desc">Sage Weil&rsquo;s PhD dissertation on exabyte-scale distributed storage. Merged into the Linux kernel (2010); proceeds from commercialization funded <strong>CROSS at UCSC</strong>, the first UC OSPO and the seed of this network. <a class="project-link" href="https://ceph.io">ceph.io &rarr;</a></div>
     </div>
   </div>
 
   <div class="project-entry">
     <div class="project-accent"></div>
     <div class="project-body">
-      <div class="project-name">RISC-V</div>
-      <div class="project-origin">UC Berkeley &middot; 2010</div>
-      <div class="project-desc">A three-month summer project to give grad students a chip architecture without paying ARM royalties. Now in <strong>10 billion devices</strong>, adopted by 350+ organizations in 70 countries. Foundation relocated to Switzerland in 2020 to stay neutral in US-China trade tensions.</div>
+      <div class="project-name-row">
+        <span class="project-name">Apache Spark</span>
+        <span class="project-origin">UC Berkeley AMPLab &middot; 2009</span>
+      </div>
+      <div class="project-desc">Matei Zaharia built it so a classmate could beat the Netflix Prize with faster distributed ML. Donated to Apache before commercializing. Databricks now valued at <strong>$62B+</strong>. <a class="project-link" href="https://spark.apache.org">spark.apache.org &rarr;</a></div>
     </div>
   </div>
 
   <div class="project-entry">
     <div class="project-accent"></div>
     <div class="project-body">
-      <div class="project-name">Ray</div>
-      <div class="project-origin">UC Berkeley RISELab &middot; 2016</div>
-      <div class="project-desc">Two PhD students tired of rewriting Python every time they needed to scale beyond one machine. Now <strong>core OpenAI compute infrastructure</strong>. Donated to the Linux Foundation in 2025.</div>
+      <div class="project-name-row">
+        <span class="project-name">RISC-V</span>
+        <span class="project-origin">UC Berkeley &middot; 2010</span>
+      </div>
+      <div class="project-desc">A three-month summer project to avoid paying ARM royalties. Now in <strong>10 billion devices</strong>, 350+ member organizations in 70 countries. Foundation relocated to Switzerland in 2020 to stay neutral in US-China trade tensions. <a class="project-link" href="https://riscv.org">riscv.org &rarr;</a></div>
+    </div>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-accent"></div>
+    <div class="project-body">
+      <div class="project-name-row">
+        <span class="project-name">Ray</span>
+        <span class="project-origin">UC Berkeley RISELab &middot; 2016</span>
+      </div>
+      <div class="project-desc">Two PhD students tired of rewriting Python to scale. Now <strong>core OpenAI compute infrastructure</strong>. Donated to the Linux Foundation in 2025. <a class="project-link" href="https://ray.io">ray.io &rarr;</a></div>
+    </div>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-accent"></div>
+    <div class="project-body">
+      <div class="project-name-row">
+        <span class="project-name">Cytoscape</span>
+        <span class="project-origin">UC San Diego &middot; 2003</span>
+      </div>
+      <div class="project-desc">The global standard platform for network biology: visualizing disease pathways, protein interactions, and molecular networks. Over <strong>300,000 downloads per year</strong>; foundational to cancer and therapeutic research worldwide. <a class="project-link" href="https://cytoscape.org">cytoscape.org &rarr;</a></div>
+    </div>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-accent"></div>
+    <div class="project-body">
+      <div class="project-name-row">
+        <span class="project-name">EEGLAB</span>
+        <span class="project-origin">UC San Diego &middot; 1997&ndash;2001</span>
+      </div>
+      <div class="project-desc">The world's premier open-source environment for electrophysiological signal processing. Over <strong>350,000 downloads</strong>; the 2004 foundational paper has <strong>14,400+ citations</strong>, among the highest academic footprints of any scientific software. <a class="project-link" href="https://sccn.ucsd.edu/eeglab/">eeglab &rarr;</a></div>
+    </div>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-accent"></div>
+    <div class="project-body">
+      <div class="project-name-row">
+        <span class="project-name">tz database</span>
+        <span class="project-origin">UCLA &middot; maintained by Paul Eggert since 2005</span>
+      </div>
+      <div class="project-desc">Every OS clock on the planet depends on this. To reconstruct pre-1883 timezone history, Eggert used almanacs compiled by 19th-century astrologers. In 2011 an IP lawsuit nearly took it offline; the community rallied and IANA took stewardship. <a class="project-link" href="https://www.iana.org/time-zones">iana.org/time-zones &rarr;</a></div>
     </div>
   </div>
 
 </div>
 
-<div style="margin-top:0.6em;">
-  <div class="section-label" style="font-size:6.5pt;">Also from UC campuses</div>
+<div style="margin-top:0.45em;">
+  <div class="section-label" style="font-size:7pt;">Also from UC campuses</div>
   <div class="also-list">
-    <span class="also-badge">Jupyter (UCB)</span>
     <span class="also-badge">Processing (UCLA)</span>
-    <span class="also-badge">tz database (UCLA)</span>
     <span class="also-badge">Named Data Networking (UCLA)</span>
-    <span class="also-badge">Cytoscape (UCSD)</span>
-    <span class="also-badge">EEGLAB (UCSD)</span>
     <span class="also-badge">UCSD Pascal</span>
     <span class="also-badge">ChimeraX (UCSF)</span>
     <span class="also-badge">OpenMM (UCSF)</span>
     <span class="also-badge">sourmash (UC Davis)</span>
     <span class="also-badge">ERPLAB (UC Davis)</span>
   </div>
-  <p style="font-size:6.8pt; color:#777; margin-top:0.3em;">The pattern is not rare or accidental. &ldquo;The students writing their class projects this very semester may be creating the next Ray.&rdquo; - Nithya Ruff, UC Open Summit 2026</p>
 </div>
 
 </div>
@@ -357,7 +376,7 @@ body {
     <div class="panel-body">
       <div class="stat-row">
         <div class="stat-num">6</div>
-        <div class="stat-label">UC campuses &middot; launched April 2024<br>Funded by Alfred P. Sloan Foundation</div>
+        <div class="stat-label">UC campuses &middot; launched April 2024<br>Alfred P. Sloan Foundation</div>
       </div>
       <div class="stat-row">
         <div class="stat-num">$1.85M</div>
@@ -376,7 +395,7 @@ body {
         <span class="campus-chip">Santa Barbara</span>
         <span class="campus-chip">San Diego</span>
       </div>
-      <p style="font-size:6.8pt; color:#777; margin-top:0.35em;">Lead: UCSC, first OSPO in a large state university system. Part of <strong>CURIOSS</strong> (34 academic OSPOs worldwide).</p>
+      <p style="font-size:7.5pt; color:#777; margin-top:0.3em;">Lead: UCSC, first OSPO in a large state university system. Part of <strong>CURIOSS</strong> (34 academic OSPOs worldwide).</p>
     </div>
   </div>
 
@@ -385,7 +404,7 @@ body {
     <div class="panel-body">
       <div class="stat-row">
         <div class="stat-num">52K</div>
-        <div class="stat-label">institutionally affiliated repos scanned across 10 UC campuses</div>
+        <div class="stat-label">institutionally affiliated repos across 10 UC campuses</div>
       </div>
       <hr class="stat-divider">
       <div class="stat-row">
@@ -393,8 +412,19 @@ body {
         <div class="stat-label">of UC OSS contributors are also <em>maintainers</em>, not just users but stewards</div>
       </div>
       <hr class="stat-divider">
-      <p style="font-size:7.8pt; margin-bottom:0.2em;"><strong>#1 challenge:</strong> finding time to write documentation</p>
-      <p style="font-size:7.8pt;"><strong>Nationally (Tidelift 2024):</strong> 60% of maintainers are unpaid &middot; 43% report burnout</p>
+      <p style="font-size:8.5pt; margin-bottom:0.18em;"><strong>#1 challenge:</strong> time to write documentation</p>
+      <p style="font-size:8.5pt;"><strong>Nationally (Tidelift 2024):</strong> 60% unpaid &middot; 43% burnt out</p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head">Why It Matters: The Economics</div>
+    <div class="panel-body">
+      <div class="stat-row">
+        <div class="stat-num">$8.8T</div>
+        <div class="stat-label">demand-side replacement value of open source software to global enterprises</div>
+      </div>
+      <p style="font-size:7.5pt; color:#777; margin-top:0.2em;">Supply-side cost to recreate the top 5,000 packages: $4.15B. If OSS disappeared and every organization built its own: $8.8 trillion. Ratio: ~2,000x. Hoffmann, Nagle &amp; Zhou (2024) HBS WP 24-038.</p>
     </div>
   </div>
 
@@ -407,11 +437,11 @@ body {
       </div>
       <div class="area-row">
         <div class="area-icon">&#127807;</div>
-        <div class="area-text"><strong>Sustainability:</strong> Cross-campus licensing WG (UCOP + tech transfer); OSSPREY project health; community management</div>
+        <div class="area-text"><strong>Sustainability:</strong> Cross-campus licensing WG; OSSPREY project health assessment; community management</div>
       </div>
       <div class="area-row">
         <div class="area-icon">&#128214;</div>
-        <div class="area-text"><strong>Education:</strong> Curriculum inventory at ucospo.net/education; Carpentries + CodeRefinery + UC-specific content</div>
+        <div class="area-text"><strong>Education:</strong> Curriculum inventory at ucospo.net/education; Carpentries + CodeRefinery + UC content</div>
       </div>
     </div>
   </div>
@@ -419,12 +449,12 @@ body {
   <div class="panel">
     <div class="panel-head">Resources for Your Researchers</div>
     <div class="panel-body">
-      <div class="resource-row"><span class="resource-file">README.md</span> template + guide (Laura Langdon, UC OSPO)</div>
-      <div class="resource-row"><span class="resource-file">LICENSE</span> guide with UC-approved options</div>
-      <div class="resource-row"><span class="resource-file">CONTRIBUTING.md</span> template + guide</div>
-      <div class="resource-row"><span class="resource-file">CODE_OF_CONDUCT.md</span> Contributor Covenant + guidance</div>
-      <div class="resource-row"><span class="resource-file">CITATION.cff</span> + Zenodo release &rarr; citable, versioned DOI</div>
-      <p style="font-size:6.8pt; color:#777; margin-top:0.3em;">All at <strong>ucospo.net/oss-resources</strong> &middot; Published Sept 2025</p>
+      <div class="resource-row"><span class="resource-file">README.md</span> template + guide &middot; <a href="https://ucospo.net/oss-resources/template-guides/readme-guide/" style="font-size:7.5pt; color:var(--blue);">link</a></div>
+      <div class="resource-row"><span class="resource-file">LICENSE</span> guide with UC-approved options &middot; <a href="https://ucospo.net/oss-resources/template-guides/license-guide/" style="font-size:7.5pt; color:var(--blue);">link</a></div>
+      <div class="resource-row"><span class="resource-file">CONTRIBUTING.md</span> template + guide &middot; <a href="https://ucospo.net/oss-resources/template-guides/contributing-guide/" style="font-size:7.5pt; color:var(--blue);">link</a></div>
+      <div class="resource-row"><span class="resource-file">CODE_OF_CONDUCT.md</span> Contributor Covenant &middot; <a href="https://ucospo.net/oss-resources/template-guides/code-of-conduct-guide/" style="font-size:7.5pt; color:var(--blue);">link</a></div>
+      <div class="resource-row"><span class="resource-file">CITATION.cff</span> + Zenodo &rarr; citable DOI</div>
+      <p style="font-size:7.5pt; color:#777; margin-top:0.25em;">All at <strong>ucospo.net/oss-resources</strong> &middot; Sept 2025</p>
     </div>
   </div>
 
@@ -434,8 +464,8 @@ body {
       <a class="learn-link" href="https://ucospo.net">ucospo.net</a>
       <a class="learn-link" href="https://ucospo.net/education">ucospo.net/education</a>
       <a class="learn-link" href="https://curioss.org">curioss.org, 34 academic OSPOs worldwide</a>
-      <hr class="stat-divider" style="margin:0.3em 0;">
-      <p style="font-size:7.8pt;"><strong>Tim Dennis</strong><br>Data Science Center, UCLA Library<br><a href="mailto:dennis.tim@gmail.com" style="color:var(--blue);">dennis.tim@gmail.com</a></p>
+      <hr class="stat-divider" style="margin:0.25em 0;">
+      <p style="font-size:8.5pt;"><strong>Tim Dennis</strong><br>Data Science Center, UCLA Library<br><a href="mailto:dennis.tim@gmail.com" style="color:var(--blue);">dennis.tim@gmail.com</a></p>
     </div>
   </div>
 
