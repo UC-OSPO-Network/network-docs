@@ -249,7 +249,7 @@ body {
         <span class="project-name">BSD Unix</span>
         <span class="project-origin">UC Berkeley &middot; 1970s&ndash;80s</span>
       </div>
-      <div class="project-desc">The permissive licensing model that made open source possible. Derivatives (MIT, Apache) now govern billions of lines of production software worldwide. <a class="project-link" href="https://www.mckusick.com/history/index.html">history &rarr;</a></div>
+      <div class="project-desc">The permissive licensing model that made open source possible; MIT, Apache, and BSD licenses now govern billions of lines of production software. <a class="project-link" href="https://www.mckusick.com/history/index.html">history &rarr;</a></div>
     </div>
   </div>
 
@@ -271,7 +271,7 @@ body {
         <span class="project-name">UCSC Genome Browser</span>
         <span class="project-origin">UC Santa Cruz &middot; Summer 2000</span>
       </div>
-      <div class="project-desc">PhD student Jim Kent assembled the human genome on 50 borrowed PCs, icing his wrists to keep coding. He finished <strong>three days before</strong> Celera Genomics and its supercomputer. The genome stayed in the public domain. <a class="project-link" href="https://genome.ucsc.edu">genome.ucsc.edu &rarr;</a></div>
+      <div class="project-desc">Jim Kent assembled the human genome on 50 borrowed PCs, finishing three days before Celera Genomics and its supercomputer. The genome stayed in the public domain. <a class="project-link" href="https://genome.ucsc.edu">genome.ucsc.edu &rarr;</a></div>
     </div>
   </div>
 
@@ -323,6 +323,28 @@ body {
     <div class="project-accent"></div>
     <div class="project-body">
       <div class="project-name-row">
+        <span class="project-name">Cytoscape</span>
+        <span class="project-origin">UC San Diego &middot; 2003</span>
+      </div>
+      <div class="project-desc">The global standard platform for network biology: visualizing disease pathways, protein interactions, and molecular networks. Over <strong>300,000 downloads per year</strong>; foundational to cancer and therapeutic research worldwide. <a class="project-link" href="https://cytoscape.org">cytoscape.org &rarr;</a></div>
+    </div>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-accent"></div>
+    <div class="project-body">
+      <div class="project-name-row">
+        <span class="project-name">EEGLAB</span>
+        <span class="project-origin">UC San Diego &middot; 1997&ndash;2001</span>
+      </div>
+      <div class="project-desc">The world's premier open-source environment for electrophysiological signal processing. Over <strong>350,000 downloads</strong>; the 2004 foundational paper has <strong>14,400+ citations</strong>, among the highest academic footprints of any scientific software. <a class="project-link" href="https://sccn.ucsd.edu/eeglab/">eeglab &rarr;</a></div>
+    </div>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-accent"></div>
+    <div class="project-body">
+      <div class="project-name-row">
         <span class="project-name">tz database</span>
         <span class="project-origin">UCLA &middot; maintained by Paul Eggert since 2005</span>
       </div>
@@ -337,8 +359,6 @@ body {
   <div class="also-list">
     <span class="also-badge">Processing (UCLA)</span>
     <span class="also-badge">Named Data Networking (UCLA)</span>
-    <span class="also-badge">Cytoscape (UCSD)</span>
-    <span class="also-badge">EEGLAB (UCSD)</span>
     <span class="also-badge">UCSD Pascal</span>
     <span class="also-badge">ChimeraX (UCSF)</span>
     <span class="also-badge">OpenMM (UCSF)</span>
@@ -394,6 +414,17 @@ body {
       <hr class="stat-divider">
       <p style="font-size:8.5pt; margin-bottom:0.18em;"><strong>#1 challenge:</strong> time to write documentation</p>
       <p style="font-size:8.5pt;"><strong>Nationally (Tidelift 2024):</strong> 60% unpaid &middot; 43% burnt out</p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head">Why It Matters: The Economics</div>
+    <div class="panel-body">
+      <div class="stat-row">
+        <div class="stat-num">$8.8T</div>
+        <div class="stat-label">demand-side replacement value of open source software to global enterprises</div>
+      </div>
+      <p style="font-size:7.5pt; color:#777; margin-top:0.2em;">Supply-side cost to recreate the top 5,000 packages: $4.15B. If OSS disappeared and every organization built its own: $8.8 trillion. Ratio: ~2,000x. Hoffmann, Nagle &amp; Zhou (2024) HBS WP 24-038.</p>
     </div>
   </div>
 

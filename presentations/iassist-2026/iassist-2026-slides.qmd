@@ -40,8 +40,10 @@ Research data workflows run on open source:
 
 The people keeping it running are increasingly called **Research Software Engineers (RSEs)**, a growing professional community with no standard institutional home.
 
+If every organization had to replace open source with proprietary equivalents, the cost would exceed **$8.8 trillion**.
+
 ::: {.small}
-Hettrick et al. (SSI, 2014/2022)
+Hettrick et al. (SSI, 2014/2022) · Hoffmann, Nagle & Zhou (2024) doi:10.2139/ssrn.4693148
 :::
 :::
 
@@ -71,6 +73,8 @@ Hettrick et al. (SSI, 2014/2022)
 IMAGE: a grid of OSS tool logos researchers actually use - Jupyter, Python, R, Git, Pandas, numpy, ggplot2. Makes the "invisible layer" concrete before you say a word.
 
 Start with what this room knows. 92% of researchers depend on software; two-thirds say their work would stop without it. The people doing this work are increasingly organizing under the RSE identity - US-RSE launched in 2018 and now has thousands of members. When a maintainer burns out, a key library gets abandoned. A licensing question blocks a publication. There is often nowhere to turn. That is the gap.
+
+The $8.8 trillion figure is from Hoffmann, Nagle & Zhou (2024), "The Value of Open Source Software," Harvard Business School Working Paper 24-038. Supply-side cost to recreate the top 5,000 most-used packages: $4.15 billion. Demand-side replacement value to global enterprises if OSS disappeared: $8.8 trillion. That ratio - roughly 2,000x - is the clearest way to explain why open source governance matters to an administrator or funder who thinks this is a niche concern.
 :::
 
 ---
