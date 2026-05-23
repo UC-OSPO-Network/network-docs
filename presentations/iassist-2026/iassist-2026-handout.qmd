@@ -292,7 +292,7 @@ body {
   <img src="images/uc-ospo-network-logo.svg" alt="UC OSPO Network">
   <div class="handout-header-text">
     <h1>UC Open Source as Institutional Infrastructure</h1>
-    <p>Tim Dennis &middot; Data Science Center, UCLA Library &middot; IASSIST 2026 &middot; Slides + resources: <strong>ucospo.net</strong></p>
+    <p>Tim Dennis &middot; Data Science Center, UCLA Library &middot; IASSIST 2026 &middot; Slides + handout: <strong>tinyurl.com/iassist2026</strong></p>
   </div>
 </div>
 

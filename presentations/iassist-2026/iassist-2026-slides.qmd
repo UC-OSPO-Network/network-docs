@@ -771,6 +771,9 @@ You do not have to build these resources yourself. Laura Langdon published templ
 
 ## Learn more / connect
 
+:::: {.columns}
+
+::: {.column width="68%"}
 **UC OSPO Network:** [ucospo.net](https://ucospo.net)
 
 * Education site: [ucospo.net/education](https://ucospo.net/education)
@@ -783,8 +786,22 @@ Data Science Center, UCLA Library
 tdennis@library.ucla.edu
 
 ::: {.small style="margin-top:0.7em; padding:0.5em 0.8em; background:#f0f4fa; border-radius:6px; border-left:3px solid #ff9100;"}
-📄 One-page reference handout (project origins, network stats, resources): [iassist-2026-handout.html](iassist-2026-handout.html)
+📄 Slides + handout: **tinyurl.com/iassist2026**
 :::
+:::
+
+::: {.column width="32%"}
+<div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5em; height:100%">
+![](images/iassist2026-qr.svg){width="200px"}
+
+::: {.small style="text-align:center; color:#555;"}
+tinyurl.com/iassist2026
+:::
+</div>
+:::
+
+::::
+
 
 ::: {.notes}
 Two things worth following up: UC ORB if they want to see the discovery tooling, and the CURIOSS community if their institution is thinking about starting an OSPO. Leave time for questions - the AI and sustainability slides tend to generate them.
