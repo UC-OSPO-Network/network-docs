@@ -44,7 +44,7 @@
     "href": "00-internet-itself.html",
     "title": "The Internet Itself",
     "section": "",
-    "text": "1969 - 1983 · UCLA, UC Berkeley",
+    "text": "1969 - 1983 · UCLA, UC Santa Barbara, UC Berkeley",
     "crumbs": [
       "The Record",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>The Internet Itself</span>"
@@ -56,6 +56,28 @@
     "title": "The Internet Itself",
     "section": "UCLA and ARPANET: Node 1",
     "text": "UCLA and ARPANET: Node 1\nThe project: ARPANET (Advanced Research Projects Agency Network) Campus: UCLA Date: October 29, 1969 Key figures: Leonard Kleinrock (faculty), Charley Kline (student programmer), Vint Cerf (grad student), Jon Postel (grad student), Steve Crocker (alumnus)\n\nDraft - fill in origin story: DARPA’s 1960s problem of building a robust, decentralized military communications network; the choice of UCLA as Node 1 because of Kleinrock’s packet switching research group; the delivery of the Interface Message Processor (IMP) - essentially the world’s first network router - to Boelter Hall Room 3420 on August 30, 1969; the attempt on October 29 to send the first message across the network to Node 2 at Stanford Research Institute; Charley Kline typing “L” and “O” before the system crashed; the first internet message being accidentally “LO”; the successful login an hour later.\n\n\nLeonard Kleinrock and Packet Switching\nKleinrock’s contribution was theoretical before it was practical. Traditional telecommunications used circuit switching - a dedicated line from point A to point B, like a phone call. Kleinrock’s doctoral work at MIT in the early 1960s proved mathematically that data could be broken into packets, routed dynamically across different paths, and reassembled at the destination. This is how all internet data moves today.\nHis UCLA lab became the birthplace of the internet’s first node because he had the theory, the equipment, and a team of graduate students who would go on to design the protocols the entire internet runs on.\n\n\nThe Students Who Built the Internet\nThe graduate students working in Kleinrock’s lab at UCLA in the late 1960s and early 1970s became the architects of the modern internet:\nVint Cerf co-designed TCP/IP with Bob Kahn at DARPA - the protocol suite that replaced ARPANET’s original NCP and became the universal language of the internet. He is widely called one of the “fathers of the internet.”\nJon Postel went on to manage the DNS (Domain Name System) and the assignment of internet numbers for decades, effectively serving as the internet’s directory administrator. He managed IANA (Internet Assigned Numbers Authority) until his death in 1998. His influence over the internet’s naming and numbering systems was so central that it prompted the US government to formalize ICANN as his successor.\nSteve Crocker invented the RFC (Request for Comments) process at UCLA in April 1969. RFC 1, written by Crocker, established the open, collaborative process by which internet standards are still developed today. The choice of “Request for Comments” rather than something more authoritative was deliberate - Crocker wanted to encourage participation and avoid having any single voice dominate. Every standard that governs the internet, from email to HTTPS to DNS, exists as an RFC.\n\n\nBoelter Hall Room 3420\nThe original IMP - the hardware that made ARPANET’s first node possible - is preserved at UCLA’s Kleinrock Internet History Center in Boelter Hall Room 3420. It is one of the few places in the world where you can stand next to the hardware that sent the internet’s first message.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The Internet Itself</span>"
+    ]
+  },
+  {
+    "objectID": "00-internet-itself.html#ucsb-node-3-and-the-uc-connection-nobody-mentions",
+    "href": "00-internet-itself.html#ucsb-node-3-and-the-uc-connection-nobody-mentions",
+    "title": "The Internet Itself",
+    "section": "UCSB: Node 3, and the UC Connection Nobody Mentions",
+    "text": "UCSB: Node 3, and the UC Connection Nobody Mentions\nCampus: UC Santa Barbara Date: November 1, 1969 Key figures: Glen Culler, Burton Fried\nThe original four ARPANET nodes were UCLA (Node 1), Stanford Research Institute (Node 2), UC Santa Barbara (Node 3), and the University of Utah (Node 4). Three of the four were UC campuses - and this fact appears in almost no account of UC’s contributions to the internet.\nGlen Culler and Burton Fried at UCSB were working on interactive mathematics - specifically, tools for numerical computation that needed remote access to large machines. Their node went live on November 1, 1969, three days after UCLA’s first message to SRI. UCSB was not a passive recipient of the network; Culler’s team was actively developing applications and pushing on what the network could do.\n\nDraft - fill in: more detail on Culler and Fried’s specific work, the interactive mathematics project, what UCSB contributed to early ARPANET application development.\n\nThe fact that three of the four original ARPANET nodes were UC campuses is not a coincidence. It reflects where DARPA’s research funding was concentrated and where the relevant mathematical and computer science talent had gathered. It also reflects something the UC system itself did not fully recognize or capitalize on at the time - and arguably still hasn’t.",
+    "crumbs": [
+      "The Record",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The Internet Itself</span>"
+    ]
+  },
+  {
+    "objectID": "00-internet-itself.html#the-collaboration-that-wasnt-institutional",
+    "href": "00-internet-itself.html#the-collaboration-that-wasnt-institutional",
+    "title": "The Internet Itself",
+    "section": "The Collaboration That Wasn’t Institutional",
+    "text": "The Collaboration That Wasn’t Institutional\nThe people in this chapter knew each other. They communicated through the network they were building. The Network Working Group (RFC process) was genuinely collaborative across institutions - Crocker ran it from UCLA, but contributors came from SRI, UCSB, Utah, and elsewhere. DARPA’s funding created a community that the UC system itself had no formal mechanism to support or recognize.\nLixia Zhang is the living thread. She arrived at the first IETF meeting in 1986 - the successor organization to the ARPANET NWG - as the only woman and the only student in the room. That meeting was populated by the same community that had built the ARPANET. Zhang went on to join UCLA’s faculty, led the Named Data Networking project (Chapter 5), and is now co-PI on the UC OSPO Network. She is the direct human connection between the founding ARPANET community and the institutional open source work the UC system is doing today.\nThe UCLA-UCSB-Berkeley collaboration on internet infrastructure happened because DARPA funded it, not because the UC system organized it. The UC OSPO Network is, in part, the belated answer to that gap: a formal mechanism for cross-campus coordination on shared technical infrastructure, fifty years after UC campuses were building the internet without one.",
     "crumbs": [
       "The Record",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>The Internet Itself</span>"
