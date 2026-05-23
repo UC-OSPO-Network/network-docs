@@ -659,8 +659,6 @@ Key point for this audience: a librarian or data professional at a smaller campu
 
 ---
 
----
-
 ## Lessons from two years
 
 What the network model enables that single campuses cannot:
@@ -782,7 +780,7 @@ You do not have to build these resources yourself. Laura Langdon published templ
 
 **Tim Dennis**
 Data Science Center, UCLA Library
-dennis.tim@gmail.com
+tdennis@library.ucla.edu
 
 ::: {.small style="margin-top:0.7em; padding:0.5em 0.8em; background:#f0f4fa; border-radius:6px; border-left:3px solid #ff9100;"}
 📄 One-page reference handout (project origins, network stats, resources): [iassist-2026-handout.html](iassist-2026-handout.html)
