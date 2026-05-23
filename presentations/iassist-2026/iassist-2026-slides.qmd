@@ -3,7 +3,6 @@ title: "Open Source as Institutional Infrastructure"
 subtitle: "Lessons from the UC OSPO Network"
 author: "Tim Dennis"
 institute: "Data Science Center, UCLA Library"
-date: "May 2026 · IASSIST"
 format:
   revealjs:
     theme: ucospo-theme.scss
