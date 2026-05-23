@@ -1,9 +1,9 @@
 # The Internet Itself {#the-internet-itself}
 
-#### 1969 - 1983 · UCLA, UC Berkeley
+#### 1969 - 1983 · UCLA, UC Santa Barbara, UC Berkeley
 
 ::: {.chapter-intro}
-Before any of the software in this history could exist, the network had to exist. Two UC campuses built it - one designed the architecture, one shipped the implementation. Between them, UCLA and UC Berkeley are responsible for the fundamental infrastructure of the modern internet.
+Before any of the software in this history could exist, the network had to exist. Three UC campuses helped build it. UCLA designed the architecture and sent the first message. UC Santa Barbara was Node 3. UC Berkeley wrote the implementation that spread TCP/IP to the world. The UC system didn't coordinate any of this - DARPA did. That gap is part of what makes the UC OSPO Network, fifty years later, a genuinely new thing.
 :::
 
 ---
@@ -38,6 +38,34 @@ The graduate students working in Kleinrock's lab at UCLA in the late 1960s and e
 ### Boelter Hall Room 3420
 
 The original IMP - the hardware that made ARPANET's first node possible - is preserved at UCLA's **Kleinrock Internet History Center** in Boelter Hall Room 3420. It is one of the few places in the world where you can stand next to the hardware that sent the internet's first message.
+
+---
+
+## UCSB: Node 3, and the UC Connection Nobody Mentions
+
+**Campus:** UC Santa Barbara
+**Date:** November 1, 1969
+**Key figures:** Glen Culler, Burton Fried
+
+The original four ARPANET nodes were UCLA (Node 1), Stanford Research Institute (Node 2), UC Santa Barbara (Node 3), and the University of Utah (Node 4). Three of the four were UC campuses - and this fact appears in almost no account of UC's contributions to the internet.
+
+Glen Culler and Burton Fried at UCSB were working on interactive mathematics - specifically, tools for numerical computation that needed remote access to large machines. Their node went live on November 1, 1969, three days after UCLA's first message to SRI. UCSB was not a passive recipient of the network; Culler's team was actively developing applications and pushing on what the network could do.
+
+::: {.origin-story}
+*Draft - fill in: more detail on Culler and Fried's specific work, the interactive mathematics project, what UCSB contributed to early ARPANET application development.*
+:::
+
+The fact that three of the four original ARPANET nodes were UC campuses is not a coincidence. It reflects where DARPA's research funding was concentrated and where the relevant mathematical and computer science talent had gathered. It also reflects something the UC system itself did not fully recognize or capitalize on at the time - and arguably still hasn't.
+
+---
+
+## The Collaboration That Wasn't Institutional
+
+The people in this chapter knew each other. They communicated through the network they were building. The Network Working Group (RFC process) was genuinely collaborative across institutions - Crocker ran it from UCLA, but contributors came from SRI, UCSB, Utah, and elsewhere. DARPA's funding created a community that the UC system itself had no formal mechanism to support or recognize.
+
+**Lixia Zhang is the living thread.** She arrived at the first IETF meeting in 1986 - the successor organization to the ARPANET NWG - as the only woman and the only student in the room. That meeting was populated by the same community that had built the ARPANET. Zhang went on to join UCLA's faculty, led the Named Data Networking project (Chapter 5), and is now co-PI on the UC OSPO Network. She is the direct human connection between the founding ARPANET community and the institutional open source work the UC system is doing today.
+
+The UCLA-UCSB-Berkeley collaboration on internet infrastructure happened because DARPA funded it, not because the UC system organized it. The UC OSPO Network is, in part, the belated answer to that gap: a formal mechanism for cross-campus coordination on shared technical infrastructure, fifty years after UC campuses were building the internet without one.
 
 ---
 

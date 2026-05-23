@@ -5,6 +5,7 @@ Quick reference for all projects covered in this history.
 | Project | Campus | Year | Era | Impact |
 |---|---|---|---|---|
 | ARPANET / TCP/IP design | UCLA | 1969 | The Internet Itself | Packet switching, Node 1, RFCs, TCP/IP, DNS |
+| ARPANET Node 3 | UC Santa Barbara | 1969 | The Internet Itself | Culler and Fried; 3 of 4 original nodes were UC |
 | BSD TCP/IP stack | UC Berkeley | 1983 | The Internet Itself | Implementation that spread TCP/IP universally |
 | BSD Unix | UC Berkeley | 1970s-80s | Foundations | Licensing model for open source |
 | INGRES / PostgreSQL | UC Berkeley | 1973 / 1986 | Foundations | World's most popular independent database |
