@@ -46,22 +46,22 @@ Hettrick et al. (SSI, 2014/2022)
 :::
 
 ::: {.column width="44%"}
-<div style="display:flex; flex-direction:column; align-items:center; gap:1.1em; padding-top:0.6em;">
-<div class="logo-row" style="gap:1.8em;">
-<div class="logo-item"><img src="images/jupyter-logo.svg" alt="Jupyter"><span>Jupyter</span></div>
-<div class="logo-item"><img src="images/spark-logo.png" alt="Apache Spark"><span>Apache Spark</span></div>
+<div style="display:flex; flex-direction:column; align-items:center; gap:0.8em; padding-top:0.3em;">
+<div class="logo-row" style="gap:1.1em; flex-wrap:wrap; justify-content:center;">
+<div class="logo-item logo-item-sm"><img src="images/jupyter-logo.svg" alt="Jupyter"><span>Jupyter</span></div>
+<div class="logo-item logo-item-sm"><img src="images/python-logo.svg" alt="Python"><span>Python</span></div>
+<div class="logo-item logo-item-sm"><img src="images/r-logo.svg" alt="R"><span>R</span></div>
+<div class="logo-item logo-item-sm"><img src="images/git-logo.png" alt="Git"><span>Git</span></div>
+<div class="logo-item logo-item-sm"><img src="images/spark-logo.png" alt="Apache Spark"><span>Spark</span></div>
+<div class="logo-item logo-item-sm"><img src="images/pandas-logo.svg" alt="Pandas"><span>Pandas</span></div>
+<div class="logo-item logo-item-sm"><img src="images/numpy-logo.svg" alt="NumPy"><span>NumPy</span></div>
+<div class="logo-item logo-item-sm"><img src="images/docker-logo.svg" alt="Docker"><span>Docker</span></div>
 <div class="logo-item logo-item-sm"><img src="images/ray-logo.png" alt="Ray"><span>Ray</span></div>
+<div class="logo-item logo-item-sm"><img src="images/ggplot2-logo.png" alt="ggplot2"><span>ggplot2</span></div>
+<div class="logo-item logo-item-sm"><img src="images/dplyr-logo.png" alt="dplyr"><span>dplyr</span></div>
 </div>
-<div style="display:flex; flex-wrap:wrap; gap:0.45em; justify-content:center;">
-<span class="project-badge">Python</span>
-<span class="project-badge">R</span>
-<span class="project-badge">Git</span>
-<span class="project-badge">Pandas</span>
-<span class="project-badge">NumPy</span>
-<span class="project-badge">ggplot2</span>
-<span class="project-badge">dplyr</span>
+<div style="display:flex; gap:0.5em;">
 <span class="project-badge">Snakemake</span>
-<span class="project-badge">Docker</span>
 <span class="project-badge">Nextflow</span>
 </div>
 </div>
