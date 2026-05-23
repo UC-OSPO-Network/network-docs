@@ -1,10 +1,11 @@
-name: Render and publish slides
+name: Render and publish
 
 on:
   push:
     branches: [main]
     paths:
       - 'presentations/**'
+      - 'history/**'
       - '.github/workflows/publish.yml'
   workflow_dispatch:
 
@@ -44,10 +45,21 @@ jobs:
             "http://localhost:3000/iassist-2026-slides.html?print-pdf"
           kill $SERVER_PID 2>/dev/null || true
 
-      - name: Deploy to GitHub Pages
+      - name: Render UC OSS History book
+        run: quarto render history/
+
+      - name: Deploy IASSIST to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: presentations/iassist-2026
           destination_dir: presentations/iassist-2026
+          keep_files: true
+
+      - name: Deploy history book to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: history/_book
+          destination_dir: history
           keep_files: true
