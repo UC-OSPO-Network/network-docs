@@ -2,7 +2,9 @@
 title: "Open Source as Institutional Infrastructure"
 subtitle: "Lessons from the UC OSPO Network"
 author: "Tim Dennis"
-institute: "Data Science Center, UCLA Library"
+institute:
+  - "Data Science Center, UCLA Library"
+  - "UCLA OSPO Lead, UC OSPO Network"
 format:
   revealjs:
     theme: ucospo-theme.scss
@@ -225,7 +227,7 @@ He finished **three days** before a corporate competitor's supercomputer.
 
 :::
 
-::: {style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.52em; margin-top: 1.8em;"}
+::: {style="text-align: center; color: rgba(255,255,255,0.78); font-size: 0.52em; margin-top: 1.8em;"}
 Kent, J.W. (2002). BLAT - The BLAST-Like Alignment Tool. *Genome Research* 12, 656–664. · genome.ucsc.edu
 :::
 
@@ -793,7 +795,7 @@ tdennis@library.ucla.edu
 
 ::: {.column width="32%"}
 <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5em; height:100%">
-![](images/iassist2026-qr.svg){width="200px"}
+![QR code linking to tinyurl.com/iassist2026 — slides for this presentation](images/iassist2026-qr.svg){width="200px"}
 
 ::: {.small style="text-align:center; color:#555;"}
 tinyurl.com/iassist2026

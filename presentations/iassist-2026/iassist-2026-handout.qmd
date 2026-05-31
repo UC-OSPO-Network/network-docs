@@ -557,10 +557,10 @@ body {
   <div class="panel">
     <div class="panel-head">Resources for Your Researchers</div>
     <div class="panel-body">
-      <div class="resource-row"><span class="resource-file">README.md</span> template + guide &middot; <a href="https://ucospo.net/oss-resources/template-guides/readme-guide/" style="font-size:7.5pt; color:var(--blue);">link</a></div>
-      <div class="resource-row"><span class="resource-file">LICENSE</span> guide with UC-approved options &middot; <a href="https://ucospo.net/oss-resources/template-guides/license-guide/" style="font-size:7.5pt; color:var(--blue);">link</a></div>
-      <div class="resource-row"><span class="resource-file">CONTRIBUTING.md</span> template + guide &middot; <a href="https://ucospo.net/oss-resources/template-guides/contributing-guide/" style="font-size:7.5pt; color:var(--blue);">link</a></div>
-      <div class="resource-row"><span class="resource-file">CODE_OF_CONDUCT.md</span> Contributor Covenant &middot; <a href="https://ucospo.net/oss-resources/template-guides/code-of-conduct-guide/" style="font-size:7.5pt; color:var(--blue);">link</a></div>
+      <div class="resource-row"><span class="resource-file">README.md</span> template + guide &middot; <a href="https://ucospo.net/oss-resources/template-guides/readme-guide/" style="font-size:7.5pt; color:var(--blue);">README guide</a></div>
+      <div class="resource-row"><span class="resource-file">LICENSE</span> guide with UC-approved options &middot; <a href="https://ucospo.net/oss-resources/template-guides/license-guide/" style="font-size:7.5pt; color:var(--blue);">LICENSE guide</a></div>
+      <div class="resource-row"><span class="resource-file">CONTRIBUTING.md</span> template + guide &middot; <a href="https://ucospo.net/oss-resources/template-guides/contributing-guide/" style="font-size:7.5pt; color:var(--blue);">CONTRIBUTING guide</a></div>
+      <div class="resource-row"><span class="resource-file">CODE_OF_CONDUCT.md</span> Contributor Covenant &middot; <a href="https://ucospo.net/oss-resources/template-guides/code-of-conduct-guide/" style="font-size:7.5pt; color:var(--blue);">CODE_OF_CONDUCT guide</a></div>
       <div class="resource-row"><span class="resource-file">CITATION.cff</span> + Zenodo &rarr; citable DOI</div>
       <p style="font-size:7.5pt; color:#777; margin-top:0.25em;">All at <strong>ucospo.net/oss-resources</strong> &middot; Sept 2025</p>
     </div>

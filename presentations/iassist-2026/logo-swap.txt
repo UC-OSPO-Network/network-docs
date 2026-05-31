@@ -9,6 +9,7 @@
     if (!logo) return;
     var bg = slide ? (slide.getAttribute('data-background-color') || '') : '';
     logo.src = bg === DARK_BG ? WHITE_LOGO : LIGHT_LOGO;
+    logo.alt = 'UC OSPO Network';
   }
 
   window.addEventListener('load', function () {
