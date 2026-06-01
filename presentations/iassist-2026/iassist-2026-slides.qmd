@@ -751,9 +751,9 @@ The student angle: if you run Carpentries workshops or data services instruction
 
 If you advise on data-intensive research, you are probably already helping with code.
 
-**The network has already built the resources:**
+**The network has already built the resources** (Laura Langdon, UC OSPO)**:**
 
-* [`README.md`](https://ucospo.net/oss-resources/template-guides/readme-guide/) - template + guide (Laura Langdon, UC OSPO)
+* [`README.md`](https://ucospo.net/oss-resources/template-guides/readme-guide/) - template + guide
 * [`LICENSE`](https://ucospo.net/oss-resources/template-guides/license-guide/) - guide includes UC-approved options
 * [`CONTRIBUTING.md`](https://ucospo.net/oss-resources/template-guides/contributing-guide/) - template + guide
 * [`CODE_OF_CONDUCT.md`](https://ucospo.net/oss-resources/template-guides/code-of-conduct-guide/) - Contributor Covenant + guidance
