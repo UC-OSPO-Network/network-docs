@@ -5,8 +5,8 @@ name: Publish to Zenodo
 #   publish-test/iassist-2026/v1.0 → sandbox Zenodo (creates and auto-publishes for testing)
 #
 # Required secrets:
-#   ZENODO_TOKEN         — production API token (zenodo.org)
-#   ZENODO_SANDBOX_TOKEN — sandbox API token (sandbox.zenodo.org)
+#   OSPO_ZENODO      — production API token (zenodo.org)
+#   OSPO_ZENODO_TEST — sandbox API token (sandbox.zenodo.org)
 
 on:
   push:
@@ -82,8 +82,8 @@ jobs:
 
       - name: Upload to Zenodo
         env:
-          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
-          ZENODO_SANDBOX_TOKEN: ${{ secrets.ZENODO_SANDBOX_TOKEN }}
+          ZENODO_TOKEN: ${{ secrets.OSPO_ZENODO }}
+          ZENODO_SANDBOX_TOKEN: ${{ secrets.OSPO_ZENODO_TEST }}
           ZENODO_SANDBOX: ${{ steps.tag.outputs.sandbox }}
           PRES_PATH: ${{ steps.tag.outputs.pres_path }}
           PRES_SLUG: ${{ steps.tag.outputs.slug }}
