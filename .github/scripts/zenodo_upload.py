@@ -32,8 +32,8 @@ def cff_to_zenodo_metadata(cff: dict, config: dict) -> dict:
         creator = {"name": f"{author['family-names']}, {author['given-names']}"}
         if "affiliation" in author:
             creator["affiliation"] = author["affiliation"]
-        # ORCID omitted from API payload — add manually when reviewing the draft on Zenodo
-        # (sandbox validation rejects bare ORCID identifiers; production may differ)
+        if "orcid" in author:
+            creator["orcid"] = author["orcid"].replace("https://orcid.org/", "")
         creators.append(creator)
 
     related = []

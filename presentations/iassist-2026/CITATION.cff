@@ -5,7 +5,7 @@ type: presentation
 authors:
   - family-names: Dennis
     given-names: Tim
-    orcid: https://orcid.org/0000-0001-6846-0583
+    orcid: https://orcid.org/0000-0001-6632-3812
     affiliation: "Data Science Center, UCLA Library"
 date-released: 2026-06-01
 version: "1.0.0"
