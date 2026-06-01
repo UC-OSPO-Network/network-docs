@@ -67,7 +67,7 @@ def cff_to_zenodo_metadata(cff: dict, config: dict) -> dict:
 
 def create_deposition(base_url: str, headers: dict) -> tuple:
     r = requests.post(
-        f"{base_url}/api/depositions",
+        f"{base_url}/api/deposit/depositions",
         headers={**headers, "Content-Type": "application/json"},
         json={},
     )
@@ -85,7 +85,7 @@ def upload_file(bucket_url: str, file_path: Path, headers: dict) -> None:
 
 def set_metadata(base_url: str, deposition_id: int, metadata: dict, headers: dict) -> None:
     r = requests.put(
-        f"{base_url}/api/depositions/{deposition_id}",
+        f"{base_url}/api/deposit/depositions/{deposition_id}",
         headers={**headers, "Content-Type": "application/json"},
         json={"metadata": metadata},
     )
@@ -94,7 +94,7 @@ def set_metadata(base_url: str, deposition_id: int, metadata: dict, headers: dic
 
 def publish(base_url: str, deposition_id: int, headers: dict) -> str:
     r = requests.post(
-        f"{base_url}/api/depositions/{deposition_id}/actions/publish",
+        f"{base_url}/api/deposit/depositions/{deposition_id}/actions/publish",
         headers=headers,
     )
     r.raise_for_status()
