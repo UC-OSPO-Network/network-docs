@@ -292,7 +292,7 @@ body {
   <img src="images/uc-ospo-network-logo.svg" alt="UC OSPO Network">
   <div class="handout-header-text">
     <h1>UC Open Source as Institutional Infrastructure</h1>
-    <p>Tim Dennis &middot; Data Science Center, UCLA Library &middot; IASSIST 2026 &middot; Slides: <strong>tinyurl.com/iassist2026</strong> &middot; Handout: <strong>tinyurl.com/iassist2026-handout</strong></p>
+    <p>Tim Dennis &middot; Data Science Center, UCLA Library &middot; <abbr title="International Association for Social Science Information Service and Technology">IASSIST</abbr> 2026 &middot; Slides: <strong>tinyurl.com/iassist2026</strong> &middot; Handout: <strong>tinyurl.com/iassist2026-handout</strong></p>
   </div>
 </div>
 
@@ -340,7 +340,7 @@ body {
         <span class="tl-name">tz database</span>
         <span class="tl-origin">UCLA (Paul Eggert, since 2005)</span>
       </div>
-      <div class="tl-desc">Every OS clock on the planet depends on this. Eggert used 19th-century almanacs to reconstruct pre-1883 timezone history. A 2011 IP lawsuit nearly took it offline; IANA now has stewardship. <a class="tl-link" href="https://www.iana.org/time-zones">iana.org/time-zones &rarr;</a></div>
+      <div class="tl-desc">Every OS clock on the planet depends on this. Eggert used 19th-century almanacs to reconstruct pre-1883 timezone history. A 2011 <abbr title="Intellectual Property">IP</abbr> lawsuit nearly took it offline; <abbr title="Internet Assigned Numbers Authority">IANA</abbr> now has stewardship. <a class="tl-link" href="https://www.iana.org/time-zones">iana.org/time-zones &rarr;</a></div>
     </div>
   </div>
 
@@ -406,7 +406,7 @@ body {
         <span class="tl-name">Ceph</span>
         <span class="tl-origin">UC Santa Cruz</span>
       </div>
-      <div class="tl-desc">Sage Weil&rsquo;s PhD dissertation on exabyte-scale distributed storage. Merged into the Linux kernel (2010); commercialization proceeds funded <strong>CROSS at UCSC</strong>, the first UC OSPO and seed of this network. <a class="tl-link" href="https://ceph.io">ceph.io &rarr;</a></div>
+      <div class="tl-desc">Sage Weil&rsquo;s PhD dissertation on exabyte-scale distributed storage. Merged into the Linux kernel (2010); commercialization proceeds funded <strong><abbr title="Center for Research in Open Source Software">CROSS</abbr> at UCSC</strong>, the first UC <abbr title="Open Source Program Office">OSPO</abbr> and seed of this network. <a class="tl-link" href="https://ceph.io">ceph.io &rarr;</a></div>
     </div>
   </div>
 
@@ -418,7 +418,7 @@ body {
         <span class="tl-name">Apache Spark</span>
         <span class="tl-origin">UC Berkeley AMPLab</span>
       </div>
-      <div class="tl-desc">Matei Zaharia built it so a classmate could beat the Netflix Prize with faster distributed ML. Holden Karau (PMC member, core committer) scaled its Python and core engines. Donated to Apache before commercializing; Databricks now valued at <strong>$62B+</strong>. <a class="tl-link" href="https://spark.apache.org">spark.apache.org &rarr;</a></div>
+      <div class="tl-desc">Matei Zaharia built it so a classmate could beat the Netflix Prize with faster distributed ML. Holden Karau (<abbr title="Apache Project Management Committee">PMC</abbr> member, core committer) scaled its Python and core engines. Donated to Apache before commercializing; Databricks now valued at <strong>$62B+</strong>. <a class="tl-link" href="https://spark.apache.org">spark.apache.org &rarr;</a></div>
     </div>
   </div>
 
@@ -442,7 +442,7 @@ body {
         <span class="tl-name">Named Data Networking</span>
         <span class="tl-origin">UCLA &middot; Lixia Zhang, Lead PI</span>
       </div>
-      <div class="tl-desc">Zhang drove tractors in rural China during the Cultural Revolution, earned her PhD at MIT, and was the only woman at the first IETF meeting (1986). She coined "middlebox," designed RSVP, and is in the Internet Hall of Fame. NDN rethinks internet architecture at the protocol level. <a class="tl-link" href="https://named-data.net">named-data.net &rarr;</a></div>
+      <div class="tl-desc">Zhang drove tractors in rural China during the Cultural Revolution, earned her PhD at MIT, and was the only woman at the first <abbr title="Internet Engineering Task Force">IETF</abbr> meeting (1986). She coined "middlebox," designed <abbr title="Resource Reservation Protocol">RSVP</abbr>, and is in the Internet Hall of Fame. NDN rethinks internet architecture at the protocol level. <a class="tl-link" href="https://named-data.net">named-data.net &rarr;</a></div>
     </div>
   </div>
 
@@ -503,7 +503,7 @@ body {
         <span class="campus-chip">Santa Barbara</span>
         <span class="campus-chip">San Diego</span>
       </div>
-      <p style="font-size:7.5pt; color:#777; margin-top:0.3em;">Lead: UCSC, first OSPO in a large state university system. Part of <strong>CURIOSS</strong> (34 academic OSPOs worldwide).</p>
+      <p style="font-size:7.5pt; color:#777; margin-top:0.3em;">Lead: UCSC, first OSPO in a large state university system. Part of <strong><abbr title="Community for University and Research Institution OSPOs">CURIOSS</abbr></strong> (34 academic OSPOs worldwide).</p>
     </div>
   </div>
 
@@ -517,7 +517,7 @@ body {
       <hr class="stat-divider">
       <div class="stat-row">
         <div class="stat-num">58%</div>
-        <div class="stat-label">of UC OSS contributors are also <em>maintainers</em>, not just users but stewards</div>
+        <div class="stat-label">of UC <abbr title="Open Source Software">OSS</abbr> contributors are also <em>maintainers</em>, not just users but stewards</div>
       </div>
       <hr class="stat-divider">
       <p style="font-size:8.5pt; margin-bottom:0.18em;"><strong>#1 challenge:</strong> time to write documentation</p>
@@ -532,7 +532,7 @@ body {
         <div class="stat-num">$8.8T</div>
         <div class="stat-label">demand-side replacement value of open source software to global enterprises</div>
       </div>
-      <p style="font-size:7.5pt; color:#777; margin-top:0.2em;">Supply-side cost to recreate the top 5,000 packages: $4.15B. If OSS disappeared and every organization built its own: $8.8 trillion. Ratio: ~2,000x. Hoffmann, Nagle &amp; Zhou (2024) HBS WP 24-038.</p>
+      <p style="font-size:7.5pt; color:#777; margin-top:0.2em;">Supply-side cost to recreate the top 5,000 packages: $4.15B. If OSS disappeared and every organization built its own: $8.8 trillion. Ratio: ~2,000x. Hoffmann, Nagle &amp; Zhou (2024) <abbr title="Harvard Business School">HBS</abbr> <abbr title="Working Paper">WP</abbr> 24-038.</p>
     </div>
   </div>
 
@@ -545,7 +545,7 @@ body {
       </div>
       <div class="area-row">
         <div class="area-icon">&#127807;</div>
-        <div class="area-text"><strong>Sustainability:</strong> Cross-campus licensing WG; OSSPREY project health assessment; community management</div>
+        <div class="area-text"><strong>Sustainability:</strong> Cross-campus licensing <abbr title="Working Group">WG</abbr>; <abbr title="Open Source PRoject sustainabilitY tracker">OSSPREY</abbr> project health assessment; community management</div>
       </div>
       <div class="area-row">
         <div class="area-icon">&#128214;</div>
@@ -561,7 +561,7 @@ body {
       <div class="resource-row"><span class="resource-file">LICENSE</span> guide with UC-approved options &middot; <a href="https://ucospo.net/oss-resources/template-guides/license-guide/" style="font-size:7.5pt; color:var(--blue);">LICENSE guide</a></div>
       <div class="resource-row"><span class="resource-file">CONTRIBUTING.md</span> template + guide &middot; <a href="https://ucospo.net/oss-resources/template-guides/contributing-guide/" style="font-size:7.5pt; color:var(--blue);">CONTRIBUTING guide</a></div>
       <div class="resource-row"><span class="resource-file">CODE_OF_CONDUCT.md</span> Contributor Covenant &middot; <a href="https://ucospo.net/oss-resources/template-guides/code-of-conduct-guide/" style="font-size:7.5pt; color:var(--blue);">CODE_OF_CONDUCT guide</a></div>
-      <div class="resource-row"><span class="resource-file">CITATION.cff</span> + Zenodo &rarr; citable DOI</div>
+      <div class="resource-row"><span class="resource-file">CITATION.cff</span> + Zenodo &rarr; citable <abbr title="Digital Object Identifier">DOI</abbr></div>
       <p style="font-size:7.5pt; color:#777; margin-top:0.25em;">All at <strong>ucospo.net/oss-resources</strong> &middot; Sept 2025</p>
     </div>
   </div>
