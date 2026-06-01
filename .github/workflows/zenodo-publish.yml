@@ -46,14 +46,17 @@ jobs:
           [ -f "$PRES/${SLUG}-slides.qmd"  ] && quarto render "$PRES/${SLUG}-slides.qmd"
           [ -f "$PRES/${SLUG}-handout.qmd" ] && quarto render "$PRES/${SLUG}-handout.qmd"
 
-      - name: Generate PDF
+      - name: Generate PDFs
         run: |
           SLUG="${{ steps.tag.outputs.slug }}"
           PRES="${{ steps.tag.outputs.pres_path }}"
+          CHROME=$(which google-chrome-stable || which google-chrome || which chromium-browser)
+
           python3 -m http.server 3000 --directory "$PRES" &
           SERVER_PID=$!
           sleep 8
-          CHROME=$(which google-chrome-stable || which google-chrome || which chromium-browser)
+
+          # Slides PDF — Reveal.js print mode
           $CHROME \
             --headless=new \
             --no-sandbox \
@@ -62,6 +65,16 @@ jobs:
             --run-all-compositor-stages-before-draw \
             --print-to-pdf="$(pwd)/$PRES/${SLUG}-slides.pdf" \
             "http://localhost:3000/${SLUG}-slides.html?print-pdf"
+
+          # Handout PDF — plain print (already print-styled with @page)
+          $CHROME \
+            --headless=new \
+            --no-sandbox \
+            --disable-setuid-sandbox \
+            --disable-dev-shm-usage \
+            --print-to-pdf="$(pwd)/$PRES/${SLUG}-handout.pdf" \
+            "http://localhost:3000/${SLUG}-handout.html"
+
           kill $SERVER_PID 2>/dev/null || true
 
       - name: Install Python dependencies
