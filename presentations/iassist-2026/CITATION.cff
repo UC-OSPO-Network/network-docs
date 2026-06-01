@@ -9,6 +9,10 @@ authors:
     affiliation: "Data Science Center, UCLA Library"
 date-released: 2026-06-04
 version: "1.0.0"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20498692
+    description: Zenodo deposit
 url: "https://ucospo.net/network-docs/presentations/iassist-2026/iassist-2026-slides.html"
 repository-code: "https://github.com/UC-OSPO-Network/network-docs"
 keywords:
