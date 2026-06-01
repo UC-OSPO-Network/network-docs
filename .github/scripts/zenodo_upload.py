@@ -89,6 +89,8 @@ def set_metadata(base_url: str, deposition_id: int, metadata: dict, headers: dic
         headers={**headers, "Content-Type": "application/json"},
         json={"metadata": metadata},
     )
+    if not r.ok:
+        print(f"set_metadata failed {r.status_code}: {r.text}")
     r.raise_for_status()
 
 
@@ -97,6 +99,8 @@ def publish(base_url: str, deposition_id: int, headers: dict) -> str:
         f"{base_url}/api/deposit/depositions/{deposition_id}/actions/publish",
         headers=headers,
     )
+    if not r.ok:
+        print(f"publish failed {r.status_code}: {r.text}")
     r.raise_for_status()
     return r.json().get("doi", "")
 
