@@ -45,7 +45,7 @@ The people keeping it running are increasingly called **Research Software Engine
 If every organization had to replace open source with proprietary equivalents, the cost would exceed **$8.8 trillion**.
 
 ::: {.small}
-Hettrick et al. (SSI, 2014/2022) · Hoffmann, Nagle & Zhou (2024) doi:10.2139/ssrn.4693148
+Hettrick et al. (<abbr title="Software Sustainability Institute">SSI</abbr>, 2014/2022) · Hoffmann, Nagle & Zhou (2024) doi:10.2139/ssrn.4693148
 :::
 :::
 
@@ -85,13 +85,13 @@ The $8.8 trillion figure is from Hoffmann, Nagle & Zhou (2024), "The Value of Op
 
 People in this room helped build the open data movement:
 
-* FAIR principles: from aspiration to institutional expectation
+* <abbr title="Findable, Accessible, Interoperable, Reusable">FAIR</abbr> principles: from aspiration to institutional expectation
 * Data management plans embedded in grant workflows
 * Curation, provenance, and stewardship as professional services
 * Open science infrastructure: repositories, PIDs, metadata standards
-* **FAIR4RS**: FAIR principles now extended to research software
+* **<abbr title="FAIR Principles for Research Software">FAIR4RS</abbr>**: FAIR principles now extended to research software
 
-**Software is the next frontier**, and UC has been showing the way for 50 years: BSD Unix, Ceph, Apache Spark, RISC-V, Ray. The pipeline from university research to global infrastructure is not rare or accidental.
+**Software is the next frontier**, and UC has been showing the way for 50 years: <abbr title="Berkeley Software Distribution">BSD</abbr> Unix, Ceph, Apache Spark, <abbr title="Reduced Instruction Set Computer - V">RISC-V</abbr>, Ray. The pipeline from university research to global infrastructure is not rare or accidental.
 
 > "The research done in academia was the seed. Foundations provided the soil. But the community was the sun."
 
@@ -252,7 +252,7 @@ An **Open Source Program Office** supports, governs, and promotes open source wi
 
 * Originated in industry: ~77% of large tech companies have one
 * First academic OSPO: Johns Hopkins, 2019
-* **34 academic OSPOs** in CURIOSS worldwide and growing
+* **34 academic OSPOs** in <abbr title="Community for University and Research Institution OSPOs">CURIOSS</abbr> worldwide and growing
 * Core functions: policy, licensing guidance, best practices, education, community
 :::
 
@@ -491,8 +491,8 @@ Nationally: **60%** of maintainers are unpaid; **43%** report burnout.
 
 Network services:
 
-* Cross-campus licensing working group (UCOP + tech transfer + IT)
-* Project health assessment (OSSPREY)
+* Cross-campus licensing working group (<abbr title="UC Office of the President">UCOP</abbr> + tech transfer + IT)
+* Project health assessment (<abbr title="Open Source PRoject sustainabilitY tracker">OSSPREY</abbr>)
 * Containerization support · Community management
 
 ::: {.small}
@@ -507,7 +507,7 @@ Scarlett et al. (2025) doi:10.31235/osf.io/p8bx6_v1 · Tidelift (2024) State of 
 
 <div style="background:#1f335e; border-radius:8px; padding:1.1em 1em; color:white; text-align:center;">
 <div style="font-size:2.6em; font-weight:700; color:#ff9100; line-height:1;">58%</div>
-<div style="font-size:0.6em; margin-top:0.3em; line-height:1.4;">of UC OSS contributors<br>are also <strong>maintainers</strong><br><span style="opacity:0.7;">not just users, stewards</span></div>
+<div style="font-size:0.6em; margin-top:0.3em; line-height:1.4;">of UC <abbr title="Open Source Software">OSS</abbr> contributors<br>are also <strong>maintainers</strong><br><span style="opacity:0.7;">not just users, stewards</span></div>
 </div>
 
 <div style="background:#f0f4fa; border-radius:8px; padding:0.9em 1em; text-align:center;">
@@ -728,7 +728,7 @@ You don't need a formal OSPO to do this. You need the frame.
 
 ::: {style="background:#f0f4fa; border-radius:8px; padding:0.65em 0.9em; font-size:0.72em;"}
 **OSPO heuristics already in your toolkit:**
-health signals · bus factor · governance files · FAIR4RS · software DMPs · contributor conventions · community governance
+health signals · bus factor · governance files · FAIR4RS · software <abbr title="Data Management Plans">DMPs</abbr> · contributor conventions · community governance
 :::
 
 :::
@@ -757,7 +757,7 @@ If you advise on data-intensive research, you are probably already helping with 
 * [`LICENSE`](https://ucospo.net/oss-resources/template-guides/license-guide/) - guide includes UC-approved options
 * [`CONTRIBUTING.md`](https://ucospo.net/oss-resources/template-guides/contributing-guide/) - template + guide
 * [`CODE_OF_CONDUCT.md`](https://ucospo.net/oss-resources/template-guides/code-of-conduct-guide/) - Contributor Covenant + guidance
-* `CITATION.cff` + Zenodo release → citable, versioned DOI
+* `CITATION.cff` + Zenodo release → citable, versioned <abbr title="Digital Object Identifier">DOI</abbr>
 
 **Going further:**
 
