@@ -278,9 +278,13 @@ Tim Dennis
 </div>
 </div></div>
 <aside class="notes">
-<p>IMAGE: a grid of OSS tool logos researchers actually use - Jupyter, Python, R, Git, Pandas, numpy, ggplot2. Makes the “invisible layer” concrete before you say a word.</p>
-<p>Start with what this room knows. 92% of researchers depend on software; two-thirds say their work would stop without it. The people doing this work are increasingly organizing under the RSE identity - US-RSE launched in 2018 and now has thousands of members. When a maintainer burns out, a key library gets abandoned. A licensing question blocks a publication. There is often nowhere to turn. That is the gap.</p>
-<p>The $8.8 trillion figure is from Hoffmann, Nagle &amp; Zhou (2024), “The Value of Open Source Software,” Harvard Business School Working Paper 24-038. Supply-side cost to recreate the top 5,000 most-used packages: $4.15 billion. Demand-side replacement value to global enterprises if OSS disappeared: $8.8 trillion. That ratio - roughly 2,000x - is the clearest way to explain why open source governance matters to an administrator or funder who thinks this is a niche concern.</p>
+<ul>
+<li>92%/67% stats: set the stakes before the slide text does; audience already lives this</li>
+<li>RSE identity = researchers organizing around the support gap; US-RSE launched 2018, now thousands of members</li>
+<li>The gap: maintainer burns out → library abandoned; licensing question → publication blocked; nowhere to turn</li>
+<li>$8.8T breakdown: supply-side cost to recreate top 5,000 packages = $4.15B; demand-side if OSS disappeared = $8.8T (~2,000x ratio)</li>
+<li>Use that ratio with admins or funders who think this is a niche concern</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -311,15 +315,12 @@ Tim Dennis
 <p>Barker et al.&nbsp;(2022) doi:10.1038/s41597-022-01710-x · Ruff, N. (2026) “The Role of Foundations in Advancing Open Collaboration and Innovation,” UC Open Summit. youtu.be/eBriL3CDNeo</p>
 </div>
 <aside class="notes">
-<p>IMAGE: the FAIR principles diagram or a simple timeline of open data milestones works here if you want a visual anchor.</p>
-<p>FAIR did not happen by accident. It happened because data professionals insisted that data deserved first-class treatment as a scholarly output. FAIR4RS (Barker et al.&nbsp;2022, RDA/FORCE11/ReSA working group) applies the same Findable, Accessible, Interoperable, Reusable framework to software. We are at that same inflection point.</p>
-<p>The UC pipeline is the concrete proof:</p>
-<p>BSD Unix - Berkeley, 1970s–80s. The licensing model that made open source possible.</p>
-<p>Ceph - UCSC Storage Systems Research Center, started 2004. Sage Weil’s doctoral dissertation under Prof.&nbsp;Scott A. Brandt, designed from the ground up for exabyte-scale distributed storage on commodity hardware. The Ceph client was merged into the Linux kernel by 2010. Weil founded Inktank to commercialize it; Red Hat acquired Inktank in 2014. The Linux Foundation launched the Ceph Foundation in 2018 to give it neutral governance independent of any single vendor. Critically: the proceeds from that commercialization funded CROSS at UCSC, which became the first UC OSPO and the seed of this network.</p>
-<p>Apache Spark - Berkeley AMPLab, 2009. Donated to Apache before commercializing; Databricks followed. Now valued at $60B+.</p>
-<p>RISC-V - Berkeley, 2010. A three-month teaching tool that became a global open CPU standard with 350+ org members in 70 countries, shipping in billions of devices.</p>
-<p>Ray - Berkeley RISELab, 2016 class project. Donated to Linux Foundation in 2025. Now core infrastructure for the OpenAI compute stack.</p>
-<p>Ruff’s point: “The students writing their class projects this very semester may be creating the next Ray.” That is not a metaphor. It is a track record.</p>
+<ul>
+<li>FAIR didn’t happen by accident: data professionals insisted data deserved first-class treatment as a scholarly output</li>
+<li>FAIR4RS (Barker et al.&nbsp;2022, RDA/FORCE11/ReSA) = same inflection point for software that FAIR was for data</li>
+<li>UC pipeline is the proof that research → global infrastructure is a pattern, not a fluke (details on next slide)</li>
+<li>Ruff: “The students writing their class projects this very semester may be creating the next Ray” — not a metaphor, a track record</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -405,20 +406,20 @@ Tim Dennis
 </div>
 </div>
 <aside class="notes">
-<p>Berkeley gets the headline logos because those are audience-recognizable. But point to the whole grid: systems infrastructure (Berkeley, UCSC), bioinformatics and neuroscience pipelines (UCSD, UCSF, Davis), and internet infrastructure (UCLA). The pattern holds everywhere.</p>
-<p>Origin stories for each, if you need them:</p>
-<p><strong>Jupyter</strong> - Pérez was a physics PhD at CU Boulder, built the first IPython in an afternoon procrastinating on his thesis. “The interactive tool running millions of AI workflows was born from one grad student avoiding his dissertation.”</p>
-<p><strong>Spark</strong> - Matei Zaharia, Berkeley AMPLab, 2009. His classmate Lester Mackey needed faster distributed ML to compete in the $1M Netflix Prize. Spark was the fix. Databricks now $60B+.</p>
-<p><strong>RISC-V</strong> - Krste Asanović and David Patterson, 2010. A three-month summer project to give grad students a chip architecture to experiment on without paying ARM royalties. Now in 10 billion devices. Foundation moved to Switzerland in 2020 to stay neutral in the US-China trade war.</p>
-<p><strong>Ray</strong> - Nishihara and Moritz, RISELab, 2016. Two PhD students tired of rewriting Python every time they wanted to scale to more than one machine. Now core OpenAI compute infrastructure.</p>
-<p><strong>Ceph</strong> - Sage Weil’s dissertation, UCSC SSRC, 2004. Designed to store data at exabyte scale without a central lookup table. Weil founded Inktank; Red Hat acquired it in 2014. Those proceeds funded CROSS at UCSC - which became the first UC OSPO, and the seed of this network.</p>
-<p><strong>UCSC Genome Browser</strong> - Jim Kent, UCSC PhD student, summer 2000. He assembled the human genome on 50 borrowed PCs while icing his wrists to prevent carpal tunnel, finishing three days before Celera Genomics and its supercomputer. The genome stayed in the public domain. (See next slide.)</p>
-<p><strong>Cytoscape</strong> - Trey Ideker, UCSD, 2003. High-throughput biology was producing molecular interaction tables no spreadsheet could handle. He built visual “living maps” of the cell. Now the de facto standard for network biology.</p>
-<p><strong>EEGLAB</strong> - Scott Makeig, Salk Institute → UCSD, 1997–2001. Funded by the inventor of laser barcoding, who wanted to decode the brain’s own scanning systems.</p>
-<p><strong>Processing</strong> - Casey Reas (UCLA Design Media Arts) and Ben Fry co-created Processing in 2001 at MIT Media Lab. Designed to teach programming through visual art - a sketchbook for code. Now the Processing Foundation; used in art, design, and data visualization education worldwide.</p>
-<p><strong>tz database</strong> - Paul Eggert, UCLA, volunteer since 2005. To reconstruct pre-1883 timezone history, he used almanacs compiled by 19th-century astrologers who recorded precise local solar times to cast horoscopes. Every OS clock on the planet depends on this.</p>
-<p><strong>ChimeraX</strong> - UCSF RBVI, successor to Chimera. Built for cryo-EM data too large for older renderers. Lets structural biologists explode 3D virus structures on screen to find drug-binding pockets.</p>
-<p><strong>sourmash</strong> - Titus Brown + Luiz Irber, UC Davis, 2016. Sequence databases were growing faster than BLAST could search them. FracMinHash sketching compresses genomes into fingerprints; a laptop can now search billions of sequences in seconds.</p>
+<ul>
+<li>Berkeley = audience-recognizable headlines; point to the whole grid: systems (Berkeley, UCSC), bioinformatics/neuroscience (UCSD, UCSF, Davis), internet infrastructure (UCLA)</li>
+<li><strong>Jupyter</strong>: Pérez procrastinating on his physics PhD, built IPython in an afternoon</li>
+<li><strong>Spark</strong>: Zaharia’s classmate needed faster distributed ML to compete in the $1M Netflix Prize; Databricks now $60B+</li>
+<li><strong>RISC-V</strong>: 3-month summer project so grad students could experiment without paying ARM royalties; now in 10B devices; moved to Switzerland in 2020 to stay neutral in US-China trade war</li>
+<li><strong>Ray</strong>: two PhD students tired of rewriting Python to scale past one machine; now core OpenAI compute infrastructure</li>
+<li><strong>Ceph</strong>: Weil’s 2004 dissertation → Inktank → Red Hat acquisition → CROSS funded the first UC OSPO (seed of this network)</li>
+<li><strong>Genome Browser</strong>: Jim Kent assembled the genome on 50 borrowed PCs (details next slide)</li>
+<li><strong>Cytoscape</strong>: molecular interaction tables too big for spreadsheets → visual “living maps” of the cell; de facto standard for network biology</li>
+<li><strong>EEGLAB</strong>: funded by the inventor of laser barcoding who wanted to decode the brain’s scanning systems</li>
+<li><strong>Processing</strong>: Reas + Fry, MIT Media Lab 2001; teach programming through visual art; now the Processing Foundation</li>
+<li><strong>tz database</strong>: Eggert used 19th-century astrologers’ almanacs to reconstruct pre-1883 timezone history; every OS clock depends on it</li>
+<li><strong>sourmash</strong>: FracMinHash sketching — a laptop now searches billions of genome sequences in seconds</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -443,10 +444,13 @@ Tim Dennis
 <p>Kent, J.W. (2002). BLAT - The BLAST-Like Alignment Tool. <em>Genome Research</em> 12, 656–664. · genome.ucsc.edu</p>
 </div>
 <aside class="notes">
-<p>Take a beat here. Let the room absorb it.</p>
-<p>The competitor was Celera Genomics - $300M in private funding, dedicated supercomputer cluster. Kent was working with 50 off-the-shelf PCs assembled in a hallway. He reportedly wrote GigAssembler (~10,000 lines of C) in a few intense weeks while finishing his dissertation. The “pajamas and wrist ice” detail comes from contemporaneous accounts.</p>
-<p>This is the open data movement, applied to biology, won by a grad student. It is exactly the argument this room already makes about data - that scientific outputs belong in the commons - applied to software. If your audience has any doubt about why this work matters, this story is the answer.</p>
-<p>After the beat: “That is what UC research infrastructure looks like at the start.”</p>
+<ul>
+<li>Take a beat. Let the room absorb it.</li>
+<li>Celera: $300M private funding, dedicated supercomputer cluster; Kent: 50 off-the-shelf PCs assembled in a hallway</li>
+<li>GigAssembler (~10,000 lines of C) in a few intense weeks, reportedly while icing his wrists to prevent carpal tunnel</li>
+<li>This is the open data argument — scientific outputs belong in the commons — applied to software and won by a grad student</li>
+<li>After the beat: “That is what UC research infrastructure looks like at the start.”</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -472,8 +476,8 @@ Tim Dennis
 </ul>
 </div><div class="column" style="width:56%;">
 <div class="cell hidden">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="264" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 263;"><span id="cb1-264"><a href=""></a>world_topo <span class="op">=</span> <span class="fu">fetch</span>(<span class="st">"https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"</span>)<span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
-<span id="cb1-265"><a href=""></a>members <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"curioss-members.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="234" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 233;"><span id="cb1-234"><a href=""></a>world_topo <span class="op">=</span> <span class="fu">fetch</span>(<span class="st">"https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"</span>)<span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
+<span id="cb1-235"><a href=""></a>members <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"curioss-members.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -490,35 +494,35 @@ Tim Dennis
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="269" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 268;"><span id="cb2-269"><a href=""></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb2-270"><a href=""></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
-<span id="cb2-271"><a href=""></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"equal-earth"</span><span class="op">,</span></span>
-<span id="cb2-272"><a href=""></a>    <span class="dt">domain</span><span class="op">:</span> {</span>
-<span id="cb2-273"><a href=""></a>      <span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span></span>
-<span id="cb2-274"><a href=""></a>      <span class="dt">coordinates</span><span class="op">:</span> members<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> [<span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span>])</span>
-<span id="cb2-275"><a href=""></a>    }<span class="op">,</span></span>
-<span id="cb2-276"><a href=""></a>    <span class="dt">inset</span><span class="op">:</span> <span class="dv">40</span></span>
-<span id="cb2-277"><a href=""></a>  }<span class="op">,</span></span>
-<span id="cb2-278"><a href=""></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">660</span><span class="op">,</span></span>
-<span id="cb2-279"><a href=""></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">340</span><span class="op">,</span></span>
-<span id="cb2-280"><a href=""></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span>}<span class="op">,</span></span>
-<span id="cb2-281"><a href=""></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb2-282"><a href=""></a>    Plot<span class="op">.</span><span class="fu">graticule</span>({<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span>})<span class="op">,</span></span>
-<span id="cb2-283"><a href=""></a>    Plot<span class="op">.</span><span class="fu">geo</span>(topojson<span class="op">.</span><span class="fu">feature</span>(world_topo<span class="op">,</span> world_topo<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">land</span>)<span class="op">,</span> {</span>
-<span id="cb2-284"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ccc"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span></span>
-<span id="cb2-285"><a href=""></a>    })<span class="op">,</span></span>
-<span id="cb2-286"><a href=""></a>    Plot<span class="op">.</span><span class="fu">dot</span>(members<span class="op">,</span> {</span>
-<span id="cb2-287"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
-<span id="cb2-288"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
-<span id="cb2-289"><a href=""></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">7</span><span class="op">,</span></span>
-<span id="cb2-290"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">uc_network</span> <span class="op">===</span> <span class="st">"yes"</span> <span class="op">?</span> <span class="st">"#ff9100"</span> <span class="op">:</span> <span class="st">"#003cb3"</span><span class="op">,</span></span>
-<span id="cb2-291"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
-<span id="cb2-292"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
-<span id="cb2-293"><a href=""></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb2-294"><a href=""></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">name</span></span>
-<span id="cb2-295"><a href=""></a>    })</span>
-<span id="cb2-296"><a href=""></a>  ]</span>
-<span id="cb2-297"><a href=""></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="239" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 238;"><span id="cb2-239"><a href=""></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-240"><a href=""></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
+<span id="cb2-241"><a href=""></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"equal-earth"</span><span class="op">,</span></span>
+<span id="cb2-242"><a href=""></a>    <span class="dt">domain</span><span class="op">:</span> {</span>
+<span id="cb2-243"><a href=""></a>      <span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span></span>
+<span id="cb2-244"><a href=""></a>      <span class="dt">coordinates</span><span class="op">:</span> members<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> [<span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span>])</span>
+<span id="cb2-245"><a href=""></a>    }<span class="op">,</span></span>
+<span id="cb2-246"><a href=""></a>    <span class="dt">inset</span><span class="op">:</span> <span class="dv">40</span></span>
+<span id="cb2-247"><a href=""></a>  }<span class="op">,</span></span>
+<span id="cb2-248"><a href=""></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">660</span><span class="op">,</span></span>
+<span id="cb2-249"><a href=""></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">340</span><span class="op">,</span></span>
+<span id="cb2-250"><a href=""></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span>}<span class="op">,</span></span>
+<span id="cb2-251"><a href=""></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-252"><a href=""></a>    Plot<span class="op">.</span><span class="fu">graticule</span>({<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span>})<span class="op">,</span></span>
+<span id="cb2-253"><a href=""></a>    Plot<span class="op">.</span><span class="fu">geo</span>(topojson<span class="op">.</span><span class="fu">feature</span>(world_topo<span class="op">,</span> world_topo<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">land</span>)<span class="op">,</span> {</span>
+<span id="cb2-254"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ccc"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span></span>
+<span id="cb2-255"><a href=""></a>    })<span class="op">,</span></span>
+<span id="cb2-256"><a href=""></a>    Plot<span class="op">.</span><span class="fu">dot</span>(members<span class="op">,</span> {</span>
+<span id="cb2-257"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
+<span id="cb2-258"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
+<span id="cb2-259"><a href=""></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">7</span><span class="op">,</span></span>
+<span id="cb2-260"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">uc_network</span> <span class="op">===</span> <span class="st">"yes"</span> <span class="op">?</span> <span class="st">"#ff9100"</span> <span class="op">:</span> <span class="st">"#003cb3"</span><span class="op">,</span></span>
+<span id="cb2-261"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb2-262"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
+<span id="cb2-263"><a href=""></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb2-264"><a href=""></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">name</span></span>
+<span id="cb2-265"><a href=""></a>    })</span>
+<span id="cb2-266"><a href=""></a>  ]</span>
+<span id="cb2-267"><a href=""></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="expression">
 
@@ -531,8 +535,11 @@ Tim Dennis
 </div>
 </div></div>
 <aside class="notes">
-<p>Map is live and interactive - hover over dots for institution names. UC campuses are the orange cluster on the west coast. The CNI slides from late 2024 showed ~20 members; we’re at 34 now. Growing fast.</p>
-<p>The academic model is different from industry. Less about compliance, more about enabling researchers and students who are already doing open source work without any support structure.</p>
+<ul>
+<li>Map is live and interactive — hover for institution names; UC = orange cluster on the west coast</li>
+<li>CNI late 2024: ~20 members; now 34, growing fast</li>
+<li>Academic model: less compliance, more enabling researchers and students already doing OSS work without any support structure</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -563,15 +570,15 @@ Tim Dennis
 </div>
 </div><div class="column" style="width:52%;">
 <div class="cell hidden">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="344" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 343;"><span id="cb3-344"><a href=""></a>ca_states <span class="op">=</span> <span class="fu">fetch</span>(<span class="st">"https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json"</span>)<span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
-<span id="cb3-345"><a href=""></a>uc_network_campuses <span class="op">=</span> [</span>
-<span id="cb3-346"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Santa Cruz"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCSC"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">122.0583</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">36.9741</span>}<span class="op">,</span></span>
-<span id="cb3-347"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Berkeley"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCB"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">122.2595</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">37.8724</span>}<span class="op">,</span></span>
-<span id="cb3-348"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Davis"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCD"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">121.7619</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">38.5382</span>}<span class="op">,</span></span>
-<span id="cb3-349"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Los Angeles"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCLA"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">118.4452</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">34.0689</span>}<span class="op">,</span></span>
-<span id="cb3-350"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Santa Barbara"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCSB"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">119.8489</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">34.4140</span>}<span class="op">,</span></span>
-<span id="cb3-351"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC San Diego"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCSD"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">117.2340</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">32.8801</span>}</span>
-<span id="cb3-352"><a href=""></a>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="314" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 313;"><span id="cb3-314"><a href=""></a>ca_states <span class="op">=</span> <span class="fu">fetch</span>(<span class="st">"https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json"</span>)<span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
+<span id="cb3-315"><a href=""></a>uc_network_campuses <span class="op">=</span> [</span>
+<span id="cb3-316"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Santa Cruz"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCSC"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">122.0583</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">36.9741</span>}<span class="op">,</span></span>
+<span id="cb3-317"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Berkeley"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCB"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">122.2595</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">37.8724</span>}<span class="op">,</span></span>
+<span id="cb3-318"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Davis"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCD"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">121.7619</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">38.5382</span>}<span class="op">,</span></span>
+<span id="cb3-319"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Los Angeles"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCLA"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">118.4452</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">34.0689</span>}<span class="op">,</span></span>
+<span id="cb3-320"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Santa Barbara"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCSB"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">119.8489</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">34.4140</span>}<span class="op">,</span></span>
+<span id="cb3-321"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC San Diego"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCSD"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">117.2340</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">32.8801</span>}</span>
+<span id="cb3-322"><a href=""></a>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-3-1" data-nodetype="declaration">
@@ -588,42 +595,42 @@ Tim Dennis
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="356" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 355;"><span id="cb4-356"><a href=""></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb4-357"><a href=""></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
-<span id="cb4-358"><a href=""></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"mercator"</span><span class="op">,</span></span>
-<span id="cb4-359"><a href=""></a>    <span class="dt">domain</span><span class="op">:</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span> <span class="dt">coordinates</span><span class="op">:</span> [[<span class="op">-</span><span class="fl">124.5</span><span class="op">,</span> <span class="fl">32.4</span>]<span class="op">,</span> [<span class="op">-</span><span class="dv">114</span><span class="op">,</span> <span class="fl">42.1</span>]]}</span>
-<span id="cb4-360"><a href=""></a>  }<span class="op">,</span></span>
-<span id="cb4-361"><a href=""></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
-<span id="cb4-362"><a href=""></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">420</span><span class="op">,</span></span>
-<span id="cb4-363"><a href=""></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span>}<span class="op">,</span></span>
-<span id="cb4-364"><a href=""></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb4-365"><a href=""></a>    Plot<span class="op">.</span><span class="fu">geo</span>(</span>
-<span id="cb4-366"><a href=""></a>      topojson<span class="op">.</span><span class="fu">feature</span>(ca_states<span class="op">,</span> ca_states<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">states</span>)<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="fu">find</span>(d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">id</span> <span class="op">===</span> <span class="dv">6</span>)<span class="op">,</span></span>
-<span id="cb4-367"><a href=""></a>      {<span class="dt">fill</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#b0bbcc"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.8</span>}</span>
-<span id="cb4-368"><a href=""></a>    )<span class="op">,</span></span>
-<span id="cb4-369"><a href=""></a>    Plot<span class="op">.</span><span class="fu">dot</span>(uc_network_campuses<span class="op">,</span> {</span>
-<span id="cb4-370"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
-<span id="cb4-371"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
-<span id="cb4-372"><a href=""></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">10</span><span class="op">,</span></span>
-<span id="cb4-373"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#ff9100"</span><span class="op">,</span></span>
-<span id="cb4-374"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
-<span id="cb4-375"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.8</span><span class="op">,</span></span>
-<span id="cb4-376"><a href=""></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb4-377"><a href=""></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">name</span></span>
-<span id="cb4-378"><a href=""></a>    })<span class="op">,</span></span>
-<span id="cb4-379"><a href=""></a>    Plot<span class="op">.</span><span class="fu">text</span>(uc_network_campuses<span class="op">,</span> {</span>
-<span id="cb4-380"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
-<span id="cb4-381"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
-<span id="cb4-382"><a href=""></a>      <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">short</span><span class="op">,</span></span>
-<span id="cb4-383"><a href=""></a>      <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">18</span><span class="op">,</span></span>
-<span id="cb4-384"><a href=""></a>      <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span><span class="op">,</span></span>
-<span id="cb4-385"><a href=""></a>      <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span><span class="op">,</span></span>
-<span id="cb4-386"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1f335e"</span><span class="op">,</span></span>
-<span id="cb4-387"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
-<span id="cb4-388"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span></span>
-<span id="cb4-389"><a href=""></a>    })</span>
-<span id="cb4-390"><a href=""></a>  ]</span>
-<span id="cb4-391"><a href=""></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="326" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 325;"><span id="cb4-326"><a href=""></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb4-327"><a href=""></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
+<span id="cb4-328"><a href=""></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"mercator"</span><span class="op">,</span></span>
+<span id="cb4-329"><a href=""></a>    <span class="dt">domain</span><span class="op">:</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span> <span class="dt">coordinates</span><span class="op">:</span> [[<span class="op">-</span><span class="fl">124.5</span><span class="op">,</span> <span class="fl">32.4</span>]<span class="op">,</span> [<span class="op">-</span><span class="dv">114</span><span class="op">,</span> <span class="fl">42.1</span>]]}</span>
+<span id="cb4-330"><a href=""></a>  }<span class="op">,</span></span>
+<span id="cb4-331"><a href=""></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
+<span id="cb4-332"><a href=""></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">420</span><span class="op">,</span></span>
+<span id="cb4-333"><a href=""></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span>}<span class="op">,</span></span>
+<span id="cb4-334"><a href=""></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb4-335"><a href=""></a>    Plot<span class="op">.</span><span class="fu">geo</span>(</span>
+<span id="cb4-336"><a href=""></a>      topojson<span class="op">.</span><span class="fu">feature</span>(ca_states<span class="op">,</span> ca_states<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">states</span>)<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="fu">find</span>(d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">id</span> <span class="op">===</span> <span class="dv">6</span>)<span class="op">,</span></span>
+<span id="cb4-337"><a href=""></a>      {<span class="dt">fill</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#b0bbcc"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.8</span>}</span>
+<span id="cb4-338"><a href=""></a>    )<span class="op">,</span></span>
+<span id="cb4-339"><a href=""></a>    Plot<span class="op">.</span><span class="fu">dot</span>(uc_network_campuses<span class="op">,</span> {</span>
+<span id="cb4-340"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
+<span id="cb4-341"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
+<span id="cb4-342"><a href=""></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">10</span><span class="op">,</span></span>
+<span id="cb4-343"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#ff9100"</span><span class="op">,</span></span>
+<span id="cb4-344"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb4-345"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.8</span><span class="op">,</span></span>
+<span id="cb4-346"><a href=""></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb4-347"><a href=""></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">name</span></span>
+<span id="cb4-348"><a href=""></a>    })<span class="op">,</span></span>
+<span id="cb4-349"><a href=""></a>    Plot<span class="op">.</span><span class="fu">text</span>(uc_network_campuses<span class="op">,</span> {</span>
+<span id="cb4-350"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
+<span id="cb4-351"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
+<span id="cb4-352"><a href=""></a>      <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">short</span><span class="op">,</span></span>
+<span id="cb4-353"><a href=""></a>      <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">18</span><span class="op">,</span></span>
+<span id="cb4-354"><a href=""></a>      <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span><span class="op">,</span></span>
+<span id="cb4-355"><a href=""></a>      <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span><span class="op">,</span></span>
+<span id="cb4-356"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1f335e"</span><span class="op">,</span></span>
+<span id="cb4-357"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb4-358"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span></span>
+<span id="cb4-359"><a href=""></a>    })</span>
+<span id="cb4-360"><a href=""></a>  ]</span>
+<span id="cb4-361"><a href=""></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="expression">
 
@@ -635,9 +642,11 @@ Tim Dennis
 </div>
 </div></div>
 <aside class="notes">
-<p>Six campuses span the length of the state.</p>
-<p>UCSC had the head start. Sage Weil developed Ceph as his 2004 dissertation at UCSC’s Storage Systems Research Center under Prof.&nbsp;Scott A. Brandt. He founded Inktank to commercialize it; Red Hat acquired Inktank in 2014. Those proceeds funded the Center for Research in Open Source Software (CROSS) at UCSC, which became the first UC OSPO in 2022. Sloan then funded the network model to test what a statewide system could do that single campuses could not.</p>
-<p>The neutral convener framing comes directly from Nithya Ruff on why foundations work (UC Open 2026, 8:17–8:49): “when Berkeley students donate code to the Apache Software Foundation or the Linux Foundation, the code is actually held in a neutral trust place. No single company can pull on it. No single country can claim it.” The UC OSPO Network does this at system scale for policy, tooling, and governance - not code per se, but the institutional scaffolding around it.</p>
+<ul>
+<li>Six campuses span the length of the state</li>
+<li>UCSC head start: Ceph (Weil’s 2004 dissertation) → Inktank → Red Hat → CROSS → first UC OSPO 2022 → Sloan funded the network</li>
+<li>Neutral convener framing (Ruff, UC Open 2026, 8:17–8:49): “code held in a neutral trust place — no single company can pull on it, no single country can claim it”; UC OSPO Network does this at system scale for policy and governance</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -688,6 +697,8 @@ Tim Dennis
 </section>
 <section id="discovery-knowing-whats-there" class="slide level2">
 <h2>Discovery: knowing what’s there</h2>
+<div class="columns">
+<div class="column" style="width:46%;">
 <p><strong>The 4 Ps framework</strong>, applied at system scale:</p>
 <ul>
 <li><strong>People</strong>: who contributes to OS software at UC?</li>
@@ -699,9 +710,21 @@ Tim Dennis
 <div class="small">
 <p>Gomez et al.&nbsp;(2025) arxiv:2506.18359 · Scarlett et al.&nbsp;(2025) doi:10.31235/osf.io/p8bx6_v1</p>
 </div>
+</div><div class="column" style="width:54%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/ucospo-orb.png" style="width:100.0%"></p>
+<figcaption>UC Open Repository Browser showing filter controls, repository type breakdown, data table of UC campus repos, and a network visualization of project relationships</figcaption>
+</figure>
+</div>
+</div></div>
 <aside class="notes">
-<p>IMAGE: a screenshot of the UC ORB (ucospo.net) filtered by campus is a strong visual here. Shows the tooling is real and usable.</p>
-<p>This is a methods story your audience will recognize. We are doing what data librarians do: inventory, assess, make visible. Juanita Gomez led the GitHub analysis and built the UC ORB - she gave a full talk on it at FOSSY titled “Recipe for Discovery: Building the UC Open Source Repository Browser From Scratch.” The 200,000+ figure is the full pipeline scan; 52,000 are the repos with strong institutional affiliation after filtering. The survey preprint has data going to Dryad.</p>
+<ul>
+<li>This is a methods story the audience recognizes: inventory, assess, make visible — what data librarians do</li>
+<li>Juanita Gomez led GitHub analysis and built UC ORB; full FOSSY talk: “Recipe for Discovery: Building the UC Open Source Repository Browser From Scratch”</li>
+<li>200,000+ = full pipeline scan; 52,000 = repos with strong institutional affiliation after filtering</li>
+<li>Survey preprint data going to Dryad</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -770,7 +793,10 @@ Tidelift (2024) State of the Open Source Maintainer Report
 </div>
 </div></div>
 <aside class="notes">
-<p>The 58% maintainer stat is the key reframe for this audience. These are not people who downloaded a package. They are sustaining infrastructure other researchers depend on, mostly without institutional recognition. The licensing working group is the clearest example of what only the network can do: it brings together UCOP, tech transfer offices from UCLA, UCB, and UCSC, and IT. That table does not exist without a network-level convener.</p>
+<ul>
+<li>58% = the key reframe: not people who downloaded a package, but sustaining infrastructure others depend on — mostly without institutional recognition</li>
+<li>Licensing working group = clearest example of what only the network can do: UCOP + tech transfer (UCLA, UCB, UCSC) + IT; that table doesn’t exist without a network-level convener</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -790,7 +816,10 @@ Tidelift (2024) State of the Open Source Maintainer Report
 <p>xkcd #2347 (CC BY-NC 2.5) · UC survey: 58% of contributors are maintainers · Tidelift (2024): 60% unpaid, 43% burnt out</p>
 </div>
 <aside class="notes">
-<p>Let the comic breathe. The joke lands on its own. The caption connects it to the survey data. “A project some random person in Nebraska has been thanklessly maintaining since 2003” - that person exists at every UC campus, and in most of your institutions too.</p>
+<ul>
+<li>Let the comic breathe. The joke lands on its own.</li>
+<li>“A project some random person in Nebraska has been thanklessly maintaining since 2003” — that person is at every UC campus and most of your institutions too</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -831,10 +860,13 @@ Tidelift (2024) State of the Open Source Maintainer Report
 </div>
 </div></div>
 <aside class="notes">
-<p>Both stats are from Nithya Ruff’s keynote at UC Open 2026 (direct quotes, 6:15–7:15): “70% of new AI PhDs are going to industry. Not a detour, but straight to industry. And it’s a historic shift… 90%, 90% of notable AI models are coming from industry… from a small group of industry folks.”</p>
-<p>Landmark paper to cite: Baltes, Cheong &amp; Treude (2026), “An Endless Stream of AI Slop”: The Growing Burden of AI-Assisted Software Development, arXiv:2603.27249. They frame it as a tragedy of the commons - individual productivity gains create externalized costs for maintainers. The curl project shut down its bug bounty program entirely in early 2026 because AI-generated vulnerability reports flooded maintainers, turning a 15-minute verification into days of wasted labor. Godot and RubyGems reported 10x spikes in low-quality AI contributions. The same researchers using AI for data analysis are submitting AI-generated code upstream to the tools they depend on.</p>
-<p>GitClear (2024) “Coding on Copilot” documents the code quality angle: AI-assisted development is measurably increasing code churn and reducing code reuse, meaning more review work on lower-quality patches.</p>
-<p>Ruff on governance urgency: “The governance layer for AI is being determined, is being written. Policies and governance is being built in 18 to 36 months. And if you’re not in the room, I think we will inherit a system that we have to live with.”</p>
+<ul>
+<li>70%/90% stats = direct quotes from Ruff keynote, UC Open 2026 (6:15–7:15)</li>
+<li>Baltes, Cheong &amp; Treude (2026) arXiv:2603.27249: frames “slop PRs” as tragedy of the commons — individual productivity gains push costs onto maintainers</li>
+<li>Real examples: curl shut down its bug bounty in early 2026 (AI vulnerability reports turned 15-min verifications into days of work); Godot + RubyGems saw 10x spikes in low-quality AI contributions</li>
+<li>GitClear (2024): AI-assisted dev measurably increases code churn and reduces reuse — more review work on lower-quality patches</li>
+<li>Ruff on urgency: “The governance layer for AI is being written in 18–36 months. If you’re not in the room, you’ll inherit a system you have to live with.”</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -849,6 +881,8 @@ Tidelift (2024) State of the Open Source Maintainer Report
 </section>
 <section id="education-training-as-infrastructure" class="slide level2">
 <h2>Education: training as infrastructure</h2>
+<div class="columns">
+<div class="column" style="width:44%;">
 <p>Gap analysis → curriculum inventory → learning pathways</p>
 <ul>
 <li>Inventoried existing materials: Carpentries, CodeRefinery, The Turing Way, UC-specific content</li>
@@ -856,9 +890,20 @@ Tidelift (2024) State of the Open Source Maintainer Report
 <li>Published at <a href="https://ucospo.net/education">ucospo.net/education</a></li>
 <li>Coordinated with data literacy programs and Carpentries infrastructure</li>
 </ul>
+</div><div class="column" style="width:56%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/ucospo-education.png" style="width:100.0%"></p>
+<figcaption>UC OSPO Network Education site showing the Open Source Learning Pathways, organized by role, skill level, and pathway, with beginner lesson cards including Software Licensing, Social Coding, and Finding and Evaluating Projects</figcaption>
+</figure>
+</div>
+</div></div>
 <aside class="notes">
-<p>IMAGE: a screenshot of the ucospo.net/education site showing the curriculum inventory is a natural fit here.</p>
-<p>This is where the work most directly touches IASSIST members’ world. The education working group treats training the way data professionals think about data: find what exists, identify gaps, do not duplicate. The site is a living curriculum inventory, not a course catalog.</p>
+<ul>
+<li>Most direct connection to IASSIST members’ world</li>
+<li>Treat training the way data professionals treat data: find what exists, identify gaps, don’t duplicate</li>
+<li>It’s a living curriculum inventory, not a course catalog</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -894,9 +939,12 @@ Tidelift (2024) State of the Open Source Maintainer Report
 </div></div>
 <p>Governed by an OSPO Leadership Group and thematic working groups, one per campus, coordinated at system level.</p>
 <aside class="notes">
-<p>The old framing was “intra vs.&nbsp;inter campus” as if these were competing priorities. The better frame: each campus is a node that both contributes and draws from the network. UC Davis specializes in software sustainability research. UCLA brings library integration and data services expertise. UCSD leads on educational outreach. UCSC has the deepest OSS governance history through CROSS. That distributed expertise is the asset - the network is how you move it around.</p>
-<p>The practical governance: OSPO Leadership Group (one rep per campus) sets direction; three thematic working groups (Education, Sustainability, Compliance) do the work; GitHub-based project management keeps it open and legible.</p>
-<p>Key point for this audience: a librarian or data professional at a smaller campus now has access to the expertise of six campuses. That is what the network model actually delivers.</p>
+<ul>
+<li>Each campus is a node that both contributes and draws from the network (not competing priorities)</li>
+<li>Campus specializations: Davis → software sustainability research; UCLA → library integration + data services; UCSD → educational outreach; UCSC → deepest OSS governance history (CROSS)</li>
+<li>Governance: OSPO Leadership Group (one rep per campus) sets direction; three thematic working groups do the work; GitHub-based project management keeps it open and legible</li>
+<li>Key point for this audience: a librarian at a smaller campus now has access to expertise from six campuses — that’s what the network actually delivers</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -920,7 +968,11 @@ Tidelift (2024) State of the Open Source Maintainer Report
 <li><strong>A replicable model</strong>: $1.85M produced something other state systems can follow</li>
 </ol>
 <aside class="notes">
-<p>Two years in, the model works. The open question is moving from grant funding to permanent infrastructure. Working on a Sloan extension and exploring UCOP pathways. The pattern - distributed nodes, shared governance, thematic working groups - is transferable to any large university system.</p>
+<ul>
+<li>Two years in, the model works</li>
+<li>Open question: moving from grant funding to permanent infrastructure — working on Sloan extension, exploring UCOP pathways</li>
+<li>The pattern (distributed nodes, shared governance, thematic working groups) is transferable to any large university system</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -949,7 +1001,11 @@ Tidelift (2024) State of the Open Source Maintainer Report
 <li>What would it take to treat it as infrastructure rather than a side project?</li>
 </ul>
 <aside class="notes">
-<p>This is the invitation. IASSIST members are exactly the people who should be at the OSPO table. You work across the research lifecycle, you understand data governance, you run training programs. RSEs are natural collaborators - many are already embedded in or adjacent to library services. The question is whether your institution has made the connection yet. If you have an RSE group, a research computing team, or a data science center, the OSPO conversation belongs there too.</p>
+<ul>
+<li>This is the invitation: IASSIST members should be at the OSPO table — you work across the research lifecycle, understand data governance, run training programs</li>
+<li>RSEs are natural collaborators, many already embedded in or adjacent to library services</li>
+<li>Question for the room: does your institution have an RSE group, research computing team, or data science center? That’s where this conversation belongs.</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -987,10 +1043,15 @@ Tidelift (2024) State of the Open Source Maintainer Report
 </div>
 </div></div>
 <aside class="notes">
-<p>The core of this slide is the distinction between reactive and capacity-building service. The goal is not to turn every data librarian into an OSPO director. The goal is to shift what a researcher walks away from a consultation knowing. If they leave with a license file and a CITATION.cff, that is a one-time fix. If they leave understanding <em>why</em> those things matter - for reproducibility, for credit, for compliance - that is a shift in practice that compounds across their lab, their students, their next grant.</p>
-<p>The OSPO heuristics are not exotic. Health signals (bus factor, issue velocity, contributor diversity) tell you whether a project will be there next year. Governance files (README, CONTRIBUTING, CODE_OF_CONDUCT) are the equivalent of a data README - they make the project legible to the next person. FAIR4RS and software DMPs are the policy anchors that give researchers a reason to care now.</p>
-<p>“Put up your shingle” - you don’t need institutional approval to start doing this work in your consultations. Use the vocabulary, the frameworks, the resources from ucospo.net. You are already in the room where these questions get raised. Be the person who has the answer and the frame.</p>
-<p>The student angle: if you run Carpentries workshops or data services instruction, adding a session on software health, licensing, and CITATION.cff is a 1σ move for every researcher in that room.</p>
+<ul>
+<li>Core distinction: reactive (fixes the week) vs.&nbsp;capacity-building (shifts lab practice that compounds across students and grants)</li>
+<li>Not about turning every data librarian into an OSPO director — about shifting what a researcher walks away knowing</li>
+<li>Health signals (bus factor, issue velocity, contributor diversity) = will this project be there next year?</li>
+<li>Governance files (README, CONTRIBUTING, CODE_OF_CONDUCT) = data README equivalent; make the project legible to the next person</li>
+<li>FAIR4RS + software DMPs = policy anchors that give researchers a reason to care now</li>
+<li>You don’t need institutional approval: use the vocabulary and resources from ucospo.net in consultations today — you’re already in the room where these questions get raised</li>
+<li>Carpentries angle: adding a session on software health, licensing, and CITATION.cff is low lift for every researcher in that room</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1020,7 +1081,12 @@ Tidelift (2024) State of the Open Source Maintainer Report
 <li><a href="https://ucospo.net/research-software-citable-discoverable/">Sharing Research Software: Reproducible, Citable, and Discoverable</a> - Carpentries Incubator lesson (covers <code>pixi</code>, CITATION.cff, Zenodo, discoverability)</li>
 </ul>
 <aside class="notes">
-<p>You do not have to build these resources yourself. Laura Langdon published templates and guides for all four key files in September 2025 - they are on ucospo.net right now. The Carpentries lesson is mine, pre-alpha but usable - it covers the full workflow from licensing through environment management to minting a DOI on Zenodo. A researcher who already deposits data with your help is one conversation away from a fully citable software package. You need the consultation habit and a link to these resources. That is it.</p>
+<ul>
+<li>Don’t build these yourself: Laura Langdon published templates + guides for all four key files in September 2025 — on ucospo.net now</li>
+<li>Carpentries lesson (mine, pre-alpha but usable): full workflow from licensing through environment management to minting a DOI on Zenodo</li>
+<li>A researcher who already deposits data with your help is one conversation away from a fully citable software package</li>
+<li>You need the consultation habit and a link to these resources. That’s it.</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1062,7 +1128,11 @@ Tidelift (2024) State of the Open Source Maintainer Report
 </div>
 </div></div>
 <aside class="notes">
-<p>Two things worth following up: UC ORB if they want to see the discovery tooling, and the CURIOSS community if their institution is thinking about starting an OSPO. Leave time for questions - the AI and sustainability slides tend to generate them.</p>
+<ul>
+<li>UC ORB: good follow-up for anyone who wants to see the discovery tooling</li>
+<li>CURIOSS community: good follow-up for anyone whose institution is thinking about starting an OSPO</li>
+<li>Leave time for questions — AI and sustainability slides tend to generate them</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

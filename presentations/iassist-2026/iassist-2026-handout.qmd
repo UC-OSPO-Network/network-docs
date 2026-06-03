@@ -297,7 +297,7 @@ a.resource-file:hover { color: var(--blue); }
 </style>
 
 <div class="handout-header">
-  <img src="images/uc-ospo-favicon.png" alt="UC OSPO Network">
+  <img src="images/ucosponet.png" alt="UC OSPO Network">
   <div class="handout-header-text">
     <h1>UC Open Source as Institutional Infrastructure</h1>
     <p>Tim Dennis &middot; UCLA OSPO Lead, UC OSPO Network &middot; <abbr title="International Association for Social Science Information Service and Technology">IASSIST</abbr> 2026 &middot; Slides: <strong>tinyurl.com/iassist2026</strong> &middot; Handout: <strong>tinyurl.com/iassist2026-handout</strong></p>
