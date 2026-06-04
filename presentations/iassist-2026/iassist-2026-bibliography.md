@@ -56,10 +56,18 @@ Status codes: ✅ confirmed · ⚠️ discrepancy or caveat · ❌ could not ver
 ## Gomez, J., Lovell, E., Lieggi, S., Cardenas, A. A., & Davis, J. (2025). Recipe for discovery: A pipeline for institutional open source activity. arXiv:2506.18359
 
 **Claims in talk:**
-- 200,000+ repos scanned ✅ — confirmed in abstract
-- ~52,000 institutionally affiliated repos across 10 UC campuses ⚠️ — the arXiv paper describes a general pipeline applied to "ten universities" (including UT, Stanford, GWU, Janelia, and others — not specifically UC campuses). The 52,000 figure and UC-specific framing likely come from the UC ORB tool's application of this pipeline, not from the paper itself. The two should not be conflated in citation.
+- 236,000+ repos scanned ✅ — paper reports 236,037 total (Table 2); "200,000+" in slides is technically correct but imprecise; updated to "236,000+"
+- ~82,000 institutionally affiliated ✅ — paper reports 81,640 after LLM-based filtering (Table 4); slide previously said "~52,000" which was wrong and has been corrected
+- 10 UC campuses ✅ — Table 1 lists all ten: UCB, UCD, UCI, UCLA, UCM, UCR, UCSB, UCSC, UCSD, UCSF
+- Paper is UC-specific ✅ — all authors are at UC Santa Cruz; UC system is the explicit case study
 
-**Notes:** The arXiv paper is the methods paper for the pipeline. The UC-specific numbers (52K repos, 10 UC campuses) probably belong to a separate UC ORB publication, dataset, or the tool's about page. Recommend citing the arXiv paper for the pipeline and adding a separate citation or note for the UC-specific counts if a source exists.
+**Additional verified stats (not in slides, available if useful):**
+- 77.5% of affiliated repos have no explicit license
+- 84.1% have a README; only 22.5% have a description; 6% have a Code of Conduct; 14% a Contributing Guide
+- DEV (42.9%) and EDU (42.1%) dominate project types across the UC system
+- UCSD has the largest absolute number of affiliated repos (18,163); UC Merced the lowest affiliation rate (23.7%)
+
+**Notes:** PDF verified directly (2506.18359v2.pdf). The pipeline uses gpt-5-mini for LLM-based affiliation filtering.
 
 ---
 

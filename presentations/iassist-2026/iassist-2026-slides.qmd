@@ -348,7 +348,7 @@ Map of California showing six UC OSPO Network campuses: Santa Cruz, Berkeley, Da
 
 Mapping who does what across the UC system
 
-* 200,000+ repos scanned; ~52,000 institutionally affiliated
+* 236,000+ repos scanned; ~82,000 institutionally affiliated
 * 294-respondent system-wide survey
 * UC Open Repository Browser (UC ORB)
 :::
