@@ -509,6 +509,7 @@ health signals · bus factor · governance files · FAIR4RS · software <abbr ti
 
 **Tim Dennis**
 Data Science Center, UCLA Library
+[![ORCID](images/orcid-16x16.png){style="vertical-align:middle; margin-right:0.3em;"}](https://orcid.org/0000-0001-6632-3812)[orcid.org/0000-0001-6632-3812](https://orcid.org/0000-0001-6632-3812)
 tdennis@library.ucla.edu
 
 ::: {.small style="margin-top:0.7em; padding:0.5em 0.8em; background:#f0f4fa; border-radius:6px; border-left:3px solid #ff9100;"}
