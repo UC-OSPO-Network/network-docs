@@ -83,15 +83,14 @@ Status codes: ✅ confirmed · ⚠️ discrepancy or caveat · ❌ could not ver
 
 ---
 
-## Tidelift. (2024). *The 2024 state of the open source maintainer report*. Tidelift. dev.to/tidelift/the-open-source-maintainer-community-is-getting-grayer-1gc2
+## Tidelift. (2024, November). *The 2024 Tidelift Maintainer Impact Report*. Tidelift.
 
 **Claims in talk (speaker notes only, not on slides):**
-- 60% of maintainers are unpaid ✅ — confirmed: "60% of maintainers are (still) not paid for their work"; 400+ maintainers surveyed mid-2024
-- 43% report burnout ⚠️ — **not confirmed at 43%**; article says "almost two-thirds have quit or considered quitting" (~65%) and "almost half feel underappreciated" (~47%); the 43% figure may be from the 2022 or 2023 survey; recommend either dropping the specific percentage or replacing with "almost two-thirds have quit or considered quitting"
+- 60% of maintainers are unpaid ✅ — confirmed from PDF (p. 2): "Sixty percent of maintainers report they are unpaid hobbyists, and only 12% of maintainers consider themselves professionals who earn most or all of their income from their maintenance work"
+- 43% report burnout ⚠️ — **not in this document**; this report focuses on business/security impact of paying maintainers, not burnout; the 43% figure likely comes from the companion *2024 State of the Open Source Maintainer Report* (survey-based), which has not been located
 
-**Additional verified stats (not in slides):**
-- Maintainers 46–65 years old doubled from 11% (2021) to 21% (2024) — aging pipeline
-- Maintainers under 26 dropped from 25% (2021) to 10% (2024)
-- Only 2% have been maintaining for less than a year
+**Note on two documents:** Tidelift published two related 2024 reports:
+1. *2024 Tidelift Maintainer Impact Report* (November 2024) — this PDF — business/security case study; confirms 60% unpaid
+2. *2024 State of the Open Source Maintainer Report* — survey of 400+ maintainers — source of burnout/quit stats; original URL dead (SonarSource acquisition); accessible summary at dev.to/tidelift/the-open-source-maintainer-community-is-getting-grayer-1gc2
 
-**Notes:** Original tidelift.com URL is dead (SonarSource acquisition). The Dev.to post by Tidelift is the accessible source. The original URL is dead, the citation is now updated to the Dev.to article. Stats are notes-only, low risk for the presentation.
+**Speaker notes currently say** "nearly two-thirds have quit or considered quitting" — confirmed from Dev.to summary of the survey report. The 43% figure has been removed from the notes. No further action needed.
