@@ -1,0 +1,78 @@
+# IASSIST 2026 — Annotated Bibliography
+
+Validation notes based on source fetches conducted 2026-06-04.
+Status codes: ✅ confirmed · ⚠️ discrepancy or caveat · ❌ could not verify (URL inaccessible)
+
+---
+
+## Hettrick, S. et al. (2014). *UK Research Software Survey 2014*. Software Sustainability Institute. doi:10.5281/zenodo.14809
+
+**Claims in talk:**
+- 92% of researchers use software ✅ — confirmed from SSI blog post accompanying the survey
+- 67% say their research would be impossible without it ⚠️ — **actual figure is 69%** ("it would not be practical"); slides should be corrected
+
+**Notes:** Survey of 417 researchers at 15 UK Russell Group universities. The Zenodo record is the dataset; the blog post (software.ac.uk) is where the headline statistics are stated. The "(2014/2022)" attribution in the slides implies a US replication — the commonly cited US equivalent is Nangia & Katz (2017), which found similar numbers. If the 67% stat comes from a different survey year or geography, that source should be cited separately.
+
+**Action:** Fix 67% → 69% in slide 2, or locate the source where 67% actually appears.
+
+---
+
+## Hoffmann, M., Nagle, F., & Zhou, Y. (2024). The value of open source software. Harvard Business School Working Paper 24-038. doi:10.2139/ssrn.4693148
+
+**Claims in talk:**
+- Open source software would cost $8.8 trillion to replace ❌ — figure is consistent with extensive secondary coverage of this paper but SSRN and HBS pages both returned 403 today; could not read directly
+- Supply-side cost to recreate top 5,000 packages: ~$4.15 billion (speaker notes) ❌ — same access issue
+
+**Notes:** The $8.8T figure is the demand-side estimate (what organizations would pay if OSS disappeared). The $4.15B figure is the supply-side estimate (labor cost to recreate the packages). Both are widely cited in press coverage of this paper (Linux Foundation, Harvard Business Review, etc.) and consistent with the paper's known framing. However, direct verification was blocked. Recommend downloading the PDF from SSRN while logged in and confirming the exact figures before the talk.
+
+---
+
+## Barker, M., Chue Hong, N. P., Katz, D. S., et al. (2022). Introducing the FAIR Principles for research software. *Scientific Data*, 9, 622. doi:10.1038/s41597-022-01710-x
+
+**Claims in talk:**
+- FAIR4RS extends FAIR principles to research software ✅ — this is the defining paper; Nature redirected to auth wall but the paper is well established and the DOI resolves correctly
+
+**Notes:** Published by a large author group under the RDA/FORCE11/ReSA working group. The DOI is correct. Claim as stated is accurate.
+
+---
+
+## Ruff, N. (2026). The role of foundations in advancing open collaboration and innovation. *UC Open Summit*. youtu.be/eBriL3CDNeo
+
+**Claims in talk (slides and notes):**
+- "Neutral convener" framing — quoted at timestamp ~8:17–8:49 ❌ — YouTube not fetchable; could not confirm timestamp
+- 70% of new AI PhDs go straight to industry (was 50/50 a decade ago) ❌ — in notes only (cut AI slide), not on current slides; not verified
+- 90% of notable AI models come from a handful of companies ❌ — same
+
+**Notes:** The "neutral convener" quote appears on the UC OSPO Network slide and is attributed to this talk. Timestamps in the speaker notes (6:15–7:15 and 8:17–8:49) give specific locations to verify if needed. The AI stats (70%/90%) are from the cut slide so are not currently in the deck — no action needed unless that slide is restored.
+
+---
+
+## Gomez, J., Lovell, E., Lieggi, S., Cardenas, A. A., & Davis, J. (2025). Recipe for discovery: A pipeline for institutional open source activity. arXiv:2506.18359
+
+**Claims in talk:**
+- 200,000+ repos scanned ✅ — confirmed in abstract
+- ~52,000 institutionally affiliated repos across 10 UC campuses ⚠️ — the arXiv paper describes a general pipeline applied to "ten universities" (including UT, Stanford, GWU, Janelia, and others — not specifically UC campuses). The 52,000 figure and UC-specific framing likely come from the UC ORB tool's application of this pipeline, not from the paper itself. The two should not be conflated in citation.
+
+**Notes:** The arXiv paper is the methods paper for the pipeline. The UC-specific numbers (52K repos, 10 UC campuses) probably belong to a separate UC ORB publication, dataset, or the tool's about page. Recommend citing the arXiv paper for the pipeline and adding a separate citation or note for the UC-specific counts if a source exists.
+
+---
+
+## Scarlett, V., Curty, R. G., Gomez, J., Langdon, L., Janée, G., & Budden, A. E. (2025). A system-wide snapshot: A multi-campus survey of open source contributors at the University of California. SocArXiv. doi:10.31235/osf.io/p8bx6_v1
+
+**Claims in talk:**
+- 294 respondents ✅ — confirmed
+- 58% of experienced contributors are also maintainers ✅ — confirmed (exact wording: "58% of experienced open source contributors have served as project maintainers")
+- #1 challenge: finding time to write documentation ✅ — confirmed ("insufficient time, especially for documentation duties")
+- What contributors asked for most: sustainability grants and computing infrastructure ✅ — confirmed ("robust computing infrastructure and sustainability-focused funding")
+
+**Notes:** All claims verified. Strong source. DOI resolves correctly via CrossRef.
+
+---
+
+## Tidelift. (2024). *The 2024 state of the open source maintainer report*. Tidelift.
+
+**Claims in talk (speaker notes only, not on slides):**
+- 60% of maintainers are unpaid ❌ — Tidelift was acquired by SonarSource; the original URL redirects to a SonarSource product page with no survey data; could not verify
+- 43% report burnout ❌ — same
+
+**Notes:** These stats appear only in speaker notes for the sustainability slide, not on the slide itself, so they are low-risk for the presentation. However, since the original URL is dead, the citation as written is not resolvable by an audience member. Recommend either finding an archived version (the Internet Archive may have it) or replacing with a verifiable secondary source that cites these figures. The stats are consistent with other maintainer surveys and widely reproduced in press coverage of this report.
