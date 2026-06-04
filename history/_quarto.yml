@@ -38,6 +38,9 @@ book:
   appendices:
     - appendix-projects.qmd
 
+bibliography: ../references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+
 format:
   html:
     theme: [cosmo, ucospo-book.scss]
