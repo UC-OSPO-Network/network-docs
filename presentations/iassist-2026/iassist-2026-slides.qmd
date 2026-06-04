@@ -38,7 +38,7 @@ Research data workflows run on open source:
 * Reproducibility tooling: containers, workflows, version control
 * Repositories and scholarly infrastructure
 
-**92%** of researchers use software; **67%** say their research would be impossible without it.
+**92%** of researchers use software; **69%** say their research would not be practical without it.
 
 The people keeping it running are increasingly called **Research Software Engineers (RSEs)**, a growing professional community with no standard institutional home.
 
