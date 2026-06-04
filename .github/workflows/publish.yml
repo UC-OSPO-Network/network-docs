@@ -6,6 +6,8 @@ on:
     paths:
       - 'presentations/**'
       - 'history/**'
+      - 'index.qmd'
+      - 'ucospo-site.scss'
       - '.github/workflows/publish.yml'
   workflow_dispatch:
 
@@ -22,6 +24,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render site index
+        run: quarto render index.qmd
 
       - name: Render IASSIST 2026 slides
         run: quarto render presentations/iassist-2026/iassist-2026-slides.qmd
@@ -47,6 +52,14 @@ jobs:
 
       - name: Render UC OSS History book
         run: quarto render history/
+
+      - name: Deploy site index to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          include_files: index.html
+          keep_files: true
 
       - name: Deploy IASSIST to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
