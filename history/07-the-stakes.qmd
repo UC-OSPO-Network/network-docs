@@ -1,0 +1,36 @@
+# The Stakes {#the-stakes}
+
+::: {.chapter-intro}
+The projects in this history are not museum pieces. They are running right now. The people who built them - or their successors - are maintaining them, often without institutional support, often without pay. And the governance decisions being made right now about AI, about open source sustainability, about who controls what, will shape the next fifty years of this record.
+:::
+
+---
+
+## The Sustainability Crisis
+
+*Draft - develop: The Tidelift 2024 numbers (60% of maintainers unpaid, 43% reporting burnout). The UC survey finding that 58% of UC OSS contributors are also maintainers - not passive users but active stewards. The #1 challenge: finding time to write documentation. The structural problem: the value flows outward (to companies, to researchers, to the global economy) while the costs stay with individuals.*
+
+### What $8.8 trillion actually means
+
+*Draft - develop the Hoffmann, Nagle & Zhou (2024) finding: supply-side cost to recreate the top 5,000 open source packages is $4.15 billion. Demand-side replacement value to global enterprises is $8.8 trillion. The ratio - roughly 2,000x - is the clearest way to explain why open source governance matters to someone who thinks this is a niche concern. The UC system is producing a disproportionate share of that value. Its maintainers are not compensated accordingly.*
+
+---
+
+## The AI Moment
+
+*Draft - develop: Two simultaneous pressures. First, AI-generated code is flooding maintainers - "slop PRs" that look complete but require expensive review. The curl project shut down its bug bounty because AI-generated vulnerability reports overwhelmed maintainers. Second, AI depends on the open source it is now threatening to destabilize - Ray, Spark, Jupyter are all core AI infrastructure. Third, the governance layer for AI is being written now. Nithya Ruff (UC Open 2026): "if you're not in the room, we will inherit a system we have to live with."*
+
+### What academia is losing
+
+*Draft: 70% of new AI PhDs going straight to industry (vs. 50/50 a decade ago). 90% of notable AI models coming from a small number of companies. The systems that academia built are increasingly being operated and governed by industry, with academic researchers as users rather than architects.*
+
+---
+
+## What UC Is Not Getting Credit For
+
+*Draft - develop: The attribution problem. BSD Unix is running inside every Apple device and no one thinks "UC Berkeley." PostgreSQL powers most of the internet's data layer and no one thinks "Stonebraker's dissertation." The UCSC Genome Browser kept the human genome public and gets a fraction of the recognition Celera got for losing. Institutional credit is not just vanity - it drives funding, attracts talent, and builds the political will to support OSPOs.*
+
+::: {.callout-note}
+## Status
+Draft scaffold. This chapter should be written for decision makers - program officers, provosts, foundation staff. Concrete, not abstract.
+:::

@@ -1,0 +1,37 @@
+# Preface {.unnumbered}
+
+![](images/uc-ospo-network-logo.svg){width="320px" fig-alt="UC OSPO Network" style="margin-bottom:1.5em;"}
+
+::: {.chapter-intro}
+The University of California system has produced some of the most consequential open source software in history. Most of it was not planned. Much of it started as a dissertation, a workaround, or a weekend project. All of it ended up running the world.
+:::
+
+This document tells that story, project by project, from the 1970s to today.
+
+The record comes first. BSD Unix, INGRES, the tz database, the UCSC Genome Browser, Jupyter, Ceph, Apache Spark, RISC-V, Ray, Named Data Networking, PostgreSQL, and others each get their own origin story - the problem, the person, the moment, and what it became. These are not case studies. They are the actual history.
+
+The analysis follows. After you have seen the record, the pattern is hard to miss: UC researchers solved real problems, released the code openly before anyone thought to commercialize it, and watched what happened. What happened was global infrastructure.
+
+The final section addresses what this means now - for the people maintaining this software without support, for the institutions getting credit they have not fully claimed, and for the open source governance moment that AI is forcing on everyone whether they are ready or not.
+
+## Who this is for
+
+This document is written for two audiences who do not usually read the same things.
+
+**Open source practitioners and OSPO staff** will find the full project histories useful - origin dates, key contributors, licensing lineage, and impact numbers that are often scattered across Wikipedia, conference talks, and oral history.
+
+**Decision makers** - provosts, program officers, foundation staff, research VPs - will find the pattern and stakes sections written for them. The stories are there too, because the stories are the argument.
+
+## How to use this document
+
+Read it straight through if you want the full arc. Jump to a specific project if you need the origin story for a talk or brief. Share individual chapters - each is written to stand alone.
+
+The appendix has a compact reference table of all projects, dates, campus affiliations, and impact metrics.
+
+## About the UC OSPO Network
+
+The University of California Network of Open Source Program Offices (UC OSPO Network) is a collaboration across six UC campuses - Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, and San Diego - launched in April 2024 with support from the Alfred P. Sloan Foundation.
+
+This document was produced by the network as part of its discovery and documentation mission.
+
+[ucospo.net](https://ucospo.net)

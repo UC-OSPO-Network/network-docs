@@ -1,0 +1,44 @@
+# The Pattern {#the-pattern}
+
+::: {.chapter-intro}
+Twelve projects across fifty years. Different campuses, different fields, different people. But the same shape keeps appearing. This chapter names that shape.
+:::
+
+---
+
+## The Pipeline Thesis
+
+*Draft - develop the core argument: UC research produced global infrastructure not by accident and not by design, but by a consistent set of conditions: real problems, open release before commercial value was obvious, neutral foundations or communities taking stewardship. The pipeline from dissertation to global infrastructure is not rare. It is the dominant pattern.*
+
+### The three-act structure
+
+Nearly every project in this history follows the same arc:
+
+1. **A real problem, solved in a lab.** Not a product roadmap. A grad student who needed something to exist. A faculty member frustrated by the limits of current tools.
+
+2. **Release before commercialization.** The code went out with a permissive license before anyone had made money from it. This is the Berkeley contribution - not the code alone, but the habit of releasing it.
+
+3. **A neutral home.** Apache, Linux Foundation, IANA, the open-source community. Once the code left the lab, it needed somewhere to live that no single company could control. The neutral foundation model is what makes UC research become infrastructure rather than product.
+
+---
+
+## The Licensing Contribution
+
+*Draft - develop: BSD licensing as Berkeley's meta-contribution. Every project in this document benefited from the norm Berkeley established. The permissive license is the reason Stonebraker could seed Sybase, why Apache could become a foundation, why RISC-V could relocate to Switzerland. Contrast with what happens when research is locked up (the Celera counter-example; the ARM royalty situation that RISC-V was built to escape).*
+
+---
+
+## Women in This History
+
+*Draft - develop: The record is not all men. Carol Willing and Jupyter, Holden Karau and Spark, Lixia Zhang and NDN (and internet architecture broadly), Dr. N. Tessa Pierce-Ward and sourmash, Emily Lovell and LilyTiny. The pattern of women being core contributors to the most consequential work while receiving less visible credit. The OSPO as an institutional structure that can help with attribution and recognition.*
+
+---
+
+## What Does Not Make It Into the History
+
+*Draft - develop: Projects that were released with restrictive licenses and did not propagate. Research that was commercialized before being released and lost the community benefit. The survivorship bias in this document - we are telling the stories of the ones that worked.*
+
+::: {.callout-note}
+## Status
+Draft scaffold. This chapter needs the most original analytical writing.
+:::

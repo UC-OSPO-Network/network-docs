@@ -1,0 +1,53 @@
+# Foundations {#foundations}
+
+#### 1970s - 1980s · UC Berkeley
+
+::: {.chapter-intro}
+Before open source was a movement, UC Berkeley was doing it by default. Two projects from this era did not just influence what came after - they defined the legal and technical ground rules that everything else runs on.
+:::
+
+---
+
+## BSD Unix and the License That Made Open Source Possible
+
+**The project:** Berkeley Software Distribution (BSD Unix)
+**Campus:** UC Berkeley
+**Period:** 1970s - 1980s
+**Key figures:** Bill Joy, Keith Bostic, Marshall Kirk McKusick, and many others
+
+::: {.origin-story}
+*Draft - fill in origin story: CSRG at Berkeley, the relationship with AT&T Unix, the development of the networking stack (TCP/IP), the licensing dispute, the eventual BSD license.*
+:::
+
+### What it became
+
+The BSD license - permissive, minimal, requiring only attribution - became the template for how research software gets released. MIT, Apache, and variants of BSD now govern billions of lines of production software. The network stack Berkeley wrote is still in macOS, iOS, and most operating systems.
+
+### Why it matters for this history
+
+Every project in this document was made possible by the licensing model Berkeley established. You could release research code, let anyone use it commercially, and watch what happened. BSD Unix proved that worked.
+
+---
+
+## INGRES, POSTGRES, and the Database Lineage
+
+**The projects:** University INGRES (1973), POSTGRES (1986), PostgreSQL (1995-)
+**Campus:** UC Berkeley
+**Key figures:** Michael Stonebraker (Turing Award 2014), Eugene Wong, Larry Rowe
+
+::: {.origin-story}
+*Draft - fill in origin story: Stonebraker and Wong reading Codd's 1973 relational model papers, repurposing a geography department grant to build INGRES, the permissive license release, the downstream seeding of Sybase and Microsoft SQL Server. Then POSTGRES: Stonebraker recognizing the limits of pure relational models for complex data types (geographic coordinates, CAD data), the object-relational innovation, the 1994 code release, the 1995 open-source community pickup and SQL replacement (QUEL → SQL), and the creation of PostgreSQL.*
+:::
+
+### What it became
+
+PostgreSQL is today the world's most popular independent open-source relational database. The 1973 INGRES codebase seeded Sybase; Microsoft acquired Sybase's engine and built SQL Server from it. One academic project spawned two of the three dominant enterprise databases.
+
+### The Stonebraker pattern
+
+Stonebraker's career at Berkeley established a pattern the rest of this history repeats: solve a real problem in a research lab, release the code openly before it has commercial value, watch the ecosystem form, then commercialize the next generation. He did this with Ingres → Sybase, POSTGRES → Illustra, and continued beyond Berkeley with VoltDB, SciDB, and others.
+
+::: {.callout-note}
+## Status
+This chapter is a draft scaffold. Origin stories need full narrative treatment - approximately 800-1,200 words per project section.
+:::

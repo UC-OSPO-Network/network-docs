@@ -1,0 +1,132 @@
+/*-- scss:defaults --*/
+
+/*-- UC OSPO Network book theme --*/
+
+/*-- Font --*/
+@import url("https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i");
+
+/*-- Variables --*/
+$navy:       #1f335e;
+$orange:     #ff9100;
+$blue:       #003cb3;
+$muted:      #f0f4fa;
+$border:     #c6d2e8;
+$body-color: #222832;
+
+/*-- scss:rules --*/
+
+/*-- Base --*/
+body {
+  font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+  color: $body-color;
+}
+
+/*-- Navbar --*/
+.navbar {
+  background-color: $navy !important;
+  border-bottom: 3px solid $orange;
+
+  .navbar-logo {
+    height: 32px;
+    width: auto;
+  }
+
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+  }
+}
+
+/*-- Sidebar --*/
+.sidebar {
+  border-right: 1px solid $border;
+
+  .sidebar-title {
+    font-weight: 700;
+    color: $navy;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .chapter-number { color: $orange; }
+
+  .sidebar-item-text.sidebar-link.active {
+    color: $navy;
+    font-weight: 700;
+    border-left: 3px solid $orange;
+    padding-left: 0.5em;
+  }
+}
+
+/*-- Headings --*/
+h1, h2, h3, h4 { color: $navy; }
+
+h1 {
+  border-bottom: 3px solid $orange;
+  padding-bottom: 0.3em;
+}
+
+h2 { border-bottom: 1px solid $border; padding-bottom: 0.2em; }
+
+/*-- Links --*/
+a { color: $blue; }
+a:hover { color: $orange; }
+
+/*-- Callouts --*/
+.callout-note    { border-left-color: $blue; }
+.callout-warning { border-left-color: $orange; }
+.callout-tip     { border-left-color: #00a291; }
+
+/*-- Pull quotes / origin stories --*/
+.origin-story {
+  border-left: 4px solid $orange;
+  background: $muted;
+  padding: 1em 1.2em;
+  margin: 1.5em 0;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+}
+
+.impact-stat {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 700;
+  color: $orange;
+  line-height: 1;
+}
+
+/*-- Project header block --*/
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.8em 1em;
+  background: $muted;
+  border-radius: 6px;
+  margin-bottom: 1.5em;
+
+  img { height: 48px; width: auto; }
+
+  .project-meta {
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.6;
+  }
+}
+
+/*-- Cover / chapter intro --*/
+.chapter-intro {
+  font-size: 1.15em;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 2em;
+  max-width: 38em;
+}
+
+/*-- Footer --*/
+.nav-footer {
+  border-top: 1px solid $border;
+  background: $muted;
+  color: #555;
+  font-size: 0.82em;
+}

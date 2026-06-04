@@ -1,0 +1,12 @@
+# Quarto render output
+*_files/
+*.html
+!index.html
+.quarto/
+_site/
+
+# OS / editor
+.DS_Store
+
+/.quarto/
+**/*.quarto_ipynb

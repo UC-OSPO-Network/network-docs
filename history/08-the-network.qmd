@@ -1,0 +1,54 @@
+# The Network {#the-network}
+
+::: {.chapter-intro}
+The UC OSPO Network is not trying to replicate what happened in this history. It is trying to create the conditions under which it can keep happening - and to catch more of what falls through the cracks.
+:::
+
+---
+
+## What OSPOs Do That Nothing Else Does
+
+*Draft - develop: The structural gap. A researcher with a licensing question has nowhere to go. A maintainer burning out has no institutional path for support. A campus that wants to adopt an open source policy has no peer institution to compare notes with. OSPOs fill these gaps - not by being the expert on everything, but by being the connective tissue between people who are.*
+
+### What only a network can do
+
+*Draft - develop the five things the UC OSPO Network enables that single campuses cannot:*
+
+1. **Shared staffing** - community manager, licensing specialist, technical roles that no single campus can fund alone
+2. **Policy leverage** - the network has standing with UCOP; individual campuses do not
+3. **Data at scale** - the GitHub pipeline and survey analyses require system-wide scope to mean anything
+4. **Equity** - smaller campuses get services they could not build alone
+5. **A replicable model** - $1.85M has produced something other state systems can follow
+
+---
+
+## What We Found (Discovery)
+
+*Draft - the UC ORB, the GitHub pipeline, the 52,000 institutionally affiliated repos, the 294-person survey. Key findings. Juanita Gomez's work. The survey preprint.*
+
+---
+
+## What We're Building (Sustainability and Education)
+
+*Draft - the cross-campus licensing working group, OSSPREY project health assessment, the ucospo.net/education curriculum inventory, Carpentries coordination, template guides.*
+
+---
+
+## What Comes Next
+
+*Draft - the open questions: moving from grant funding to permanent infrastructure, the Sloan extension, the UCOP pathway, what other state systems are watching, what the AI governance moment demands.*
+
+---
+
+## A Note on This Document
+
+This history was produced by the UC OSPO Network as part of its discovery mission. It is not complete. Projects are missing. Stories are incomplete. We have marked the gaps explicitly so that contributors can fill them.
+
+If you know a story that belongs here, or can fill in a section marked as a draft, we welcome contributions. The document lives in a public repository and accepts issues and pull requests.
+
+[ucospo.net](https://ucospo.net) · [github.com/UC-OSPO-Network/network-docs](https://github.com/UC-OSPO-Network/network-docs)
+
+::: {.callout-note}
+## Status
+Draft scaffold. The forward-looking sections should be written close to publication to stay current.
+:::

@@ -1,0 +1,63 @@
+# Open Science {#open-science}
+
+#### 2000 - 2003 · UC Santa Cruz, UC San Diego
+
+::: {.chapter-intro}
+The early 2000s produced three projects that redefined what open science software could be. None of them was trying to build a platform. One was racing a supercomputer. Two were trying to make sense of data that no existing tool could handle. All three became the field standard.
+:::
+
+---
+
+## The UCSC Genome Browser: Three Days Before a Supercomputer
+
+**The project:** UCSC Genome Browser
+**Campus:** UC Santa Cruz
+**Period:** Summer 2000
+**Key figures:** Jim Kent (PhD student), David Haussler (faculty)
+
+::: {.origin-story}
+*Draft - fill in origin story: The Human Genome Project race between the public consortium and Celera Genomics (Craig Venter's private company, $300M, dedicated supercomputer cluster); Jim Kent as a PhD student at UCSC writing GigAssembler (~10,000 lines of C) in a matter of weeks on 50 borrowed off-the-shelf PCs; reportedly icing his wrists to prevent carpal tunnel while coding through the night; finishing the assembly three days before Celera; the decision to release everything publicly to keep the genome in the public domain; the UCSC Genome Browser that followed as a tool for visualizing and navigating the assembled sequence; genome.ucsc.edu as the reference destination for genomic research ever since.*
+:::
+
+### What it became
+
+The UCSC Genome Browser is the reference tool for genomic research worldwide. It hosts assemblies for hundreds of species, is updated continuously, and remains the first stop for any researcher navigating genomic data. The broader lesson - that a grad student with commodity hardware and open code could outcompete a $300M private effort - became a founding argument for open science.
+
+---
+
+## EEGLAB: The Most-Cited Scientific Software You've Never Heard Of
+
+**The project:** EEGLAB
+**Campus:** UC San Diego (Swartz Center for Computational Neuroscience)
+**Period:** 1997 - 2001
+**Key figures:** Scott Makeig
+
+::: {.origin-story}
+*Draft - fill in: Scott Makeig's work at the Salk Institute and then UCSD; the need for open tooling to analyze EEG (electroencephalography) signals; the 2004 foundational paper; the download and citation numbers.*
+:::
+
+### What it became
+
+EEGLAB is the world's premier open-source environment for electrophysiological signal processing. The 2004 foundational paper has accumulated more than 14,400 citations - among the highest academic footprints of any scientific software. It has been downloaded over 350,000 times and is the standard platform for EEG research globally.
+
+---
+
+## Cytoscape: Mapping the Cell
+
+**The project:** Cytoscape
+**Campus:** UC San Diego
+**Period:** 2003
+**Key figures:** Trey Ideker and collaborators
+
+::: {.origin-story}
+*Draft - fill in: Trey Ideker at UCSD working on high-throughput biology; the explosion of molecular interaction data (protein-protein interactions, gene regulatory networks, disease pathways) that spreadsheets could not handle; Cytoscape as a visual "living map" of the cell; the network biology paradigm it helped establish; the current usage in cancer research and drug discovery.*
+:::
+
+### What it became
+
+Cytoscape is the global standard platform for network biology. It is used to visualize disease pathways, protein interactions, and molecular networks in cancer and therapeutic research worldwide. Over 300,000 downloads per year; central to how researchers understand complex biological systems.
+
+::: {.callout-note}
+## Status
+Draft scaffold. Each section needs full narrative treatment.
+:::

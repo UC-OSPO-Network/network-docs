@@ -1,0 +1,27 @@
+slug,title,suggested_learningResourceType
+python-packaging,Python Packaging,Short Training Courses
+r-packaging,R Packaging,Short Training Courses
+how-to-contribute,How to Contribute to Open Source,Static Documents
+building-better-research-software,Building Better Research Software,Short Training Courses
+intermediate-research-software-development-python,Intermediate Research Software Development Skills (Python),Short Training Courses
+reproducible-computational-environments-using-containers,Reproducible Computational Environments using Containers,Short Training Courses
+reproducibility-principles-and-practices,Reproducibility Principles and Practices,Short Training Courses
+reproducible-research-for-teams-with-github,Reproducible Research for Teams with GitHub,Short Training Courses
+python-basics,Python Basics,Short Training Courses
+r-basics,R Basics,Short Training Courses
+overview-of-databases-and-data-storage,Overview of Databases and Data Storage,Short Training Courses
+introduction-to-sql-for-querying-databases,Introduction to SQL for Querying Databases,Short Training Courses
+principles-of-data-visualization,Principles of Data Visualization from Perception to Statistical Graphics,Short Training Courses
+intermediate-python-data-visualization,Intermediate Python: Next-level Data Visualization,Short Training Courses
+intermediate-r-data-visualization,Intermediate R: Next-level Data Visualization,Short Training Courses
+developing-your-data-science-portfolio,Developing Your Data Science Portfolio,Short Training Courses
+julia-basics,Julia Basics,Short Training Courses
+intermediate-python,Intermediate Python,Short Training Courses
+intermediate-r,Intermediate R,Short Training Courses
+overview-of-remote-and-hpc,Overview of Remote and High Performance Computing (HPC),Short Training Courses
+introduction-to-remote-computing,Introduction to Remote Computing,Short Training Courses
+introduction-to-desktop-gis-with-qgis,Introduction to Desktop GIS with QGIS,Short Training Courses
+spatial-sql-with-spatialite,Spatial SQL with SpatiaLite,Short Training Courses
+geocoding,Geocoding,Short Training Courses
+coordinate-reference-systems,Coordinate Reference Systems,Short Training Courses
+introduction-to-basic-statistics-with-r,Introduction to Basic Statistics with R,Short Training Courses

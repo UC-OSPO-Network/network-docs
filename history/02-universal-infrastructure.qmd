@@ -1,0 +1,54 @@
+# Universal Infrastructure {#universal-infrastructure}
+
+#### 1986 - 2000 · UCLA, UC Berkeley
+
+::: {.chapter-intro}
+Some software is so fundamental it disappears into the background. You never think about it until it breaks. The two projects in this chapter run on every networked device on the planet. Neither was built to become infrastructure. Both were built to solve a specific, annoying problem.
+:::
+
+---
+
+## The tz Database: Every Clock on Earth
+
+**The project:** tz database (IANA Time Zone Database)
+**Campus:** UCLA (current maintainer: Paul Eggert, since 2005)
+**Origin:** 1986, Arthur David Olson (NIH)
+**Key figures:** Paul Eggert (UCLA), Arthur David Olson
+
+::: {.origin-story}
+*Draft - fill in origin story: Olson starting the database in 1986 to track the world's timezone rules; Eggert taking over maintenance in 2005 as a computer scientist at UCLA; the extraordinary research methodology (19th-century astronomical almanacs used to reconstruct pre-1883 local solar times that pre-date standardized timekeeping); the 2011 IP lawsuit by Astrolabe Inc. that nearly took the database offline; the community response; IANA taking stewardship.*
+:::
+
+### What it became
+
+Every operating system - Linux, macOS, Windows, iOS, Android - ships with the tz database. Every programming language that handles dates and times depends on it. When a country changes its clocks (and they do, constantly - political decisions, wars, referenda), Paul Eggert updates the database and the world's computers follow.
+
+### The lawsuit that almost broke time
+
+In 2011, Astrolabe Inc. sued the tz database maintainers, claiming copyright over historical timezone data. The community response was immediate: legal defense funds, IANA intervention, and a rapid resolution. The episode revealed how fragile the infrastructure was - one lawsuit against volunteer maintainers nearly took down something every computer on earth needed.
+
+---
+
+## Apache HTTP Server: "A Patchy" Web Server
+
+**The project:** Apache HTTP Server
+**Campus connection:** UC Berkeley (Brian Behlendorf, undergraduate)
+**Period:** 1995 -
+**Key figures:** Brian Behlendorf (UCB undergrad), Cliff Skolnick, and eight founding contributors
+
+::: {.origin-story}
+*Draft - fill in origin story: Behlendorf as a UCB physics and CS undergrad running SFRaves mailing list and Hyperreal.org on Berkeley servers; moving to HotWired (Wired magazine's web portal) in 1993-94; the launch of the first banner ads and the traffic that NCSA httpd could not handle; Behlendorf writing patches; discovering other webmasters had written the same patches independently; the mailing list on his personal server; the February 1995 fork of NCSA httpd; the name "Apache" as "a patchy server"; the eventual rewrite from scratch; the Apache Software Foundation.*
+:::
+
+### What it became
+
+Apache HTTP Server powered more than half the global web for most of the 2000s and 2010s. The Apache Software Foundation, which grew from the original mailing list, now houses over 350 projects - including Apache Spark, which appears later in this history.
+
+### The Berkeley connection
+
+Behlendorf's Berkeley connection is indirect: he was a student there, not running a lab project. But his story illustrates something important about how infrastructure gets built. He was not a professor with a grant. He was an undergrad with a server and a problem. The permissive culture Berkeley embodied - share the code, see what happens - was something he had absorbed.
+
+::: {.callout-note}
+## Status
+Draft scaffold. Each project section needs full narrative treatment.
+:::

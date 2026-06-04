@@ -1,0 +1,54 @@
+# Scientific Computing {#scientific-computing}
+
+#### 2001 - 2009 · UC Berkeley
+
+::: {.chapter-intro}
+Two projects from Berkeley's research labs became the dominant tools for how science and data engineering get done. One started as an afternoon of procrastination. One started because a classmate needed to win a competition. Both are now foundational infrastructure for AI.
+:::
+
+---
+
+## Jupyter: The Procrastination That Runs Science
+
+**The project:** IPython / Project Jupyter
+**Campus:** UC Berkeley (BIDS)
+**Period:** 2001 (IPython), 2014 (Jupyter)
+**Key figures:** Fernando Pérez (creator), Carol Willing (Steering Council, ACM Award), Stéfan van der Walt (scikit-image, Berkeley co-PI)
+
+::: {.origin-story}
+*Draft - fill in: Fernando Pérez as a physics PhD student at CU Boulder, building the first IPython in an afternoon procrastinating on his dissertation; the tool spreading through the scientific Python community; Pérez moving to UC Berkeley; the 2014 relaunch as Project Jupyter (for Julia, Python, R) with multi-language support; the notebook format as the dominant interface for interactive computing in science, AI, and data education; the 2017 ACM Software System Award shared with Carol Willing and the Steering Council; Pérez now as faculty director of BIDS and co-PI on the UC OSPO Network.*
+:::
+
+### Carol Willing and the Steering Council
+
+Carol Willing is a core Jupyter developer, three-term Python Steering Council member, and Python Core Developer. She shared the 2017 ACM Software System Award for Jupyter's global influence - one of computing's most prestigious recognitions for software that has had lasting impact on the field.
+
+### What it became
+
+Jupyter notebooks are the dominant interface for interactive scientific computing worldwide. They run in data science courses, AI research labs, public health agencies, and science classrooms. JupyterHub scales the single-user notebook to institutional deployments serving thousands. Binder makes any notebook instantly reproducible and shareable. The format has become a de facto standard for communicating computational science.
+
+---
+
+## Apache Spark: The Netflix Prize and a $62 Billion Company
+
+**The project:** Apache Spark
+**Campus:** UC Berkeley AMPLab
+**Period:** 2009
+**Key figures:** Matei Zaharia, Holden Karau (PMC, core committer)
+
+::: {.origin-story}
+*Draft - fill in: Berkeley's AMPLab (Algorithms, Machines, and People); Matei Zaharia's classmate Lester Mackey needing faster distributed machine learning to compete in the $1M Netflix Prize; Zaharia building Spark as a solution; the key insight that Hadoop MapReduce was too slow for iterative ML algorithms because it wrote to disk between every step; Spark's in-memory execution model; the donation to Apache before commercializing; Databricks founded after the donation; Databricks now valued at $62B+.*
+:::
+
+### Holden Karau and the core team
+
+Holden Karau is a member of the Apache Spark Project Management Committee and a core committer who scaled Spark's Python and Core engines. She is the co-author of the definitive O'Reilly books *Learning Spark* and *High Performance Spark*, which trained a generation of Spark engineers.
+
+### What it became
+
+Apache Spark is the dominant framework for large-scale data processing. It powers data pipelines at virtually every major technology company and research institution. Databricks, the commercial entity founded after the Apache donation, is valued at over $62 billion. The Apache Software Foundation stewards the open-source project; no single company can pull it away.
+
+::: {.callout-note}
+## Status
+Draft scaffold. Each section needs full narrative treatment.
+:::

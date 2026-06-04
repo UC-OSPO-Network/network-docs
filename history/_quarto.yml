@@ -1,0 +1,52 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "UC Open Source: A System History"
+  subtitle: "How University of California Research Became Global Infrastructure"
+  author: "UC OSPO Network"
+  date: "2026"
+  favicon: images/uc-ospo-favicon.png
+  cover-image: images/uc-ospo-network-logo.svg
+  site-url: https://ucospo.net/network-docs/history
+  repo-url: https://github.com/UC-OSPO-Network/network-docs
+  repo-actions: [issue]
+  search: true
+  navbar:
+    logo: images/uc-ospo-network-logo.svg
+    logo-alt: "UC OSPO Network"
+    logo-href: https://ucospo.net
+  sidebar:
+    style: docked
+    background: light
+  chapters:
+    - index.qmd
+    - part: "The Record"
+      chapters:
+        - 00-internet-itself.qmd
+        - 01-foundations.qmd
+        - 02-universal-infrastructure.qmd
+        - 03-open-science.qmd
+        - 04-scientific-computing.qmd
+        - 05-infrastructure-at-scale.qmd
+    - part: "The Analysis"
+      chapters:
+        - 06-the-pattern.qmd
+        - 07-the-stakes.qmd
+        - 08-the-network.qmd
+  appendices:
+    - appendix-projects.qmd
+
+format:
+  html:
+    theme: [cosmo, ucospo-book.scss]
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    number-sections: false
+    link-external-icon: false
+    link-external-newwindow: true
+  # pdf: add back when LaTeX available in CI
+  #   documentclass: scrreprt
+  #   toc: true

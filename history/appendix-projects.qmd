@@ -1,0 +1,28 @@
+# Project Reference {.unnumbered}
+
+Quick reference for all projects covered in this history.
+
+| Project | Campus | Year | Era | Impact |
+|---|---|---|---|---|
+| ARPANET / TCP/IP design | UCLA | 1969 | The Internet Itself | Packet switching, Node 1, RFCs, TCP/IP, DNS |
+| ARPANET Node 3 | UC Santa Barbara | 1969 | The Internet Itself | Culler and Fried; 3 of 4 original nodes were UC |
+| BSD TCP/IP stack | UC Berkeley | 1983 | The Internet Itself | Implementation that spread TCP/IP universally |
+| BSD Unix | UC Berkeley | 1970s-80s | Foundations | Licensing model for open source |
+| INGRES / PostgreSQL | UC Berkeley | 1973 / 1986 | Foundations | World's most popular independent database |
+| tz database | UCLA (Paul Eggert) | 1986 | Universal Infrastructure | Every OS clock on earth |
+| Apache HTTP Server | UCB (Behlendorf) | 1995 | Universal Infrastructure | Powered >50% of global web |
+| UCSC Genome Browser | UC Santa Cruz | 2000 | Open Science | Reference for genomic research worldwide |
+| EEGLAB | UC San Diego | 1997-2001 | Open Science | 14,400+ citations, 350K+ downloads |
+| Cytoscape | UC San Diego | 2003 | Open Science | 300K downloads/yr, network biology standard |
+| Jupyter | UC Berkeley | 2001-2014 | Scientific Computing | Dominant interface for interactive computing |
+| Apache Spark | UC Berkeley | 2009 | Scientific Computing | Databricks $62B+; core data engineering |
+| Ceph | UC Santa Cruz | 2004 | Infrastructure at Scale | Exabyte storage; funded CROSS/first UC OSPO |
+| RISC-V | UC Berkeley | 2010 | Infrastructure at Scale | 10B+ devices, 350+ orgs, 70 countries |
+| Named Data Networking | UCLA | 2010 | Infrastructure at Scale | Future internet architecture research |
+| Ray | UC Berkeley | 2016 | Infrastructure at Scale | Core OpenAI compute infrastructure |
+
+: {tbl-colwidths="[18,15,8,20,39]"}
+
+## Also from UC Campuses
+
+sourmash (UC Davis), ERPLAB (UC Davis), ChimeraX (UCSF), OpenMM (UCSF), Processing (UCLA/Casey Reas), LilyTiny (Emily Lovell, UCSC OSPO), ALPHA AI (Wei Wang, UCLA), UCSD Pascal, Tile2Net (Maryam Hosseini, UCB).
