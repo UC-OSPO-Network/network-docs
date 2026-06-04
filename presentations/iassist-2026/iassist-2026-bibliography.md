@@ -83,10 +83,15 @@ Status codes: ✅ confirmed · ⚠️ discrepancy or caveat · ❌ could not ver
 
 ---
 
-## Tidelift. (2024). *The 2024 state of the open source maintainer report*. Tidelift.
+## Tidelift. (2024). *The 2024 state of the open source maintainer report*. Tidelift. dev.to/tidelift/the-open-source-maintainer-community-is-getting-grayer-1gc2
 
 **Claims in talk (speaker notes only, not on slides):**
-- 60% of maintainers are unpaid ❌ — Tidelift was acquired by SonarSource; the original URL redirects to a SonarSource product page with no survey data; could not verify
-- 43% report burnout ❌ — same
+- 60% of maintainers are unpaid ✅ — confirmed: "60% of maintainers are (still) not paid for their work"; 400+ maintainers surveyed mid-2024
+- 43% report burnout ⚠️ — **not confirmed at 43%**; article says "almost two-thirds have quit or considered quitting" (~65%) and "almost half feel underappreciated" (~47%); the 43% figure may be from the 2022 or 2023 survey; recommend either dropping the specific percentage or replacing with "almost two-thirds have quit or considered quitting"
 
-**Notes:** These stats appear only in speaker notes for the sustainability slide, not on the slide itself, so they are low-risk for the presentation. However, since the original URL is dead, the citation as written is not resolvable by an audience member. Recommend either finding an archived version (the Internet Archive may have it) or replacing with a verifiable secondary source that cites these figures. The stats are consistent with other maintainer surveys and widely reproduced in press coverage of this report.
+**Additional verified stats (not in slides):**
+- Maintainers 46–65 years old doubled from 11% (2021) to 21% (2024) — aging pipeline
+- Maintainers under 26 dropped from 25% (2021) to 10% (2024)
+- Only 2% have been maintaining for less than a year
+
+**Notes:** Original tidelift.com URL is dead (SonarSource acquisition). The Dev.to post by Tidelift is the accessible source. The original URL is dead, the citation is now updated to the Dev.to article. Stats are notes-only, low risk for the presentation.
