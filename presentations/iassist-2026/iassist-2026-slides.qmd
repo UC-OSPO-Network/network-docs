@@ -99,7 +99,7 @@ Barker et al. (2022) doi:10.1038/s41597-022-01710-x
 :::
 
 ::: {.column width="48%"}
-<div class="uc-oss-grid" role="list" aria-label="Open source projects by UC campus">
+<div class="uc-oss-grid" role="list" aria-label="Open source projects by UC campus" style="zoom:0.82;">
 
 <div class="campus-block" role="listitem">
 <span class="campus-label">UC Berkeley</span>
@@ -340,7 +340,7 @@ Map of California showing six UC OSPO Network campuses: Santa Cruz, Berkeley, Da
 :::: {.columns}
 
 ::: {.column width="33%"}
-::: {style="background:#f0f4fa; border-radius:8px; padding:1.2em 1em; height:420px;"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:1.2em 1em;"}
 [🔭]{style="font-size:2.2em;"}
 
 **Discovery**
@@ -358,7 +358,7 @@ Gomez et al. (2025) arxiv:2506.18359
 :::
 
 ::: {.column width="33%"}
-::: {style="background:#f0f4fa; border-radius:8px; padding:1.2em 1em; height:420px;"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:1.2em 1em;"}
 [🌱]{style="font-size:2.2em;"}
 
 **Sustainability**
@@ -376,7 +376,7 @@ Scarlett et al. (2025) doi:10.31235/osf.io/p8bx6_v1
 :::
 
 ::: {.column width="33%"}
-::: {style="background:#f0f4fa; border-radius:8px; padding:1.2em 1em; height:420px;"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:1.2em 1em;"}
 [📖]{style="font-size:2.2em;"}
 
 **Education**

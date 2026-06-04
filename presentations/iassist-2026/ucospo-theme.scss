@@ -145,6 +145,14 @@ $code-bg:                       $uc-muted;
 }
 
 
+// ── Slide content bottom clearance ───────────────────────────────────────────
+// Reserve space so content never overlaps the footer bar.
+
+.reveal .slides section:not(.title-slide) {
+  padding-bottom: 2.8em;
+}
+
+
 // ── Footer ────────────────────────────────────────────────────────────────────
 
 .reveal .footer {
