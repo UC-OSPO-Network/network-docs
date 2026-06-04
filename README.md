@@ -13,9 +13,11 @@ Coordination documents for the UC OSPO Network: presentations, reports, a Quarto
 
 A 10-minute talk making the case that open source software is research infrastructure, presenting the UC OSPO Network as a model for institutional support, and connecting OSPO work to data professionals' existing roles.
 
-- **Slides:** [iassist-2026-slides.html](https://ucospo.net/network-docs/presentations/iassist-2026/iassist-2026-slides.html)
-- **Handout:** `presentations/iassist-2026/iassist-2026-handout.html`
+- **Slides:** [ucospo.net/network-docs/presentations/iassist-2026/iassist-2026-slides.html](https://ucospo.net/network-docs/presentations/iassist-2026/iassist-2026-slides.html) · shortlink: [tinyurl.com/iassist2026](https://tinyurl.com/iassist2026)
+- **Handout:** [ucospo.net/network-docs/presentations/iassist-2026/iassist-2026-handout.html](https://ucospo.net/network-docs/presentations/iassist-2026/iassist-2026-handout.html) · shortlink: [tinyurl.com/iassist2026-handout](https://tinyurl.com/iassist2026-handout)
 - **Source:** `presentations/iassist-2026/iassist-2026-slides.qmd`
+- **Full version** (19 slides, for other venues): `presentations/iassist-2026/iassist-2026-slides-full.qmd`
+- **Annotated bibliography:** `presentations/iassist-2026/iassist-2026-bibliography.md`
 - **Citation:** `presentations/iassist-2026/CITATION.cff`
 
 Built with Quarto + Reveal.js. Includes a companion handout and a CSV of CURIOSS member institutions.
