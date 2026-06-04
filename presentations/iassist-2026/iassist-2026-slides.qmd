@@ -5,6 +5,9 @@ author: "Tim Dennis"
 institute:
   - "Data Science Center, UCLA Library"
   - "UCLA OSPO Lead, UC OSPO Network"
+bibliography: ../../references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+nocite: '@*'
 format:
   revealjs:
     theme: ucospo-theme.scss
@@ -541,18 +544,5 @@ tinyurl.com/iassist2026
 
 ## References
 
-::: {style="font-size:0.62em; line-height:1.8;"}
-Barker, M., Chue Hong, N. P., Katz, D. S., et al. (2022). Introducing the FAIR Principles for research software. *Scientific Data*, 9, 622. doi:10.1038/s41597-022-01710-x
-
-Gomez, J., Lovell, E., Lieggi, S., Cardenas, A. A., & Davis, J. (2025). Recipe for discovery: A pipeline for institutional open source activity. arXiv:2506.18359
-
-Hettrick, S. et al. (2014, updated 2022). *Research Software Survey*. Software Sustainability Institute. doi:10.5281/zenodo.14809
-
-Hoffmann, M., Nagle, F., & Zhou, Y. (2024). The value of open source software. Harvard Business School Working Paper 24-038. doi:10.2139/ssrn.4693148
-
-Ruff, N. (2026). The role of foundations in advancing open collaboration and innovation. *UC Open Summit*. youtu.be/eBriL3CDNeo
-
-Scarlett, V., Curty, R. G., Gomez, J., Langdon, L., Janée, G., & Budden, A. E. (2025). A system-wide snapshot: A multi-campus survey of open source contributors at the University of California. SocArXiv. doi:10.31235/osf.io/p8bx6_v1
-
-Tidelift. (2024). *The 2024 state of the open source maintainer report*. Tidelift.
+::: {#refs style="font-size:0.62em; line-height:1.8;"}
 :::
