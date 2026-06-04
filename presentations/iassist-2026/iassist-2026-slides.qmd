@@ -386,6 +386,10 @@ Coordinated training across campuses
 ::::
 :::
 
+::: {.small}
+Gomez et al. (2025) arxiv:2506.18359 · Scarlett et al. (2025) doi:10.31235/osf.io/p8bx6_v1
+:::
+
 ::: {.notes}
 - Discovery: inventory, assess, make visible — work this audience knows; Juanita Gomez built UC ORB
 - Sustainability: 58% = not downloaders, stewards; nationally 60% unpaid, 43% burnt out (Tidelift 2024)
