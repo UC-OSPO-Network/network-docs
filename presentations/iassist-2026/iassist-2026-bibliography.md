@@ -17,13 +17,19 @@ Status codes: ✅ confirmed · ⚠️ discrepancy or caveat · ❌ could not ver
 
 ---
 
-## Hoffmann, M., Nagle, F., & Zhou, Y. (2024). The value of open source software. Harvard Business School Working Paper 24-038. doi:10.2139/ssrn.4693148
+## Hoffmann, M. (HBS), Nagle, F. (HBS), & Zhou, Y. (University of Toronto). (2024). The value of open source software. Harvard Business School Working Paper 24-038. doi:10.2139/ssrn.4693148
 
 **Claims in talk:**
-- Open source software would cost $8.8 trillion to replace ❌ — figure is consistent with extensive secondary coverage of this paper but SSRN and HBS pages both returned 403 today; could not read directly
-- Supply-side cost to recreate top 5,000 packages: ~$4.15 billion (speaker notes) ❌ — same access issue
+- Open source software would cost $8.8 trillion to replace ✅ — confirmed from abstract: "the demand-side value is much larger at $8.8 trillion"
+- Supply-side cost to recreate widely-used OSS: $4.15 billion ✅ — confirmed from abstract: "We estimate the supply-side value of widely-used OSS is $4.15 billion"
+- Speaker notes ~2,000x ratio ($8.8T ÷ $4.15B ≈ 2,120x) ✅ — arithmetically correct
 
-**Notes:** The $8.8T figure is the demand-side estimate (what organizations would pay if OSS disappeared). The $4.15B figure is the supply-side estimate (labor cost to recreate the packages). Both are widely cited in press coverage of this paper (Linux Foundation, Harvard Business Review, etc.) and consistent with the paper's known framing. However, direct verification was blocked. Recommend downloading the PDF from SSRN while logged in and confirming the exact figures before the talk.
+**Additional verified stats (not currently in slides, available if useful):**
+- "Firms would need to spend 3.5 times more on software than they currently do if OSS did not exist" — cleaner for non-technical audiences than the $8.8T headline
+- "96% of the demand-side value is created by only 5% of OSS developers"
+- "Top six programming languages comprise 84% of the demand-side value"
+
+**Notes:** PDF verified directly (ssrn-4693148.pdf). Zhou is at Rotman School of Management, University of Toronto — not HBS; bibliography entry should reflect this. Corrected author affiliation: Hoffmann (HBS), Nagle (HBS), Zhou (University of Toronto).
 
 ---
 
