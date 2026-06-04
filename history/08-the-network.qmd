@@ -24,7 +24,7 @@ The UC OSPO Network is not trying to replicate what happened in this history. It
 
 ## What We Found (Discovery)
 
-*Draft - the UC ORB, the GitHub pipeline, the 52,000 institutionally affiliated repos, the 294-person survey. Key findings. Juanita Gomez's work. The survey preprint.*
+*Draft - the UC ORB and GitHub pipeline [@gomez2025]: 236,000+ repos scanned across 10 UC campuses; 82,000 institutionally affiliated after LLM-based filtering. The 294-person system-wide survey [@scarlett2025]: 58% of experienced contributors are also maintainers; top support request is sustainability funding and computing infrastructure. Key findings. Juanita Gomez's work.*
 
 ---
 

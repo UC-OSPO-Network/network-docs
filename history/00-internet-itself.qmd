@@ -29,7 +29,7 @@ His UCLA lab became the birthplace of the internet's first node because he had t
 
 The graduate students working in Kleinrock's lab at UCLA in the late 1960s and early 1970s became the architects of the modern internet:
 
-**Vint Cerf** co-designed TCP/IP with Bob Kahn at DARPA - the protocol suite that replaced ARPANET's original NCP and became the universal language of the internet. He is widely called one of the "fathers of the internet."
+**Vint Cerf** co-designed TCP/IP with Bob Kahn at DARPA [@cerf1974tcp] - the protocol suite that replaced ARPANET's original NCP and became the universal language of the internet. He is widely called one of the "fathers of the internet."
 
 **Jon Postel** went on to manage the DNS (Domain Name System) and the assignment of internet numbers for decades, effectively serving as the internet's directory administrator. He managed IANA (Internet Assigned Numbers Authority) until his death in 1998. His influence over the internet's naming and numbering systems was so central that it prompted the US government to formalize ICANN as his successor.
 
@@ -86,7 +86,7 @@ The most durable technical contribution of Berkeley's TCP/IP implementation was 
 
 ### Why Implementation Mattered as Much as Design
 
-TCP/IP had been designed by Cerf and Kahn. What Berkeley did was make it run, make it stable, and make it free with an operating system that universities already had. The DARPA contract to Berkeley was not a minor technical exercise - it was a deliberate strategy to spread the protocol by bundling it with the system universities were already running. It worked. By the time the internet commercialized in the 1990s, the network stack in virtually every Unix system traced to Berkeley's implementation.
+TCP/IP had been designed by Cerf and Kahn [@cerf1974tcp]. What Berkeley did was make it run, make it stable, and make it free with an operating system that universities already had. The DARPA contract to Berkeley was not a minor technical exercise - it was a deliberate strategy to spread the protocol by bundling it with the system universities were already running. It worked. By the time the internet commercialized in the 1990s, the network stack in virtually every Unix system traced to Berkeley's implementation.
 
 Bill Joy left Berkeley to co-found Sun Microsystems in 1982, and Sun's workstations shipped with BSD networking - extending Berkeley's TCP/IP implementation into the commercial market before the internet was publicly accessible.
 

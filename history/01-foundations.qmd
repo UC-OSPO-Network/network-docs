@@ -36,12 +36,12 @@ Every project in this document was made possible by the licensing model Berkeley
 **Key figures:** Michael Stonebraker (Turing Award 2014), Eugene Wong, Larry Rowe
 
 ::: {.origin-story}
-*Draft - fill in origin story: Stonebraker and Wong reading Codd's 1973 relational model papers, repurposing a geography department grant to build INGRES, the permissive license release, the downstream seeding of Sybase and Microsoft SQL Server. Then POSTGRES: Stonebraker recognizing the limits of pure relational models for complex data types (geographic coordinates, CAD data), the object-relational innovation, the 1994 code release, the 1995 open-source community pickup and SQL replacement (QUEL → SQL), and the creation of PostgreSQL.*
+*Draft - fill in origin story: Stonebraker and Wong reading Codd's 1973 relational model papers, repurposing a geography department grant to build INGRES [@stonebraker1976ingres], the permissive license release, the downstream seeding of Sybase and Microsoft SQL Server. Then POSTGRES [@stonebraker1987postgres]: Stonebraker recognizing the limits of pure relational models for complex data types (geographic coordinates, CAD data), the object-relational innovation, the 1994 code release, the 1995 open-source community pickup and SQL replacement (QUEL → SQL), and the creation of PostgreSQL.*
 :::
 
 ### What it became
 
-PostgreSQL is today the world's most popular independent open-source relational database. The 1973 INGRES codebase seeded Sybase; Microsoft acquired Sybase's engine and built SQL Server from it. One academic project spawned two of the three dominant enterprise databases.
+PostgreSQL is today the world's most popular independent open-source relational database. The 1973 INGRES codebase [@stonebraker1976ingres] seeded Sybase; Microsoft acquired Sybase's engine and built SQL Server from it. One academic project spawned two of the three dominant enterprise databases.
 
 ### The Stonebraker pattern
 

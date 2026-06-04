@@ -1,4 +1,12 @@
 % UC OSPO Network — shared bibliography
+%
+% Organisation:
+%   1. IASSIST 2026 presentation sources (hettrick2014 … tidelift2024)
+%   2. Internet / networking history
+%   3. UC project canonical papers (in chapter order)
+%   4. Additional UC projects (appendix)
+%
+% Keys: <firstauthor><year><shortname>  e.g. weil2006ceph
 % Used across presentations, history book, and reports.
 % Maintained alongside iassist-2026-bibliography.md (annotated validation notes).
 
@@ -89,4 +97,208 @@
   url         = {https://dev.to/tidelift/the-open-source-maintainer-community-is-getting-grayer-1gc2},
   note        = {60\% of maintainers are unpaid hobbyists;
                  nearly two-thirds have quit or considered quitting}
+}
+
+% -----------------------------------------------------------------------
+% Internet / networking history
+% -----------------------------------------------------------------------
+
+@article{cerf1974tcp,
+  author  = {Cerf, Vinton G. and Kahn, Robert E.},
+  title   = {A protocol for packet network intercommunication},
+  journal = {{IEEE} Transactions on Communications},
+  year    = {1974},
+  volume  = {22},
+  number  = {5},
+  pages   = {637--648},
+  doi     = {10.1109/TCOM.1974.1092259}
+}
+
+% -----------------------------------------------------------------------
+% UC project canonical papers — in chapter order
+% -----------------------------------------------------------------------
+
+% Ch 01: Foundations — Berkeley databases
+
+@article{stonebraker1976ingres,
+  author  = {Stonebraker, Michael and Wong, Eugene and Kreps, Peter and Held, Gerald},
+  title   = {The design and implementation of {INGRES}},
+  journal = {{ACM} Transactions on Database Systems},
+  year    = {1976},
+  volume  = {1},
+  number  = {3},
+  pages   = {189--222},
+  doi     = {10.1145/320473.320476}
+}
+
+@techreport{stonebraker1987postgres,
+  author      = {Stonebraker, Michael and Rowe, Lawrence A.},
+  title       = {The design of {POSTGRES}},
+  institution = {University of California, Berkeley},
+  year        = {1987},
+  number      = {UCB/ERL M86/85}
+}
+
+% Ch 02: Universal Infrastructure
+
+@misc{tzdatabase,
+  author       = {Olson, Arthur David and Eggert, Paul},
+  title        = {{tz} Database ({IANA} Time Zone Database)},
+  year         = {1986},
+  howpublished = {IANA},
+  url          = {https://www.iana.org/time-zones},
+  note         = {Ships with every major operating system;
+                  maintained at \url{https://github.com/eggert/tz}}
+}
+
+% Ch 03: Open Science
+
+@article{kent2002genome,
+  author  = {Kent, W. James and Sugnet, Charles W. and Furey, Terrence S. and
+             Roskin, Krishna M. and Pringle, Tom H. and Zahler, Alan M. and
+             Haussler, David},
+  title   = {The human genome browser at {UCSC}},
+  journal = {Genome Research},
+  year    = {2002},
+  volume  = {12},
+  number  = {6},
+  pages   = {996--1006},
+  doi     = {10.1101/gr.229102}
+}
+
+@article{delorme2004eeglab,
+  author  = {Delorme, Arnaud and Makeig, Scott},
+  title   = {{EEGLAB}: An open source toolbox for analysis of single-trial
+             {EEG} dynamics including independent component analysis},
+  journal = {Journal of Neuroscience Methods},
+  year    = {2004},
+  volume  = {134},
+  number  = {1},
+  pages   = {9--21},
+  doi     = {10.1016/j.jneumeth.2003.10.009}
+}
+
+@article{shannon2003cytoscape,
+  author  = {Shannon, Paul and Markiel, Andrew and Ozier, Owen and
+             Baliga, Nitin S. and Wang, Jonathan T. and Ramage, Daniel and
+             Amin, Nada and Schwikowski, Benno and Ideker, Trey},
+  title   = {Cytoscape: A software environment for integrated models of
+             biomolecular interaction networks},
+  journal = {Genome Research},
+  year    = {2003},
+  volume  = {13},
+  number  = {11},
+  pages   = {2498--2504},
+  doi     = {10.1101/gr.1239303}
+}
+
+% Ch 04: Scientific Computing
+
+@inproceedings{kluyver2016jupyter,
+  author    = {Kluyver, Thomas and Ragan-Kelley, Benjamin and P{\'e}rez,
+               Fernando and Granger, Brian and Bussonnier, Matthias and
+               Frederic, Jonathan and Kelley, Kyle and Hamrick, Jessica and
+               Grout, Jason and Corlay, Sylvain and Ivanov, Paul and
+               Avila, Dami{\'a}n and Abdalla, Safia and Willing, Carol},
+  title     = {Jupyter {Notebooks} --- a publishing format for reproducible
+               computational workflows},
+  booktitle = {Positioning and Power in Academic Publishing: Players, Agents
+               and Agendas},
+  editor    = {Loizides, Fernando and Schmidt, Birgit},
+  year      = {2016},
+  pages     = {87--90},
+  publisher = {{IOS} Press},
+  doi       = {10.3233/978-1-61499-649-1-87}
+}
+
+@inproceedings{zaharia2012spark,
+  author    = {Zaharia, Matei and Chowdhury, Mosharaf and Das, Tathagata and
+               Dave, Ankur and Ma, Justin and McCauly, Murphy and
+               Franklin, Michael J. and Shenker, Scott and Stoica, Ion},
+  title     = {Resilient distributed datasets: {A} fault-tolerant abstraction
+               for in-memory cluster computing},
+  booktitle = {9th {USENIX} Symposium on Networked Systems Design and
+               Implementation ({NSDI})},
+  year      = {2012},
+  pages     = {15--28},
+  publisher = {{USENIX} Association}
+}
+
+% Ch 05: Infrastructure at Scale
+
+@inproceedings{weil2006ceph,
+  author    = {Weil, Sage A. and Brandt, Scott A. and Miller, Ethan L. and
+               Long, Darrell D. E. and Maltzahn, Carlos},
+  title     = {Ceph: A scalable, high-performance distributed file system},
+  booktitle = {7th {USENIX} Symposium on Operating Systems Design and
+               Implementation ({OSDI})},
+  year      = {2006},
+  pages     = {307--320},
+  publisher = {{USENIX} Association}
+}
+
+@misc{riscv2019,
+  author       = {Waterman, Andrew and Asanovi{\'c}, Krste},
+  title        = {The {RISC-V} Instruction Set Manual, Volume {I}:
+                  Unprivileged {ISA}},
+  year         = {2019},
+  howpublished = {{RISC-V} Foundation},
+  url          = {https://github.com/riscv/riscv-isa-manual}
+}
+
+@article{zhang2014ndn,
+  author  = {Zhang, Lixia and Afanasyev, Alexander and Burke, Jeffrey and
+             Jacobson, Van and claffy, kc and Crowley, Patrick and
+             Papadopoulos, Christos and Wang, Lan and Zhang, Beichuan},
+  title   = {Named data networking},
+  journal = {{ACM} {SIGCOMM} Computer Communication Review},
+  year    = {2014},
+  volume  = {44},
+  number  = {3},
+  pages   = {66--73},
+  doi     = {10.1145/2656877.2656887}
+}
+
+@inproceedings{moritz2018ray,
+  author    = {Moritz, Philipp and Nishihara, Robert and Wang, Stephanie and
+               Tumanov, Alexey and Liaw, Richard and Liang, Eric and
+               Elibol, Mehrdad and Yang, Zongheng and Paul, William and
+               Jordan, Michael I. and Stoica, Ion},
+  title     = {Ray: A distributed framework for emerging {AI} applications},
+  booktitle = {13th {USENIX} Symposium on Operating Systems Design and
+               Implementation ({OSDI})},
+  year      = {2018},
+  pages     = {561--577},
+  publisher = {{USENIX} Association}
+}
+
+% -----------------------------------------------------------------------
+% Additional UC projects (appendix)
+% -----------------------------------------------------------------------
+
+@article{brown2016sourmash,
+  author  = {Brown, C. Titus and Irber, Luiz},
+  title   = {sourmash: a library for {MinHash} sketching of {DNA}},
+  journal = {Journal of Open Source Software},
+  year    = {2016},
+  volume  = {1},
+  number  = {5},
+  pages   = {27},
+  doi     = {10.21105/joss.00027}
+}
+
+@article{eastman2017openmm,
+  author  = {Eastman, Peter and Swails, Jason and Chodera, John D. and
+             McGibbon, Robert T. and Zhao, Yutong and Beauchamp, Kyle A. and
+             Wang, Lee-Ping and Simmonett, Andrew C. and Harrigan, Matthew P.
+             and Stern, Chaya D. and Wiewiora, Rafal P. and Brooks, Bernard R.
+             and Pande, Vijay S.},
+  title   = {{OpenMM} 7: Rapid development of high performance algorithms for
+             molecular dynamics},
+  journal = {{PLOS} Computational Biology},
+  year    = {2017},
+  volume  = {13},
+  number  = {7},
+  pages   = {e1005659},
+  doi     = {10.1371/journal.pcbi.1005659}
 }
