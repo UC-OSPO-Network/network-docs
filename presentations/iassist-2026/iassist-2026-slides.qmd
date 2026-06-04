@@ -337,6 +337,7 @@ Map of California showing six UC OSPO Network campuses: Santa Cruz, Berkeley, Da
 
 ## Discovery · Sustainability · Education
 
+::: {style="font-size:0.82em;"}
 :::: {.columns}
 
 ::: {.column width="33%"}
@@ -350,10 +351,6 @@ Mapping who does what across the UC system
 * 200,000+ repos scanned; ~52,000 institutionally affiliated
 * 294-respondent system-wide survey
 * UC Open Repository Browser (UC ORB)
-
-::: {.small}
-Gomez et al. (2025) arxiv:2506.18359
-:::
 :::
 :::
 
@@ -368,10 +365,6 @@ Keeping projects and communities healthy
 * **58%** of UC contributors are also maintainers
 * Cross-campus licensing working group (<abbr title="UC Office of the President">UCOP</abbr> + tech transfer)
 * Project health assessment (<abbr title="Open Source PRoject sustainabilitY tracker">OSSPREY</abbr>)
-
-::: {.small}
-Scarlett et al. (2025) doi:10.31235/osf.io/p8bx6_v1
-:::
 :::
 :::
 
@@ -391,6 +384,7 @@ Coordinated training across campuses
 :::
 
 ::::
+:::
 
 ::: {.notes}
 - Discovery: inventory, assess, make visible — work this audience knows; Juanita Gomez built UC ORB
