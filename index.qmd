@@ -3,6 +3,7 @@ title: "UC OSPO Network — Coordination Documents"
 format:
   html:
     theme: [cosmo, ucospo-site.scss]
+    embed-resources: true
     toc: false
     page-layout: article
     navbar:
