@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -263,11 +283,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="the-ucsc-genome-browser-three-days-before-a-supercomputer">The UCSC Genome Browser: Three Days Before a Supercomputer</h2>
 <p><strong>The project:</strong> UCSC Genome Browser <strong>Campus:</strong> UC Santa Cruz <strong>Period:</strong> Summer 2000 <strong>Key figures:</strong> Jim Kent (PhD student), David Haussler (faculty)</p>
 <div class="origin-story">
-<p><em>Draft - fill in origin story: The Human Genome Project race between the public consortium and Celera Genomics (Craig Venter’s private company, $300M, dedicated supercomputer cluster); Jim Kent as a PhD student at UCSC writing GigAssembler (~10,000 lines of C) in a matter of weeks on 50 borrowed off-the-shelf PCs; reportedly icing his wrists to prevent carpal tunnel while coding through the night; finishing the assembly three days before Celera; the decision to release everything publicly to keep the genome in the public domain; the UCSC Genome Browser that followed as a tool for visualizing and navigating the assembled sequence; genome.ucsc.edu as the reference destination for genomic research ever since.</em></p>
+<p><em>Draft - fill in origin story: The Human Genome Project race between the public consortium and Celera Genomics (Craig Venter’s private company, $300M, dedicated supercomputer cluster); Jim Kent as a PhD student at UCSC writing GigAssembler (~10,000 lines of C) in a matter of weeks on 50 borrowed off-the-shelf PCs; reportedly icing his wrists to prevent carpal tunnel while coding through the night; finishing the assembly three days before Celera; the decision to release everything publicly to keep the genome in the public domain; the UCSC Genome Browser <span class="citation" data-cites="kent2002genome">(<a href="#ref-kent2002genome" role="doc-biblioref">Kent et al., 2002</a>)</span> that followed as a tool for visualizing and navigating the assembled sequence; genome.ucsc.edu as the reference destination for genomic research ever since.</em></p>
 </div>
 <section id="what-it-became" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-became">What it became</h3>
-<p>The UCSC Genome Browser is the reference tool for genomic research worldwide. It hosts assemblies for hundreds of species, is updated continuously, and remains the first stop for any researcher navigating genomic data. The broader lesson - that a grad student with commodity hardware and open code could outcompete a $300M private effort - became a founding argument for open science.</p>
+<p>The UCSC Genome Browser <span class="citation" data-cites="kent2002genome">(<a href="#ref-kent2002genome" role="doc-biblioref">Kent et al., 2002</a>)</span> is the reference tool for genomic research worldwide. It hosts assemblies for hundreds of species, is updated continuously, and remains the first stop for any researcher navigating genomic data. The broader lesson - that a grad student with commodity hardware and open code could outcompete a $300M private effort - became a founding argument for open science.</p>
 <hr>
 </section>
 </section>
@@ -275,11 +295,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="eeglab-the-most-cited-scientific-software-youve-never-heard-of">EEGLAB: The Most-Cited Scientific Software You’ve Never Heard Of</h2>
 <p><strong>The project:</strong> EEGLAB <strong>Campus:</strong> UC San Diego (Swartz Center for Computational Neuroscience) <strong>Period:</strong> 1997 - 2001 <strong>Key figures:</strong> Scott Makeig</p>
 <div class="origin-story">
-<p><em>Draft - fill in: Scott Makeig’s work at the Salk Institute and then UCSD; the need for open tooling to analyze EEG (electroencephalography) signals; the 2004 foundational paper; the download and citation numbers.</em></p>
+<p><em>Draft - fill in: Scott Makeig’s work at the Salk Institute and then UCSD; the need for open tooling to analyze EEG (electroencephalography) signals; the 2004 foundational paper <span class="citation" data-cites="delorme2004eeglab">(<a href="#ref-delorme2004eeglab" role="doc-biblioref">Delorme &amp; Makeig, 2004</a>)</span>; the download and citation numbers.</em></p>
 </div>
 <section id="what-it-became-1" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-became-1">What it became</h3>
-<p>EEGLAB is the world’s premier open-source environment for electrophysiological signal processing. The 2004 foundational paper has accumulated more than 14,400 citations - among the highest academic footprints of any scientific software. It has been downloaded over 350,000 times and is the standard platform for EEG research globally.</p>
+<p>EEGLAB is the world’s premier open-source environment for electrophysiological signal processing. The 2004 foundational paper <span class="citation" data-cites="delorme2004eeglab">(<a href="#ref-delorme2004eeglab" role="doc-biblioref">Delorme &amp; Makeig, 2004</a>)</span> has accumulated more than 14,400 citations - among the highest academic footprints of any scientific software. It has been downloaded over 350,000 times and is the standard platform for EEG research globally.</p>
 <hr>
 </section>
 </section>
@@ -291,7 +311,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="what-it-became-2" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-became-2">What it became</h3>
-<p>Cytoscape is the global standard platform for network biology. It is used to visualize disease pathways, protein interactions, and molecular networks in cancer and therapeutic research worldwide. Over 300,000 downloads per year; central to how researchers understand complex biological systems.</p>
+<p>Cytoscape <span class="citation" data-cites="shannon2003cytoscape">(<a href="#ref-shannon2003cytoscape" role="doc-biblioref">Shannon et al., 2003</a>)</span> is the global standard platform for network biology. It is used to visualize disease pathways, protein interactions, and molecular networks in cancer and therapeutic research worldwide. Over 300,000 downloads per year; central to how researchers understand complex biological systems.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -307,6 +327,17 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-delorme2004eeglab" class="csl-entry" role="listitem">
+Delorme, A., &amp; Makeig, S. (2004). <span>EEGLAB</span>: An open source toolbox for analysis of single-trial <span>EEG</span> dynamics including independent component analysis. <em>Journal of Neuroscience Methods</em>, <em>134</em>(1), 9–21. <a href="https://doi.org/10.1016/j.jneumeth.2003.10.009">https://doi.org/10.1016/j.jneumeth.2003.10.009</a>
+</div>
+<div id="ref-kent2002genome" class="csl-entry" role="listitem">
+Kent, W. J., Sugnet, C. W., Furey, T. S., Roskin, K. M., Pringle, T. H., Zahler, A. M., &amp; Haussler, D. (2002). The human genome browser at <span>UCSC</span>. <em>Genome Research</em>, <em>12</em>(6), 996–1006. <a href="https://doi.org/10.1101/gr.229102">https://doi.org/10.1101/gr.229102</a>
+</div>
+<div id="ref-shannon2003cytoscape" class="csl-entry" role="listitem">
+Shannon, P., Markiel, A., Ozier, O., Baliga, N. S., Wang, J. T., Ramage, D., Amin, N., Schwikowski, B., &amp; Ideker, T. (2003). Cytoscape: A software environment for integrated models of biomolecular interaction networks. <em>Genome Research</em>, <em>13</em>(11), 2498–2504. <a href="https://doi.org/10.1101/gr.1239303">https://doi.org/10.1101/gr.1239303</a>
+</div>
+</div>
 </section>
 </section>
 

@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -277,11 +297,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="ingres-postgres-and-the-database-lineage">INGRES, POSTGRES, and the Database Lineage</h2>
 <p><strong>The projects:</strong> University INGRES (1973), POSTGRES (1986), PostgreSQL (1995-) <strong>Campus:</strong> UC Berkeley <strong>Key figures:</strong> Michael Stonebraker (Turing Award 2014), Eugene Wong, Larry Rowe</p>
 <div class="origin-story">
-<p><em>Draft - fill in origin story: Stonebraker and Wong reading Codd’s 1973 relational model papers, repurposing a geography department grant to build INGRES, the permissive license release, the downstream seeding of Sybase and Microsoft SQL Server. Then POSTGRES: Stonebraker recognizing the limits of pure relational models for complex data types (geographic coordinates, CAD data), the object-relational innovation, the 1994 code release, the 1995 open-source community pickup and SQL replacement (QUEL → SQL), and the creation of PostgreSQL.</em></p>
+<p><em>Draft - fill in origin story: Stonebraker and Wong reading Codd’s 1973 relational model papers, repurposing a geography department grant to build INGRES <span class="citation" data-cites="stonebraker1976ingres">(<a href="#ref-stonebraker1976ingres" role="doc-biblioref">Stonebraker et al., 1976</a>)</span>, the permissive license release, the downstream seeding of Sybase and Microsoft SQL Server. Then POSTGRES <span class="citation" data-cites="stonebraker1987postgres">(<a href="#ref-stonebraker1987postgres" role="doc-biblioref">Stonebraker &amp; Rowe, 1987</a>)</span>: Stonebraker recognizing the limits of pure relational models for complex data types (geographic coordinates, CAD data), the object-relational innovation, the 1994 code release, the 1995 open-source community pickup and SQL replacement (QUEL → SQL), and the creation of PostgreSQL.</em></p>
 </div>
 <section id="what-it-became-1" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-became-1">What it became</h3>
-<p>PostgreSQL is today the world’s most popular independent open-source relational database. The 1973 INGRES codebase seeded Sybase; Microsoft acquired Sybase’s engine and built SQL Server from it. One academic project spawned two of the three dominant enterprise databases.</p>
+<p>PostgreSQL is today the world’s most popular independent open-source relational database. The 1973 INGRES codebase <span class="citation" data-cites="stonebraker1976ingres">(<a href="#ref-stonebraker1976ingres" role="doc-biblioref">Stonebraker et al., 1976</a>)</span> seeded Sybase; Microsoft acquired Sybase’s engine and built SQL Server from it. One academic project spawned two of the three dominant enterprise databases.</p>
 </section>
 <section id="the-stonebraker-pattern" class="level3">
 <h3 class="anchored" data-anchor-id="the-stonebraker-pattern">The Stonebraker pattern</h3>
@@ -301,6 +321,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-stonebraker1987postgres" class="csl-entry" role="listitem">
+Stonebraker, M., &amp; Rowe, L. A. (1987). <em>The design of <span>POSTGRES</span></em> (UCB/ERL M86/85). University of California, Berkeley.
+</div>
+<div id="ref-stonebraker1976ingres" class="csl-entry" role="listitem">
+Stonebraker, M., Wong, E., Kreps, P., &amp; Held, G. (1976). The design and implementation of <span>INGRES</span>. <em><span>ACM</span> Transactions on Database Systems</em>, <em>1</em>(3), 189–222. <a href="https://doi.org/10.1145/320473.320476">https://doi.org/10.1145/320473.320476</a>
+</div>
+</div>
 </section>
 </section>
 

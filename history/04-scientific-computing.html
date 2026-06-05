@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -261,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="jupyter-the-procrastination-that-runs-science">Jupyter: The Procrastination That Runs Science</h2>
 <p><strong>The project:</strong> IPython / Project Jupyter <strong>Campus:</strong> UC Berkeley (BIDS) <strong>Period:</strong> 2001 (IPython), 2014 (Jupyter) <strong>Key figures:</strong> Fernando Pérez (creator), Carol Willing (Steering Council, ACM Award), Stéfan van der Walt (scikit-image, Berkeley co-PI)</p>
 <div class="origin-story">
-<p><em>Draft - fill in: Fernando Pérez as a physics PhD student at CU Boulder, building the first IPython in an afternoon procrastinating on his dissertation; the tool spreading through the scientific Python community; Pérez moving to UC Berkeley; the 2014 relaunch as Project Jupyter (for Julia, Python, R) with multi-language support; the notebook format as the dominant interface for interactive computing in science, AI, and data education; the 2017 ACM Software System Award shared with Carol Willing and the Steering Council; Pérez now as faculty director of BIDS and co-PI on the UC OSPO Network.</em></p>
+<p><em>Draft - fill in: Fernando Pérez as a physics PhD student at CU Boulder, building the first IPython in an afternoon procrastinating on his dissertation; the tool spreading through the scientific Python community; Pérez moving to UC Berkeley; the 2014 relaunch as Project Jupyter <span class="citation" data-cites="kluyver2016jupyter">(<a href="#ref-kluyver2016jupyter" role="doc-biblioref">Kluyver et al., 2016</a>)</span> (for Julia, Python, R) with multi-language support; the notebook format as the dominant interface for interactive computing in science, AI, and data education; the 2017 ACM Software System Award shared with Carol Willing and the Steering Council; Pérez now as faculty director of BIDS and co-PI on the UC OSPO Network.</em></p>
 </div>
 <section id="carol-willing-and-the-steering-council" class="level3">
 <h3 class="anchored" data-anchor-id="carol-willing-and-the-steering-council">Carol Willing and the Steering Council</h3>
@@ -269,7 +289,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="what-it-became" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-became">What it became</h3>
-<p>Jupyter notebooks are the dominant interface for interactive scientific computing worldwide. They run in data science courses, AI research labs, public health agencies, and science classrooms. JupyterHub scales the single-user notebook to institutional deployments serving thousands. Binder makes any notebook instantly reproducible and shareable. The format has become a de facto standard for communicating computational science.</p>
+<p>Jupyter notebooks <span class="citation" data-cites="kluyver2016jupyter">(<a href="#ref-kluyver2016jupyter" role="doc-biblioref">Kluyver et al., 2016</a>)</span> are the dominant interface for interactive scientific computing worldwide. They run in data science courses, AI research labs, public health agencies, and science classrooms. JupyterHub scales the single-user notebook to institutional deployments serving thousands. Binder makes any notebook instantly reproducible and shareable. The format has become a de facto standard for communicating computational science.</p>
 <hr>
 </section>
 </section>
@@ -277,7 +297,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="apache-spark-the-netflix-prize-and-a-62-billion-company">Apache Spark: The Netflix Prize and a $62 Billion Company</h2>
 <p><strong>The project:</strong> Apache Spark <strong>Campus:</strong> UC Berkeley AMPLab <strong>Period:</strong> 2009 <strong>Key figures:</strong> Matei Zaharia, Holden Karau (PMC, core committer)</p>
 <div class="origin-story">
-<p><em>Draft - fill in: Berkeley’s AMPLab (Algorithms, Machines, and People); Matei Zaharia’s classmate Lester Mackey needing faster distributed machine learning to compete in the $1M Netflix Prize; Zaharia building Spark as a solution; the key insight that Hadoop MapReduce was too slow for iterative ML algorithms because it wrote to disk between every step; Spark’s in-memory execution model; the donation to Apache before commercializing; Databricks founded after the donation; Databricks now valued at $62B+.</em></p>
+<p><em>Draft - fill in: Berkeley’s AMPLab (Algorithms, Machines, and People); Matei Zaharia’s classmate Lester Mackey needing faster distributed machine learning to compete in the $1M Netflix Prize; Zaharia building Spark <span class="citation" data-cites="zaharia2012spark">(<a href="#ref-zaharia2012spark" role="doc-biblioref">Zaharia et al., 2012</a>)</span> as a solution; the key insight that Hadoop MapReduce was too slow for iterative ML algorithms because it wrote to disk between every step; Spark’s in-memory execution model; the donation to Apache before commercializing; Databricks founded after the donation; Databricks now valued at $62B+.</em></p>
 </div>
 <section id="holden-karau-and-the-core-team" class="level3">
 <h3 class="anchored" data-anchor-id="holden-karau-and-the-core-team">Holden Karau and the core team</h3>
@@ -285,7 +305,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="what-it-became-1" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-became-1">What it became</h3>
-<p>Apache Spark is the dominant framework for large-scale data processing. It powers data pipelines at virtually every major technology company and research institution. Databricks, the commercial entity founded after the Apache donation, is valued at over $62 billion. The Apache Software Foundation stewards the open-source project; no single company can pull it away.</p>
+<p>Apache Spark <span class="citation" data-cites="zaharia2012spark">(<a href="#ref-zaharia2012spark" role="doc-biblioref">Zaharia et al., 2012</a>)</span> is the dominant framework for large-scale data processing. It powers data pipelines at virtually every major technology company and research institution. Databricks, the commercial entity founded after the Apache donation, is valued at over $62 billion. The Apache Software Foundation stewards the open-source project; no single company can pull it away.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -301,6 +321,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-kluyver2016jupyter" class="csl-entry" role="listitem">
+Kluyver, T., Ragan-Kelley, B., Pérez, F., Granger, B., Bussonnier, M., Frederic, J., Kelley, K., Hamrick, J., Grout, J., Corlay, S., Ivanov, P., Avila, D., Abdalla, S., &amp; Willing, C. (2016). Jupyter <span>Notebooks</span> — a publishing format for reproducible computational workflows. In F. Loizides &amp; B. Schmidt (Eds.), <em>Positioning and power in academic publishing: Players, agents and agendas</em> (pp. 87–90). <span>IOS</span> Press. <a href="https://doi.org/10.3233/978-1-61499-649-1-87">https://doi.org/10.3233/978-1-61499-649-1-87</a>
+</div>
+<div id="ref-zaharia2012spark" class="csl-entry" role="listitem">
+Zaharia, M., Chowdhury, M., Das, T., Dave, A., Ma, J., McCauly, M., Franklin, M. J., Shenker, S., &amp; Stoica, I. (2012). Resilient distributed datasets: <span>A</span> fault-tolerant abstraction for in-memory cluster computing. <em>9th <span>USENIX</span> Symposium on Networked Systems Design and Implementation (<span>NSDI</span>)</em>, 15–28.
+</div>
+</div>
 </section>
 </section>
 

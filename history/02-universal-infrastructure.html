@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -261,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="the-tz-database-every-clock-on-earth">The tz Database: Every Clock on Earth</h2>
 <p><strong>The project:</strong> tz database (IANA Time Zone Database) <strong>Campus:</strong> UCLA (current maintainer: Paul Eggert, since 2005) <strong>Origin:</strong> 1986, Arthur David Olson (NIH) <strong>Key figures:</strong> Paul Eggert (UCLA), Arthur David Olson</p>
 <div class="origin-story">
-<p><em>Draft - fill in origin story: Olson starting the database in 1986 to track the world’s timezone rules; Eggert taking over maintenance in 2005 as a computer scientist at UCLA; the extraordinary research methodology (19th-century astronomical almanacs used to reconstruct pre-1883 local solar times that pre-date standardized timekeeping); the 2011 IP lawsuit by Astrolabe Inc.&nbsp;that nearly took the database offline; the community response; IANA taking stewardship.</em></p>
+<p><em>Draft - fill in origin story: Olson starting the database in 1986 to track the world’s timezone rules <span class="citation" data-cites="tzdatabase">(<a href="#ref-tzdatabase" role="doc-biblioref">Olson &amp; Eggert, 1986</a>)</span>; Eggert taking over maintenance in 2005 as a computer scientist at UCLA; the extraordinary research methodology (19th-century astronomical almanacs used to reconstruct pre-1883 local solar times that pre-date standardized timekeeping); the 2011 IP lawsuit by Astrolabe Inc.&nbsp;that nearly took the database offline; the community response; IANA taking stewardship.</em></p>
 </div>
 <section id="what-it-became" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-became">What it became</h3>
@@ -301,6 +321,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-tzdatabase" class="csl-entry" role="listitem">
+Olson, A. D., &amp; Eggert, P. (1986). <em><span class="nocase">tz</span> database (<span>IANA</span> time zone database)</em>. IANA. <a href="https://www.iana.org/time-zones">https://www.iana.org/time-zones</a>
+</div>
+</div>
 </section>
 </section>
 

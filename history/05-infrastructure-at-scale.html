@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -267,11 +287,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="ceph-the-dissertation-that-funded-an-ospo">Ceph: The Dissertation That Funded an OSPO</h2>
 <p><strong>The project:</strong> Ceph distributed storage system <strong>Campus:</strong> UC Santa Cruz (Storage Systems Research Center) <strong>Period:</strong> 2004 <strong>Key figures:</strong> Sage Weil (PhD student), Scott A. Brandt (advisor)</p>
 <div class="origin-story">
-<p><em>Draft - fill in: Sage Weil’s dissertation at UCSC’s SSRC under Prof.&nbsp;Scott A. Brandt; the design problem (exabyte-scale distributed storage without a central lookup table - using CRUSH algorithm for deterministic placement); the Linux kernel merge in 2010; Weil founding Inktank to commercialize it; Red Hat acquiring Inktank in 2014; the Linux Foundation launching the Ceph Foundation in 2018 for neutral governance; crucially: the proceeds from Inktank’s commercialization funding CROSS (Center for Research in Open Source Software) at UCSC - which became the first UC OSPO and the seed of the network this document represents.</em></p>
+<p><em>Draft - fill in: Sage Weil’s dissertation at UCSC’s SSRC under Prof.&nbsp;Scott A. Brandt; the design problem (exabyte-scale distributed storage without a central lookup table - using CRUSH algorithm for deterministic placement) <span class="citation" data-cites="weil2006ceph">(<a href="#ref-weil2006ceph" role="doc-biblioref">Weil et al., 2006</a>)</span>; the Linux kernel merge in 2010; Weil founding Inktank to commercialize it; Red Hat acquiring Inktank in 2014; the Linux Foundation launching the Ceph Foundation in 2018 for neutral governance; crucially: the proceeds from Inktank’s commercialization funding CROSS (Center for Research in Open Source Software) at UCSC - which became the first UC OSPO and the seed of the network this document represents.</em></p>
 </div>
 <section id="the-direct-line-to-this-document" class="level3">
 <h3 class="anchored" data-anchor-id="the-direct-line-to-this-document">The direct line to this document</h3>
-<p>The money from Ceph’s commercialization funded CROSS at UCSC. CROSS became the first UC OSPO. The UC OSPO Network grew from CROSS. This history was written by an organization that exists because one dissertation was released with an open license and commercialized responsibly.</p>
+<p>The money from Ceph’s commercialization <span class="citation" data-cites="weil2006ceph">(<a href="#ref-weil2006ceph" role="doc-biblioref">Weil et al., 2006</a>)</span> funded CROSS at UCSC. CROSS became the first UC OSPO. The UC OSPO Network grew from CROSS. This history was written by an organization that exists because one dissertation was released with an open license and commercialized responsibly.</p>
 <hr>
 </section>
 </section>
@@ -279,11 +299,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="risc-v-the-summer-project-in-ten-billion-devices">RISC-V: The Summer Project in Ten Billion Devices</h2>
 <p><strong>The project:</strong> RISC-V open instruction set architecture <strong>Campus:</strong> UC Berkeley <strong>Period:</strong> Summer 2010 <strong>Key figures:</strong> Krste Asanovic, David Patterson, Andrew Waterman, Yunsup Lee</p>
 <div class="origin-story">
-<p><em>Draft - fill in: Asanovic and Patterson wanting a clean, open instruction set for their graduate students to build chips without paying ARM royalties; the three-month summer project; the decision to make it fully open and royalty-free; the formation of the RISC-V Foundation; the dramatic relocation to Switzerland in 2020 to stay neutral in US-China trade tensions (both countries were adopting RISC-V for strategic hardware independence); the current scale: 350+ member organizations, 70 countries, 10 billion+ devices shipped.</em></p>
+<p><em>Draft - fill in: Asanovic and Patterson wanting a clean, open instruction set for their graduate students to build chips without paying ARM royalties; the three-month summer project; the decision to make it fully open and royalty-free <span class="citation" data-cites="riscv2019">(<a href="#ref-riscv2019" role="doc-biblioref">Waterman &amp; Asanović, 2019</a>)</span>; the formation of the RISC-V Foundation; the dramatic relocation to Switzerland in 2020 to stay neutral in US-China trade tensions (both countries were adopting RISC-V for strategic hardware independence); the current scale: 350+ member organizations, 70 countries, 10 billion+ devices shipped.</em></p>
 </div>
 <section id="what-it-became" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-became">What it became</h3>
-<p>RISC-V is now a global strategic asset. Countries use it to build hardware without dependency on US or UK intellectual property. The EU has invested in RISC-V for semiconductor independence. China uses it extensively. The foundation moved to Switzerland specifically to be credibly neutral - no one country can claim it.</p>
+<p>RISC-V <span class="citation" data-cites="riscv2019">(<a href="#ref-riscv2019" role="doc-biblioref">Waterman &amp; Asanović, 2019</a>)</span> is now a global strategic asset. Countries use it to build hardware without dependency on US or UK intellectual property. The EU has invested in RISC-V for semiconductor independence. China uses it extensively. The foundation moved to Switzerland specifically to be credibly neutral - no one country can claim it.</p>
 <hr>
 </section>
 </section>
@@ -291,7 +311,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="named-data-networking-rethinking-the-internet">Named Data Networking: Rethinking the Internet</h2>
 <p><strong>The project:</strong> Named Data Networking (NDN / NFD) <strong>Campus:</strong> UCLA <strong>Period:</strong> 2010 (as a Future Internet Architecture project) <strong>Key figures:</strong> Lixia Zhang (Lead PI, Professor of Computer Science)</p>
 <div class="origin-story">
-<p><em>Draft - fill in: Lixia Zhang’s background - growing up in rural China, driving tractors during the Cultural Revolution, earning her PhD at MIT under David Clark, working at Xerox PARC, joining UCLA. Zhang was the only woman and the only student at the very first IETF meeting in 1986. She coined “middlebox,” designed RSVP (Resource Reservation Protocol), and is an inductee of the Internet Hall of Fame. NDN as a proposal to fundamentally rethink internet architecture: instead of routing by address (where data lives), route by name (what data is). The $14M NSF Future Internet Architecture project. The ongoing research and deployment work.</em></p>
+<p><em>Draft - fill in: Lixia Zhang’s background - growing up in rural China, driving tractors during the Cultural Revolution, earning her PhD at MIT under David Clark, working at Xerox PARC, joining UCLA. Zhang was the only woman and the only student at the very first IETF meeting in 1986. She coined “middlebox,” designed RSVP (Resource Reservation Protocol), and is an inductee of the Internet Hall of Fame. NDN as a proposal to fundamentally rethink internet architecture: instead of routing by address (where data lives), route by name (what data is) <span class="citation" data-cites="zhang2014ndn">(<a href="#ref-zhang2014ndn" role="doc-biblioref"><span class="nocase">Zhang et al.</span>, 2014</a>)</span>. The $14M NSF Future Internet Architecture project. The ongoing research and deployment work.</em></p>
 </div>
 <section id="why-this-belongs-here" class="level3">
 <h3 class="anchored" data-anchor-id="why-this-belongs-here">Why this belongs here</h3>
@@ -303,11 +323,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="ray-two-phd-students-and-the-openai-stack">Ray: Two PhD Students and the OpenAI Stack</h2>
 <p><strong>The project:</strong> Ray distributed computing framework <strong>Campus:</strong> UC Berkeley RISELab <strong>Period:</strong> 2016 <strong>Key figures:</strong> Robert Nishihara, Philipp Moritz, Ion Stoica, Michael Jordan</p>
 <div class="origin-story">
-<p><em>Draft - fill in: The RISELab context (successor to AMPLab); Nishihara and Moritz as PhD students repeatedly rewriting Python code every time they needed to scale to more than one machine; Ray as a general-purpose distributed computing framework designed to make Python programs scale to clusters as easily as they run on a laptop; the adoption by OpenAI for their training and inference infrastructure; the Linux Foundation donation in 2025; the current scale of usage across AI and ML workloads.</em></p>
+<p><em>Draft - fill in: The RISELab context (successor to AMPLab); Nishihara and Moritz as PhD students repeatedly rewriting Python code every time they needed to scale to more than one machine; Ray <span class="citation" data-cites="moritz2018ray">(<a href="#ref-moritz2018ray" role="doc-biblioref">Moritz et al., 2018</a>)</span> as a general-purpose distributed computing framework designed to make Python programs scale to clusters as easily as they run on a laptop; the adoption by OpenAI for their training and inference infrastructure; the Linux Foundation donation in 2025; the current scale of usage across AI and ML workloads.</em></p>
 </div>
 <section id="what-it-became-1" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-became-1">What it became</h3>
-<p>Ray is core infrastructure for modern AI compute. OpenAI uses it. Virtually every large AI training workload runs on it or something derived from it. The Linux Foundation took stewardship in 2025 - following the same playbook as Ceph, Spark, and RISC-V: build at a university, donate to a neutral foundation, commercialize the services.</p>
+<p>Ray <span class="citation" data-cites="moritz2018ray">(<a href="#ref-moritz2018ray" role="doc-biblioref">Moritz et al., 2018</a>)</span> is core infrastructure for modern AI compute. OpenAI uses it. Virtually every large AI training workload runs on it or something derived from it. The Linux Foundation took stewardship in 2025 - following the same playbook as Ceph, Spark, and RISC-V: build at a university, donate to a neutral foundation, commercialize the services.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -323,6 +343,20 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-moritz2018ray" class="csl-entry" role="listitem">
+Moritz, P., Nishihara, R., Wang, S., Tumanov, A., Liaw, R., Liang, E., Elibol, M., Yang, Z., Paul, W., Jordan, M. I., &amp; Stoica, I. (2018). Ray: A distributed framework for emerging <span>AI</span> applications. <em>13th <span>USENIX</span> Symposium on Operating Systems Design and Implementation (<span>OSDI</span>)</em>, 561–577.
+</div>
+<div id="ref-riscv2019" class="csl-entry" role="listitem">
+Waterman, A., &amp; Asanović, K. (2019). <em>The <span>RISC-V</span> instruction set manual, volume <span>I</span>: Unprivileged <span>ISA</span></em>. <span>RISC-V</span> Foundation. <a href="https://github.com/riscv/riscv-isa-manual">https://github.com/riscv/riscv-isa-manual</a>
+</div>
+<div id="ref-weil2006ceph" class="csl-entry" role="listitem">
+Weil, S. A., Brandt, S. A., Miller, E. L., Long, D. D. E., &amp; Maltzahn, C. (2006). Ceph: A scalable, high-performance distributed file system. <em>7th <span>USENIX</span> Symposium on Operating Systems Design and Implementation (<span>OSDI</span>)</em>, 307–320.
+</div>
+<div id="ref-zhang2014ndn" class="csl-entry" role="listitem">
+<span class="nocase">Zhang, L., Afanasyev, A., Burke, J., Jacobson, V., claffy, kc, Crowley, P., Papadopoulos, C., Wang, L., &amp; Zhang, B.</span> (2014). Named data networking. <em><span>ACM</span> <span>SIGCOMM</span> Computer Communication Review</em>, <em>44</em>(3), 66–73. <a href="https://doi.org/10.1145/2656877.2656887">https://doi.org/10.1145/2656877.2656887</a>
+</div>
+</div>
 </section>
 </section>
 

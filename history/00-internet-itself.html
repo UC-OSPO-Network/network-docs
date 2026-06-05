@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -275,7 +295,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="the-students-who-built-the-internet" class="level3">
 <h3 class="anchored" data-anchor-id="the-students-who-built-the-internet">The Students Who Built the Internet</h3>
 <p>The graduate students working in Kleinrock’s lab at UCLA in the late 1960s and early 1970s became the architects of the modern internet:</p>
-<p><strong>Vint Cerf</strong> co-designed TCP/IP with Bob Kahn at DARPA - the protocol suite that replaced ARPANET’s original NCP and became the universal language of the internet. He is widely called one of the “fathers of the internet.”</p>
+<p><strong>Vint Cerf</strong> co-designed TCP/IP with Bob Kahn at DARPA <span class="citation" data-cites="cerf1974tcp">(<a href="#ref-cerf1974tcp" role="doc-biblioref">Cerf &amp; Kahn, 1974</a>)</span> - the protocol suite that replaced ARPANET’s original NCP and became the universal language of the internet. He is widely called one of the “fathers of the internet.”</p>
 <p><strong>Jon Postel</strong> went on to manage the DNS (Domain Name System) and the assignment of internet numbers for decades, effectively serving as the internet’s directory administrator. He managed IANA (Internet Assigned Numbers Authority) until his death in 1998. His influence over the internet’s naming and numbering systems was so central that it prompted the US government to formalize ICANN as his successor.</p>
 <p><strong>Steve Crocker</strong> invented the RFC (Request for Comments) process at UCLA in April 1969. RFC 1, written by Crocker, established the open, collaborative process by which internet standards are still developed today. The choice of “Request for Comments” rather than something more authoritative was deliberate - Crocker wanted to encourage participation and avoid having any single voice dominate. Every standard that governs the internet, from email to HTTPS to DNS, exists as an RFC.</p>
 </section>
@@ -315,7 +335,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="why-implementation-mattered-as-much-as-design" class="level3">
 <h3 class="anchored" data-anchor-id="why-implementation-mattered-as-much-as-design">Why Implementation Mattered as Much as Design</h3>
-<p>TCP/IP had been designed by Cerf and Kahn. What Berkeley did was make it run, make it stable, and make it free with an operating system that universities already had. The DARPA contract to Berkeley was not a minor technical exercise - it was a deliberate strategy to spread the protocol by bundling it with the system universities were already running. It worked. By the time the internet commercialized in the 1990s, the network stack in virtually every Unix system traced to Berkeley’s implementation.</p>
+<p>TCP/IP had been designed by Cerf and Kahn <span class="citation" data-cites="cerf1974tcp">(<a href="#ref-cerf1974tcp" role="doc-biblioref">Cerf &amp; Kahn, 1974</a>)</span>. What Berkeley did was make it run, make it stable, and make it free with an operating system that universities already had. The DARPA contract to Berkeley was not a minor technical exercise - it was a deliberate strategy to spread the protocol by bundling it with the system universities were already running. It worked. By the time the internet commercialized in the 1990s, the network stack in virtually every Unix system traced to Berkeley’s implementation.</p>
 <p>Bill Joy left Berkeley to co-found Sun Microsystems in 1982, and Sun’s workstations shipped with BSD networking - extending Berkeley’s TCP/IP implementation into the commercial market before the internet was publicly accessible.</p>
 </section>
 <section id="the-larger-pattern" class="level3">
@@ -336,6 +356,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-cerf1974tcp" class="csl-entry" role="listitem">
+Cerf, V. G., &amp; Kahn, R. E. (1974). A protocol for packet network intercommunication. <em><span>IEEE</span> Transactions on Communications</em>, <em>22</em>(5), 637–648. <a href="https://doi.org/10.1109/TCOM.1974.1092259">https://doi.org/10.1109/TCOM.1974.1092259</a>
+</div>
+</div>
 </section>
 </section>
 

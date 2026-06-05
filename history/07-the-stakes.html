@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -255,16 +275,16 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="the-sustainability-crisis" class="level2">
 <h2 class="anchored" data-anchor-id="the-sustainability-crisis">The Sustainability Crisis</h2>
-<p><em>Draft - develop: The Tidelift 2024 numbers (60% of maintainers unpaid, 43% reporting burnout). The UC survey finding that 58% of UC OSS contributors are also maintainers - not passive users but active stewards. The #1 challenge: finding time to write documentation. The structural problem: the value flows outward (to companies, to researchers, to the global economy) while the costs stay with individuals.</em></p>
+<p><em>Draft - develop: The Tidelift 2024 numbers <span class="citation" data-cites="tidelift2024">(<a href="#ref-tidelift2024" role="doc-biblioref">Tidelift, 2024</a>)</span> (60% of maintainers unpaid; nearly two-thirds have quit or considered quitting). The UC survey finding <span class="citation" data-cites="scarlett2025">(<a href="#ref-scarlett2025" role="doc-biblioref">Scarlett et al., 2025</a>)</span> that 58% of UC OSS contributors are also maintainers - not passive users but active stewards. The #1 challenge: finding time to write documentation. The structural problem: the value flows outward (to companies, to researchers, to the global economy) while the costs stay with individuals.</em></p>
 <section id="what-8.8-trillion-actually-means" class="level3">
 <h3 class="anchored" data-anchor-id="what-8.8-trillion-actually-means">What $8.8 trillion actually means</h3>
-<p><em>Draft - develop the Hoffmann, Nagle &amp; Zhou (2024) finding: supply-side cost to recreate the top 5,000 open source packages is $4.15 billion. Demand-side replacement value to global enterprises is $8.8 trillion. The ratio - roughly 2,000x - is the clearest way to explain why open source governance matters to someone who thinks this is a niche concern. The UC system is producing a disproportionate share of that value. Its maintainers are not compensated accordingly.</em></p>
+<p><em>Draft - develop the Hoffmann, Nagle &amp; Zhou finding <span class="citation" data-cites="hoffmann2024">(<a href="#ref-hoffmann2024" role="doc-biblioref">Hoffmann et al., 2024</a>)</span>: supply-side cost to recreate widely-used OSS is $4.15 billion. Demand-side replacement value to global enterprises is $8.8 trillion. The ratio - roughly 2,000x - is the clearest way to explain why open source governance matters to someone who thinks this is a niche concern. The UC system is producing a disproportionate share of that value. Its maintainers are not compensated accordingly.</em></p>
 <hr>
 </section>
 </section>
 <section id="the-ai-moment" class="level2">
 <h2 class="anchored" data-anchor-id="the-ai-moment">The AI Moment</h2>
-<p><em>Draft - develop: Two simultaneous pressures. First, AI-generated code is flooding maintainers - “slop PRs” that look complete but require expensive review. The curl project shut down its bug bounty because AI-generated vulnerability reports overwhelmed maintainers. Second, AI depends on the open source it is now threatening to destabilize - Ray, Spark, Jupyter are all core AI infrastructure. Third, the governance layer for AI is being written now. Nithya Ruff (UC Open 2026): “if you’re not in the room, we will inherit a system we have to live with.”</em></p>
+<p><em>Draft - develop: Two simultaneous pressures. First, AI-generated code is flooding maintainers - “slop PRs” that look complete but require expensive review. The curl project shut down its bug bounty because AI-generated vulnerability reports overwhelmed maintainers. Second, AI depends on the open source it is now threatening to destabilize - Ray <span class="citation" data-cites="moritz2018ray">(<a href="#ref-moritz2018ray" role="doc-biblioref">Moritz et al., 2018</a>)</span>, Spark <span class="citation" data-cites="zaharia2012spark">(<a href="#ref-zaharia2012spark" role="doc-biblioref">Zaharia et al., 2012</a>)</span>, Jupyter <span class="citation" data-cites="kluyver2016jupyter">(<a href="#ref-kluyver2016jupyter" role="doc-biblioref">Kluyver et al., 2016</a>)</span> are all core AI infrastructure. Third, the governance layer for AI is being written now. Nithya Ruff <span class="citation" data-cites="ruff2026">(<a href="#ref-ruff2026" role="doc-biblioref">Ruff, 2026</a>)</span> (UC Open 2026): “if you’re not in the room, we will inherit a system we have to live with.”</em></p>
 <section id="what-academia-is-losing" class="level3">
 <h3 class="anchored" data-anchor-id="what-academia-is-losing">What academia is losing</h3>
 <p><em>Draft: 70% of new AI PhDs going straight to industry (vs.&nbsp;50/50 a decade ago). 90% of notable AI models coming from a small number of companies. The systems that academia built are increasingly being operated and governed by industry, with academic researchers as users rather than architects.</em></p>
@@ -289,6 +309,29 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-hoffmann2024" class="csl-entry" role="listitem">
+Hoffmann, M., Nagle, F., &amp; Zhou, Y. (2024). <em>The value of open source software</em> (Working Paper Nos. 24-038). Harvard Business School. <a href="https://doi.org/10.2139/ssrn.4693148">https://doi.org/10.2139/ssrn.4693148</a>
+</div>
+<div id="ref-kluyver2016jupyter" class="csl-entry" role="listitem">
+Kluyver, T., Ragan-Kelley, B., Pérez, F., Granger, B., Bussonnier, M., Frederic, J., Kelley, K., Hamrick, J., Grout, J., Corlay, S., Ivanov, P., Avila, D., Abdalla, S., &amp; Willing, C. (2016). Jupyter <span>Notebooks</span> — a publishing format for reproducible computational workflows. In F. Loizides &amp; B. Schmidt (Eds.), <em>Positioning and power in academic publishing: Players, agents and agendas</em> (pp. 87–90). <span>IOS</span> Press. <a href="https://doi.org/10.3233/978-1-61499-649-1-87">https://doi.org/10.3233/978-1-61499-649-1-87</a>
+</div>
+<div id="ref-moritz2018ray" class="csl-entry" role="listitem">
+Moritz, P., Nishihara, R., Wang, S., Tumanov, A., Liaw, R., Liang, E., Elibol, M., Yang, Z., Paul, W., Jordan, M. I., &amp; Stoica, I. (2018). Ray: A distributed framework for emerging <span>AI</span> applications. <em>13th <span>USENIX</span> Symposium on Operating Systems Design and Implementation (<span>OSDI</span>)</em>, 561–577.
+</div>
+<div id="ref-ruff2026" class="csl-entry" role="listitem">
+Ruff, N. (2026). <em>The role of foundations in advancing open collaboration and innovation</em>. UC Open Summit. <a href="https://youtu.be/eBriL3CDNeo">https://youtu.be/eBriL3CDNeo</a>
+</div>
+<div id="ref-scarlett2025" class="csl-entry" role="listitem">
+Scarlett, V., Curty, R. G., Gomez, J., Langdon, L., Janée, G., &amp; Budden, A. E. (2025). <em>A system-wide snapshot: <span>A</span> multi-campus survey of open source contributors at the <span class="nocase">University of California</span></em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/p8bx6_v1">https://doi.org/10.31235/osf.io/p8bx6_v1</a>
+</div>
+<div id="ref-tidelift2024" class="csl-entry" role="listitem">
+Tidelift. (2024). <em>The 2024 <span>Tidelift</span> maintainer impact report</em>. Tidelift. <a href="https://dev.to/tidelift/the-open-source-maintainer-community-is-getting-grayer-1gc2">https://dev.to/tidelift/the-open-source-maintainer-community-is-getting-grayer-1gc2</a>
+</div>
+<div id="ref-zaharia2012spark" class="csl-entry" role="listitem">
+Zaharia, M., Chowdhury, M., Das, T., Dave, A., Ma, J., McCauly, M., Franklin, M. J., Shenker, S., &amp; Stoica, I. (2012). Resilient distributed datasets: <span>A</span> fault-tolerant abstraction for in-memory cluster computing. <em>9th <span>USENIX</span> Symposium on Networked Systems Design and Implementation (<span>NSDI</span>)</em>, 15–28.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
