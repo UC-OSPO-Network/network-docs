@@ -16,12 +16,12 @@ The early 2000s produced three projects that redefined what open science softwar
 **Key figures:** Jim Kent (PhD student), David Haussler (faculty)
 
 ::: {.origin-story}
-*Draft - fill in origin story: The Human Genome Project race between the public consortium and Celera Genomics (Craig Venter's private company, $300M, dedicated supercomputer cluster); Jim Kent as a PhD student at UCSC writing GigAssembler (~10,000 lines of C) in a matter of weeks on 50 borrowed off-the-shelf PCs; reportedly icing his wrists to prevent carpal tunnel while coding through the night; finishing the assembly three days before Celera; the decision to release everything publicly to keep the genome in the public domain; the UCSC Genome Browser that followed as a tool for visualizing and navigating the assembled sequence; genome.ucsc.edu as the reference destination for genomic research ever since.*
+*Draft - fill in origin story: The Human Genome Project race between the public consortium and Celera Genomics (Craig Venter's private company, $300M, dedicated supercomputer cluster); Jim Kent as a PhD student at UCSC writing GigAssembler (~10,000 lines of C) in a matter of weeks on 50 borrowed off-the-shelf PCs; reportedly icing his wrists to prevent carpal tunnel while coding through the night; finishing the assembly three days before Celera; the decision to release everything publicly to keep the genome in the public domain; the UCSC Genome Browser [@kent2002genome] that followed as a tool for visualizing and navigating the assembled sequence; genome.ucsc.edu as the reference destination for genomic research ever since.*
 :::
 
 ### What it became
 
-The UCSC Genome Browser is the reference tool for genomic research worldwide. It hosts assemblies for hundreds of species, is updated continuously, and remains the first stop for any researcher navigating genomic data. The broader lesson - that a grad student with commodity hardware and open code could outcompete a $300M private effort - became a founding argument for open science.
+The UCSC Genome Browser [@kent2002genome] is the reference tool for genomic research worldwide. It hosts assemblies for hundreds of species, is updated continuously, and remains the first stop for any researcher navigating genomic data. The broader lesson - that a grad student with commodity hardware and open code could outcompete a $300M private effort - became a founding argument for open science.
 
 ---
 
@@ -33,12 +33,12 @@ The UCSC Genome Browser is the reference tool for genomic research worldwide. It
 **Key figures:** Scott Makeig
 
 ::: {.origin-story}
-*Draft - fill in: Scott Makeig's work at the Salk Institute and then UCSD; the need for open tooling to analyze EEG (electroencephalography) signals; the 2004 foundational paper; the download and citation numbers.*
+*Draft - fill in: Scott Makeig's work at the Salk Institute and then UCSD; the need for open tooling to analyze EEG (electroencephalography) signals; the 2004 foundational paper [@delorme2004eeglab]; the download and citation numbers.*
 :::
 
 ### What it became
 
-EEGLAB is the world's premier open-source environment for electrophysiological signal processing. The 2004 foundational paper has accumulated more than 14,400 citations - among the highest academic footprints of any scientific software. It has been downloaded over 350,000 times and is the standard platform for EEG research globally.
+EEGLAB is the world's premier open-source environment for electrophysiological signal processing. The 2004 foundational paper [@delorme2004eeglab] has accumulated more than 14,400 citations - among the highest academic footprints of any scientific software. It has been downloaded over 350,000 times and is the standard platform for EEG research globally.
 
 ---
 
@@ -55,7 +55,7 @@ EEGLAB is the world's premier open-source environment for electrophysiological s
 
 ### What it became
 
-Cytoscape is the global standard platform for network biology. It is used to visualize disease pathways, protein interactions, and molecular networks in cancer and therapeutic research worldwide. Over 300,000 downloads per year; central to how researchers understand complex biological systems.
+Cytoscape [@shannon2003cytoscape] is the global standard platform for network biology. It is used to visualize disease pathways, protein interactions, and molecular networks in cancer and therapeutic research worldwide. Over 300,000 downloads per year; central to how researchers understand complex biological systems.
 
 ::: {.callout-note}
 ## Status

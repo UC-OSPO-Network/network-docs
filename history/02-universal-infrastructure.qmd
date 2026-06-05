@@ -16,7 +16,7 @@ Some software is so fundamental it disappears into the background. You never thi
 **Key figures:** Paul Eggert (UCLA), Arthur David Olson
 
 ::: {.origin-story}
-*Draft - fill in origin story: Olson starting the database in 1986 to track the world's timezone rules; Eggert taking over maintenance in 2005 as a computer scientist at UCLA; the extraordinary research methodology (19th-century astronomical almanacs used to reconstruct pre-1883 local solar times that pre-date standardized timekeeping); the 2011 IP lawsuit by Astrolabe Inc. that nearly took the database offline; the community response; IANA taking stewardship.*
+*Draft - fill in origin story: Olson starting the database in 1986 to track the world's timezone rules [@tzdatabase]; Eggert taking over maintenance in 2005 as a computer scientist at UCLA; the extraordinary research methodology (19th-century astronomical almanacs used to reconstruct pre-1883 local solar times that pre-date standardized timekeeping); the 2011 IP lawsuit by Astrolabe Inc. that nearly took the database offline; the community response; IANA taking stewardship.*
 :::
 
 ### What it became
