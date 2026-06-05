@@ -1,6 +1,6 @@
 # network-docs
 
-Coordination documents for the UC OSPO Network: presentations, reports, a Quarto-rendered history, and planning drafts.
+Presentations, reports, and project history from the UC OSPO Network.
 
 **GitHub:** [UC-OSPO-Network/network-docs](https://github.com/UC-OSPO-Network/network-docs)  
 **Published site:** [ucospo.net/network-docs](https://ucospo.net/network-docs)
