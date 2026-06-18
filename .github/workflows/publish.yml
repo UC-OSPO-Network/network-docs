@@ -43,7 +43,12 @@ jobs:
             [ ${#qmds[@]} -eq 0 ] && continue
             echo "::group::Render ${dir}"
             for qmd in "${qmds[@]}"; do
-              quarto render "$qmd"
+              # Slide decks: render only revealjs for the site (skips pptx and its
+              # reference-doc dependency). Handouts and other docs: default format.
+              case "$qmd" in
+                *slides*) quarto render "$qmd" --to revealjs ;;
+                *)        quarto render "$qmd" ;;
+              esac
             done
             echo "::endgroup::"
           done
