@@ -1,4 +1,4 @@
-SLIDES    := ucla-tlr-ospo-slides
+SLIDES    := ucla-tlr-ospo-2026-slides
 PORT      := 4850
 PDF_TITLE := "Open Source as Institutional Infrastructure"
 

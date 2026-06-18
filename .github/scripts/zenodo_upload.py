@@ -59,6 +59,11 @@ def cff_to_zenodo_metadata(cff: dict, config: dict) -> dict:
     if "conference" in cff:
         metadata["conference_title"] = cff["conference"]["name"]
 
+    # Default: submit every deposit to the UC OSPO Network Zenodo community.
+    # A community curator approves the request. A presentation can override this
+    # via `communities` in its zenodo.yml metadata_overrides.
+    metadata["communities"] = [{"identifier": "uc-ospo-net"}]
+
     # Per-presentation Zenodo overrides (conference_url, conference_dates, notes, etc.)
     metadata.update(config.get("metadata_overrides", {}))
 

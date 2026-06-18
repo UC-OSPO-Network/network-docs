@@ -30,19 +30,23 @@ Presentations, reports, and project history from the UC OSPO Network.
 
 A 10-minute talk making the case that open source software is research infrastructure, presenting the UC OSPO Network as a model for institutional support, and connecting OSPO work to data professionals' existing roles.
 
+- Author: Tim Dennis ([ORCID](https://orcid.org/0000-0001-6632-3812))
 - [Slides](https://ucospo.net/network-docs/presentations/iassist-2026/iassist-2026-slides.html) · shortlink: [tinyurl.com/iassist2026](https://tinyurl.com/iassist2026)
+- [Full deck (19 slides)](https://ucospo.net/network-docs/presentations/iassist-2026/iassist-2026-slides-full.html)
 - [Handout](https://ucospo.net/network-docs/presentations/iassist-2026/iassist-2026-handout.html) · shortlink: [tinyurl.com/iassist2026-handout](https://tinyurl.com/iassist2026-handout)
 - [Annotated bibliography](https://github.com/UC-OSPO-Network/network-docs/blob/main/presentations/iassist-2026/iassist-2026-bibliography.md)
 - [Source (GitHub)](https://github.com/UC-OSPO-Network/network-docs/tree/main/presentations/iassist-2026)
+- DOI: [10.5281/zenodo.20498692](https://doi.org/10.5281/zenodo.20498692)
 :::
 
 ::: {.resource-card}
-### UCLA Library Brown-bag: Open Source as Institutional Infrastructure *(Draft)*
+### UCLA Library Brown-bag: Open Source as Institutional Infrastructure *(Upcoming)*
 
 An internal brown-bag adaptation for the UCLA Library Teaching, Learning & Research department. Reframes the talk for a library audience: software is where research data was a decade ago, and scholarly communication is the library's seat at the OSPO table.
 
-- **Status:** Draft, in preparation
-- [Slides](https://ucospo.net/network-docs/presentations/ucla-tlr-ospo-2026/ucla-tlr-ospo-slides.html)
+- **Status:** Upcoming, draft. Shared for collaboration; not yet archived to Zenodo.
+- Authors: Tim Dennis ([ORCID](https://orcid.org/0000-0001-6632-3812)), Leigh Phan ([ORCID](https://orcid.org/0000-0002-8605-1444))
+- [Slides](https://ucospo.net/network-docs/presentations/ucla-tlr-ospo-2026/ucla-tlr-ospo-2026-slides.html)
 - [Source (GitHub)](https://github.com/UC-OSPO-Network/network-docs/tree/main/presentations/ucla-tlr-ospo-2026)
 :::
 

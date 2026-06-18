@@ -26,30 +26,47 @@ jobs:
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Install decktape
+        run: npm install -g decktape
+
       - name: Render site index
         run: quarto render index.qmd
 
-      - name: Render IASSIST 2026 slides
-        run: quarto render presentations/iassist-2026/iassist-2026-slides.qmd
-
-      - name: Render IASSIST 2026 handout
-        run: quarto render presentations/iassist-2026/iassist-2026-handout.qmd
-
-      - name: Generate PDF
+      # Render every .qmd in every presentation folder. Adding a new presentation
+      # means dropping a folder under presentations/, with no edits to this workflow.
+      - name: Render all presentations
         run: |
-          python3 -m http.server 3000 --directory presentations/iassist-2026 &
-          SERVER_PID=$!
-          sleep 8
-          CHROME=$(which google-chrome-stable || which google-chrome || which chromium-browser)
-          $CHROME \
-            --headless=new \
-            --no-sandbox \
-            --disable-setuid-sandbox \
-            --disable-dev-shm-usage \
-            --run-all-compositor-stages-before-draw \
-            --print-to-pdf="$(pwd)/presentations/iassist-2026/iassist-2026-slides.pdf" \
-            "http://localhost:3000/iassist-2026-slides.html?print-pdf"
-          kill $SERVER_PID 2>/dev/null || true
+          set -euo pipefail
+          shopt -s nullglob
+          for dir in presentations/*/; do
+            qmds=("$dir"*.qmd)
+            [ ${#qmds[@]} -eq 0 ] && continue
+            echo "::group::Render ${dir}"
+            for qmd in "${qmds[@]}"; do
+              quarto render "$qmd"
+            done
+            echo "::endgroup::"
+          done
+
+      # Export a PDF for every reveal.js deck (any *slides*.html) via decktape.
+      - name: Generate slide PDFs
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          for dir in presentations/*/; do
+            decks=("$dir"*slides*.html)
+            [ ${#decks[@]} -eq 0 ] && continue
+            python3 -m http.server 3000 --directory "$dir" >/dev/null 2>&1 &
+            server_pid=$!
+            sleep 3
+            for html in "${decks[@]}"; do
+              base=$(basename "$html" .html)
+              echo "decktape -> ${dir}${base}.pdf"
+              decktape reveal "http://localhost:3000/${base}.html" "${dir}${base}.pdf" \
+                --size 1280x720 || echo "::warning::decktape failed for ${dir}${base}"
+            done
+            kill "$server_pid" 2>/dev/null || true
+          done
 
       - name: Render UC OSS History book
         run: quarto render history/
@@ -62,12 +79,14 @@ jobs:
           include_files: index.html
           keep_files: true
 
-      - name: Deploy IASSIST to GitHub Pages
+      # One deploy for all presentations. keep_files: true means each folder
+      # lands in its own subdirectory and never clobbers the others.
+      - name: Deploy presentations to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: presentations/iassist-2026
-          destination_dir: presentations/iassist-2026
+          publish_dir: presentations
+          destination_dir: presentations
           keep_files: true
 
       - name: Deploy history book to GitHub Pages
