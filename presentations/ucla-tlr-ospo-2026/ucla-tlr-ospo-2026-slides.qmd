@@ -1,10 +1,12 @@
 ---
 title: "Open Source as Institutional Infrastructure"
 subtitle: "Lessons from the UC OSPO Network"
-author: "Tim Dennis"
+author:
+  - "Tim Dennis, Director, Data Science Center"
+  - "Leigh Phan, Data Scientist, Data Science Center"
 institute:
-  - "Data Science Center, UCLA Library"
-  - "UCLA OSPO Lead, UC OSPO Network"
+  - "UCLA Library, Teaching, Learning & Research Department"
+  - "UCLA OSPO Co-Leads, UC OSPO Network"
 bibliography: ../../references.bib
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
 nocite: '@*'
@@ -16,7 +18,7 @@ format:
     logo: images/uc-ospo-network-logo-light.svg
     include-after-body: logo-swap.txt
     slide-number: true
-    footer: "IASSIST 2026 · Tim Dennis · UCLA Library DSC · ucospo.net"
+    footer: "Tim Dennis · Data Science Center · UCLA Library · ucospo.net"
     transition: none
     incremental: false
     width: 1280
@@ -107,87 +109,12 @@ Barker et al. (2022) doi:10.1038/s41597-022-01710-x · Ruff, N. (2026) "The Role
 ::: {.notes}
 - FAIR didn't happen by accident: data professionals insisted data deserved first-class treatment as a scholarly output
 - FAIR4RS (Barker et al. 2022, RDA/FORCE11/ReSA) = same inflection point for software that FAIR was for data
-- UC pipeline is the proof that research → global infrastructure is a pattern, not a fluke (details on next slide)
+- UC pipeline is the proof that research → global infrastructure is a pattern, not a fluke (BSD, Ceph, Spark, RISC-V, Ray all came out of UC)
 - Ruff: "The students writing their class projects this very semester may be creating the next Ray" — not a metaphor, a track record
 :::
 
 ---
 
-## The UC research-to-infrastructure pipeline
-
-<div class="uc-oss-grid" role="list" aria-label="Open source projects by UC campus">
-
-<div class="campus-block" role="listitem">
-<span class="campus-label">UC Berkeley</span>
-<div class="logo-row">
-<div class="logo-item"><img src="images/jupyter-logo.svg" alt="Jupyter"><span>Jupyter</span></div>
-<div class="logo-item"><img src="images/spark-logo.png" alt="Apache Spark"><span>Apache Spark</span></div>
-<div class="logo-item"><img src="images/riscv-logo.svg" alt="RISC-V"><span>RISC-V</span></div>
-<div class="logo-item"><img src="images/ray-logo.png" alt="Ray"><span>Ray</span></div>
-<div class="logo-item logo-item-sm"><img src="images/bsd-wordmark.svg" alt="BSD Unix"><span>BSD Unix</span></div>
-</div>
-</div>
-
-<div class="campus-block" role="listitem">
-<span class="campus-label">UC Santa Cruz</span>
-<div class="logo-row">
-<div class="logo-item logo-item-sm"><img src="images/ceph-logo.svg" alt="Ceph"><span>Ceph</span></div>
-<span class="project-badge">UCSC Genome Browser</span>
-</div>
-</div>
-
-<div class="campus-block" role="listitem">
-<span class="campus-label">UC San Diego</span>
-<div class="logo-row">
-<span class="project-badge">Cytoscape</span>
-<span class="project-badge">EEGLAB</span>
-<div class="logo-item logo-item-sm"><img src="images/ucsd-pascal-logo.png" alt="UCSD Pascal p-System"><span>UCSD Pascal</span></div>
-</div>
-</div>
-
-<div class="campus-block" role="listitem">
-<span class="campus-label">UCLA</span>
-<div class="logo-row">
-<div class="logo-item logo-item-sm"><img src="images/processing-logo.svg" alt="Processing"><span>Processing</span></div>
-<div class="logo-item logo-item-sm"><img src="images/ndn-logo.png" alt="Named Data Networking"><span>Named Data Networking</span></div>
-<span class="project-badge">tz database</span>
-</div>
-</div>
-
-<div class="campus-block" role="listitem">
-<span class="campus-label">UC San Francisco</span>
-<div class="logo-row">
-<span class="project-badge">ChimeraX</span>
-<div class="logo-item logo-item-sm"><img src="images/openmm-logo.png" alt="OpenMM"><span>OpenMM</span></div>
-</div>
-</div>
-
-<div class="campus-block" role="listitem">
-<span class="campus-label">UC Davis</span>
-<div class="logo-row">
-<div class="logo-item logo-item-sm"><img src="images/sourmash-logo.png" alt="sourmash"><span>sourmash</span></div>
-<span class="project-badge">ERPLAB</span>
-</div>
-</div>
-
-</div>
-
-::: {.notes}
-- Berkeley = audience-recognizable headlines; point to the whole grid: systems (Berkeley, UCSC), bioinformatics/neuroscience (UCSD, UCSF, Davis), internet infrastructure (UCLA)
-- **Jupyter**: Pérez procrastinating on his physics PhD, built IPython in an afternoon
-- **Spark**: Zaharia's classmate needed faster distributed ML to compete in the $1M Netflix Prize; Databricks now $60B+
-- **RISC-V**: 3-month summer project so grad students could experiment without paying ARM royalties; now in 10B devices; moved to Switzerland in 2020 to stay neutral in US-China trade war
-- **Ray**: two PhD students tired of rewriting Python to scale past one machine; now core OpenAI compute infrastructure
-- **Ceph**: Weil's 2004 dissertation → Inktank → Red Hat acquisition → CROSS funded the first UC OSPO (seed of this network)
-- **Genome Browser**: Jim Kent assembled the genome on 50 borrowed PCs (details next slide)
-- **Cytoscape**: molecular interaction tables too big for spreadsheets → visual "living maps" of the cell; de facto standard for network biology
-- **EEGLAB**: funded by the inventor of laser barcoding who wanted to decode the brain's scanning systems
-- **Processing**: Reas + Fry, MIT Media Lab 2001; teach programming through visual art; now the Processing Foundation
-- **tz database**: Eggert used 19th-century astrologers' almanacs to reconstruct pre-1883 timezone history; every OS clock depends on it
-- **sourmash**: FracMinHash sketching — a laptop now searches billions of genome sequences in seconds
-:::
-
----
 
 ## {background-color="#1f335e"}
 
@@ -610,7 +537,7 @@ Gap analysis → curriculum inventory → learning pathways
 ::::
 
 ::: {.notes}
-- Most direct connection to IASSIST members' world
+- Most direct connection to this department's daily work
 - Treat training the way data professionals treat data: find what exists, identify gaps, don't duplicate
 - It's a living curriculum inventory, not a course catalog
 :::
@@ -654,20 +581,26 @@ Governed by an OSPO Leadership Group and thematic working groups, one per campus
 
 ---
 
-## Lessons from two years
 
-What the network model enables that single campuses cannot:
+## Our seat is scholarly communication
 
-1. **Shared staffing**: community manager, licensing specialist, technical roles
-2. **Policy leverage**: the network has standing with UCOP; individual campuses do not
-3. **Data at scale**: the GitHub and survey analyses require system-wide scope to mean anything
-4. **Equity**: smaller campuses get services they could not build alone
-5. **A replicable model**: $1.85M produced something other state systems can follow
+We already promote best practices across the research lifecycle.
+Software is the same work in a new medium.
+
+| What we do for scholarship | The software version |
+|---|---|
+| Citation and attribution  | software citation, CITATION.cff |
+| Persistent identifiers    | Zenodo DOIs for releases |
+| Metadata and discovery    | repository metadata, FAIR4RS |
+| Licensing and rights      | open source license guidance |
+| Preservation              | versioned, archived releases |
+
+Not a new mission. The same one, pointed at code.
 
 ::: {.notes}
-- Two years in, the model works
-- Open question: moving from grant funding to permanent infrastructure — working on Sloan extension, exploring UCOP pathways
-- The pattern (distributed nodes, shared governance, thematic working groups) is transferable to any large university system
+- The thesis: the library's seat at the OSPO table is scholarly communication
+- Every row is something we already do for data and publications; software is the next medium
+- Frame for the room: not starting something new, extending what we are good at
 :::
 
 ---
@@ -688,7 +621,7 @@ For data professionals, the OSPO sits at the intersection of:
 * What would it take to treat it as infrastructure rather than a side project?
 
 ::: {.notes}
-- This is the invitation: IASSIST members should be at the OSPO table — you work across the research lifecycle, understand data governance, run training programs
+- This is the invitation: library staff should be at the OSPO table. You work across the research lifecycle, understand data governance, run training programs
 - RSEs are natural collaborators, many already embedded in or adjacent to library services
 - Question for the room: does your institution have an RSE group, research computing team, or data science center? That's where this conversation belongs.
 :::
@@ -744,6 +677,30 @@ health signals · bus factor · governance files · FAIR4RS · software <abbr ti
 
 ---
 
+## Where it fits: instruction and outreach
+
+Two tracks, both already in our wheelhouse.
+
+**Informational (the why)**
+
+* Why cite software, how to choose a license, planning for sustainability
+* Workshops, consultations, guides, outreach
+
+**Technical practice (the how)**
+
+* README, LICENSE, CITATION.cff, a versioned release, a DOI
+* Hands-on: the UC OSPO citable-software lesson
+
+We don't have to build an OSPO to take a seat. We teach the practices.
+
+::: {.notes}
+- The department already runs instruction and outreach: new content in an existing channel, not a new program
+- Informational vs technical practice: some researchers need the why, some are ready for the how
+- The next slide lists the ready-made resources and the lesson
+:::
+
+---
+
 ## What you can do right now
 
 If you advise on data-intensive research, you are probably already helping with code.
@@ -783,26 +740,20 @@ If you advise on data-intensive research, you are probably already helping with 
 **Global network:** [curioss.org](https://curioss.org), 34 academic OSPOs worldwide and growing
 
 **Tim Dennis**
-Data Science Center, UCLA Library
+Director, Data Science Center, UCLA Library
 tdennis@library.ucla.edu
 
 ::: {.small style="margin-top:0.7em; padding:0.5em 0.8em; background:#f0f4fa; border-radius:6px; border-left:3px solid #ff9100;"}
-🖥 Slides: **[tinyurl.com/iassist2026](https://tinyurl.com/iassist2026)**
-
-📄 Handout: **[tinyurl.com/iassist2026-handout](https://tinyurl.com/iassist2026-handout)**
-
-📑 PDF: **[download on Zenodo](https://zenodo.org/records/20498692)**
-
-🔗 DOI: **[10.5281/zenodo.20498692](https://doi.org/10.5281/zenodo.20498692)**
+🖥 Slides: **[link TBD]**
 :::
 :::
 
 ::: {.column width="32%"}
 <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5em; height:100%">
-![QR code linking to tinyurl.com/iassist2026 — slides for this presentation](images/iassist2026-qr.svg){width="200px"}
+![UC OSPO Network logo](images/uc-ospo-network-logo-light.svg){width="220px"}
 
 ::: {.small style="text-align:center; color:#555;"}
-tinyurl.com/iassist2026
+ucospo.net
 :::
 </div>
 :::

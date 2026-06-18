@@ -1,0 +1,35 @@
+name,city,country,lat,lon,uc_network
+Carnegie Mellon University,Pittsburgh,USA,40.4432,-79.9428,no
+Georgia Tech,Atlanta,USA,33.7756,-84.3963,no
+George Washington University,Washington DC,USA,38.8997,-77.0486,no
+Johns Hopkins University,Baltimore,USA,39.3299,-76.6205,no
+Mississippi State University,Starkville,USA,33.4564,-88.7931,no
+Oregon State University,Corvallis,USA,44.5638,-123.2794,no
+Rochester Institute of Technology,Rochester,USA,43.0847,-77.6751,no
+Saint Louis University,St. Louis,USA,38.6369,-90.2339,no
+Stanford University,Stanford,USA,37.4275,-122.1697,no
+Syracuse University,Syracuse,USA,43.0390,-76.1354,no
+University of California Berkeley,Berkeley,USA,37.8724,-122.2595,yes
+University of California Davis,Davis,USA,38.5382,-121.7617,yes
+University of California Los Angeles,Los Angeles,USA,34.0689,-118.4452,yes
+University of California San Diego,La Jolla,USA,32.8801,-117.2340,yes
+University of California Santa Barbara,Santa Barbara,USA,34.4140,-119.8489,yes
+University of California Santa Cruz,Santa Cruz,USA,36.9916,-122.0583,yes
+University of Michigan,Ann Arbor,USA,42.2780,-83.7382,no
+University of Texas at Austin,Austin,USA,30.2849,-97.7341,no
+University of Texas at Dallas,Dallas,USA,32.9886,-96.7500,no
+University of Texas at El Paso,El Paso,USA,31.7716,-106.5034,no
+University of Texas at San Antonio,San Antonio,USA,29.5835,-98.6200,no
+University of Vermont,Burlington,USA,44.4760,-73.1964,no
+University of Washington,Seattle,USA,47.6553,-122.3035,no
+University of Wisconsin-Madison,Madison,USA,43.0731,-89.4012,no
+Mass General Brigham,Boston,USA,42.3601,-71.0589,no
+Chan Zuckerberg Biohub,San Francisco,USA,37.7749,-122.4194,no
+The Alan Turing Institute,London,UK,51.5302,-0.1238,no
+ETH Zürich,Zürich,Switzerland,47.3769,8.5417,no
+ISGlobal,Barcelona,Spain,41.3851,2.1734,no
+Lero,Dublin,Ireland,53.3498,-6.2603,no
+SnT-Université du Luxembourg,Luxembourg City,Luxembourg,49.6117,6.1319,no
+Trinity College Dublin,Dublin,Ireland,53.3458,-6.2541,no
+Université Grenoble Alpes,Grenoble,France,45.1880,5.7245,no
+University College London,London,UK,51.5246,-0.1340,no
