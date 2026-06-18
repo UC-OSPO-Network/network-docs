@@ -1,0 +1,24 @@
+<script>
+(function () {
+  var DARK_BG = '#1f335e';
+  var WHITE_LOGO = 'images/uc-ospo-network-logo-white.svg';
+  var LIGHT_LOGO = 'images/uc-ospo-network-logo-light.svg';
+
+  function updateLogo(slide) {
+    var logo = document.querySelector('.slide-logo');
+    if (!logo) return;
+    var bg = slide ? (slide.getAttribute('data-background-color') || '') : '';
+    logo.src = bg === DARK_BG ? WHITE_LOGO : LIGHT_LOGO;
+    logo.alt = 'UC OSPO Network';
+  }
+
+  window.addEventListener('load', function () {
+    var firstSlide = document.querySelector('.reveal .slides section');
+    updateLogo(firstSlide);
+
+    Reveal.on('slidechanged', function (event) {
+      updateLogo(event.currentSlide);
+    });
+  });
+})();
+</script>

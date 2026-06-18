@@ -36,6 +36,16 @@ A 10-minute talk making the case that open source software is research infrastru
 - [Source (GitHub)](https://github.com/UC-OSPO-Network/network-docs/tree/main/presentations/iassist-2026)
 :::
 
+::: {.resource-card}
+### UCLA Library Brown-bag: Open Source as Institutional Infrastructure *(Draft)*
+
+An internal brown-bag adaptation for the UCLA Library Teaching, Learning & Research department. Reframes the talk for a library audience: software is where research data was a decade ago, and scholarly communication is the library's seat at the OSPO table.
+
+- **Status:** Draft, in preparation
+- [Slides](https://ucospo.net/network-docs/presentations/ucla-tlr-ospo-2026/ucla-tlr-ospo-slides.html)
+- [Source (GitHub)](https://github.com/UC-OSPO-Network/network-docs/tree/main/presentations/ucla-tlr-ospo-2026)
+:::
+
 ---
 
 ## History Book
