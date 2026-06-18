@@ -5,7 +5,12 @@ author: "Tim Dennis"
 institute:
   - "Data Science Center, UCLA Library"
   - "UCLA OSPO Lead, UC OSPO Network"
+bibliography: ../../references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+nocite: '@*'
 format:
+  pptx:
+    reference-doc: ucospo-reference.pptx
   revealjs:
     theme: ucospo-theme.scss
     logo: images/uc-ospo-network-logo-light.svg
@@ -221,7 +226,7 @@ Kent, J.W. (2002). BLAT - The BLAST-Like Alignment Tool. *Genome Research* 12, 6
 An **Open Source Program Office** supports, governs, and promotes open source within an institution.
 
 * Originated in industry: ~77% of large tech companies have one
-* First academic OSPO: Johns Hopkins, 2019
+* First academic OSPOs: Johns Hopkins, UC Santa Cruz, and RIT (2021)
 * **34 academic OSPOs** in <abbr title="Community for University and Research Institution OSPOs">CURIOSS</abbr> worldwide and growing
 * Core functions: policy, licensing guidance, best practices, education, community
 :::
@@ -782,9 +787,13 @@ Data Science Center, UCLA Library
 tdennis@library.ucla.edu
 
 ::: {.small style="margin-top:0.7em; padding:0.5em 0.8em; background:#f0f4fa; border-radius:6px; border-left:3px solid #ff9100;"}
-🖥 Slides: **tinyurl.com/iassist2026**
+🖥 Slides: **[tinyurl.com/iassist2026](https://tinyurl.com/iassist2026)**
 
-📄 Handout: **tinyurl.com/iassist2026-handout**
+📄 Handout: **[tinyurl.com/iassist2026-handout](https://tinyurl.com/iassist2026-handout)**
+
+📑 PDF: **[download on Zenodo](https://zenodo.org/records/20498692)**
+
+🔗 DOI: **[10.5281/zenodo.20498692](https://doi.org/10.5281/zenodo.20498692)**
 :::
 :::
 
