@@ -68,7 +68,9 @@ jobs:
               base=$(basename "$html" .html)
               echo "decktape -> ${dir}${base}.pdf"
               decktape reveal "http://localhost:3000/${base}.html" "${dir}${base}.pdf" \
-                --size 1280x720 || echo "::warning::decktape failed for ${dir}${base}"
+                --size 1280x720 \
+                --chrome-arg=--no-sandbox --chrome-arg=--disable-dev-shm-usage \
+                || echo "::warning::decktape failed for ${dir}${base}"
             done
             kill "$server_pid" 2>/dev/null || true
           done

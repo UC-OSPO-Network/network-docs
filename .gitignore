@@ -2,6 +2,9 @@
 *_files/
 *.html
 !index.html
+# Rendered presentation decks are published to the site. Keep them self-contained
+# (embed-resources: true) so no per-deck _files directory is needed.
+!presentations/**/*.html
 .quarto/
 _site/
 
