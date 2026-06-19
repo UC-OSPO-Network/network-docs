@@ -81,7 +81,7 @@ Each presentation deploys into its own subdirectory with `keep_files: true`, so 
 **To add a new presentation:**
 
 1. Create `presentations/<slug>/` with a dated slug (e.g. `acrl-2027`).
-2. Add `<slug>-slides.qmd` (and `<slug>-handout.qmd` if you have one) plus its assets.
+2. Add `<slug>-slides.qmd` (and `<slug>-handout.qmd` if you have one) plus its assets. Set `embed-resources: true` on the deck's `revealjs` format so it renders to one self-contained HTML file (rendered `*_files/` directories are git-ignored and won't deploy).
 3. Add an entry to `index.qmd` so it shows on the site.
 4. Push to `main`. The workflow renders and deploys it with no workflow edits.
 

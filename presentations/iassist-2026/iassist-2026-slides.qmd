@@ -12,6 +12,7 @@ format:
   pptx:
     reference-doc: ucospo-reference.pptx
   revealjs:
+    embed-resources: true
     theme: ucospo-theme.scss
     logo: images/uc-ospo-network-logo-light.svg
     include-after-body: logo-swap.txt
