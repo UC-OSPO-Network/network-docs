@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="iassist-2026-slides-full_files/libs/clipboard/clipboard.min.js"></script>
+<script src="iassist-2026-slides-full_files/libs/quarto-html/tabby.min.js"></script>
+<script src="iassist-2026-slides-full_files/libs/quarto-html/popper.min.js"></script>
+<script src="iassist-2026-slides-full_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="iassist-2026-slides-full_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="iassist-2026-slides-full_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="iassist-2026-slides-full_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
+
+  <meta name="author" content="Tim Dennis">
+  <title>Open Source as Institutional Infrastructure</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="iassist-2026-slides-full_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="iassist-2026-slides-full_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="iassist-2026-slides-full_files/libs/revealjs/dist/theme/quarto-59a86479b5c4978ed80f660cfc3e9aa7.css">
+  <link href="iassist-2026-slides-full_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="iassist-2026-slides-full_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="iassist-2026-slides-full_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="iassist-2026-slides-full_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script type="module" src="iassist-2026-slides-full_files/libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+  <link href="iassist-2026-slides-full_files/libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-color="#1f335e" data-background-image="images/uc-ospo-network-logo-white.svg" data-background-position="4% 5%" data-background-size="34% auto" class="quarto-title-block center">
+  <h1 class="title">Open Source as Institutional Infrastructure</h1>
+  <p class="subtitle">Lessons from the UC OSPO Network</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Tim Dennis 
+</div>
+        <p class="quarto-title-affiliation">
+            Data Science Center, UCLA Library
+          </p>
+        <p class="quarto-title-affiliation">
+            UCLA OSPO Lead, UC OSPO Network
+          </p>
+    </div>
+</div>
+
+</section>
+<section id="the-invisible-layer" class="slide level2">
+<h2>The invisible layer</h2>
+<div class="columns">
+<div class="column" style="width:56%;">
+<p>Research data workflows run on open source:</p>
+<ul>
+<li>Data collection, cleaning, analysis, visualization</li>
+<li>Reproducibility tooling: containers, workflows, version control</li>
+<li>Repositories and scholarly infrastructure</li>
+</ul>
+<p><strong>92%</strong> of researchers use software; <strong>67%</strong> say their research would be impossible without it.</p>
+<p>The people keeping it running are increasingly called <strong>Research Software Engineers (RSEs)</strong>, a growing professional community with no standard institutional home.</p>
+<p>If every organization had to replace open source with proprietary equivalents, the cost would exceed <strong>$8.8 trillion</strong>.</p>
+<div class="small">
+<p>Hettrick et al.&nbsp;(<abbr title="Software Sustainability Institute">SSI</abbr>, 2014/2022) · Hoffmann, Nagle &amp; Zhou (2024) doi:10.2139/ssrn.4693148</p>
+</div>
+</div><div class="column" style="width:44%;">
+<div style="display:flex; flex-direction:column; align-items:center; gap:0.8em; padding-top:0.3em;">
+<div class="logo-row" style="gap:1.1em; flex-wrap:wrap; justify-content:center;">
+<div class="logo-item logo-item-sm">
+<img src="images/jupyter-logo.svg" alt="Jupyter"><span>Jupyter</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/python-logo.svg" alt="Python"><span>Python</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/r-logo.svg" alt="R"><span>R</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/git-logo.png" alt="Git"><span>Git</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/spark-logo.png" alt="Apache Spark"><span>Spark</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/pandas-logo.svg" alt="Pandas"><span>Pandas</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/numpy-logo.svg" alt="NumPy"><span>NumPy</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/docker-logo.svg" alt="Docker"><span>Docker</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/ray-logo.png" alt="Ray"><span>Ray</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/ggplot2-logo.png" alt="ggplot2"><span>ggplot2</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/dplyr-logo.png" alt="dplyr"><span>dplyr</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/snakemake-logo.png" alt="Snakemake"><span>Snakemake</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/nextflow-logo.png" alt="Nextflow"><span>Nextflow</span>
+</div>
+</div>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>92%/67% stats: set the stakes before the slide text does; audience already lives this</li>
+<li>RSE identity = researchers organizing around the support gap; US-RSE launched 2018, now thousands of members</li>
+<li>The gap: maintainer burns out → library abandoned; licensing question → publication blocked; nowhere to turn</li>
+<li>$8.8T breakdown: supply-side cost to recreate top 5,000 packages = $4.15B; demand-side if OSS disappeared = $8.8T (~2,000x ratio)</li>
+<li>Use that ratio with admins or funders who think this is a niche concern</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="weve-been-here-before" class="slide level2">
+<h2>We’ve been here before</h2>
+<p>People in this room helped build the open data movement:</p>
+<ul>
+<li><abbr title="Findable, Accessible, Interoperable, Reusable">FAIR</abbr> principles: from aspiration to institutional expectation</li>
+<li>Data management plans embedded in grant workflows</li>
+<li>Curation, provenance, and stewardship as professional services</li>
+<li>Open science infrastructure: repositories, PIDs, metadata standards</li>
+<li><strong><abbr title="FAIR Principles for Research Software">FAIR4RS</abbr></strong>: FAIR principles now extended to research software</li>
+</ul>
+<p><strong>Software is the next frontier</strong>, and UC has been showing the way for 50 years: <abbr title="Berkeley Software Distribution">BSD</abbr> Unix, Ceph, Apache Spark, <abbr title="Reduced Instruction Set Computer - V">RISC-V</abbr>, Ray. The pipeline from university research to global infrastructure is not rare or accidental.</p>
+<blockquote>
+<p>“The research done in academia was the seed. Foundations provided the soil. But the community was the sun.”</p>
+</blockquote>
+<div class="small">
+<p>Barker et al.&nbsp;(2022) doi:10.1038/s41597-022-01710-x · Ruff, N. (2026) “The Role of Foundations in Advancing Open Collaboration and Innovation,” UC Open Summit. youtu.be/eBriL3CDNeo</p>
+</div>
+<aside class="notes">
+<ul>
+<li>FAIR didn’t happen by accident: data professionals insisted data deserved first-class treatment as a scholarly output</li>
+<li>FAIR4RS (Barker et al.&nbsp;2022, RDA/FORCE11/ReSA) = same inflection point for software that FAIR was for data</li>
+<li>UC pipeline is the proof that research → global infrastructure is a pattern, not a fluke (details on next slide)</li>
+<li>Ruff: “The students writing their class projects this very semester may be creating the next Ray” — not a metaphor, a track record</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-uc-research-to-infrastructure-pipeline" class="slide level2">
+<h2>The UC research-to-infrastructure pipeline</h2>
+<div class="uc-oss-grid" role="list" aria-label="Open source projects by UC campus">
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC Berkeley</span>
+<div class="logo-row">
+<div class="logo-item">
+<img src="images/jupyter-logo.svg" alt="Jupyter"><span>Jupyter</span>
+</div>
+<div class="logo-item">
+<img src="images/spark-logo.png" alt="Apache Spark"><span>Apache Spark</span>
+</div>
+<div class="logo-item">
+<img src="images/riscv-logo.svg" alt="RISC-V"><span>RISC-V</span>
+</div>
+<div class="logo-item">
+<img src="images/ray-logo.png" alt="Ray"><span>Ray</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/bsd-wordmark.svg" alt="BSD Unix"><span>BSD Unix</span>
+</div>
+</div>
+</div>
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC Santa Cruz</span>
+<div class="logo-row">
+<div class="logo-item logo-item-sm">
+<img src="images/ceph-logo.svg" alt="Ceph"><span>Ceph</span>
+</div>
+<p><span class="project-badge">UCSC Genome Browser</span></p>
+</div>
+</div>
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC San Diego</span>
+<div class="logo-row">
+<span class="project-badge">Cytoscape</span> <span class="project-badge">EEGLAB</span>
+<div class="logo-item logo-item-sm">
+<img src="images/ucsd-pascal-logo.png" alt="UCSD Pascal p-System"><span>UCSD Pascal</span>
+</div>
+</div>
+</div>
+<div class="campus-block" role="listitem">
+<span class="campus-label">UCLA</span>
+<div class="logo-row">
+<div class="logo-item logo-item-sm">
+<img src="images/processing-logo.svg" alt="Processing"><span>Processing</span>
+</div>
+<div class="logo-item logo-item-sm">
+<img src="images/ndn-logo.png" alt="Named Data Networking"><span>Named Data Networking</span>
+</div>
+<p><span class="project-badge">tz database</span></p>
+</div>
+</div>
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC San Francisco</span>
+<div class="logo-row">
+<span class="project-badge">ChimeraX</span>
+<div class="logo-item logo-item-sm">
+<img src="images/openmm-logo.png" alt="OpenMM"><span>OpenMM</span>
+</div>
+</div>
+</div>
+<div class="campus-block" role="listitem">
+<span class="campus-label">UC Davis</span>
+<div class="logo-row">
+<div class="logo-item logo-item-sm">
+<img src="images/sourmash-logo.png" alt="sourmash"><span>sourmash</span>
+</div>
+<p><span class="project-badge">ERPLAB</span></p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li>Berkeley = audience-recognizable headlines; point to the whole grid: systems (Berkeley, UCSC), bioinformatics/neuroscience (UCSD, UCSF, Davis), internet infrastructure (UCLA)</li>
+<li><strong>Jupyter</strong>: Pérez procrastinating on his physics PhD, built IPython in an afternoon</li>
+<li><strong>Spark</strong>: Zaharia’s classmate needed faster distributed ML to compete in the $1M Netflix Prize; Databricks now $60B+</li>
+<li><strong>RISC-V</strong>: 3-month summer project so grad students could experiment without paying ARM royalties; now in 10B devices; moved to Switzerland in 2020 to stay neutral in US-China trade war</li>
+<li><strong>Ray</strong>: two PhD students tired of rewriting Python to scale past one machine; now core OpenAI compute infrastructure</li>
+<li><strong>Ceph</strong>: Weil’s 2004 dissertation → Inktank → Red Hat acquisition → CROSS funded the first UC OSPO (seed of this network)</li>
+<li><strong>Genome Browser</strong>: Jim Kent assembled the genome on 50 borrowed PCs (details next slide)</li>
+<li><strong>Cytoscape</strong>: molecular interaction tables too big for spreadsheets → visual “living maps” of the cell; de facto standard for network biology</li>
+<li><strong>EEGLAB</strong>: funded by the inventor of laser barcoding who wanted to decode the brain’s scanning systems</li>
+<li><strong>Processing</strong>: Reas + Fry, MIT Media Lab 2001; teach programming through visual art; now the Processing Foundation</li>
+<li><strong>tz database</strong>: Eggert used 19th-century astrologers’ almanacs to reconstruct pre-1883 timezone history; every OS clock depends on it</li>
+<li><strong>sourmash</strong>: FracMinHash sketching — a laptop now searches billions of genome sequences in seconds</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section" class="slide level2" data-background-color="#1f335e">
+<h2></h2>
+<div style="text-align: center; color: #ffffff; line-height: 1.8; margin-top: 0.8em;">
+<p><strong>Summer 2000. UC Santa Cruz.</strong></p>
+<p>PhD student Jim Kent assembled the human genome on 50 borrowed PCs, icing his wrists to keep coding.</p>
+<p>He finished <strong>three days</strong> before a corporate competitor’s supercomputer.</p>
+<p><strong>The genome stayed in the public domain.</strong></p>
+</div>
+<div style="text-align: center; color: rgba(255,255,255,0.78); font-size: 0.52em; margin-top: 1.8em;">
+<p>Kent, J.W. (2002). BLAT - The BLAST-Like Alignment Tool. <em>Genome Research</em> 12, 656–664. · genome.ucsc.edu</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Take a beat. Let the room absorb it.</li>
+<li>Celera: $300M private funding, dedicated supercomputer cluster; Kent: 50 off-the-shelf PCs assembled in a hallway</li>
+<li>GigAssembler (~10,000 lines of C) in a few intense weeks, reportedly while icing his wrists to prevent carpal tunnel</li>
+<li>This is the open data argument — scientific outputs belong in the commons — applied to software and won by a grad student</li>
+<li>After the beat: “That is what UC research infrastructure looks like at the start.”</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-is-an-academic-ospo" class="slide level2">
+<h2>What is an academic OSPO?</h2>
+<div class="columns">
+<div class="column" style="width:44%;">
+<p>An <strong>Open Source Program Office</strong> supports, governs, and promotes open source within an institution.</p>
+<ul>
+<li>Originated in industry: ~77% of large tech companies have one</li>
+<li>First academic OSPOs: Johns Hopkins, UC Santa Cruz, and RIT (2021)</li>
+<li><strong>34 academic OSPOs</strong> in <abbr title="Community for University and Research Institution OSPOs">CURIOSS</abbr> worldwide and growing</li>
+<li>Core functions: policy, licensing guidance, best practices, education, community</li>
+</ul>
+</div><div class="column" style="width:56%;">
+<div class="cell hidden">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="239" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 238;"><span id="cb1-239"><a href=""></a>world_topo <span class="op">=</span> <span class="fu">fetch</span>(<span class="st">"https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"</span>)<span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
+<span id="cb1-240"><a href=""></a>members <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"curioss-members.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="244" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 243;"><span id="cb2-244"><a href=""></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-245"><a href=""></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
+<span id="cb2-246"><a href=""></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"equal-earth"</span><span class="op">,</span></span>
+<span id="cb2-247"><a href=""></a>    <span class="dt">domain</span><span class="op">:</span> {</span>
+<span id="cb2-248"><a href=""></a>      <span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span></span>
+<span id="cb2-249"><a href=""></a>      <span class="dt">coordinates</span><span class="op">:</span> members<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> [<span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span>])</span>
+<span id="cb2-250"><a href=""></a>    }<span class="op">,</span></span>
+<span id="cb2-251"><a href=""></a>    <span class="dt">inset</span><span class="op">:</span> <span class="dv">40</span></span>
+<span id="cb2-252"><a href=""></a>  }<span class="op">,</span></span>
+<span id="cb2-253"><a href=""></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">660</span><span class="op">,</span></span>
+<span id="cb2-254"><a href=""></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">340</span><span class="op">,</span></span>
+<span id="cb2-255"><a href=""></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span>}<span class="op">,</span></span>
+<span id="cb2-256"><a href=""></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-257"><a href=""></a>    Plot<span class="op">.</span><span class="fu">graticule</span>({<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span>})<span class="op">,</span></span>
+<span id="cb2-258"><a href=""></a>    Plot<span class="op">.</span><span class="fu">geo</span>(topojson<span class="op">.</span><span class="fu">feature</span>(world_topo<span class="op">,</span> world_topo<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">land</span>)<span class="op">,</span> {</span>
+<span id="cb2-259"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ccc"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.5</span></span>
+<span id="cb2-260"><a href=""></a>    })<span class="op">,</span></span>
+<span id="cb2-261"><a href=""></a>    Plot<span class="op">.</span><span class="fu">dot</span>(members<span class="op">,</span> {</span>
+<span id="cb2-262"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
+<span id="cb2-263"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
+<span id="cb2-264"><a href=""></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">7</span><span class="op">,</span></span>
+<span id="cb2-265"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">uc_network</span> <span class="op">===</span> <span class="st">"yes"</span> <span class="op">?</span> <span class="st">"#ff9100"</span> <span class="op">:</span> <span class="st">"#003cb3"</span><span class="op">,</span></span>
+<span id="cb2-266"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb2-267"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
+<span id="cb2-268"><a href=""></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb2-269"><a href=""></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">name</span></span>
+<span id="cb2-270"><a href=""></a>    })</span>
+<span id="cb2-271"><a href=""></a>  ]</span>
+<span id="cb2-272"><a href=""></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<p><span class="small">🟠 UC OSPO Network &nbsp;·&nbsp; 🔵 CURIOSS member</span></p>
+<div class="sr-only">
+<p>World map showing 34 CURIOSS member institutions. Six UC campuses (orange) in California: Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, and San Diego. Twenty-eight additional institutions (blue) across the US, UK, Switzerland, Spain, Ireland, Luxembourg, and France.</p>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>Map is live and interactive — hover for institution names; UC = orange cluster on the west coast</li>
+<li>CNI late 2024: ~20 members; now 34, growing fast</li>
+<li>Academic model: less compliance, more enabling researchers and students already doing OSS work without any support structure</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-uc-ospo-network" class="slide level2">
+<h2>The UC OSPO Network</h2>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p>A <strong>multi-campus collaboration</strong> treating open source as shared infrastructure.</p>
+<ul>
+<li>6 campuses: Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, San Diego</li>
+<li>Launched April 2024, funded by the Alfred P. Sloan Foundation</li>
+<li><strong>$1.85M</strong> in external funding to date</li>
+<li>Lead: UC Santa Cruz, the first OSPO in a large state university system</li>
+<li>Serves 280,000+ students and 25,000+ faculty</li>
+</ul>
+<p>Acts as a <strong>neutral convener</strong>: no single campus, company, or grant cycle can pull the work away.</p>
+<div class="small">
+<p>Ruff (2026) UC Open Summit · youtu.be/eBriL3CDNeo</p>
+</div>
+</div><div class="column" style="width:52%;">
+<div class="cell hidden">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="319" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 318;"><span id="cb3-319"><a href=""></a>ca_states <span class="op">=</span> <span class="fu">fetch</span>(<span class="st">"https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json"</span>)<span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
+<span id="cb3-320"><a href=""></a>uc_network_campuses <span class="op">=</span> [</span>
+<span id="cb3-321"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Santa Cruz"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCSC"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">122.0583</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">36.9741</span>}<span class="op">,</span></span>
+<span id="cb3-322"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Berkeley"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCB"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">122.2595</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">37.8724</span>}<span class="op">,</span></span>
+<span id="cb3-323"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Davis"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCD"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">121.7619</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">38.5382</span>}<span class="op">,</span></span>
+<span id="cb3-324"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Los Angeles"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCLA"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">118.4452</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">34.0689</span>}<span class="op">,</span></span>
+<span id="cb3-325"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC Santa Barbara"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCSB"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">119.8489</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">34.4140</span>}<span class="op">,</span></span>
+<span id="cb3-326"><a href=""></a>  {<span class="dt">name</span><span class="op">:</span> <span class="st">"UC San Diego"</span><span class="op">,</span> <span class="dt">short</span><span class="op">:</span> <span class="st">"UCSD"</span><span class="op">,</span> <span class="dt">lon</span><span class="op">:</span> <span class="op">-</span><span class="fl">117.2340</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">32.8801</span>}</span>
+<span id="cb3-327"><a href=""></a>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-3-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-3-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="331" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 330;"><span id="cb4-331"><a href=""></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb4-332"><a href=""></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
+<span id="cb4-333"><a href=""></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"mercator"</span><span class="op">,</span></span>
+<span id="cb4-334"><a href=""></a>    <span class="dt">domain</span><span class="op">:</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span> <span class="dt">coordinates</span><span class="op">:</span> [[<span class="op">-</span><span class="fl">124.5</span><span class="op">,</span> <span class="fl">32.4</span>]<span class="op">,</span> [<span class="op">-</span><span class="dv">114</span><span class="op">,</span> <span class="fl">42.1</span>]]}</span>
+<span id="cb4-335"><a href=""></a>  }<span class="op">,</span></span>
+<span id="cb4-336"><a href=""></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
+<span id="cb4-337"><a href=""></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">420</span><span class="op">,</span></span>
+<span id="cb4-338"><a href=""></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span>}<span class="op">,</span></span>
+<span id="cb4-339"><a href=""></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb4-340"><a href=""></a>    Plot<span class="op">.</span><span class="fu">geo</span>(</span>
+<span id="cb4-341"><a href=""></a>      topojson<span class="op">.</span><span class="fu">feature</span>(ca_states<span class="op">,</span> ca_states<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">states</span>)<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="fu">find</span>(d <span class="kw">=&gt;</span> <span class="op">+</span>d<span class="op">.</span><span class="at">id</span> <span class="op">===</span> <span class="dv">6</span>)<span class="op">,</span></span>
+<span id="cb4-342"><a href=""></a>      {<span class="dt">fill</span><span class="op">:</span> <span class="st">"#e8eef8"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#b0bbcc"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.8</span>}</span>
+<span id="cb4-343"><a href=""></a>    )<span class="op">,</span></span>
+<span id="cb4-344"><a href=""></a>    Plot<span class="op">.</span><span class="fu">dot</span>(uc_network_campuses<span class="op">,</span> {</span>
+<span id="cb4-345"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
+<span id="cb4-346"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
+<span id="cb4-347"><a href=""></a>      <span class="dt">r</span><span class="op">:</span> <span class="dv">10</span><span class="op">,</span></span>
+<span id="cb4-348"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#ff9100"</span><span class="op">,</span></span>
+<span id="cb4-349"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb4-350"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.8</span><span class="op">,</span></span>
+<span id="cb4-351"><a href=""></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb4-352"><a href=""></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">name</span></span>
+<span id="cb4-353"><a href=""></a>    })<span class="op">,</span></span>
+<span id="cb4-354"><a href=""></a>    Plot<span class="op">.</span><span class="fu">text</span>(uc_network_campuses<span class="op">,</span> {</span>
+<span id="cb4-355"><a href=""></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lon</span><span class="op">,</span></span>
+<span id="cb4-356"><a href=""></a>      <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lat</span><span class="op">,</span></span>
+<span id="cb4-357"><a href=""></a>      <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">short</span><span class="op">,</span></span>
+<span id="cb4-358"><a href=""></a>      <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">18</span><span class="op">,</span></span>
+<span id="cb4-359"><a href=""></a>      <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span><span class="op">,</span></span>
+<span id="cb4-360"><a href=""></a>      <span class="dt">fontWeight</span><span class="op">:</span> <span class="st">"bold"</span><span class="op">,</span></span>
+<span id="cb4-361"><a href=""></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1f335e"</span><span class="op">,</span></span>
+<span id="cb4-362"><a href=""></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb4-363"><a href=""></a>      <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span></span>
+<span id="cb4-364"><a href=""></a>    })</span>
+<span id="cb4-365"><a href=""></a>  ]</span>
+<span id="cb4-366"><a href=""></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sr-only">
+<p>Map of California showing six UC OSPO Network campuses: Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, and San Diego.</p>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>Six campuses span the length of the state</li>
+<li>UCSC head start: Ceph (Weil’s 2004 dissertation) → Inktank → Red Hat → CROSS → first UC OSPO 2022 → Sloan funded the network</li>
+<li>Neutral convener framing (Ruff, UC Open 2026, 8:17–8:49): “code held in a neutral trust place — no single company can pull on it, no single country can claim it”; UC OSPO Network does this at system scale for policy and governance</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-thematic-areas" class="slide level2">
+<h2>Three thematic areas</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<div style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; height:400px;">
+<p><span style="font-size:3em;">🔭</span></p>
+<p><strong>Discovery</strong></p>
+<p>Mapping who does what across the UC system: repos, contributors, tools, and practices</p>
+</div>
+</div><div class="column" style="width:33%;">
+<div style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; height:400px;">
+<p><span style="font-size:3em;">🌱</span></p>
+<p><strong>Sustainability</strong></p>
+<p>Keeping projects and communities healthy through licensing, project health, and community support</p>
+</div>
+</div><div class="column" style="width:33%;">
+<div style="background:#f0f4fa; border-radius:8px; padding:1.4em 1em; text-align:center; height:400px;">
+<p><span style="font-size:3em;">📖</span></p>
+<p><strong>Education</strong></p>
+<p>Coordinated training and learning pathways across campuses</p>
+</div>
+</div></div>
+<aside class="notes">
+<p>All network activity falls under these three. Governance maps to them: OSPO Leadership Group plus one working group per theme.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="discovery-knowing-whats-there" class="slide level2">
+<h2>Discovery: knowing what’s there</h2>
+<div class="columns">
+<div class="column" style="width:46%;">
+<p><strong>The 4 Ps framework</strong>, applied at system scale:</p>
+<ul>
+<li><strong>People</strong>: who contributes to OS software at UC?</li>
+<li><strong>Product</strong>: what has been built?</li>
+<li><strong>Practice</strong>: how do faculty and staff engage?</li>
+<li><strong>Perception</strong>: what are contributors’ experiences?</li>
+</ul>
+<p>Tools: GitHub pipeline (200,000+ repos scanned; ~52,000 institutionally affiliated across 10 campuses), network-wide survey (294 respondents), UC Open Repository Browser (UC ORB)</p>
+<div class="small">
+<p>Gomez et al.&nbsp;(2025) arxiv:2506.18359 · Scarlett et al.&nbsp;(2025) doi:10.31235/osf.io/p8bx6_v1</p>
+</div>
+</div><div class="column" style="width:54%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/ucospo-orb.png" style="width:100.0%"></p>
+<figcaption>UC Open Repository Browser showing filter controls, repository type breakdown, data table of UC campus repos, and a network visualization of project relationships</figcaption>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>This is a methods story the audience recognizes: inventory, assess, make visible — what data librarians do</li>
+<li>Juanita Gomez led GitHub analysis and built UC ORB; full FOSSY talk: “Recipe for Discovery: Building the UC Open Source Repository Browser From Scratch”</li>
+<li>200,000+ = full pipeline scan; 52,000 = repos with strong institutional affiliation after filtering</li>
+<li>Survey preprint data going to Dryad</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="sustainability-keeping-it-running" class="slide level2">
+<h2>Sustainability: keeping it running</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p><strong>58% of UC open source contributors are also maintainers.</strong> Not users: stewards.</p>
+<p>What they asked for most: sustainability grants, computing infrastructure, learning communities.</p>
+<p>#1 challenge: <strong>finding time to write documentation.</strong></p>
+<p>Nationally: <strong>60%</strong> of maintainers are unpaid; <strong>43%</strong> report burnout.</p>
+<p>Network services:</p>
+<ul>
+<li>Cross-campus licensing working group (<abbr title="UC Office of the President">UCOP</abbr> + tech transfer + IT)</li>
+<li>Project health assessment (<abbr title="Open Source PRoject sustainabilitY tracker">OSSPREY</abbr>)</li>
+<li>Containerization support · Community management</li>
+</ul>
+<div class="small">
+<p>Scarlett et al.&nbsp;(2025) doi:10.31235/osf.io/p8bx6_v1 · Tidelift (2024) State of the Open Source Maintainer Report</p>
+</div>
+</div><div class="column" style="width:42%;">
+<div style="display:flex; flex-direction:column; gap:0.8em; padding-top:0.2em;">
+<div style="background:#1f335e; border-radius:8px; padding:1.1em 1em; color:white; text-align:center;">
+<div style="font-size:2.6em; font-weight:700; color:#ff9100; line-height:1;">
+58%
+</div>
+<div style="font-size:0.6em; margin-top:0.3em; line-height:1.4;">
+of UC <abbr title="Open Source Software">OSS</abbr> contributors<br>are also <strong>maintainers</strong><br><span style="opacity:0.7;">not just users, stewards</span>
+</div>
+</div>
+<div style="background:#f0f4fa; border-radius:8px; padding:0.9em 1em; text-align:center;">
+<div style="display:flex; justify-content:space-around; align-items:center;">
+<div>
+<div style="font-size:1.7em; font-weight:700; color:#1f335e; line-height:1;">
+60%
+</div>
+<div style="font-size:0.5em; color:#555; margin-top:0.15em;">
+unpaid nationally
+</div>
+</div>
+<div style="width:1px; height:2em; background:#c6d2e8;">
+
+</div>
+<div>
+<div style="font-size:1.7em; font-weight:700; color:#1f335e; line-height:1;">
+43%
+</div>
+<div style="font-size:0.5em; color:#555; margin-top:0.15em;">
+report burnout
+</div>
+</div>
+</div>
+<div style="font-size:0.42em; color:#888; margin-top:0.5em;">
+Tidelift (2024) State of the Open Source Maintainer Report
+</div>
+</div>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>58% = the key reframe: not people who downloaded a package, but sustaining infrastructure others depend on — mostly without institutional recognition</li>
+<li>Licensing working group = clearest example of what only the network can do: UCOP + tech transfer (UCLA, UCB, UCSC) + IT; that table doesn’t exist without a network-level convener</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-dependency-problem" class="slide level2">
+<h2>The dependency problem</h2>
+
+<img data-src="https://imgs.xkcd.com/comics/dependency.png" class="r-stretch quarto-figure-center"><p class="caption">XKCD #2347 ‘Dependency’: a towering stack of blocks labeled ‘All modern digital infrastructure’ balances on a single tiny block labeled ‘A project some random person in Nebraska has been thanklessly maintaining since 2003’. By Randall Munroe.</p><div class="small">
+<p>xkcd #2347 (CC BY-NC 2.5) · UC survey: 58% of contributors are maintainers · Tidelift (2024): 60% unpaid, 43% burnt out</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Let the comic breathe. The joke lands on its own.</li>
+<li>“A project some random person in Nebraska has been thanklessly maintaining since 2003” — that person is at every UC campus and most of your institutions too</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ai-and-open-source-a-new-pressure" class="slide level2">
+<h2>AI and open source: a new pressure</h2>
+<p>AI code generation is changing what it means to maintain a project.</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><strong>Slop PRs</strong>: AI-generated contributions that look complete but are off-spec, shallow, or carry subtle bugs</li>
+<li>Review burden grows while maintainer capacity stays flat</li>
+<li>The OSS projects that trained the models are now flooded by their output</li>
+<li>Security risk: AI-generated code in dependencies with undetected vulnerabilities</li>
+</ul>
+<p><strong>OSPOs are developing responses:</strong> contribution disclosure policies, AI-aware code review norms, project-level guidance.</p>
+<div class="small">
+<p>Baltes, Cheong &amp; Treude (2026) arxiv:2603.27249 · GitClear (2024) “Coding on Copilot”</p>
+</div>
+</div><div class="column" style="width:40%;">
+<div style="background:#1f335e; border-radius:8px; padding:1.2em 1em; color:white; text-align:center; margin-top:0.5em;">
+<p><strong>The structural shift</strong></p>
+<p><strong>70%</strong> of new AI PhDs go straight to industry</p>
+<p>(a decade ago: 50/50)</p>
+<p><strong>90%</strong> of notable AI models come from a handful of companies</p>
+<p>Academia is being sidelined from the systems it helped create.</p>
+<div class="small" style="color:#aac4e8;">
+<p>Ruff (2026) UC Open Summit · youtu.be/eBriL3CDNeo</p>
+</div>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>70%/90% stats = direct quotes from Ruff keynote, UC Open 2026 (6:15–7:15)</li>
+<li>Baltes, Cheong &amp; Treude (2026) arXiv:2603.27249: frames “slop PRs” as tragedy of the commons — individual productivity gains push costs onto maintainers</li>
+<li>Real examples: curl shut down its bug bounty in early 2026 (AI vulnerability reports turned 15-min verifications into days of work); Godot + RubyGems saw 10x spikes in low-quality AI contributions</li>
+<li>GitClear (2024): AI-assisted dev measurably increases code churn and reduces reuse — more review work on lower-quality patches</li>
+<li>Ruff on urgency: “The governance layer for AI is being written in 18–36 months. If you’re not in the room, you’ll inherit a system you have to live with.”</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="education-training-as-infrastructure" class="slide level2">
+<h2>Education: training as infrastructure</h2>
+<div class="columns">
+<div class="column" style="width:44%;">
+<p>Gap analysis → curriculum inventory → learning pathways</p>
+<ul>
+<li>Inventoried existing materials: Carpentries, CodeRefinery, The Turing Way, UC-specific content</li>
+<li>Organized by topic (licensing, sustainability, community) and by role (contributor, maintainer, manager)</li>
+<li>Published at <a href="https://ucospo.net/education">ucospo.net/education</a></li>
+<li>Coordinated with data literacy programs and Carpentries infrastructure</li>
+</ul>
+</div><div class="column" style="width:56%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/ucospo-education.png" style="width:100.0%"></p>
+<figcaption>UC OSPO Network Education site showing the Open Source Learning Pathways, organized by role, skill level, and pathway, with beginner lesson cards including Software Licensing, Social Coding, and Finding and Evaluating Projects</figcaption>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>Most direct connection to IASSIST members’ world</li>
+<li>Treat training the way data professionals treat data: find what exists, identify gaps, don’t duplicate</li>
+<li>It’s a living curriculum inventory, not a course catalog</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="distributed-expertise-system-wide-capacity" class="slide level2">
+<h2>Distributed expertise, system-wide capacity</h2>
+<p>Each campus brings what others don’t. The network routes it to where it’s needed.</p>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><strong>Each campus contributes</strong></p>
+<ul>
+<li>Unique domain expertise and staff knowledge</li>
+<li>Local relationships with researchers and faculty</li>
+<li>Pilots that can only run with campus context</li>
+<li>Specialized capacity others can learn from</li>
+</ul>
+</div><div class="column" style="width:48%;">
+<p><strong>The network multiplies it</strong></p>
+<ul>
+<li>Expertise flows across all six campuses</li>
+<li>Shared staffing no single campus could fund</li>
+<li>Smaller campuses build capacity they couldn’t alone</li>
+<li>A success at one becomes a template for five</li>
+</ul>
+</div></div>
+<p>Governed by an OSPO Leadership Group and thematic working groups, one per campus, coordinated at system level.</p>
+<aside class="notes">
+<ul>
+<li>Each campus is a node that both contributes and draws from the network (not competing priorities)</li>
+<li>Campus specializations: Davis → software sustainability research; UCLA → library integration + data services; UCSD → educational outreach; UCSC → deepest OSS governance history (CROSS)</li>
+<li>Governance: OSPO Leadership Group (one rep per campus) sets direction; three thematic working groups do the work; GitHub-based project management keeps it open and legible</li>
+<li>Key point for this audience: a librarian at a smaller campus now has access to expertise from six campuses — that’s what the network actually delivers</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="lessons-from-two-years" class="slide level2">
+<h2>Lessons from two years</h2>
+<p>What the network model enables that single campuses cannot:</p>
+<ol type="1">
+<li><strong>Shared staffing</strong>: community manager, licensing specialist, technical roles</li>
+<li><strong>Policy leverage</strong>: the network has standing with UCOP; individual campuses do not</li>
+<li><strong>Data at scale</strong>: the GitHub and survey analyses require system-wide scope to mean anything</li>
+<li><strong>Equity</strong>: smaller campuses get services they could not build alone</li>
+<li><strong>A replicable model</strong>: $1.85M produced something other state systems can follow</li>
+</ol>
+<aside class="notes">
+<ul>
+<li>Two years in, the model works</li>
+<li>Open question: moving from grant funding to permanent infrastructure — working on Sloan extension, exploring UCOP pathways</li>
+<li>The pattern (distributed nodes, shared governance, thematic working groups) is transferable to any large university system</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="where-this-meets-your-work" class="slide level2">
+<h2>Where this meets your work</h2>
+<p>For data professionals, the OSPO sits at the intersection of:</p>
+<ul>
+<li>Research software engineering ↔︎ data management</li>
+<li>Licensing compliance ↔︎ open data policy</li>
+<li>Reproducibility tooling ↔︎ FAIR / FAIR4RS</li>
+<li>Training infrastructure ↔︎ data literacy programs</li>
+<li>RSE community ↔︎ library research support</li>
+</ul>
+<p><strong>For your institution:</strong></p>
+<ul>
+<li>Where does open source software governance currently live?</li>
+<li>What would it take to treat it as infrastructure rather than a side project?</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>This is the invitation: IASSIST members should be at the OSPO table — you work across the research lifecycle, understand data governance, run training programs</li>
+<li>RSEs are natural collaborators, many already embedded in or adjacent to library services</li>
+<li>Question for the room: does your institution have an RSE group, research computing team, or data science center? That’s where this conversation belongs.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="youre-already-doing-this-work" class="slide level2">
+<h2>You’re already doing this work</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p>If you do technical data services, researchers are already bringing you these questions:</p>
+<ul>
+<li>“What license should I use for this code?”</li>
+<li>“Is this library still maintained? Should I depend on it?”</li>
+<li>“How do I make this reproducible and citable?”</li>
+<li>“My funder wants a software management plan.”</li>
+<li>“How do I accept contributions from collaborators?”</li>
+</ul>
+<p><strong>That is OSPO work.</strong> The frame makes it legible to you, your institution, and the researchers you serve.</p>
+</div><div class="column" style="width:48%;">
+<div style="background:#1f335e; border-radius:8px; padding:0.85em 0.9em; color:white; margin-bottom:0.5em;">
+<p><strong>Raise the floor, not just solve the ticket</strong></p>
+<p>Fixing their immediate problem gets them through the week.</p>
+<p>Moving them from “it runs on my machine” to maintainable, licensed, citable software gets their whole lab there, and their students after them.</p>
+<p>You don’t need a formal OSPO to do this. You need the frame.</p>
+</div>
+<div style="background:#f0f4fa; border-radius:8px; padding:0.65em 0.9em; font-size:0.72em;">
+<p><strong>OSPO heuristics already in your toolkit:</strong> health signals · bus factor · governance files · FAIR4RS · software <abbr title="Data Management Plans">DMPs</abbr> · contributor conventions · community governance</p>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>Core distinction: reactive (fixes the week) vs.&nbsp;capacity-building (shifts lab practice that compounds across students and grants)</li>
+<li>Not about turning every data librarian into an OSPO director — about shifting what a researcher walks away knowing</li>
+<li>Health signals (bus factor, issue velocity, contributor diversity) = will this project be there next year?</li>
+<li>Governance files (README, CONTRIBUTING, CODE_OF_CONDUCT) = data README equivalent; make the project legible to the next person</li>
+<li>FAIR4RS + software DMPs = policy anchors that give researchers a reason to care now</li>
+<li>You don’t need institutional approval: use the vocabulary and resources from ucospo.net in consultations today — you’re already in the room where these questions get raised</li>
+<li>Carpentries angle: adding a session on software health, licensing, and CITATION.cff is low lift for every researcher in that room</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-you-can-do-right-now" class="slide level2">
+<h2>What you can do right now</h2>
+<p>If you advise on data-intensive research, you are probably already helping with code.</p>
+<p><strong>The network has already built the resources</strong> (Laura Langdon, UC OSPO)<strong>:</strong></p>
+<ul>
+<li><a href="https://ucospo.net/oss-resources/template-guides/readme-guide/"><code>README.md</code></a> - template + guide</li>
+<li><a href="https://ucospo.net/oss-resources/template-guides/license-guide/"><code>LICENSE</code></a> - guide includes UC-approved options</li>
+<li><a href="https://ucospo.net/oss-resources/template-guides/contributing-guide/"><code>CONTRIBUTING.md</code></a> - template + guide</li>
+<li><a href="https://ucospo.net/oss-resources/template-guides/code-of-conduct-guide/"><code>CODE_OF_CONDUCT.md</code></a> - Contributor Covenant + guidance</li>
+<li><code>CITATION.cff</code> + Zenodo release → citable, versioned <abbr title="Digital Object Identifier">DOI</abbr></li>
+</ul>
+<p><strong>Going further:</strong></p>
+<ul>
+<li><a href="https://ucospo.net/oss-resources/growing-community/">Growing a Community Around a Project</a> - UC OSPO</li>
+<li><a href="https://ucospo.net/research-software-citable-discoverable/">Sharing Research Software: Reproducible, Citable, and Discoverable</a> - Carpentries Incubator lesson (covers <code>pixi</code>, CITATION.cff, Zenodo, discoverability)</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Don’t build these yourself: Laura Langdon published templates + guides for all four key files in September 2025 — on ucospo.net now</li>
+<li>Carpentries lesson (mine, pre-alpha but usable): full workflow from licensing through environment management to minting a DOI on Zenodo</li>
+<li>A researcher who already deposits data with your help is one conversation away from a fully citable software package</li>
+<li>You need the consultation habit and a link to these resources. That’s it.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="learn-more-connect" class="slide level2 smaller scrollable">
+<h2>Learn more / connect</h2>
+<div class="columns">
+<div class="column" style="width:68%;">
+<p><strong>UC OSPO Network:</strong> <a href="https://ucospo.net">ucospo.net</a></p>
+<ul>
+<li>Education site: <a href="https://ucospo.net/education">ucospo.net/education</a></li>
+<li>Mailing list, Slack, events calendar</li>
+</ul>
+<p><strong>Global network:</strong> <a href="https://curioss.org">curioss.org</a>, 34 academic OSPOs worldwide and growing</p>
+<p><strong>Tim Dennis</strong> Data Science Center, UCLA Library tdennis@library.ucla.edu</p>
+<div class="small" style="margin-top:0.7em; padding:0.5em 0.8em; background:#f0f4fa; border-radius:6px; border-left:3px solid #ff9100;">
+<p>🖥 Slides: <strong>tinyurl.com/iassist2026</strong></p>
+<p>📄 Handout: <strong>tinyurl.com/iassist2026-handout</strong></p>
+</div>
+</div><div class="column" style="width:32%;">
+<div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5em; height:100%">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/iassist2026-qr.svg" width="200"></p>
+<figcaption>QR code linking to tinyurl.com/iassist2026 — slides for this presentation</figcaption>
+</figure>
+</div>
+<div class="small" style="text-align:center; color:#555;">
+<p>tinyurl.com/iassist2026</p>
+</div>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>UC ORB: good follow-up for anyone who wants to see the discovery tooling</li>
+<li>CURIOSS community: good follow-up for anyone whose institution is thinking about starting an OSPO</li>
+<li>Leave time for questions — AI and sustainability slides tend to generate them</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-barker2022" class="csl-entry" role="listitem">
+Barker, M., Chue Hong, N. P., Katz, D. S., Lamprecht, A.-L., Martinez-Ortiz, C., Psomopoulos, F., Harrow, J., Castro, L. J., Gruenpeter, M., Martinez, P. A., &amp; Honeyman, T. (2022). Introducing the <span>FAIR</span> principles for research software. <em>Scientific Data</em>, <em>9</em>, 622. <a href="https://doi.org/10.1038/s41597-022-01710-x">https://doi.org/10.1038/s41597-022-01710-x</a>
+</div>
+<div id="ref-brown2016sourmash" class="csl-entry" role="listitem">
+Brown, C. T., &amp; Irber, L. (2016). Sourmash: A library for <span>MinHash</span> sketching of <span>DNA</span>. <em>Journal of Open Source Software</em>, <em>1</em>(5), 27. <a href="https://doi.org/10.21105/joss.00027">https://doi.org/10.21105/joss.00027</a>
+</div>
+<div id="ref-cerf1974tcp" class="csl-entry" role="listitem">
+Cerf, V. G., &amp; Kahn, R. E. (1974). A protocol for packet network intercommunication. <em><span>IEEE</span> Transactions on Communications</em>, <em>22</em>(5), 637–648. <a href="https://doi.org/10.1109/TCOM.1974.1092259">https://doi.org/10.1109/TCOM.1974.1092259</a>
+</div>
+<div id="ref-delorme2004eeglab" class="csl-entry" role="listitem">
+Delorme, A., &amp; Makeig, S. (2004). <span>EEGLAB</span>: An open source toolbox for analysis of single-trial <span>EEG</span> dynamics including independent component analysis. <em>Journal of Neuroscience Methods</em>, <em>134</em>(1), 9–21. <a href="https://doi.org/10.1016/j.jneumeth.2003.10.009">https://doi.org/10.1016/j.jneumeth.2003.10.009</a>
+</div>
+<div id="ref-eastman2017openmm" class="csl-entry" role="listitem">
+Eastman, P., Swails, J., Chodera, J. D., McGibbon, R. T., Zhao, Y., Beauchamp, K. A., Wang, L.-P., Simmonett, A. C., Harrigan, M. P., Stern, C. D., Wiewiora, R. P., Brooks, B. R., &amp; Pande, V. S. (2017). <span>OpenMM</span> 7: Rapid development of high performance algorithms for molecular dynamics. <em><span>PLOS</span> Computational Biology</em>, <em>13</em>(7), e1005659. <a href="https://doi.org/10.1371/journal.pcbi.1005659">https://doi.org/10.1371/journal.pcbi.1005659</a>
+</div>
+<div id="ref-gomez2025" class="csl-entry" role="listitem">
+Gomez, J., Lovell, E., Lieggi, S., Cardenas, A. A., &amp; Davis, J. (2025). <em>Recipe for discovery: <span>A</span> pipeline for institutional open source activity</em>. <a href="https://arxiv.org/abs/2506.18359">https://arxiv.org/abs/2506.18359</a>
+</div>
+<div id="ref-hettrick2014" class="csl-entry" role="listitem">
+<span class="nocase">Hettrick, S., Antonioletti, M., Carr, L., Chue Hong, N., Crouch, S., De Roure, D., Emsley, I., Goble, C., Hay, A., Inupakutika, D., et al.</span> (2014). <em><span>UK Research Software Survey 2014</span></em>. Software Sustainability Institute. <a href="https://doi.org/10.5281/zenodo.14809">https://doi.org/10.5281/zenodo.14809</a>
+</div>
+<div id="ref-hoffmann2024" class="csl-entry" role="listitem">
+Hoffmann, M., Nagle, F., &amp; Zhou, Y. (2024). <em>The value of open source software</em> (Working Paper Nos. 24-038). Harvard Business School. <a href="https://doi.org/10.2139/ssrn.4693148">https://doi.org/10.2139/ssrn.4693148</a>
+</div>
+<div id="ref-kent2002genome" class="csl-entry" role="listitem">
+Kent, W. J., Sugnet, C. W., Furey, T. S., Roskin, K. M., Pringle, T. H., Zahler, A. M., &amp; Haussler, D. (2002). The human genome browser at <span>UCSC</span>. <em>Genome Research</em>, <em>12</em>(6), 996–1006. <a href="https://doi.org/10.1101/gr.229102">https://doi.org/10.1101/gr.229102</a>
+</div>
+<div id="ref-kluyver2016jupyter" class="csl-entry" role="listitem">
+Kluyver, T., Ragan-Kelley, B., Pérez, F., Granger, B., Bussonnier, M., Frederic, J., Kelley, K., Hamrick, J., Grout, J., Corlay, S., Ivanov, P., Avila, D., Abdalla, S., &amp; Willing, C. (2016). Jupyter <span>Notebooks</span> — a publishing format for reproducible computational workflows. In F. Loizides &amp; B. Schmidt (Eds.), <em>Positioning and power in academic publishing: Players, agents and agendas</em> (pp. 87–90). <span>IOS</span> Press. <a href="https://doi.org/10.3233/978-1-61499-649-1-87">https://doi.org/10.3233/978-1-61499-649-1-87</a>
+</div>
+<div id="ref-moritz2018ray" class="csl-entry" role="listitem">
+Moritz, P., Nishihara, R., Wang, S., Tumanov, A., Liaw, R., Liang, E., Elibol, M., Yang, Z., Paul, W., Jordan, M. I., &amp; Stoica, I. (2018). Ray: A distributed framework for emerging <span>AI</span> applications. <em>13th <span>USENIX</span> Symposium on Operating Systems Design and Implementation (<span>OSDI</span>)</em>, 561–577.
+</div>
+<div id="ref-tzdatabase" class="csl-entry" role="listitem">
+Olson, A. D., &amp; Eggert, P. (1986). <em><span class="nocase">tz</span> database (<span>IANA</span> time zone database)</em>. IANA. <a href="https://www.iana.org/time-zones">https://www.iana.org/time-zones</a>
+</div>
+<div id="ref-ruff2026" class="csl-entry" role="listitem">
+Ruff, N. (2026). <em>The role of foundations in advancing open collaboration and innovation</em>. UC Open Summit. <a href="https://youtu.be/eBriL3CDNeo">https://youtu.be/eBriL3CDNeo</a>
+</div>
+<div id="ref-scarlett2025" class="csl-entry" role="listitem">
+Scarlett, V., Curty, R. G., Gomez, J., Langdon, L., Janée, G., &amp; Budden, A. E. (2025). <em>A system-wide snapshot: <span>A</span> multi-campus survey of open source contributors at the <span class="nocase">University of California</span></em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/p8bx6_v1">https://doi.org/10.31235/osf.io/p8bx6_v1</a>
+</div>
+<div id="ref-shannon2003cytoscape" class="csl-entry" role="listitem">
+Shannon, P., Markiel, A., Ozier, O., Baliga, N. S., Wang, J. T., Ramage, D., Amin, N., Schwikowski, B., &amp; Ideker, T. (2003). Cytoscape: A software environment for integrated models of biomolecular interaction networks. <em>Genome Research</em>, <em>13</em>(11), 2498–2504. <a href="https://doi.org/10.1101/gr.1239303">https://doi.org/10.1101/gr.1239303</a>
+</div>
+<div id="ref-stonebraker1987postgres" class="csl-entry" role="listitem">
+Stonebraker, M., &amp; Rowe, L. A. (1987). <em>The design of <span>POSTGRES</span></em> (UCB/ERL M86/85). University of California, Berkeley.
+</div>
+<div id="ref-stonebraker1976ingres" class="csl-entry" role="listitem">
+Stonebraker, M., Wong, E., Kreps, P., &amp; Held, G. (1976). The design and implementation of <span>INGRES</span>. <em><span>ACM</span> Transactions on Database Systems</em>, <em>1</em>(3), 189–222. <a href="https://doi.org/10.1145/320473.320476">https://doi.org/10.1145/320473.320476</a>
+</div>
+<div id="ref-tidelift2024" class="csl-entry" role="listitem">
+Tidelift. (2024). <em>The 2024 <span>Tidelift</span> maintainer impact report</em>. Tidelift. <a href="https://dev.to/tidelift/the-open-source-maintainer-community-is-getting-grayer-1gc2">https://dev.to/tidelift/the-open-source-maintainer-community-is-getting-grayer-1gc2</a>
+</div>
+<div id="ref-riscv2019" class="csl-entry" role="listitem">
+Waterman, A., &amp; Asanović, K. (2019). <em>The <span>RISC-V</span> instruction set manual, volume <span>I</span>: Unprivileged <span>ISA</span></em>. <span>RISC-V</span> Foundation. <a href="https://github.com/riscv/riscv-isa-manual">https://github.com/riscv/riscv-isa-manual</a>
+</div>
+<div id="ref-weil2006ceph" class="csl-entry" role="listitem">
+Weil, S. A., Brandt, S. A., Miller, E. L., Long, D. D. E., &amp; Maltzahn, C. (2006). Ceph: A scalable, high-performance distributed file system. <em>7th <span>USENIX</span> Symposium on Operating Systems Design and Implementation (<span>OSDI</span>)</em>, 307–320.
+</div>
+<div id="ref-zaharia2012spark" class="csl-entry" role="listitem">
+Zaharia, M., Chowdhury, M., Das, T., Dave, A., Ma, J., McCauly, M., Franklin, M. J., Shenker, S., &amp; Stoica, I. (2012). Resilient distributed datasets: <span>A</span> fault-tolerant abstraction for in-memory cluster computing. <em>9th <span>USENIX</span> Symposium on Networked Systems Design and Implementation (<span>NSDI</span>)</em>, 15–28.
+</div>
+<div id="ref-zhang2014ndn" class="csl-entry" role="listitem">
+<span class="nocase">Zhang, L., Afanasyev, A., Burke, J., Jacobson, V., claffy, kc, Crowley, P., Papadopoulos, C., Wang, L., &amp; Zhang, B.</span> (2014). Named data networking. <em><span>ACM</span> <span>SIGCOMM</span> Computer Communication Review</em>, <em>44</em>(3), 66–73. <a href="https://doi.org/10.1145/2656877.2656887">https://doi.org/10.1145/2656877.2656887</a>
+</div>
+</div>
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/uc-ospo-network-logo-light.svg" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>IASSIST 2026 · Tim Dennis · UCLA Library DSC · ucospo.net</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="iassist-2026-slides-full_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="iassist-2026-slides-full_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="iassist-2026-slides-full_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="iassist-2026-slides-full_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="iassist-2026-slides-full_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="iassist-2026-slides-full_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="iassist-2026-slides-full_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="iassist-2026-slides-full_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="iassist-2026-slides-full_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="iassist-2026-slides-full_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script>
+    (function () {
+      var DARK_BG = '#1f335e';
+      var WHITE_LOGO = 'images/uc-ospo-network-logo-white.svg';
+      var LIGHT_LOGO = 'images/uc-ospo-network-logo-light.svg';
+
+      function updateLogo(slide) {
+        var logo = document.querySelector('.slide-logo');
+        if (!logo) return;
+        var bg = slide ? (slide.getAttribute('data-background-color') || '') : '';
+        logo.src = bg === DARK_BG ? WHITE_LOGO : LIGHT_LOGO;
+        logo.alt = 'UC OSPO Network';
+      }
+
+      window.addEventListener('load', function () {
+        var firstSlide = document.querySelector('.reveal .slides section');
+        updateLogo(firstSlide);
+
+        Reveal.on('slidechanged', function (event) {
+          updateLogo(event.currentSlide);
+        });
+      });
+    })();
+    </script>
+    <script type="ojs-module-contents">
+    eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IndvcmxkX3RvcG8gPSBmZXRjaChcImh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vd29ybGQtYXRsYXNAMi9jb3VudHJpZXMtMTEwbS5qc29uXCIpLnRoZW4ociA9PiByLmpzb24oKSlcbm1lbWJlcnMgPSBGaWxlQXR0YWNobWVudChcImN1cmlvc3MtbWVtYmVycy5jc3ZcIikuY3N2KHt0eXBlZDogdHJ1ZX0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJQbG90LnBsb3Qoe1xuICBwcm9qZWN0aW9uOiB7XG4gICAgdHlwZTogXCJlcXVhbC1lYXJ0aFwiLFxuICAgIGRvbWFpbjoge1xuICAgICAgdHlwZTogXCJNdWx0aVBvaW50XCIsXG4gICAgICBjb29yZGluYXRlczogbWVtYmVycy5tYXAoZCA9PiBbK2QubG9uLCArZC5sYXRdKVxuICAgIH0sXG4gICAgaW5zZXQ6IDQwXG4gIH0sXG4gIHdpZHRoOiA2NjAsXG4gIGhlaWdodDogMzQwLFxuICBzdHlsZToge2JhY2tncm91bmQ6IFwidHJhbnNwYXJlbnRcIn0sXG4gIG1hcmtzOiBbXG4gICAgUGxvdC5ncmF0aWN1bGUoe3N0cm9rZTogXCIjZThlZWY4XCIsIHN0cm9rZVdpZHRoOiAwLjV9KSxcbiAgICBQbG90Lmdlbyh0b3BvanNvbi5mZWF0dXJlKHdvcmxkX3RvcG8sIHdvcmxkX3RvcG8ub2JqZWN0cy5sYW5kKSwge1xuICAgICAgZmlsbDogXCIjZThlZWY4XCIsIHN0cm9rZTogXCIjY2NjXCIsIHN0cm9rZVdpZHRoOiAwLjVcbiAgICB9KSxcbiAgICBQbG90LmRvdChtZW1iZXJzLCB7XG4gICAgICB4OiBkID0+ICtkLmxvbixcbiAgICAgIHk6IGQgPT4gK2QubGF0LFxuICAgICAgcjogNyxcbiAgICAgIGZpbGw6IGQgPT4gZC51Y19uZXR3b3JrID09PSBcInllc1wiID8gXCIjZmY5MTAwXCIgOiBcIiMwMDNjYjNcIixcbiAgICAgIHN0cm9rZTogXCJ3aGl0ZVwiLFxuICAgICAgc3Ryb2tlV2lkdGg6IDEuMixcbiAgICAgIHRpcDogdHJ1ZSxcbiAgICAgIHRpdGxlOiBkID0+IGQubmFtZVxuICAgIH0pXG4gIF1cbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJjYV9zdGF0ZXMgPSBmZXRjaChcImh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vdXMtYXRsYXNAMy9zdGF0ZXMtMTBtLmpzb25cIikudGhlbihyID0+IHIuanNvbigpKVxudWNfbmV0d29ya19jYW1wdXNlcyA9IFtcbiAge25hbWU6IFwiVUMgU2FudGEgQ3J1elwiLCBzaG9ydDogXCJVQ1NDXCIsIGxvbjogLTEyMi4wNTgzLCBsYXQ6IDM2Ljk3NDF9LFxuICB7bmFtZTogXCJVQyBCZXJrZWxleVwiLCBzaG9ydDogXCJVQ0JcIiwgbG9uOiAtMTIyLjI1OTUsIGxhdDogMzcuODcyNH0sXG4gIHtuYW1lOiBcIlVDIERhdmlzXCIsIHNob3J0OiBcIlVDRFwiLCBsb246IC0xMjEuNzYxOSwgbGF0OiAzOC41MzgyfSxcbiAge25hbWU6IFwiVUMgTG9zIEFuZ2VsZXNcIiwgc2hvcnQ6IFwiVUNMQVwiLCBsb246IC0xMTguNDQ1MiwgbGF0OiAzNC4wNjg5fSxcbiAge25hbWU6IFwiVUMgU2FudGEgQmFyYmFyYVwiLCBzaG9ydDogXCJVQ1NCXCIsIGxvbjogLTExOS44NDg5LCBsYXQ6IDM0LjQxNDB9LFxuICB7bmFtZTogXCJVQyBTYW4gRGllZ29cIiwgc2hvcnQ6IFwiVUNTRFwiLCBsb246IC0xMTcuMjM0MCwgbGF0OiAzMi44ODAxfVxuXVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiUGxvdC5wbG90KHtcbiAgcHJvamVjdGlvbjoge1xuICAgIHR5cGU6IFwibWVyY2F0b3JcIixcbiAgICBkb21haW46IHt0eXBlOiBcIk11bHRpUG9pbnRcIiwgY29vcmRpbmF0ZXM6IFtbLTEyNC41LCAzMi40XSwgWy0xMTQsIDQyLjFdXX1cbiAgfSxcbiAgd2lkdGg6IDUwMCxcbiAgaGVpZ2h0OiA0MjAsXG4gIHN0eWxlOiB7YmFja2dyb3VuZDogXCJ0cmFuc3BhcmVudFwifSxcbiAgbWFya3M6IFtcbiAgICBQbG90LmdlbyhcbiAgICAgIHRvcG9qc29uLmZlYXR1cmUoY2Ffc3RhdGVzLCBjYV9zdGF0ZXMub2JqZWN0cy5zdGF0ZXMpLmZlYXR1cmVzLmZpbmQoZCA9PiArZC5pZCA9PT0gNiksXG4gICAgICB7ZmlsbDogXCIjZThlZWY4XCIsIHN0cm9rZTogXCIjYjBiYmNjXCIsIHN0cm9rZVdpZHRoOiAwLjh9XG4gICAgKSxcbiAgICBQbG90LmRvdCh1Y19uZXR3b3JrX2NhbXB1c2VzLCB7XG4gICAgICB4OiBkID0+IGQubG9uLFxuICAgICAgeTogZCA9PiBkLmxhdCxcbiAgICAgIHI6IDEwLFxuICAgICAgZmlsbDogXCIjZmY5MTAwXCIsXG4gICAgICBzdHJva2U6IFwid2hpdGVcIixcbiAgICAgIHN0cm9rZVdpZHRoOiAxLjgsXG4gICAgICB0aXA6IHRydWUsXG4gICAgICB0aXRsZTogZCA9PiBkLm5hbWVcbiAgICB9KSxcbiAgICBQbG90LnRleHQodWNfbmV0d29ya19jYW1wdXNlcywge1xuICAgICAgeDogZCA9PiBkLmxvbixcbiAgICAgIHk6IGQgPT4gZC5sYXQsXG4gICAgICB0ZXh0OiBkID0+IGQuc2hvcnQsXG4gICAgICBkeTogLTE4LFxuICAgICAgZm9udFNpemU6IDEzLFxuICAgICAgZm9udFdlaWdodDogXCJib2xkXCIsXG4gICAgICBmaWxsOiBcIiMxZjMzNWVcIixcbiAgICAgIHN0cm9rZTogXCJ3aGl0ZVwiLFxuICAgICAgc3Ryb2tlV2lkdGg6IDNcbiAgICB9KVxuICBdXG59KVxuIn1dfQ==
+    </script>
+    <script type="module">
+    if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+    window._ojs.paths.runtimeToDoc = "../../..";
+    window._ojs.paths.runtimeToRoot = "../../..";
+    window._ojs.paths.docToRoot = "";
+    window._ojs.selfContained = false;
+    window._ojs.runtime.interpretFromScriptTags();
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
