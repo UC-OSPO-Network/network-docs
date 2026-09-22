@@ -120,8 +120,6 @@ skip something, the lesson site has it. Post questions in the Etherpad so nothin
 gets lost — nobody needs to unmute unless they want to.
 :::
 
-# Software Is the Missing Scholarly Output {.title-slide data-background-color="#1f335e"}
-
 ## The question that starts this lesson
 
 > "The journal accepted my paper, but they want a citable version of the code, with a DOI. How do I do that?"
@@ -175,153 +173,84 @@ Both figures: Schindler et al. (2022), PeerJ Computer Science, doi:10.7717/peerj
 
 ## A GitHub URL isn't a citation
 
-### The wrong way
+:::: {.columns}
 
-> "We used the analysis script from `https://github.com/UC-OSPO-Network/software-demo`"
+::: {.column width="50%"}
+### ❌ Wrong
 
-- URLs break (link rot)
-- No version specified — which run produced which result?
-- No author name, so no credit and no citation counts
+> "We used the analysis script from github.com/UC-OSPO-Network/software-demo"
 
-::: {.notes}
-A URL is a shelf location, not a catalog record. Citing code this way is like citing
-a book as "third shelf, Powell Library reading room." Move the book, close the room,
-the reference is dead. This isn't hypothetical — Gitorious shut down in 2015,
-Google Code in 2016, thousands of projects unreachable overnight.
+- Links rot
+- No version: which code produced the result?
+- No author, so no credit
 :::
 
-## The right way
+::: {.column width="50%"}
+### ✅ Right
 
 > Dennis, T., Phan, L., Otsuji, R., & Padilla, K. (2026). *Biodiversity Analysis Toolkit* (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.123456
 
-- The DOI survives repo moves and even GitHub going away
-- The version is explicit, so someone can rerun the exact code
+- The DOI outlives the repo
+- The version is explicit
 - Authors get credit and citation counts
+:::
+
+::::
 
 You'll create both pieces today: a `CITATION.cff` file and a DOI.
 
 ::: {.notes}
+A URL is a shelf location, not a catalog record. Citing code this way is like citing
+a book as "third shelf, Powell Library reading room." Move the book, close the room,
+the reference is dead. Gitorious shut down in 2015, Google Code in 2016, thousands
+of projects unreachable overnight.
+
 The DOI here is illustrative, in real Zenodo format (10.5281). Learners mint on
 Zenodo Sandbox today, so theirs will start 10.5072 and won't resolve on doi.org.
 That's expected for practice.
+
+If there's time, the durability story: before Heartbleed (2014), OpenSSL secured
+about a sixth of the web's encrypted traffic on ~$2,000/year in donations with one
+paid maintainer. Depositing in an archive moves software off one person's account.
 :::
 
-## Software has a durability problem {background-color="#f0f4fa"}
-
-::: {.project-badge}
-The Bus Factor
-:::
-
-The number of people who need to be "hit by a bus" before a project becomes unmaintainable. **For most research code, the answer is one.**
-
-Critical infrastructure too: before 2014, OpenSSL secured about a sixth of the web's encrypted traffic on **~$2,000/year** in donations, with **one person paid** to maintain it. Then Heartbleed happened.
-
-::: {.small}
-Core Infrastructure Initiative, Linux Foundation. en.wikipedia.org/wiki/Core_Infrastructure_Initiative
-:::
-
-::: {.notes}
-Depositing a release into an archive like Zenodo is the software equivalent of
-accessioning: it moves the object from a personal account to a preservation system
-that outlives the individual. Heartbleed is the sharpest version of this story --
-huge chunks of the internet's security depended on one underfunded volunteer's
-continued availability, and almost nobody knew until it broke.
-:::
-
-## The fix: FAIR4RS principles
+## Where your fork is headed
 
 :::: {.columns}
 
-::: {.column width="50%"}
-**F — Findable**\
-DOI, CITATION.cff, metadata
-
-**A — Accessible**\
-Public GitHub, archived on Zenodo
-:::
-
-::: {.column width="50%"}
-**I — Interoperable**\
-Standard formats, documented dependencies
-
-**R — Reusable**\
-LICENSE, README, environment files
-:::
-
-::::
-
-::: {.notes}
-Keep this light — a preview, not a lecture. Learners will understand F/A/I/R much
-better after they actually create the license, citation metadata, DOI, and README.
-Name the four principles, point ahead to where each gets built, move on.
-:::
-
-## Before → after
-
-:::: {.columns}
-
-::: {.column width="50%"}
+::: {.column width="45%"}
 ### Before (`main`)
 
 - ❌ No LICENSE
 - ❌ No citation information
-- ❌ No DOI
+- ❌ No release or DOI
 - ❌ Minimal README
-- ❌ No community or metadata files
 :::
 
-::: {.column width="50%"}
+::: {.column width="55%"}
 ### After (`05-add-metadata`)
 
-- ✅ LICENSE (BSD-3-Clause)
-- ✅ CITATION.cff
-- ✅ Complete README
-- ✅ CONTRIBUTING.md, CODE_OF_CONDUCT.md
-- ✅ .zenodo.json, DOI badge
+- ✅ LICENSE (BSD-3-Clause) · *Reusable*
+- ✅ CITATION.cff · *Findable*
+- ✅ Release + DOI on Zenodo · *Findable, Accessible*
+- ✅ Full README, CONTRIBUTING, Code of Conduct · *Reusable*
 :::
 
 ::::
 
-**This is what makes software Findable, Accessible, Interoperable, and Reusable.**
-
-## Real-world example: Spack {background-color="#f0f4fa"}
-
-Used by national labs, universities, and supercomputing centers: `github.com/spack/spack`
-
-- ✅ README with clear description and getting-started guide
-- ✅ LICENSE (Apache-2.0 or MIT, your choice)
-- ✅ CITATION.cff file
-- ✅ Documentation
-- ✅ Code of conduct and contributing guide
-
-## What we'll build together
-
-Starting from the bare `main` state in your fork, progressively:
-
-1. Sharing research software *(exploring the starting repository)*
-2. Adding an open-source license
-3. Creating a CITATION.cff file
-4. Minting a DOI and creating a release
-5. Improving metadata and discoverability
-6. Wrap-up and reflection
+**Today:** 2 License → 3 CITATION.cff → 4 Release + DOI → 5 Metadata → wrap-up
 
 ::: {.small}
-View-only reference branches (`02-add-license`, `03-add-citation`, `04-create-release`, `05-add-metadata`) let you check your work at any point.
+The labels come from FAIR4RS: Findable, Accessible, Interoperable, Reusable. Check your work any time against the matching reference branch (`02-add-license` … `05-add-metadata`) in the upstream repo.
 :::
 
-# Sharing Research Software Effectively {.title-slide data-background-color="#1f335e"}
-
-## Present, but not yet usable
-
-Most research software on GitHub is an unprocessed accession: it made it into the building but not into the collection. Technically held, practically invisible.
-
-**Public is not the same as shared.** A repo with no license, no citation, and no real description is an unlocked reading room with no catalog.
-
 ::: {.notes}
-This episode is the collection assessment: look at a bare repository the way you'd
-look at a new accession, and learn to name the one addition that moves it from
-"present" to "usable." Reviewers now ask "where is the code" — a bare repo is a
-worse answer than it looks, because it invites follow-up questions it can't answer.
+Keep FAIR light: a preview, not a lecture. Learners understand the letters better
+after they build each piece. Name the arc and move on.
+
+Optional real-world example if someone asks what "good" looks like at scale:
+Spack (github.com/spack/spack) has a clear README, Apache-2.0 or MIT license,
+CITATION.cff, docs, and a code of conduct and contributing guide.
 :::
 
 ## Fork the demo repository
@@ -364,7 +293,7 @@ signed in.
 
 ## Supporting others: a four-question triage {background-color="#f0f4fa"}
 
-When a researcher brings you their repo, do a fast triage, not a code review.
+**Public is not the same as shared.** When a researcher brings you their repo, do a fast triage, not a code review.
 
 1. **Rights** — is there a license? Can this legally be reused at all?
 2. **Credit** — can a stranger tell who made it and how to cite it?
@@ -376,6 +305,9 @@ The goal is the **single highest-value next step**, not fixing everything.
 **Try it now (2 min):** answer all four for your fork of `software-demo`.
 
 ::: {.notes}
+Think of a bare repo as an unprocessed accession: in the building, not in the
+collection. Technically held, practically invisible.
+
 Most repos need one or two changes to go from unusable to useful, and your value is
 helping the researcher see which one. That ordering is the whole skill — and it's
 one this audience already has from appraising every other kind of material. This
