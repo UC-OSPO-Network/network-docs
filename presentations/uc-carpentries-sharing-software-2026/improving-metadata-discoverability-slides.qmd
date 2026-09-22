@@ -32,9 +32,9 @@ format:
 
 A Zenodo record with a bare title and no keywords is a catalog record with no subject headings: retrievable if you already know it exists, invisible if you don't.
 
-The systems are GitHub topics, Zenodo fields, and a README instead of a catalog. The judgment — *what would a seeker search for, and does this record contain it* — is unchanged.
+The tools are GitHub topics, Zenodo fields, and a README. The question is the same: *what would a seeker search for, and does this record contain it?*
 
-In earlier episodes you created a CITATION.cff, a license, a repo structure, and a Zenodo DOI. **This episode ties them together.**
+You already have a license, a CITATION.cff, and a DOI. **This episode ties them together.**
 
 ::: {.notes}
 Leigh normally teaches this episode; she's out today, so I'm covering it. Brief
@@ -64,9 +64,9 @@ reads the same across catalog records. When they drift, indexes treat one piece 
 software as several, and its citations scatter.
 :::
 
-## GitHub Topics improve search ranking
+## Add GitHub Topics
 
-Add these in `Settings → General → Topics`:
+On your repo's front page, click the **gear icon next to About**, then fill in **Topics**:
 
 - **Discipline tags** — `geospatial`, `text-mining`, `materials-science`
 - **Method tags** — `simulation`, `visualization`, `machine-learning`
@@ -84,20 +84,16 @@ and the Zenodo record later — consistency is the point.
 
 **Your README is your software's front door.**
 
-If users can't understand what it does, how to install it, or how to use it in **30 seconds**, they leave.
+If people can't tell what it does, how to install it, and how to use it in **30 seconds**, they leave.
 
-A collection without a finding aid can only be used by someone with time to read every box. A repo without a real README can only be used by its author.
-
-::: {.small}
-The 30-second rule is scope-and-content-note discipline applied to code.
-:::
+A repo without a real README is a collection without a finding aid: only its author can use it.
 
 ## README: 7 essential sections
 
 :::: {.columns}
 
 ::: {.column width="50%"}
-1. **About** — what does this do? (2-3 sentences)
+1. **About** — what it does, in 2-3 sentences
 2. **Features** — key capabilities
 3. **Getting Started** — prerequisites + install
 4. **Usage** — minimal working example
@@ -173,17 +169,17 @@ Every tip maps back to FAIR: this is the "Reusable" half made concrete.
 :::: {.columns}
 
 ::: {.column width="33%"}
-**CONTRIBUTING.md**
+**CONTRIBUTING.md**\
 How to contribute. Worth adding *if* you want contributions — or say plainly you don't.
 :::
 
 ::: {.column width="33%"}
-**CODE_OF_CONDUCT.md**
+**CODE_OF_CONDUCT.md**\
 Behavioral standards. [Contributor Covenant][cc] is the standard choice.
 :::
 
 ::: {.column width="33%"}
-**CHANGELOG.md**
+**CHANGELOG.md**\
 Version history: what's new, what broke, what changed.
 :::
 
@@ -203,24 +199,24 @@ please just open an issue" is a complete, honest CONTRIBUTING.md.
 | File | What GitHub does |
 |---|---|
 | `README.md` | Renders as the repository's landing page |
-| `LICENSE` | Offers a license-template picker |
+| `LICENSE` | Shows the license in the repo sidebar |
 | `CITATION.cff` | Adds "Cite this repository" with APA/BibTeX |
 | `CODE_OF_CONDUCT.md` | Counts toward the community profile |
 | `CONTRIBUTING.md` | Links guidelines when someone opens an issue/PR |
 | `SECURITY.md` | Becomes the security policy |
 
 ::: {.small}
-Only appears after the file is on the default branch. Teach the *pattern* — the filename is a signal — not the exact button, since GitHub changes these over time.
+These only appear once the file is on the default branch. GitHub changes the details, so teach the pattern: the filename is the signal.
 :::
 
 ## Where should software live? {background-color="#f0f4fa"}
 
 **Zenodo is the recommended deposit location** for software:
 
-- Integrates directly with GitHub — archives each release automatically
+- Archives each GitHub release automatically
 - Mints a DOI for every version
-- Flows into DataCite, Google Scholar, library catalogs
-- Free, CERN-operated, widely recognized by journals and funders
+- Registers records with DataCite, which discovery services harvest
+- Free, run by CERN, recognized by journals and funders
 
 Dataverse and Dryad are good for **datasets**, but don't auto-integrate with GitHub releases the same way.
 
@@ -230,7 +226,7 @@ UC-specific: all UC campuses have Dryad. If you deposit data there, Dryad prompt
 
 ## Zenodo metadata is what discovery systems see
 
-When you deposit on Zenodo, the record flows into **DataCite**, **Google Scholar**, and **library catalogs** (EBSCO, Primo, WorldCat).
+Zenodo registers each record with **DataCite**. Search tools and discovery services pick it up from there, so the Zenodo record is what they show.
 
 Add or refine: authors + ORCIDs, keywords, related works, funding, a readable description.
 
@@ -251,30 +247,18 @@ tidying a record, you are deciding whether it's findable at all. This is where a
 librarian in the room can visibly outperform the researchers.
 :::
 
-## Challenge: identify useful metadata
-
-::: {.project-badge}
-⏱ 2 min
-:::
-
-List three elements you'd add to improve a repository's discoverability.
-
-::: {.fragment}
-**Examples:** ORCID IDs for each author · keywords describing domain and function · a link to a related article or dataset · funding acknowledgment
-:::
-
 ## Challenge: improve your Zenodo record
 
 ::: {.project-badge}
 ⏱ 5 min
 :::
 
-Open your Zenodo record from the earlier release episode. Select **Edit**, and add:
+Open your record on **Zenodo Sandbox** (sandbox.zenodo.org) from the release episode. Select **Edit**, and add:
 
 - keywords
-- authors and ORCIDs
-- a description
-- related publication DOIs and funding
+- author ORCIDs
+- a real description
+- *optional:* a related paper or funder, if you have one
 
 ::: {.fragment}
 Save and publish the updated record when done.
@@ -286,19 +270,21 @@ Save and publish the updated record when done.
 ⏱ 3 min
 :::
 
-A researcher's tool has been public on GitHub for a year. One-line README, no topics, Zenodo deposit with only a title. **Which single change matters most?**
+A tool has been public on GitHub for a year: one-line README, no topics, a Zenodo record with only a title. **Which single change matters most?**
 
-A. Add collaborators &nbsp;&nbsp; B. Descriptive topics + matching keywords + a description &nbsp;&nbsp; C. More frequent commits &nbsp;&nbsp; D. A shorter name
+A. Add collaborators\
+B. Descriptive topics, matching keywords, and a description\
+C. More frequent commits\
+D. A shorter name
 
 ::: {.fragment}
-**B.** Discovery happens through *description*, not access level or activity. This is the same reason a catalog record with no subject headings is nearly invisible.
+**B.** Discovery runs on *description*, not activity. Same reason a catalog record with no subject headings is nearly invisible.
 :::
 
 ## Key points
 
-- Metadata increases discoverability in GitHub, Zenodo, and scholarly indexes
-- Keep information consistent across CITATION.cff, README, GitHub topics, and Zenodo — that's authority control
-- Thoughtful metadata supports FAIR and helps others reuse your software
+- Description is what makes software findable, on GitHub, Zenodo, and beyond
+- Keep it consistent across CITATION.cff, README, topics, and Zenodo: that's authority control
 
 ::: {.notes}
 Hand off to wrap-up. Remind the room the reference branches are there the whole
