@@ -44,8 +44,10 @@ UC Carpentries Workshop Series · Fall 2026
 
 We'll begin shortly. Grab the collaborative notes and settle in.
 
-::: {.small style="color: rgba(255,255,255,0.85); font-size: 0.55em;"}
-pad.carpentries.org/2026-fall-uc-sharing-research-softwaare · ucospo.net/research-software-citable-discoverable
+::: {style="margin-top: 1.5em; font-size: 0.85em; color: rgba(255,255,255,0.9); line-height: 1.8;"}
+**Etherpad:** pad.carpentries.org/2026-fall-uc-sharing-research-softwaare
+
+**Lesson site:** ucospo.net/research-software-citable-discoverable
 :::
 
 ::: {.notes}
