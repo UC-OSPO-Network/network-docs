@@ -110,7 +110,7 @@ skip something, the lesson site has it. Post questions in the Etherpad so nothin
 gets lost — nobody needs to unmute unless they want to.
 :::
 
-# Software Is the Missing Scholarly Output
+# Software Is the Missing Scholarly Output {.title-slide data-background-color="#1f335e"}
 
 ## The question that starts this lesson
 
@@ -318,7 +318,7 @@ Starting from the bare `main` state in your fork, progressively:
 View-only reference branches (`02-add-license`, `03-add-citation`, `04-create-release`, `05-add-metadata`) let you check your work at any point.
 :::
 
-# Sharing Research Software Effectively
+# Sharing Research Software Effectively {.title-slide data-background-color="#1f335e"}
 
 ## Present, but not yet usable
 
