@@ -124,37 +124,30 @@ gets lost — nobody needs to unmute unless they want to.
 
 > "The journal accepted my paper, but they want a citable version of the code, with a DOI. How do I do that?"
 
-Ten years ago, the same question arrived about **datasets** — and the library built the answer: a persistent identifier, a catalog record, a citation format, a preservation copy.
+Ten years ago, the same question arrived about **datasets** — and the library built the answer: a persistent identifier, a catalog record, a citation format, a preservation copy. Software is the third thing modern research runs on, and mostly hasn't gotten that treatment yet.
 
-Software is the third thing modern research runs on. Mostly, it hasn't gotten that treatment yet.
+:::: {.columns}
+
+::: {.column width="50%"}
+**You write research software**, and want to make your own code citable, reusable, and discoverable.
+:::
+
+::: {.column width="50%"}
+**You support people who do**, as a librarian, OSPO member, or research-support specialist.
+:::
+
+::::
+
+Watch for **Supporting others** call-outs — they translate each step into advising and consultation work.
 
 ::: {.notes}
 This is a real question faculty ask. Lead with it — researchers don't adopt these
 practices because they're virtuous, they adopt them because journals are starting to
 require citable code deposits, funders ask, and a DOI turns invisible labor into a
 countable, citable output for their CV. This is credit they're currently leaving on
-the table.
+the table. The hands-on steps that follow are the same regardless of which audience
+you're in.
 :::
-
-## Who this lesson is for
-
-:::: {.columns}
-
-::: {.column width="50%"}
-### You write research software
-
-...and want to make your own code citable, reusable, and discoverable.
-:::
-
-::: {.column width="50%"}
-### You support people who do
-
-...as a librarian, OSPO member, or research-support specialist advising others.
-:::
-
-::::
-
-The hands-on steps are the same either way. Watch for **Supporting others** call-outs — they translate each technical step into advising and consultation work.
 
 ## How common is the software citation gap?
 
@@ -375,23 +368,15 @@ When a researcher brings you their repo, you're doing a fast triage, not a full 
 
 The goal is the **single highest-value next step**, not fixing everything.
 
+**Try it now:** open your fork of `software-demo` and spend 2 minutes answering all four for yourself. We'll close every gap you find over the next episodes.
+
 ::: {.notes}
 Most repos need one or two changes to go from unusable to useful, and your value is
 helping the researcher see which one. That ordering is the whole skill — and it's
 one this audience already has from appraising every other kind of material. This
 four-question framing is also the take-home tool: the five-minute consultation
-format the whole lesson builds toward.
+format the whole lesson builds toward. Give them the full two minutes before moving on.
 :::
-
-## Try it: inventory the demo repository
-
-Open your fork of **software-demo**. Spend 2 minutes, then answer:
-
-- Could you run this code today? What's missing?
-- Would you know who created it, or how to credit them?
-- Could you legally reuse or modify it?
-
-We'll address every one of these gaps together over the next episodes.
 
 ## Key points
 
