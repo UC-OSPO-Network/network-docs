@@ -9,7 +9,7 @@ author:
   - name: Karla Padilla
     affiliation: "UCSD OSPO"
   - name: Reid Otsuji
-    affiliation: "UCSD"
+    affiliation: "UCSD OSPO"
   - name: Laura Langdon
     affiliation: "UC OSPO"
 date: "2026-09-23"
