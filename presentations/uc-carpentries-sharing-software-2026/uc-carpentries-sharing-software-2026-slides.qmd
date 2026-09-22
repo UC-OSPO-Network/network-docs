@@ -393,3 +393,21 @@ format the whole lesson builds toward. Give them the full two minutes before mov
 Wrap this block and hand off to the next presenter for the License episode. Remind
 the room the reference branches are there the whole time if anyone falls behind.
 :::
+
+## Up next {.title-slide data-background-color="#1f335e"}
+
+::: {style="margin-top: 1em; font-size: 0.95em; line-height: 2;"}
+**Karla Padilla** — Adding an Open-Source License
+
+**Laura Langdon** — Creating a CITATION.cff File
+
+**Reid Otsuji** — Minting a DOI and Creating a Release
+:::
+
+::: {style="margin-top: 1.5em; font-size: 0.75em; color: rgba(255,255,255,0.85);"}
+Then back to Tim for Improving Metadata and Discoverability.
+:::
+
+::: {.notes}
+Handoff slide. Introduce Karla by name and thank the room before stepping back.
+:::
