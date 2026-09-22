@@ -3,11 +3,11 @@ title: "Sharing Research Software"
 subtitle: "Reproducible, Citable, and Discoverable"
 author:
   - name: Tim Dennis
-    affiliation: "Data Science Center, UCLA Library"
+    affiliation: "UCLA OSPO"
   - name: Leigh Phan
     affiliation: "UCLA OSPO"
   - name: Karla Padilla
-    affiliation: "UCSD"
+    affiliation: "UCSD OSPO"
   - name: Reid Otsuji
     affiliation: "UCSD"
   - name: Laura Langdon
