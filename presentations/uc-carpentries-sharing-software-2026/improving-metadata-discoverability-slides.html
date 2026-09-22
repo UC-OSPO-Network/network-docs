@@ -1176,23 +1176,38 @@ display:block!important;
 </section>
 <section id="before-after" class="slide level2">
 <h2>Before → after</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
 <p><strong>❌ Before</strong> (<code>main</code>, starting state)</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href aria-label="1"></a><span class="fu"># Biodiversity Analysis Toolkit</span></span>
 <span id="cb1-2"><a href aria-label="2"></a></span>
-<span id="cb1-3"><a href aria-label="3"></a>A script.</span>
-<span id="cb1-4"><a href aria-label="4"></a></span>
-<span id="cb1-5"><a href aria-label="5"></a>No description. No instructions. No citation. Unusable.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>✅ After</strong> (<code>05-add-metadata</code>)</p>
+<span id="cb1-3"><a href aria-label="3"></a>Analysis tools for biodiversity</span>
+<span id="cb1-4"><a href aria-label="4"></a>research data.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>One line of description. No install steps, no usage, no citation, no license, no one to contact.</p>
+</div><div class="column" style="width:60%;">
+<p><strong>✅ After</strong> (<code>05-add-metadata</code>, abridged)</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href aria-label="1"></a><span class="fu"># Biodiversity Analysis Toolkit</span></span>
-<span id="cb2-2"><a href aria-label="2"></a>Analysis tools for biodiversity research.</span>
-<span id="cb2-3"><a href aria-label="3"></a></span>
-<span id="cb2-4"><a href aria-label="4"></a><span class="fu">## Getting Started</span></span>
-<span id="cb2-5"><a href aria-label="5"></a>pip install -r requirements.txt</span>
-<span id="cb2-6"><a href aria-label="6"></a></span>
-<span id="cb2-7"><a href aria-label="7"></a><span class="fu">## Citation</span></span>
-<span id="cb2-8"><a href aria-label="8"></a><span class="co">[</span><span class="ot">DOI badge</span><span class="co">]</span>   License: BSD-3</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-2"><a href aria-label="2"></a><span class="co">[</span><span class="ot">DOI badge</span><span class="co">] [License badge]</span></span>
+<span id="cb2-3"><a href aria-label="3"></a>Analysis tools for biodiversity...   <span class="co">&lt;!-- 1 About --&gt;</span></span>
+<span id="cb2-4"><a href aria-label="4"></a></span>
+<span id="cb2-5"><a href aria-label="5"></a><span class="fu">## Features                          &lt;!-- 2 --&gt;</span></span>
+<span id="cb2-6"><a href aria-label="6"></a><span class="ss">- </span>Citable, open source, documented</span>
+<span id="cb2-7"><a href aria-label="7"></a></span>
+<span id="cb2-8"><a href aria-label="8"></a><span class="fu">## Getting Started                   &lt;!-- 3 --&gt;</span></span>
+<span id="cb2-9"><a href aria-label="9"></a>Prerequisites: Python 3.9+</span>
+<span id="cb2-10"><a href aria-label="10"></a><span class="fu">### Installation &amp; Usage             &lt;!-- 4 --&gt;</span></span>
+<span id="cb2-11"><a href aria-label="11"></a>pip install -r requirements.txt</span>
+<span id="cb2-12"><a href aria-label="12"></a>python src/analysis.py</span>
+<span id="cb2-13"><a href aria-label="13"></a></span>
+<span id="cb2-14"><a href aria-label="14"></a><span class="fu">## Citation                          &lt;!-- 5 --&gt;</span></span>
+<span id="cb2-15"><a href aria-label="15"></a>Cite via CITATION.cff or the DOI badge.</span>
+<span id="cb2-16"><a href aria-label="16"></a><span class="fu">## License                           &lt;!-- 6 --&gt;</span></span>
+<span id="cb2-17"><a href aria-label="17"></a>BSD 3-Clause. See LICENSE.</span>
+<span id="cb2-18"><a href aria-label="18"></a><span class="fu">## Contact                           &lt;!-- 7 --&gt;</span></span>
+<span id="cb2-19"><a href aria-label="19"></a>Open an issue in this repository.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></div>
 <aside class="notes">
-<p>Professional. Citable. Usable. Every tip maps back to FAIR: this is the “Reusable” half of the equation made concrete.</p>
+<p>Every one of the 7 sections from the previous slide is here; the numbers in the comments map back to that list. Usage is folded into Getting Started, which is common and fine. The real README also has Contributing, Code of Conduct, and Authors sections; open the 05-add-metadata branch to show the full thing. Every tip maps back to FAIR: this is the “Reusable” half made concrete.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;

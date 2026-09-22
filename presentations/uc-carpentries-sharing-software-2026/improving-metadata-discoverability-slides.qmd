@@ -117,32 +117,55 @@ The 30-second rule is scope-and-content-note discipline applied to code.
 
 ## Before → after
 
+:::: {.columns}
+
+::: {.column width="40%"}
 **❌ Before** (`main`, starting state)
 
 ```markdown
 # Biodiversity Analysis Toolkit
 
-A script.
-
-No description. No instructions. No citation. Unusable.
+Analysis tools for biodiversity
+research data.
 ```
 
-**✅ After** (`05-add-metadata`)
+One line of description. No install steps, no usage, no citation, no license, no one to contact.
+:::
+
+::: {.column width="60%"}
+**✅ After** (`05-add-metadata`, abridged)
 
 ```markdown
 # Biodiversity Analysis Toolkit
-Analysis tools for biodiversity research.
+[DOI badge] [License badge]
+Analysis tools for biodiversity...   <!-- 1 About -->
 
-## Getting Started
+## Features                          <!-- 2 -->
+- Citable, open source, documented
+
+## Getting Started                   <!-- 3 -->
+Prerequisites: Python 3.9+
+### Installation & Usage             <!-- 4 -->
 pip install -r requirements.txt
+python src/analysis.py
 
-## Citation
-[DOI badge]   License: BSD-3
+## Citation                          <!-- 5 -->
+Cite via CITATION.cff or the DOI badge.
+## License                           <!-- 6 -->
+BSD 3-Clause. See LICENSE.
+## Contact                           <!-- 7 -->
+Open an issue in this repository.
 ```
+:::
+
+::::
 
 ::: {.notes}
-Professional. Citable. Usable. Every tip maps back to FAIR: this is the
-"Reusable" half of the equation made concrete.
+Every one of the 7 sections from the previous slide is here; the numbers in the
+comments map back to that list. Usage is folded into Getting Started, which is
+common and fine. The real README also has Contributing, Code of Conduct, and
+Authors sections; open the 05-add-metadata branch to show the full thing.
+Every tip maps back to FAIR: this is the "Reusable" half made concrete.
 :::
 
 ## Beyond the README: community health files {background-color="#f0f4fa"}
