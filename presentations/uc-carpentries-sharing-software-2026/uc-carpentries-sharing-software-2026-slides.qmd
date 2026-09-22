@@ -216,26 +216,19 @@ The Bus Factor
 
 The number of people who need to be "hit by a bus" before a project becomes unmaintainable. **For most research code, the answer is one.**
 
-How many people would have to leave before this software becomes unrecoverable? A library would never accept a collection with a bus factor of one — that's exactly what an un-deposited, un-documented repository is.
+This isn't hypothetical, even for critical infrastructure. Before 2014, OpenSSL secured about a sixth of the web's encrypted traffic and ran on **~$2,000/year** in donations, with **one person paid** to maintain it. Then Heartbleed happened.
+
+::: {.small}
+Core Infrastructure Initiative, Linux Foundation. en.wikipedia.org/wiki/Core_Infrastructure_Initiative
+:::
 
 ::: {.notes}
 Depositing a release into an archive like Zenodo is the software equivalent of
 accessioning: it moves the object from a personal account to a preservation system
-that outlives the individual. This framing lands well with library/collections
-audiences specifically.
+that outlives the individual. Heartbleed is the sharpest version of this story --
+huge chunks of the internet's security depended on one underfunded volunteer's
+continued availability, and almost nobody knew until it broke.
 :::
-
-## Can anyone actually run it?
-
-There's a third problem — the one researchers feel first: software that only runs on its author's machine.
-
-```output
-$ python src/analysis.py
-
-ModuleNotFoundError: No module named 'numpy'
-```
-
-The core lesson makes software **citable and discoverable**. The **optional** pixi episode at the end makes it **runnable**, too.
 
 ## The fix: FAIR4RS principles
 
@@ -264,13 +257,6 @@ Keep this light — a preview, not a lecture. Learners will understand F/A/I/R m
 better after they actually create the license, citation metadata, DOI, and README.
 Name the four principles, point ahead to where each gets built, move on.
 :::
-
-## What you're doing today
-
-- ✅ **License** — so others can legally reuse your work
-- ✅ **Citation** (CITATION.cff + DOI) — so you get academic credit
-- ✅ **README & metadata** — so people can find and understand it
-- ✅ **Environment** *(optional)* — so it also runs on any machine
 
 ## Before → after
 
@@ -319,8 +305,7 @@ Starting from the bare `main` state in your fork, progressively:
 3. Creating a CITATION.cff file
 4. Minting a DOI and creating a release
 5. Improving metadata and discoverability
-6. Managing environments with pixi *(optional)*
-7. Wrap-up and reflection
+6. Wrap-up and reflection
 
 ::: {.small}
 View-only reference branches (`02-add-license`, `03-add-citation`, `04-create-release`, `05-add-metadata`) let you check your work at any point.
