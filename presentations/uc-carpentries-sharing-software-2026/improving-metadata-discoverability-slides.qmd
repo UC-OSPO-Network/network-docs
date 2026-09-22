@@ -1,0 +1,283 @@
+---
+title: "Improving Metadata and Discoverability"
+subtitle: "Making your software findable"
+author:
+  - name: Tim Dennis
+    affiliation: "UCLA OSPO"
+date: "2026-09-23"
+format:
+  revealjs:
+    embed-resources: true
+    theme: ucospo-theme.scss
+    logo: images/uc-ospo-network-logo-light.svg
+    include-after-body: logo-swap.txt
+    slide-number: true
+    footer: "UC Carpentries Fall 2026 · Improving Metadata and Discoverability · ucospo.net"
+    transition: none
+    incremental: false
+    width: 1280
+    height: 720
+    hash: true
+    controls: true
+    controls-layout: bottom-right
+    keyboard: true
+    title-slide-attributes:
+      data-background-image: images/uc-ospo-network-logo-white.svg
+      data-background-size: "34% auto"
+      data-background-position: "4% 5%"
+      data-background-color: "#1f335e"
+---
+
+## Findability comes from description
+
+A Zenodo record with a bare title and no keywords is a catalog record with no subject headings: retrievable if you already know it exists, invisible if you don't.
+
+The systems are GitHub topics, Zenodo fields, and a README instead of a catalog. The judgment — *what would a seeker search for, and does this record contain it* — is unchanged.
+
+In earlier episodes you created a CITATION.cff, a license, a repo structure, and a Zenodo DOI. **This episode ties them together.**
+
+::: {.notes}
+Leigh normally teaches this episode; she's out today, so I'm covering it. Brief
+acknowledgment, then move on.
+
+This is the episode where the lesson lands fully inside a library audience's
+expertise. Researchers treat metadata as a form to rush through; a scholcomm
+professional treats it as the mechanism of discovery. The pitch to the researcher
+is blunt: the work is finished, and five minutes of description determines whether
+anyone ever finds it.
+:::
+
+## What counts as useful metadata?
+
+Good metadata answers predictable questions with minimal effort from the reader:
+
+- **What is this software?** — short description or abstract
+- **Who made it?** — authors, ORCIDs
+- **How do I cite it?** — CITATION.cff + DOI
+- **What domain is it for?** — keywords
+- **What else does it relate to?** — related article, dataset, funding source
+
+::: {.notes}
+This is authority control: title, authors, and description should read the same in
+the README, the CITATION.cff, and the Zenodo record, for the same reason a name
+reads the same across catalog records. When they drift, indexes treat one piece of
+software as several, and its citations scatter.
+:::
+
+## GitHub Topics improve search ranking
+
+Add these in `Settings → General → Topics`:
+
+- **Discipline tags** — `geospatial`, `text-mining`, `materials-science`
+- **Method tags** — `simulation`, `visualization`, `machine-learning`
+- **Language tags** — `python`, `r`
+
+![](images/repository-topics.png){fig-align="center" height="380"}
+
+::: {.notes}
+Live demo: open the software-demo repo, click the gear icon next to About, add
+topics separated by spaces. Reuse the same topic words you'll put in CITATION.cff
+and the Zenodo record later — consistency is the point.
+:::
+
+## The 30-second rule
+
+**Your README is your software's front door.**
+
+If users can't understand what it does, how to install it, or how to use it in **30 seconds**, they leave.
+
+A collection without a finding aid can only be used by someone with time to read every box. A repo without a real README can only be used by its author.
+
+::: {.small}
+The 30-second rule is scope-and-content-note discipline applied to code.
+:::
+
+## README: 7 essential sections
+
+:::: {.columns}
+
+::: {.column width="50%"}
+1. **About** — what does this do? (2-3 sentences)
+2. **Features** — key capabilities
+3. **Getting Started** — prerequisites + install
+4. **Usage** — minimal working example
+:::
+
+::: {.column width="50%"}
+5. **Citation** — link to CITATION.cff / DOI
+6. **License** — state terms explicitly
+7. **Contact** — how to get help
+:::
+
+::::
+
+::: {.small}
+[UC OSPO README Guide](https://ucospo.net/oss-resources/template-guides/readme-guide/) *(UC-specific)*
+:::
+
+## Before → after
+
+**❌ Before** (`main`, starting state)
+
+```markdown
+# Biodiversity Analysis Toolkit
+
+A script.
+
+No description. No instructions. No citation. Unusable.
+```
+
+**✅ After** (`05-add-metadata`)
+
+```markdown
+# Biodiversity Analysis Toolkit
+Analysis tools for biodiversity research.
+
+## Getting Started
+pip install -r requirements.txt
+
+## Citation
+[DOI badge]   License: BSD-3
+```
+
+::: {.notes}
+Professional. Citable. Usable. Every tip maps back to FAIR: this is the
+"Reusable" half of the equation made concrete.
+:::
+
+## Beyond the README: community health files {background-color="#f0f4fa"}
+
+:::: {.columns}
+
+::: {.column width="33%"}
+**CONTRIBUTING.md**
+How to contribute. Worth adding *if* you want contributions — or say plainly you don't.
+:::
+
+::: {.column width="33%"}
+**CODE_OF_CONDUCT.md**
+Behavioral standards. [Contributor Covenant][cc] is the standard choice.
+:::
+
+::: {.column width="33%"}
+**CHANGELOG.md**
+Version history: what's new, what broke, what changed.
+:::
+
+::::
+
+[cc]: https://www.contributor-covenant.org/
+
+::: {.notes}
+CONTRIBUTING.md is not universal best practice — plenty of solid research software
+has no active contributor pipeline, and an empty invitation you can't support
+creates more work than it saves. "I'm not looking for contributors right now,
+please just open an issue" is a complete, honest CONTRIBUTING.md.
+:::
+
+## GitHub recognizes certain filenames
+
+| File | What GitHub does |
+|---|---|
+| `README.md` | Renders as the repository's landing page |
+| `LICENSE` | Offers a license-template picker |
+| `CITATION.cff` | Adds "Cite this repository" with APA/BibTeX |
+| `CODE_OF_CONDUCT.md` | Counts toward the community profile |
+| `CONTRIBUTING.md` | Links guidelines when someone opens an issue/PR |
+| `SECURITY.md` | Becomes the security policy |
+
+::: {.small}
+Only appears after the file is on the default branch. Teach the *pattern* — the filename is a signal — not the exact button, since GitHub changes these over time.
+:::
+
+## Where should software live? {background-color="#f0f4fa"}
+
+**Zenodo is the recommended deposit location** for software:
+
+- Integrates directly with GitHub — archives each release automatically
+- Mints a DOI for every version
+- Flows into DataCite, Google Scholar, library catalogs
+- Free, CERN-operated, widely recognized by journals and funders
+
+Dataverse and Dryad are good for **datasets**, but don't auto-integrate with GitHub releases the same way.
+
+::: {.small}
+UC-specific: all UC campuses have Dryad. If you deposit data there, Dryad prompts a linked Zenodo code deposit automatically.
+:::
+
+## Zenodo metadata is what discovery systems see
+
+When you deposit on Zenodo, the record flows into **DataCite**, **Google Scholar**, and **library catalogs** (EBSCO, Primo, WorldCat).
+
+Add or refine: authors + ORCIDs, keywords, related works, funding, a readable description.
+
+::: {.small}
+**Caution:** if a repo has a `.zenodo.json`, Zenodo uses *that* file, not `CITATION.cff`. Keep them in sync or you'll publish two different citation records for the same software.
+:::
+
+## Supporting others: priority order when metadata is thin {background-color="#f0f4fa"}
+
+1. A readable **description** — the biggest single loss when it's empty
+2. **Author ORCIDs** — every J. Chen on Zenodo is indistinguishable without one
+3. **Keywords**, reused consistently across GitHub, CITATION.cff, Zenodo
+4. **Related works** — link the software to its paper, dataset, grant
+
+::: {.notes}
+Thin metadata means the software never surfaces in the catalog. You are not
+tidying a record, you are deciding whether it's findable at all. This is where a
+librarian in the room can visibly outperform the researchers.
+:::
+
+## Challenge: identify useful metadata
+
+::: {.project-badge}
+⏱ 2 min
+:::
+
+List three elements you'd add to improve a repository's discoverability.
+
+::: {.fragment}
+**Examples:** ORCID IDs for each author · keywords describing domain and function · a link to a related article or dataset · funding acknowledgment
+:::
+
+## Challenge: improve your Zenodo record
+
+::: {.project-badge}
+⏱ 5 min
+:::
+
+Open your Zenodo record from the earlier release episode. Select **Edit**, and add:
+
+- keywords
+- authors and ORCIDs
+- a description
+- related publication DOIs and funding
+
+::: {.fragment}
+Save and publish the updated record when done.
+:::
+
+## Challenge: which change makes it discoverable?
+
+::: {.project-badge}
+⏱ 3 min
+:::
+
+A researcher's tool has been public on GitHub for a year. One-line README, no topics, Zenodo deposit with only a title. **Which single change matters most?**
+
+A. Add collaborators &nbsp;&nbsp; B. Descriptive topics + matching keywords + a description &nbsp;&nbsp; C. More frequent commits &nbsp;&nbsp; D. A shorter name
+
+::: {.fragment}
+**B.** Discovery happens through *description*, not access level or activity. This is the same reason a catalog record with no subject headings is nearly invisible.
+:::
+
+## Key points
+
+- Metadata increases discoverability in GitHub, Zenodo, and scholarly indexes
+- Keep information consistent across CITATION.cff, README, GitHub topics, and Zenodo — that's authority control
+- Thoughtful metadata supports FAIR and helps others reuse your software
+
+::: {.notes}
+Hand off to wrap-up. Remind the room the reference branches are there the whole
+time if anyone falls behind.
+:::
