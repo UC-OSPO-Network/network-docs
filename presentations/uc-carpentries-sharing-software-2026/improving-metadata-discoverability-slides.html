@@ -1076,8 +1076,8 @@ Tim Dennis
 <section id="findability-comes-from-description" class="slide level2">
 <h2>Findability comes from description</h2>
 <p>A Zenodo record with a bare title and no keywords is a catalog record with no subject headings: retrievable if you already know it exists, invisible if you don’t.</p>
-<p>The systems are GitHub topics, Zenodo fields, and a README instead of a catalog. The judgment — <em>what would a seeker search for, and does this record contain it</em> — is unchanged.</p>
-<p>In earlier episodes you created a CITATION.cff, a license, a repo structure, and a Zenodo DOI. <strong>This episode ties them together.</strong></p>
+<p>The tools are GitHub topics, Zenodo fields, and a README. The question is the same: <em>what would a seeker search for, and does this record contain it?</em></p>
+<p>You already have a license, a CITATION.cff, and a DOI. <strong>This episode ties them together.</strong></p>
 <aside class="notes">
 <p>Leigh normally teaches this episode; she’s out today, so I’m covering it. Brief acknowledgment, then move on.</p>
 <p>This is the episode where the lesson lands fully inside a library audience’s expertise. Researchers treat metadata as a form to rush through; a scholcomm professional treats it as the mechanism of discovery. The pitch to the researcher is blunt: the work is finished, and five minutes of description determines whether anyone ever finds it.</p>
@@ -1117,9 +1117,9 @@ overflow: hidden!important;
 display:block!important;
 }</style></aside>
 </section>
-<section id="github-topics-improve-search-ranking" class="slide level2">
-<h2>GitHub Topics improve search ranking</h2>
-<p>Add these in <code>Settings → General → Topics</code>:</p>
+<section id="add-github-topics" class="slide level2">
+<h2>Add GitHub Topics</h2>
+<p>On your repo’s front page, click the <strong>gear icon next to About</strong>, then fill in <strong>Topics</strong>:</p>
 <ul>
 <li><strong>Discipline tags</strong> — <code>geospatial</code>, <code>text-mining</code>, <code>materials-science</code></li>
 <li><strong>Method tags</strong> — <code>simulation</code>, <code>visualization</code>, <code>machine-learning</code></li>
@@ -1147,18 +1147,15 @@ display:block!important;
 <section id="the-30-second-rule" class="slide level2">
 <h2>The 30-second rule</h2>
 <p><strong>Your README is your software’s front door.</strong></p>
-<p>If users can’t understand what it does, how to install it, or how to use it in <strong>30 seconds</strong>, they leave.</p>
-<p>A collection without a finding aid can only be used by someone with time to read every box. A repo without a real README can only be used by its author.</p>
-<div class="small">
-<p>The 30-second rule is scope-and-content-note discipline applied to code.</p>
-</div>
+<p>If people can’t tell what it does, how to install it, and how to use it in <strong>30 seconds</strong>, they leave.</p>
+<p>A repo without a real README is a collection without a finding aid: only its author can use it.</p>
 </section>
 <section id="readme-7-essential-sections" class="slide level2">
 <h2>README: 7 essential sections</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ol type="1">
-<li><strong>About</strong> — what does this do? (2-3 sentences)</li>
+<li><strong>About</strong> — what it does, in 2-3 sentences</li>
 <li><strong>Features</strong> — key capabilities</li>
 <li><strong>Getting Started</strong> — prerequisites + install</li>
 <li><strong>Usage</strong> — minimal working example</li>
@@ -1224,11 +1221,14 @@ display:block!important;
 <h2>Beyond the README: community health files</h2>
 <div class="columns">
 <div class="column" style="width:33%;">
-<p><strong>CONTRIBUTING.md</strong> How to contribute. Worth adding <em>if</em> you want contributions — or say plainly you don’t.</p>
+<p><strong>CONTRIBUTING.md</strong><br>
+How to contribute. Worth adding <em>if</em> you want contributions — or say plainly you don’t.</p>
 </div><div class="column" style="width:33%;">
-<p><strong>CODE_OF_CONDUCT.md</strong> Behavioral standards. <a href="https://www.contributor-covenant.org/">Contributor Covenant</a> is the standard choice.</p>
+<p><strong>CODE_OF_CONDUCT.md</strong><br>
+Behavioral standards. <a href="https://www.contributor-covenant.org/">Contributor Covenant</a> is the standard choice.</p>
 </div><div class="column" style="width:33%;">
-<p><strong>CHANGELOG.md</strong> Version history: what’s new, what broke, what changed.</p>
+<p><strong>CHANGELOG.md</strong><br>
+Version history: what’s new, what broke, what changed.</p>
 </div></div>
 <aside class="notes">
 <p>CONTRIBUTING.md is not universal best practice — plenty of solid research software has no active contributor pipeline, and an empty invitation you can’t support creates more work than it saves. “I’m not looking for contributors right now, please just open an issue” is a complete, honest CONTRIBUTING.md.</p>
@@ -1260,7 +1260,7 @@ display:block!important;
 </tr>
 <tr class="even">
 <td><code>LICENSE</code></td>
-<td>Offers a license-template picker</td>
+<td>Shows the license in the repo sidebar</td>
 </tr>
 <tr class="odd">
 <td><code>CITATION.cff</code></td>
@@ -1281,17 +1281,17 @@ display:block!important;
 </tbody>
 </table>
 <div class="small">
-<p>Only appears after the file is on the default branch. Teach the <em>pattern</em> — the filename is a signal — not the exact button, since GitHub changes these over time.</p>
+<p>These only appear once the file is on the default branch. GitHub changes the details, so teach the pattern: the filename is the signal.</p>
 </div>
 </section>
 <section id="where-should-software-live" class="slide level2" data-background-color="#f0f4fa">
 <h2>Where should software live?</h2>
 <p><strong>Zenodo is the recommended deposit location</strong> for software:</p>
 <ul>
-<li>Integrates directly with GitHub — archives each release automatically</li>
+<li>Archives each GitHub release automatically</li>
 <li>Mints a DOI for every version</li>
-<li>Flows into DataCite, Google Scholar, library catalogs</li>
-<li>Free, CERN-operated, widely recognized by journals and funders</li>
+<li>Registers records with DataCite, which discovery services harvest</li>
+<li>Free, run by CERN, recognized by journals and funders</li>
 </ul>
 <p>Dataverse and Dryad are good for <strong>datasets</strong>, but don’t auto-integrate with GitHub releases the same way.</p>
 <div class="small">
@@ -1300,7 +1300,7 @@ display:block!important;
 </section>
 <section id="zenodo-metadata-is-what-discovery-systems-see" class="slide level2">
 <h2>Zenodo metadata is what discovery systems see</h2>
-<p>When you deposit on Zenodo, the record flows into <strong>DataCite</strong>, <strong>Google Scholar</strong>, and <strong>library catalogs</strong> (EBSCO, Primo, WorldCat).</p>
+<p>Zenodo registers each record with <strong>DataCite</strong>. Search tools and discovery services pick it up from there, so the Zenodo record is what they show.</p>
 <p>Add or refine: authors + ORCIDs, keywords, related works, funding, a readable description.</p>
 <div class="small">
 <p><strong>Caution:</strong> if a repo has a <code>.zenodo.json</code>, Zenodo uses <em>that</em> file, not <code>CITATION.cff</code>. Keep them in sync or you’ll publish two different citation records for the same software.</p>
@@ -1328,27 +1328,17 @@ overflow: hidden!important;
 display:block!important;
 }</style></aside>
 </section>
-<section id="challenge-identify-useful-metadata" class="slide level2">
-<h2>Challenge: identify useful metadata</h2>
-<div class="project-badge">
-<p>⏱ 2 min</p>
-</div>
-<p>List three elements you’d add to improve a repository’s discoverability.</p>
-<div class="fragment">
-<p><strong>Examples:</strong> ORCID IDs for each author · keywords describing domain and function · a link to a related article or dataset · funding acknowledgment</p>
-</div>
-</section>
 <section id="challenge-improve-your-zenodo-record" class="slide level2">
 <h2>Challenge: improve your Zenodo record</h2>
 <div class="project-badge">
 <p>⏱ 5 min</p>
 </div>
-<p>Open your Zenodo record from the earlier release episode. Select <strong>Edit</strong>, and add:</p>
+<p>Open your record on <strong>Zenodo Sandbox</strong> (sandbox.zenodo.org) from the release episode. Select <strong>Edit</strong>, and add:</p>
 <ul>
 <li>keywords</li>
-<li>authors and ORCIDs</li>
-<li>a description</li>
-<li>related publication DOIs and funding</li>
+<li>author ORCIDs</li>
+<li>a real description</li>
+<li><em>optional:</em> a related paper or funder, if you have one</li>
 </ul>
 <div class="fragment">
 <p>Save and publish the updated record when done.</p>
@@ -1359,18 +1349,20 @@ display:block!important;
 <div class="project-badge">
 <p>⏱ 3 min</p>
 </div>
-<p>A researcher’s tool has been public on GitHub for a year. One-line README, no topics, Zenodo deposit with only a title. <strong>Which single change matters most?</strong></p>
-<p>A. Add collaborators    B. Descriptive topics + matching keywords + a description    C. More frequent commits    D. A shorter name</p>
+<p>A tool has been public on GitHub for a year: one-line README, no topics, a Zenodo record with only a title. <strong>Which single change matters most?</strong></p>
+<p>A. Add collaborators<br>
+B. Descriptive topics, matching keywords, and a description<br>
+C. More frequent commits<br>
+D. A shorter name</p>
 <div class="fragment">
-<p><strong>B.</strong> Discovery happens through <em>description</em>, not access level or activity. This is the same reason a catalog record with no subject headings is nearly invisible.</p>
+<p><strong>B.</strong> Discovery runs on <em>description</em>, not activity. Same reason a catalog record with no subject headings is nearly invisible.</p>
 </div>
 </section>
 <section id="key-points" class="slide level2">
 <h2>Key points</h2>
 <ul>
-<li>Metadata increases discoverability in GitHub, Zenodo, and scholarly indexes</li>
-<li>Keep information consistent across CITATION.cff, README, GitHub topics, and Zenodo — that’s authority control</li>
-<li>Thoughtful metadata supports FAIR and helps others reuse your software</li>
+<li>Description is what makes software findable, on GitHub, Zenodo, and beyond</li>
+<li>Keep it consistent across CITATION.cff, README, topics, and Zenodo: that’s authority control</li>
 </ul>
 <aside class="notes">
 <p>Hand off to wrap-up. Remind the room the reference branches are there the whole time if anyone falls behind.</p>

@@ -1,6 +1,6 @@
 ---
-title: "Sharing Research Software"
-subtitle: "Reproducible, Citable, and Discoverable"
+title: "Making Research Software Citable & Discoverable"
+subtitle: "UC Carpentries Workshop Series · Fall 2026"
 author:
   - name: Tim Dennis
     affiliation: "UCLA OSPO"
@@ -20,7 +20,7 @@ format:
     logo: images/uc-ospo-network-logo-light.svg
     include-after-body: logo-swap.txt
     slide-number: true
-    footer: "UC Carpentries Fall 2026 · Sharing Research Software · ucospo.net"
+    footer: "UC Carpentries Fall 2026 · Citable & Discoverable Software · ucospo.net"
     transition: none
     incremental: false
     width: 1280
@@ -99,17 +99,17 @@ the workshop site and linked in the Etherpad.
 ::: {.column width="50%"}
 ### Our pedagogy
 
-- **Live coding:** we learn by doing together, and mistakes are teaching moments, not detours
-- **Mental models:** new skills land when we connect them to work you already do
-- **No overload:** a few key concepts done well beats racing through everything
+- **Hands-on:** you do each step in your own fork as we go
+- **Connect to what you know:** new skills land faster that way
+- **Fewer concepts, done well:** not a race
 :::
 
 ::: {.column width="50%"}
 ### Managing expectations
 
-- **Practical competence:** skills you can use in your role right away, not exhaustive coverage
-- **Collaborative pace:** we move as a group, and your questions help set the speed
-- **Mistakes are expected:** coding is troubleshooting and persistence, for all of us
+- **Usable today:** practical skills, not full coverage
+- **Group pace:** your questions set the speed
+- **Mistakes are expected:** for all of us
 :::
 
 ::::
@@ -126,7 +126,7 @@ gets lost — nobody needs to unmute unless they want to.
 
 > "The journal accepted my paper, but they want a citable version of the code, with a DOI. How do I do that?"
 
-Ten years ago, the same question arrived about **datasets** — and the library built the answer: a persistent identifier, a catalog record, a citation format, a preservation copy. Software is the third thing modern research runs on, and mostly hasn't gotten that treatment yet.
+Ten years ago the same question arrived about **datasets**, and libraries built the answer: a persistent identifier, a catalog record, a citation format, a preservation copy. Software mostly hasn't gotten that treatment yet.
 
 :::: {.columns}
 
@@ -140,7 +140,7 @@ Ten years ago, the same question arrived about **datasets** — and the library 
 
 ::::
 
-Watch for **Supporting others** call-outs — they translate each step into advising and consultation work.
+**Supporting others** slides translate each step into consultation work.
 
 ::: {.notes}
 This is a real question faculty ask. Lead with it — researchers don't adopt these
@@ -153,26 +153,24 @@ you're in.
 
 ## How common is the software citation gap?
 
-Research software is fundamental to modern scholarship, but challenges remain around its discoverability, reproducibility, and sustainability.
-
 :::: {.columns}
 
 ::: {.column width="50%"}
 ### 59.5%
 
-of 3.2 million PubMed Central publications mentioned at least one software item
+of 3.2 million PubMed Central articles mention at least one piece of software
 :::
 
 ::: {.column width="50%"}
 ### 38%
 
-of 2020 publications gave enough detail to **uniquely identify** the software used
+of 2020 articles give enough detail to **uniquely identify** the software they used
 :::
 
 ::::
 
 ::: {.small}
-Barker et al. (2022) doi:10.1038/s41597-022-01710-x · Schindler et al. (2022) doi:10.7717/peerj-cs.835
+Both figures: Schindler et al. (2022), PeerJ Computer Science, doi:10.7717/peerj-cs.835
 :::
 
 ## A GitHub URL isn't a citation
@@ -183,8 +181,7 @@ Barker et al. (2022) doi:10.1038/s41597-022-01710-x · Schindler et al. (2022) d
 
 - URLs break (link rot)
 - No version specified — which run produced which result?
-- No formal credit; the author's name isn't even visible
-- Cannot appear in citation metrics
+- No author name, so no credit and no citation counts
 
 ::: {.notes}
 A URL is a shelf location, not a catalog record. Citing code this way is like citing
@@ -195,13 +192,19 @@ Google Code in 2016, thousands of projects unreachable overnight.
 
 ## The right way
 
-> Phan, L., Padilla, K., Otsuji, R., & Dennis, T. (2026). *Biodiversity Analysis Toolkit* (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.123456
+> Dennis, T., Phan, L., Otsuji, R., & Padilla, K. (2026). *Biodiversity Analysis Toolkit* (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.123456
 
-- DOI is permanent — survives username changes, repo moves, even GitHub disappearing
-- Version is explicit, so someone can reproduce the exact run
-- Author gets formal credit and citation metrics
+- The DOI survives repo moves and even GitHub going away
+- The version is explicit, so someone can rerun the exact code
+- Authors get credit and citation counts
 
-The fix is a `CITATION.cff` file and a DOI — both of which you'll create in this workshop.
+You'll create both pieces today: a `CITATION.cff` file and a DOI.
+
+::: {.notes}
+The DOI here is illustrative, in real Zenodo format (10.5281). Learners mint on
+Zenodo Sandbox today, so theirs will start 10.5072 and won't resolve on doi.org.
+That's expected for practice.
+:::
 
 ## Software has a durability problem {background-color="#f0f4fa"}
 
@@ -211,7 +214,7 @@ The Bus Factor
 
 The number of people who need to be "hit by a bus" before a project becomes unmaintainable. **For most research code, the answer is one.**
 
-This isn't hypothetical, even for critical infrastructure. Before 2014, OpenSSL secured about a sixth of the web's encrypted traffic and ran on **~$2,000/year** in donations, with **one person paid** to maintain it. Then Heartbleed happened.
+Critical infrastructure too: before 2014, OpenSSL secured about a sixth of the web's encrypted traffic on **~$2,000/year** in donations, with **one person paid** to maintain it. Then Heartbleed happened.
 
 ::: {.small}
 Core Infrastructure Initiative, Linux Foundation. en.wikipedia.org/wiki/Core_Infrastructure_Initiative
@@ -230,18 +233,18 @@ continued availability, and almost nobody knew until it broke.
 :::: {.columns}
 
 ::: {.column width="50%"}
-**F — Findable**
+**F — Findable**\
 DOI, CITATION.cff, metadata
 
-**A — Accessible**
+**A — Accessible**\
 Public GitHub, archived on Zenodo
 :::
 
 ::: {.column width="50%"}
-**I — Interoperable**
+**I — Interoperable**\
 Standard formats, documented dependencies
 
-**R — Reusable**
+**R — Reusable**\
 LICENSE, README, environment files
 :::
 
@@ -286,7 +289,7 @@ Name the four principles, point ahead to where each gets built, move on.
 Used by national labs, universities, and supercomputing centers: `github.com/spack/spack`
 
 - ✅ README with clear description and getting-started guide
-- ✅ LICENSE (MIT and Apache-2.0)
+- ✅ LICENSE (Apache-2.0 or MIT, your choice)
 - ✅ CITATION.cff file
 - ✅ Documentation
 - ✅ Code of conduct and contributing guide
@@ -310,11 +313,9 @@ View-only reference branches (`02-add-license`, `03-add-citation`, `04-create-re
 
 ## Present, but not yet usable
 
-Every archivist knows the unprocessed accession: boxes that made it into the building but not into the collection — technically held, practically invisible.
+Most research software on GitHub is an unprocessed accession: it made it into the building but not into the collection. Technically held, practically invisible.
 
-Most research software on GitHub is in exactly that state. **Public is not the same as shared.**
-
-An open repository with no license, no citation, no usable description is like leaving the reading room unlocked and calling it access: people can technically get in, and nothing helps them once they do.
+**Public is not the same as shared.** A repo with no license, no citation, and no real description is an unlocked reading room with no catalog.
 
 ::: {.notes}
 This episode is the collection assessment: look at a bare repository the way you'd
@@ -343,15 +344,17 @@ upstream repository. Do not continue until most learners are in their own fork.
 
 ## The starting point
 
-```bash
+::: {style="font-size: 1.6em;"}
+```{.text code-line-numbers="false"}
 software-demo/
 ├── README.md
 ├── requirements.txt
 └── src/
     └── analysis.py
 ```
+:::
 
-This repository intentionally *lacks* many elements of good research software practice. By the end of the lesson, it will include licensing, citation metadata, improved discoverability, and versioning.
+Deliberately bare. By the end it will have a license, citation metadata, a DOI, and a real README.
 
 ::: {.notes}
 Ask learners to confirm they see exactly these three items in their fork. This is
@@ -361,7 +364,7 @@ signed in.
 
 ## Supporting others: a four-question triage {background-color="#f0f4fa"}
 
-When a researcher brings you their repo, you're doing a fast triage, not a full code review — a reference interview, not a dissertation defense.
+When a researcher brings you their repo, do a fast triage, not a code review.
 
 1. **Rights** — is there a license? Can this legally be reused at all?
 2. **Credit** — can a stranger tell who made it and how to cite it?
@@ -370,7 +373,7 @@ When a researcher brings you their repo, you're doing a fast triage, not a full 
 
 The goal is the **single highest-value next step**, not fixing everything.
 
-**Try it now:** open your fork of `software-demo` and spend 2 minutes answering all four for yourself. We'll close every gap you find over the next episodes.
+**Try it now (2 min):** answer all four for your fork of `software-demo`.
 
 ::: {.notes}
 Most repos need one or two changes to go from unusable to useful, and your value is
@@ -382,12 +385,10 @@ format the whole lesson builds toward. Give them the full two minutes before mov
 
 ## Key points
 
-- Software is a research output the scholarly system has mostly failed to catch
-- A GitHub URL is not a citation — DOIs are permanent and version-specific, URLs rot
-- Undeposited software has a bus-factor problem; forges do shut down
+- A GitHub URL is not a citation. A DOI is permanent and version-specific.
+- Software that isn't deposited anywhere depends on one person and one platform
 - FAIR4RS (Findable, Accessible, Interoperable, Reusable) is the framework
-- Public repositories increase findability, reuse potential, and citation credit
-- You'll build up your own fork step by step, episode by episode
+- Public is not the same as shared: license, citation, and description do the work
 
 ::: {.notes}
 Wrap this block and hand off to the next presenter for the License episode. Remind
