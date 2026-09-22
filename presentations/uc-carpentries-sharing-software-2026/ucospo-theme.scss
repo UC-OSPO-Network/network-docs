@@ -1,0 +1,275 @@
+/*-- scss:defaults --*/
+
+// UC OSPO brand colors
+$uc-navy:   #1f335e;
+$uc-blue:   #003cb3;
+$uc-orange: #ff9100;
+$uc-teal:   #00a291;
+$uc-text:   #222832;
+$uc-bg:     #ffffff;
+$uc-muted:  #f0f4fa;
+
+// Slide base
+$body-bg:                       $uc-bg;
+$body-color:                    $uc-text;
+$link-color:                    $uc-blue;
+$link-color-hover:              $uc-orange;
+$selection-bg:                  $uc-blue;
+
+// Headings
+$presentation-heading-color:    $uc-navy;
+$presentation-heading-font:     "Atkinson Hyperlegible", Arial, sans-serif;
+$presentation-h1-font-size:     1.8em;
+$presentation-h2-font-size:     1.3em;
+$presentation-h3-font-size:     1.0em;
+
+// Body font
+$font-family-sans-serif:        "Atkinson Hyperlegible", Arial, sans-serif;
+$font-family-monospace:         "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+$presentation-font-size-root:   30px;
+
+// Code blocks
+$code-color:                    $uc-navy;
+$code-bg:                       $uc-muted;
+
+
+/*-- scss:rules --*/
+
+// ── Font loading ──────────────────────────────────────────────────────────────
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2");
+}
+
+
+// ── Title slide ───────────────────────────────────────────────────────────────
+
+.reveal .slides section.title-slide,
+.reveal .slides section[data-state="title-slide"] {
+  background-color: $uc-navy;
+
+  h1, h2, p.subtitle {
+    color: #ffffff;
+  }
+
+  .author, .institute, .date, p {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+
+// ── Slide headings ────────────────────────────────────────────────────────────
+
+.reveal h2 {
+  border-bottom: 3px solid $uc-orange;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.6em;
+}
+
+
+// ── Inline code ───────────────────────────────────────────────────────────────
+
+.reveal code:not(pre code) {
+  background: $uc-muted;
+  color: $uc-navy;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  font-size: 0.82em;
+}
+
+
+// ── Tables ────────────────────────────────────────────────────────────────────
+
+.reveal table {
+  font-size: 0.78em;
+  width: 100%;
+}
+
+.reveal table thead tr {
+  background-color: $uc-navy;
+  color: #ffffff;
+}
+
+.reveal table tbody tr:nth-child(even) {
+  background-color: $uc-muted;
+}
+
+
+// ── Citation / small text ─────────────────────────────────────────────────────
+
+.reveal .small {
+  font-size: 0.65em;
+  color: #555555;
+  margin-top: 0.4em;
+}
+
+
+// ── Blockquotes ───────────────────────────────────────────────────────────────
+
+.reveal blockquote {
+  background: $uc-muted;
+  border-left: 4px solid $uc-orange;
+  padding: 0.5em 1em;
+  color: $uc-navy;
+  font-style: normal;
+  width: 90%;
+}
+
+
+// ── Links ─────────────────────────────────────────────────────────────────────
+
+.reveal a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.reveal a:hover {
+  color: $uc-orange;
+}
+
+
+// ── Column layout spacing ─────────────────────────────────────────────────────
+
+.reveal .columns {
+  gap: 1.5em;
+}
+
+
+// ── Slide content bottom clearance ───────────────────────────────────────────
+// Reserve space so content never overlaps the footer bar.
+
+.reveal .slides section:not(.title-slide) {
+  padding-bottom: 2.8em;
+}
+
+
+// ── Footer ────────────────────────────────────────────────────────────────────
+
+.reveal .footer {
+  font-size: 0.55em;
+  color: #555555;
+}
+
+.reveal.has-dark-background .footer {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+// ── Screen-reader-only utility ────────────────────────────────────────────────
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+// ── Keyboard focus indicator ──────────────────────────────────────────────────
+
+.reveal *:focus-visible {
+  outline: 3px solid $uc-orange;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+
+// ── UC OSS pipeline logo grid ─────────────────────────────────────────────────
+
+.reveal .uc-oss-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55em;
+  margin-top: 0.3em;
+}
+
+.reveal .campus-block {
+  display: flex;
+  align-items: center;
+  gap: 1.1em;
+  padding: 0.25em 0;
+  border-bottom: 1px solid #dde4f0;
+
+  &:last-child { border-bottom: none; }
+}
+
+.reveal .campus-label {
+  font-size: 0.6em;
+  font-weight: 700;
+  color: $uc-navy;
+  min-width: 100px;
+  max-width: 100px;
+  text-align: right;
+  padding-right: 0.75em;
+  border-right: 3px solid $uc-orange;
+  line-height: 1.3;
+}
+
+.reveal .logo-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  flex-wrap: wrap;
+}
+
+.reveal .logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15em;
+
+  img {
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  span {
+    font-size: 0.5em;
+    color: #555555;
+    white-space: nowrap;
+  }
+}
+
+.reveal .logo-item-sm img {
+  height: 32px;
+}
+
+.reveal .project-badge {
+  display: inline-flex;
+  align-items: center;
+  background: $uc-muted;
+  color: $uc-navy;
+  border: 1px solid #c6d2e8;
+  border-radius: 4px;
+  padding: 0.22em 0.6em;
+  font-size: 0.6em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+// ── Reduced motion ────────────────────────────────────────────────────────────
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,415 @@
+---
+title: "Sharing Research Software"
+subtitle: "Reproducible, Citable, and Discoverable"
+author: "Tim Dennis"
+institute:
+  - "Data Science Center, UCLA Library"
+date: "2026-09-23"
+format:
+  revealjs:
+    embed-resources: true
+    theme: ucospo-theme.scss
+    logo: images/uc-ospo-network-logo-light.svg
+    include-after-body: logo-swap.txt
+    slide-number: true
+    footer: "UC Carpentries Fall 2026 · Sharing Research Software · ucospo.net"
+    transition: none
+    incremental: false
+    width: 1280
+    height: 720
+    hash: true
+    controls: true
+    controls-layout: bottom-right
+    keyboard: true
+    title-slide-attributes:
+      data-background-image: images/uc-ospo-network-logo-white.svg
+      data-background-size: "34% auto"
+      data-background-position: "4% 5%"
+      data-background-color: "#1f335e"
+---
+
+## Welcome! {.title-slide data-background-color="#1f335e"}
+
+::: {style="margin-top: 1.2em;"}
+UC Carpentries Workshop Series · Fall 2026
+:::
+
+We'll begin shortly. Grab the collaborative notes and settle in.
+
+::: {.small style="color: rgba(255,255,255,0.85); font-size: 0.55em;"}
+pad.carpentries.org/2026-fall-uc-sharing-research-softwaare · ucospo.net/research-software-citable-discoverable
+:::
+
+::: {.notes}
+Holding slide. Welcome people by name as they arrive. Point them at the Etherpad
+(linked on the workshop site) and, once we're rolling, the demo-repo fork link.
+Remind them every session in the series stands alone: register once, attend any.
+If they haven't done the pre-workshop survey, the link is on the site.
+:::
+
+## Code of Conduct
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### We agree to
+
+- Use **welcoming and inclusive** language
+- Be **respectful** of different viewpoints and experiences
+- Accept **constructive criticism** gracefully
+- Show **courtesy and respect** toward everyone here
+:::
+
+::: {.column width="50%"}
+### If something's wrong
+
+- Tell an **instructor** or the **host** — chat DM or email, privately
+- Or report to the **CoC Committee**: **coc@carpentries.org**
+- All reports are **kept confidential** and taken seriously
+:::
+
+::::
+
+::: {.small}
+Full text & report form: docs.carpentries.org/policies/coc
+:::
+
+::: {.notes}
+Read this early, don't rush it. The Carpentries has a Code of Conduct and it applies
+to everyone in this room — instructors, helpers, learners. Short version: be kind,
+assume good faith, make room for people who are new to this. If anything makes you
+uncomfortable, tell any of us privately, or go straight to the CoC Committee. It's on
+the workshop site and linked in the Etherpad.
+:::
+
+## How we learn together
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Our pedagogy
+
+- **Live coding:** we learn by doing together, and mistakes are teaching moments, not detours
+- **Mental models:** new skills land when we connect them to work you already do
+- **No overload:** a few key concepts done well beats racing through everything
+:::
+
+::: {.column width="50%"}
+### Managing expectations
+
+- **Practical competence:** skills you can use in your role right away, not exhaustive coverage
+- **Collaborative pace:** we move as a group, and your questions help set the speed
+- **Mistakes are expected:** coding is troubleshooting and persistence, for all of us
+:::
+
+::::
+
+::: {.notes}
+Set the room. Follow along in your own fork. We deliberately keep scope small; if we
+skip something, the lesson site has it. Post questions in the Etherpad so nothing
+gets lost — nobody needs to unmute unless they want to.
+:::
+
+# Software Is the Missing Scholarly Output
+
+## The question that starts this lesson
+
+> "The journal accepted my paper, but they want a citable version of the code, with a DOI. How do I do that?"
+
+Ten years ago, the same question arrived about **datasets** — and the library built the answer: a persistent identifier, a catalog record, a citation format, a preservation copy.
+
+Software is the third thing modern research runs on. Mostly, it hasn't gotten that treatment yet.
+
+::: {.notes}
+This is a real question faculty ask. Lead with it — researchers don't adopt these
+practices because they're virtuous, they adopt them because journals are starting to
+require citable code deposits, funders ask, and a DOI turns invisible labor into a
+countable, citable output for their CV. This is credit they're currently leaving on
+the table.
+:::
+
+## Who this lesson is for
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### You write research software
+
+...and want to make your own code citable, reusable, and discoverable.
+:::
+
+::: {.column width="50%"}
+### You support people who do
+
+...as a librarian, OSPO member, or research-support specialist advising others.
+:::
+
+::::
+
+The hands-on steps are the same either way. Watch for **Supporting others** call-outs — they translate each technical step into advising and consultation work.
+
+## How common is the software citation gap?
+
+Research software is fundamental to modern scholarship, but challenges remain around its discoverability, reproducibility, and sustainability.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### 59.5%
+
+of 3.2 million PubMed Central publications mentioned at least one software item
+:::
+
+::: {.column width="50%"}
+### 38%
+
+of 2020 publications gave enough detail to **uniquely identify** the software used
+:::
+
+::::
+
+::: {.small}
+Barker et al. (2022) doi:10.1038/s41597-022-01710-x · Schindler et al. (2022) doi:10.7717/peerj-cs.835
+:::
+
+## A GitHub URL isn't a citation
+
+### The wrong way
+
+> "We used the analysis script from `https://github.com/UC-OSPO-Network/software-demo`"
+
+- URLs break (link rot)
+- No version specified — which run produced which result?
+- No formal credit; the author's name isn't even visible
+- Cannot appear in citation metrics
+
+::: {.notes}
+A URL is a shelf location, not a catalog record. Citing code this way is like citing
+a book as "third shelf, Powell Library reading room." Move the book, close the room,
+the reference is dead. This isn't hypothetical — Gitorious shut down in 2015,
+Google Code in 2016, thousands of projects unreachable overnight.
+:::
+
+## The right way
+
+> Phan, L., Padilla, K., Otsuji, R., & Dennis, T. (2026). *Biodiversity Analysis Toolkit* (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.123456
+
+- DOI is permanent — survives username changes, repo moves, even GitHub disappearing
+- Version is explicit, so someone can reproduce the exact run
+- Author gets formal credit and citation metrics
+
+The fix is a `CITATION.cff` file and a DOI — both of which you'll create in this workshop.
+
+## Software has a durability problem {background-color="#f0f4fa"}
+
+::: {.project-badge}
+The Bus Factor
+:::
+
+The number of people who need to be "hit by a bus" before a project becomes unmaintainable. **For most research code, the answer is one.**
+
+How many people would have to leave before this software becomes unrecoverable? A library would never accept a collection with a bus factor of one — that's exactly what an un-deposited, un-documented repository is.
+
+::: {.notes}
+Depositing a release into an archive like Zenodo is the software equivalent of
+accessioning: it moves the object from a personal account to a preservation system
+that outlives the individual. This framing lands well with library/collections
+audiences specifically.
+:::
+
+## Can anyone actually run it?
+
+There's a third problem — the one researchers feel first: software that only runs on its author's machine.
+
+```output
+$ python src/analysis.py
+
+ModuleNotFoundError: No module named 'numpy'
+```
+
+The core lesson makes software **citable and discoverable**. The **optional** pixi episode at the end makes it **runnable**, too.
+
+## The fix: FAIR4RS principles
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**F — Findable**
+DOI, CITATION.cff, metadata
+
+**A — Accessible**
+Public GitHub, archived on Zenodo
+:::
+
+::: {.column width="50%"}
+**I — Interoperable**
+Standard formats, documented dependencies
+
+**R — Reusable**
+LICENSE, README, environment files
+:::
+
+::::
+
+::: {.notes}
+Keep this light — a preview, not a lecture. Learners will understand F/A/I/R much
+better after they actually create the license, citation metadata, DOI, and README.
+Name the four principles, point ahead to where each gets built, move on.
+:::
+
+## What you're doing today
+
+- ✅ **License** — so others can legally reuse your work
+- ✅ **Citation** (CITATION.cff + DOI) — so you get academic credit
+- ✅ **README & metadata** — so people can find and understand it
+- ✅ **Environment** *(optional)* — so it also runs on any machine
+
+## Before → after
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Before (`main`)
+
+- ❌ No LICENSE
+- ❌ No citation information
+- ❌ No DOI
+- ❌ Minimal README
+- ❌ No community or metadata files
+:::
+
+::: {.column width="50%"}
+### After (`05-add-metadata`)
+
+- ✅ LICENSE (BSD-3-Clause)
+- ✅ CITATION.cff
+- ✅ Complete README
+- ✅ CONTRIBUTING.md, CODE_OF_CONDUCT.md
+- ✅ .zenodo.json, DOI badge
+:::
+
+::::
+
+**This is what makes software Findable, Accessible, Interoperable, and Reusable.**
+
+## Real-world example: Spack {background-color="#f0f4fa"}
+
+Used by national labs, universities, and supercomputing centers: `github.com/spack/spack`
+
+- ✅ README with clear description and getting-started guide
+- ✅ LICENSE (MIT and Apache-2.0)
+- ✅ CITATION.cff file
+- ✅ Documentation
+- ✅ Code of conduct and contributing guide
+
+## What we'll build together
+
+Starting from the bare `main` state in your fork, progressively:
+
+1. Sharing research software *(exploring the starting repository)*
+2. Adding an open-source license
+3. Creating a CITATION.cff file
+4. Minting a DOI and creating a release
+5. Improving metadata and discoverability
+6. Managing environments with pixi *(optional)*
+7. Wrap-up and reflection
+
+::: {.small}
+View-only reference branches (`02-add-license`, `03-add-citation`, `04-create-release`, `05-add-metadata`) let you check your work at any point.
+:::
+
+# Sharing Research Software Effectively
+
+## Present, but not yet usable
+
+Every archivist knows the unprocessed accession: boxes that made it into the building but not into the collection — technically held, practically invisible.
+
+Most research software on GitHub is in exactly that state. **Public is not the same as shared.**
+
+An open repository with no license, no citation, no usable description is like leaving the reading room unlocked and calling it access: people can technically get in, and nothing helps them once they do.
+
+::: {.notes}
+This episode is the collection assessment: look at a bare repository the way you'd
+look at a new accession, and learn to name the one addition that moves it from
+"present" to "usable." Reviewers now ask "where is the code" — a bare repo is a
+worse answer than it looks, because it invites follow-up questions it can't answer.
+:::
+
+## Fork the demo repository
+
+Every hands-on step happens in **your own fork**, not the shared demo repo.
+
+1. Open `github.com/UC-OSPO-Network/software-demo`
+2. Click **Fork** → **Create fork** (defaults are fine — `main` branch only)
+3. Confirm the top-left reads **`YOUR-USERNAME/software-demo`**, not `UC-OSPO-Network/software-demo`
+
+::: {.small}
+Reference branches are there to check your work, never to build on. Full setup details: ucospo.net/research-software-citable-discoverable/learners/setup
+:::
+
+::: {.notes}
+Before learners begin, ask everyone to confirm the top-left path says
+THEIR-USERNAME/software-demo. Have helpers check chat/room for anyone still on the
+upstream repository. Do not continue until most learners are in their own fork.
+:::
+
+## The starting point
+
+```bash
+software-demo/
+├── README.md
+├── requirements.txt
+└── src/
+    └── analysis.py
+```
+
+This repository intentionally *lacks* many elements of good research software practice. By the end of the lesson, it will include licensing, citation metadata, improved discoverability, and versioning.
+
+::: {.notes}
+Ask learners to confirm they see exactly these three items in their fork. This is
+the best early moment to catch anyone on the wrong repository, wrong branch, or not
+signed in.
+:::
+
+## Supporting others: a four-question triage {background-color="#f0f4fa"}
+
+When a researcher brings you their repo, you're doing a fast triage, not a full code review — a reference interview, not a dissertation defense.
+
+1. **Rights** — is there a license? Can this legally be reused at all?
+2. **Credit** — can a stranger tell who made it and how to cite it?
+3. **Runnable** — is there any record of what it takes to run?
+4. **Findable** — would anyone outside the lab ever discover it?
+
+The goal is the **single highest-value next step**, not fixing everything.
+
+::: {.notes}
+Most repos need one or two changes to go from unusable to useful, and your value is
+helping the researcher see which one. That ordering is the whole skill — and it's
+one this audience already has from appraising every other kind of material. This
+four-question framing is also the take-home tool: the five-minute consultation
+format the whole lesson builds toward.
+:::
+
+## Try it: inventory the demo repository
+
+Open your fork of **software-demo**. Spend 2 minutes, then answer:
+
+- Could you run this code today? What's missing?
+- Would you know who created it, or how to credit them?
+- Could you legally reuse or modify it?
+
+We'll address every one of these gaps together over the next episodes.
+
+## Key points
+
+- Software is a research output the scholarly system has mostly failed to catch
+- A GitHub URL is not a citation — DOIs are permanent and version-specific, URLs rot
+- Undeposited software has a bus-factor problem; forges do shut down
+- FAIR4RS (Findable, Accessible, Interoperable, Reusable) is the framework
+- Public repositories increase findability, reuse potential, and citation credit
+- You'll build up your own fork step by step, episode by episode
+
+::: {.notes}
+Wrap this block and hand off to the next presenter for the License episode. Remind
+the room the reference branches are there the whole time if anyone falls behind.
+:::
