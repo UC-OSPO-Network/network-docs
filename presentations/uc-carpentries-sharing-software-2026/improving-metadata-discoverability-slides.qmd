@@ -158,7 +158,7 @@ In your fork of `software-demo`:
 2. Add a `## ` heading for each of the 7 sections: About, Features, Getting Started, Usage, Citation, License, Contact
 3. Fill in what you can, then **Commit changes** to `main`
 
-Short on time? Paste the starter README from the Etherpad **below your DOI badge**, then replace `YOUR-USERNAME`, `YOUR-DOI`, and `YOUR-RECORD-ID` (from your Sandbox record's web address).
+Short on time? Keep your title and DOI badge, **replace everything below them** with the starter README from the Etherpad, then replace `YOUR-USERNAME`, `YOUR-DOI`, and `YOUR-RECORD-ID` (from your Sandbox record's web address).
 
 ::: {.fragment}
 Next: compare yours with the reference README.
@@ -372,7 +372,7 @@ often spot the gaps faster than the researchers do.
 Open your record on **Zenodo Sandbox** (sandbox.zenodo.org) from the release episode. Select **Edit**, and add:
 
 - keywords
-- author ORCIDs
+- author ORCIDs, if they're missing
 - a real description
 - *optional:* a related paper or funder, if you have one
 
@@ -387,7 +387,9 @@ Save and publish the updated record when done.
 
 1. Click **Edit** (on the right side of the record page)
 2. **Keywords:** add biodiversity, research-software, python (same words as your topics)
-3. **Creators:** open your name and add your ORCID
+3. **Creators:** point at your ORCID. It's already there because CITATION.cff
+   carried it into Zenodo, which is why Laura's episode matters. Learners whose
+   CITATION.cff had no ORCID add theirs here
 4. **Description:** paste your README's About paragraph
 5. **Save draft**, then **Publish**
 
@@ -395,7 +397,9 @@ Save and publish the updated record when done.
 
 **SAY:** Editing metadata doesn't mint a new DOI. The same DOI now has a better record.
 
-**HELPERS:** watch for anyone on zenodo.org instead of sandbox.zenodo.org.
+**HELPERS:** watch for anyone on zenodo.org instead of sandbox.zenodo.org. Anyone
+whose release didn't reach Zenodo in Reid's episode has no record: they watch your
+screen, and helpers note who's stuck.
 :::
 
 ## Challenge: which change makes it discoverable?

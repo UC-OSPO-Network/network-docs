@@ -402,7 +402,8 @@ Aim for the **single most useful next step**. You don't have to fix everything.
 - Rights: no LICENSE file, so nobody can legally reuse it
 - Credit: no CITATION.cff, no authors listed
 - Runnable: requirements.txt exists, but nothing says how to run it
-- Findable: no description, no topics under About
+- Findable: only the generic description copied from upstream (it even names the
+  old lesson title), and no topics under About
 
 **SAY:** Most repos need one or two changes, and your value is helping the researcher
 see which one first. Librarians already do this when appraising other material.
