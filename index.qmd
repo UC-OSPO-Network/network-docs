@@ -26,6 +26,18 @@ Presentations, reports, and project history from the UC OSPO Network.
 ## Presentations
 
 ::: {.resource-card}
+### UC Carpentries Fall 2026: Making Research Software Citable & Discoverable
+
+Slides for the Sep 23, 2026 session of the UC Carpentries Workshop Series, co-presented by the UC OSPO Network and UC Carpentries. They accompany the lesson, where learners add a license, a CITATION.cff, a release with a DOI, and better metadata to their own fork of a demo repository.
+
+- Presenters: Tim Dennis ([ORCID](https://orcid.org/0000-0001-6632-3812)), Leigh Phan ([ORCID](https://orcid.org/0000-0002-8605-1444)), Karla Padilla, Reid Otsuji ([ORCID](https://orcid.org/0000-0002-1842-0295)), Laura Langdon
+- [Intro slides](https://ucospo.net/network-docs/presentations/uc-carpentries-sharing-software-2026/uc-carpentries-sharing-software-2026-slides.html)
+- [Improving Metadata and Discoverability slides](https://ucospo.net/network-docs/presentations/uc-carpentries-sharing-software-2026/improving-metadata-discoverability-slides.html)
+- [Lesson: Making Research Software Citable & Discoverable](https://ucospo.net/research-software-citable-discoverable/)
+- [Source (GitHub)](https://github.com/UC-OSPO-Network/network-docs/tree/main/presentations/uc-carpentries-sharing-software-2026)
+:::
+
+::: {.resource-card}
 ### IASSIST 2026 — Open Source as Institutional Infrastructure
 
 A 10-minute talk making the case that open source software is research infrastructure, presenting the UC OSPO Network as a model for institutional support, and connecting OSPO work to data professionals' existing roles.
