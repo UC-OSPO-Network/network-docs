@@ -38,6 +38,7 @@ You already have a license, a CITATION.cff, and a DOI. **This episode ties them 
 
 ::: {.notes}
 **PRE-FLIGHT (before you take over)** Open these tabs, in this order:
+
 1. Your prepared repo: github.com/jt14den/software-demo-prepared
    (already has LICENSE, CITATION.cff, and a release with a Sandbox DOI)
 2. Upstream 05-add-metadata: github.com/UC-OSPO-Network/software-demo/tree/05-add-metadata
@@ -86,6 +87,7 @@ On your repo's front page, click the **gear icon next to About**, then fill in *
 **~3 min · LIVE DEMO, then learners do it**
 
 **DO** (tab 1, prepared repo):
+
 1. On the repo front page, find **About** in the right sidebar and click the **gear icon**
 2. **Description:** Analysis tools for biodiversity research data
 3. **Topics:** type biodiversity, research-software, python (press space after each)
@@ -168,6 +170,7 @@ Next: compare yours with the reference README.
 **BEFORE:** make sure the starter README is in the Etherpad. Start a 5-minute timer.
 
 **DO** (tab 1, prepared repo):
+
 1. Click **README.md** in the file list, then the **pencil icon** (Edit this file)
 2. Keep the title and DOI badge line at the top. Replace everything below them
    with the starter README from the Etherpad
@@ -381,6 +384,7 @@ Save and publish the updated record when done.
 **~6 min · DEMO for 1 minute, then 5 minutes for learners.** Start a 5-minute timer.
 
 **DO** (tab 3, your Sandbox record):
+
 1. Click **Edit** (on the right side of the record page)
 2. **Keywords:** add biodiversity, research-software, python (same words as your topics)
 3. **Creators:** open your name and add your ORCID
