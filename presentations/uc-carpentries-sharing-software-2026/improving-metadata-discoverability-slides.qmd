@@ -110,6 +110,32 @@ A repo without a real README is a collection without a finding aid: only its aut
 [UC OSPO README Guide](https://ucospo.net/oss-resources/template-guides/readme-guide/) *(UC-specific)*
 :::
 
+## Challenge: give your README the 7 sections
+
+::: {.project-badge}
+⏱ 5 min
+:::
+
+In your fork of `software-demo`:
+
+1. Open `README.md` and click the **pencil icon** to edit
+2. Add a `## ` heading for each of the 7 sections: About, Features, Getting Started, Usage, Citation, License, Contact
+3. Fill in what you can, then **Commit changes** to `main`
+
+Short on time? Copy the starter README from the Etherpad and replace `YOUR-USERNAME` and `YOUR-DOI`.
+
+::: {.fragment}
+Next: compare yours with the reference README.
+:::
+
+::: {.notes}
+Paste the starter README (readme-starter.md in this folder) into the Etherpad
+before this slide. Helpers: watch for people editing the upstream repo instead of
+their fork, headings missing the space after ##, and anyone who forgets to commit.
+The Preview tab in GitHub's editor shows the rendered headings. Their DOI is the
+Sandbox DOI from Reid's episode. Then go to the before/after slide as the reveal.
+:::
+
 ## Before → after
 
 :::: {.columns}
