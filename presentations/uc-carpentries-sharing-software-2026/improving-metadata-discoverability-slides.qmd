@@ -40,8 +40,7 @@ You already have a license, a CITATION.cff, and a DOI. **This episode ties them 
 Leigh normally teaches this episode; she's out today, so I'm covering it. Brief
 acknowledgment, then move on.
 
-This is the episode where the lesson lands fully inside a library audience's
-expertise. Researchers treat metadata as a form to rush through; a scholcomm
+This episode sits squarely in a library audience's expertise. Researchers treat metadata as a form to rush through; a scholcomm
 professional treats it as the mechanism of discovery. The pitch to the researcher
 is blunt: the work is finished, and five minutes of description determines whether
 anyone ever finds it.
@@ -51,11 +50,11 @@ anyone ever finds it.
 
 Good metadata answers predictable questions with minimal effort from the reader:
 
-- **What is this software?** — short description or abstract
-- **Who made it?** — authors, ORCIDs
-- **How do I cite it?** — CITATION.cff + DOI
-- **What domain is it for?** — keywords
-- **What else does it relate to?** — related article, dataset, funding source
+- **What is this software?** A short description or abstract
+- **Who made it?** Authors and ORCIDs
+- **How do I cite it?** CITATION.cff and a DOI
+- **What field is it for?** Keywords
+- **What else does it relate to?** A related article, dataset, or funder
 
 ::: {.notes}
 This is authority control: title, authors, and description should read the same in
@@ -68,16 +67,16 @@ software as several, and its citations scatter.
 
 On your repo's front page, click the **gear icon next to About**, then fill in **Topics**:
 
-- **Discipline tags** — `geospatial`, `text-mining`, `materials-science`
-- **Method tags** — `simulation`, `visualization`, `machine-learning`
-- **Language tags** — `python`, `r`
+- **Discipline:** `geospatial`, `text-mining`, `materials-science`
+- **Method:** `simulation`, `visualization`, `machine-learning`
+- **Language:** `python`, `r`
 
 ![](images/repository-topics.png){fig-align="center" height="380"}
 
 ::: {.notes}
 Live demo: open the software-demo repo, click the gear icon next to About, add
 topics separated by spaces. Reuse the same topic words you'll put in CITATION.cff
-and the Zenodo record later — consistency is the point.
+and the Zenodo record later. Consistency is the point.
 :::
 
 ## The 30-second rule
@@ -93,16 +92,16 @@ A repo without a real README is a collection without a finding aid: only its aut
 :::: {.columns}
 
 ::: {.column width="50%"}
-1. **About** — what it does, in 2-3 sentences
-2. **Features** — key capabilities
-3. **Getting Started** — prerequisites + install
-4. **Usage** — minimal working example
+1. **About:** what it does, in 2-3 sentences
+2. **Features:** key capabilities
+3. **Getting Started:** prerequisites and install
+4. **Usage:** a minimal working example
 :::
 
 ::: {.column width="50%"}
-5. **Citation** — link to CITATION.cff / DOI
-6. **License** — state terms explicitly
-7. **Contact** — how to get help
+5. **Citation:** link to CITATION.cff or the DOI
+6. **License:** state the terms
+7. **Contact:** how to get help
 :::
 
 ::::
@@ -161,7 +160,7 @@ Every one of the 7 sections from the previous slide is here; the numbers in the
 comments map back to that list. Usage is folded into Getting Started, which is
 common and fine. The real README also has Contributing, Code of Conduct, and
 Authors sections; open the 05-add-metadata branch to show the full thing.
-Every tip maps back to FAIR: this is the "Reusable" half made concrete.
+This is the R in FAIR, in practice.
 :::
 
 ## Beyond the README: community health files {background-color="#f0f4fa"}
@@ -170,7 +169,7 @@ Every tip maps back to FAIR: this is the "Reusable" half made concrete.
 
 ::: {.column width="33%"}
 **CONTRIBUTING.md**\
-How to contribute. Worth adding *if* you want contributions — or say plainly you don't.
+How to contribute. Add one *if* you want contributions, or say plainly that you don't.
 :::
 
 ::: {.column width="33%"}
@@ -188,9 +187,9 @@ Version history: what's new, what broke, what changed.
 [cc]: https://www.contributor-covenant.org/
 
 ::: {.notes}
-CONTRIBUTING.md is not universal best practice — plenty of solid research software
-has no active contributor pipeline, and an empty invitation you can't support
-creates more work than it saves. "I'm not looking for contributors right now,
+CONTRIBUTING.md isn't always needed. Plenty of solid research software has no
+contributor pipeline, and an invitation you can't follow up on creates more work
+than it saves. "I'm not looking for contributors right now,
 please just open an issue" is a complete, honest CONTRIBUTING.md.
 :::
 
@@ -236,15 +235,15 @@ Add or refine: authors + ORCIDs, keywords, related works, funding, a readable de
 
 ## Supporting others: priority order when metadata is thin {background-color="#f0f4fa"}
 
-1. A readable **description** — the biggest single loss when it's empty
-2. **Author ORCIDs** — every J. Chen on Zenodo is indistinguishable without one
+1. A readable **description**, the biggest loss when it's missing
+2. **Author ORCIDs**: without them, every J. Chen on Zenodo looks the same
 3. **Keywords**, reused consistently across GitHub, CITATION.cff, Zenodo
-4. **Related works** — link the software to its paper, dataset, grant
+4. **Related works**: link the software to its paper, dataset, and grant
 
 ::: {.notes}
-Thin metadata means the software never surfaces in the catalog. You are not
-tidying a record, you are deciding whether it's findable at all. This is where a
-librarian in the room can visibly outperform the researchers.
+Thin metadata means the software never surfaces in the catalog. The question
+here is whether anyone can find it at all. Librarians in the room will often spot
+the gaps faster than the researchers do.
 :::
 
 ## Challenge: improve your Zenodo record
@@ -278,7 +277,7 @@ C. More frequent commits\
 D. A shorter name
 
 ::: {.fragment}
-**B.** Discovery runs on *description*, not activity. Same reason a catalog record with no subject headings is nearly invisible.
+**B.** People find software through its *description*. Commit activity doesn't help. It's the same reason a catalog record with no subject headings is nearly invisible.
 :::
 
 ## Key points

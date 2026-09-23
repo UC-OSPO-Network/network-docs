@@ -73,7 +73,7 @@ If they haven't done the pre-workshop survey, the link is on the site.
 ::: {.column width="50%"}
 ### If something's wrong
 
-- Tell an **instructor** or the **host** — chat DM or email, privately
+- Tell an **instructor** or the **host** privately, by chat DM or email
 - Or report to the **CoC Committee**: **coc@carpentries.org**
 - All reports are **kept confidential** and taken seriously
 :::
@@ -86,7 +86,7 @@ Full text & report form: docs.carpentries.org/policies/coc
 
 ::: {.notes}
 Read this early, don't rush it. The Carpentries has a Code of Conduct and it applies
-to everyone in this room — instructors, helpers, learners. Short version: be kind,
+to everyone in this room: instructors, helpers, and learners. Short version: be kind,
 assume good faith, make room for people who are new to this. If anything makes you
 uncomfortable, tell any of us privately, or go straight to the CoC Committee. It's on
 the workshop site and linked in the Etherpad.
@@ -99,17 +99,17 @@ the workshop site and linked in the Etherpad.
 ::: {.column width="50%"}
 ### Our pedagogy
 
-- **Hands-on:** you do each step in your own fork as we go
-- **Connect to what you know:** new skills land faster that way
-- **Fewer concepts, done well:** not a race
+- You'll do each step in your own fork as we go
+- We tie new skills to work you already do
+- We cover fewer things, and cover them properly
 :::
 
 ::: {.column width="50%"}
 ### Managing expectations
 
-- **Usable today:** practical skills, not full coverage
-- **Group pace:** your questions set the speed
-- **Mistakes are expected:** for all of us
+- Practical skills you can use today
+- Your questions set the pace
+- Everyone makes mistakes, instructors included
 :::
 
 ::::
@@ -117,7 +117,7 @@ the workshop site and linked in the Etherpad.
 ::: {.notes}
 Set the room. Follow along in your own fork. We deliberately keep scope small; if we
 skip something, the lesson site has it. Post questions in the Etherpad so nothing
-gets lost — nobody needs to unmute unless they want to.
+gets lost. Nobody needs to unmute unless they want to.
 :::
 
 ## The UC OSPO Network {background-color="#f0f4fa"}
@@ -152,12 +152,33 @@ ucospo.net/about/contact
 ::::
 
 ::: {.notes}
-Laura presents this slide (she leaves after her CITATION.cff episode). Point out
-that several of today's instructors are campus contacts: Karla at UCSD, Tim and
-Leigh at UCLA. The "Get involved" slide at the end of the metadata deck closes
-the loop. The templates
-are the same README, CONTRIBUTING, and citation patterns we used today, so people
-can start from them instead of a blank file.
+Laura presents this slide, since she leaves after her CITATION.cff episode.
+Several of today's instructors are campus contacts: Karla at UCSD, Tim and Leigh
+at UCLA. The templates use the same README, CONTRIBUTING, and citation patterns
+as today, so people can start from them instead of a blank file. The "Get
+involved" slide at the end of the metadata deck picks this back up.
+:::
+
+## Upcoming events {background-color="#f0f4fa"}
+
+**Thu, Oct 1 · 10-11am · Zoom**\
+All-Campus Virtual Meetup: *Lightcone Research*, hosted by UC Berkeley (BIDS). Liam Parker and François Lanusse on building open source tools and standards so AI-assisted research can be checked and reproduced, including tracing what agents decided along the way.
+
+**Tue, Oct 6 · 12-1pm · UCLA Young Research Library and online**\
+UCLA Open Source Meetup: *Keeping the World on Time*, with Paul Eggert on sustaining the Time Zone Database. In-person seats are limited.
+
+**2027 · date and location TBD**\
+UC Open 2027
+
+::: {.small}
+All times Pacific. Registration links and more events: ucospo.net/events
+:::
+
+::: {.notes}
+Laura or Tim. Both October events need registration; the links are on
+ucospo.net/events. Worth a plug for Oct 6 since it's ours: Paul Eggert coordinates
+the Time Zone Database, a nice example of invisible open source infrastructure.
+Paste the events link in the Etherpad.
 :::
 
 ## The question that starts this lesson
@@ -181,12 +202,11 @@ Ten years ago the same question arrived about **datasets**, and libraries built 
 **Supporting others** slides translate each step into consultation work.
 
 ::: {.notes}
-This is a real question faculty ask. Lead with it — researchers don't adopt these
-practices because they're virtuous, they adopt them because journals are starting to
-require citable code deposits, funders ask, and a DOI turns invisible labor into a
-countable, citable output for their CV. This is credit they're currently leaving on
-the table. The hands-on steps that follow are the same regardless of which audience
-you're in.
+Faculty really do ask this. Lead with it. Researchers rarely take up these
+practices out of virtue. They take them up because journals are starting to require
+citable code deposits, funders ask, and a DOI turns invisible work into something
+that counts on a CV. Right now they're leaving that credit on the table. The
+hands-on steps are the same whichever audience you're in.
 :::
 
 ## How common is the software citation gap?
@@ -285,8 +305,8 @@ The labels come from FAIR4RS: Findable, Accessible, Interoperable, Reusable. Che
 :::
 
 ::: {.notes}
-Keep FAIR light: a preview, not a lecture. Learners understand the letters better
-after they build each piece. Name the arc and move on.
+Keep FAIR light. This is a preview. Learners understand the letters better once
+they've built each piece, so name the arc and move on.
 
 Optional real-world example if someone asks what "good" looks like at scale:
 Spack (github.com/spack/spack) has a clear README, Apache-2.0 or MIT license,
@@ -298,11 +318,11 @@ CITATION.cff, docs, and a code of conduct and contributing guide.
 Every hands-on step happens in **your own fork**, not the shared demo repo.
 
 1. Open `github.com/UC-OSPO-Network/software-demo`
-2. Click **Fork** → **Create fork** (defaults are fine — `main` branch only)
+2. Click **Fork** → **Create fork** (the defaults are fine; you only need `main`)
 3. Confirm the top-left reads **`YOUR-USERNAME/software-demo`**, not `UC-OSPO-Network/software-demo`
 
 ::: {.small}
-Reference branches are there to check your work, never to build on. Full setup details: ucospo.net/research-software-citable-discoverable/learners/setup
+Use the reference branches to check your work, but don't build on them. Full setup details: ucospo.net/research-software-citable-discoverable/learners/setup
 :::
 
 ::: {.notes}
@@ -335,12 +355,12 @@ signed in.
 
 **Public is not the same as shared.** When a researcher brings you their repo, do a fast triage, not a code review.
 
-1. **Rights** — is there a license? Can this legally be reused at all?
-2. **Credit** — can a stranger tell who made it and how to cite it?
-3. **Runnable** — is there any record of what it takes to run?
-4. **Findable** — would anyone outside the lab ever discover it?
+1. **Rights:** is there a license? Can anyone legally reuse this?
+2. **Credit:** can a stranger tell who made it and how to cite it?
+3. **Runnable:** is there any record of what it takes to run?
+4. **Findable:** would anyone outside the lab ever come across it?
 
-The goal is the **single highest-value next step**, not fixing everything.
+Aim for the **single most useful next step**. You don't have to fix everything.
 
 **Try it now (2 min):** answer all four for your fork of `software-demo`.
 
@@ -349,10 +369,10 @@ Think of a bare repo as an unprocessed accession: in the building, not in the
 collection. Technically held, practically invisible.
 
 Most repos need one or two changes to go from unusable to useful, and your value is
-helping the researcher see which one. That ordering is the whole skill — and it's
-one this audience already has from appraising every other kind of material. This
-four-question framing is also the take-home tool: the five-minute consultation
-format the whole lesson builds toward. Give them the full two minutes before moving on.
+helping the researcher see which one. Choosing that order is the skill, and this
+audience already uses it when appraising other kinds of material. The four
+questions are also the take-home: a five-minute consultation format the rest of
+the lesson builds on. Give them the full two minutes before moving on.
 :::
 
 ## Key points
@@ -360,7 +380,7 @@ format the whole lesson builds toward. Give them the full two minutes before mov
 - A GitHub URL is not a citation. A DOI is permanent and version-specific.
 - Software that isn't deposited anywhere depends on one person and one platform
 - FAIR4RS (Findable, Accessible, Interoperable, Reusable) is the framework
-- Public is not the same as shared: license, citation, and description do the work
+- A public repo still needs a license, a citation, and a description before others can use it
 
 ::: {.notes}
 Wrap this block and hand off to the next presenter for the License episode. Remind
@@ -370,11 +390,11 @@ the room the reference branches are there the whole time if anyone falls behind.
 ## Up next {.title-slide data-background-color="#1f335e"}
 
 ::: {style="margin-top: 1em; font-size: 0.95em; line-height: 2;"}
-**Karla Padilla** — Adding an Open-Source License
+**Karla Padilla:** Adding an Open-Source License
 
-**Laura Langdon** — Creating a CITATION.cff File
+**Laura Langdon:** Creating a CITATION.cff File
 
-**Reid Otsuji** — Minting a DOI and Creating a Release
+**Reid Otsuji:** Minting a DOI and Creating a Release
 :::
 
 ::: {style="margin-top: 1.5em; font-size: 0.75em; color: rgba(255,255,255,0.85);"}

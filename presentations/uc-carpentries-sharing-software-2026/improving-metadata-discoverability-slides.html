@@ -1080,7 +1080,7 @@ Tim Dennis
 <p>You already have a license, a CITATION.cff, and a DOI. <strong>This episode ties them together.</strong></p>
 <aside class="notes">
 <p>Leigh normally teaches this episode; she’s out today, so I’m covering it. Brief acknowledgment, then move on.</p>
-<p>This is the episode where the lesson lands fully inside a library audience’s expertise. Researchers treat metadata as a form to rush through; a scholcomm professional treats it as the mechanism of discovery. The pitch to the researcher is blunt: the work is finished, and five minutes of description determines whether anyone ever finds it.</p>
+<p>This episode sits squarely in a library audience’s expertise. Researchers treat metadata as a form to rush through; a scholcomm professional treats it as the mechanism of discovery. The pitch to the researcher is blunt: the work is finished, and five minutes of description determines whether anyone ever finds it.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -1097,11 +1097,11 @@ display:block!important;
 <h2>What counts as useful metadata?</h2>
 <p>Good metadata answers predictable questions with minimal effort from the reader:</p>
 <ul>
-<li><strong>What is this software?</strong> — short description or abstract</li>
-<li><strong>Who made it?</strong> — authors, ORCIDs</li>
-<li><strong>How do I cite it?</strong> — CITATION.cff + DOI</li>
-<li><strong>What domain is it for?</strong> — keywords</li>
-<li><strong>What else does it relate to?</strong> — related article, dataset, funding source</li>
+<li><strong>What is this software?</strong> A short description or abstract</li>
+<li><strong>Who made it?</strong> Authors and ORCIDs</li>
+<li><strong>How do I cite it?</strong> CITATION.cff and a DOI</li>
+<li><strong>What field is it for?</strong> Keywords</li>
+<li><strong>What else does it relate to?</strong> A related article, dataset, or funder</li>
 </ul>
 <aside class="notes">
 <p>This is authority control: title, authors, and description should read the same in the README, the CITATION.cff, and the Zenodo record, for the same reason a name reads the same across catalog records. When they drift, indexes treat one piece of software as several, and its citations scatter.</p>
@@ -1121,9 +1121,9 @@ display:block!important;
 <h2>Add GitHub Topics</h2>
 <p>On your repo’s front page, click the <strong>gear icon next to About</strong>, then fill in <strong>Topics</strong>:</p>
 <ul>
-<li><strong>Discipline tags</strong> — <code>geospatial</code>, <code>text-mining</code>, <code>materials-science</code></li>
-<li><strong>Method tags</strong> — <code>simulation</code>, <code>visualization</code>, <code>machine-learning</code></li>
-<li><strong>Language tags</strong> — <code>python</code>, <code>r</code></li>
+<li><strong>Discipline:</strong> <code>geospatial</code>, <code>text-mining</code>, <code>materials-science</code></li>
+<li><strong>Method:</strong> <code>simulation</code>, <code>visualization</code>, <code>machine-learning</code></li>
+<li><strong>Language:</strong> <code>python</code>, <code>r</code></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1131,7 +1131,7 @@ display:block!important;
 </figure>
 </div>
 <aside class="notes">
-<p>Live demo: open the software-demo repo, click the gear icon next to About, add topics separated by spaces. Reuse the same topic words you’ll put in CITATION.cff and the Zenodo record later — consistency is the point.</p>
+<p>Live demo: open the software-demo repo, click the gear icon next to About, add topics separated by spaces. Reuse the same topic words you’ll put in CITATION.cff and the Zenodo record later. Consistency is the point.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -1155,16 +1155,16 @@ display:block!important;
 <div class="columns">
 <div class="column" style="width:50%;">
 <ol type="1">
-<li><strong>About</strong> — what it does, in 2-3 sentences</li>
-<li><strong>Features</strong> — key capabilities</li>
-<li><strong>Getting Started</strong> — prerequisites + install</li>
-<li><strong>Usage</strong> — minimal working example</li>
+<li><strong>About:</strong> what it does, in 2-3 sentences</li>
+<li><strong>Features:</strong> key capabilities</li>
+<li><strong>Getting Started:</strong> prerequisites and install</li>
+<li><strong>Usage:</strong> a minimal working example</li>
 </ol>
 </div><div class="column" style="width:50%;">
 <ol start="5" type="1">
-<li><strong>Citation</strong> — link to CITATION.cff / DOI</li>
-<li><strong>License</strong> — state terms explicitly</li>
-<li><strong>Contact</strong> — how to get help</li>
+<li><strong>Citation:</strong> link to CITATION.cff or the DOI</li>
+<li><strong>License:</strong> state the terms</li>
+<li><strong>Contact:</strong> how to get help</li>
 </ol>
 </div></div>
 <div class="small">
@@ -1204,7 +1204,7 @@ display:block!important;
 <span id="cb2-19"><a href aria-label="19"></a>Open an issue in this repository.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
 <aside class="notes">
-<p>Every one of the 7 sections from the previous slide is here; the numbers in the comments map back to that list. Usage is folded into Getting Started, which is common and fine. The real README also has Contributing, Code of Conduct, and Authors sections; open the 05-add-metadata branch to show the full thing. Every tip maps back to FAIR: this is the “Reusable” half made concrete.</p>
+<p>Every one of the 7 sections from the previous slide is here; the numbers in the comments map back to that list. Usage is folded into Getting Started, which is common and fine. The real README also has Contributing, Code of Conduct, and Authors sections; open the 05-add-metadata branch to show the full thing. This is the R in FAIR, in practice.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -1222,7 +1222,7 @@ display:block!important;
 <div class="columns">
 <div class="column" style="width:33%;">
 <p><strong>CONTRIBUTING.md</strong><br>
-How to contribute. Worth adding <em>if</em> you want contributions — or say plainly you don’t.</p>
+How to contribute. Add one <em>if</em> you want contributions, or say plainly that you don’t.</p>
 </div><div class="column" style="width:33%;">
 <p><strong>CODE_OF_CONDUCT.md</strong><br>
 Behavioral standards. <a href="https://www.contributor-covenant.org/">Contributor Covenant</a> is the standard choice.</p>
@@ -1231,7 +1231,7 @@ Behavioral standards. <a href="https://www.contributor-covenant.org/">Contributo
 Version history: what’s new, what broke, what changed.</p>
 </div></div>
 <aside class="notes">
-<p>CONTRIBUTING.md is not universal best practice — plenty of solid research software has no active contributor pipeline, and an empty invitation you can’t support creates more work than it saves. “I’m not looking for contributors right now, please just open an issue” is a complete, honest CONTRIBUTING.md.</p>
+<p>CONTRIBUTING.md isn’t always needed. Plenty of solid research software has no contributor pipeline, and an invitation you can’t follow up on creates more work than it saves. “I’m not looking for contributors right now, please just open an issue” is a complete, honest CONTRIBUTING.md.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -1309,13 +1309,13 @@ display:block!important;
 <section id="supporting-others-priority-order-when-metadata-is-thin" class="slide level2" data-background-color="#f0f4fa">
 <h2>Supporting others: priority order when metadata is thin</h2>
 <ol type="1">
-<li>A readable <strong>description</strong> — the biggest single loss when it’s empty</li>
-<li><strong>Author ORCIDs</strong> — every J. Chen on Zenodo is indistinguishable without one</li>
+<li>A readable <strong>description</strong>, the biggest loss when it’s missing</li>
+<li><strong>Author ORCIDs</strong>: without them, every J. Chen on Zenodo looks the same</li>
 <li><strong>Keywords</strong>, reused consistently across GitHub, CITATION.cff, Zenodo</li>
-<li><strong>Related works</strong> — link the software to its paper, dataset, grant</li>
+<li><strong>Related works</strong>: link the software to its paper, dataset, and grant</li>
 </ol>
 <aside class="notes">
-<p>Thin metadata means the software never surfaces in the catalog. You are not tidying a record, you are deciding whether it’s findable at all. This is where a librarian in the room can visibly outperform the researchers.</p>
+<p>Thin metadata means the software never surfaces in the catalog. The question here is whether anyone can find it at all. Librarians in the room will often spot the gaps faster than the researchers do.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
@@ -1355,7 +1355,7 @@ B. Descriptive topics, matching keywords, and a description<br>
 C. More frequent commits<br>
 D. A shorter name</p>
 <div class="fragment">
-<p><strong>B.</strong> Discovery runs on <em>description</em>, not activity. Same reason a catalog record with no subject headings is nearly invisible.</p>
+<p><strong>B.</strong> People find software through its <em>description</em>. Commit activity doesn’t help. It’s the same reason a catalog record with no subject headings is nearly invisible.</p>
 </div>
 </section>
 <section id="key-points" class="slide level2">
