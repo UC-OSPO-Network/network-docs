@@ -163,31 +163,36 @@ Next: compare yours with the reference README.
 :::
 
 ::: {.notes}
-**~6 min · DEMO for 1 minute, then 5 minutes for learners**
+**~6 min · 1-minute demo, then 5 minutes for learners**
 
-**BEFORE:** make sure the starter README is in the Etherpad. Start a 5-minute timer.
+**BEFORE:** check the starter README is in the Etherpad.
 
 **DO** (tab 1, prepared repo):
 
-1. Click **README.md** in the file list, then the **pencil icon** (Edit this file)
-2. Keep the title and DOI badge line at the top. Replace everything below them
-   with the starter README from the Etherpad
-3. Replace YOUR-USERNAME, YOUR-DOI (10.5072/zenodo.NNNN), and YOUR-RECORD-ID
-   (the number at the end of your Sandbox record's URL)
-4. Click the **Preview** tab to show the headings rendering
-5. Click **Commit changes…**, keep "Commit directly to the main branch", click **Commit changes**
+1. Click **README.md**, then the **pencil icon**
+2. Keep the title and the DOI badge line. Delete everything below them
+3. Paste the starter README from the Etherpad
+4. Fill in the three placeholders:
+   YOUR-USERNAME → jt14den,
+   YOUR-DOI → 10.5072/zenodo.607977,
+   YOUR-RECORD-ID → 607977
+5. Click **Preview**: the headings render, and the LICENSE, CITATION.cff, DOI, and issue links work
+6. Click **Commit changes…**, then **Commit changes** again (straight to main)
 
-**SHOW:** the repo front page with the new README rendered.
+**SHOW:** the front page with the new README.
 
-**SAY:** Write your own if you'd rather; the starter is a fallback.
+**SAY:** Your turn, 5 minutes. Use the starter or write your own. Your DOI and
+record number are on your Sandbox record from Reid's episode.
 
-**HELPERS:** watch for people editing the upstream repo instead of their fork,
-`##` with no space after it, and anyone who never commits. Their DOI is the
-Sandbox DOI from Reid's episode; it won't open on doi.org, which is why the
-starter links to the Sandbox record instead. No badge yet? On the Sandbox record,
-find the DOI badge, copy its Markdown, and paste it under the title. Check the links work in Preview:
-LICENSE, CITATION.cff, the DOI, and Open an issue.
-Click once to show the "Next" line, then advance.
+Start the timer. When it ends, click once to show the "Next" line, then advance.
+
+**HELPERS,** common problems:
+
+- Editing the upstream repo, not their fork: check the owner name at the top of the page
+- `##Heading` with no space: add a space after `##`
+- Never clicked Commit: nothing changes on the front page
+- DOI link won't open: Sandbox DOIs don't work on doi.org, which is why the starter links to the Sandbox record
+- No DOI badge: copy the badge Markdown from their Sandbox record and paste it under the title
 :::
 
 ## Before → after
