@@ -242,7 +242,9 @@ Open an issue in this repository.
 ::::
 
 ::: {.notes}
-**~2 min · DO:** tab 2 (upstream, 05-add-metadata branch). Scroll the real README.
+**~2 min · DO:** tab 2, the upstream 05-add-metadata branch:
+https://github.com/UC-OSPO-Network/software-demo/tree/05-add-metadata
+Scroll down to the README.
 
 **SHOW:** point at each section and call out its number from the slide (1 to 7).
 Usage is folded into Getting Started, which is common and fine. Point out the
@@ -275,8 +277,10 @@ Version history: what's new, what broke, what changed.
 [cc]: https://www.contributor-covenant.org/
 
 ::: {.notes}
-**~1 min · DO:** tab 2, in the file list click **CONTRIBUTING.md**, then
+**~1 min · DO:** tab 2 (https://github.com/UC-OSPO-Network/software-demo/tree/05-add-metadata), in the file list click **CONTRIBUTING.md**, then
 **CODE_OF_CONDUCT.md**. A few seconds each.
+Direct links: https://github.com/UC-OSPO-Network/software-demo/blob/05-add-metadata/CONTRIBUTING.md
+and https://github.com/UC-OSPO-Network/software-demo/blob/05-add-metadata/CODE_OF_CONDUCT.md
 
 **SAY:** CONTRIBUTING.md isn't always needed. Plenty of solid research software has
 no contributor pipeline, and an invitation you can't follow up on creates more work
@@ -300,7 +304,7 @@ These only appear once the file is on the default branch. GitHub changes the det
 :::
 
 ::: {.notes}
-**~1 min · DO:** tab 1 (prepared repo). Point at the right sidebar.
+**~1 min · DO:** tab 1, https://github.com/jt14den/software-demo-prepared. Point at the right sidebar.
 
 **SHOW:** the **BSD-3-Clause** license badge and the **Cite this repository** link
 (learners' forks have these from Karla's and Laura's episodes). Click Cite this repository to show
@@ -342,7 +346,7 @@ Add or refine: authors + ORCIDs, keywords, related works, funding, a readable de
 :::
 
 ::: {.notes}
-**~1 min · DO:** tab 3 (your Zenodo Sandbox record).
+**~1 min · DO:** tab 3, your Sandbox record: https://sandbox.zenodo.org/records/607977
 
 **SHOW:** the record page: title, creators, description, keywords. Point out how
 thin it is.
@@ -387,7 +391,7 @@ Save and publish the updated record when done.
 ::: {.notes}
 **~6 min · DEMO for 1 minute, then 5 minutes for learners.** Start a 5-minute timer.
 
-**DO** (tab 3, your Sandbox record):
+**DO** in tab 3, your Sandbox record: https://sandbox.zenodo.org/records/607977
 
 1. Click **Edit** (on the right side of the record page)
 2. **Keywords:** add biodiversity, research-software, python (same words as your topics)
@@ -469,7 +473,8 @@ All times Pacific. Zoom links and calendar feeds: ucospo.net/events
 :::
 
 ::: {.notes}
-**~1 min · DO:** paste the Get Involved link and the Slack invite into the
+**~1 min · DO:** paste the Get Involved link (https://ucospo.net/about/get-involved),
+the events page (https://ucospo.net/events), and the Slack invite into the
 Etherpad before this slide.
 
 **SAY:** Laura introduced the network at the start; this is how to stay in touch.
