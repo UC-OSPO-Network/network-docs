@@ -162,7 +162,7 @@ involved" slide at the end of the metadata deck picks this back up.
 ## Upcoming events {background-color="#f0f4fa"}
 
 **Thu, Oct 1 · 10-11am · Zoom**\
-All-Campus Virtual Meetup: *Lightcone Research*, hosted by UC Berkeley (BIDS). Open source tools for reproducible, AI-assisted science.
+All-Campus Virtual Meetup: *Lightcone Research*, hosted by UC Berkeley (BIDS). Liam Parker and François Lanusse on building open source tools and standards so AI-assisted research can be checked and reproduced, including tracing what agents decided along the way.
 
 **Tue, Oct 6 · 12-1pm · UCLA Young Research Library and online**\
 UCLA Open Source Meetup: *Keeping the World on Time*, with Paul Eggert on sustaining the Time Zone Database. In-person seats are limited.
