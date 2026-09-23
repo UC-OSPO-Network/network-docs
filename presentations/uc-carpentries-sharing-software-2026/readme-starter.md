@@ -1,4 +1,4 @@
-<!-- Paste this BELOW the title and DOI badge at the top of your README. -->
+<!-- Keep your title and DOI badge. Replace EVERYTHING below them with this. -->
 [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
 
 ## About

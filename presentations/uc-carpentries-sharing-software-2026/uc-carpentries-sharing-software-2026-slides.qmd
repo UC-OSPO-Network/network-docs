@@ -52,9 +52,11 @@ We'll begin shortly. Grab the collaborative notes and settle in.
 
 ::: {.notes}
 **PRE-FLIGHT (15 min before)**
+
 - Confirm github.com/jt14den/software-demo does NOT exist (you'll create it live)
 - Tabs: this deck in speaker view (press S), the Etherpad, and
   github.com/UC-OSPO-Network/software-demo, logged in as jt14den
+
 - Zoom: share this browser window only; chat open
 
 **While people join · DO:** paste the Etherpad link and the lesson link
@@ -336,13 +338,14 @@ Every hands-on step happens in **your own fork**, not the shared demo repo.
 3. Confirm the top-left reads **`YOUR-USERNAME/software-demo`**, not `UC-OSPO-Network/software-demo`
 
 ::: {.small}
-Use the reference branches to check your work, but don't build on them. Full setup details: ucospo.net/research-software-citable-discoverable/learners/setup
+Use the reference branches to check your work, but don't build on them. Full setup details: ucospo.net/research-software-citable-discoverable/index.html#setup
 :::
 
 ::: {.notes}
 **~4 min · LIVE DEMO, learners follow along**
 
 **DO** (upstream tab, github.com/UC-OSPO-Network/software-demo):
+
 1. Click **Fork** (top right)
 2. On "Create a new fork": leave **Copy the main branch only** checked
 3. Click **Create fork**
@@ -395,10 +398,12 @@ Aim for the **single most useful next step**. You don't have to fix everything.
 **~3 min · DO:** start a 2-minute timer; learners answer the four questions for their fork.
 
 **SHOW** (your fork) when time's up, walking the four:
+
 - Rights: no LICENSE file, so nobody can legally reuse it
 - Credit: no CITATION.cff, no authors listed
 - Runnable: requirements.txt exists, but nothing says how to run it
-- Findable: no description, no topics under About
+- Findable: only the generic description copied from upstream (it even names the
+  old lesson title), and no topics under About
 
 **SAY:** Most repos need one or two changes, and your value is helping the researcher
 see which one first. Librarians already do this when appraising other material.

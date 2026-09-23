@@ -38,6 +38,7 @@ You already have a license, a CITATION.cff, and a DOI. **This episode ties them 
 
 ::: {.notes}
 **PRE-FLIGHT (before you take over)** Open these tabs, in this order:
+
 1. Your prepared repo: github.com/jt14den/software-demo-prepared
    (already has LICENSE, CITATION.cff, and a release with a Sandbox DOI)
 2. Upstream 05-add-metadata: github.com/UC-OSPO-Network/software-demo/tree/05-add-metadata
@@ -86,6 +87,7 @@ On your repo's front page, click the **gear icon next to About**, then fill in *
 **~3 min · LIVE DEMO, then learners do it**
 
 **DO** (tab 1, prepared repo):
+
 1. On the repo front page, find **About** in the right sidebar and click the **gear icon**
 2. **Description:** Analysis tools for biodiversity research data
 3. **Topics:** type biodiversity, research-software, python (press space after each)
@@ -156,7 +158,7 @@ In your fork of `software-demo`:
 2. Add a `## ` heading for each of the 7 sections: About, Features, Getting Started, Usage, Citation, License, Contact
 3. Fill in what you can, then **Commit changes** to `main`
 
-Short on time? Paste the starter README from the Etherpad **below your DOI badge**, then replace `YOUR-USERNAME`, `YOUR-DOI`, and `YOUR-RECORD-ID` (from your Sandbox record's web address).
+Short on time? Keep your title and DOI badge, **replace everything below them** with the starter README from the Etherpad, then replace `YOUR-USERNAME`, `YOUR-DOI`, and `YOUR-RECORD-ID` (from your Sandbox record's web address).
 
 ::: {.fragment}
 Next: compare yours with the reference README.
@@ -168,6 +170,7 @@ Next: compare yours with the reference README.
 **BEFORE:** make sure the starter README is in the Etherpad. Start a 5-minute timer.
 
 **DO** (tab 1, prepared repo):
+
 1. Click **README.md** in the file list, then the **pencil icon** (Edit this file)
 2. Keep the title and DOI badge line at the top. Replace everything below them
    with the starter README from the Etherpad
@@ -369,7 +372,7 @@ often spot the gaps faster than the researchers do.
 Open your record on **Zenodo Sandbox** (sandbox.zenodo.org) from the release episode. Select **Edit**, and add:
 
 - keywords
-- author ORCIDs
+- author ORCIDs, if they're missing
 - a real description
 - *optional:* a related paper or funder, if you have one
 
@@ -381,9 +384,12 @@ Save and publish the updated record when done.
 **~6 min · DEMO for 1 minute, then 5 minutes for learners.** Start a 5-minute timer.
 
 **DO** (tab 3, your Sandbox record):
+
 1. Click **Edit** (on the right side of the record page)
 2. **Keywords:** add biodiversity, research-software, python (same words as your topics)
-3. **Creators:** open your name and add your ORCID
+3. **Creators:** point at your ORCID. It's already there because CITATION.cff
+   carried it into Zenodo, which is why Laura's episode matters. Learners whose
+   CITATION.cff had no ORCID add theirs here
 4. **Description:** paste your README's About paragraph
 5. **Save draft**, then **Publish**
 
@@ -391,7 +397,9 @@ Save and publish the updated record when done.
 
 **SAY:** Editing metadata doesn't mint a new DOI. The same DOI now has a better record.
 
-**HELPERS:** watch for anyone on zenodo.org instead of sandbox.zenodo.org.
+**HELPERS:** watch for anyone on zenodo.org instead of sandbox.zenodo.org. Anyone
+whose release didn't reach Zenodo in Reid's episode has no record: they watch your
+screen, and helpers note who's stuck.
 :::
 
 ## Challenge: which change makes it discoverable?
