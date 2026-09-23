@@ -9,6 +9,14 @@ Presentations, reports, and project history from the UC OSPO Network.
 
 ## Presentations
 
+### UC Carpentries Fall 2026: Making Research Software Citable & Discoverable
+
+Slides for the Sep 23, 2026 session of the UC Carpentries Workshop Series, co-presented by the UC OSPO Network and UC Carpentries. They accompany the lesson [Making Research Software Citable & Discoverable](https://ucospo.net/research-software-citable-discoverable/). Learners add a license, a CITATION.cff, a release with a DOI, and better metadata to their own fork of a demo repository.
+
+- **Intro deck:** [uc-carpentries-sharing-software-2026-slides.html](https://ucospo.net/network-docs/presentations/uc-carpentries-sharing-software-2026/uc-carpentries-sharing-software-2026-slides.html). Welcome, why software citation matters, the UC OSPO Network, forking the demo repo
+- **Improving Metadata and Discoverability:** [improving-metadata-discoverability-slides.html](https://ucospo.net/network-docs/presentations/uc-carpentries-sharing-software-2026/improving-metadata-discoverability-slides.html). Topics, README, Zenodo metadata, getting involved
+- **Source:** `presentations/uc-carpentries-sharing-software-2026/`
+
 ### IASSIST 2026 — Open Source as Institutional Infrastructure
 
 A 10-minute talk making the case that open source software is research infrastructure, presenting the UC OSPO Network as a model for institutional support, and connecting OSPO work to data professionals' existing roles.
