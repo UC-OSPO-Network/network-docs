@@ -120,6 +120,46 @@ skip something, the lesson site has it. Post questions in the Etherpad so nothin
 gets lost — nobody needs to unmute unless they want to.
 :::
 
+## The UC OSPO Network {background-color="#f0f4fa"}
+
+:::: {.columns}
+
+::: {.column width="55%"}
+The first system-wide OSPO network in a university system, launched May 2024 with **Sloan Foundation** support.
+
+- Open to **everyone at UC**, OSPO or not
+- **Templates** for README, CONTRIBUTING, license, and citation
+- **Education site** with learning pathways
+- **ORB**, a browser for UC's open source repos
+:::
+
+::: {.column width="45%"}
+**Campus contacts**
+
+::: {.small}
+**Berkeley:** Jarrod Millman, Kirstie Whitaker\
+**Davis:** Vessela Ensberg\
+**UCLA:** Tim Dennis, Leigh Phan\
+**San Diego:** David Minor, Karla Padilla\
+**Santa Barbara:** Amber Budden, Virginia Scarlett\
+**Santa Cruz:** Stephanie Lieggi, Emily Lovell
+
+Not sure who to ask? **Laura Langdon**, Community Manager\
+ucospo.net/about/contact
+:::
+:::
+
+::::
+
+::: {.notes}
+Laura presents this slide (she leaves after her CITATION.cff episode). Point out
+that several of today's instructors are campus contacts: Karla at UCSD, Tim and
+Leigh at UCLA. The "Get involved" slide at the end of the metadata deck closes
+the loop. The templates
+are the same README, CONTRIBUTING, and citation patterns we used today, so people
+can start from them instead of a blank file.
+:::
+
 ## The question that starts this lesson
 
 > "The journal accepted my paper, but they want a citable version of the code, with a DOI. How do I do that?"
