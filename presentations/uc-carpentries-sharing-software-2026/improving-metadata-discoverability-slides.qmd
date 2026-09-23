@@ -38,14 +38,16 @@ You already have a license, a CITATION.cff, and a DOI. **This episode ties them 
 
 ::: {.notes}
 **PRE-FLIGHT (before you take over)** Open these tabs, in this order:
-1. Your own fork: github.com/YOUR-USERNAME/software-demo
+1. Your prepared repo: github.com/jt14den/software-demo-prepared
+   (already has LICENSE, CITATION.cff, and a release with a Sandbox DOI)
 2. Upstream 05-add-metadata: github.com/UC-OSPO-Network/software-demo/tree/05-add-metadata
-3. Your Zenodo Sandbox record from Reid's episode (sandbox.zenodo.org, then My dashboard)
+3. Your prepared repo's Zenodo Sandbox record (sandbox.zenodo.org, then My dashboard)
 4. The Etherpad, with the starter README already pasted
 
 **~2 min · SHOW:** slides only.
 
-**SAY:** Leigh usually teaches this episode; I'm covering it. The work is finished,
+**SAY:** I'm switching to a copy I prepared earlier, at the same point your fork
+should be after Reid's episode, so you're not waiting on me. The work is finished,
 and five minutes of description decides whether anyone ever finds it. Libraries
 already know how to do this: it's cataloging.
 :::
@@ -82,7 +84,7 @@ On your repo's front page, click the **gear icon next to About**, then fill in *
 ::: {.notes}
 **~3 min · LIVE DEMO, then learners do it**
 
-**DO** (tab 1, your fork):
+**DO** (tab 1, prepared repo):
 1. On the repo front page, find **About** in the right sidebar and click the **gear icon**
 2. **Description:** Analysis tools for biodiversity research data
 3. **Topics:** type biodiversity, research-software, python (press space after each)
@@ -164,7 +166,7 @@ Next: compare yours with the reference README.
 
 **BEFORE:** make sure the starter README is in the Etherpad. Start a 5-minute timer.
 
-**DO** (tab 1, your fork):
+**DO** (tab 1, prepared repo):
 1. Click **README.md** in the file list, then the **pencil icon** (Edit this file)
 2. Keep the title and DOI badge line at the top. Replace everything below them
    with the starter README from the Etherpad
@@ -290,10 +292,10 @@ These only appear once the file is on the default branch. GitHub changes the det
 :::
 
 ::: {.notes}
-**~1 min · DO:** tab 1 (your fork). Point at the right sidebar.
+**~1 min · DO:** tab 1 (prepared repo). Point at the right sidebar.
 
-**SHOW:** the **BSD-3-Clause** license badge (from Karla's episode) and the
-**Cite this repository** link (from Laura's). Click Cite this repository to show
+**SHOW:** the **BSD-3-Clause** license badge and the **Cite this repository** link
+(learners' forks have these from Karla's and Laura's episodes). Click Cite this repository to show
 the APA and BibTeX it generates.
 
 **SAY:** GitHub did this because of the filenames. That's the pattern to remember.

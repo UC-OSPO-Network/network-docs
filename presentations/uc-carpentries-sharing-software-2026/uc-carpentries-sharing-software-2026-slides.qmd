@@ -51,10 +51,17 @@ We'll begin shortly. Grab the collaborative notes and settle in.
 :::
 
 ::: {.notes}
-Holding slide. Welcome people by name as they arrive. Point them at the Etherpad
-(linked on the workshop site) and, once we're rolling, the demo-repo fork link.
-Remind them every session in the series stands alone: register once, attend any.
-If they haven't done the pre-workshop survey, the link is on the site.
+**PRE-FLIGHT (15 min before)**
+- Confirm github.com/jt14den/software-demo does NOT exist (you'll create it live)
+- Tabs: this deck in speaker view (press S), the Etherpad, and
+  github.com/UC-OSPO-Network/software-demo, logged in as jt14den
+- Zoom: share this browser window only; chat open
+
+**While people join · DO:** paste the Etherpad link and the lesson link
+(ucospo.net/research-software-citable-discoverable) into the Zoom chat.
+
+**SAY:** Welcome people by name. Every session in the series stands alone.
+Pre-workshop survey link is on the workshop site.
 :::
 
 ## Code of Conduct
@@ -85,11 +92,11 @@ Full text & report form: docs.carpentries.org/policies/coc
 :::
 
 ::: {.notes}
-Read this early, don't rush it. The Carpentries has a Code of Conduct and it applies
-to everyone in this room: instructors, helpers, and learners. Short version: be kind,
-assume good faith, make room for people who are new to this. If anything makes you
-uncomfortable, tell any of us privately, or go straight to the CoC Committee. It's on
-the workshop site and linked in the Etherpad.
+**~2 min · SHOW:** slides only. Read it; don't rush.
+
+**SAY:** It applies to everyone here: instructors, helpers, and learners. Be kind,
+assume good faith, make room for people who are new. If anything makes you
+uncomfortable, tell any of us privately, or go straight to the CoC Committee.
 :::
 
 ## How we learn together
@@ -115,9 +122,11 @@ the workshop site and linked in the Etherpad.
 ::::
 
 ::: {.notes}
-Set the room. Follow along in your own fork. We deliberately keep scope small; if we
-skip something, the lesson site has it. Post questions in the Etherpad so nothing
-gets lost. Nobody needs to unmute unless they want to.
+**~1 min · SHOW:** slides only.
+
+**SAY:** Follow along in your own fork. We keep the scope small; the lesson site has
+the rest. Post questions in the Etherpad or chat. Nobody needs to unmute unless they
+want to. Introduce the helpers: Derek, Jamie, Kelsey.
 :::
 
 ## The UC OSPO Network {background-color="#f0f4fa"}
@@ -152,11 +161,12 @@ ucospo.net/about/contact
 ::::
 
 ::: {.notes}
-Laura presents this slide, since she leaves after her CITATION.cff episode.
-Several of today's instructors are campus contacts: Karla at UCSD, Tim and Leigh
-at UCLA. The templates use the same README, CONTRIBUTING, and citation patterns
-as today, so people can start from them instead of a blank file. The "Get
-involved" slide at the end of the metadata deck picks this back up.
+**~2 min · LAURA PRESENTS · DO:** hand over to Laura ("Laura, over to you").
+Stay on this slide; advance when she asks.
+
+Laura leaves after her CITATION.cff episode, which is why this is up front.
+Talking points if needed: Karla (UCSD) and Tim and Leigh (UCLA) are campus contacts;
+the templates are the same README, CONTRIBUTING, and citation patterns we use today.
 :::
 
 ## Upcoming events {background-color="#f0f4fa"}
@@ -175,10 +185,9 @@ All times Pacific. Registration links and more events: ucospo.net/events
 :::
 
 ::: {.notes}
-Laura or Tim. Both October events need registration; the links are on
-ucospo.net/events. Worth a plug for Oct 6 since it's ours: Paul Eggert coordinates
-the Time Zone Database, a nice example of invisible open source infrastructure.
-Paste the events link in the Etherpad.
+**~1 min · LAURA · DO:** paste ucospo.net/events in the chat.
+
+Plug Oct 6 (our UCLA meetup with Paul Eggert). Then take it back from Laura.
 :::
 
 ## The question that starts this lesson
@@ -202,11 +211,12 @@ Ten years ago the same question arrived about **datasets**, and libraries built 
 **Supporting others** slides translate each step into consultation work.
 
 ::: {.notes}
-Faculty really do ask this. Lead with it. Researchers rarely take up these
-practices out of virtue. They take them up because journals are starting to require
-citable code deposits, funders ask, and a DOI turns invisible work into something
-that counts on a CV. Right now they're leaving that credit on the table. The
-hands-on steps are the same whichever audience you're in.
+**~2 min · YOU AGAIN · SHOW:** slides only.
+
+**SAY:** Faculty really do ask this. Researchers rarely take up these practices out of
+virtue. Journals are starting to require citable code, funders ask, and a DOI turns
+invisible work into something that counts on a CV. The hands-on steps are the same
+whichever audience you're in.
 :::
 
 ## How common is the software citation gap?
@@ -229,6 +239,12 @@ of 2020 articles give enough detail to **uniquely identify** the software they u
 
 ::: {.small}
 Both figures: Schindler et al. (2022), PeerJ Computer Science, doi:10.7717/peerj-cs.835
+:::
+
+::: {.notes}
+**~1 min · SAY:** Six in ten articles mention software; in 2020 only about four in ten
+said enough to tell you which software, and which version. Both from one study of
+3.2 million PubMed Central articles.
 :::
 
 ## A GitHub URL isn't a citation
@@ -260,18 +276,15 @@ Both figures: Schindler et al. (2022), PeerJ Computer Science, doi:10.7717/peerj
 You'll create both pieces today: a `CITATION.cff` file and a DOI.
 
 ::: {.notes}
-A URL is a shelf location, not a catalog record. Citing code this way is like citing
-a book as "third shelf, Powell Library reading room." Move the book, close the room,
-the reference is dead. Gitorious shut down in 2015, Google Code in 2016, thousands
-of projects unreachable overnight.
+**~2 min · SAY:** A URL is a shelf location, not a catalog record. Citing code this way
+is like citing a book as "third shelf, Powell Library reading room." Gitorious shut
+down in 2015, Google Code in 2016.
 
-The DOI here is illustrative, in real Zenodo format (10.5281). Learners mint on
-Zenodo Sandbox today, so theirs will start 10.5072 and won't resolve on doi.org.
-That's expected for practice.
+The DOI here is illustrative (real Zenodo format, 10.5281). Today everyone mints on
+Zenodo Sandbox, so theirs will start 10.5072 and won't open on doi.org. That's fine.
 
-If there's time, the durability story: before Heartbleed (2014), OpenSSL secured
-about a sixth of the web's encrypted traffic on ~$2,000/year in donations with one
-paid maintainer. Depositing in an archive moves software off one person's account.
+If there's time: before Heartbleed (2014), OpenSSL secured about a sixth of the web's
+encrypted traffic on ~$2,000/year in donations with one paid maintainer.
 :::
 
 ## Where your fork is headed
@@ -305,12 +318,13 @@ The labels come from FAIR4RS: Findable, Accessible, Interoperable, Reusable. Che
 :::
 
 ::: {.notes}
-Keep FAIR light. This is a preview. Learners understand the letters better once
-they've built each piece, so name the arc and move on.
+**~2 min · DO** (upstream tab): open the **branch dropdown** (says main) and show the
+list: 02-add-license through 06-optional-pixi.
 
-Optional real-world example if someone asks what "good" looks like at scale:
-Spack (github.com/spack/spack) has a clear README, Apache-2.0 or MIT license,
-CITATION.cff, docs, and a code of conduct and contributing guide.
+**SAY:** These are the answer key, one per episode. If you fall behind, switch to the
+matching branch and copy the file you missed into your fork. Keep FAIR light; it's a
+preview. Spack (github.com/spack/spack) is a good "what good looks like" example if
+anyone asks.
 :::
 
 ## Fork the demo repository
@@ -326,9 +340,20 @@ Use the reference branches to check your work, but don't build on them. Full set
 :::
 
 ::: {.notes}
-Before learners begin, ask everyone to confirm the top-left path says
-THEIR-USERNAME/software-demo. Have helpers check chat/room for anyone still on the
-upstream repository. Do not continue until most learners are in their own fork.
+**~4 min · LIVE DEMO, learners follow along**
+
+**DO** (upstream tab, github.com/UC-OSPO-Network/software-demo):
+1. Click **Fork** (top right)
+2. On "Create a new fork": leave **Copy the main branch only** checked
+3. Click **Create fork**
+
+**SHOW:** the top-left now reads **jt14den/software-demo**, "forked from
+UC-OSPO-Network/software-demo". Point at both lines.
+
+**SAY:** Check your top-left says your username. Thumbs-up in Zoom when you see it.
+
+**HELPERS:** find anyone still on UC-OSPO-Network/software-demo, or not signed in.
+Don't move on until most thumbs are up.
 :::
 
 ## The starting point
@@ -346,9 +371,11 @@ software-demo/
 Deliberately bare. By the end it will have a license, citation metadata, a DOI, and a real README.
 
 ::: {.notes}
-Ask learners to confirm they see exactly these three items in their fork. This is
-the best early moment to catch anyone on the wrong repository, wrong branch, or not
-signed in.
+**~1 min · SHOW:** your new fork's file list. Only README.md, requirements.txt, and src/.
+Click README.md: one line of description and a note.
+
+**SAY:** Deliberately bare. By the end it will have a license, citation metadata, a
+DOI, and a real README.
 :::
 
 ## Supporting others: a four-question triage {background-color="#f0f4fa"}
@@ -365,14 +392,16 @@ Aim for the **single most useful next step**. You don't have to fix everything.
 **Try it now (2 min):** answer all four for your fork of `software-demo`.
 
 ::: {.notes}
-Think of a bare repo as an unprocessed accession: in the building, not in the
-collection. Technically held, practically invisible.
+**~3 min · DO:** start a 2-minute timer; learners answer the four questions for their fork.
 
-Most repos need one or two changes to go from unusable to useful, and your value is
-helping the researcher see which one. Choosing that order is the skill, and this
-audience already uses it when appraising other kinds of material. The four
-questions are also the take-home: a five-minute consultation format the rest of
-the lesson builds on. Give them the full two minutes before moving on.
+**SHOW** (your fork) when time's up, walking the four:
+- Rights: no LICENSE file, so nobody can legally reuse it
+- Credit: no CITATION.cff, no authors listed
+- Runnable: requirements.txt exists, but nothing says how to run it
+- Findable: no description, no topics under About
+
+**SAY:** Most repos need one or two changes, and your value is helping the researcher
+see which one first. Librarians already do this when appraising other material.
 :::
 
 ## Key points
@@ -383,8 +412,8 @@ the lesson builds on. Give them the full two minutes before moving on.
 - A public repo still needs a license, a citation, and a description before others can use it
 
 ::: {.notes}
-Wrap this block and hand off to the next presenter for the License episode. Remind
-the room the reference branches are there the whole time if anyone falls behind.
+**~1 min · SAY** the four points. Remind the room: reference branches are there the
+whole time if anyone falls behind.
 :::
 
 ## Up next {.title-slide data-background-color="#1f335e"}
@@ -402,5 +431,8 @@ Then back to Tim for Improving Metadata and Discoverability.
 :::
 
 ::: {.notes}
-Handoff slide. Introduce Karla by name and thank the room before stepping back.
+**DO:** introduce Karla by name, **stop sharing your screen**, and hand over.
+
+Before you're back (after Reid), open the metadata deck and the tabs listed in its
+first slide's notes. You'll switch to your prepared repo, not the fork you made here.
 :::
