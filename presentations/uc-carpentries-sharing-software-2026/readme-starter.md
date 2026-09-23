@@ -1,8 +1,9 @@
-# Biodiversity Analysis Toolkit
+<!-- Paste this BELOW the title and DOI badge at the top of your README. -->
+[![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
 
 ## About
 
-Analysis tools for biodiversity research data. This demo version generates a sample dataset and prints its mean and standard deviation. It's a teaching repository for the "Making Research Software Citable & Discoverable" lesson.
+Analysis tools for biodiversity research data. This demo version generates a sample dataset and prints its mean and standard deviation. It's a teaching repository for the [Making Research Software Citable & Discoverable](https://ucospo.net/research-software-citable-discoverable/) lesson.
 
 ## Features
 
@@ -30,12 +31,12 @@ This prints the mean and standard deviation of the sample data.
 
 ## Citation
 
-If you use this software, please cite it using the metadata in [CITATION.cff](CITATION.cff) or its DOI: YOUR-DOI
+If you use this software, please cite it. Use the **Cite this repository** button on GitHub, which reads [CITATION.cff](CITATION.cff), or cite the archived release: DOI [YOUR-DOI](https://sandbox.zenodo.org/records/YOUR-RECORD-ID).
 
 ## License
 
-BSD 3-Clause License. See [LICENSE](LICENSE).
+This project is licensed under the BSD 3-Clause License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-Questions or problems? Open an issue at https://github.com/YOUR-USERNAME/software-demo/issues
+Questions or problems? [Open an issue](https://github.com/YOUR-USERNAME/software-demo/issues).

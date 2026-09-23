@@ -37,13 +37,17 @@ The tools are GitHub topics, Zenodo fields, and a README. The question is the sa
 You already have a license, a CITATION.cff, and a DOI. **This episode ties them together.**
 
 ::: {.notes}
-Leigh normally teaches this episode; she's out today, so I'm covering it. Brief
-acknowledgment, then move on.
+**PRE-FLIGHT (before you take over)** Open these tabs, in this order:
+1. Your own fork: github.com/YOUR-USERNAME/software-demo
+2. Upstream 05-add-metadata: github.com/UC-OSPO-Network/software-demo/tree/05-add-metadata
+3. Your Zenodo Sandbox record from Reid's episode (sandbox.zenodo.org, then My dashboard)
+4. The Etherpad, with the starter README already pasted
 
-This episode sits squarely in a library audience's expertise. Researchers treat metadata as a form to rush through; a scholcomm
-professional treats it as the mechanism of discovery. The pitch to the researcher
-is blunt: the work is finished, and five minutes of description determines whether
-anyone ever finds it.
+**~2 min · SHOW:** slides only.
+
+**SAY:** Leigh usually teaches this episode; I'm covering it. The work is finished,
+and five minutes of description decides whether anyone ever finds it. Libraries
+already know how to do this: it's cataloging.
 :::
 
 ## What counts as useful metadata?
@@ -57,10 +61,12 @@ Good metadata answers predictable questions with minimal effort from the reader:
 - **What else does it relate to?** A related article, dataset, or funder
 
 ::: {.notes}
-This is authority control: title, authors, and description should read the same in
-the README, the CITATION.cff, and the Zenodo record, for the same reason a name
-reads the same across catalog records. When they drift, indexes treat one piece of
-software as several, and its citations scatter.
+**~2 min · SHOW:** slides only.
+
+**SAY:** Every one of these answers a question someone will ask. Then the authority
+control point: title, authors, and description should read the same in the README,
+CITATION.cff, and Zenodo. When they drift, indexes treat one piece of software as
+several, and its citations scatter.
 :::
 
 ## Add GitHub Topics
@@ -74,9 +80,19 @@ On your repo's front page, click the **gear icon next to About**, then fill in *
 ![](images/repository-topics.png){fig-align="center" height="380"}
 
 ::: {.notes}
-Live demo: open the software-demo repo, click the gear icon next to About, add
-topics separated by spaces. Reuse the same topic words you'll put in CITATION.cff
-and the Zenodo record later. Consistency is the point.
+**~3 min · LIVE DEMO, then learners do it**
+
+**DO** (tab 1, your fork):
+1. On the repo front page, find **About** in the right sidebar and click the **gear icon**
+2. **Description:** Analysis tools for biodiversity research data
+3. **Topics:** type biodiversity, research-software, python (press space after each)
+4. Click **Save changes**
+
+**SHOW:** the topics appear as chips under About. Click one to show GitHub's topic
+search page, then come back.
+
+**SAY:** Reuse these same words later in CITATION.cff and Zenodo. Consistency is the point.
+Give learners 1 minute to add topics to their own fork.
 :::
 
 ## The 30-second rule
@@ -86,6 +102,14 @@ and the Zenodo record later. Consistency is the point.
 If people can't tell what it does, how to install it, and how to use it in **30 seconds**, they leave.
 
 A repo without a real README is a collection without a finding aid: only its author can use it.
+
+::: {.notes}
+**~1 min · DO:** switch to the upstream repo's main branch README (bare).
+**SHOW:** hold it for ten seconds. Ask: could you install and run this from what's here?
+Then back to the slides.
+
+**SAY:** A repo without a real README is a collection without a finding aid.
+:::
 
 ## README: 7 essential sections
 
@@ -110,6 +134,13 @@ A repo without a real README is a collection without a finding aid: only its aut
 [UC OSPO README Guide](https://ucospo.net/oss-resources/template-guides/readme-guide/) *(UC-specific)*
 :::
 
+::: {.notes}
+**~1 min · SHOW:** slides only. Walk the 7 quickly; don't explain each one in depth,
+the next challenge does that.
+
+**SAY:** The UC OSPO README guide has a template (link in the Etherpad).
+:::
+
 ## Challenge: give your README the 7 sections
 
 ::: {.project-badge}
@@ -122,18 +153,37 @@ In your fork of `software-demo`:
 2. Add a `## ` heading for each of the 7 sections: About, Features, Getting Started, Usage, Citation, License, Contact
 3. Fill in what you can, then **Commit changes** to `main`
 
-Short on time? Copy the starter README from the Etherpad and replace `YOUR-USERNAME` and `YOUR-DOI`.
+Short on time? Paste the starter README from the Etherpad **below your DOI badge**, then replace `YOUR-USERNAME`, `YOUR-DOI`, and `YOUR-RECORD-ID` (from your Sandbox record's web address).
 
 ::: {.fragment}
 Next: compare yours with the reference README.
 :::
 
 ::: {.notes}
-Paste the starter README (readme-starter.md in this folder) into the Etherpad
-before this slide. Helpers: watch for people editing the upstream repo instead of
-their fork, headings missing the space after ##, and anyone who forgets to commit.
-The Preview tab in GitHub's editor shows the rendered headings. Their DOI is the
-Sandbox DOI from Reid's episode. Then go to the before/after slide as the reveal.
+**~6 min · DEMO for 1 minute, then 5 minutes for learners**
+
+**BEFORE:** make sure the starter README is in the Etherpad. Start a 5-minute timer.
+
+**DO** (tab 1, your fork):
+1. Click **README.md** in the file list, then the **pencil icon** (Edit this file)
+2. Keep the title and DOI badge line at the top. Replace everything below them
+   with the starter README from the Etherpad
+3. Replace YOUR-USERNAME, YOUR-DOI (10.5072/zenodo.NNNN), and YOUR-RECORD-ID
+   (the number at the end of your Sandbox record's URL)
+4. Click the **Preview** tab to show the headings rendering
+5. Click **Commit changes…**, keep "Commit directly to the main branch", click **Commit changes**
+
+**SHOW:** the repo front page with the new README rendered.
+
+**SAY:** Write your own if you'd rather; the starter is a fallback.
+
+**HELPERS:** watch for people editing the upstream repo instead of their fork,
+`##` with no space after it, and anyone who never commits. Their DOI is the
+Sandbox DOI from Reid's episode; it won't open on doi.org, which is why the
+starter links to the Sandbox record instead. No badge yet? On the Sandbox record,
+find the DOI badge, copy its Markdown, and paste it under the title. Check the links work in Preview:
+LICENSE, CITATION.cff, the DOI, and Open an issue.
+Click once to show the "Next" line, then advance.
 :::
 
 ## Before → after
@@ -182,11 +232,13 @@ Open an issue in this repository.
 ::::
 
 ::: {.notes}
-Every one of the 7 sections from the previous slide is here; the numbers in the
-comments map back to that list. Usage is folded into Getting Started, which is
-common and fine. The real README also has Contributing, Code of Conduct, and
-Authors sections; open the 05-add-metadata branch to show the full thing.
-This is the R in FAIR, in practice.
+**~2 min · DO:** tab 2 (upstream, 05-add-metadata branch). Scroll the real README.
+
+**SHOW:** point at each section and call out its number from the slide (1 to 7).
+Usage is folded into Getting Started, which is common and fine. Point out the
+extra sections too: Contributing, Code of Conduct, Authors.
+
+**SAY:** Yours should look roughly like this now. This is the R in FAIR, in practice.
 :::
 
 ## Beyond the README: community health files {background-color="#f0f4fa"}
@@ -213,10 +265,13 @@ Version history: what's new, what broke, what changed.
 [cc]: https://www.contributor-covenant.org/
 
 ::: {.notes}
-CONTRIBUTING.md isn't always needed. Plenty of solid research software has no
-contributor pipeline, and an invitation you can't follow up on creates more work
-than it saves. "I'm not looking for contributors right now,
-please just open an issue" is a complete, honest CONTRIBUTING.md.
+**~1 min · DO:** tab 2, in the file list click **CONTRIBUTING.md**, then
+**CODE_OF_CONDUCT.md**. A few seconds each.
+
+**SAY:** CONTRIBUTING.md isn't always needed. Plenty of solid research software has
+no contributor pipeline, and an invitation you can't follow up on creates more work
+than it saves. "I'm not looking for contributors right now, please just open an
+issue" is a complete, honest CONTRIBUTING.md.
 :::
 
 ## GitHub recognizes certain filenames
@@ -234,6 +289,16 @@ please just open an issue" is a complete, honest CONTRIBUTING.md.
 These only appear once the file is on the default branch. GitHub changes the details, so teach the pattern: the filename is the signal.
 :::
 
+::: {.notes}
+**~1 min · DO:** tab 1 (your fork). Point at the right sidebar.
+
+**SHOW:** the **BSD-3-Clause** license badge (from Karla's episode) and the
+**Cite this repository** link (from Laura's). Click Cite this repository to show
+the APA and BibTeX it generates.
+
+**SAY:** GitHub did this because of the filenames. That's the pattern to remember.
+:::
+
 ## Where should software live? {background-color="#f0f4fa"}
 
 **Zenodo is the recommended deposit location** for software:
@@ -249,6 +314,13 @@ Dataverse and Dryad are good for **datasets**, but don't auto-integrate with Git
 UC-specific: all UC campuses have Dryad. If you deposit data there, Dryad prompts a linked Zenodo code deposit automatically.
 :::
 
+::: {.notes}
+**~1 min · SHOW:** slides only.
+
+**SAY:** Zenodo for software because it archives each GitHub release. At UC, if
+you deposit data in Dryad, Dryad prompts you to put the code in Zenodo too.
+:::
+
 ## Zenodo metadata is what discovery systems see
 
 Zenodo registers each record with **DataCite**. Search tools and discovery services pick it up from there, so the Zenodo record is what they show.
@@ -259,6 +331,17 @@ Add or refine: authors + ORCIDs, keywords, related works, funding, a readable de
 **Caution:** if a repo has a `.zenodo.json`, Zenodo uses *that* file, not `CITATION.cff`. Keep them in sync or you'll publish two different citation records for the same software.
 :::
 
+::: {.notes}
+**~1 min · DO:** tab 3 (your Zenodo Sandbox record).
+
+**SHOW:** the record page: title, creators, description, keywords. Point out how
+thin it is.
+
+**SAY:** This record is what DataCite and discovery services see, not your README.
+And the caution: if a repo has a .zenodo.json, Zenodo uses that instead of
+CITATION.cff, so keep them in sync.
+:::
+
 ## Supporting others: priority order when metadata is thin {background-color="#f0f4fa"}
 
 1. A readable **description**, the biggest loss when it's missing
@@ -267,9 +350,11 @@ Add or refine: authors + ORCIDs, keywords, related works, funding, a readable de
 4. **Related works**: link the software to its paper, dataset, and grant
 
 ::: {.notes}
-Thin metadata means the software never surfaces in the catalog. The question
-here is whether anyone can find it at all. Librarians in the room will often spot
-the gaps faster than the researchers do.
+**~1 min · SHOW:** slides only.
+
+**SAY:** Thin metadata means the software never surfaces in the catalog. The
+question here is whether anyone can find it at all. Librarians in the room will
+often spot the gaps faster than the researchers do.
 :::
 
 ## Challenge: improve your Zenodo record
@@ -289,6 +374,23 @@ Open your record on **Zenodo Sandbox** (sandbox.zenodo.org) from the release epi
 Save and publish the updated record when done.
 :::
 
+::: {.notes}
+**~6 min · DEMO for 1 minute, then 5 minutes for learners.** Start a 5-minute timer.
+
+**DO** (tab 3, your Sandbox record):
+1. Click **Edit** (on the right side of the record page)
+2. **Keywords:** add biodiversity, research-software, python (same words as your topics)
+3. **Creators:** open your name and add your ORCID
+4. **Description:** paste your README's About paragraph
+5. **Save draft**, then **Publish**
+
+**SHOW:** the updated record.
+
+**SAY:** Editing metadata doesn't mint a new DOI. The same DOI now has a better record.
+
+**HELPERS:** watch for anyone on zenodo.org instead of sandbox.zenodo.org.
+:::
+
 ## Challenge: which change makes it discoverable?
 
 ::: {.project-badge}
@@ -306,14 +408,21 @@ D. A shorter name
 **B.** People find software through its *description*. Commit activity doesn't help. It's the same reason a catalog record with no subject headings is nearly invisible.
 :::
 
+::: {.notes}
+**~2 min · DO:** ask the room to answer A, B, C, or D in the Zoom chat. Give
+them 30 seconds, then click to reveal.
+
+**SAY:** B. People find software through its description.
+:::
+
 ## Key points
 
 - Description is what makes software findable, on GitHub, Zenodo, and beyond
 - Keep it consistent across CITATION.cff, README, topics, and Zenodo: that's authority control
 
 ::: {.notes}
-Remind the room the reference branches are there the whole time if anyone falls
-behind, then close with how to get involved.
+**~1 min · SAY** the two points. Remind the room the reference branches are there
+if anyone fell behind; the finished README is on 05-add-metadata.
 :::
 
 ## Get involved
@@ -345,8 +454,12 @@ All times Pacific. Zoom links and calendar feeds: ucospo.net/events
 :::
 
 ::: {.notes}
-Paste the Get Involved link and the Slack invite into the Etherpad before this
-slide. No minimum commitment: come to what's useful, when you can. Coworking is
-the easiest on-ramp if someone wants help finishing what they started today.
-Laura introduced the network at the start; this is the call to action. Hand off to wrap-up.
+**~1 min · DO:** paste the Get Involved link and the Slack invite into the
+Etherpad before this slide.
+
+**SAY:** Laura introduced the network at the start; this is how to stay in touch.
+No minimum commitment. Coworking is the easiest way in if you want help finishing
+what you started today.
+
+Then hand off to wrap-up.
 :::
