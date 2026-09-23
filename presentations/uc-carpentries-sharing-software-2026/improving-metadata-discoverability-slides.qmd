@@ -287,6 +287,41 @@ D. A shorter name
 - Keep it consistent across CITATION.cff, README, topics, and Zenodo: that's authority control
 
 ::: {.notes}
-Hand off to wrap-up. Remind the room the reference branches are there the whole
-time if anyone falls behind.
+Remind the room the reference branches are there the whole time if anyone falls
+behind, then close with how to get involved.
+:::
+
+## Get involved
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Join
+
+- **Slack:** day-to-day questions and resources
+- **Newsletter:** sign up from the Contact page
+- **Your campus mailing list:** also on the Contact page
+:::
+
+::: {.column width="50%"}
+### Show up
+
+- **All-campus virtual meetup:** first Thursday of each month, 10am
+- **Coworking & office hours:** Tuesdays 10am, Thursdays 1pm
+- **UCSB Open Source Lounge:** Thursdays 2:30-4:30pm, hybrid, open to all UC
+:::
+
+::::
+
+**Start here:** ucospo.net/about/get-involved · Questions: Laura Langdon, Community Manager
+
+::: {.small}
+All times Pacific. Zoom links and calendar feeds: ucospo.net/events
+:::
+
+::: {.notes}
+Paste the Get Involved link and the Slack invite into the Etherpad before this
+slide. No minimum commitment: come to what's useful, when you can. Coworking is
+the easiest on-ramp if someone wants help finishing what they started today.
+Laura introduced the network at the start; this is the call to action. Hand off to wrap-up.
 :::
