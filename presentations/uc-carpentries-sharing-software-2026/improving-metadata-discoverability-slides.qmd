@@ -41,7 +41,8 @@ You already have a license, a CITATION.cff, and a DOI. **This episode ties them 
 1. Your prepared repo: github.com/jt14den/software-demo-prepared
    (already has LICENSE, CITATION.cff, and a release with a Sandbox DOI)
 2. Upstream 05-add-metadata: github.com/UC-OSPO-Network/software-demo/tree/05-add-metadata
-3. Your prepared repo's Zenodo Sandbox record (sandbox.zenodo.org, then My dashboard)
+3. Your prepared repo's Zenodo Sandbox record: sandbox.zenodo.org/records/607977
+   (DOI 10.5072/zenodo.607977; your YOUR-RECORD-ID for the README demo is 607977)
 4. The Etherpad, with the starter README already pasted
 
 **~2 min · SHOW:** slides only.
