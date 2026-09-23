@@ -159,6 +159,28 @@ as today, so people can start from them instead of a blank file. The "Get
 involved" slide at the end of the metadata deck picks this back up.
 :::
 
+## Upcoming events {background-color="#f0f4fa"}
+
+**Thu, Oct 1 · 10-11am · Zoom**\
+All-Campus Virtual Meetup: *Lightcone Research*, hosted by UC Berkeley (BIDS). Open source tools for reproducible, AI-assisted science.
+
+**Tue, Oct 6 · 12-1pm · UCLA Young Research Library and online**\
+UCLA Open Source Meetup: *Keeping the World on Time*, with Paul Eggert on sustaining the Time Zone Database. In-person seats are limited.
+
+**2027 · date and location TBD**\
+UC Open 2027
+
+::: {.small}
+All times Pacific. Registration links and more events: ucospo.net/events
+:::
+
+::: {.notes}
+Laura or Tim. Both October events need registration; the links are on
+ucospo.net/events. Worth a plug for Oct 6 since it's ours: Paul Eggert coordinates
+the Time Zone Database, a nice example of invisible open source infrastructure.
+Paste the events link in the Etherpad.
+:::
+
 ## The question that starts this lesson
 
 > "The journal accepted my paper, but they want a citable version of the code, with a DOI. How do I do that?"
