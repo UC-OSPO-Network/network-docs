@@ -167,19 +167,20 @@ Next: compare yours with the reference README.
 
 **BEFORE:** check the starter README is in the Etherpad.
 
-**DO** (tab 1, prepared repo):
+**DO** in your prepared repo (tab 1): https://github.com/jt14den/software-demo-prepared
 
 1. Click **README.md**, then the **pencil icon**
+   (or go straight to https://github.com/jt14den/software-demo-prepared/edit/main/README.md)
 2. Keep the title and the DOI badge line. Delete everything below them
 3. Paste the starter README from the Etherpad
-4. Fill in the three placeholders:
+4. Fill in the three placeholders (values from your Sandbox record, https://sandbox.zenodo.org/records/607977):
    YOUR-USERNAME → jt14den,
    YOUR-DOI → 10.5072/zenodo.607977,
    YOUR-RECORD-ID → 607977
 5. Click **Preview**: the headings render, and the LICENSE, CITATION.cff, DOI, and issue links work
 6. Click **Commit changes…**, then **Commit changes** again (straight to main)
 
-**SHOW:** the front page with the new README.
+**SHOW:** the front page with the new README: https://github.com/jt14den/software-demo-prepared
 
 **SAY:** Your turn, 5 minutes. Use the starter or write your own. Your DOI and
 record number are on your Sandbox record from Reid's episode.
