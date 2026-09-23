@@ -67,10 +67,8 @@ Good metadata answers predictable questions with minimal effort from the reader:
 ::: {.notes}
 **~2 min · SHOW:** slides only.
 
-**SAY:** Every one of these answers a question someone will ask. Then the authority
-control point: title, authors, and description should read the same in the README,
-CITATION.cff, and Zenodo. When they drift, indexes treat one piece of software as
-several, and its citations scatter.
+**SAY:** Each of these answers a question someone will ask. Use the same title,
+names, and description in the README, CITATION.cff, and Zenodo.
 :::
 
 ## Add GitHub Topics
@@ -429,7 +427,7 @@ them 30 seconds, then click to reveal.
 ## Key points
 
 - Description is what makes software findable, on GitHub, Zenodo, and beyond
-- Keep it consistent across CITATION.cff, README, topics, and Zenodo: that's authority control
+- Use the same title, names, and description in CITATION.cff, README, topics, and Zenodo
 
 ::: {.notes}
 **~1 min · SAY** the two points. Remind the room the reference branches are there
