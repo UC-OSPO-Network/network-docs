@@ -1,0 +1,74 @@
+cff-version: 1.2.0
+title: "Making Research Software Citable & Discoverable: UC Carpentries Fall 2026 Workshop Slides"
+message: "If you use or reference these slides, please cite them as below."
+authors:
+  - family-names: Dennis
+    given-names: Tim
+    orcid: https://orcid.org/0000-0001-6632-3812
+    affiliation: "Data Science Center, UCLA Library"
+  - family-names: Phan
+    given-names: Leigh
+    orcid: https://orcid.org/0000-0002-8605-1444
+    affiliation: "University of California, Los Angeles"
+  - family-names: Padilla
+    given-names: Karla
+    affiliation: "University of California, San Diego"
+  - family-names: Otsuji
+    given-names: Reid
+    orcid: https://orcid.org/0000-0002-1842-0295
+    affiliation: "University of California, San Diego"
+  - family-names: Langdon
+    given-names: Laura
+    affiliation: "UC OSPO Network"
+date-released: 2026-09-23
+version: "1.0"
+# After the Zenodo deposit, add:
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.XXXXXXX
+#     description: Zenodo deposit
+url: "https://ucospo.net/network-docs/presentations/uc-carpentries-sharing-software-2026/uc-carpentries-sharing-software-2026-slides.html"
+repository-code: "https://github.com/UC-OSPO-Network/network-docs"
+keywords:
+  - research software
+  - software citation
+  - CITATION.cff
+  - Zenodo
+  - DOI
+  - open source licensing
+  - metadata
+  - FAIR4RS
+  - UC OSPO Network
+  - Carpentries
+license: CC-BY-4.0
+abstract: >
+  Slides for a half-day, browser-based workshop on making research software
+  citable, discoverable, and reusable, co-presented by the UC OSPO Network and
+  UC Carpentries and hosted by UCLA. Learners fork a demo GitHub repository and
+  add an open source license, a CITATION.cff file, a versioned release with a
+  DOI, and better documentation and metadata. Two decks: an introduction
+  (why software citation matters, the UC OSPO Network, forking the demo
+  repository) and "Improving Metadata and Discoverability". The slides
+  accompany the lesson at https://ucospo.net/research-software-citable-discoverable/.
+preferred-citation:
+  type: slides
+  title: "Making Research Software Citable & Discoverable: UC Carpentries Fall 2026 Workshop Slides"
+  authors:
+    - family-names: Dennis
+      given-names: Tim
+    - family-names: Phan
+      given-names: Leigh
+    - family-names: Padilla
+      given-names: Karla
+    - family-names: Otsuji
+      given-names: Reid
+    - family-names: Langdon
+      given-names: Laura
+  year: 2026
+  month: 9
+  conference:
+    name: "UC Carpentries Workshop Series, Fall 2026"
+    date-start: 2026-09-23
+    date-end: 2026-09-23
+  url: "https://ucospo.net/network-docs/presentations/uc-carpentries-sharing-software-2026/uc-carpentries-sharing-software-2026-slides.html"
+  # After the Zenodo deposit, add: doi: 10.5281/zenodo.XXXXXXX
