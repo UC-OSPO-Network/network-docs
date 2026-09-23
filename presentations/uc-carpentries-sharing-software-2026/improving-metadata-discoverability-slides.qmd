@@ -67,10 +67,8 @@ Good metadata answers predictable questions with minimal effort from the reader:
 ::: {.notes}
 **~2 min · SHOW:** slides only.
 
-**SAY:** Every one of these answers a question someone will ask. Then the authority
-control point: title, authors, and description should read the same in the README,
-CITATION.cff, and Zenodo. When they drift, indexes treat one piece of software as
-several, and its citations scatter.
+**SAY:** Each of these answers a question someone will ask. Use the same title,
+names, and description in the README, CITATION.cff, and Zenodo.
 :::
 
 ## Add GitHub Topics
@@ -165,31 +163,37 @@ Next: compare yours with the reference README.
 :::
 
 ::: {.notes}
-**~6 min · DEMO for 1 minute, then 5 minutes for learners**
+**~6 min · 1-minute demo, then 5 minutes for learners**
 
-**BEFORE:** make sure the starter README is in the Etherpad. Start a 5-minute timer.
+**BEFORE:** check the starter README is in the Etherpad.
 
-**DO** (tab 1, prepared repo):
+**DO** in your prepared repo (tab 1): https://github.com/jt14den/software-demo-prepared
 
-1. Click **README.md** in the file list, then the **pencil icon** (Edit this file)
-2. Keep the title and DOI badge line at the top. Replace everything below them
-   with the starter README from the Etherpad
-3. Replace YOUR-USERNAME, YOUR-DOI (10.5072/zenodo.NNNN), and YOUR-RECORD-ID
-   (the number at the end of your Sandbox record's URL)
-4. Click the **Preview** tab to show the headings rendering
-5. Click **Commit changes…**, keep "Commit directly to the main branch", click **Commit changes**
+1. Click **README.md**, then the **pencil icon**
+   (or go straight to https://github.com/jt14den/software-demo-prepared/edit/main/README.md)
+2. Keep the title and the DOI badge line. Delete everything below them
+3. Paste the starter README from the Etherpad
+4. Fill in the three placeholders (values from your Sandbox record, https://sandbox.zenodo.org/records/607977):
+   YOUR-USERNAME → jt14den,
+   YOUR-DOI → 10.5072/zenodo.607977,
+   YOUR-RECORD-ID → 607977
+5. Click **Preview**: the headings render, and the LICENSE, CITATION.cff, DOI, and issue links work
+6. Click **Commit changes…**, then **Commit changes** again (straight to main)
 
-**SHOW:** the repo front page with the new README rendered.
+**SHOW:** the front page with the new README: https://github.com/jt14den/software-demo-prepared
 
-**SAY:** Write your own if you'd rather; the starter is a fallback.
+**SAY:** Your turn, 5 minutes. Use the starter or write your own. Your DOI and
+record number are on your Sandbox record from Reid's episode.
 
-**HELPERS:** watch for people editing the upstream repo instead of their fork,
-`##` with no space after it, and anyone who never commits. Their DOI is the
-Sandbox DOI from Reid's episode; it won't open on doi.org, which is why the
-starter links to the Sandbox record instead. No badge yet? On the Sandbox record,
-find the DOI badge, copy its Markdown, and paste it under the title. Check the links work in Preview:
-LICENSE, CITATION.cff, the DOI, and Open an issue.
-Click once to show the "Next" line, then advance.
+Start the timer. When it ends, click once to show the "Next" line, then advance.
+
+**HELPERS,** common problems:
+
+- Editing the upstream repo, not their fork: check the owner name at the top of the page
+- `##Heading` with no space: add a space after `##`
+- Never clicked Commit: nothing changes on the front page
+- DOI link won't open: Sandbox DOIs don't work on doi.org, which is why the starter links to the Sandbox record
+- No DOI badge: copy the badge Markdown from their Sandbox record and paste it under the title
 :::
 
 ## Before → after
@@ -238,7 +242,9 @@ Open an issue in this repository.
 ::::
 
 ::: {.notes}
-**~2 min · DO:** tab 2 (upstream, 05-add-metadata branch). Scroll the real README.
+**~2 min · DO:** tab 2, the upstream 05-add-metadata branch:
+https://github.com/UC-OSPO-Network/software-demo/tree/05-add-metadata
+Scroll down to the README.
 
 **SHOW:** point at each section and call out its number from the slide (1 to 7).
 Usage is folded into Getting Started, which is common and fine. Point out the
@@ -271,8 +277,10 @@ Version history: what's new, what broke, what changed.
 [cc]: https://www.contributor-covenant.org/
 
 ::: {.notes}
-**~1 min · DO:** tab 2, in the file list click **CONTRIBUTING.md**, then
+**~1 min · DO:** tab 2 (https://github.com/UC-OSPO-Network/software-demo/tree/05-add-metadata), in the file list click **CONTRIBUTING.md**, then
 **CODE_OF_CONDUCT.md**. A few seconds each.
+Direct links: https://github.com/UC-OSPO-Network/software-demo/blob/05-add-metadata/CONTRIBUTING.md
+and https://github.com/UC-OSPO-Network/software-demo/blob/05-add-metadata/CODE_OF_CONDUCT.md
 
 **SAY:** CONTRIBUTING.md isn't always needed. Plenty of solid research software has
 no contributor pipeline, and an invitation you can't follow up on creates more work
@@ -296,7 +304,7 @@ These only appear once the file is on the default branch. GitHub changes the det
 :::
 
 ::: {.notes}
-**~1 min · DO:** tab 1 (prepared repo). Point at the right sidebar.
+**~1 min · DO:** tab 1, https://github.com/jt14den/software-demo-prepared. Point at the right sidebar.
 
 **SHOW:** the **BSD-3-Clause** license badge and the **Cite this repository** link
 (learners' forks have these from Karla's and Laura's episodes). Click Cite this repository to show
@@ -338,7 +346,7 @@ Add or refine: authors + ORCIDs, keywords, related works, funding, a readable de
 :::
 
 ::: {.notes}
-**~1 min · DO:** tab 3 (your Zenodo Sandbox record).
+**~1 min · DO:** tab 3, your Sandbox record: https://sandbox.zenodo.org/records/607977
 
 **SHOW:** the record page: title, creators, description, keywords. Point out how
 thin it is.
@@ -383,7 +391,7 @@ Save and publish the updated record when done.
 ::: {.notes}
 **~6 min · DEMO for 1 minute, then 5 minutes for learners.** Start a 5-minute timer.
 
-**DO** (tab 3, your Sandbox record):
+**DO** in tab 3, your Sandbox record: https://sandbox.zenodo.org/records/607977
 
 1. Click **Edit** (on the right side of the record page)
 2. **Keywords:** add biodiversity, research-software, python (same words as your topics)
@@ -429,7 +437,7 @@ them 30 seconds, then click to reveal.
 ## Key points
 
 - Description is what makes software findable, on GitHub, Zenodo, and beyond
-- Keep it consistent across CITATION.cff, README, topics, and Zenodo: that's authority control
+- Use the same title, names, and description in CITATION.cff, README, topics, and Zenodo
 
 ::: {.notes}
 **~1 min · SAY** the two points. Remind the room the reference branches are there
@@ -465,7 +473,8 @@ All times Pacific. Zoom links and calendar feeds: ucospo.net/events
 :::
 
 ::: {.notes}
-**~1 min · DO:** paste the Get Involved link and the Slack invite into the
+**~1 min · DO:** paste the Get Involved link (https://ucospo.net/about/get-involved),
+the events page (https://ucospo.net/events), and the Slack invite into the
 Etherpad before this slide.
 
 **SAY:** Laura introduced the network at the start; this is how to stay in touch.
