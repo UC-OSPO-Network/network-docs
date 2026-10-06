@@ -1,0 +1,187 @@
+---
+title: "UCLA Open Source Meetup"
+subtitle: "Keeping the World on Time, and where this fits in the UC OSPO Network"
+author:
+  - "Leigh Phan · Tim Dennis"
+institute:
+  - "UCLA OSPO · UCLA Library Data Science Center"
+format:
+  pptx:
+    reference-doc: ucospo-reference.pptx
+  revealjs:
+    embed-resources: true
+    theme: ucospo-theme.scss
+    logo: images/uc-ospo-network-logo-light.svg
+    include-after-body: logo-swap.txt
+    slide-number: true
+    footer: "UCLA OSPO · UC OSPO Network · ucospo.net"
+    transition: none
+    width: 1280
+    height: 720
+    hash: true
+    title-slide-attributes:
+      data-background-image: images/uc-ospo-network-logo-white.svg
+      data-background-size: "34% auto"
+      data-background-position: "4% 5%"
+      data-background-color: "#1f335e"
+---
+
+## Welcome: why time zones are an open source story
+
+:::: {.columns}
+
+::: {.column width="55%"}
+Today: **Prof. Paul Eggert** (UCLA Computer Science) on the **Time Zone Database (tzdb)**.
+
+* A small, volunteer-maintained project that quietly sits under operating systems, programming languages, phones, and the timestamps on our documents and photos
+* When a government changes its clocks, someone has to notice, verify, and ship the fix
+* Exactly the kind of **invisible infrastructure** an OSPO exists to support
+
+**Format:** 30–40 min talk, then extended Q&A. Hybrid and recorded.
+:::
+
+::: {.column width="45%"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:1.2em 1.4em;"}
+**UCLA Open Source Meetup**
+
+Tuesday, Oct 6, 2026
+12:00–1:00 pm
+
+Charles E. Young Research Library, Room 11630L, and Zoom
+
+Hosted by UCLA OSPO with the UC OSPO Network
+
+[Event page and registration](https://calendar.library.ucla.edu/event/17080330)
+:::
+:::
+
+::::
+
+::: {.notes}
+- Welcome; remind folks it's recorded, Q&A at the end
+- Ask the room: who has ever hit a daylight-saving or time zone bug?
+- Hook for the network: tzdb is the poster child for "critical infrastructure held up by very few maintainers"
+:::
+
+---
+
+## UCLA is one of six campuses in the UC OSPO Network
+
+:::: {.columns}
+
+::: {.column width="55%"}
+A **multi-campus collaboration** treating open source as shared infrastructure.
+
+* **Six campuses:** Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, San Diego
+* Launched April 2024, funded by the Alfred P. Sloan Foundation
+* Led by UC Santa Cruz
+
+**Three thematic areas**
+
+* **Discovery**: who is building what across UC
+* **Sustainability**: licensing, project health, community
+* **Education**: shared training and learning pathways
+:::
+
+::: {.column width="45%"}
+::: {style="background:#f0f4fa; border-radius:8px; padding:1.2em 1.4em;"}
+**What UCLA does**
+
+UCLA OSPO sits in the Library's Data Science Center and co-leads the network's education work.
+
+Today's meetup is one of the ways campuses bring open source people together locally. Other campuses run theirs too (next slide).
+:::
+:::
+
+::::
+
+::: {.notes}
+- Keep this short; most of the room knows UCLA, fewer know the network
+- Education theme: ucospo.net/education
+:::
+
+---
+
+## Coming up across the network
+
+| Date | Event | Where |
+|:--|:--|:--|
+| **Oct 6** | **UCLA Open Source Meetup: Keeping the World on Time** (today) | UCLA, hybrid |
+| Oct 8 | [How to Contribute to Open Source Software](https://www.eventbrite.com/e/2000937230119) | Eventbrite |
+| **Oct 15** | [**UC Berkeley OSPO Monthly Meetup: Open Source AI Models**](https://events.berkeley.edu/BIDS/event/327522-ospo-monthly-meetup-open-source-ai-models) | Berkeley (BIDS), 3–5:30 pm |
+| Oct 22 | [CruzCon: Open Source for Research & Innovation](https://docs.google.com/forms/d/e/1FAIpQLSe9kqcmwp-OotTb9cUlhJ5CGttoGitT-aHg8JIqcKZC1-T0WQ/viewform) | UC Santa Cruz |
+| Oct 23–24 | [Reboot the Earth Hackathon](https://events.library.ucdavis.edu/event/reboot-the-earth-hackathon-ucdavis) | UC Davis |
+| Nov 5 | All-Campus Virtual Meetup: Open Source and Tech Transfer | Zoom |
+
+::: {.small}
+Full calendar and registration links: [ucospo.net/events](https://ucospo.net/events/)
+:::
+
+::: {.notes}
+- Berkeley's Oct 15 meetup on open source AI models is the natural follow-on if people liked today's infrastructure theme: who maintains the models, and under what licenses
+- Weekly drop-ins: coworking Tuesdays 10am and Thursdays 1pm PT on Zoom; UCSB Open Source Lounge Thursdays 2:30–4:30
+- Times/dates from ucospo.net/events as of Oct 6; Berkeley's own event page didn't load for me, so check details before announcing more than the date
+:::
+
+---
+
+## Get connected
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**UCLA OSPO contacts**
+
+* **Leigh Phan**, Data Scientist, Data Science Center<br>[leighphan@library.ucla.edu](mailto:leighphan@library.ucla.edu)
+* **Tim Dennis**, Director, Data Science Center<br>[tdennis@library.ucla.edu](mailto:tdennis@library.ucla.edu)
+
+**Bring us** a project, a licensing question, or a talk idea. We'd like to host more of these.
+:::
+
+::: {.column width="50%"}
+**UC OSPO Network:** [ucospo.net](https://ucospo.net)
+
+* Events calendar: [ucospo.net/events](https://ucospo.net/events/)
+* Open coworking and office hours (Zoom): Tuesdays 10 am, Thursdays 1 pm PT
+* UCSB Open Source Lounge: Thursdays 2:30–4:30 pm
+* Mailing list and Slack: details on the site
+:::
+
+::::
+
+::: {.notes}
+- Invite people to bring a project, a licensing question, or a talk idea
+:::
+
+---
+
+## Today's speaker: Prof. Paul Eggert
+
+:::: {.columns}
+
+::: {.column width="30%"}
+![Paul Eggert, UCLA Computer Science](images/paul-eggert.jpg){width="100%"}
+:::
+
+::: {.column width="70%"}
+Primary coordinator of the public-domain **Time Zone Database (TZDB)**, which coordinates timestamps on computing devices worldwide. A copy surely resides on your smartphone.
+
+* Designed TZDB's naming standard; manages its data and code amid technical, legal, and political challenges
+* Contributor to core free software: GCC, glibc, Coreutils, Diffutils, Gnulib, Emacs
+* **2022 Free Software Foundation Award for the Advancement of Free Software**
+* Career in industry, then joined UCLA Computer Science, where he is a Teaching Professor
+
+**30–40 minute talk, then Q&A.**
+
+::: {.small}
+[IANA Time Zone Database](https://www.iana.org/time-zones) · [tz source on GitHub](https://github.com/eggert/tz)
+:::
+:::
+
+::::
+
+::: {.notes}
+- Bio from the Oct 6 library event page draft (Eggert's own bio)
+- Hand off: "Please join me in welcoming Prof. Eggert"
+- Photo: UCLA CS faculty page
+:::
