@@ -4,7 +4,7 @@ subtitle: "Keeping the World on Time, and where this fits in the UC OSPO Network
 author:
   - "Leigh Phan · Tim Dennis"
 institute:
-  - "UCLA OSPO · UCLA Library Data Science Center"
+  - "UCLA OSPO · UCLA Library"
 format:
   pptx:
     reference-doc: ucospo-reference.pptx
@@ -87,7 +87,7 @@ A **multi-campus collaboration** treating open source as shared infrastructure.
 ::: {style="background:#f0f4fa; border-radius:8px; padding:1.2em 1.4em;"}
 **What UCLA does**
 
-UCLA OSPO sits in the Library's Data Science Center and co-leads the network's education work.
+UCLA OSPO is based in the UCLA Library and co-leads the network's education work.
 
 Today's meetup is one of the ways campuses bring open source people together locally. Other campuses run theirs too (next slide).
 :::
@@ -133,8 +133,8 @@ Full calendar and registration links: [ucospo.net/events](https://ucospo.net/eve
 ::: {.column width="50%"}
 **UCLA OSPO contacts**
 
-* **Leigh Phan**, Data Scientist, Data Science Center<br>[leighphan@library.ucla.edu](mailto:leighphan@library.ucla.edu)
-* **Tim Dennis**, Director, Data Science Center<br>[tdennis@library.ucla.edu](mailto:tdennis@library.ucla.edu)
+* **Leigh Phan**, UCLA Library<br>[leighphan@library.ucla.edu](mailto:leighphan@library.ucla.edu)
+* **Tim Dennis**, UCLA Library<br>[tdennis@library.ucla.edu](mailto:tdennis@library.ucla.edu)
 
 **Bring us** a project, a licensing question, or a talk idea. We'd like to host more of these.
 :::
