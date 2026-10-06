@@ -108,7 +108,7 @@ Today's meetup is one of the ways campuses bring open source people together loc
 |:--|:--|:--|
 | **Oct 6** | [**UCLA Open Source Meetup: Keeping the World on Time**](https://calendar.library.ucla.edu/event/17080330) (today) | UCLA, hybrid |
 | Oct 8 | [How to Contribute to Open Source Software](https://www.eventbrite.com/e/2000937230119) | Eventbrite |
-| **Oct 15** | [**UC Berkeley OSPO Monthly Meetup: Open Source AI Models**](https://events.berkeley.edu/BIDS/event/327522-ospo-monthly-meetup-open-source-ai-models) | Berkeley (BIDS), 3–5:30 pm |
+| **Oct 15** | [**UC Berkeley OSPO Monthly Meetup: Open Source AI Models**](https://events.berkeley.edu/BIDS/event/327522-ospo-monthly-meetup-open-source-ai-models) | Berkeley (BIDS), hybrid, 3–5:30 pm |
 | Oct 22 | [CruzCon: Open Source for Research & Innovation](https://docs.google.com/forms/d/e/1FAIpQLSe9kqcmwp-OotTb9cUlhJ5CGttoGitT-aHg8JIqcKZC1-T0WQ/viewform) | UC Santa Cruz |
 | Oct 23–24 | [Reboot the Earth Hackathon](https://events.library.ucdavis.edu/event/reboot-the-earth-hackathon-ucdavis) | UC Davis |
 | Nov 5 | [All-Campus Virtual Meetup: Open Source and Tech Transfer](https://ucdavis.zoom.us/j/98527182449?pwd=PMdoVaOTSYuAHqPVWQbYPGHOmGrb5o.1) | Zoom |
