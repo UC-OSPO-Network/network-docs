@@ -150,6 +150,26 @@ Full calendar and registration links: [ucospo.net/events](https://ucospo.net/eve
 
 ::::
 
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {style="display:flex; align-items:center; gap:1em;"}
+![](images/qr-slides.svg){width="140px" fig-alt="QR code linking to these slides"}
+
+**Scan for these slides**
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="display:flex; align-items:center; gap:1em;"}
+![](images/qr-ucospo.svg){width="140px" fig-alt="QR code linking to ucospo.net"}
+
+**Scan for the UC OSPO Network**
+:::
+:::
+
+::::
+
 ::: {.notes}
 - Invite people to bring a project, a licensing question, or a talk idea
 :::
