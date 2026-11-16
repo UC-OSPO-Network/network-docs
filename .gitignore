@@ -18,3 +18,8 @@ __pycache__/
 
 # Built by scripts/build_outputs.py
 _outputs-generated.md
+
+# Built by scripts/build_talks.py
+_talks-generated.md
+_talks-recent.md
+_draft-talks.txt

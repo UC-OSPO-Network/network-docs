@@ -35,12 +35,30 @@ Built with Quarto + Reveal.js. Includes a companion handout and a CSV of CURIOSS
 An internal adaptation of the IASSIST talk for the UCLA Library Teaching, Learning & Research department. Reframes the case for a library audience: software is where research data was a decade ago, and scholarly communication is the library's seat at the OSPO table. Co-authored with Leigh Phan.
 
 - **Source:** `presentations/ucla-tlr-ospo-2026/ucla-tlr-ospo-2026-slides.qmd`
-- **Status:** draft, in preparation
+- **Status:** draft (`status: draft` in its `talk.yml`), so it is not listed or published
 
-### Other presentations
+### UC Open 2026: UC OSPO Education Activities
 
-- `presentations/02-Dennis_Breakout-open-ed_WED.pptx` — UC Open breakout session slides
-- `presentations/speaker_notes_uc_open.md` — Speaker notes for UC Open presentation
+Breakout talk at UC Open 2026 (Apr 22, 2026). Slides are on Zenodo ([10.5281/zenodo.19710413](https://doi.org/10.5281/zenodo.19710413)). The pptx and speaker notes are in `presentations/uc-open-2026/` and are not published on the site.
+
+### Add a talk
+
+The Talks page and the home page are generated. To add a talk, create `presentations/<slug>/` with the deck source and a `talk.yml`. No other file needs an edit.
+
+```yaml
+title: "Short title for the listing"
+date: 2026-09-23          # 2026, 2026-09 or 2026-09-23
+event: Event name
+kind: Workshop            # Conference talk, Workshop, Meetup, ...
+status: published         # draft = not listed, not rendered, not published
+bib: dennis2026example    # key in network-outputs.bib (required when published)
+people: [Tim Dennis]      # optional if CITATION.cff lists the authors
+doi: 10.5281/zenodo.0     # optional; also read from CITATION.cff
+links:                    # relative to the folder, or full URLs
+  - {label: Slides, href: example-slides.html}
+```
+
+A link to a `*slides*.html` deck also gets a PDF link, because the workflow exports a PDF for every such deck. `python3 scripts/build_talks.py` checks every `talk.yml`. It fails when a folder has no `talk.yml`, a required field is missing, or a published talk has no entry in `network-outputs.bib`. Build the site locally with `scripts/build_site.sh`.
 
 ---
 

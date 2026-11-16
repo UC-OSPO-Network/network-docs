@@ -20,6 +20,8 @@ book:
     left:
       - text: "Home"
         href: ../index.html
+      - text: "Talks"
+        href: ../talks.html
       - text: "Outputs"
         href: ../outputs.html
       - text: "History"
