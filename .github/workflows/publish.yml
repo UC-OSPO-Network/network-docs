@@ -7,6 +7,9 @@ on:
       - 'presentations/**'
       - 'history/**'
       - 'index.qmd'
+      - 'outputs.qmd'
+      - 'network-outputs.bib'
+      - 'scripts/build_outputs.py'
       - 'ucospo-site.scss'
       - 'references.bib'
       - '.github/workflows/publish.yml'
@@ -31,6 +34,11 @@ jobs:
 
       - name: Render site index
         run: quarto render index.qmd
+
+      - name: Build and render the outputs page
+        run: |
+          python3 scripts/build_outputs.py
+          quarto render outputs.qmd
 
       # Render every .qmd in every presentation folder. Adding a new presentation
       # means dropping a folder under presentations/, with no edits to this workflow.
@@ -84,6 +92,14 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           include_files: index.html
+          keep_files: true
+
+      - name: Deploy outputs page to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          include_files: outputs.html
           keep_files: true
 
       # One deploy for all presentations. keep_files: true means each folder
