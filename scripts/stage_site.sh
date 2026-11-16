@@ -13,7 +13,15 @@ done
 
 # Presentations: rendered HTML, PDFs, and the assets they load. No sources, notes,
 # emails, Makefiles, CSVs, pptx templates or third-party PDFs.
-rsync -a --prune-empty-dirs \
+# Draft talks (status: draft in talk.yml) are listed in _draft-talks.txt and left out.
+draft_excludes=()
+if [ -s _draft-talks.txt ]; then
+  while IFS= read -r d; do
+    draft_excludes+=(--exclude="${d#presentations/}")
+  done < _draft-talks.txt
+fi
+
+rsync -a --prune-empty-dirs "${draft_excludes[@]+"${draft_excludes[@]}"}" \
   --exclude='ssrn-4693148.pdf' \
   --exclude='the-2024-tidelift-maintainer-impact-report.pdf' \
   --exclude='2506.18359v2.pdf' \

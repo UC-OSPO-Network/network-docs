@@ -11,6 +11,8 @@ on:
       - 'outputs.qmd'
       - 'network-outputs.bib'
       - 'scripts/build_outputs.py'
+      - 'scripts/build_talks.py'
+      - 'talks.qmd'
       - 'scripts/stage_site.sh'
       - 'scripts/build_site.sh'
       - 'ucospo-site.scss'
@@ -33,6 +35,9 @@ jobs:
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Ensure PyYAML
+        run: python3 -c 'import yaml' 2>/dev/null || sudo apt-get install -y python3-yaml
+
       - name: Install decktape
         run: npm install -g decktape
 
@@ -48,6 +53,8 @@ jobs:
           set -euo pipefail
           shopt -s nullglob
           for dir in presentations/*/; do
+            # Draft talks (status: draft in talk.yml) are not rendered or published.
+            grep -qxF "$dir" _draft-talks.txt && continue
             qmds=("$dir"*.qmd)
             [ ${#qmds[@]} -eq 0 ] && continue
             echo "::group::Render ${dir}"
@@ -68,6 +75,7 @@ jobs:
           set -euo pipefail
           shopt -s nullglob
           for dir in presentations/*/; do
+            grep -qxF "$dir" _draft-talks.txt && continue
             decks=("$dir"*slides*.html)
             [ ${#decks[@]} -eq 0 ] && continue
             python3 -m http.server 3000 --directory "$dir" >/dev/null 2>&1 &

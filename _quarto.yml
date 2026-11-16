@@ -6,6 +6,7 @@ project:
   # is its own project (history/_quarto.yml) rendered into _site/history.
   render:
     - index.qmd
+    - talks.qmd
     - outputs.qmd
   resources:
     - network-outputs.bib
@@ -19,6 +20,8 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Talks"
+        href: talks.qmd
       - text: "Outputs"
         href: outputs.qmd
       - text: "History"

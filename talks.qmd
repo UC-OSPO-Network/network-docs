@@ -1,0 +1,9 @@
+---
+title: "UC OSPO Network: Talks"
+---
+
+Slides, handouts, and source for talks and workshops from the UC OSPO Network. Newest first. The first link on each one opens the slides.
+
+Every entry on this page comes from a `talk.yml` file in its folder under [presentations/](https://github.com/UC-OSPO-Network/network-docs/tree/main/presentations). Papers, software, lessons, and talks without slides are on the [Outputs page](outputs.html).
+
+{{< include _talks-generated.md >}}
