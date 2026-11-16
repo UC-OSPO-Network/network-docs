@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+  # Explicit list: drafts, reports, proposals and presentation sources are never
+  # rendered as site pages. Decks are rendered by the workflow. The history book
+  # is its own project (history/_quarto.yml) rendered into _site/history.
+  render:
+    - index.qmd
+    - outputs.qmd
+  resources:
+    - network-outputs.bib
+
+website:
+  title: "UC OSPO Network"
+  navbar:
+    logo: https://ucospo.net/images/uc-ospo-network-logo-light.svg
+    logo-alt: "UC OSPO Network"
+    logo-href: https://ucospo.net
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Outputs"
+        href: outputs.qmd
+      - text: "History"
+        href: history/index.html
+    right:
+      - text: "ucospo.net"
+        href: https://ucospo.net
+      - icon: github
+        href: https://github.com/UC-OSPO-Network/network-docs
+  page-footer: |
+    UC OSPO Network · [ucospo.net](https://ucospo.net) · [GitHub](https://github.com/UC-OSPO-Network/network-docs)
+
+format:
+  html:
+    theme: [cosmo, ucospo-site.scss]
+    toc: false
+    page-layout: article
