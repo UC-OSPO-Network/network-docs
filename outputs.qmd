@@ -1,24 +1,5 @@
 ---
 title: "UC OSPO Network: Outputs"
-format:
-  html:
-    theme: [cosmo, ucospo-site.scss]
-    embed-resources: true
-    toc: false
-    page-layout: article
-    navbar:
-      logo: https://ucospo.net/images/uc-ospo-network-logo-light.svg
-      logo-alt: "UC OSPO Network"
-      logo-href: https://ucospo.net
-      right:
-        - text: "Talks and workshops"
-          href: index.html
-        - text: "ucospo.net"
-          href: https://ucospo.net
-        - icon: github
-          href: https://github.com/UC-OSPO-Network/network-docs
-    footer: |
-      UC OSPO Network · [ucospo.net](https://ucospo.net) · [GitHub](https://github.com/UC-OSPO-Network/network-docs)
 ---
 
 Lessons, software, talks, papers, and press from the UC OSPO Network. Each section lists the newest work first.

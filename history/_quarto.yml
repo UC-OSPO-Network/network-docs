@@ -17,6 +17,18 @@ book:
     logo: images/uc-ospo-network-logo.svg
     logo-alt: "UC OSPO Network"
     logo-href: https://ucospo.net
+    left:
+      - text: "Home"
+        href: ../index.html
+      - text: "Outputs"
+        href: ../outputs.html
+      - text: "History"
+        href: index.html
+    right:
+      - text: "ucospo.net"
+        href: https://ucospo.net
+      - icon: github
+        href: https://github.com/UC-OSPO-Network/network-docs
   sidebar:
     style: docked
     background: light

@@ -6,11 +6,13 @@ on:
     paths:
       - 'presentations/**'
       - 'history/**'
+      - '_quarto.yml'
       - 'index.qmd'
       - 'outputs.qmd'
       - 'network-outputs.bib'
       - 'scripts/build_outputs.py'
       - 'scripts/stage_site.sh'
+      - 'scripts/build_site.sh'
       - 'ucospo-site.scss'
       - 'references.bib'
       - '.github/workflows/publish.yml'
@@ -34,13 +36,10 @@ jobs:
       - name: Install decktape
         run: npm install -g decktape
 
-      - name: Render site index
-        run: quarto render index.qmd
-
-      - name: Build and render the outputs page
-        run: |
-          python3 scripts/build_outputs.py
-          quarto render outputs.qmd
+      # Site pages: generates the Outputs list, then quarto render at the root
+      # builds index.html, outputs.html and network-outputs.bib into _site/.
+      - name: Build site pages
+        run: scripts/build_site.sh
 
       # Render every .qmd in every presentation folder. Adding a new presentation
       # means dropping a folder under presentations/, with no edits to this workflow.
@@ -89,7 +88,7 @@ jobs:
         run: quarto render history/
 
       # Build _site/ from an allow-list. Nothing outside it is published.
-      - name: Stage built files
+      - name: Add decks and book to _site
         run: scripts/stage_site.sh _site
 
       - name: Check staged site

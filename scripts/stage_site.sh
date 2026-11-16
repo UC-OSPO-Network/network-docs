@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
-# Assemble _site/ from built files only. The deploy publishes _site/ and nothing else.
-# Run after every quarto render step. Anything not listed here never reaches the site.
+# Add decks and the history book to the built site in _site/. The deploy publishes _site/ and nothing else.
+# Run after the site, decks and book are rendered. Anything not listed here never reaches the site.
 set -euo pipefail
 
 out="${1:-_site}"
-rm -rf "$out"
-mkdir -p "$out"
 
-# Top-level built pages and the bibliography.
+# The site pages (index, outputs, site_libs, network-outputs.bib) come from
+# `quarto render` at the root. This script adds the decks and the book to them.
 for f in index.html outputs.html network-outputs.bib; do
-  cp "$f" "$out/$f"
+  test -s "$out/$f" || { echo "Missing $out/$f. Run scripts/build_site.sh first." >&2; exit 1; }
 done
 
 # Presentations: rendered HTML, PDFs, and the assets they load. No sources, notes,
@@ -28,6 +27,7 @@ rsync -a --prune-empty-dirs \
   presentations/ "$out/presentations/"
 
 # History book.
+rm -rf "$out/history"
 cp -R history/_book "$out/history"
 
 # Serve files as-is (no Jekyll processing).
