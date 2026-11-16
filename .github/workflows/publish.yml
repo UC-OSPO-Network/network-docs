@@ -10,6 +10,7 @@ on:
       - 'outputs.qmd'
       - 'network-outputs.bib'
       - 'scripts/build_outputs.py'
+      - 'scripts/stage_site.sh'
       - 'ucospo-site.scss'
       - 'references.bib'
       - '.github/workflows/publish.yml'
@@ -87,36 +88,23 @@ jobs:
       - name: Render UC OSS History book
         run: quarto render history/
 
-      - name: Deploy site index to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          include_files: index.html
-          keep_files: true
+      # Build _site/ from an allow-list. Nothing outside it is published.
+      - name: Stage built files
+        run: scripts/stage_site.sh _site
 
-      - name: Deploy outputs page to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          include_files: outputs.html
-          keep_files: true
+      - name: Check staged site
+        run: |
+          set -euo pipefail
+          bad=$(find _site -type f \( -name '*.md' -o -name '*.qmd' -o -name '*.scss' -o -name '*.py' -o -name '*.sh' -o -name 'Makefile' -o -name '*.yml' -o -name '*.csv' -o -name '*.pptx' -o -name '.gitignore' \) ! -path '_site/history/*' ! -path '*_files/*')
+          if [ -n "$bad" ]; then echo "::error::Working files in _site:"; echo "$bad"; exit 1; fi
+          for f in index.html outputs.html network-outputs.bib history/index.html; do
+            test -s "_site/$f" || { echo "::error::Missing _site/$f"; exit 1; }
+          done
 
-      # One deploy for all presentations. keep_files: true means each folder
-      # lands in its own subdirectory and never clobbers the others.
-      - name: Deploy presentations to GitHub Pages
+      # keep_files: false means files removed from the build disappear from the site.
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: presentations
-          destination_dir: presentations
-          keep_files: true
-
-      - name: Deploy history book to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: history/_book
-          destination_dir: history
-          keep_files: true
+          publish_dir: _site
+          keep_files: false
