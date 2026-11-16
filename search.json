@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "outputs.html",
+    "href": "outputs.html",
+    "title": "UC OSPO Network: Outputs",
+    "section": "",
+    "text": "Lessons, software, talks, papers, and press from the UC OSPO Network. Each section lists the newest work first.\nEvery entry on this page comes from one BibTeX file, network-outputs.bib. Download it to cite these works in a paper or load them into a reference manager. Slides, handouts, and source for the talks are on the talks and workshops page."
+  },
+  {
+    "objectID": "outputs.html#lessons-and-curriculum",
+    "href": "outputs.html#lessons-and-curriculum",
+    "title": "UC OSPO Network: Outputs",
+    "section": "Lessons and curriculum",
+    "text": "Lessons and curriculum\n\nWang, S., Kim, G., Sharma, G., Rathi, G., Patel, V., Otsuji, R.,\nLangdon, L., Reyes, L., Padilla, K., & Dennis, T. (2026).\nUC OSPO Education Lesson & Pathways\nWebsite (Version 0.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23330023\nDennis, T., Phan, L., Otsuji, R., Langdon, L., & Padilla, K. (2026).\nSharing Research Software: Reproducible,\nCitable, and Discoverable [Lesson, v0.2.0-alpha]. Zenodo. https://doi.org/10.5281/zenodo.21400573\nPadilla, K., Niño Muriel, J., Langdon, L., & Otsuji, R. (2026).\nUnderstanding Open Source Software Licensing\n[Lesson, pre-alpha]. https://github.com/UC-OSPO-Network/oss-license-workshop"
+  },
+  {
+    "objectID": "outputs.html#software-and-data",
+    "href": "outputs.html#software-and-data",
+    "title": "UC OSPO Network: Outputs",
+    "section": "Software and data",
+    "text": "Software and data\n\nLee, L., Huang, E., Dennis, T., Yao, Z., Hu, L., Lee, H., Gong, E.,\n& Kim, M. (2026). Carpentries Workbench\nChecker (Version 0.3.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23329532\nScarlett, V., Curty, R., Gomez, J., Langdon, L., Janée, G., &\nBudden, A. E. (2026). Data and code from: A\nsystem-wide snapshot: A multi-campus survey of open source contributors\nat the University of California [Data set]. Dryad. https://doi.org/10.5061/dryad.2280gb662"
+  },
+  {
+    "objectID": "outputs.html#talks-and-workshops",
+    "href": "outputs.html#talks-and-workshops",
+    "title": "UC OSPO Network: Outputs",
+    "section": "Talks and workshops",
+    "text": "Talks and workshops\n\nDennis, T., Phan, L., Langdon, L., Otsuji, R., & Padilla, K. (2026).\nMaking Research Software Citable &\nDiscoverable [Workshop slides]. UC Carpentries\nWorkshop Series, Fall 2026, Online. https://ucospo.net/network-docs/presentations/uc-carpentries-sharing-software-2026/uc-carpentries-sharing-software-2026-slides.html\nDennis, T. (2026). Collaborative Lesson\nDevelopment Training for the UC OSPO Network\n[Workshop]. UC OSPO Network, Online. https://www.tim-dennis.com/2026-08-27-cldt-ospo/\nDennis, T. (2026). Open Source as Institutional\nInfrastructure: Lessons from the UC OSPO\nNetwork [Conference presentation]. IASSIST\n2026, Online. https://doi.org/10.5281/zenodo.20498692\nDennis, T. (2026). UC OSPO Education\nActivities [Conference presentation]. UC Open\n2026, Berkeley, CA. https://doi.org/10.5281/zenodo.19710413\nDennis, T., Otsuji, R., Phan, L., Padilla, K., & Langdon, L. (2026).\nMaking Research Software Citable &\nDiscoverable [Workshop]. UC Love Data Week\n2026, Online. https://doi.org/10.5281/zenodo.18615247\nBudden, A. E., Dennis, T., & Brantley, P. (2025). Networked Innovation: The University of California’s\nMulti-Campus Model for Open Source Support [Project\nbriefing]. CNI Fall 2025 Membership Meeting, Washington,\nDC. https://www.cni.org/topics/e-science/two-models-for-supporting-open-initiatives\nDennis, T., & Otsuji, R. (2025). Building Better Research\nSoftware [Two-session workshop]. UC OSPO\nNetwork, Online. https://ucospo.net/2025-10-21-UC-OSPO/\nLieggi, S., Langdon, L., & Dennis, T. (2025). Building a Network of Open Source Program Offices at the\nUniversity of California [Presentation]. UC Libraries\nResearch Data Services Common Knowledge Group.\nLieggi, S., Dennis, T., Lovell, E., & Grappone, T. (2025). Building a Network of Open Source Program Offices at the\nUniversity of California [Conference presentation].\nSouthern California Linux Expo (SCaLE 22x), Pasadena, CA.\nhttps://doi.org/10.5281/zenodo.15020714\nGrappone, T., Lieggi, S., Budden, A. E., & Dennis, T. (2025).\nOSPOs in Higher Ed Discussion\nGroup [Discussion group]. UC Love Data Week\n2025, Online. https://doi.org/10.5281/zenodo.15006924"
+  },
+  {
+    "objectID": "outputs.html#papers",
+    "href": "outputs.html#papers",
+    "title": "UC OSPO Network: Outputs",
+    "section": "Papers",
+    "text": "Papers\n\nGomez, J., Lovell, E., Lieggi, S., Davis, J., & Cardenas, A. (2026).\nOpen Code, Hidden Collections: An Empirical Study\nof Academic Software Stewardship. Proceedings of the 26th\nACM/IEEE Joint Conference on Digital Libraries, 1–12. https://doi.org/10.1145/3805696.3846033\nScarlett, V. T., Curty, R. G., Gomez, J., Langdon, L., Janée, G., &\nBudden, A. E. (2026). A system-wide snapshot: A\nmulti-campus survey of open source contributors at the University of California. PLOS\nOne, 21(6), e0348894. https://doi.org/10.1371/journal.pone.0348894\nKhan, N. I., & Filkov, V. (2025). EvidenceBot: A Privacy-Preserving,\nCustomizable RAG-Based Tool for Enhancing Large Language\nModel Interactions. Proceedings of the 33rd ACM International\nConference on the Foundations of Software Engineering, 1188–1192.\nhttps://doi.org/10.1145/3696630.3728607\nGomez, J., Lovell, E., Lieggi, S., Cardenas, A. A., & Davis, J.\n(2025). Recipe for Discovery: A Pipeline for\nInstitutional Open Source Activity [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2506.18359"
+  },
+  {
+    "objectID": "outputs.html#press",
+    "href": "outputs.html#press",
+    "title": "UC OSPO Network: Outputs",
+    "section": "Press",
+    "text": "Press\n\nChang, L., & Mann Bruch, K. (2026, July 23). United Nations Holds Southern California’s First\nHackathon at UC San Diego. UC San Diego Today;\nSDSC News. https://today.ucsd.edu/story/united-nations-holds-southern-californias-first-hackathon-at-uc-san-diego"
+  },
+  {
+    "objectID": "outputs.html#add-or-correct-an-entry",
+    "href": "outputs.html#add-or-correct-an-entry",
+    "title": "UC OSPO Network: Outputs",
+    "section": "Add or correct an entry",
+    "text": "Add or correct an entry\nOpen an issue or a pull request on network-docs. Entries live in network-outputs.bib, and the page rebuilds when the change merges. The header of that file explains the fields."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "UC OSPO Network: Talks, Workshops, and Documents",
+    "section": "",
+    "text": "Slides, handouts, and background documents from UC OSPO Network talks and workshops.\nLooking for something else? Upcoming meetups and workshops are on the Events page, and templates and how-to guides are on the Resources page. Lessons, software, papers, and press from the Network are on the Outputs page."
+  },
+  {
+    "objectID": "index.html#talks-and-workshops",
+    "href": "index.html#talks-and-workshops",
+    "title": "UC OSPO Network: Talks, Workshops, and Documents",
+    "section": "Talks and workshops",
+    "text": "Talks and workshops\nNewest first. The first link on each one opens the slides.\n\nUCLA Library brown-bag: Open Source as Institutional Infrastructure\nUpcoming · draft · Tim Dennis, Leigh Phan\nSlides · Source\n\n\nUC Carpentries: Making Research Software Citable & Discoverable\nSep 23, 2026 · workshop · Tim Dennis, Leigh Phan, Karla Padilla, Reid Otsuji, Laura Langdon\nIntro slides · Metadata slides · Lesson · Source\n\n\nIASSIST 2026: Open Source as Institutional Infrastructure\nJun 2026 · conference talk · Tim Dennis\nSlides · Full deck · Handout · Bibliography · Source · DOI"
+  },
+  {
+    "objectID": "index.html#book",
+    "href": "index.html#book",
+    "title": "UC OSPO Network: Talks, Workshops, and Documents",
+    "section": "Book",
+    "text": "Book\n\nUC Open Source: A System History\nHow UC research software went from BSD Unix to Jupyter, Ceph, Spark, RISC-V, and beyond, and what that history means for supporting open source today.\nRead the book · Source"
+  },
+  {
+    "objectID": "index.html#working-documents",
+    "href": "index.html#working-documents",
+    "title": "UC OSPO Network: Talks, Workshops, and Documents",
+    "section": "Working documents",
+    "text": "Working documents\nAccessibility audits, meeting agendas, and planning drafts, mostly for people working on the network. They live on GitHub: reports · drafts"
+  }
+]
