@@ -66,3 +66,15 @@ a:hover { color: $orange; }
 
   ul { padding-left: 1.2em; }
 }
+
+.outputs {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 0.9em;
+    padding-left: 1.6em;
+    text-indent: -1.6em;
+    line-height: 1.5;
+  }
+}
