@@ -105,3 +105,16 @@ Mints a Zenodo DOI for a presentation. Trigger it by pushing a tag:
 The deposit reads its file list from `presentations/<slug>/zenodo.yml` and its metadata from that folder's `CITATION.cff`. Every deposit is submitted to the [UC OSPO Network Zenodo community](https://zenodo.org/communities/uc-ospo-net/) (`uc-ospo-net`) by default; a community curator approves the request. Requires the `OSPO_ZENODO` and `OSPO_ZENODO_TEST` secrets.
 
 > Records published before this default was added (such as the existing IASSIST deposit) are not pulled into the community automatically. Add those from the Zenodo record page using "Add to community," then approve the request in the community.
+
+## Outputs page
+
+`network-outputs.bib` lists the Network's public outputs: lessons, software and data, talks and workshops, papers, and press. `outputs.qmd` renders it as the Outputs page at [ucospo.net/network-docs/outputs.html](https://ucospo.net/network-docs/outputs.html). `references.bib` is a different file. It holds the works that the history book and the slides cite.
+
+To add an entry, edit `network-outputs.bib`. The header of that file lists the fields. The first word in `keywords` picks the section. To preview the page:
+
+```sh
+python3 scripts/build_outputs.py
+quarto render outputs.qmd
+```
+
+The script needs only Python 3 and Quarto. `_outputs-generated.md` is built from the bibliography and is not committed. The publish workflow runs the same two commands.

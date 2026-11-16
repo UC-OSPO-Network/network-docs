@@ -21,7 +21,7 @@ format:
 
 Slides, handouts, and background documents from UC OSPO Network talks and workshops.
 
-Looking for something else? Upcoming meetups and workshops are on the [Events page](https://ucospo.net/events/), and templates and how-to guides are on the [Resources page](https://ucospo.net/oss-resources/).
+Looking for something else? Upcoming meetups and workshops are on the [Events page](https://ucospo.net/events/), and templates and how-to guides are on the [Resources page](https://ucospo.net/oss-resources/). Lessons, software, papers, and press from the Network are on the [Outputs page](outputs.html).
 
 ## Talks and workshops
 

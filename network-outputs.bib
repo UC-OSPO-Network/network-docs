@@ -1,0 +1,243 @@
+% UC OSPO Network outputs
+%
+% One entry per public output of the Network: lessons, software and data,
+% talks and workshops, papers, and press. outputs.qmd renders this file through
+% scripts/build_outputs.py. references.bib is a separate file: it holds the works
+% that the history book and the slides cite.
+%
+% How to add an entry
+%   - Key: <firstauthor><year><shortname>, for example dennis2026ucopen.
+%   - The first word in `keywords` picks the section on the page:
+%     lesson, software, talk, paper or press. Other keywords follow it.
+%   - `date` is ISO: 2026-04-22, 2026-04, or a range such as 2026-08-27/2026-08-28.
+%     Entries sort newest first inside each section. Give only the precision you know.
+%   - Use the DOI when one exists, and copy it from the Zenodo or publisher record.
+%   - Check authors against the record. Zenodo sometimes reverses family and given names.
+%
+% Checked 2026-11-16: every DOI resolves and its title and authors match the record;
+% every URL returned 200, except the CNI page, which refuses automated requests.
+
+% ---------------------------------------------------------------- lessons
+
+% Zenodo labels this deposit 0.1.0. The archived GitHub release is v0.2.0-alpha.
+@misc{dennis2026sharing,
+  author = {Dennis, Tim and Phan, Leigh and Otsuji, Reid and Langdon, Laura and Padilla, Karla},
+  title = {{Sharing Research Software: Reproducible, Citable, and Discoverable}},
+  type = {Lesson, v0.2.0-alpha},
+  date = {2026-07-16},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.21400573},
+  keywords = {lesson, research software}
+}
+
+% The Zenodo record is still titled "Lesson & Pathways Website".
+% Retitle the record, then update the title here.
+@software{wang2026education,
+  author = {Wang, Shawn and Kim, Gianna and Sharma, Garv and Rathi, Gauri and Patel, Ved and Otsuji, Reid and Langdon, Laura and Reyes, Lauren and Padilla, Karla and Dennis, Tim},
+  title = {{{UC OSPO} Education Lesson \& Pathways Website}},
+  version = {0.1.0},
+  date = {2026-10-13},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.23330023},
+  keywords = {lesson, education}
+}
+
+@software{padilla2026licensing,
+  author = {Padilla, Karla and Niño Muriel, Jose and Langdon, Laura and Otsuji, Reid},
+  title = {{Understanding Open Source Software Licensing}},
+  type = {Lesson, pre-alpha},
+  date = {2026},
+  url = {https://github.com/UC-OSPO-Network/oss-license-workshop},
+  keywords = {lesson, licensing}
+}
+
+% ---------------------------------------------------------------- software and data
+
+@software{lee2026wbcheck,
+  author = {Lee, Lawrence and Huang, Eric and Dennis, Tim and Yao, Zhiyuan and Hu, Loretta and Lee, Hyerin and Gong, Emily and Kim, Madeline},
+  title = {{Carpentries Workbench Checker}},
+  version = {0.3.1},
+  date = {2026-10-13},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.23329532},
+  keywords = {software, carpentries}
+}
+
+@dataset{scarlett2026surveydata,
+  author = {Scarlett, Virginia and Curty, Renata and Gomez, Juanita and Langdon, Laura and Janée, Greg and Budden, Amber E.},
+  title = {{Data and code from: A system-wide snapshot: A multi-campus survey of open source contributors at the University of California}},
+  date = {2026-05-13},
+  publisher = {Dryad},
+  doi = {10.5061/dryad.2280gb662},
+  keywords = {software, survey}
+}
+
+% ---------------------------------------------------------------- talks and workshops
+
+@misc{dennis2026carpentries,
+  author = {Dennis, Tim and Phan, Leigh and Langdon, Laura and Otsuji, Reid and Padilla, Karla},
+  title = {{Making Research Software Citable \& Discoverable}},
+  type = {Workshop slides},
+  eventtitle = {{UC Carpentries Workshop Series, Fall 2026}},
+  venue = {Online},
+  date = {2026-09-23},
+  url = {https://ucospo.net/network-docs/presentations/uc-carpentries-sharing-software-2026/uc-carpentries-sharing-software-2026-slides.html},
+  keywords = {talk, education}
+}
+
+@misc{dennis2026cldt,
+  author = {Dennis, Tim},
+  title = {{Collaborative Lesson Development Training for the {UC OSPO Network}}},
+  type = {Workshop},
+  eventtitle = {{UC OSPO Network}},
+  venue = {Online},
+  date = {2026-08-27/2026-08-28},
+  url = {https://www.tim-dennis.com/2026-08-27-cldt-ospo/},
+  keywords = {talk, education}
+}
+
+@misc{dennis2026iassist,
+  author = {Dennis, Tim},
+  title = {{Open Source as Institutional Infrastructure: Lessons from the {UC OSPO Network}}},
+  type = {Conference presentation},
+  eventtitle = {{IASSIST 2026}},
+  venue = {Online},
+  date = {2026-06},
+  doi = {10.5281/zenodo.20498692},
+  keywords = {talk, network}
+}
+
+@misc{dennis2026ucopen,
+  author = {Dennis, Tim},
+  title = {{{UC OSPO} Education Activities}},
+  type = {Conference presentation},
+  eventtitle = {{UC Open 2026}},
+  venue = {Berkeley, CA},
+  date = {2026-04-22},
+  doi = {10.5281/zenodo.19710413},
+  keywords = {talk, education}
+}
+
+@misc{dennis2026fair4rs,
+  author = {Dennis, Tim and Otsuji, Reid and Phan, Leigh and Padilla, Karla and Langdon, Laura},
+  title = {{Making Research Software Citable \& Discoverable}},
+  type = {Workshop},
+  eventtitle = {{UC Love Data Week 2026}},
+  venue = {Online},
+  date = {2026-02-11},
+  doi = {10.5281/zenodo.18615247},
+  keywords = {talk, education}
+}
+
+% The URL could not be checked: cni.org refuses automated requests.
+@misc{budden2025networked,
+  author = {Budden, Amber E. and Dennis, Tim and Brantley, Peter},
+  title = {{Networked Innovation: The University of California's Multi-Campus Model for Open Source Support}},
+  type = {Project briefing},
+  eventtitle = {{CNI Fall 2025 Membership Meeting}},
+  venue = {Washington, DC},
+  date = {2025-12},
+  url = {https://www.cni.org/topics/e-science/two-models-for-supporting-open-initiatives},
+  keywords = {talk, network}
+}
+
+@misc{dennis2025bbrs,
+  author = {Dennis, Tim and Otsuji, Reid},
+  title = {{Building Better Research Software}},
+  type = {Two-session workshop},
+  eventtitle = {{UC OSPO Network}},
+  venue = {Online},
+  date = {2025-10-21/2025-10-22},
+  url = {https://ucospo.net/2025-10-21-UC-OSPO/},
+  keywords = {talk, education}
+}
+
+@misc{lieggi2025ckg,
+  author = {Lieggi, Stephanie and Langdon, Laura and Dennis, Tim},
+  title = {{Building a Network of Open Source Program Offices at the University of California}},
+  type = {Presentation},
+  eventtitle = {{UC Libraries Research Data Services Common Knowledge Group}},
+  date = {2025-05-14},
+  keywords = {talk, network}
+}
+
+@misc{lieggi2025scale,
+  author = {Lieggi, Stephanie and Dennis, Tim and Lovell, Emily and Grappone, Todd},
+  title = {{Building a Network of Open Source Program Offices at the University of California}},
+  type = {Conference presentation},
+  eventtitle = {{Southern California Linux Expo (SCaLE 22x)}},
+  venue = {Pasadena, CA},
+  date = {2025-03},
+  doi = {10.5281/zenodo.15020714},
+  keywords = {talk, network}
+}
+
+@misc{grappone2025ospos,
+  author = {Grappone, Todd and Lieggi, Stephanie and Budden, Amber E. and Dennis, Tim},
+  title = {{{OSPOs} in Higher Ed Discussion Group}},
+  type = {Discussion group},
+  eventtitle = {{UC Love Data Week 2025}},
+  venue = {Online},
+  date = {2025-02},
+  doi = {10.5281/zenodo.15006924},
+  keywords = {talk, network}
+}
+
+% ---------------------------------------------------------------- papers
+
+@article{scarlett2026snapshot,
+  author = {Scarlett, Virginia T. and Curty, Renata Gonçalves and Gomez, Juanita and Langdon, Laura and Janée, Greg and Budden, Amber E.},
+  title = {{A system-wide snapshot: A multi-campus survey of open source contributors at the {University of California}}},
+  journaltitle = {PLOS One},
+  volume = {21},
+  number = {6},
+  pages = {e0348894},
+  date = {2026-06-05},
+  doi = {10.1371/journal.pone.0348894},
+  keywords = {paper, survey}
+}
+
+@inproceedings{gomez2026opencode,
+  author = {Gomez, Juanita and Lovell, Emily and Lieggi, Stephanie and Davis, James and Cardenas, Alvaro},
+  title = {{Open Code, Hidden Collections: An Empirical Study of Academic Software Stewardship}},
+  booktitle = {Proceedings of the 26th ACM/IEEE Joint Conference on Digital Libraries},
+  publisher = {ACM},
+  pages = {1--12},
+  date = {2026-10-13},
+  doi = {10.1145/3805696.3846033},
+  keywords = {paper, discovery}
+}
+
+@misc{gomez2025recipe,
+  author = {Gomez, Juanita and Lovell, Emily and Lieggi, Stephanie and Cardenas, Alvaro A. and Davis, James},
+  title = {{Recipe for Discovery: A Pipeline for Institutional Open Source Activity}},
+  type = {Preprint},
+  publisher = {arXiv},
+  date = {2025},
+  eprint = {2506.18359},
+  eprinttype = {arxiv},
+  doi = {10.48550/arXiv.2506.18359},
+  keywords = {paper, discovery}
+}
+
+@inproceedings{khan2025evidencebot,
+  author = {Khan, Nafiz Imtiaz and Filkov, Vladimir},
+  title = {{{EvidenceBot}: A Privacy-Preserving, Customizable {RAG}-Based Tool for Enhancing Large Language Model Interactions}},
+  booktitle = {Proceedings of the 33rd ACM International Conference on the Foundations of Software Engineering},
+  publisher = {ACM},
+  pages = {1188--1192},
+  date = {2025-06-23},
+  doi = {10.1145/3696630.3728607},
+  keywords = {paper, sustainability}
+}
+
+% ---------------------------------------------------------------- press
+
+@online{chang2026hackathon,
+  author = {Chang, L. and Mann Bruch, K.},
+  title = {{United Nations Holds Southern California's First Hackathon at {UC San Diego}}},
+  organization = {UC San Diego Today and SDSC News},
+  date = {2026-07-23},
+  url = {https://today.ucsd.edu/story/united-nations-holds-southern-californias-first-hackathon-at-uc-san-diego},
+  keywords = {press, education}
+}
