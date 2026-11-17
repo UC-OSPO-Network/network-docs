@@ -12,12 +12,12 @@ csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa
 nocite: '@*'
 format:
   pptx:
-    reference-doc: ucospo-reference.pptx
+    reference-doc: ../_shared/ucospo-reference.pptx
   revealjs:
     embed-resources: true
-    theme: ucospo-theme.scss
+    theme: ../_shared/ucospo-theme.scss
     logo: images/uc-ospo-network-logo-light.svg
-    include-after-body: logo-swap.txt
+    include-after-body: ../_shared/logo-swap.txt
     slide-number: true
     footer: "Tim Dennis · Data Science Center · UCLA Library · ucospo.net"
     transition: none

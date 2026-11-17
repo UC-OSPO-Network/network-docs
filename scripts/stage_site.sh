@@ -12,7 +12,7 @@ for f in index.html outputs.html network-outputs.bib; do
 done
 
 # Presentations: rendered HTML, PDFs, and the assets they load. No sources, notes,
-# emails, Makefiles, CSVs, pptx templates or third-party PDFs.
+# emails, Makefiles, CSVs or pptx templates. _shared/ contributes only its fonts.
 # Draft talks (status: draft in talk.yml) are listed in _draft-talks.txt and left out.
 draft_excludes=()
 if [ -s _draft-talks.txt ]; then
@@ -22,9 +22,6 @@ if [ -s _draft-talks.txt ]; then
 fi
 
 rsync -a --prune-empty-dirs "${draft_excludes[@]+"${draft_excludes[@]}"}" \
-  --exclude='ssrn-4693148.pdf' \
-  --exclude='the-2024-tidelift-maintainer-impact-report.pdf' \
-  --exclude='2506.18359v2.pdf' \
   --include='*/' \
   --include='*.html' \
   --include='*.pdf' \

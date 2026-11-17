@@ -29,7 +29,7 @@ Status codes: ✅ confirmed · ⚠️ discrepancy or caveat · ❌ could not ver
 - "96% of the demand-side value is created by only 5% of OSS developers"
 - "Top six programming languages comprise 84% of the demand-side value"
 
-**Notes:** PDF verified directly (ssrn-4693148.pdf). Zhou is at Rotman School of Management, University of Toronto — not HBS; bibliography entry should reflect this. Corrected author affiliation: Hoffmann (HBS), Nagle (HBS), Zhou (University of Toronto).
+**Notes:** Verified against the paper (https://doi.org/10.2139/ssrn.4693148). Zhou is at Rotman School of Management, University of Toronto — not HBS; bibliography entry should reflect this. Corrected author affiliation: Hoffmann (HBS), Nagle (HBS), Zhou (University of Toronto).
 
 ---
 
@@ -67,7 +67,7 @@ Status codes: ✅ confirmed · ⚠️ discrepancy or caveat · ❌ could not ver
 - DEV (42.9%) and EDU (42.1%) dominate project types across the UC system
 - UCSD has the largest absolute number of affiliated repos (18,163); UC Merced the lowest affiliation rate (23.7%)
 
-**Notes:** PDF verified directly (2506.18359v2.pdf). The pipeline uses gpt-5-mini for LLM-based affiliation filtering.
+**Notes:** Verified against arXiv v2 (https://arxiv.org/abs/2506.18359). The pipeline uses gpt-5-mini for LLM-based affiliation filtering.
 
 ---
 
@@ -83,14 +83,14 @@ Status codes: ✅ confirmed · ⚠️ discrepancy or caveat · ❌ could not ver
 
 ---
 
-## Tidelift. (2024, November). *The 2024 Tidelift Maintainer Impact Report*. Tidelift.
+## Tidelift. (2024, November). *The 2024 Tidelift Maintainer Impact Report*. Tidelift. [Archived landing page](https://web.archive.org/web/20241212175443/https://tidelift.com/the-2024-tidelift-maintainer-impact-report)
 
 **Claims in talk (speaker notes only, not on slides):**
-- 60% of maintainers are unpaid ✅ — confirmed from PDF (p. 2): "Sixty percent of maintainers report they are unpaid hobbyists, and only 12% of maintainers consider themselves professionals who earn most or all of their income from their maintenance work"
+- 60% of maintainers are unpaid ✅ — confirmed from the report PDF (p. 2; Tidelift no longer hosts it, so this repo does not either): "Sixty percent of maintainers report they are unpaid hobbyists, and only 12% of maintainers consider themselves professionals who earn most or all of their income from their maintenance work"
 - 43% report burnout ⚠️ — **not in this document**; this report focuses on business/security impact of paying maintainers, not burnout; the 43% figure likely comes from the companion *2024 State of the Open Source Maintainer Report* (survey-based), which has not been located
 
 **Note on two documents:** Tidelift published two related 2024 reports:
-1. *2024 Tidelift Maintainer Impact Report* (November 2024) — this PDF — business/security case study; confirms 60% unpaid
+1. *2024 Tidelift Maintainer Impact Report* (November 2024) — business/security case study; confirms 60% unpaid
 2. *2024 State of the Open Source Maintainer Report* — survey of 400+ maintainers — source of burnout/quit stats; original URL dead (SonarSource acquisition); accessible summary at dev.to/tidelift/the-open-source-maintainer-community-is-getting-grayer-1gc2
 
 **Speaker notes currently say** "nearly two-thirds have quit or considered quitting" — confirmed from Dev.to summary of the survey report. The 43% figure has been removed from the notes. No further action needed.

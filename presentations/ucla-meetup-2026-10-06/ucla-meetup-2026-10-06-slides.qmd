@@ -7,12 +7,12 @@ institute:
   - "UCLA OSPO · UCLA Library"
 format:
   pptx:
-    reference-doc: ucospo-reference.pptx
+    reference-doc: ../_shared/ucospo-reference.pptx
   revealjs:
     embed-resources: true
-    theme: ucospo-theme.scss
+    theme: ../_shared/ucospo-theme.scss
     logo: images/uc-ospo-network-logo-light.svg
-    include-after-body: logo-swap.txt
+    include-after-body: ../_shared/logo-swap.txt
     slide-number: true
     footer: "UCLA OSPO · UC OSPO Network · ucospo.net"
     transition: none

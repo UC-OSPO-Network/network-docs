@@ -1,7 +1,7 @@
 """
 Apply UC OSPO branding to the Quarto reference PPTX.
 
-Colors from ucospo-theme.scss:
+Colors from ../_shared/ucospo-theme.scss:
   navy   #1f335e   headings, title slide bg
   blue   #003cb3   links, accent
   orange #ff9100   underlines, accents
@@ -18,7 +18,7 @@ from pptx.dml.color import RGBColor
 from pptx.util import Pt, Emu
 from pptx.oxml.ns import qn
 
-INPUT = os.path.join(os.path.dirname(__file__), "ucospo-reference.pptx")
+INPUT = os.path.join(os.path.dirname(__file__), "..", "_shared", "ucospo-reference.pptx")
 
 # ── Step 1: Patch theme XML (colors + fonts) via zip ─────────────────────────
 
