@@ -8,7 +8,7 @@ A public record of the UC OSPO Network's talks and outputs. The site is the cata
 - `network-outputs.bib`: every public output (lessons, software, talks, papers, press). One source for the Outputs page.
 - `history/`: the Quarto book "UC Open Source: A System History".
 - `index.qmd`, `talks.qmd`, `outputs.qmd`, `_quarto.yml`: the site pages.
-- `drafts/`, `reports/`, `presentation-proposals/`, `resources/`: working files. They are in the repo and are not published.
+- `drafts/`, `reports/`, `presentation-proposals/`: working files. They are in the repo and are not published.
 - `scripts/`: build and check scripts.
 
 ## Add a talk
@@ -46,7 +46,7 @@ scripts/stage_site.sh        # copy decks and book into _site/
 scripts/check_site.sh        # working files, missing pages, broken links
 ```
 
-`scripts/build_site.sh` must run first: the pages include generated files.
+`scripts/build_site.sh` must run first: the pages include generated files. If you change a font file in `presentations/_shared/fonts/`, run `python3 scripts/embed_fonts.py`. If you change a font file in `presentations/_shared/fonts/`, run `python3 scripts/embed_fonts.py`.
 
 ## How it publishes
 
