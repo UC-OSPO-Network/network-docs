@@ -17,4 +17,9 @@ for f in index.html talks.html outputs.html network-outputs.bib history/index.ht
   test -s "$site/$f" || { echo "::error::Missing $site/$f"; exit 1; }
 done
 
+# Unverified research notes live in history/_research/ and must never reach the book.
+if [ -d "$site/history" ] && grep -rlE 'Draft - (fill in|develop)|\*Draft - ' "$site/history" >/dev/null; then
+  echo "::error::Draft research notes found in $site/history:"; grep -rlE 'Draft - (fill in|develop)' "$site/history"; exit 1
+fi
+
 python3 scripts/check_links.py "$site" "$@"

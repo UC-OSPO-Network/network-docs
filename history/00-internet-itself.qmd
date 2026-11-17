@@ -16,7 +16,7 @@ Before any of the software in this history could exist, the network had to exist
 **Key figures:** Leonard Kleinrock (faculty), Charley Kline (student programmer), Vint Cerf (grad student), Jon Postel (grad student), Steve Crocker (alumnus)
 
 ::: {.origin-story}
-*Draft - fill in origin story: DARPA's 1960s problem of building a robust, decentralized military communications network; the choice of UCLA as Node 1 because of Kleinrock's packet switching research group; the delivery of the Interface Message Processor (IMP) - essentially the world's first network router - to Boelter Hall Room 3420 on August 30, 1969; the attempt on October 29 to send the first message across the network to Node 2 at Stanford Research Institute; Charley Kline typing "L" and "O" before the system crashed; the first internet message being accidentally "LO"; the successful login an hour later.*
+*Section in preparation.*
 :::
 
 ### Leonard Kleinrock and Packet Switching
@@ -52,7 +52,7 @@ The original four ARPANET nodes were UCLA (Node 1), Stanford Research Institute 
 Glen Culler and Burton Fried at UCSB were working on interactive mathematics - specifically, tools for numerical computation that needed remote access to large machines. Their node went live on November 1, 1969, three days after UCLA's first message to SRI. UCSB was not a passive recipient of the network; Culler's team was actively developing applications and pushing on what the network could do.
 
 ::: {.origin-story}
-*Draft - fill in: more detail on Culler and Fried's specific work, the interactive mathematics project, what UCSB contributed to early ARPANET application development.*
+*Section in preparation.*
 :::
 
 The fact that three of the four original ARPANET nodes were UC campuses is not a coincidence. It reflects where DARPA's research funding was concentrated and where the relevant mathematical and computer science talent had gathered. It also reflects something the UC system itself did not fully recognize or capitalize on at the time - and arguably still hasn't.
@@ -77,7 +77,7 @@ The UCLA-UCSB-Berkeley collaboration on internet infrastructure happened because
 **Key figures:** Bill Joy (grad student), Sam Leffler, Kirk McKusick, Robert Fabry
 
 ::: {.origin-story}
-*Draft - fill in: DARPA having designed TCP/IP (Cerf and Kahn) but needing a working Unix implementation to spread it; DARPA contracting Berkeley's CSRG specifically because Berkeley was already distributing BSD Unix to universities at minimal cost; Bill Joy as the primary implementer of the TCP/IP stack in 4.2BSD (1983); the socket API that Joy's implementation introduced - the programming interface that let any application speak to the network - which became the universal standard for network programming and is still the interface used today in every major language and OS; the decision to distribute the TCP/IP implementation freely with BSD Unix to universities, which is how TCP/IP spread from a DARPA project to the de facto internet standard.*
+*Section in preparation.*
 :::
 
 ### The Socket API: The Interface That Outlasted Everything

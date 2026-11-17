@@ -6,7 +6,8 @@ book:
   title: "UC Open Source: A System History"
   subtitle: "How University of California Research Became Global Infrastructure"
   author: "UC OSPO Network"
-  date: "2026"
+  date: last-modified
+  date-format: "MMMM YYYY"
   favicon: images/uc-ospo-favicon.png
   cover-image: images/uc-ospo-network-logo.svg
   site-url: https://ucospo.net/network-docs/history
@@ -50,6 +51,14 @@ book:
         - 08-the-network.qmd
   appendices:
     - appendix-projects.qmd
+
+website:
+  announcement:
+    icon: exclamation-triangle
+    dismissable: false
+    type: warning
+    position: below-navbar
+    content: "**Working draft.** This book is not yet complete or fully sourced. Sections marked *Section in preparation* are being researched. Corrections are welcome as [GitHub issues](https://github.com/UC-OSPO-Network/network-docs/issues)."
 
 bibliography: ../references.bib
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
