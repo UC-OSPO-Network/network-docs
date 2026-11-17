@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
@@ -38,6 +38,13 @@ jobs:
           echo "version=$VERSION" >> $GITHUB_OUTPUT
           echo "sandbox=$SANDBOX" >> $GITHUB_OUTPUT
           echo "pres_path=presentations/$SLUG" >> $GITHUB_OUTPUT
+
+      # The root Quarto project includes generated files, so make them first.
+      - name: Generate site includes
+        run: |
+          python3 -c 'import yaml' 2>/dev/null || sudo apt-get install -y python3-yaml
+          python3 scripts/build_talks.py
+          python3 scripts/build_outputs.py
 
       - name: Render slides and handout
         run: |

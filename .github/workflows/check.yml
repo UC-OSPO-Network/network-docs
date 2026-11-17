@@ -1,0 +1,39 @@
+name: Check site
+
+# Builds the whole site on every pull request and fails on a render error, a
+# missing talk.yml or bib entry, working files in the output, or a broken
+# internal link. It does not deploy and does not export the slide PDFs.
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Ensure PyYAML
+        run: python3 -c 'import yaml' 2>/dev/null || sudo apt-get install -y python3-yaml
+
+      - name: Build site pages
+        run: scripts/build_site.sh
+
+      - name: Render all presentations
+        run: scripts/render_decks.sh
+
+      - name: Render UC OSS History book
+        run: quarto render history/
+
+      - name: Add decks and book to _site
+        run: scripts/stage_site.sh _site
+
+      # Slide PDFs come from decktape, which only the deploy run installs.
+      - name: Check staged site
+        run: scripts/check_site.sh _site --allow-missing-pdf

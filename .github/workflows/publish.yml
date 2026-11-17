@@ -8,15 +8,12 @@ on:
       - 'history/**'
       - '_quarto.yml'
       - 'index.qmd'
+      - 'talks.qmd'
       - 'outputs.qmd'
       - 'network-outputs.bib'
-      - 'scripts/build_outputs.py'
-      - 'scripts/build_talks.py'
-      - 'talks.qmd'
-      - 'scripts/stage_site.sh'
-      - 'scripts/build_site.sh'
-      - 'ucospo-site.scss'
       - 'references.bib'
+      - 'ucospo-site.scss'
+      - 'scripts/**'
       - '.github/workflows/publish.yml'
       - '.gitignore'
   workflow_dispatch:
@@ -24,14 +21,11 @@ on:
 permissions:
   contents: write
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
@@ -41,36 +35,18 @@ jobs:
       - name: Install decktape
         run: npm install -g decktape
 
-      # Site pages: generates the Outputs list, then quarto render at the root
-      # builds index.html, outputs.html and network-outputs.bib into _site/.
+      # Generates the Talks and Outputs lists, then quarto render at the root builds
+      # the site pages into _site/.
       - name: Build site pages
         run: scripts/build_site.sh
 
-      # Render every .qmd in every presentation folder. Adding a new presentation
-      # means dropping a folder under presentations/, with no edits to this workflow.
+      # Every .qmd in every presentations/*/ folder except drafts. Adding a talk
+      # means adding a folder with a talk.yml, with no edits to this workflow.
       - name: Render all presentations
-        run: |
-          set -euo pipefail
-          shopt -s nullglob
-          for dir in presentations/*/; do
-            # Draft talks (status: draft in talk.yml) are not rendered or published.
-            grep -qxF "$dir" _draft-talks.txt && continue
-            qmds=("$dir"*.qmd)
-            [ ${#qmds[@]} -eq 0 ] && continue
-            echo "::group::Render ${dir}"
-            for qmd in "${qmds[@]}"; do
-              # Slide decks: render only revealjs for the site (skips pptx and its
-              # reference-doc dependency). Handouts and other docs: default format.
-              case "$qmd" in
-                *slides*) quarto render "$qmd" --to revealjs ;;
-                *)        quarto render "$qmd" ;;
-              esac
-            done
-            echo "::endgroup::"
-          done
+        run: scripts/render_decks.sh
 
       # Export a PDF for every reveal.js deck (any *slides*.html) via decktape.
-      # The server root is presentations/ so that ../_shared/fonts resolves.
+      # The server root is presentations/ so that shared paths resolve.
       - name: Generate slide PDFs
         run: |
           set -euo pipefail
@@ -95,18 +71,12 @@ jobs:
       - name: Render UC OSS History book
         run: quarto render history/
 
-      # Build _site/ from an allow-list. Nothing outside it is published.
+      # Add decks and the book to _site/ from an allow-list. Nothing outside it is published.
       - name: Add decks and book to _site
         run: scripts/stage_site.sh _site
 
       - name: Check staged site
-        run: |
-          set -euo pipefail
-          bad=$(find _site -type f \( -name '*.md' -o -name '*.qmd' -o -name '*.scss' -o -name '*.py' -o -name '*.sh' -o -name 'Makefile' -o -name '*.yml' -o -name '*.csv' -o -name '*.pptx' -o -name '.gitignore' \) ! -path '_site/history/*' ! -path '*_files/*')
-          if [ -n "$bad" ]; then echo "::error::Working files in _site:"; echo "$bad"; exit 1; fi
-          for f in index.html outputs.html network-outputs.bib history/index.html; do
-            test -s "_site/$f" || { echo "::error::Missing _site/$f"; exit 1; }
-          done
+        run: scripts/check_site.sh _site
 
       # keep_files: false means files removed from the build disappear from the site.
       - name: Deploy to GitHub Pages
