@@ -11,9 +11,9 @@ html:
 
 # PDF: render HTML, serve it, export with decktape (Chromium under the hood)
 pdf: html
-	@python3 -m http.server $(PORT) --directory . >/dev/null 2>&1 &
+	@python3 -m http.server $(PORT) --directory .. >/dev/null 2>&1 &
 	@sleep 3
-	decktape reveal http://localhost:$(PORT)/$(SLIDES).html $(SLIDES).pdf \
+	decktape reveal http://localhost:$(PORT)/ucla-tlr-ospo-2026/$(SLIDES).html $(SLIDES).pdf \
 		--size 1280x720 --pdf-title $(PDF_TITLE)
 	@pkill -f "http.server $(PORT)" 2>/dev/null || true
 

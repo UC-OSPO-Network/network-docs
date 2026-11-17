@@ -12,9 +12,9 @@ html:
 	quarto render $(SLIDES).qmd --to revealjs
 
 pdf: html
-	@python3 -m http.server $(PORT) --directory . &
+	@python3 -m http.server $(PORT) --directory .. &
 	@sleep 3
-	decktape reveal http://localhost:$(PORT)/$(SLIDES).html $(SLIDES).pdf \
+	decktape reveal http://localhost:$(PORT)/iassist-2026/$(SLIDES).html $(SLIDES).pdf \
 		--size 1280x720 --pdf-title $(PDF_TITLE)
 	@pkill -f "http.server $(PORT)" 2>/dev/null || true
 
@@ -28,9 +28,9 @@ full-html:
 	quarto render $(SLIDES_FULL).qmd --to revealjs
 
 full-pdf: full-html
-	@python3 -m http.server $(PORT_FULL) --directory . &
+	@python3 -m http.server $(PORT_FULL) --directory .. &
 	@sleep 3
-	decktape reveal http://localhost:$(PORT_FULL)/$(SLIDES_FULL).html $(SLIDES_FULL).pdf \
+	decktape reveal http://localhost:$(PORT_FULL)/iassist-2026/$(SLIDES_FULL).html $(SLIDES_FULL).pdf \
 		--size 1280x720 --pdf-title $(PDF_TITLE)
 	@pkill -f "http.server $(PORT_FULL)" 2>/dev/null || true
 

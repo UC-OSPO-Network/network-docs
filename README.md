@@ -58,6 +58,8 @@ links:                    # relative to the folder, or full URLs
   - {label: Slides, href: example-slides.html}
 ```
 
+Decks share one theme, set of fonts, logo swap and pptx reference in `presentations/_shared/`. In a deck's front matter use `theme: ../_shared/ucospo-theme.scss`, `include-after-body: ../_shared/logo-swap.txt` and `reference-doc: ../_shared/ucospo-reference.pptx`. Rendered HTML is built by the workflow and is not committed.
+
 A link to a `*slides*.html` deck also gets a PDF link, because the workflow exports a PDF for every such deck. `python3 scripts/build_talks.py` checks every `talk.yml`. It fails when a folder has no `talk.yml`, a required field is missing, or a published talk has no entry in `network-outputs.bib`. Build the site locally with `scripts/build_site.sh`.
 
 ---

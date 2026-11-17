@@ -70,27 +70,27 @@ jobs:
           done
 
       # Export a PDF for every reveal.js deck (any *slides*.html) via decktape.
+      # The server root is presentations/ so that ../_shared/fonts resolves.
       - name: Generate slide PDFs
         run: |
           set -euo pipefail
           shopt -s nullglob
+          python3 -m http.server 3000 --directory presentations >/dev/null 2>&1 &
+          server_pid=$!
+          sleep 3
           for dir in presentations/*/; do
             grep -qxF "$dir" _draft-talks.txt && continue
-            decks=("$dir"*slides*.html)
-            [ ${#decks[@]} -eq 0 ] && continue
-            python3 -m http.server 3000 --directory "$dir" >/dev/null 2>&1 &
-            server_pid=$!
-            sleep 3
-            for html in "${decks[@]}"; do
+            slug=$(basename "$dir")
+            for html in "$dir"*slides*.html; do
               base=$(basename "$html" .html)
               echo "decktape -> ${dir}${base}.pdf"
-              decktape reveal "http://localhost:3000/${base}.html" "${dir}${base}.pdf" \
+              decktape reveal "http://localhost:3000/${slug}/${base}.html" "${dir}${base}.pdf" \
                 --size 1280x720 \
                 --chrome-arg=--no-sandbox --chrome-arg=--disable-dev-shm-usage \
                 || echo "::warning::decktape failed for ${dir}${base}"
             done
-            kill "$server_pid" 2>/dev/null || true
           done
+          kill "$server_pid" 2>/dev/null || true
 
       - name: Render UC OSS History book
         run: quarto render history/
