@@ -29,8 +29,7 @@ book:
     right:
       - text: "ucospo.net"
         href: https://ucospo.net
-      - icon: github
-        href: https://github.com/UC-OSPO-Network/network-docs
+      # The GitHub icon comes from repo-url above.
   sidebar:
     style: docked
     background: light

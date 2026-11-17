@@ -14,7 +14,7 @@ project:
 website:
   title: "UC OSPO Network"
   navbar:
-    logo: images/uc-ospo-network-logo-light.svg
+    logo: images/uc-ospo-network-logo.svg
     logo-alt: "UC OSPO Network"
     logo-href: https://ucospo.net
     left:
