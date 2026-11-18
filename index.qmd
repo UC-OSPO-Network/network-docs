@@ -2,13 +2,18 @@
 title: "UC OSPO Network: Talks and Outputs"
 ---
 
-A public record of talks, workshops, and other work from the UC OSPO Network.
+Find talks, workshop materials, lessons, software, and publications from the UC OSPO Network.
 
-Looking for something else? Upcoming meetups and workshops are on the [Events page](https://ucospo.net/events/), and templates and how-to guides are on the [Resources page](https://ucospo.net/oss-resources/).
+::: {.home-actions}
+[Browse talks and slides](talks.qmd){.btn .btn-primary .btn-lg}
+[Browse lessons, software, and publications](outputs.qmd){.btn .btn-primary .btn-lg}
+:::
 
-## Newest talks
+::: {.home-bib}
+[Download BibTeX](network-outputs.bib){download="network-outputs.bib"} for every entry in the catalog.
+:::
 
-[All talks](talks.qmd) · [Outputs](outputs.qmd): lessons, software, papers, and press.
+## Recent talks
 
 {{< include _talks-recent.md >}}
 
@@ -21,3 +26,5 @@ How UC research software went from BSD Unix to Jupyter, Ceph, Spark, RISC-V, and
 
 [Read the book](history/index.html) · [Source](https://github.com/UC-OSPO-Network/network-docs/tree/main/history)
 :::
+
+Looking for something else? Upcoming meetups and workshops are on the [Events page](https://ucospo.net/events/), and templates and how-to guides are on the [Resources page](https://ucospo.net/oss-resources/).

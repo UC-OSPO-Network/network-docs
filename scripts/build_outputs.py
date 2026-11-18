@@ -30,7 +30,7 @@ CSL_URL = "https://raw.githubusercontent.com/citation-style-language/styles/mast
 SECTIONS = [
     ("lesson", "Lessons and curriculum"),
     ("software", "Software and data"),
-    ("talk", "Talks and workshops"),
+    ("talk", "Talks, workshops, and events"),
     ("paper", "Papers"),
     ("press", "Press"),
 ]
