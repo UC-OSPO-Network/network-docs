@@ -7,3 +7,4 @@ bib: dennis2026meetup
 people: [Leigh Phan, Tim Dennis]
 links:
   - {label: Slides, href: ucla-meetup-2026-10-06-slides.html}
+  - {label: "Paul Eggert's slides (PDF)", href: eggert-keeping-the-world-on-time.pdf}

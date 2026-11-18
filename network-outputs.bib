@@ -16,6 +16,10 @@
 %
 % Checked 2026-11-16: every DOI resolves and its title and authors match the record;
 % every URL returned 200, except the CNI page, which refuses automated requests.
+%
+% 2026-11-18: reconciled against a public-source import covering 2024-11-16 to
+% 2026-11-16. Event entries below were checked against their host pages. Routine
+% campus meetups stay on https://ucospo.net/events/ and are not listed here.
 
 % ---------------------------------------------------------------- lessons
 
@@ -72,8 +76,11 @@
   keywords = {software, survey}
 }
 
-% ---------------------------------------------------------------- talks and workshops
+% ---------------------------------------------------------------- talks, workshops and events
 
+% The network calendar titles the session "UC Carpentries: Core Elements of Citable
+% and Discoverable Research Software", co-presented by the UC OSPO Network and
+% UC Carpentries and hosted by UCLA. This entry cites the slides.
 @misc{dennis2026carpentries,
   author = {Dennis, Tim and Phan, Leigh and Langdon, Laura and Otsuji, Reid and Padilla, Karla},
   title = {{Making Research Software Citable \& Discoverable}},
@@ -83,6 +90,21 @@
   date = {2026-09-23},
   url = {https://ucospo.net/network-docs/presentations/uc-carpentries-sharing-software-2026/uc-carpentries-sharing-software-2026-slides.html},
   keywords = {talk, education}
+}
+
+% Paul Eggert's guest talk at the meetup. The deck states no license; it is posted
+% with his permission (via Tim Dennis, 2026-11). The time zone map on one slide is
+% Evan Siroky's, CC BY 4.0, credited on the slide.
+@misc{eggert2026tzdb,
+  author = {Eggert, Paul R.},
+  title = {{Keeping the World on Time}},
+  type = {Meetup slides},
+  eventtitle = {{UCLA Open Source Meetup}},
+  venue = {Los Angeles, CA},
+  date = {2026-10-06},
+  url = {https://ucospo.net/network-docs/presentations/ucla-meetup-2026-10-06/eggert-keeping-the-world-on-time.pdf},
+  note = {Posted with the author's permission},
+  keywords = {talk, network}
 }
 
 @misc{dennis2026meetup,
@@ -117,6 +139,7 @@
   keywords = {talk, network}
 }
 
+% The UC Open schedule places the talk on April 22. The Zenodo deposit is dated April 23.
 @misc{dennis2026ucopen,
   author = {Dennis, Tim},
   title = {{{UC OSPO} Education Activities}},
@@ -128,6 +151,9 @@
   keywords = {talk, education}
 }
 
+% Creator order follows the Zenodo deposit. The Love Data Week program titles the
+% session "Making Research Software Citable and Discoverable: Practical FAIR4RS Wins"
+% and lists Dennis, Langdon, Otsuji and Phan as speakers.
 @misc{dennis2026fair4rs,
   author = {Dennis, Tim and Otsuji, Reid and Phan, Leigh and Padilla, Karla and Langdon, Laura},
   title = {{Making Research Software Citable \& Discoverable}},
@@ -139,7 +165,9 @@
   keywords = {talk, education}
 }
 
-% The URL could not be checked: cni.org refuses automated requests.
+% The URL could not be checked: cni.org refuses automated requests. The import gives
+% December 11 from the meeting schedule PDF, which also refused the request, so the
+% date stays at month precision until someone confirms it.
 @misc{budden2025networked,
   author = {Budden, Amber E. and Dennis, Tim and Brantley, Peter},
   title = {{Networked Innovation: The University of California's Multi-Campus Model for Open Source Support}},
@@ -171,6 +199,7 @@
   keywords = {talk, network}
 }
 
+% SCaLE 22x ran March 6-9, 2025. The deposit is dated March 7; the talk day is unconfirmed.
 @misc{lieggi2025scale,
   author = {Lieggi, Stephanie and Dennis, Tim and Lovell, Emily and Grappone, Todd},
   title = {{Building a Network of Open Source Program Offices at the University of California}},
@@ -182,15 +211,151 @@
   keywords = {talk, network}
 }
 
+% Author order follows the deposit. The program lists Tim Dennis, Reid Otsuji,
+% Todd Grappone and David Minor as speakers, on Tuesday of Love Data Week 2025.
 @misc{grappone2025ospos,
   author = {Grappone, Todd and Lieggi, Stephanie and Budden, Amber E. and Dennis, Tim},
   title = {{{OSPOs} in Higher Ed Discussion Group}},
   type = {Discussion group},
   eventtitle = {{UC Love Data Week 2025}},
   venue = {Online},
-  date = {2025-02},
+  date = {2025-02-11},
   doi = {10.5281/zenodo.15006924},
   keywords = {talk, network}
+}
+
+% UC OSPO Network all-campus workshops. No presenters are named on the listings.
+@misc{ucospo2025hacktoberfest,
+  author = {{UC OSPO Network}},
+  title = {{Hacktoberfest Prep Session}},
+  type = {All-campus workshop},
+  venue = {Online},
+  date = {2025-09-11},
+  url = {https://ucospo.net/events/#hacktoberfest-prep-session-all-campus},
+  keywords = {talk, education, hacktoberfest}
+}
+
+% The UCSD calendar: "brought to you by the UC OSPO Network through UC San Diego
+% Library's Open Source Program Office."
+@misc{ucospo2025contributing,
+  author = {{UC OSPO Network} and {UC San Diego Library Open Source Program Office}},
+  title = {{Get Started Contributing to {OSS}}},
+  type = {All-campus workshop},
+  venue = {Online},
+  date = {2025-10-09},
+  url = {https://calendar.ucsd.edu/event/get-started-contributing-to-oss},
+  keywords = {talk, education, hacktoberfest}
+}
+
+% CURIOSS pilot series, sessions 1 and 2. The listings credit "representatives from
+% the Syracuse University and University of California Open Source Program Offices".
+@misc{curioss2026git,
+  author = {{Syracuse University Open Source Program Office} and {University of California Open Source Program Offices}},
+  title = {{Git \& {GitHub} Workshop}},
+  type = {Workshop, CURIOSS pilot series, session 1},
+  venue = {Online},
+  date = {2026-09-15},
+  url = {https://ucospo.net/events/#git-github-workshop},
+  keywords = {talk, education, curioss}
+}
+
+@misc{curioss2026contribute,
+  author = {{Syracuse University Open Source Program Office} and {University of California Open Source Program Offices}},
+  title = {{How to Contribute to Open Source Software}},
+  type = {Workshop, CURIOSS pilot series, session 2},
+  venue = {Online},
+  date = {2026-10-08},
+  url = {https://ucospo.net/events/#how-to-contribute-to-open-source-software},
+  keywords = {talk, education, curioss}
+}
+
+% Campus OSPO workshops at UC San Diego.
+@misc{haradon2026gitlab,
+  author = {Haradon, Arianna},
+  title = {{{GitLab}: Getting Started with Open Source}},
+  type = {Hands-on workshop},
+  eventtitle = {{UC San Diego Library Open Source Program Office and Computer Science and Engineering Society}},
+  venue = {La Jolla, CA},
+  date = {2026-01-15},
+  url = {https://calendar.ucsd.edu/event/gitlab-getting-started-with-open-source},
+  keywords = {talk, education}
+}
+
+@misc{ucsd2026jderobot,
+  author = {{UC San Diego Library Open Source Program Office}},
+  title = {{{JdeRobot} Workshop}},
+  type = {Workshop on open source robotics},
+  venue = {La Jolla, CA},
+  date = {2026-01-29},
+  url = {https://calendar.ucsd.edu/event/jderobot-workshop},
+  keywords = {talk, education}
+}
+
+% Reboot the Earth hackathons, organized by the UN Office of Information and
+% Communications Technology with campus OSPOs. UC San Diego collaborators: the
+% Library OSPO, the SDSC Societal Computing and Innovation Lab, and the Office of
+% Innovation and Commercialization. The press entry chang2026hackathon covers this event.
+@misc{ucsd2026reboot,
+  author = {{United Nations Office of Information and Communications Technology} and {UC San Diego Library Open Source Program Office}},
+  title = {{Reboot the Earth Hackathon}},
+  type = {Student hackathon},
+  venue = {San Diego Supercomputer Center, La Jolla, CA},
+  date = {2026-05-08/2026-05-09},
+  url = {https://ospo.ucsd.edu/rte/index.html},
+  keywords = {talk, hackathon, education}
+}
+
+@misc{ucdavis2026reboot,
+  author = {{UC Davis Open Source Program Office} and {UC Davis DataLab}},
+  title = {{Reboot the Earth Hackathon at {UC Davis}}},
+  type = {Student hackathon},
+  venue = {Peter J. Shields Library, Davis, CA},
+  date = {2026-10-23/2026-10-24},
+  url = {https://events.library.ucdavis.edu/event/reboot-the-earth-hackathon-ucdavis},
+  keywords = {talk, hackathon, education}
+}
+
+% UC Open, the Network's annual summit. The program pages list every session.
+@misc{ucospo2026ucopen,
+  author = {{UC OSPO Network}},
+  title = {{University of California Open Summit ({UC Open}) 2026}},
+  type = {Summit program},
+  venue = {Berkeley, CA},
+  date = {2026-04-22/2026-04-23},
+  url = {https://ucospo.net/events/uc-open-2026/},
+  keywords = {talk, summit}
+}
+
+@misc{lovell2026mentorship,
+  author = {Lovell, Emily},
+  title = {{Teaching and Mentorship Pathways into Open Source}},
+  type = {Conference presentation},
+  eventtitle = {{UC Open 2026}},
+  venue = {Berkeley, CA},
+  date = {2026-04-22},
+  url = {https://ucospo.net/events/uc-open-2026/talks/teaching-and-mentorship/},
+  keywords = {talk, education}
+}
+
+@misc{padilla2025licensing,
+  author = {Padilla, Karla and Shapiro, Jeff},
+  title = {{{ABCs} of Open Source Licensing}},
+  type = {Directed discussion},
+  eventtitle = {{UC Open 2025}},
+  venue = {Santa Clara, CA},
+  date = {2025-04-24},
+  url = {https://ucospo.net/events/uc-open-4-2025/sessions/licensing/},
+  keywords = {talk, licensing, education}
+}
+
+@misc{ucospo2025ucopen,
+  author = {{UC OSPO Network}},
+  title = {{University of California Open Summit ({UC Open}) 2025}},
+  type = {Summit program},
+  venue = {Santa Clara, CA},
+  date = {2025-04-23/2025-04-24},
+  url = {https://ucospo.net/events/uc-open-4-2025/},
+  keywords = {talk, summit}
 }
 
 % ---------------------------------------------------------------- papers
