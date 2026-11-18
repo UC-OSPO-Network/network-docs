@@ -1,0 +1,946 @@
+# Places for the history book map and the "On campus today" link boxes.
+# Single source for both. Plan: drafts/history-release-plan.md, Phase 2b.
+#
+# Seeded 2026-11-17 from an external research pass (prompt:
+# drafts/2026-11-17-validation-prompt-history-places.md), then checked:
+# coordinates against their cited OpenStreetMap ids, all links by HTTP status,
+# key facts against their sources. Decisions by Tim Dennis, 2026-11-17.
+#
+# layer: history = where the work happened; today = UC OSPO Network member
+#   campuses; related = non-member campuses with a related unit (listed, not pinned).
+# pin: false = listed under the map, no marker.
+# place_at_time: false = the pin marks the UC part or a successor, and `prior`
+#   names the earlier institution.
+# Public places only. Never add a home or a private address.
+
+- id: arpanet-ucla
+  layer: history
+  pin: true
+  name: ARPANET Node 1 and early RFC work
+  campus: UCLA
+  place: Boelter Hall, room 3420
+  place_at_time: true
+  prior: null
+  lat: 34.06933
+  lon: -118.44325
+  precision: building
+  coord_source: IEEE Milestone register — https://ethw.org/Milestones:Birthplace_of_the_Internet,_1969
+  links:
+  - label: Kleinrock Internet Heritage Site
+    url: https://uclaconnectionlab.org/internet-museum/
+    kind: heritage
+  - label: IEEE Milestone
+    url: https://ethw.org/Milestones:Birthplace_of_the_Internet,_1969
+    kind: heritage
+  - label: UCLA Connection Lab
+    url: https://uclaconnectionlab.org/
+    kind: unit
+  - label: Leonard Kleinrock papers
+    url: https://oac.cdlib.org/findaid/ark:/13030/c8kd240b
+    kind: archive
+  - label: RFC 1
+    url: https://www.rfc-editor.org/rfc/rfc1.html
+    kind: archive
+  - label: DARPA ARPANET history
+    url: https://www.darpa.mil/news/features/arpanet
+    kind: project
+  - label: RFC Editor — current RFC series
+    url: https://www.rfc-editor.org/
+    kind: steward
+  - label: Connection Lab visitor contact
+    url: https://uclaconnectionlab.org/contact/
+    kind: unit
+  heritage_visit: Room 3420, third floor, Boelter Hall. The Connection Lab lists 420 Westwood Plaza, Los Angeles,
+    CA 90095; IEEE lists 580 Portola Plaza. UCLA previously offered group tours by appointment. Current hours were
+    not found; contact the lab before traveling.
+  sources:
+  - https://www.internetsociety.org/internet/history-internet/brief-history-internet/
+  - https://pages.cs.wisc.edu/~pb/740/CK74.pdf
+  - https://samueli.ucla.edu/archive-illuminates-uclas-place-in-internet-history/
+  confidence: 0.97
+  notes: Boelter marks the first ARPANET message and UCLA’s early host-protocol and RFC work. The 1974 TCP paper
+    lists Cerf at Stanford and Kahn at ARPA; ARPANET ended, and the RFC Editor stewards the RFC series.
+- id: arpanet-ucsb
+  layer: history
+  pin: true
+  name: ARPANET Node 3 and the Culler–Fried Online System
+  campus: UC Santa Barbara
+  place: North Hall, UCSB Computer Center
+  place_at_time: true
+  prior: null
+  lat: 34.41482
+  lon: -119.84637
+  precision: building
+  coord_source: UCSB campus map — https://www.campuscalendar.ucsb.edu/north_hall
+  links:
+  - label: North Hall — campus map
+    url: https://www.campuscalendar.ucsb.edu/north_hall
+    kind: heritage
+  - label: UCSB Systems and Networking Lab
+    url: https://snl.cs.ucsb.edu/
+    kind: unit
+  - label: James White interview
+    url: https://archive.computerhistory.org/resources/access/text/2020/04/102792041-05-01-acc.pdf
+    kind: archive
+  - label: DARPA ARPANET history
+    url: https://www.darpa.mil/news/features/arpanet
+    kind: project
+  heritage_visit: North Hall, UC Santa Barbara, Santa Barbara, CA 93106. The campus map locates the building; a
+    Node 3 plaque, project exhibit, and public interior access were not found.
+  sources:
+  - https://news.ucsb.edu/2000/011353/ucsb-inaugurates-center-study-internet
+  - https://engineering.ucsb.edu/news/archives-where-were-you-internet
+  - https://ucsb-cs24.github.io/f23/lectures/CS24_Lecture12.pdf
+  confidence: 0.92
+  notes: UCSB identifies North Hall as the 1969 site. The research group link is a present-day contact; a direct
+    organizational successor and a Node 3 plaque or public interior tour were not found.
+- id: bsd-tcpip
+  layer: history
+  pin: true
+  name: BSD TCP/IP stack (4.2BSD)
+  campus: UC Berkeley
+  place: Evans Hall — Computer Systems Research Group
+  place_at_time: true
+  prior: null
+  lat: 37.87362
+  lon: -122.25768
+  precision: building
+  coord_source: OpenStreetMap relation 6411209 — https://www.openstreetmap.org/relation/6411209
+  links:
+  - label: 4.2BSD source tree
+    url: https://www.tuhs.org/cgi-bin/utree.pl?file=4.2BSD
+    kind: project
+  - label: BSD development history
+    url: https://www.mckusick.com/history/
+    kind: archive
+  - label: Bancroft Library BSD records
+    url: https://oac.cdlib.org/findaid/ark:/13030/hb2b69n7b5
+    kind: archive
+  - label: UC Berkeley EECS systems research
+    url: https://www2.eecs.berkeley.edu/Research/Areas/Centers/
+    kind: unit
+  - label: FreeBSD — active BSD descendant
+    url: https://www.freebsd.org/
+    kind: project
+  - label: FreeBSD Foundation — supports FreeBSD
+    url: https://freebsdfoundation.org/
+    kind: steward
+  heritage_visit: null
+  sources:
+  - https://www.mckusick.com/articles.html
+  - https://www.oreilly.com/openbook/opensources/book/kirkmck.html_original
+  confidence: 0.83
+  notes: CSRG’s Evans Hall address is documented in contemporary BSD material. The source tree is the historical
+    release; FreeBSD is a current descendant. A room for the 1983 TCP/IP work was not found.
+- id: bsd-unix
+  layer: history
+  pin: true
+  name: Berkeley Software Distribution Unix
+  campus: UC Berkeley
+  place: Evans Hall — Berkeley UNIX distribution and CSRG
+  place_at_time: true
+  prior: null
+  lat: 37.87362
+  lon: -122.25768
+  precision: building
+  coord_source: OpenStreetMap relation 6411209 — https://www.openstreetmap.org/relation/6411209
+  links:
+  - label: Bancroft Library BSD records
+    url: https://oac.cdlib.org/findaid/ark:/13030/hb2b69n7b5
+    kind: archive
+  - label: CSRG tape archive
+    url: https://www.mckusick.com/csrg/index.html
+    kind: archive
+  - label: BSD history and archived releases
+    url: https://www.tuhs.org/
+    kind: archive
+  - label: UC Berkeley EECS systems research
+    url: https://www2.eecs.berkeley.edu/Research/Areas/Centers/
+    kind: unit
+  - label: FreeBSD — active BSD descendant
+    url: https://www.freebsd.org/
+    kind: project
+  - label: FreeBSD Foundation — supports FreeBSD
+    url: https://freebsdfoundation.org/
+    kind: steward
+  heritage_visit: null
+  sources:
+  - https://www.tuhs.org/Archive/Documentation/AUUGN/AUUGN-V01.3.pdf
+  - https://www.mckusick.com/articles.html
+  confidence: 0.92
+  notes: Early BSD distribution instructions direct requests to Bill Joy in Evans Hall. Later CSRG documentation
+    gives 463 Evans Hall in 1986. Berkeley EECS is the campus contact; there is no active CSRG office.
+- id: ingres-postgres
+  layer: history
+  pin: true
+  name: INGRES and Berkeley POSTGRES
+  campus: UC Berkeley
+  place: UC Berkeley — Electrical Engineering and Computer Sciences / Electronics Research Laboratory
+  place_at_time: true
+  prior: null
+  lat: 37.87411
+  lon: -122.262
+  precision: campus
+  coord_source: Wikidata Q5028719 — https://www.wikidata.org/wiki/Q5028719
+  links:
+  - label: Berkeley EECS database management systems group
+    url: https://www2.eecs.berkeley.edu/Research/Areas/DBMS/
+    kind: unit
+  - label: Stonebraker oral history
+    url: https://archive.computerhistory.org/resources/access/text/2012/12/102635858-05-01-acc.pdf
+    kind: archive
+  - label: POSTGRES technical report
+    url: https://www2.eecs.berkeley.edu/Pubs/TechRpts/1986/761.html
+    kind: archive
+  - label: PostgreSQL
+    url: https://www.postgresql.org/
+    kind: project
+  - label: PostgreSQL community and governance
+    url: https://www.postgresql.org/community/
+    kind: steward
+  - label: University INGRES 8.9 preservation copy
+    url: https://pg.ddx.io/legacy/ingres/
+    kind: archive
+  heritage_visit: null
+  sources:
+  - https://www2.eecs.berkeley.edu/Pubs/TechRpts/1974/28785.html
+  - https://www.postgresql.org/docs/current/history.htm
+  confidence: 0.76
+  notes: The reports identify Berkeley and its research units. Buildings for the original INGRES and POSTGRES implementations
+    were not found. The community link is for PostgreSQL; a current steward for the original university INGRES release
+    was not found.
+- id: tz
+  layer: history
+  pin: true
+  name: Time Zone Database (tz)
+  campus: Online / UCLA today
+  place: UCLA (current coordinator)
+  place_at_time: false
+  prior: Arthur David Olson (NIH) started the database in 1986. Paul Eggert (UCLA) has been the coordinator since
+    2012; the database is hosted by IANA.
+  lat: 34.07088
+  lon: -118.44685
+  precision: campus
+  coord_source: OpenStreetMap relation 7493269
+  links:
+  - label: IANA Time Zone Database
+    url: https://www.iana.org/time-zones
+    kind: project
+  - label: RFC 6557 — IANA and IETF responsibilities
+    url: https://www.rfc-editor.org/rfc/rfc6557.html
+    kind: steward
+  - label: tz mailing list archive
+    url: https://lists.iana.org/hyperkitty/list/tz@iana.org/
+    kind: archive
+  - label: Paul Eggert — UCLA Samueli, Engineering VI, room 3631
+    url: https://samueli.ucla.edu/people/paul-eggert/
+    kind: unit
+  heritage_visit: null
+  sources:
+  - https://www.eff.org/files/2012-01-11_3_olson_memo_iso_rule_11_mot_final_.pdf
+  - https://lists.iana.org/hyperkitty/list/tz-announce@iana.org/latest?page=1
+  confidence: 0.87
+  notes: Arthur David Olson, an NIH National Cancer Institute computing professional, started the database. A building
+    for the 1986 work was not found. UCLA is the current coordinator’s affiliation.
+- id: apache-httpd
+  layer: history
+  pin: false
+  name: Apache HTTP Server
+  campus: Online / San Francisco connection
+  place: online
+  place_at_time: true
+  prior: Coordinated online in 1995 by a group of webmasters. No UC place is documented for the work.
+  lat: null
+  lon: null
+  precision: null
+  coord_source: null
+  links:
+  - label: Apache HTTP Server
+    url: https://httpd.apache.org/
+    kind: project
+  - label: Apache Software Foundation
+    url: https://www.apache.org/
+    kind: steward
+  - label: Apache Group history
+    url: https://www.apache.org/history/
+    kind: archive
+  - label: Apache HTTP Server project history
+    url: https://httpd.apache.org/ABOUT_APACHE.html
+    kind: archive
+  heritage_visit: null
+  sources:
+  - https://www.elon.edu/u/imagining/expert_bios/behlendorf-brian/
+  confidence: 0.95
+  notes: The original group coordinated patches by email and used a shared Bay Area server with bandwidth donated
+    by HotWired. A physical development site, UC successor unit, and project-specific visitor site were not found.
+- id: ucsc-genome
+  layer: history
+  pin: true
+  name: UCSC Genome Browser and public human genome assembly
+  campus: UC Santa Cruz
+  place: UC Santa Cruz — Genome Bioinformatics Group
+  place_at_time: true
+  prior: null
+  lat: 37.00012
+  lon: -122.06221
+  precision: campus
+  coord_source: OpenStreetMap way 670613089 — https://www.openstreetmap.org/way/670613089
+  links:
+  - label: UCSC Genome Browser
+    url: https://genome.ucsc.edu/
+    kind: project
+  - label: UCSC Genomics Institute — Genome Browser stewardship
+    url: https://genomics.ucsc.edu/the-ucsc-genome-browser-25-years/
+    kind: steward
+  - label: UCSC Genomics Institute — Westside Research Park
+    url: https://genomics.ucsc.edu/about/contact/
+    kind: unit
+  - label: Genome Browser news archive
+    url: https://genome.ucsc.edu/goldenPath/newsarch.html
+    kind: archive
+  heritage_visit: null
+  sources:
+  - https://genome.ucsc.edu/goldenPath/history.html
+  - https://directory.ucsc.edu/cd_detail?guid=G034453525
+  - https://www.openstreetmap.org/way/34545188
+  confidence: 0.76
+  notes: The institutional history places the assembly and browser effort at UCSC. An original public computing
+    room was not found. The current team has an office at Westside Research Park, 2300 Delaware Ave. OpenStreetMap
+    way 34545188 locates the 2300 Delaware Ave. building at 36.95648, -122.05859.
+- id: eeglab
+  layer: history
+  pin: true
+  name: EEGLAB and the ICA/EEG Toolbox
+  campus: Salk Institute / UC San Diego
+  place: Swartz Center for Computational Neuroscience, San Diego Supercomputer Center
+  place_at_time: false
+  prior: The 1997 toolbox and the first EEGLAB release (2001) came from the Salk Institute's Computational Neurobiology
+    Laboratory. The team then moved to UC San Diego's Swartz Center.
+  lat: 32.88417
+  lon: -117.24019
+  precision: building
+  coord_source: OpenStreetMap relation 4736608
+  links:
+  - label: EEGLAB
+    url: https://eeglab.org/
+    kind: project
+  - label: Swartz Center for Computational Neuroscience — project team
+    url: https://sccn.ucsd.edu/
+    kind: steward
+  - label: Swartz Center — San Diego Supercomputer Center
+    url: https://sccn.ucsd.edu/contact/
+    kind: unit
+  - label: EEGLAB early history and original release
+    url: https://eeglab.org/others/The_first_decade_of_EEGLAB.html
+    kind: archive
+  - label: Salk Institute architecture tours
+    url: https://www.salk.edu/about/visiting-salk/
+    kind: heritage
+  heritage_visit: 10010 N Torrey Pines Road, La Jolla, CA 92037. Public architecture tours require advance registration.
+    Project lab access or an EEGLAB exhibit was not found.
+  sources:
+  - https://www.salk.edu/contact/
+  - https://www.openstreetmap.org/relation/4736608
+  confidence: 0.94
+  notes: The 1997 toolbox and first EEGLAB release in 2001 came from Salk. The team moved to UC San Diego’s SCCN,
+    now in the San Diego Supercomputer Center. The original lab room was not found. SDSC is at 32.88417, -117.24019
+    (OpenStreetMap relation 4736608).
+- id: cytoscape
+  layer: history
+  pin: true
+  name: Cytoscape
+  campus: Institute for Systems Biology / UC San Diego
+  place: Ideker Lab, Biomedical Research Facility II, UC San Diego
+  place_at_time: false
+  prior: Cytoscape began as a collaboration led from the Institute for Systems Biology (Seattle), with the Whitehead
+    Institute and UC San Diego. The 2003 paper lists all three.
+  lat: 32.8742
+  lon: -117.23509
+  precision: building
+  coord_source: OpenStreetMap way 103615500
+  links:
+  - label: Cytoscape
+    url: https://cytoscape.org/
+    kind: project
+  - label: Cytoscape Consortium
+    url: https://cytoscapeconsortium.org/contact.html
+    kind: steward
+  - label: Ideker Lab — Israni Biomedical Research Facility, UC San Diego
+    url: https://idekerlab.ucsd.edu/directions/
+    kind: unit
+  - label: Early release history
+    url: https://cytoscape.sourceforge.net/what_is_cytoscape.html
+    kind: archive
+  - label: Original 2003 paper
+    url: https://chianti.ucsd.edu/idekerlab/pages/pdfs/shannonGR2003.pdf
+    kind: archive
+  heritage_visit: null
+  sources:
+  - https://cytoscape.org/development_team.html
+  - https://idekerlab.ucsd.edu/software/
+  - https://www.openstreetmap.org/way/103615500
+  confidence: 0.83
+  notes: Seattle anchors a collaboration that also included UC San Diego and other institutions. The first public
+    release was in 2002. The paper appeared in 2003; the original Seattle building was not found. Israni is at 32.87420,
+    -117.23509 (OpenStreetMap way 103615500).
+- id: jupyter
+  layer: history
+  pin: true
+  name: IPython and Project Jupyter
+  campus: University of Colorado Boulder / UC Berkeley
+  place: UC Berkeley
+  place_at_time: false
+  prior: IPython began in 2001 at the University of Colorado Boulder. Fernando Pérez continued the work at UC Berkeley
+    from 2008. Project Jupyter was announced at SciPy 2014.
+  lat: 37.87206
+  lon: -122.25783
+  precision: campus
+  coord_source: OpenStreetMap way 24024507 (Sather Tower, campus landmark)
+  links:
+  - label: IPython
+    url: https://ipython.org/
+    kind: project
+  - label: Project Jupyter
+    url: https://jupyter.org/
+    kind: project
+  - label: Project Jupyter fiscal host — LF Charities
+    url: https://blog.jupyter.org/posts/2024/project-jupyter-joins-lf-charities/
+    kind: steward
+  - label: Berkeley Institute for Data Science — Jupyter
+    url: https://bids.berkeley.edu/jupyter
+    kind: unit
+  - label: Project Jupyter launch slides
+    url: https://speakerdeck.com/fperez/project-jupyter
+    kind: archive
+  - label: Project Jupyter governance
+    url: https://jupyter.org/governance/
+    kind: steward
+  heritage_visit: null
+  sources:
+  - https://ipython.readthedocs.io/en/stable/about/history.html
+  - https://blog.jupyter.org/posts/2018/jupyter-receives-the-acm-software-system-award/
+  - https://conference.scipy.org/news/2014/02/20/scipy2014-announcement/
+  - https://bids.berkeley.edu/annual-report-2025
+  confidence: 0.94
+  notes: The pin marks the 2001 IPython origin. Pérez later developed the work at UC Berkeley with collaborators;
+    Jupyter’s public unveiling was at SciPy 2014 in Austin. The original Boulder room was not found. BIDS planned
+    a 2026 move to Bakar Gateway; a dedicated Jupyter office was not found.
+- id: spark
+  layer: history
+  pin: true
+  name: Apache Spark
+  campus: UC Berkeley
+  place: Soda Hall — RAD Lab and later AMPLab
+  place_at_time: true
+  prior: null
+  lat: 37.87562
+  lon: -122.25871
+  precision: building
+  coord_source: OpenStreetMap way 280300979 — https://www.openstreetmap.org/way/280300979
+  links:
+  - label: Apache Spark
+    url: https://spark.apache.org/
+    kind: project
+  - label: Apache Software Foundation
+    url: https://www.apache.org/
+    kind: steward
+  - label: Sky Computing Lab — Bakar Gateway, 2300 Hearst Ave.
+    url: https://sky.cs.berkeley.edu/contact/
+    kind: unit
+  - label: AMP Lab open house
+    url: https://www2.eecs.berkeley.edu/bears/open-house/11/amplab.html
+    kind: archive
+  - label: Spark research paper
+    url: https://www.usenix.org/legacy/event/hotcloud10/tech/full_papers/Zaharia.pdf
+    kind: archive
+  heritage_visit: null
+  sources:
+  - https://spark.apache.org/history
+  - https://www2.eecs.berkeley.edu/bears/open-house/09/radlab.html
+  - https://amplab.cs.berkeley.edu/collaboration-open-source-research-impact/
+  - https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/
+  confidence: 0.92
+  notes: RAD Lab occupied Soda Hall in 2009; AMPLab launched in 2011. The Soda Hall point covers the documented
+    lab setting, not a particular desk. The successor Sky Computing Lab lists Bakar Gateway. The Berkeley campus
+    map pins Bakar Gateway at 37.87409, -122.26395.
+- id: ceph
+  layer: history
+  pin: true
+  name: Ceph
+  campus: UC Santa Cruz
+  place: UC Santa Cruz — Storage Systems Research Center
+  place_at_time: true
+  prior: null
+  lat: 37.00012
+  lon: -122.06221
+  precision: campus
+  coord_source: OpenStreetMap way 670613089 — https://www.openstreetmap.org/way/670613089
+  links:
+  - label: Ceph
+    url: https://ceph.io/en/
+    kind: project
+  - label: Ceph Foundation
+    url: https://ceph.io/en/foundation/
+    kind: steward
+  - label: Center for Research in Systems and Storage (CRSS)
+    url: https://www.crss.ucsc.edu/contact.html
+    kind: unit
+  - label: Original SSRC technical report record
+    url: https://www.crss.us/pub/weil-ssrctr06.html
+    kind: archive
+  - label: Ceph project history
+    url: https://ceph.io/en/foundation/history/
+    kind: archive
+  heritage_visit: null
+  sources:
+  - https://news.ucsc.edu/2018/01/year-of-alumni-weil-sage/
+  - https://www.ssrc.us/contact.html
+  confidence: 0.77
+  notes: The project history dates the first Ceph code to SSRC in 2004. CRSS is its current campus continuation.
+    A contemporary source naming the 2004 work building was not found.
+- id: riscv
+  layer: history
+  pin: true
+  name: RISC-V
+  campus: UC Berkeley
+  place: Soda Hall — Parallel Computing Laboratory
+  place_at_time: true
+  prior: null
+  lat: 37.87562
+  lon: -122.25871
+  precision: building
+  coord_source: OpenStreetMap way 280300979 — https://www.openstreetmap.org/way/280300979
+  links:
+  - label: RISC-V specifications
+    url: https://riscv.org/specifications/ratified/
+    kind: project
+  - label: RISC-V International
+    url: https://riscv.org/about/
+    kind: steward
+  - label: Berkeley Architecture Research
+    url: https://cloud.berkeley.edu/
+    kind: unit
+  - label: First public ISA report
+    url: https://www2.eecs.berkeley.edu/Pubs/TechRpts/2011/EECS-2011-62.html
+    kind: archive
+  - label: Par Lab opening — Berkeley EECS
+    url: https://www2.eecs.berkeley.edu/News/Archive/08fall.shtml
+    kind: archive
+  - label: UC Berkeley EECS labs directory
+    url: https://www2.eecs.berkeley.edu/Research/Areas/Centers/
+    kind: unit
+  heritage_visit: null
+  sources:
+  - https://www2.eecs.berkeley.edu/bears/2009/patterson.pdf
+  - https://ethw.org/Milestones:First_RISC_(Reduced_Instruction-Set_Computing)_Microprocessor_1980-1982
+  confidence: 0.91
+  notes: The 2010 origin is Par Lab; ASPIRE followed. Berkeley’s IEEE RISC plaque commemorates the 1980–1982 microprocessor,
+    a separate milestone. An RISC-V-specific public marker was not found.
+- id: ndn
+  layer: history
+  pin: true
+  name: Named Data Networking
+  campus: UCLA
+  place: UCLA — Internet Research Laboratory
+  place_at_time: true
+  prior: null
+  lat: 34.07088
+  lon: -118.44685
+  precision: campus
+  coord_source: OpenStreetMap relation 7493269 — https://www.openstreetmap.org/relation/7493269
+  links:
+  - label: Named Data Networking
+    url: https://named-data.net/
+    kind: project
+  - label: Named Data Networking Consortium
+    url: https://named-data.net/consortium/
+    kind: steward
+  - label: UCLA Internet Research Laboratory
+    url: https://irl.cs.ucla.edu/
+    kind: unit
+  - label: Project technical-report archive
+    url: https://named-data.net/publications/techreports/
+    kind: archive
+  - label: Lixia Zhang — UCLA Samueli, Engineering VI
+    url: https://samueli.ucla.edu/people/lixia-zhang/
+    kind: unit
+  heritage_visit: null
+  sources:
+  - https://samueli.ucla.edu/research-team-led-by-ucla-receives-7-9m-from-nsf-to-develop-internet-for-21st-century/
+  - https://web.cs.ucla.edu/~lixia/faq.html
+  confidence: 0.76
+  notes: UCLA led a multi-institutional team. The lab is documented, but a time-matched 2010 room was not found.
+    The consortium is the project’s coordination body. The current Samueli faculty listing gives Engineering VI,
+    room 375.
+- id: ray
+  layer: history
+  pin: true
+  name: Ray
+  campus: UC Berkeley
+  place: Soda Hall — AMPLab–RISELab transition
+  place_at_time: true
+  prior: null
+  lat: 37.87562
+  lon: -122.25871
+  precision: building
+  coord_source: OpenStreetMap way 280300979 — https://www.openstreetmap.org/way/280300979
+  links:
+  - label: Ray
+    url: https://www.ray.io/
+    kind: project
+  - label: PyTorch Foundation — Ray
+    url: https://pytorch.org/projects/ray/
+    kind: steward
+  - label: Sky Computing Lab — Bakar Gateway, 2300 Hearst Ave.
+    url: https://sky.cs.berkeley.edu/contact/
+    kind: unit
+  - label: Ray OSDI paper and talk
+    url: https://www.usenix.org/conference/osdi18/presentation/moritz
+    kind: archive
+  heritage_visit: null
+  sources:
+  - https://rise.cs.berkeley.edu/contact/
+  - https://news.berkeley.edu/2017/01/23/berkeley-launches-riselab-enabling-computers-to-make-intelligent-real-time-decisions/
+  - https://eecs.berkeley.edu/news/amplab-ends-riselab-begins/
+  - https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/
+  confidence: 0.87
+  notes: Berkeley documented its AMPLab-to-RISELab transition in 2016 and announced RISELab publicly in January
+    2017. The historic lab address is 465 Soda Hall; today Sky Computing Lab lists Bakar Gateway, 2300 Hearst Ave.
+    The Berkeley campus map pins Bakar Gateway at 37.87409, -122.26395.
+- id: today-berkeley
+  layer: today
+  pin: true
+  name: Berkeley Open Source Program Office
+  campus: UC Berkeley
+  place: UC Berkeley (Berkeley Institute for Data Science)
+  place_at_time: false
+  prior: null
+  lat: 37.87206
+  lon: -122.25783
+  precision: campus
+  coord_source: OpenStreetMap way 24024507 (Sather Tower, campus landmark)
+  links:
+  - label: Berkeley Open Source Program Office
+    url: https://bids.berkeley.edu/programs-initiatives/open-source-program-office-ospo
+    kind: unit
+  - label: BIDS contact
+    url: https://bids.berkeley.edu/about/contact
+    kind: unit
+  - label: Bakar Gateway campus map
+    url: https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/
+    kind: campus
+  - label: Berkeley OSPO November 2026 public meetup
+    url: https://events.berkeley.edu/BIDS/event/327532-ospo-monthly-meetup-november
+    kind: campus
+  - label: UC OSPO Network 2026 membership
+    url: https://ucospo.net/posts/sloan-sustainability-grant/
+    kind: campus
+  heritage_visit: null
+  sources:
+  - https://bids.berkeley.edu/annual-report-2025
+  - https://www.burnoff.fyi/berkeley/lectures
+  confidence: 0.85
+  notes: 'Host: Berkeley Institute for Data Science. Network member: yes. The pin identifies the November 2026 public
+    OSPO meetup venue at 2300 Hearst Ave. A dedicated drop-in office was not found.'
+- id: today-davis
+  layer: today
+  pin: true
+  name: UC Davis Open Source Program Office
+  campus: UC Davis
+  place: Peter J. Shields Library — documented OSPO event venue
+  place_at_time: false
+  prior: null
+  lat: 38.53974
+  lon: -121.7496
+  precision: building
+  coord_source: OpenStreetMap relation 18189 — https://www.openstreetmap.org/relation/18189
+  links:
+  - label: UC Davis Library OSPO
+    url: https://library.ucdavis.edu/ospo/
+    kind: unit
+  - label: Shields Library
+    url: https://library.ucdavis.edu/location/peter-j-shields-library/
+    kind: campus
+  - label: UC OSPO Network 2026 membership
+    url: https://ucospo.net/posts/sloan-sustainability-grant/
+    kind: campus
+  heritage_visit: null
+  sources:
+  - https://library.ucdavis.edu/ospo/
+  - https://ucospo.net/posts/sloan-sustainability-grant/
+  confidence: 0.93
+  notes: 'Host: UC Davis Library. Network member: yes. The campus office advertises recurring in-person events at
+    Shields; a dedicated walk-in room was not found.'
+- id: today-irvine
+  layer: related
+  pin: false
+  name: Institute for Software Research
+  campus: UC Irvine
+  place: Donald Bren Hall, room 5226
+  place_at_time: false
+  prior: null
+  lat: 33.64325
+  lon: -117.84186
+  precision: building
+  coord_source: OpenStreetMap way 158053311 — https://www.openstreetmap.org/way/158053311
+  links:
+  - label: UCI Institute for Software Research
+    url: https://isr.uci.edu/
+    kind: unit
+  - label: UCI Office of Research institute listing
+    url: https://research.uci.edu/center/institute-for-software-research/
+    kind: campus
+  heritage_visit: null
+  sources:
+  - https://ucospo.net/posts/sloan-sustainability-grant/
+  confidence: 0.87
+  notes: 'Dedicated campus OSPO: none found. Related unit: Institute for Software Research, listed by the UCI Office
+    of Research. Network membership: not listed.'
+- id: today-los-angeles
+  layer: today
+  pin: true
+  name: UCLA Open Source Program Office
+  campus: UCLA
+  place: Charles E. Young Research Library
+  place_at_time: false
+  prior: null
+  lat: 34.07497
+  lon: -118.44149
+  precision: building
+  coord_source: OpenStreetMap way 422876535
+  links:
+  - label: UCLA Open Source Program Office
+    url: https://ucospo.net/los-angeles/
+    kind: unit
+  - label: UC OSPO Network campus contacts
+    url: https://ucospo.net/about/contact/
+    kind: campus
+  heritage_visit: null
+  sources:
+  - https://www.library.ucla.edu/about/news/ucla-joins-multi-uc-campus-effort-to-build-network-of-open-source-program-offices/
+  - https://dailybruin.com/2026/10/26/ucla-librarys-data-science-center-closed-amid-consolidation-effort
+  confidence: 0.95
+  notes: 'Host: UCLA Library. Network member: yes. Location confirmed by Tim Dennis, 2026-11-17.'
+- id: today-merced
+  layer: related
+  pin: false
+  name: Cyberinfrastructure and Research Technologies
+  campus: UC Merced
+  place: UC Merced campus
+  place_at_time: false
+  prior: null
+  lat: 37.36518
+  lon: -120.42253
+  precision: campus
+  coord_source: OpenStreetMap way 170555864 — https://www.openstreetmap.org/way/170555864
+  links:
+  - label: Cyberinfrastructure and Research Technologies
+    url: https://it.ucmerced.edu/CIRT
+    kind: unit
+  - label: UC Merced Library Data Services
+    url: https://library.ucmerced.edu/node/80251
+    kind: unit
+  heritage_visit: null
+  sources:
+  - https://ucospo.net/posts/sloan-sustainability-grant/
+  confidence: 0.85
+  notes: 'Dedicated campus OSPO: none found. Related units are UC Merced Office of Information Technology’s CIRT
+    and Library Data Services. Network membership: not listed. A dedicated CIRT walk-in location was not found.'
+- id: today-riverside
+  layer: related
+  pin: false
+  name: UCR Library Digital Scholarship
+  campus: UC Riverside
+  place: Tomás Rivera Library — public library contact point
+  place_at_time: false
+  prior: null
+  lat: 33.9724
+  lon: -117.32743
+  precision: building
+  coord_source: OpenStreetMap way 233678057 — https://www.openstreetmap.org/way/233678057
+  links:
+  - label: UCR Library Digital Scholarship
+    url: https://library.ucr.edu/research-support/digital-scholarship
+    kind: unit
+  - label: Tomás Rivera Library
+    url: https://library.ucr.edu/libraries/tomas-rivera-library
+    kind: campus
+  - label: UCR Research Computing
+    url: https://ucr-research-computing.github.io/about/
+    kind: unit
+  heritage_visit: null
+  sources:
+  - https://ucospo.net/posts/sloan-sustainability-grant/
+  confidence: 0.83
+  notes: 'Dedicated campus OSPO: none found. Related unit: UCR Library Digital Scholarship. Network membership:
+    not listed. The pin identifies a public library building; a dedicated service desk was not found.'
+- id: today-san-diego
+  layer: today
+  pin: true
+  name: UC San Diego Open Source Program Office
+  campus: UC San Diego
+  place: Geisel Library — public library contact point
+  place_at_time: false
+  prior: null
+  lat: 32.88114
+  lon: -117.23758
+  precision: building
+  coord_source: OpenStreetMap way 159385495 — https://www.openstreetmap.org/way/159385495
+  links:
+  - label: UC San Diego Open Source Program Office
+    url: https://ospo.ucsd.edu/
+    kind: unit
+  - label: UC OSPO Network 2026 membership
+    url: https://ucospo.net/posts/sloan-sustainability-grant/
+    kind: campus
+  - label: Geisel Library
+    url: https://library.ucsd.edu/visit/geisel-library.html
+    kind: campus
+  heritage_visit: null
+  sources:
+  - https://ospo.ucsd.edu/
+  - https://ucospo.net/posts/sloan-sustainability-grant/
+  confidence: 0.91
+  notes: 'Host: UC San Diego Library. Network member: yes. Geisel is a public library landmark; a dedicated OSPO
+    walk-in room was not found.'
+- id: today-san-francisco
+  layer: today
+  pin: true
+  name: UCSF Library Data Science and Open Scholarship
+  campus: UC San Francisco
+  place: Parnassus Kalmanovitz Library, 530 Parnassus Ave.
+  place_at_time: false
+  prior: null
+  lat: 37.76354
+  lon: -122.45917
+  precision: building
+  coord_source: OpenStreetMap way 288633744, displayed by Mapcarta — https://mapcarta.com/W288633744
+  links:
+  - label: UCSF Data Science and Open Scholarship
+    url: https://www.library.ucsf.edu/ask-an-expert/dsos-team/
+    kind: unit
+  - label: Parnassus Kalmanovitz Library
+    url: https://www.library.ucsf.edu/parnassus/
+    kind: campus
+  - label: UCSF Scientific Software Collective
+    url: https://ssc.ucsf.edu/
+    kind: unit
+  - label: UC OSPO Network 2026 membership
+    url: https://ucospo.net/posts/sloan-sustainability-grant/
+    kind: campus
+  heritage_visit: null
+  sources:
+  - https://profiles.ucsf.edu/ariel.deardorff
+  confidence: 0.84
+  notes: 'Dedicated campus OSPO: none found. Related units: UCSF Library’s Data Science and Open Scholarship team
+    and the Scientific Software Collective. The network’s 2026 announcement explicitly confirms UCSF membership.'
+- id: today-santa-barbara
+  layer: today
+  pin: true
+  name: UC Santa Barbara Open Source Program
+  campus: UC Santa Barbara
+  place: UC Santa Barbara Library
+  place_at_time: false
+  prior: null
+  lat: 34.41399
+  lon: -119.84552
+  precision: building
+  coord_source: OpenStreetMap way 355809608 — https://www.openstreetmap.org/way/355809608
+  links:
+  - label: UC Santa Barbara Open Source Program
+    url: https://ucospo.net/santa-barbara/
+    kind: unit
+  - label: UCSB Library Research Data Services
+    url: https://www.library.ucsb.edu/research-data-services
+    kind: unit
+  - label: UC OSPO Network 2026 membership
+    url: https://ucospo.net/posts/sloan-sustainability-grant/
+    kind: campus
+  - label: UCSB Library directions
+    url: https://www.library.ucsb.edu/directions-parking
+    kind: campus
+  heritage_visit: null
+  sources:
+  - https://ucospo.net/santa-barbara/
+  - https://ucospo.net/posts/sloan-sustainability-grant/
+  confidence: 0.92
+  notes: 'Host: UCSB Library, with Research Data Services and engineering collaborators. Network member: yes. A
+    dedicated walk-in office was not found.'
+- id: today-santa-cruz
+  layer: today
+  pin: true
+  name: UC Santa Cruz Open Source Program Office
+  campus: UC Santa Cruz
+  place: Engineering Building 2
+  place_at_time: false
+  prior: null
+  lat: 37.00088
+  lon: -122.06274
+  precision: building
+  coord_source: OpenStreetMap way 370100253 (Engineering 2) — https://www.openstreetmap.org/way/370100253
+  links:
+  - label: UC Santa Cruz Open Source Program Office
+    url: https://ucsc-ospo.github.io/
+    kind: unit
+  - label: Center for Research in Open Source Software
+    url: https://cross.ucsc.edu/
+    kind: unit
+  - label: UC OSPO Network 2026 membership
+    url: https://ucospo.net/posts/sloan-sustainability-grant/
+    kind: campus
+  heritage_visit: null
+  sources:
+  - https://directory.prd.idm.aws.ucsc.edu/cd_detail?guid=G053029123
+  - https://news.ucsc.edu/2024/04/uc-ospo-network/
+  confidence: 0.93
+  notes: 'Host: Center for Research in Open Source Software, Baskin Engineering. Network member: yes, coordinating
+    campus. UCSC’s professional directory lists Engineering Building 2.'
+- id: today-ucop
+  layer: related
+  pin: false
+  name: California Digital Library — Office of Scholarly Communication
+  campus: UC Office of the President
+  place: UCOP Franklin Building, 1111 Franklin St., Oakland
+  place_at_time: false
+  prior: null
+  lat: 37.80198
+  lon: -122.27129
+  precision: building
+  coord_source: OpenStreetMap way 1000010515, 1111 Franklin Street — https://www.openstreetmap.org/way/1000010515
+  links:
+  - label: Office of Scholarly Communication
+    url: https://osc.universityofcalifornia.edu/about-osc/
+    kind: unit
+  - label: UCOP Faculty Affairs and Academic Programs
+    url: https://www.ucop.edu/faculty-affairs-academic-programs/index.html
+    kind: campus
+  heritage_visit: null
+  sources:
+  - https://ucospo.net/posts/sloan-sustainability-grant/
+  - https://ucospo.net/about/get-involved/
+  - https://www.ucop.edu/flexwork/_files/ucop_franklin_welcome_guide_f2_web.pdf
+  confidence: 0.85
+  notes: 'Dedicated UCOP OSPO: none found. Related unit: California Digital Library’s Office of Scholarly Communication.
+    UCOP is not listed as a member; network participation is open to CDL. The address is a UCOP office, not a verified
+    walk-in OSC desk.'
+- id: today-uc-law-sf
+  layer: today
+  pin: true
+  name: UC Law San Francisco
+  campus: UC Law San Francisco
+  place: 200 McAllister Street
+  place_at_time: false
+  prior: null
+  lat: 37.78104
+  lon: -122.41573
+  precision: building
+  coord_source: OpenStreetMap way 165846555
+  links:
+  - label: UC OSPO Network 2026 membership
+    url: https://ucospo.net/posts/sloan-sustainability-grant/
+    kind: campus
+  heritage_visit: null
+  sources:
+  - https://ucospo.net/posts/sloan-sustainability-grant/
+  confidence: 0.7
+  notes: Network member since 2026 per ucospo.net. Host unit and contact not yet researched.
