@@ -25,7 +25,7 @@ Linux, macOS, iOS, and Android all ship with the tz database. Paul Eggert first 
 
 ### The lawsuit that almost broke time
 
-In September 2011, Astrolabe Inc. sued Arthur David Olson and Paul Eggert, claiming copyright over historical time zone data [@eff2012astrolabe]. The Electronic Frontier Foundation, with co-counsel at Fish & Richardson, defended them [@eff2012tzrelease]. The database went offline on 7 October 2011. ICANN brought it back online at IANA on 14 October 2011, and Robert Elz served as interim coordinator. Astrolabe dropped the suit on 22 February 2012 [@ietf2012tz]. The IESG approved Eggert as the Time Zone Coordinator on 13 April 2012 [@iesg2012eggert], a role created after Olson retired. The episode showed how much depended on a very small group of maintainers.
+In September 2011, Astrolabe Inc. sued Arthur David Olson and Paul Eggert, claiming copyright over historical time zone data [@eff2012astrolabe]. The Electronic Frontier Foundation, with co-counsel at Fish & Richardson, defended them [@eff2012tzrelease]. The database went offline on 7 October 2011. ICANN brought it back online at IANA on 14 October 2011, and Robert Elz served as interim coordinator. Astrolabe dropped the suit on 22 February 2012 [@ietf2012tz]. The IESG approved Eggert as the Time Zone Coordinator on 13 April 2012 [@iesg2012eggert]. Olson's announced retirement had led the IETF to ask ICANN to take over the database [@icann2011tz]. The episode showed how much depended on a very small group of maintainers.
 
 ---
 
