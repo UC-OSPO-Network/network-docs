@@ -30,7 +30,7 @@ The appendix has a compact reference table of all projects, dates, campus affili
 
 ## About the UC OSPO Network
 
-The University of California Network of Open Source Program Offices (UC OSPO Network) is a collaboration across six UC campuses - Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, and San Diego - launched in April 2024 with support from the Alfred P. Sloan Foundation.
+The University of California Network of Open Source Program Offices (UC OSPO Network) launched in April 2024 across six UC campuses (Santa Cruz, Berkeley, Davis, Los Angeles, Santa Barbara, and San Diego) with support from the Alfred P. Sloan Foundation. UCSF and UC Law San Francisco have since joined [@ucospo2026sloan].
 
 This document was produced by the network as part of its discovery and documentation mission.
 
