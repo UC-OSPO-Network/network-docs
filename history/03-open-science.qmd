@@ -21,7 +21,7 @@ The early 2000s produced three projects that redefined what open science softwar
 
 ### What it became
 
-The UCSC Genome Browser [@kent2002genome] is the reference tool for genomic research worldwide. It hosts assemblies for hundreds of species, is updated continuously, and remains the first stop for any researcher navigating genomic data. The broader lesson - that a grad student with commodity hardware and open code could outcompete a $300M private effort - became a founding argument for open science.
+The UCSC Genome Browser [@kent2002genome] is the reference tool for genomic research worldwide. It hosts assemblies for hundreds of species, is updated continuously, and remains the first stop for any researcher navigating genomic data.
 
 ---
 
@@ -29,7 +29,7 @@ The UCSC Genome Browser [@kent2002genome] is the reference tool for genomic rese
 
 **The project:** EEGLAB
 **Campus:** UC San Diego (Swartz Center for Computational Neuroscience)
-**Period:** 1997 - 2001
+**Period:** 1997 - 2001 (first developed at the Salk Institute; later at UC San Diego)
 **Key figures:** Scott Makeig
 
 ::: {.origin-story}
@@ -38,14 +38,14 @@ The UCSC Genome Browser [@kent2002genome] is the reference tool for genomic rese
 
 ### What it became
 
-EEGLAB is the world's premier open-source environment for electrophysiological signal processing. The 2004 foundational paper [@delorme2004eeglab] has accumulated more than 14,400 citations - among the highest academic footprints of any scientific software. It has been downloaded over 350,000 times and is the standard platform for EEG research globally.
+EEGLAB is an open source environment for processing EEG and related electrophysiological signals. The 2004 paper that introduced it [@delorme2004eeglab] had about 26,800 citations in OpenAlex in November 2026 [@openalex2026eeglab].
 
 ---
 
 ## Cytoscape: Mapping the Cell
 
 **The project:** Cytoscape
-**Campus:** UC San Diego
+**Campus:** UC San Diego, with the Institute for Systems Biology (Seattle) and the Whitehead Institute
 **Period:** 2003
 **Key figures:** Trey Ideker and collaborators
 
@@ -55,7 +55,7 @@ EEGLAB is the world's premier open-source environment for electrophysiological s
 
 ### What it became
 
-Cytoscape [@shannon2003cytoscape] is the global standard platform for network biology. It is used to visualize disease pathways, protein interactions, and molecular networks in cancer and therapeutic research worldwide. Over 300,000 downloads per year; central to how researchers understand complex biological systems.
+Cytoscape [@shannon2003cytoscape] is a widely used platform for network biology. Researchers use it to visualize disease pathways, protein interactions, and molecular networks. Its developers reported over 300,000 downloads a year in 2025 [@ono2025cytoscape].
 
 ::: {.callout-note}
 ## Status

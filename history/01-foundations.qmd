@@ -41,11 +41,11 @@ Every project in this document was made possible by the licensing model Berkeley
 
 ### What it became
 
-PostgreSQL is today the world's most popular independent open-source relational database. The 1973 INGRES codebase [@stonebraker1976ingres] seeded Sybase; Microsoft acquired Sybase's engine and built SQL Server from it. One academic project spawned two of the three dominant enterprise databases.
+INGRES [@stonebraker1976ingres] spread into industry through its code, its people, and its publications. Its source code was public, and about 1,000 copies went out around the world. Bob Epstein, who worked on INGRES, went on to co-found Britton-Lee and then Sybase [@nrc1999funding]. POSTGRES, Stonebraker's next Berkeley project, began implementation in 1986. It became Postgres95 and, in 1996, PostgreSQL, which the PostgreSQL Global Development Group still maintains [@pgdg2026history].
 
 ### The Stonebraker pattern
 
-Stonebraker's career at Berkeley established a pattern the rest of this history repeats: solve a real problem in a research lab, release the code openly before it has commercial value, watch the ecosystem form, then commercialize the next generation. He did this with Ingres → Sybase, POSTGRES → Illustra, and continued beyond Berkeley with VoltDB, SciDB, and others.
+Stonebraker's career at Berkeley established a pattern the rest of this history repeats: solve a real problem in a research lab, release the code openly before it has commercial value, watch the ecosystem form, then commercialize the next generation. He did this with INGRES, which became Ingres Corporation [@nrc1999funding], and with POSTGRES, which became Illustra, and he continued beyond Berkeley with VoltDB, SciDB, and others.
 
 ::: {.callout-note}
 ## Status
