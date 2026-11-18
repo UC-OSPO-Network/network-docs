@@ -1,0 +1,163 @@
+name: Add an output to the catalog
+description: Suggest a lesson, software, talk, workshop, event, paper, or press story for the Outputs page.
+title: "[Output]: "
+labels: ["new-output"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to add a UC OSPO Network output to the [Outputs page](https://ucospo.net/network-docs/outputs.html).
+        A maintainer checks each request. When it is approved, a bot opens a pull request that adds the entry to `network-outputs.bib`.
+        Routine meetups belong on the [Events page](https://ucospo.net/events/), not here.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: This picks the section on the Outputs page.
+      options:
+        - lesson (lessons and curriculum)
+        - software (software and data)
+        - talk (talks, workshops, and events)
+        - paper (papers and preprints)
+        - press (press and news stories)
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Copy the title exactly from the record, slides, or event page.
+    validations:
+      required: true
+
+  - type: textarea
+    id: authors
+    attributes:
+      label: Authors, speakers, or creators
+      description: |
+        One per line, in the order the record gives, as `Family, Given`. For an organization with no named people, write the organization name on its own line.
+      placeholder: |
+        Dennis, Tim
+        Otsuji, Reid
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: ISO format. Give only the precision you know. Use a range for multi-day events.
+      placeholder: 2026-04-22, 2026-04, 2026, or 2026-08-27/2026-08-28
+    validations:
+      required: true
+
+  - type: input
+    id: type
+    attributes:
+      label: Kind of output
+      description: Shown in brackets after the title.
+      placeholder: Workshop, Conference presentation, Lesson, Poster, Preprint
+    validations:
+      required: true
+
+  - type: input
+    id: event
+    attributes:
+      label: Event or series
+      description: For talks, workshops and events. Leave blank otherwise.
+      placeholder: UC Open 2026
+
+  - type: input
+    id: venue
+    attributes:
+      label: Location
+      placeholder: Berkeley, CA, or Online
+
+  - type: input
+    id: doi
+    attributes:
+      label: DOI
+      description: The bare DOI, if one exists. Copy it from Zenodo or the publisher.
+      placeholder: 10.5281/zenodo.12345678
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Required when there is no DOI. Use the official event page, the record, or the public materials.
+      placeholder: https://
+
+  - type: input
+    id: publisher
+    attributes:
+      label: Publisher, repository, or journal
+      placeholder: Zenodo, GitHub, PLOS One, arXiv
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: For software and lessons.
+      placeholder: 1.0.0
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Optional, comma separated.
+      placeholder: education, licensing, hackathon
+
+  - type: dropdown
+    id: campus
+    attributes:
+      label: Campus or unit
+      multiple: true
+      options:
+        - UC OSPO Network (all-campus)
+        - UC Berkeley
+        - UC Davis
+        - UC Irvine
+        - UCLA
+        - UC Merced
+        - UC Riverside
+        - UC San Diego
+        - UC San Francisco
+        - UC Santa Barbara
+        - UC Santa Cruz
+        - UC Law San Francisco
+        - Other or partner organization
+    validations:
+      required: true
+
+  - type: textarea
+    id: connection
+    attributes:
+      label: Connection to the UC OSPO Network
+      description: Who in the Network or a campus OSPO made, hosted, or co-hosted this? Reviewers use this to decide whether it belongs in the catalog.
+    validations:
+      required: true
+
+  - type: textarea
+    id: slides
+    attributes:
+      label: Slides, handouts, or other materials
+      description: Links to public materials, if any. Talks with slides in this repository also get a card on the Talks page.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes for reviewers
+      description: Anything that affects how to cite it, for example a different date on the program and the record.
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirm
+      options:
+        - label: The output is public, and the links work without a login.
+          required: true
+        - label: I checked the title, authors, and date against the record or event page.
+          required: true
+        - label: If I am not an author, the authors agree to the listing.

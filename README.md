@@ -6,8 +6,9 @@ A public record of the UC OSPO Network's talks and outputs. The site is the cata
 
 - `presentations/<slug>/`: one folder per talk (slides, handout, `talk.yml`, `CITATION.cff`). Shared theme, fonts and templates are in `presentations/_shared/`.
 - `network-outputs.bib`: every public output (lessons, software, talks, papers, press). One source for the Outputs page.
-- `history/`: the Quarto book "UC Open Source: A System History".
-- `index.qmd`, `talks.qmd`, `outputs.qmd`, `_quarto.yml`: the site pages.
+- `history/`: the Quarto book "UC Open Source: A System History". It is published at `/history/` but not linked from the site while it is under review.
+- `handout.qmd`: "UC Open Source at a Glance", a one-page printable handout.
+- `index.qmd`, `talks.qmd`, `outputs.qmd`, `handout.qmd`, `_quarto.yml`: the site pages.
 - `drafts/`, `reports/`, `presentation-proposals/`: working files. They are in the repo and are not published.
 - `scripts/`: build and check scripts.
 
@@ -32,7 +33,9 @@ In the deck front matter use `theme: ../_shared/ucospo-theme.scss`, `include-aft
 
 ## Add an output
 
-Add an entry to `network-outputs.bib`. The header of that file explains the fields. The first word in `keywords` picks the section on the Outputs page.
+Anyone can suggest an output with the [Add an output issue form](https://github.com/UC-OSPO-Network/network-docs/issues/new?template=add-output.yml). A maintainer checks it and adds the `approved` label. The `issue-to-bib.yml` workflow then runs `scripts/issue_to_bib.py` and opens a pull request with the entry. Review the entry against the record before merging.
+
+To add an entry by hand, edit `network-outputs.bib`. The header of that file explains the fields. The first word in `keywords` picks the section on the Outputs page.
 
 ## Build
 

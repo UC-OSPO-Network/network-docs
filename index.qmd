@@ -17,14 +17,14 @@ Find talks, workshop materials, lessons, software, and publications from the UC 
 
 {{< include _talks-recent.md >}}
 
-## Book
+## Handout
 
 ::: {.resource-card}
-### UC Open Source: A System History
+### UC Open Source at a Glance
 
-How UC research software went from BSD Unix to Jupyter, Ceph, Spark, RISC-V, and beyond, and what that history means for supporting open source today.
+A one-page summary of open source from UC campuses, from BSD Unix to Ray, and what the UC OSPO Network does today. Print it or save it as a PDF.
 
-[Read the book](history/index.html) · [Source](https://github.com/UC-OSPO-Network/network-docs/tree/main/history)
+[Open the handout](handout.qmd)
 :::
 
 Looking for something else? Upcoming meetups and workshops are on the [Events page](https://ucospo.net/events/), and templates and how-to guides are on the [Resources page](https://ucospo.net/oss-resources/).

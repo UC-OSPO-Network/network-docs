@@ -13,7 +13,7 @@ if [ -n "$bad" ]; then
   echo "::error::Working files in $site:"; echo "$bad"; exit 1
 fi
 
-for f in index.html talks.html outputs.html network-outputs.bib history/index.html; do
+for f in index.html talks.html outputs.html handout.html network-outputs.bib history/index.html; do
   test -s "$site/$f" || { echo "::error::Missing $site/$f"; exit 1; }
 done
 

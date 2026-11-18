@@ -10,4 +10,4 @@ Every entry on this page comes from one BibTeX file, [network-outputs.bib](netwo
 
 ## Add or correct an entry
 
-Open an issue or a pull request on [network-docs](https://github.com/UC-OSPO-Network/network-docs). Entries live in `network-outputs.bib`, and the page rebuilds when the change merges. The header of that file explains the fields.
+To add an output, fill in the [Add an output form](https://github.com/UC-OSPO-Network/network-docs/issues/new?template=add-output.yml). A maintainer checks it, and approval opens a pull request with the new entry. To correct an entry, open an issue or a pull request on [network-docs](https://github.com/UC-OSPO-Network/network-docs). Entries live in `network-outputs.bib`, and the page rebuilds when the change merges. The header of that file explains the fields.

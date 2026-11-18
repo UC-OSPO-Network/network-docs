@@ -1,0 +1,67 @@
+name: Approved output to pull request
+
+# When a maintainer adds the `approved` label to an issue made from the
+# "Add an output" form, build the BibTeX entry and open a pull request.
+# Only people with triage access or higher can add labels. A maintainer still
+# reviews and merges the pull request.
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  entry:
+    if: github.event.label.name == 'approved' && contains(github.event.issue.labels.*.name, 'new-output')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      # The issue body is untrusted. It goes to a file through an environment
+      # variable and is never expanded inside a shell command.
+      - name: Write the issue body to a file
+        env:
+          BODY: ${{ github.event.issue.body }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          printf '%s\n\n### _issue\n\n%s\n' "$BODY" "$NUMBER" > "$RUNNER_TEMP/issue.md"
+
+      - name: Add the entry
+        id: add
+        run: echo "key=$(python3 scripts/issue_to_bib.py "$RUNNER_TEMP/issue.md")" >> "$GITHUB_OUTPUT"
+
+      - name: Check that the bibliography still renders
+        run: python3 scripts/build_outputs.py
+
+      - name: Open a pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+          KEY: ${{ steps.add.outputs.key }}
+        run: |
+          branch="output/issue-$NUMBER"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add network-outputs.bib
+          git commit -m "Add $KEY to the outputs catalog (#$NUMBER)"
+          git push --force -u origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "Add $KEY to the outputs catalog" \
+            --body "Adds \`$KEY\` from the form in #$NUMBER. Check the entry against the record before merging.
+
+          Closes #$NUMBER"
+
+      - name: Report a failure on the issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: gh issue comment "$NUMBER" --body "The entry could not be built from this form. See the run log: $RUN. Edit the issue, then remove and add the \`approved\` label again."
