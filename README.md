@@ -8,13 +8,13 @@ A public record of the UC OSPO Network's talks and outputs. The site is the cata
 - `network-outputs.bib`: every public output (lessons, software, talks, papers, press). One source for the Outputs page.
 - `history/`: the Quarto book "UC Open Source: A System History". It is published at `/history/` but not linked from the site while it is under review.
 - `handout.qmd`: "UC Open Source at a Glance", a one-page printable handout.
-- `index.qmd`, `talks.qmd`, `outputs.qmd`, `handout.qmd`, `_quarto.yml`: the site pages.
+- `index.qmd`, `outputs.qmd` (the Catalog), `handout.qmd` (At a Glance), `_quarto.yml`: the site pages. `talks.qmd` only redirects old Talks links to the matching catalog entry.
 - `drafts/`, `reports/`, `presentation-proposals/`: working files. They are in the repo and are not published.
 - `scripts/`: build and check scripts.
 
 ## Add a talk
 
-Create `presentations/<slug>/` with the deck source and a `talk.yml`. The Talks and Home pages pick it up with no other edit.
+Create `presentations/<slug>/` with the deck source and a `talk.yml`, and add the talk to `network-outputs.bib`. Its links appear under that entry in the Catalog with no other edit.
 
 ```yaml
 title: "Short title for the listing"
@@ -36,6 +36,12 @@ In the deck front matter use `theme: ../_shared/ucospo-theme.scss`, `include-aft
 Anyone can suggest an output with the [Add an output issue form](https://github.com/UC-OSPO-Network/network-docs/issues/new?template=add-output.yml). A maintainer checks it and adds the `approved` label. The `issue-to-bib.yml` workflow then runs `scripts/issue_to_bib.py` and opens a pull request with the entry. Review the entry against the record before merging.
 
 To add an entry by hand, edit `network-outputs.bib`. The header of that file explains the fields. The first word in `keywords` picks the section on the Outputs page.
+
+## How the catalog works
+
+The Catalog page lists every entry in `network-outputs.bib`, grouped by category, newest first. When a talk's `talk.yml` names an entry with `bib:`, its slides, PDF, handout and source links appear under that entry. Each entry also gets a DOI or web page link and a permanent link (`outputs.html#<key>`). Home shows the three newest entries.
+
+There are no filters yet. Grouping and the site search are enough at this size. Revisit at 75 to 100 entries, or sooner if people cannot find known items: first title and speaker search, or a "slides available" filter.
 
 ## Build
 

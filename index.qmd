@@ -4,27 +4,30 @@ title: "UC OSPO Network: Talks and Outputs"
 
 Find talks, workshop materials, lessons, software, and publications from the UC OSPO Network.
 
-::: {.home-actions}
-[Browse talks and slides](talks.qmd){.btn .btn-primary .btn-lg}
-[Browse lessons, software, and publications](outputs.qmd){.btn .btn-primary .btn-lg}
+::: {.home-tasks}
+::: {.task-card}
+### [Talks, workshops, and events](outputs.qmd#talks-workshops-and-events)
+Slides, handouts, and programs from conference talks, workshops, hackathons, and the UC Open summit.
 :::
 
-::: {.home-bib}
-[Download BibTeX](network-outputs.bib){download="network-outputs.bib"} for every entry in the catalog.
+::: {.task-card}
+### [Lessons and curriculum](outputs.qmd#lessons-and-curriculum)
+Open lessons you can teach or reuse, and the UC OSPO Education lesson catalog.
+:::
 :::
 
-## Recent talks
+[Browse the full catalog](outputs.qmd), including software, papers, and press · [Download BibTeX](network-outputs.bib){download="network-outputs.bib"}
 
-{{< include _talks-recent.md >}}
+## Newest in the catalog
 
-## Handout
+{{< include _catalog-recent.md >}}
+
+## UC Open Source at a Glance
 
 ::: {.resource-card}
-### UC Open Source at a Glance
-
 A one-page summary of open source from UC campuses, from BSD Unix to Ray, and what the UC OSPO Network does today. Print it or save it as a PDF.
 
-[Open the handout](handout.qmd)
+[Open UC Open Source at a Glance](handout.qmd)
 :::
 
-Looking for something else? Upcoming meetups and workshops are on the [Events page](https://ucospo.net/events/), and templates and how-to guides are on the [Resources page](https://ucospo.net/oss-resources/).
+Looking for something else? See [Upcoming events](https://ucospo.net/events/) and the [templates and how-to guides](https://ucospo.net/oss-resources/) on ucospo.net.

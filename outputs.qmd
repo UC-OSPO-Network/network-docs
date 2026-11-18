@@ -1,10 +1,10 @@
 ---
-title: "UC OSPO Network: Outputs"
+title: "UC OSPO Network: Catalog"
 ---
 
-Lessons, software, talks, workshops, papers, and press from the UC OSPO Network. Each section lists the newest work first.
+Talks, workshops, events, lessons, software, papers, and press from the UC OSPO Network, newest first in each section. Each entry links to what is public for it: slides, a handout, source, a DOI, or the event page.
 
-Every entry on this page comes from one BibTeX file, [network-outputs.bib](network-outputs.bib). Download it to cite these works in a paper or load them into a reference manager. Slides, handouts, and source for the talks are on the [Talks page](talks.qmd). Routine campus meetups are listed on the [Events page](https://ucospo.net/events/), not here.
+To cite an entry, copy its citation, or download [network-outputs.bib](network-outputs.bib){download="network-outputs.bib"}. BibTeX is a citation format that reference managers such as Zotero import directly. Upcoming meetups are on the [Upcoming events page](https://ucospo.net/events/).
 
 {{< include _outputs-generated.md >}}
 

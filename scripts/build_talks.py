@@ -117,20 +117,25 @@ def load_talks() -> list[dict]:
     return talks
 
 
-def link_list(t: dict) -> list[str]:
+def link_pairs(t: dict) -> list[tuple[str, str]]:
+    """(label, href) for a talk's materials. The catalog uses these too."""
     out = []
     for link in t["links"]:
         href = str(link["href"])
         if not href.startswith(("http://", "https://")):
             href = f"presentations/{t['slug']}/{href}"
-        out.append(f"[{link['label']}]({href})")
+        out.append((str(link["label"]), href))
         # The workflow exports a PDF for every *slides*.html deck.
         if href.endswith(".html") and "slides" in href and not href.startswith("http"):
-            out.append(f"[{link['label']} (PDF)]({href[:-5]}.pdf)")
-    out.append(f"[Source]({REPO_TREE}/{t['slug']})")
+            out.append((f"{link['label']} (PDF)", f"{href[:-5]}.pdf"))
+    out.append(("Source", f"{REPO_TREE}/{t['slug']}"))
     if t["doi"]:
-        out.append(f"[DOI](https://doi.org/{t['doi']})")
+        out.append(("DOI", f"https://doi.org/{t['doi']}"))
     return out
+
+
+def link_list(t: dict) -> list[str]:
+    return [f"[{label}]({href})" for label, href in link_pairs(t)]
 
 
 def card(t: dict) -> str:

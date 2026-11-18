@@ -23,6 +23,9 @@ jobs:
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Ensure PyYAML
+        run: python3 -c 'import yaml' 2>/dev/null || sudo apt-get install -y python3-yaml
+
       # The issue body is untrusted. It goes to a file through an environment
       # variable and is never expanded inside a shell command.
       - name: Write the issue body to a file
