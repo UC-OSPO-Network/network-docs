@@ -11,7 +11,7 @@ Some software is so fundamental it disappears into the background. You never thi
 ## The tz Database: Every Clock on Earth
 
 **The project:** tz database (IANA Time Zone Database)
-**Campus:** UCLA (current maintainer: Paul Eggert, since 2005)
+**Campus:** UCLA (Paul Eggert: contributor since 1991, IESG-designated coordinator since 2012)
 **Origin:** 1986, Arthur David Olson (NIH)
 **Key figures:** Paul Eggert (UCLA), Arthur David Olson
 
@@ -21,11 +21,11 @@ Some software is so fundamental it disappears into the background. You never thi
 
 ### What it became
 
-Every operating system - Linux, macOS, Windows, iOS, Android - ships with the tz database. Every programming language that handles dates and times depends on it. When a country changes its clocks (and they do, constantly - political decisions, wars, referenda), Paul Eggert updates the database and the world's computers follow.
+Linux, macOS, iOS, and Android all ship with the tz database. Paul Eggert first worked on it in 1991, when Olson maintained it at NIH [@uctechnews2022eggert]. By 2005 he had, in his words, "maintained the data itself for many years" [@eggert2005tz]. Every programming language that handles dates and times depends on it. When a country changes its clocks (and they do, constantly - political decisions, wars, referenda), Paul Eggert updates the database and the world's computers follow.
 
 ### The lawsuit that almost broke time
 
-In 2011, Astrolabe Inc. sued the tz database maintainers, claiming copyright over historical timezone data. The community response was immediate: legal defense funds, IANA intervention, and a rapid resolution. The episode revealed how fragile the infrastructure was - one lawsuit against volunteer maintainers nearly took down something every computer on earth needed.
+In September 2011, Astrolabe Inc. sued Arthur David Olson and Paul Eggert, claiming copyright over historical time zone data [@eff2012astrolabe]. The Electronic Frontier Foundation, with co-counsel at Fish & Richardson, defended them [@eff2012tzrelease]. The database went offline on 7 October 2011. ICANN brought it back online at IANA on 14 October 2011, and Robert Elz served as interim coordinator. Astrolabe dropped the suit on 22 February 2012 [@ietf2012tz]. The IESG approved Eggert as the Time Zone Coordinator on 13 April 2012 [@iesg2012eggert]. Olson's announced retirement had led the IETF to ask ICANN to take over the database [@icann2011tz]. The episode showed how much depended on a very small group of maintainers.
 
 ---
 
@@ -42,7 +42,7 @@ In 2011, Astrolabe Inc. sued the tz database maintainers, claiming copyright ove
 
 ### What it became
 
-Apache HTTP Server powered more than half the global web for most of the 2000s and 2010s. The Apache Software Foundation, which grew from the original mailing list, now houses over 350 projects - including Apache Spark, which appears later in this history.
+Apache HTTP Server was the most widely used web server for many years. In Netcraft's December 2015 survey it still ran 50.14% of active sites [@netcraft2016jan]. The Apache Software Foundation, which grew from the original group, reported 308 projects in November 2026 [@asf2026state], including Apache Spark, which appears later in this history.
 
 ### The Berkeley connection
 

@@ -3,7 +3,7 @@
 #### 2004 - 2016 · UC Santa Cruz, UC Berkeley, UCLA
 
 ::: {.chapter-intro}
-The projects in this chapter run at a scale most people cannot visualize: exabytes of storage, ten billion devices, the compute infrastructure for modern AI. They started as dissertations, summer projects, and PhD students frustrated with rewriting the same Python code. They ended up as global standards, hardware architectures, and the nervous system of the internet.
+The projects in this chapter run at a scale most people cannot visualize: exabytes of storage, an open instruction set for chips, and the compute infrastructure for modern AI. They started as dissertations, summer projects, and PhD students frustrated with rewriting the same Python code. They ended up as global standards, hardware architectures, and the nervous system of the internet.
 :::
 
 ---
@@ -25,11 +25,11 @@ The money from Ceph's commercialization [@weil2006ceph] funded CROSS at UCSC. CR
 
 ---
 
-## RISC-V: The Summer Project in Ten Billion Devices
+## RISC-V: An Open Instruction Set from Berkeley
 
 **The project:** RISC-V open instruction set architecture
 **Campus:** UC Berkeley
-**Period:** Summer 2010
+**Period:** May 2010 (Parallel Computing Laboratory) [@riscv2026about]
 **Key figures:** Krste Asanovic, David Patterson, Andrew Waterman, Yunsup Lee
 
 ::: {.origin-story}
@@ -38,7 +38,7 @@ The money from Ceph's commercialization [@weil2006ceph] funded CROSS at UCSC. CR
 
 ### What it became
 
-RISC-V [@riscv2019] is now a global strategic asset. Countries use it to build hardware without dependency on US or UK intellectual property. The EU has invested in RISC-V for semiconductor independence. China uses it extensively. The foundation moved to Switzerland specifically to be credibly neutral - no one country can claim it.
+RISC-V [@riscv2019] is an open, royalty-free instruction set architecture. RISC-V International listed 305 member organizations in November 2026 [@riscv2026members] and reported members in 70 countries in December 2024 [@riscv2024redmond]. In March 2020, the RISC-V International Association was incorporated in Switzerland [@riscv2026about].
 
 ---
 
@@ -55,11 +55,11 @@ RISC-V [@riscv2019] is now a global strategic asset. Countries use it to build h
 
 ### Why this belongs here
 
-NDN is not finished infrastructure - it is active research into what the internet could become. It belongs in this document because its lead PI is one of the most consequential figures in internet history, and because it represents the UC system's ongoing contribution to internet architecture, not just applications running on top of it.
+NDN is not finished infrastructure - it is active research into what the internet could become. It belongs in this document because NSF funded it as a Future Internet Architecture project led from UCLA, starting with $7.9 million in 2010 [@ucla2010ndn], and because it represents the UC system's ongoing contribution to internet architecture, not just applications running on top of it.
 
 ---
 
-## Ray: Two PhD Students and the OpenAI Stack
+## Ray: From RISELab to the PyTorch Foundation
 
 **The project:** Ray distributed computing framework
 **Campus:** UC Berkeley RISELab
@@ -72,7 +72,7 @@ NDN is not finished infrastructure - it is active research into what the interne
 
 ### What it became
 
-Ray [@moritz2018ray] is core infrastructure for modern AI compute. OpenAI uses it. Virtually every large AI training workload runs on it or something derived from it. The Linux Foundation took stewardship in 2025 - following the same playbook as Ceph, Spark, and RISC-V: build at a university, donate to a neutral foundation, commercialize the services.
+Ray [@moritz2018ray] is a framework for scaling Python and AI workloads from a laptop to a cluster. In October 2025, Anyscale, the company founded by Ray's creators, contributed Ray to the PyTorch Foundation, which is part of the Linux Foundation [@lf2025ray].
 
 ::: {.callout-note}
 ## Status
