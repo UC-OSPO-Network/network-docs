@@ -1,7 +1,7 @@
 # The Pattern {#the-pattern}
 
 ::: {.chapter-intro}
-Twelve projects across fifty years. Different campuses, different fields, different people. But the same shape keeps appearing. This chapter names that shape.
+Sixteen projects across fifty years. Different campuses, different fields, different people. But the same shape keeps appearing. This chapter names that shape.
 :::
 
 ---

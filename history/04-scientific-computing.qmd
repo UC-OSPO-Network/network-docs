@@ -1,6 +1,6 @@
 # Scientific Computing {#scientific-computing}
 
-#### 2001 - 2009 · UC Berkeley
+#### 2001 - 2014 · UC Berkeley
 
 ::: {.chapter-intro}
 Two projects from Berkeley's research labs became the dominant tools for how science and data engineering get done. One started as an afternoon of procrastination. One started because a classmate needed to win a competition. Both are now foundational infrastructure for AI.
@@ -12,7 +12,7 @@ Two projects from Berkeley's research labs became the dominant tools for how sci
 
 **The project:** IPython / Project Jupyter
 **Campus:** UC Berkeley (BIDS)
-**Period:** 2001 (IPython), 2014 (Jupyter)
+**Period:** 2001 (IPython, begun at the University of Colorado Boulder [@ipython2026history]), 2014 (Project Jupyter)
 **Key figures:** Fernando Pérez (creator), Carol Willing (Steering Council, ACM Award), Stéfan van der Walt (scikit-image, Berkeley co-PI)
 
 ::: {.origin-story}
@@ -29,7 +29,7 @@ Jupyter notebooks [@kluyver2016jupyter] are the dominant interface for interacti
 
 ---
 
-## Apache Spark: The Netflix Prize and a $62 Billion Company
+## Apache Spark: From AMPLab to Apache
 
 **The project:** Apache Spark
 **Campus:** UC Berkeley AMPLab
@@ -46,7 +46,7 @@ Holden Karau is a member of the Apache Spark Project Management Committee and a 
 
 ### What it became
 
-Apache Spark [@zaharia2012spark] is the dominant framework for large-scale data processing. It powers data pipelines at virtually every major technology company and research institution. Databricks, the commercial entity founded after the Apache donation, is valued at over $62 billion. The Apache Software Foundation stewards the open-source project; no single company can pull it away.
+Apache Spark [@zaharia2012spark] is the dominant framework for large-scale data processing. It powers data pipelines at virtually every major technology company and research institution. Databricks, founded by members of the Spark team, builds its business on it. The Apache Software Foundation stewards the open-source project; no single company can pull it away.
 
 ::: {.callout-note}
 ## Status
