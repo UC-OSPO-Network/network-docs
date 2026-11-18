@@ -13,7 +13,7 @@ Two projects from Berkeley's research labs became the dominant tools for how sci
 **The project:** IPython / Project Jupyter
 **Campus:** UC Berkeley (BIDS)
 **Period:** 2001 (IPython, begun at the University of Colorado Boulder [@ipython2026history]), 2014 (Project Jupyter)
-**Key figures:** Fernando Pérez (creator), Carol Willing (Steering Council, ACM Award), Stéfan van der Walt (scikit-image, Berkeley co-PI)
+**Key figures:** Fernando Pérez (creator; UC OSPO Network co-PI), Carol Willing (core developer, ACM Award; not UC-affiliated), Stéfan van der Walt (scikit-image)
 
 ::: {.origin-story}
 *Section in preparation.*
@@ -21,7 +21,7 @@ Two projects from Berkeley's research labs became the dominant tools for how sci
 
 ### Carol Willing and the Steering Council
 
-Carol Willing is a core Jupyter developer, three-term Python Steering Council member, and Python Core Developer. She shared the 2017 ACM Software System Award for Jupyter's global influence - one of computing's most prestigious recognitions for software that has had lasting impact on the field.
+Carol Willing is a core Jupyter developer, three-term Python Steering Council member, and Python Core Developer. She shared the 2017 ACM Software System Award for Jupyter's global influence - one of computing's most prestigious recognitions for software that has had lasting impact on the field. Willing was not based at a UC campus. Her role shows how a project that grew at Berkeley drew core contributors from elsewhere.
 
 ### What it became
 
@@ -34,7 +34,7 @@ Jupyter notebooks [@kluyver2016jupyter] are the dominant interface for interacti
 **The project:** Apache Spark
 **Campus:** UC Berkeley AMPLab
 **Period:** 2009
-**Key figures:** Matei Zaharia, Holden Karau (PMC, core committer)
+**Key figures:** Matei Zaharia, Holden Karau (PMC member, committer; not UC-affiliated)
 
 ::: {.origin-story}
 *Section in preparation.*
@@ -42,7 +42,7 @@ Jupyter notebooks [@kluyver2016jupyter] are the dominant interface for interacti
 
 ### Holden Karau and the core team
 
-Holden Karau is a member of the Apache Spark Project Management Committee and a core committer who scaled Spark's Python and Core engines. She is the co-author of the definitive O'Reilly books *Learning Spark* and *High Performance Spark*, which trained a generation of Spark engineers.
+Holden Karau is a member of the Apache Spark Project Management Committee and a core committer who scaled Spark's Python and Core engines. She is the co-author of the definitive O'Reilly books *Learning Spark* and *High Performance Spark*, which trained a generation of Spark engineers. Karau was not at UC; her Spark work was done in industry, which is part of how a Berkeley project became an industry standard.
 
 ### What it became
 
