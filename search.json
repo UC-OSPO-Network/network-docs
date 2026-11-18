@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "handout.html",
+    "href": "handout.html",
+    "title": "UC Open Source at a Glance",
+    "section": "",
+    "text": "UC Open Source as Institutional Infrastructure\n    UC OSPO Network · ucospo.net\n  \n\n\n\n\n\n\nFrom Dissertation to Global Infrastructure\n\n\n\n  Open Source Foundation\n\n  \n    1973\n    \n    \n      \n        INGRES / PostgreSQL\n        UC Berkeley\n      \n      Stonebraker and Wong built INGRES and released the code freely. It seeded Sybase and, indirectly, Microsoft SQL Server. Stonebraker's follow-on POSTGRES (1986) pioneered object-relational databases; volunteers turned it into PostgreSQL, now one of the most widely used open source databases. postgresql.org →\n    \n  \n\n  \n    1977\n    \n    \n      \n        BSD Unix\n        UC Berkeley\n      \n      The Berkeley Software Distribution and its permissive license. BSD-style licenses, along with MIT and Apache, now govern much of the world's production software. history →\n    \n  \n\n  Universal Infrastructure\n\n  \n    1986\n    \n    \n      \n        tz database\n        UCLA (Paul Eggert)\n      \n      The Time Zone Database keeps the world's computer clocks on civil time. Paul Eggert of UCLA has contributed since 1991, maintained it since 2005, and served as the IANA Time Zone Coordinator since 2012. A 2011 copyright lawsuit briefly threatened it; IANA has hosted it since. iana.org/time-zones →\n    \n  \n\n  Open Science\n\n  \n    2000\n    \n    \n      \n        UCSC Genome Browser\n        UC Santa Cruz\n      \n      Jim Kent wrote the program that assembled the first public draft of the human genome, and the sequence stayed in the public domain. The browser is now a reference tool for genomic research worldwide. genome.ucsc.edu →\n    \n  \n\n  Scientific Computing & Domain Science\n\n  \n    2001\n    \n    \n      \n        Jupyter\n        UC Berkeley\n      \n      Fernando Pérez wrote the first IPython as a graduate student. Project Jupyter won the 2017 ACM Software System Award. Pérez is a co-PI on the UC OSPO Network. jupyter.org →\n    \n  \n\n  \n    2001\n    \n    \n      \n        EEGLAB\n        UC San Diego\n      \n      An open source environment for processing electrophysiological signals, with one of the largest citation footprints of any scientific software. eeglab →\n    \n  \n\n  \n    2003\n    \n    \n      \n        Cytoscape\n        UC San Diego\n      \n      A standard tool for network biology: disease pathways, protein interactions, and molecular networks. cytoscape.org →\n    \n  \n\n  Infrastructure at Scale\n\n  \n    2004\n    \n    \n      \n        Ceph\n        UC Santa Cruz\n      \n      Sage Weil’s PhD research on exabyte-scale distributed storage. Its client merged into the Linux kernel in 2010, and money from Ceph’s commercialization funded CROSS at UCSC, the seed of this network. ceph.io →\n    \n  \n\n  \n    2009\n    \n    \n      \n        Apache Spark\n        UC Berkeley AMPLab\n      \n      Matei Zaharia’s fast cluster computing engine, donated to the Apache Software Foundation and now an industry standard for large-scale data processing. spark.apache.org →\n    \n  \n\n  \n    2010\n    \n    \n      \n        RISC-V\n        UC Berkeley\n      \n      An open instruction set that began as a summer project. RISC-V International has member organizations in 70 countries. riscv.org →\n    \n  \n\n  \n    2010\n    \n    \n      \n        Named Data Networking\n        UCLA · Lixia Zhang, Lead PI\n      \n      Zhang was the only woman at the first IETF meeting in 1986. NDN rethinks internet architecture around named data instead of host addresses. named-data.net →\n    \n  \n\n  AI Infrastructure\n\n  \n    2016\n    \n    \n      \n        Ray\n        UC Berkeley RISELab\n      \n      A framework for scaling Python and AI workloads, now used to train and serve large models in industry. ray.io →\n    \n  \n\n\n\n\n  Also from UC campuses\n  \n    Processing (UCLA)\n    UCSD Pascal\n    ChimeraX (UCSF)\n    OpenMM\n    sourmash (UC Davis)\n    ERPLAB (UC Davis)\n  \n\n\n\n\n\n\n  \n    The UC OSPO Network\n    \n      \n        8\n        member campuses in 2026launched in 2024 with six, with support from the Alfred P. Sloan Foundation\n      \n      \n      \n        Berkeley\n        Davis\n        Los Angeles\n        San Diego\n        San Francisco\n        Santa Barbara\n        Santa Cruz\n        UC Law SF\n      \n      Led from UC Santa Cruz. Part of CURIOSS, the global community of academic OSPOs.\n    \n  \n\n  \n    What We Found\n    \n      \n        52K\n        institutionally affiliated repositories found across 10 UC campuses\n      \n      \n      \n        58%\n        of surveyed UC OSS contributors also maintain projects\n      \n      \n      Top challenge: time to write documentation\n      Nationally (Tidelift 2024): 60% of maintainers unpaid · 43% burned out\n    \n  \n\n  \n    Why It Matters: The Economics\n    \n      \n        $8.8T\n        demand-side value of open source software to the firms that use it\n      \n      Recreating the most-used packages once would cost about $4.15B. If every firm rebuilt them for itself: about $8.8 trillion. Hoffmann, Nagle & Zhou (2024), HBS Working Paper 24-038.\n    \n  \n\n  \n    Three Focus Areas\n    \n      \n        🔭\n        Discovery: UC Open Repository Browser (UC ORB); a GitHub discovery pipeline and a system-wide survey\n      \n      \n        🌿\n        Sustainability: cross-campus licensing working group; OSSPREY project health assessment; community management\n      \n      \n        📖\n        Education: lessons and learning pathways at ucospo.net/education; Carpentries, CodeRefinery, and UC-built content\n      \n    \n  \n\n  \n    Resources for Researchers\n    \n      README.md template + guide\n      LICENSE guide to common options\n      CONTRIBUTING.md template + guide\n      CODE_OF_CONDUCT.md Contributor Covenant\n      CITATION.cff + Zenodo → citable DOI\n      More at ucospo.net/oss-resources\n    \n  \n\n  \n    Learn More\n    \n      ucospo.net\n      ucospo.net/events\n      ucospo.net/education\n      Talks, lessons, and publications\n    \n  \n\n\n\n\n\n\n  Gomez et al. (2025) arXiv:2506.18359 · Scarlett et al. (2026) PLOS One, doi:10.1371/journal.pone.0348894 · Tidelift (2024) State of the Open Source Maintainer Report · Hoffmann, Nagle & Zhou (2024) HBS WP 24-038\n  UC OSPO Network"
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "UC OSPO Network: Talks",
+    "section": "",
+    "text": "Slides, handouts, and source for talks and workshops from the UC OSPO Network. Newest first. The first link on each one opens the slides.\nEvery entry on this page comes from a talk.yml file in its folder under presentations/. Papers, software, lessons, and talks without slides are on the Outputs page.\n\nUCLA Open Source Meetup: Keeping the World on Time\nOct 6, 2026 · Meetup · UCLA Open Source Meetup · Leigh Phan, Tim Dennis\nSlides · Slides (PDF) · Paul Eggert’s slides (PDF) · Source\n\n\nUC Carpentries: Making Research Software Citable & Discoverable\nSep 23, 2026 · Workshop · UC Carpentries Workshop Series, Fall 2026 · Tim Dennis, Leigh Phan, Karla Padilla, Reid Otsuji, Laura Langdon\nIntro slides · Intro slides (PDF) · Metadata slides · Metadata slides (PDF) · CITATION.cff slides · CITATION.cff slides (PDF) · Lesson · Source\n\n\nIASSIST 2026: Open Source as Institutional Infrastructure\nJun 2026 · Conference talk · IASSIST 2026 · Tim Dennis\nSlides · Slides (PDF) · Full deck · Full deck (PDF) · Handout · Bibliography · Source · DOI\n\n\nUC Open 2026: UC OSPO Education Activities\nApr 22, 2026 · Conference talk · UC Open 2026 · Tim Dennis\nSource · DOI"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "UC OSPO Network: Talks and Outputs",
+    "section": "",
+    "text": "Find talks, workshop materials, lessons, software, and publications from the UC OSPO Network."
+  },
+  {
+    "objectID": "index.html#recent-talks",
+    "href": "index.html#recent-talks",
+    "title": "UC OSPO Network: Talks and Outputs",
+    "section": "Recent talks",
+    "text": "Recent talks\n\nUCLA Open Source Meetup: Keeping the World on Time\nOct 6, 2026 · Meetup · UCLA Open Source Meetup · Leigh Phan, Tim Dennis\nSlides · Slides (PDF) · Paul Eggert’s slides (PDF) · Source\n\n\nUC Carpentries: Making Research Software Citable & Discoverable\nSep 23, 2026 · Workshop · UC Carpentries Workshop Series, Fall 2026 · Tim Dennis, Leigh Phan, Karla Padilla, Reid Otsuji, Laura Langdon\nIntro slides · Intro slides (PDF) · Metadata slides · Metadata slides (PDF) · CITATION.cff slides · CITATION.cff slides (PDF) · Lesson · Source\n\n\nIASSIST 2026: Open Source as Institutional Infrastructure\nJun 2026 · Conference talk · IASSIST 2026 · Tim Dennis\nSlides · Slides (PDF) · Full deck · Full deck (PDF) · Handout · Bibliography · Source · DOI"
+  },
+  {
+    "objectID": "index.html#handout",
+    "href": "index.html#handout",
+    "title": "UC OSPO Network: Talks and Outputs",
+    "section": "Handout",
+    "text": "Handout\n\nUC Open Source at a Glance\nA one-page summary of open source from UC campuses, from BSD Unix to Ray, and what the UC OSPO Network does today. Print it or save it as a PDF.\nOpen the handout\n\nLooking for something else? Upcoming meetups and workshops are on the Events page, and templates and how-to guides are on the Resources page."
+  },
+  {
     "objectID": "outputs.html",
     "href": "outputs.html",
     "title": "UC OSPO Network: Outputs",
@@ -46,34 +81,6 @@
     "href": "outputs.html#add-or-correct-an-entry",
     "title": "UC OSPO Network: Outputs",
     "section": "Add or correct an entry",
-    "text": "Add or correct an entry\nOpen an issue or a pull request on network-docs. Entries live in network-outputs.bib, and the page rebuilds when the change merges. The header of that file explains the fields."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "UC OSPO Network: Talks and Outputs",
-    "section": "",
-    "text": "Find talks, workshop materials, lessons, software, and publications from the UC OSPO Network."
-  },
-  {
-    "objectID": "index.html#recent-talks",
-    "href": "index.html#recent-talks",
-    "title": "UC OSPO Network: Talks and Outputs",
-    "section": "Recent talks",
-    "text": "Recent talks\n\nUCLA Open Source Meetup: Keeping the World on Time\nOct 6, 2026 · Meetup · UCLA Open Source Meetup · Leigh Phan, Tim Dennis\nSlides · Slides (PDF) · Paul Eggert’s slides (PDF) · Source\n\n\nUC Carpentries: Making Research Software Citable & Discoverable\nSep 23, 2026 · Workshop · UC Carpentries Workshop Series, Fall 2026 · Tim Dennis, Leigh Phan, Karla Padilla, Reid Otsuji, Laura Langdon\nIntro slides · Intro slides (PDF) · Metadata slides · Metadata slides (PDF) · CITATION.cff slides · CITATION.cff slides (PDF) · Lesson · Source\n\n\nIASSIST 2026: Open Source as Institutional Infrastructure\nJun 2026 · Conference talk · IASSIST 2026 · Tim Dennis\nSlides · Slides (PDF) · Full deck · Full deck (PDF) · Handout · Bibliography · Source · DOI"
-  },
-  {
-    "objectID": "index.html#book",
-    "href": "index.html#book",
-    "title": "UC OSPO Network: Talks and Outputs",
-    "section": "Book",
-    "text": "Book\n\nUC Open Source: A System History\nHow UC research software went from BSD Unix to Jupyter, Ceph, Spark, RISC-V, and beyond, and what that history means for supporting open source today.\nRead the book · Source\n\nLooking for something else? Upcoming meetups and workshops are on the Events page, and templates and how-to guides are on the Resources page."
-  },
-  {
-    "objectID": "talks.html",
-    "href": "talks.html",
-    "title": "UC OSPO Network: Talks",
-    "section": "",
-    "text": "Slides, handouts, and source for talks and workshops from the UC OSPO Network. Newest first. The first link on each one opens the slides.\nEvery entry on this page comes from a talk.yml file in its folder under presentations/. Papers, software, lessons, and talks without slides are on the Outputs page.\n\nUCLA Open Source Meetup: Keeping the World on Time\nOct 6, 2026 · Meetup · UCLA Open Source Meetup · Leigh Phan, Tim Dennis\nSlides · Slides (PDF) · Paul Eggert’s slides (PDF) · Source\n\n\nUC Carpentries: Making Research Software Citable & Discoverable\nSep 23, 2026 · Workshop · UC Carpentries Workshop Series, Fall 2026 · Tim Dennis, Leigh Phan, Karla Padilla, Reid Otsuji, Laura Langdon\nIntro slides · Intro slides (PDF) · Metadata slides · Metadata slides (PDF) · CITATION.cff slides · CITATION.cff slides (PDF) · Lesson · Source\n\n\nIASSIST 2026: Open Source as Institutional Infrastructure\nJun 2026 · Conference talk · IASSIST 2026 · Tim Dennis\nSlides · Slides (PDF) · Full deck · Full deck (PDF) · Handout · Bibliography · Source · DOI\n\n\nUC Open 2026: UC OSPO Education Activities\nApr 22, 2026 · Conference talk · UC Open 2026 · Tim Dennis\nSource · DOI"
+    "text": "Add or correct an entry\nTo add an output, fill in the Add an output form. A maintainer checks it, and approval opens a pull request with the new entry. To correct an entry, open an issue or a pull request on network-docs. Entries live in network-outputs.bib, and the page rebuilds when the change merges. The header of that file explains the fields."
   }
 ]
