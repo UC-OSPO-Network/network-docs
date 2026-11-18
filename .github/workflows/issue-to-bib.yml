@@ -64,4 +64,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           NUMBER: ${{ github.event.issue.number }}
           RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: gh issue comment "$NUMBER" --body "The entry could not be built from this form. See the run log: $RUN. Edit the issue, then remove and add the \`approved\` label again."
+        run: |
+          gh issue comment "$NUMBER" --body "The entry could not be built from this form. See the run log: $RUN. Edit the issue, then remove and add the \`approved\` label again."
