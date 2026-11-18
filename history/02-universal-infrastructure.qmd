@@ -11,7 +11,7 @@ Some software is so fundamental it disappears into the background. You never thi
 ## The tz Database: Every Clock on Earth
 
 **The project:** tz database (IANA Time Zone Database)
-**Campus:** UCLA (Paul Eggert: contributor since 1991, IESG-designated coordinator since 2012)
+**Campus:** UCLA (Paul Eggert: contributor since 1991, maintainer since 2005, IESG-designated coordinator since 2012)
 **Origin:** 1986, Arthur David Olson (NIH)
 **Key figures:** Paul Eggert (UCLA), Arthur David Olson
 
@@ -21,7 +21,7 @@ Some software is so fundamental it disappears into the background. You never thi
 
 ### What it became
 
-Linux, macOS, iOS, and Android all ship with the tz database. Paul Eggert first worked on it in 1991, when Olson maintained it at NIH [@uctechnews2022eggert]. By 2005 he had, in his words, "maintained the data itself for many years" [@eggert2005tz]. Every programming language that handles dates and times depends on it. When a country changes its clocks (and they do, constantly - political decisions, wars, referenda), Paul Eggert updates the database and the world's computers follow.
+Linux, macOS, iOS, and Android all ship with the tz database. Paul Eggert first worked on it in 1991, when Olson maintained it at NIH [@uctechnews2022eggert]. He has been its maintainer since 2005 [@eggert2026pc]. Every programming language that handles dates and times depends on it. When a country changes its clocks (and they do, constantly - political decisions, wars, referenda), Paul Eggert updates the database and the world's computers follow.
 
 ### The lawsuit that almost broke time
 
