@@ -22,11 +22,9 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Talks"
-        href: talks.qmd
-      - text: "Outputs"
+      - text: "Catalog"
         href: outputs.qmd
-      - text: "Handout"
+      - text: "At a Glance"
         href: handout.qmd
     right:
       - text: "ucospo.net"

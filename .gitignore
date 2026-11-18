@@ -14,6 +14,8 @@ __pycache__/
 
 # Built by scripts/build_outputs.py
 _outputs-generated.md
+_catalog-recent.md
+_talks-redirect.md
 
 # Built by scripts/build_talks.py
 _talks-generated.md
