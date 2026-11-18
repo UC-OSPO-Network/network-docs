@@ -3,11 +3,13 @@ project:
   output-dir: _site
   # Explicit list: drafts, reports, proposals and presentation sources are never
   # rendered as site pages. Decks are rendered by the workflow. The history book
-  # is its own project (history/_quarto.yml) rendered into _site/history.
+  # is its own project (history/_quarto.yml) rendered into _site/history. It is
+  # published but not linked from the site while it is under review.
   render:
     - index.qmd
     - talks.qmd
     - outputs.qmd
+    - handout.qmd
   resources:
     - network-outputs.bib
 
@@ -24,8 +26,8 @@ website:
         href: talks.qmd
       - text: "Outputs"
         href: outputs.qmd
-      - text: "History"
-        href: history/index.html
+      - text: "Handout"
+        href: handout.qmd
     right:
       - text: "ucospo.net"
         href: https://ucospo.net
