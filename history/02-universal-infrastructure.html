@@ -26,7 +26,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -283,17 +303,17 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="the-tz-database-every-clock-on-earth" class="level2">
 <h2 class="anchored" data-anchor-id="the-tz-database-every-clock-on-earth">The tz Database: Every Clock on Earth</h2>
-<p><strong>The project:</strong> tz database (IANA Time Zone Database) <strong>Campus:</strong> UCLA (current maintainer: Paul Eggert, since 2005) <strong>Origin:</strong> 1986, Arthur David Olson (NIH) <strong>Key figures:</strong> Paul Eggert (UCLA), Arthur David Olson</p>
+<p><strong>The project:</strong> tz database (IANA Time Zone Database) <strong>Campus:</strong> UCLA (Paul Eggert: contributor since 1991, maintainer since 2005, IESG-designated coordinator since 2012) <strong>Origin:</strong> 1986, Arthur David Olson (NIH) <strong>Key figures:</strong> Paul Eggert (UCLA), Arthur David Olson</p>
 <div class="origin-story">
 <p><em>Section in preparation.</em></p>
 </div>
 <section id="what-it-became" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-became">What it became</h3>
-<p>Every operating system - Linux, macOS, Windows, iOS, Android - ships with the tz database. Every programming language that handles dates and times depends on it. When a country changes its clocks (and they do, constantly - political decisions, wars, referenda), Paul Eggert updates the database and the world’s computers follow.</p>
+<p>Linux, macOS, iOS, and Android all ship with the tz database. Paul Eggert first worked on it in 1991, when Olson maintained it at NIH <span class="citation" data-cites="uctechnews2022eggert">(<a href="#ref-uctechnews2022eggert" role="doc-biblioref">UC Tech News, 2022</a>)</span>. He has been its maintainer since 2005 <span class="citation" data-cites="eggert2026pc">(<a href="#ref-eggert2026pc" role="doc-biblioref">Eggert, 2026</a>)</span>. Every programming language that handles dates and times depends on it. When a country changes its clocks (and they do, constantly - political decisions, wars, referenda), Paul Eggert updates the database and the world’s computers follow.</p>
 </section>
 <section id="the-lawsuit-that-almost-broke-time" class="level3">
 <h3 class="anchored" data-anchor-id="the-lawsuit-that-almost-broke-time">The lawsuit that almost broke time</h3>
-<p>In 2011, Astrolabe Inc.&nbsp;sued the tz database maintainers, claiming copyright over historical timezone data. The community response was immediate: legal defense funds, IANA intervention, and a rapid resolution. The episode revealed how fragile the infrastructure was - one lawsuit against volunteer maintainers nearly took down something every computer on earth needed.</p>
+<p>In September 2011, Astrolabe Inc.&nbsp;sued Arthur David Olson and Paul Eggert, claiming copyright over historical time zone data <span class="citation" data-cites="eff2012astrolabe">(<a href="#ref-eff2012astrolabe" role="doc-biblioref">Electronic Frontier Foundation, 2012a</a>)</span>. The Electronic Frontier Foundation, with co-counsel at Fish &amp; Richardson, defended them <span class="citation" data-cites="eff2012tzrelease">(<a href="#ref-eff2012tzrelease" role="doc-biblioref">Electronic Frontier Foundation, 2012b</a>)</span>. The database went offline on 7 October 2011. ICANN brought it back online at IANA on 14 October 2011, and Robert Elz served as interim coordinator. Astrolabe dropped the suit on 22 February 2012 <span class="citation" data-cites="ietf2012tz">(<a href="#ref-ietf2012tz" role="doc-biblioref">IETF, 2012</a>)</span>. The IESG approved Eggert as the Time Zone Coordinator on 13 April 2012 <span class="citation" data-cites="iesg2012eggert">(<a href="#ref-iesg2012eggert" role="doc-biblioref">IESG Secretary, 2012</a>)</span>. Olson’s announced retirement had led the IETF to ask ICANN to take over the database <span class="citation" data-cites="icann2011tz">(<a href="#ref-icann2011tz" role="doc-biblioref">ICANN, 2011</a>)</span>. The episode showed how much depended on a very small group of maintainers.</p>
 <hr>
 </section>
 </section>
@@ -305,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="what-it-became-1" class="level3">
 <h3 class="anchored" data-anchor-id="what-it-became-1">What it became</h3>
-<p>Apache HTTP Server powered more than half the global web for most of the 2000s and 2010s. The Apache Software Foundation, which grew from the original mailing list, now houses over 350 projects - including Apache Spark, which appears later in this history.</p>
+<p>Apache HTTP Server was the most widely used web server for many years. In Netcraft’s December 2015 survey it still ran 50.14% of active sites <span class="citation" data-cites="netcraft2016jan">(<a href="#ref-netcraft2016jan" role="doc-biblioref">Netcraft, 2016</a>)</span>. The Apache Software Foundation, which grew from the original group, reported 308 projects in November 2026 <span class="citation" data-cites="asf2026state">(<a href="#ref-asf2026state" role="doc-biblioref">The Apache Software Foundation, 2026</a>)</span>, including Apache Spark, which appears later in this history.</p>
 </section>
 <section id="the-berkeley-connection" class="level3">
 <h3 class="anchored" data-anchor-id="the-berkeley-connection">The Berkeley connection</h3>
@@ -325,6 +345,35 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-eggert2026pc" class="csl-entry" role="listitem">
+Eggert, P. (2026). <em>Personal communication to tim dennis</em>.
+</div>
+<div id="ref-eff2012astrolabe" class="csl-entry" role="listitem">
+Electronic Frontier Foundation. (2012a). <em>Astrolabe v. olson</em>. <a href="https://www.eff.org/cases/astrolabe-v-olson">https://www.eff.org/cases/astrolabe-v-olson</a>
+</div>
+<div id="ref-eff2012tzrelease" class="csl-entry" role="listitem">
+Electronic Frontier Foundation. (2012b). <em><span>EFF</span> wins protection for time zone database</em>. <a href="https://www.eff.org/press/releases/eff-wins-protection-time-zone-database">https://www.eff.org/press/releases/eff-wins-protection-time-zone-database</a>
+</div>
+<div id="ref-icann2011tz" class="csl-entry" role="listitem">
+ICANN. (2011). <em><span>ICANN</span> to manage time zone database</em>. News alert, 14 October 2011; reposted to the tz mailing list 15 October 2011. <a href="https://mm.icann.org/pipermail/tz/2011-October/008090.html">https://mm.icann.org/pipermail/tz/2011-October/008090.html</a>
+</div>
+<div id="ref-iesg2012eggert" class="csl-entry" role="listitem">
+IESG Secretary. (2012). <em>Paul eggert approved by the <span>IESG</span> as time zone coordinator</em>. Forwarded to the tz mailing list, 17 May 2012; IESG note dated 13 April 2012. <a href="https://mm.icann.org/pipermail/tz/2012-May/017853.html">https://mm.icann.org/pipermail/tz/2012-May/017853.html</a>
+</div>
+<div id="ref-ietf2012tz" class="csl-entry" role="listitem">
+IETF. (2012). <em>Time zone database update</em>. IETF 83 Operations and Administration Plenary slides. <a href="https://www.ietf.org/proceedings/83/slides/slides-83-iesg-2-ietf-operations-and-administration-plenary.pdf">https://www.ietf.org/proceedings/83/slides/slides-83-iesg-2-ietf-operations-and-administration-plenary.pdf</a>
+</div>
+<div id="ref-netcraft2016jan" class="csl-entry" role="listitem">
+Netcraft. (2016). <em>January 2016 web server survey</em>. <a href="https://www.netcraft.com/blog/january-2016-web-server-survey">https://www.netcraft.com/blog/january-2016-web-server-survey</a>
+</div>
+<div id="ref-asf2026state" class="csl-entry" role="listitem">
+The Apache Software Foundation. (2026). <em>About the turntable under the show: The state of the <span>ASF</span></em>. <a href="https://news.apache.org/foundation/entry/about-the-turntable-under-the-show-the-state-of-the-asf">https://news.apache.org/foundation/entry/about-the-turntable-under-the-show-the-state-of-the-asf</a>
+</div>
+<div id="ref-uctechnews2022eggert" class="csl-entry" role="listitem">
+UC Tech News. (2022). <em><span>“Time zone king”</span>: How one <span>UCLA</span> computer scientist keeps digital clocks ticking</em>. <a href="https://uctechnews.ucop.edu/time-zone-king-how-one-ucla-computer-scientist-keeps-digital-clocks-ticking/">https://uctechnews.ucop.edu/time-zone-king-how-one-ucla-computer-scientist-keeps-digital-clocks-ticking/</a>
+</div>
+</div>
 </section>
 </section>
 

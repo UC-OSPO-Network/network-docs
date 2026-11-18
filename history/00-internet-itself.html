@@ -265,7 +265,7 @@ div.csl-indent {
   <li><a href="#the-students-who-built-the-internet" id="toc-the-students-who-built-the-internet" class="nav-link" data-scroll-target="#the-students-who-built-the-internet">The Students Who Built the Internet</a></li>
   <li><a href="#boelter-hall-room-3420" id="toc-boelter-hall-room-3420" class="nav-link" data-scroll-target="#boelter-hall-room-3420">Boelter Hall Room 3420</a></li>
   </ul></li>
-  <li><a href="#ucsb-node-3-and-the-uc-connection-nobody-mentions" id="toc-ucsb-node-3-and-the-uc-connection-nobody-mentions" class="nav-link" data-scroll-target="#ucsb-node-3-and-the-uc-connection-nobody-mentions">UCSB: Node 3, and the UC Connection Nobody Mentions</a></li>
+  <li><a href="#ucsb-node-3" id="toc-ucsb-node-3" class="nav-link" data-scroll-target="#ucsb-node-3">UCSB: Node 3</a></li>
   <li><a href="#the-collaboration-that-wasnt-institutional" id="toc-the-collaboration-that-wasnt-institutional" class="nav-link" data-scroll-target="#the-collaboration-that-wasnt-institutional">The Collaboration That Wasn’t Institutional</a></li>
   <li><a href="#uc-berkeley-and-tcpip-the-implementation-that-spread-the-protocol" id="toc-uc-berkeley-and-tcpip-the-implementation-that-spread-the-protocol" class="nav-link" data-scroll-target="#uc-berkeley-and-tcpip-the-implementation-that-spread-the-protocol">UC Berkeley and TCP/IP: The Implementation That Spread the Protocol</a>
   <ul class="collapse">
@@ -301,7 +301,7 @@ div.csl-indent {
 <section id="ucla-uc-santa-barbara-uc-berkeley" class="level4">
 <h4 class="anchored" data-anchor-id="ucla-uc-santa-barbara-uc-berkeley">1969 - 1983 · UCLA, UC Santa Barbara, UC Berkeley</h4>
 <div class="chapter-intro">
-<p>Before any of the software in this history could exist, the network had to exist. Three UC campuses helped build it. UCLA designed the architecture and sent the first message. UC Santa Barbara was Node 3. UC Berkeley wrote the implementation that spread TCP/IP to the world. The UC system didn’t coordinate any of this - DARPA did. That gap is part of what makes the UC OSPO Network, fifty years later, a genuinely new thing.</p>
+<p>Before any of the software in this history could exist, the network had to exist. Three UC campuses helped build it. UCLA hosted the first node and sent the first message. UC Santa Barbara was Node 3. UC Berkeley wrote the implementation that spread TCP/IP to the world. The UC system didn’t coordinate any of this - DARPA did. That gap is part of what makes the UC OSPO Network, fifty years later, a genuinely new thing.</p>
 </div>
 <hr>
 </section>
@@ -313,37 +313,36 @@ div.csl-indent {
 </div>
 <section id="leonard-kleinrock-and-packet-switching" class="level3">
 <h3 class="anchored" data-anchor-id="leonard-kleinrock-and-packet-switching">Leonard Kleinrock and Packet Switching</h3>
-<p>Kleinrock’s contribution was theoretical before it was practical. Traditional telecommunications used circuit switching - a dedicated line from point A to point B, like a phone call. Kleinrock’s doctoral work at MIT in the early 1960s proved mathematically that data could be broken into packets, routed dynamically across different paths, and reassembled at the destination. This is how all internet data moves today.</p>
+<p>Kleinrock’s contribution was theoretical before it was practical. Traditional telecommunications used circuit switching - a dedicated line from point A to point B, like a phone call. In his MIT doctoral thesis (1962) and his 1964 book, Kleinrock used queueing theory to analyze how messages are delayed in networks that store and forward data <span class="citation" data-cites="kleinrock1962thesis">(<a href="#ref-kleinrock1962thesis" role="doc-biblioref">Kleinrock, 1962</a>)</span>. Paul Baran at RAND and Donald Davies at Britain’s National Physical Laboratory developed packet-switching designs in separate work <span class="citation" data-cites="leiner1997brief">(<a href="#ref-leiner1997brief" role="doc-biblioref">Leiner et al., 1997</a>)</span>.</p>
 <p>His UCLA lab became the birthplace of the internet’s first node because he had the theory, the equipment, and a team of graduate students who would go on to design the protocols the entire internet runs on.</p>
 </section>
 <section id="the-students-who-built-the-internet" class="level3">
 <h3 class="anchored" data-anchor-id="the-students-who-built-the-internet">The Students Who Built the Internet</h3>
 <p>The graduate students working in Kleinrock’s lab at UCLA in the late 1960s and early 1970s became the architects of the modern internet:</p>
-<p><strong>Vint Cerf</strong> co-designed TCP/IP with Bob Kahn at DARPA <span class="citation" data-cites="cerf1974tcp">(<a href="#ref-cerf1974tcp" role="doc-biblioref">Cerf &amp; Kahn, 1974</a>)</span> - the protocol suite that replaced ARPANET’s original NCP and became the universal language of the internet. He is widely called one of the “fathers of the internet.”</p>
+<p><strong>Vint Cerf</strong> earned his PhD at UCLA in 1972 and worked in Kleinrock’s group on the Network Measurement Center. At Stanford in 1973-74, he and Bob Kahn of ARPA designed TCP <span class="citation" data-cites="cerf1974tcp hochfelder1999cerf">(<a href="#ref-hochfelder1999cerf" role="doc-biblioref">Cerf &amp; Hochfelder, 1999</a>; <a href="#ref-cerf1974tcp" role="doc-biblioref">Cerf &amp; Kahn, 1974</a>)</span>, the protocol that later replaced ARPANET’s original NCP.</p>
 <p><strong>Jon Postel</strong> went on to manage the DNS (Domain Name System) and the assignment of internet numbers for decades, effectively serving as the internet’s directory administrator. He managed IANA (Internet Assigned Numbers Authority) until his death in 1998. His influence over the internet’s naming and numbering systems was so central that it prompted the US government to formalize ICANN as his successor.</p>
 <p><strong>Steve Crocker</strong> invented the RFC (Request for Comments) process at UCLA in April 1969. RFC 1, written by Crocker, established the open, collaborative process by which internet standards are still developed today. The choice of “Request for Comments” rather than something more authoritative was deliberate - Crocker wanted to encourage participation and avoid having any single voice dominate. Every standard that governs the internet, from email to HTTPS to DNS, exists as an RFC.</p>
 </section>
 <section id="boelter-hall-room-3420" class="level3">
 <h3 class="anchored" data-anchor-id="boelter-hall-room-3420">Boelter Hall Room 3420</h3>
-<p>The original IMP - the hardware that made ARPANET’s first node possible - is preserved at UCLA’s <strong>Kleinrock Internet History Center</strong> in Boelter Hall Room 3420. It is one of the few places in the world where you can stand next to the hardware that sent the internet’s first message.</p>
+<p>The original IMP, the hardware that made ARPANET’s first node possible, still stands in Boelter Hall Room 3420 at UCLA <span class="citation" data-cites="uclaconnectionlab3420">(<a href="#ref-uclaconnectionlab3420" role="doc-biblioref">UCLA Connection Lab, 2026</a>)</span>.</p>
 <hr>
 </section>
 </section>
-<section id="ucsb-node-3-and-the-uc-connection-nobody-mentions" class="level2">
-<h2 class="anchored" data-anchor-id="ucsb-node-3-and-the-uc-connection-nobody-mentions">UCSB: Node 3, and the UC Connection Nobody Mentions</h2>
+<section id="ucsb-node-3" class="level2">
+<h2 class="anchored" data-anchor-id="ucsb-node-3">UCSB: Node 3</h2>
 <p><strong>Campus:</strong> UC Santa Barbara <strong>Date:</strong> November 1, 1969 <strong>Key figures:</strong> Glen Culler, Burton Fried</p>
-<p>The original four ARPANET nodes were UCLA (Node 1), Stanford Research Institute (Node 2), UC Santa Barbara (Node 3), and the University of Utah (Node 4). Three of the four were UC campuses - and this fact appears in almost no account of UC’s contributions to the internet.</p>
-<p>Glen Culler and Burton Fried at UCSB were working on interactive mathematics - specifically, tools for numerical computation that needed remote access to large machines. Their node went live on November 1, 1969, three days after UCLA’s first message to SRI. UCSB was not a passive recipient of the network; Culler’s team was actively developing applications and pushing on what the network could do.</p>
+<p>The original four ARPANET nodes were UCLA (Node 1), Stanford Research Institute (Node 2), UC Santa Barbara (Node 3), and the University of Utah (Node 4). Two of the four were UC campuses <span class="citation" data-cites="leiner1997brief">(<a href="#ref-leiner1997brief" role="doc-biblioref">Leiner et al., 1997</a>)</span>.</p>
+<p>Glen Culler and Burton Fried at UCSB were working on interactive mathematics, including methods for displaying mathematical functions <span class="citation" data-cites="leiner1997brief">(<a href="#ref-leiner1997brief" role="doc-biblioref">Leiner et al., 1997</a>)</span>. Their node went live on November 1, 1969, three days after UCLA’s first message to SRI. UCSB was not a passive recipient of the network; Culler’s team was actively developing applications and pushing on what the network could do.</p>
 <div class="origin-story">
 <p><em>Section in preparation.</em></p>
 </div>
-<p>The fact that three of the four original ARPANET nodes were UC campuses is not a coincidence. It reflects where DARPA’s research funding was concentrated and where the relevant mathematical and computer science talent had gathered. It also reflects something the UC system itself did not fully recognize or capitalize on at the time - and arguably still hasn’t.</p>
 <hr>
 </section>
 <section id="the-collaboration-that-wasnt-institutional" class="level2">
 <h2 class="anchored" data-anchor-id="the-collaboration-that-wasnt-institutional">The Collaboration That Wasn’t Institutional</h2>
 <p>The people in this chapter knew each other. They communicated through the network they were building. The Network Working Group (RFC process) was genuinely collaborative across institutions - Crocker ran it from UCLA, but contributors came from SRI, UCSB, Utah, and elsewhere. DARPA’s funding created a community that the UC system itself had no formal mechanism to support or recognize.</p>
-<p><strong>Lixia Zhang is the living thread.</strong> She arrived at the first IETF meeting in 1986 - the successor organization to the ARPANET NWG - as the only woman and the only student in the room. That meeting was populated by the same community that had built the ARPANET. Zhang went on to join UCLA’s faculty, led the Named Data Networking project (Chapter 5), and is now co-PI on the UC OSPO Network. She is the direct human connection between the founding ARPANET community and the institutional open source work the UC system is doing today.</p>
+<p><strong>Lixia Zhang is the living thread.</strong> She arrived at the first IETF meeting in 1986 - the successor organization to the ARPANET NWG - as the only woman and the only student in the room. That meeting was populated by the same community that had built the ARPANET. Zhang went on to join UCLA’s faculty and led the Named Data Networking project (Chapter 5). Her career links the founding internet community to internet architecture research at UCLA today.</p>
 <p>The UCLA-UCSB-Berkeley collaboration on internet infrastructure happened because DARPA funded it, not because the UC system organized it. The UC OSPO Network is, in part, the belated answer to that gap: a formal mechanism for cross-campus coordination on shared technical infrastructure, fifty years after UC campuses were building the internet without one.</p>
 <hr>
 </section>
@@ -355,16 +354,16 @@ div.csl-indent {
 </div>
 <section id="the-socket-api-the-interface-that-outlasted-everything" class="level3">
 <h3 class="anchored" data-anchor-id="the-socket-api-the-interface-that-outlasted-everything">The Socket API: The Interface That Outlasted Everything</h3>
-<p>The most durable technical contribution of Berkeley’s TCP/IP implementation was not the protocol stack itself but the <strong>socket API</strong> - the programming interface Bill Joy designed for applications to communicate over a network. Decades later, Python’s <code>socket</code> module, Node.js networking, Go’s <code>net</code> package, and virtually every network-capable program in any language expose an interface that traces directly to Joy’s BSD design. You do not think about it; it is just how programs talk to networks.</p>
+<p>The most durable technical contribution of Berkeley’s TCP/IP implementation was not the protocol stack itself but the <strong>socket API</strong>, the programming interface that 4.2BSD gave applications for communicating over a network. Joy built the first version of Berkeley’s interprocess communication facilities in 1981, and Joy and Sam Leffler then reworked the interfaces so that several network protocols could run at once <span class="citation" data-cites="mckusick1999twenty">(<a href="#ref-mckusick1999twenty" role="doc-biblioref">McKusick, 1999</a>)</span>. Decades later, Python’s <code>socket</code> module, Node.js networking, Go’s <code>net</code> package, and most network-capable programs expose an interface that traces to this BSD design. You do not think about it; it is just how programs talk to networks.</p>
 </section>
 <section id="why-implementation-mattered-as-much-as-design" class="level3">
 <h3 class="anchored" data-anchor-id="why-implementation-mattered-as-much-as-design">Why Implementation Mattered as Much as Design</h3>
 <p>TCP/IP had been designed by Cerf and Kahn <span class="citation" data-cites="cerf1974tcp">(<a href="#ref-cerf1974tcp" role="doc-biblioref">Cerf &amp; Kahn, 1974</a>)</span>. What Berkeley did was make it run, make it stable, and make it free with an operating system that universities already had. The DARPA contract to Berkeley was not a minor technical exercise - it was a deliberate strategy to spread the protocol by bundling it with the system universities were already running. It worked. By the time the internet commercialized in the 1990s, the network stack in virtually every Unix system traced to Berkeley’s implementation.</p>
-<p>Bill Joy left Berkeley to co-found Sun Microsystems in 1982, and Sun’s workstations shipped with BSD networking - extending Berkeley’s TCP/IP implementation into the commercial market before the internet was publicly accessible.</p>
+<p>Berkeley’s stack built on an early TCP/IP implementation from Rob Gurwitz at BBN, which Joy integrated and tuned. In the late spring of 1982, Joy left to join Sun Microsystems. Leffler took over and completed the work, and the system was released as 4.2BSD in August 1983 <span class="citation" data-cites="mckusick1999twenty">(<a href="#ref-mckusick1999twenty" role="doc-biblioref">McKusick, 1999</a>)</span>. Sun’s workstations shipped with BSD networking, which carried Berkeley’s TCP/IP implementation into the commercial market.</p>
 </section>
 <section id="the-larger-pattern" class="level3">
 <h3 class="anchored" data-anchor-id="the-larger-pattern">The Larger Pattern</h3>
-<p>The UCLA-to-Berkeley TCP/IP story is the earliest instance of the pattern this book documents throughout: UC research producing foundational infrastructure, released openly, that becomes universal. Kleinrock’s theory, Cerf’s protocol design, Joy’s implementation - none of it was locked up. All of it spread. The internet is the result.</p>
+<p>The UCLA-to-Berkeley TCP/IP story is the earliest instance of the pattern this book documents throughout: UC research producing foundational infrastructure, released openly, that becomes universal. Kleinrock’s theory, Cerf’s protocol design, Berkeley’s implementation - none of it was locked up. All of it spread. The internet is the result.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -381,8 +380,23 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-hochfelder1999cerf" class="csl-entry" role="listitem">
+Cerf, V. G., &amp; Hochfelder, D. (1999). <em>Oral-history: Vinton cerf</em>. IEEE History Center, Engineering and Technology History Wiki. Interview #355, 17 May 1999. <a href="https://ethw.org/Oral-History:Vinton_Cerf">https://ethw.org/Oral-History:Vinton_Cerf</a>
+</div>
 <div id="ref-cerf1974tcp" class="csl-entry" role="listitem">
 Cerf, V. G., &amp; Kahn, R. E. (1974). A protocol for packet network intercommunication. <em><span>IEEE</span> Transactions on Communications</em>, <em>22</em>(5), 637–648. <a href="https://doi.org/10.1109/TCOM.1974.1092259">https://doi.org/10.1109/TCOM.1974.1092259</a>
+</div>
+<div id="ref-kleinrock1962thesis" class="csl-entry" role="listitem">
+Kleinrock, L. (1962). <em>Message delay in communication nets with storage</em> [PhD thesis, Massachusetts Institute of Technology]. <a href="https://courses.washington.edu/ee565/handouts/kleinrock62.pdf">https://courses.washington.edu/ee565/handouts/kleinrock62.pdf</a>
+</div>
+<div id="ref-leiner1997brief" class="csl-entry" role="listitem">
+Leiner, B. M., Cerf, V. G., Clark, D. D., Kahn, R. E., Kleinrock, L., Lynch, D. C., Postel, J., Roberts, L. G., &amp; Wolff, S. (1997). <em>A brief history of the internet</em>. Internet Society. <a href="https://www.internetsociety.org/internet/history-internet/brief-history-internet/">https://www.internetsociety.org/internet/history-internet/brief-history-internet/</a>
+</div>
+<div id="ref-mckusick1999twenty" class="csl-entry" role="listitem">
+McKusick, M. K. (1999). Twenty years of <span>Berkeley</span> <span>Unix</span>: From <span>AT&amp;T</span>-owned to freely redistributable. In <em>Open sources: Voices from the open source revolution</em>. O’Reilly. <a href="https://www.oreilly.com/openbook/opensources/book/kirkmck.html_original">https://www.oreilly.com/openbook/opensources/book/kirkmck.html_original</a>
+</div>
+<div id="ref-uclaconnectionlab3420" class="csl-entry" role="listitem">
+UCLA Connection Lab. (2026). <em>3420 boelter hall: Where it all began</em>. <a href="https://uclaconnectionlab.org/internet-museum/">https://uclaconnectionlab.org/internet-museum/</a>
 </div>
 </div>
 </section>
