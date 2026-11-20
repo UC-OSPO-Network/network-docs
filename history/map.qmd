@@ -1,0 +1,9 @@
+# Map {.unnumbered}
+
+Where UC open source work started, and where to find help on each campus today. Orange pins mark where the work happened. Navy pins mark the UC OSPO Network campuses. Select a pin to open the story or the campus office. Use the box at the top right to show or hide each layer.
+
+Some projects began outside UC, or online. Their pins mark the UC part of the story, and the "On campus today" box in each chapter names the earlier place. Pins mark public buildings or campuses only.
+
+{{< places-map >}}
+
+The places come from `history/_data/places.yml`. Corrections are welcome as [GitHub issues](https://github.com/UC-OSPO-Network/network-docs/issues).

@@ -8,7 +8,7 @@ Before any of the software in this history could exist, the network had to exist
 
 ---
 
-## UCLA and ARPANET: Node 1
+## UCLA and ARPANET: Node 1 {#arpanet-ucla}
 
 **The project:** ARPANET (Advanced Research Projects Agency Network)
 **Campus:** UCLA
@@ -39,9 +39,11 @@ The graduate students working in Kleinrock's lab at UCLA in the late 1960s and e
 
 The original IMP, the hardware that made ARPANET's first node possible, still stands in Boelter Hall Room 3420 at UCLA [@uclaconnectionlab3420].
 
+{{< on-campus arpanet-ucla >}}
+
 ---
 
-## UCSB: Node 3
+## UCSB: Node 3 {#arpanet-ucsb}
 
 **Campus:** UC Santa Barbara
 **Date:** November 1, 1969
@@ -55,6 +57,8 @@ Glen Culler and Burton Fried at UCSB were working on interactive mathematics, in
 *Section in preparation.*
 :::
 
+{{< on-campus arpanet-ucsb >}}
+
 ---
 
 ## The Collaboration That Wasn't Institutional
@@ -67,7 +71,7 @@ The UCLA-UCSB-Berkeley collaboration on internet infrastructure happened because
 
 ---
 
-## UC Berkeley and TCP/IP: The Implementation That Spread the Protocol
+## UC Berkeley and TCP/IP: The Implementation That Spread the Protocol {#bsd-tcpip}
 
 **The project:** BSD TCP/IP stack (4.2BSD)
 **Campus:** UC Berkeley (Computer Systems Research Group, CSRG)
@@ -91,6 +95,8 @@ Berkeley's stack built on an early TCP/IP implementation from Rob Gurwitz at BBN
 ### The Larger Pattern
 
 The UCLA-to-Berkeley TCP/IP story is the earliest instance of the pattern this book documents throughout: UC research producing foundational infrastructure, released openly, that becomes universal. Kleinrock's theory, Cerf's protocol design, Berkeley's implementation - none of it was locked up. All of it spread. The internet is the result.
+
+{{< on-campus bsd-tcpip >}}
 
 ::: {.callout-note}
 ## Status

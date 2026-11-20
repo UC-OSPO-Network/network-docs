@@ -8,7 +8,7 @@ Before open source was a movement, UC Berkeley was doing it by default. Two proj
 
 ---
 
-## BSD Unix and the License That Made Open Source Possible
+## BSD Unix and the License That Made Open Source Possible {#bsd-unix}
 
 **The project:** Berkeley Software Distribution (BSD Unix)
 **Campus:** UC Berkeley
@@ -27,9 +27,11 @@ The BSD license - permissive, minimal, requiring only attribution - became the t
 
 Every project in this document was made possible by the licensing model Berkeley established. You could release research code, let anyone use it commercially, and watch what happened. BSD Unix proved that worked.
 
+{{< on-campus bsd-unix >}}
+
 ---
 
-## INGRES, POSTGRES, and the Database Lineage
+## INGRES, POSTGRES, and the Database Lineage {#ingres-postgres}
 
 **The projects:** University INGRES (1973), POSTGRES (1986), PostgreSQL (1995-)
 **Campus:** UC Berkeley
@@ -46,6 +48,8 @@ INGRES [@stonebraker1976ingres] spread into industry through its code, its peopl
 ### The Stonebraker pattern
 
 Stonebraker's career at Berkeley established a pattern the rest of this history repeats: solve a real problem in a research lab, release the code openly before it has commercial value, watch the ecosystem form, then commercialize the next generation. He did this with INGRES, which became Ingres Corporation [@nrc1999funding], and with POSTGRES, which became Illustra, and he continued beyond Berkeley with VoltDB, SciDB, and others.
+
+{{< on-campus ingres-postgres >}}
 
 ::: {.callout-note}
 ## Status

@@ -8,7 +8,7 @@ The early 2000s produced three projects that redefined what open science softwar
 
 ---
 
-## The UCSC Genome Browser: Three Days Before a Supercomputer
+## The UCSC Genome Browser: Three Days Before a Supercomputer {#ucsc-genome}
 
 **The project:** UCSC Genome Browser
 **Campus:** UC Santa Cruz
@@ -23,9 +23,11 @@ The early 2000s produced three projects that redefined what open science softwar
 
 The UCSC Genome Browser [@kent2002genome] is the reference tool for genomic research worldwide. It hosts assemblies for hundreds of species, is updated continuously, and remains the first stop for any researcher navigating genomic data.
 
+{{< on-campus ucsc-genome >}}
+
 ---
 
-## EEGLAB: The Most-Cited Scientific Software You've Never Heard Of
+## EEGLAB: The Most-Cited Scientific Software You've Never Heard Of {#eeglab}
 
 **The project:** EEGLAB
 **Campus:** UC San Diego (Swartz Center for Computational Neuroscience)
@@ -40,9 +42,11 @@ The UCSC Genome Browser [@kent2002genome] is the reference tool for genomic rese
 
 EEGLAB is an open source environment for processing EEG and related electrophysiological signals. The 2004 paper that introduced it [@delorme2004eeglab] had about 26,800 citations in OpenAlex in November 2026 [@openalex2026eeglab].
 
+{{< on-campus eeglab >}}
+
 ---
 
-## Cytoscape: Mapping the Cell
+## Cytoscape: Mapping the Cell {#cytoscape}
 
 **The project:** Cytoscape
 **Campus:** UC San Diego, with the Institute for Systems Biology (Seattle) and the Whitehead Institute
@@ -56,6 +60,8 @@ EEGLAB is an open source environment for processing EEG and related electrophysi
 ### What it became
 
 Cytoscape [@shannon2003cytoscape] is a widely used platform for network biology. Researchers use it to visualize disease pathways, protein interactions, and molecular networks. Its developers reported over 300,000 downloads a year in 2025 [@ono2025cytoscape].
+
+{{< on-campus cytoscape >}}
 
 ::: {.callout-note}
 ## Status
