@@ -8,7 +8,7 @@ The projects in this chapter run at a scale most people cannot visualize: exabyt
 
 ---
 
-## Ceph: The Dissertation That Funded an OSPO
+## Ceph: The Dissertation That Funded an OSPO {#ceph}
 
 **The project:** Ceph distributed storage system
 **Campus:** UC Santa Cruz (Storage Systems Research Center)
@@ -23,9 +23,11 @@ The projects in this chapter run at a scale most people cannot visualize: exabyt
 
 The money from Ceph's commercialization [@weil2006ceph] funded CROSS at UCSC. CROSS became the first UC OSPO. The UC OSPO Network grew from CROSS. This history was written by an organization that exists because one dissertation was released with an open license and commercialized responsibly.
 
+{{< on-campus ceph >}}
+
 ---
 
-## RISC-V: An Open Instruction Set from Berkeley
+## RISC-V: An Open Instruction Set from Berkeley {#riscv}
 
 **The project:** RISC-V open instruction set architecture
 **Campus:** UC Berkeley
@@ -40,9 +42,11 @@ The money from Ceph's commercialization [@weil2006ceph] funded CROSS at UCSC. CR
 
 RISC-V [@riscv2019] is an open, royalty-free instruction set architecture. RISC-V International listed 305 member organizations in November 2026 [@riscv2026members] and reported members in 70 countries in December 2024 [@riscv2024redmond]. In March 2020, the RISC-V International Association was incorporated in Switzerland [@riscv2026about].
 
+{{< on-campus riscv >}}
+
 ---
 
-## Named Data Networking: Rethinking the Internet
+## Named Data Networking: Rethinking the Internet {#ndn}
 
 **The project:** Named Data Networking (NDN / NFD)
 **Campus:** UCLA
@@ -57,9 +61,11 @@ RISC-V [@riscv2019] is an open, royalty-free instruction set architecture. RISC-
 
 NDN is not finished infrastructure - it is active research into what the internet could become. It belongs in this document because NSF funded it as a Future Internet Architecture project led from UCLA, starting with $7.9 million in 2010 [@ucla2010ndn], and because it represents the UC system's ongoing contribution to internet architecture, not just applications running on top of it.
 
+{{< on-campus ndn >}}
+
 ---
 
-## Ray: From RISELab to the PyTorch Foundation
+## Ray: From RISELab to the PyTorch Foundation {#ray}
 
 **The project:** Ray distributed computing framework
 **Campus:** UC Berkeley RISELab
@@ -73,6 +79,8 @@ NDN is not finished infrastructure - it is active research into what the interne
 ### What it became
 
 Ray [@moritz2018ray] is a framework for scaling Python and AI workloads from a laptop to a cluster. In October 2025, Anyscale, the company founded by Ray's creators, contributed Ray to the PyTorch Foundation, which is part of the Linux Foundation [@lf2025ray].
+
+{{< on-campus ray >}}
 
 ::: {.callout-note}
 ## Status

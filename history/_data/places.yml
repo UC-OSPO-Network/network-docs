@@ -14,6 +14,7 @@
 # Public places only. Never add a home or a private address.
 
 - id: arpanet-ucla
+  chapter: 00-internet-itself.qmd
   layer: history
   pin: true
   name: ARPANET Node 1 and early RFC work
@@ -61,6 +62,7 @@
   notes: Boelter marks the first ARPANET message and UCLA’s early host-protocol and RFC work. The 1974 TCP paper
     lists Cerf at Stanford and Kahn at ARPA; ARPANET ended, and the RFC Editor stewards the RFC series.
 - id: arpanet-ucsb
+  chapter: 00-internet-itself.qmd
   layer: history
   pin: true
   name: ARPANET Node 3 and the Culler–Fried Online System
@@ -95,6 +97,7 @@
   notes: UCSB identifies North Hall as the 1969 site. The research group link is a present-day contact; a direct
     organizational successor and a Node 3 plaque or public interior tour were not found.
 - id: bsd-tcpip
+  chapter: 00-internet-itself.qmd
   layer: history
   pin: true
   name: BSD TCP/IP stack (4.2BSD)
@@ -133,6 +136,7 @@
   notes: CSRG’s Evans Hall address is documented in contemporary BSD material. The source tree is the historical
     release; FreeBSD is a current descendant. A room for the 1983 TCP/IP work was not found.
 - id: bsd-unix
+  chapter: 01-foundations.qmd
   layer: history
   pin: true
   name: Berkeley Software Distribution Unix
@@ -171,6 +175,7 @@
   notes: Early BSD distribution instructions direct requests to Bill Joy in Evans Hall. Later CSRG documentation
     gives 463 Evans Hall in 1986. Berkeley EECS is the campus contact; there is no active CSRG office.
 - id: ingres-postgres
+  chapter: 01-foundations.qmd
   layer: history
   pin: true
   name: INGRES and Berkeley POSTGRES
@@ -210,6 +215,7 @@
     were not found. The community link is for PostgreSQL; a current steward for the original university INGRES release
     was not found.
 - id: tz
+  chapter: 02-universal-infrastructure.qmd
   layer: history
   pin: true
   name: Time Zone Database (tz)
@@ -243,6 +249,7 @@
   notes: Arthur David Olson, an NIH National Cancer Institute computing professional, started the database. A building
     for the 1986 work was not found. UCLA is the current coordinator’s affiliation.
 - id: apache-httpd
+  chapter: 02-universal-infrastructure.qmd
   layer: history
   pin: false
   name: Apache HTTP Server
@@ -274,6 +281,7 @@
   notes: The original group coordinated patches by email and used a shared Bay Area server with bandwidth donated
     by HotWired. A physical development site, UC successor unit, and project-specific visitor site were not found.
 - id: ucsc-genome
+  chapter: 03-open-science.qmd
   layer: history
   pin: true
   name: UCSC Genome Browser and public human genome assembly
@@ -308,6 +316,7 @@
     room was not found. The current team has an office at Westside Research Park, 2300 Delaware Ave. OpenStreetMap
     way 34545188 locates the 2300 Delaware Ave. building at 36.95648, -122.05859.
 - id: eeglab
+  chapter: 03-open-science.qmd
   layer: history
   pin: true
   name: EEGLAB and the ICA/EEG Toolbox
@@ -346,6 +355,7 @@
     now in the San Diego Supercomputer Center. The original lab room was not found. SDSC is at 32.88417, -117.24019
     (OpenStreetMap relation 4736608).
 - id: cytoscape
+  chapter: 03-open-science.qmd
   layer: history
   pin: true
   name: Cytoscape
@@ -384,6 +394,7 @@
     release was in 2002. The paper appeared in 2003; the original Seattle building was not found. Israni is at 32.87420,
     -117.23509 (OpenStreetMap way 103615500).
 - id: jupyter
+  chapter: 04-scientific-computing.qmd
   layer: history
   pin: true
   name: IPython and Project Jupyter
@@ -426,6 +437,7 @@
     Jupyter’s public unveiling was at SciPy 2014 in Austin. The original Boulder room was not found. BIDS planned
     a 2026 move to Bakar Gateway; a dedicated Jupyter office was not found.
 - id: spark
+  chapter: 04-scientific-computing.qmd
   layer: history
   pin: true
   name: Apache Spark
@@ -464,6 +476,7 @@
     lab setting, not a particular desk. The successor Sky Computing Lab lists Bakar Gateway. The Berkeley campus
     map pins Bakar Gateway at 37.87409, -122.26395.
 - id: ceph
+  chapter: 05-infrastructure-at-scale.qmd
   layer: history
   pin: true
   name: Ceph
@@ -499,6 +512,7 @@
   notes: The project history dates the first Ceph code to SSRC in 2004. CRSS is its current campus continuation.
     A contemporary source naming the 2004 work building was not found.
 - id: riscv
+  chapter: 05-infrastructure-at-scale.qmd
   layer: history
   pin: true
   name: RISC-V
@@ -537,6 +551,7 @@
   notes: The 2010 origin is Par Lab; ASPIRE followed. Berkeley’s IEEE RISC plaque commemorates the 1980–1982 microprocessor,
     a separate milestone. An RISC-V-specific public marker was not found.
 - id: ndn
+  chapter: 05-infrastructure-at-scale.qmd
   layer: history
   pin: true
   name: Named Data Networking
@@ -573,6 +588,7 @@
     The consortium is the project’s coordination body. The current Samueli faculty listing gives Engineering VI,
     room 375.
 - id: ray
+  chapter: 05-infrastructure-at-scale.qmd
   layer: history
   pin: true
   name: Ray
@@ -831,9 +847,12 @@
   heritage_visit: null
   sources:
   - https://profiles.ucsf.edu/ariel.deardorff
+  - https://ucospo.net/about/contact
   confidence: 0.84
   notes: 'Dedicated campus OSPO: none found. Related units: UCSF Library’s Data Science and Open Scholarship team
-    and the Scientific Software Collective. The network’s 2026 announcement explicitly confirms UCSF membership.'
+    and the Scientific Software Collective. The network’s 2026 announcement explicitly confirms UCSF membership. Checked 2026-11-20: the ucospo.net contact page names
+    the San Francisco contacts as Stathis Gennatas and Henrik Bengtsson (not Library staff), so the host unit here may
+    be wrong. Confirm with Tim.'
 - id: today-santa-barbara
   layer: today
   pin: true
@@ -942,5 +961,10 @@
   heritage_visit: null
   sources:
   - https://ucospo.net/posts/sloan-sustainability-grant/
+  - https://ucospo.net/about/contact
+  - https://www.uclawsf.edu/2026/09/14/magazine-2026-getting-students-ready-for-tomorrow/
   confidence: 0.7
-  notes: Network member since 2026 per ucospo.net. Host unit and contact not yet researched.
+  notes: 'Network member since 2026 (Sloan post, July 2026). Checked 2026-11-20: the ucospo.net contact page lists no
+    UC Law SF contact, and no public page names a host unit or an OSPO. Possible related unit, unconfirmed: LexLab,
+    whose AI-Enabled Lawyering Lab is co-taught by Luis Villa, an open source lawyer. Ask the Network lead for the host
+    unit and contact before this goes in the preface. The pin is the main campus building.'

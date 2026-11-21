@@ -8,7 +8,7 @@ Two projects from Berkeley's research labs became the dominant tools for how sci
 
 ---
 
-## Jupyter: The Procrastination That Runs Science
+## Jupyter: The Procrastination That Runs Science {#jupyter}
 
 **The project:** IPython / Project Jupyter
 **Campus:** UC Berkeley (BIDS)
@@ -27,9 +27,11 @@ Carol Willing is a core Jupyter developer, three-term Python Steering Council me
 
 Jupyter notebooks [@kluyver2016jupyter] are the dominant interface for interactive scientific computing worldwide. They run in data science courses, AI research labs, public health agencies, and science classrooms. JupyterHub scales the single-user notebook to institutional deployments serving thousands. Binder makes any notebook instantly reproducible and shareable. The format has become a de facto standard for communicating computational science.
 
+{{< on-campus jupyter >}}
+
 ---
 
-## Apache Spark: From AMPLab to Apache
+## Apache Spark: From AMPLab to Apache {#spark}
 
 **The project:** Apache Spark
 **Campus:** UC Berkeley AMPLab
@@ -47,6 +49,8 @@ Holden Karau is a member of the Apache Spark Project Management Committee and a 
 ### What it became
 
 Apache Spark [@zaharia2012spark] is the dominant framework for large-scale data processing. It powers data pipelines at virtually every major technology company and research institution. Databricks, founded by members of the Spark team, builds its business on it. The Apache Software Foundation stewards the open-source project; no single company can pull it away.
+
+{{< on-campus spark >}}
 
 ::: {.callout-note}
 ## Status
