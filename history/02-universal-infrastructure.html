@@ -69,7 +69,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-621c0b79ee34ff046c63ea2c120e9554.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6ba9dc4e5940b3facccd8dc1126b4068.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -247,6 +247,12 @@ div.csl-indent {
  <span class="menu-text">Project Reference</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./map.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Map</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -259,12 +265,12 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-tz-database-every-clock-on-earth" id="toc-the-tz-database-every-clock-on-earth" class="nav-link active" data-scroll-target="#the-tz-database-every-clock-on-earth">The tz Database: Every Clock on Earth</a>
+  <li><a href="#tz" id="toc-tz" class="nav-link active" data-scroll-target="#tz">The tz Database: Every Clock on Earth</a>
   <ul class="collapse">
   <li><a href="#what-it-became" id="toc-what-it-became" class="nav-link" data-scroll-target="#what-it-became">What it became</a></li>
   <li><a href="#the-lawsuit-that-almost-broke-time" id="toc-the-lawsuit-that-almost-broke-time" class="nav-link" data-scroll-target="#the-lawsuit-that-almost-broke-time">The lawsuit that almost broke time</a></li>
   </ul></li>
-  <li><a href="#apache-http-server-a-patchy-web-server" id="toc-apache-http-server-a-patchy-web-server" class="nav-link" data-scroll-target="#apache-http-server-a-patchy-web-server">Apache HTTP Server: “A Patchy” Web Server</a>
+  <li><a href="#apache-httpd" id="toc-apache-httpd" class="nav-link" data-scroll-target="#apache-httpd">Apache HTTP Server: “A Patchy” Web Server</a>
   <ul class="collapse">
   <li><a href="#what-it-became-1" id="toc-what-it-became-1" class="nav-link" data-scroll-target="#what-it-became-1">What it became</a></li>
   <li><a href="#the-berkeley-connection" id="toc-the-berkeley-connection" class="nav-link" data-scroll-target="#the-berkeley-connection">The Berkeley connection</a></li>
@@ -301,8 +307,8 @@ div.csl-indent {
 </div>
 <hr>
 </section>
-<section id="the-tz-database-every-clock-on-earth" class="level2">
-<h2 class="anchored" data-anchor-id="the-tz-database-every-clock-on-earth">The tz Database: Every Clock on Earth</h2>
+<section id="tz" class="level2">
+<h2 class="anchored" data-anchor-id="tz">The tz Database: Every Clock on Earth</h2>
 <p><strong>The project:</strong> tz database (IANA Time Zone Database) <strong>Campus:</strong> UCLA (Paul Eggert: contributor since 1991, maintainer since 2005, IESG-designated coordinator since 2012) <strong>Origin:</strong> 1986, Arthur David Olson (NIH) <strong>Key figures:</strong> Paul Eggert (UCLA), Arthur David Olson</p>
 <div class="origin-story">
 <p><em>Section in preparation.</em></p>
@@ -314,11 +320,17 @@ div.csl-indent {
 <section id="the-lawsuit-that-almost-broke-time" class="level3">
 <h3 class="anchored" data-anchor-id="the-lawsuit-that-almost-broke-time">The lawsuit that almost broke time</h3>
 <p>In September 2011, Astrolabe Inc.&nbsp;sued Arthur David Olson and Paul Eggert, claiming copyright over historical time zone data <span class="citation" data-cites="eff2012astrolabe">(<a href="#ref-eff2012astrolabe" role="doc-biblioref">Electronic Frontier Foundation, 2012a</a>)</span>. The Electronic Frontier Foundation, with co-counsel at Fish &amp; Richardson, defended them <span class="citation" data-cites="eff2012tzrelease">(<a href="#ref-eff2012tzrelease" role="doc-biblioref">Electronic Frontier Foundation, 2012b</a>)</span>. The database went offline on 7 October 2011. ICANN brought it back online at IANA on 14 October 2011, and Robert Elz served as interim coordinator. Astrolabe dropped the suit on 22 February 2012 <span class="citation" data-cites="ietf2012tz">(<a href="#ref-ietf2012tz" role="doc-biblioref">IETF, 2012</a>)</span>. The IESG approved Eggert as the Time Zone Coordinator on 13 April 2012 <span class="citation" data-cites="iesg2012eggert">(<a href="#ref-iesg2012eggert" role="doc-biblioref">IESG Secretary, 2012</a>)</span>. Olson’s announced retirement had led the IETF to ask ICANN to take over the database <span class="citation" data-cites="icann2011tz">(<a href="#ref-icann2011tz" role="doc-biblioref">ICANN, 2011</a>)</span>. The episode showed how much depended on a very small group of maintainers.</p>
+<div class="on-campus" role="note" aria-label="On campus today: Time Zone Database (tz)">
+<p class="on-campus-title">On campus today</p>
+<p class="on-campus-place"><strong>UCLA (current coordinator)</strong>, Online / UCLA today</p>
+<p class="on-campus-prior">Arthur David Olson (NIH) started the database in 1986. Paul Eggert (UCLA) has been the coordinator since 2012; the database is hosted by IANA.</p>
+<dl><dt>Campus unit</dt><dd><a href="https://samueli.ucla.edu/people/paul-eggert/">Paul Eggert — UCLA Samueli, Engineering VI, room 3631</a></dd><dt>Who runs it now</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc6557.html">RFC 6557 — IANA and IETF responsibilities</a></dd><dt>Project</dt><dd><a href="https://www.iana.org/time-zones">IANA Time Zone Database</a></dd><dt>Archives and sources</dt><dd><a href="https://lists.iana.org/hyperkitty/list/tz@iana.org/">tz mailing list archive</a></dd></dl>
+<p class="on-campus-map"><a href="map.html">See it on the map</a></p></div>
 <hr>
 </section>
 </section>
-<section id="apache-http-server-a-patchy-web-server" class="level2">
-<h2 class="anchored" data-anchor-id="apache-http-server-a-patchy-web-server">Apache HTTP Server: “A Patchy” Web Server</h2>
+<section id="apache-httpd" class="level2">
+<h2 class="anchored" data-anchor-id="apache-httpd">Apache HTTP Server: “A Patchy” Web Server</h2>
 <p><strong>The project:</strong> Apache HTTP Server <strong>Campus connection:</strong> UC Berkeley (Brian Behlendorf, undergraduate) <strong>Period:</strong> 1995 - <strong>Key figures:</strong> Brian Behlendorf (UCB undergrad), Cliff Skolnick, and eight founding contributors</p>
 <div class="origin-story">
 <p><em>Section in preparation.</em></p>
@@ -330,6 +342,11 @@ div.csl-indent {
 <section id="the-berkeley-connection" class="level3">
 <h3 class="anchored" data-anchor-id="the-berkeley-connection">The Berkeley connection</h3>
 <p>Behlendorf’s Berkeley connection is indirect: he was a student there, not running a lab project. But his story illustrates something important about how infrastructure gets built. He was not a professor with a grant. He was an undergrad with a server and a problem. The permissive culture Berkeley embodied - share the code, see what happens - was something he had absorbed.</p>
+<div class="on-campus" role="note" aria-label="On campus today: Apache HTTP Server">
+<p class="on-campus-title">On campus today</p>
+<p class="on-campus-place"><strong>online</strong>, Online / San Francisco connection</p>
+<dl><dt>Who runs it now</dt><dd><a href="https://www.apache.org/">Apache Software Foundation</a></dd><dt>Project</dt><dd><a href="https://httpd.apache.org/">Apache HTTP Server</a></dd><dt>Archives and sources</dt><dd><a href="https://www.apache.org/history/">Apache Group history</a> · <a href="https://httpd.apache.org/ABOUT_APACHE.html">Apache HTTP Server project history</a></dd></dl>
+<p class="on-campus-map"><a href="map.html">See it on the map</a></p></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
